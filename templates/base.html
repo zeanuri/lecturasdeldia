@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Lecturas del Día{% endblock %}</title>
+  <meta name="description" content="{% block description %}Lecturas de la Misa del día — Conferencia Episcopal Española{% endblock %}">
+  {% block og %}
+  <meta property="og:title" content="Lecturas del Día">
+  <meta property="og:description" content="Lecturas de la Misa del día — CEE">
+  <meta property="og:type" content="website">
+  {% endblock %}
+  {% block canonical %}{% endblock %}
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+</head>
+<body{% if day and day.color_css %} data-color="{{ day.color_css }}"{% endif %}>
+  <header>
+    <a href="/" class="site-title">Lecturas del Día</a>
+    <button id="search-toggle" aria-label="Buscar" title="Buscar">&#128269;</button>
+  </header>
+
+  <div id="search-panel" hidden>
+    <input type="search" id="search-input" placeholder="Buscar por fecha, lectura, santo..." autocomplete="off">
+    <div id="search-results"></div>
+  </div>
+
+  {% block content %}{% endblock %}
+
+  <footer>
+    <p>Textos: <a href="https://www.conferenciaepiscopal.es" target="_blank" rel="noopener">Conferencia Episcopal Española (CEE)</a></p>
+    <p><a href="https://github.com/zeanuri/lecturasdeldia" target="_blank" rel="noopener">GitHub</a></p>
+  </footer>
+
+  <script src="/assets/app.js"></script>
+</body>
+</html>

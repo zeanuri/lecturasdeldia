@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block title %}Lecturas del {{ day.fecha_larga }} — {{ day.name }}{% endblock %}
+
+{% block description %}{{ day.readings | map(attribute='cita') | select('defined') | join(', ') }}{% endblock %}
+
+{% block og %}
+<meta property="og:title" content="Lecturas del {{ day.fecha_larga }}">
+<meta property="og:description" content="{{ day.name }} — {{ day.readings | map(attribute='cita') | select('defined') | join(', ') }}">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://lecturasdeldia.org/{{ day.date_iso[:4] }}/{{ day.date_iso[5:7] }}/{{ day.date_iso[8:10] }}/">
+{% endblock %}
+
+{% block canonical %}
+<link rel="canonical" href="https://lecturasdeldia.org/{{ day.date_iso[:4] }}/{{ day.date_iso[5:7] }}/{{ day.date_iso[8:10] }}/">
+{% endblock %}
+
+{% block content %}
+<nav class="day-nav">
+  <a href="/{{ prev_url }}/" class="nav-prev" title="{{ prev_label }}">&larr; {{ prev_label }}</a>
+  <button id="calendar-toggle" aria-label="Calendario" title="Calendario">&#128197;</button>
+  <a href="/{{ next_url }}/" class="nav-next" title="{{ next_label }}">{{ next_label }} &rarr;</a>
+</nav>
+
+<div id="calendar-panel" hidden></div>
+
+<article data-date="{{ day.date_iso }}">
+  <header class="day-header">
+    <h1>{{ day.name }}</h1>
+    <p class="date">{{ day.fecha_larga }}</p>
+    <p class="meta">
+      <span class="color-badge color-{{ day.color_css }}">{{ day.color }}</span>
+      <span class="rank">{{ day.rank }}</span>
+      &middot; {{ day.season }}
+      {% if day.sunday_cycle %} &middot; {{ day.sunday_cycle }}{% endif %}
+      {% if day.weekday_cycle %} &middot; {{ day.weekday_cycle }}{% endif %}
+    </p>
+  </header>
+
+  <section class="readings">
+    {% for r in day.readings %}
+    <div class="reading">
+      <button class="reading-header" aria-expanded="false" aria-controls="text-{{ r.key }}">
+        <span class="reading-label">{{ r.label }}</span>
+        <span class="reading-cita">{{ r.cita }}</span>
+        <span class="chevron">&#9660;</span>
+      </button>
+      <div id="text-{{ r.key }}" class="reading-text" hidden>
+        {% if r.titulo %}
+        <p class="titulo"><em>{{ r.titulo }}</em></p>
+        {% endif %}
+        {% if r.antifona %}
+        <p class="antifona"><strong>R/</strong> {{ r.antifona }}</p>
+        {% endif %}
+        {% for paragraph in r.texto.split('\n') %}
+        {% if paragraph.strip() %}
+        <p>{{ paragraph }}</p>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </section>
+
+  {% if day.memorial and day.memorial != day.name %}
+  <section class="memorial-note">
+    <p><strong>Memorial:</strong> {{ day.memorial }}
+    {% if day.memorial_rank %} ({{ day.memorial_rank }}){% endif %}
+    {% if day.memorial_note %} — {{ day.memorial_note }}{% endif %}
+    </p>
+  </section>
+  {% endif %}
+
+  <div class="actions">
+    <button id="expand-all">&#128214; Expandir todas</button>
+    <button id="download-txt">&#128229; Descargar lecturas (.txt)</button>
+  </div>
+</article>
+{% endblock %}
