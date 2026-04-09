@@ -4,7 +4,7 @@ import json
 import os
 import shutil
 import tempfile
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 
 import pytest
@@ -138,3 +138,36 @@ class TestCalendarData:
         assert "rank" in entry
         assert "url" in entry
         assert entry["url"] == "/2026/04/05/"
+
+
+class TestFullBuild:
+    def test_full_build_small_window(self):
+        """Full build with a 3-day window produces all expected files."""
+        with tempfile.TemporaryDirectory() as outdir:
+            generate_site.build_site(today=date(2026, 4, 9), days_back=1, days_forward=1, outdir=outdir)
+
+            # Day pages exist
+            for d_offset in [-1, 0, 1]:
+                d = date(2026, 4, 9) + timedelta(days=d_offset)
+                path = os.path.join(outdir, str(d.year), f"{d.month:02d}", f"{d.day:02d}", "index.html")
+                assert os.path.exists(path), f"Missing page for {d}"
+
+            # Supporting files
+            assert os.path.exists(os.path.join(outdir, "index.html"))
+            assert os.path.exists(os.path.join(outdir, "404.html"))
+            assert os.path.exists(os.path.join(outdir, "search-index.json"))
+            assert os.path.exists(os.path.join(outdir, "calendario", "data.json"))
+            assert os.path.exists(os.path.join(outdir, "sitemap.xml"))
+            assert os.path.exists(os.path.join(outdir, "robots.txt"))
+            assert os.path.exists(os.path.join(outdir, "assets", "style.css"))
+            assert os.path.exists(os.path.join(outdir, "assets", "app.js"))
+
+            # Sitemap has entries
+            with open(os.path.join(outdir, "sitemap.xml"), encoding="utf-8") as f:
+                sitemap = f.read()
+            assert "2026/04/09" in sitemap
+
+            # Search index has entries
+            with open(os.path.join(outdir, "search-index.json"), encoding="utf-8") as f:
+                idx = json.load(f)
+            assert len(idx) == 3
