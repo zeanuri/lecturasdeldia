@@ -130,7 +130,7 @@ def format_prev_next(d: date) -> str:
     return f"{d.day} {_MONTH_ABBR[d.month - 1]}"
 
 
-def generate_day(d, prev_d, next_d, outdir, templates, lec) -> dict:
+def generate_day(d, prev_d, next_d, outdir, templates) -> dict:
     """Render day page and write to outdir/YYYY/MM/DD/index.html."""
     day_data = get_day_data(d)
 
@@ -309,7 +309,7 @@ def build_site(today=None, days_back=30, days_forward=365, outdir=None):
         d = start + timedelta(days=i)
         prev_d = d - timedelta(days=1)
         next_d = d + timedelta(days=1)
-        day_data = generate_day(d, prev_d, next_d, outdir, templates, lec)
+        day_data = generate_day(d, prev_d, next_d, outdir, templates)
         all_days.append(day_data)
 
     # Generate supporting files

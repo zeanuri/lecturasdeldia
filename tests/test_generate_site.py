@@ -43,7 +43,6 @@ class TestGenerateSingleDay:
             next_d=date(2026, 4, 10),
             outdir=outdir,
             templates=templates,
-            lec=lec,
         )
 
         # Verify file exists
