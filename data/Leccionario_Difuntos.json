@@ -1,0 +1,475 @@
+{
+  "meta": {
+    "title": "Leccionario para las Misas de Difuntos",
+    "source": "Leccionario-X-Misas-de-Difuntos.pdf",
+    "description": "Lecturas, salmos y evangelios para misas de difuntos y exequias (CEE)"
+  },
+  "moniciones_entrada": [
+    {
+      "numero": 1,
+      "texto": "Hermanos: La muerte de nuestro/a hermano/a N nos reúne para celebrar sus exequias, recordando el misterio de la muerte y resurrección de Jesucristo. En estos momentos, acordaos de la invitación del Señor: “Venid a mí todos los que estáis cansados y agobiados, y yo os aliviaré”. Dispongámonos a escuchar la Palabra de Dios, a orar con la confianza de los hijos y a ofrecer la Eucaristía en favor de nuestro/a hermano/a y de todos los vivos y difuntos."
+    },
+    {
+      "numero": 2,
+      "texto": "Hermanos: Nos ha convocado la muerte de nuestro/a hermano/a N. Sus familiares y amigos os habéis dado cita en esta asamblea litúrgica. Es probable que cada uno tenga actitudes y valoraciones diferentes ante este acontecimiento. Los creyentes pensamos que detrás de esta convocatoria hay una llamada de Dios, para que, ante la experiencia de la muerte, aprendamos a vivir guiados por la fe. La muerte fue vencida por la vida en la Pascua de Jesucristo. Con esta certeza, dispongámonos a participar en esta consoladora realidad que se nos ofrece en la Eucaristía."
+    },
+    {
+      "numero": 3,
+      "texto": "Hermanos: Estamos aquí para orar por nuestro/a hermano/a N y celebrar la Eucaristía por su eterno descanso. Confiad en el Señor, que él os ayudará; esperad en él, y os allanará el camino. La Palabra de Dios pondrá luz en vuestra oscuridad, fe en vuestra duda y consuelo en vuestra aflicción."
+    },
+    {
+      "numero": 4,
+      "texto": "Hermanos: Nos entristece la muerte de nuestro/a hermano/a N, y queremos compartir la pena que sentís sus familiares y amigos. La celebración que ahora comenzamos une su muerte a la muerte y resurrección de Jesucristo, para que, del mismo modo que hoy se manifiesta la muerte, un día se manifieste también la resurrección."
+    },
+    {
+      "numero": 5,
+      "texto": "Hermanos: El motivo que hoy nos congrega es compartir el dolor por la muerte de nuestro/a hermano/a N. Con su familia y con sus amigos, la comunidad cristiana siente también la tristeza de la separación. Sin embargo, la celebración de la Palabra de Dios y de la Eucaristía, nos llenará de consuelo y de esperanza. Y a nuestro/a hermano/a y a los demás difuntos por quienes oremos les llegará la ayuda de nuestra oración."
+    },
+    {
+      "numero": 6,
+      "texto": "Hermanos: Celebramos la muerte de nuestro/a hermano/a N. Celebramos, mejor dicho, la victoria sobre la muerte. Es Cristo, gracias a él, quien la ha vencido. Esta es nuestra fe, nuestra esperanza y nuestro consuelo. La certeza que nos da la fe supera la evidencia de nuestros ojos."
+    },
+    {
+      "numero": 7,
+      "texto": "Hermanos: Celebramos el tránsito de este mundo al Padre de nuestro/a hermano/a N, solidarizándonos en el dolor. La Palabra de Dios, que resonará en nuestros oídos, es la única palabra capaz de consolar; la única palabra que ilumina el enigma de la muerte, da sentido a la vida y aviva la esperanza."
+    },
+    {
+      "numero": 8,
+      "texto": "Hermanos: Celebramos la muerte de nuestro/a hermano/a N con la certeza que nos da la fe, de que, en la situación en que se encuentre, vive ya con Cristo para siempre."
+    },
+    {
+      "numero": 9,
+      "texto": "Hermanos: Celebramos la muerte de nuestro/a hermano/a N con la esperanza gozosa de volvernos a encontrar con él en la vida eterna. Y la esperanza, como bien nos dice el Apóstol, no defrauda: “El que cree en Ti, aunque haya muerto, vivirá”."
+    }
+  ],
+  "lecturas": [
+    {
+      "numero": 1,
+      "primera": {
+        "cita": "primera carta del apóstol san Pablo a los Corintios 15,51-57",
+        "titulo": "",
+        "texto": "Hermanos:\nOs voy a declarar un misterio: No todos moriremos, pero todos nos veremos transformados.\nEn un instante, en un abrir y cerrar de ojos, al toque de la última trompeta; porque resonará, y los muertos despertarán incorruptibles, y nosotros nos veremos transformados.\nPorque esto corruptible tiene que vestirse de incorrupción, y esto mortal tiene que vestirse de inmortalidad. Cuando esto corruptible se vista de incorrupción, y esto mortal se vista de inmortalidad, entonces se cumplirá la palabra escrita:\n«La muerte ha sido absorbida en la victoria.\n¿Dónde está, muerte, tu victoria?\n¿Dónde está, muerte, tu aguijón?»\nEl aguijón de la muerte es el pecado, y la fuerza del pecado es la ley.\n¡Demos gracias a Dios, que nos da la victoria por nuestro Señor Jesucristo!"
+      },
+      "salmo": {
+        "cita": "Sal 114, 5-6; 115, 10-11. 15-16ac",
+        "antifona": "Caminaré en presencia del Señor en el país de la vida.",
+        "texto": "V/. Caminaré en presencia del Señor en el país de la vida.\nR/. Caminaré en presencia del Señor en el país de la vida.\n\nV/. El Señor es benigno y justo, nuestro Dios es compasivo;\nel Señor guarda a los sencillos: estando yo sin fuerzas, me salvó. R/.\n\nV/. Tenía fe, aun cuando dije: «¡Qué desgraciado soy!»\nYo decía en mi apuro: «Los hombres son unos mentirosos.» R/.\n\nV/. Mucho le cuesta al Señor la muerte de sus fieles.\nSeñor, yo soy tu siervo, rompiste mis cadenas. R/."
+      },
+      "evangelio": {
+        "cita": "Lucas 23, 44-49; 24, 1-6",
+        "titulo": "",
+        "texto": "Era ya eso de mediodía, y vinieron las tinieblas sobre toda la región, hasta la media tarde; porque se oscureció el sol. El velo del templo se rasgó por medio.\nY Jesús, clamando con voz potente, dijo:\n-«Padre, a tus manos encomiendo mi espíritu.»\nY, dicho esto, expiró.\nUn hombre llamado José, que era senador, hombre bueno y honrado, acudió a Pilato a pedirle el cuerpo de Jesús. Y, bajándolo, lo envolvió en una sábana y lo colocó en un sepulcro excavado en la roca, donde no habían puesto a nadie todavía.\nEl primer día de la semana, de madrugada, las mujeres fueron al sepulcro llevando las aromas que habían preparado. Encontraron corrida la piedra del sepulcro. Y, entrando, no encontraron el cuerpo del Señor Jesús. Mientras estaban desconcertadas por esto, se les presentaron dos hombres con vestidos refulgentes. Ellas, despavoridas, miraban al suelo, y ellos les dijeron:\n-«¿Por qué buscáis entre los muertos al que vive? No está aquí. Ha resucitado.»"
+      }
+    },
+    {
+      "numero": 2,
+      "monicion": "La victoria de Cristo sobre la muerte, por la acción de Dios, lo constituye en principio de vida para toda la humanidad (1ª lect.). El mismo Señor se autodefine: “Yo soy la Resurrección”, es decir, yo soy el depositario y el dispensador de la vida para todo el que cree (Ev.). El salmo expresa la súplica llena de esperanza en aquél en quien “está la salvación”.",
+      "primera": {
+        "cita": "libro de los Hechos de los apóstoles 10, 34-43",
+        "titulo": "",
+        "texto": "En aquellos días, Pedro tomó la palabra y dijo:\n-«Está claro que Dios no hace distinciones; acepta al que lo teme y practica la justicia, sea de la nación que sea. Envió su palabra a los israelitas, anunciando la paz que traería Jesucristo, el Señor de todos.\nConocéis lo que sucedió en el país de los judíos, cuando Juan predicaba el bautismo, aunque la cosa empezó en Galilea. Me refiero a Jesús de Nazaret, ungido por Dios con la fuerza del Espíritu Santo, que pasó haciendo el bien y curando a los oprimidos por el diablo, porque Dios estaba con él.\nNosotros somos testigos de todo lo que hizo en Judea y en Jerusalén. Lo mataron colgándolo de un madero. Pero Dios lo resucitó al tercer día y nos lo hizo ver, no a todo el pueblo, sino a los testigos que él había designado: a nosotros, que hemos comido y bebido con él después de su resurrección.\nNos encargó predicar al pueblo, dando solemne testimonio de que Dios lo ha nombrado juez de vivos y muertos. El testimonio de los profetas es unánime:\nque los que creen en él reciben, por su nombre, el perdón de los pecados.»"
+      },
+      "salmo": {
+        "cita": "Sal 129, 1-2. 3-4. 5-6. 7. 8",
+        "antifona": "Desde lo hondo a ti grito, Señor.",
+        "texto": "V/. Desde lo hondo a ti grito, Señor.\nR/. Desde lo hondo a ti grito, Señor.\n\nV/. Desde lo hondo a ti grito, Señor;\nSeñor, escucha mi voz;\nestén tus oídos atentos a la voz de mi súplica. R/.\n\nV/. Si llevas cuenta de los delitos, Señor, ¿quién podrá resistir?\nPero de ti procede el perdón,y así infundes respeto. R/.\n\nV/. Mi alma espera en el Señor, espera en su palabra;\nmi alma aguarda al Señor, más que el centinela la aurora. R/.\n\nV/. Aguarde Israel al Señor, como el centinela la aurora;\nporque del Señor viene la misericordia, la redención copiosa. R/.\n\nV/. Y él redimirá a Israel de todos sus delitos. R/."
+      },
+      "evangelio": {
+        "cita": "Juan 11, 17-27",
+        "titulo": "",
+        "texto": "En aquel tiempo, cuando Jesús llegó a Betania, Lázaro llevaba ya cuatro días enterrado. Betania distaba poco de Jerusalén: unos tres kilómetros; y muchos judíos habían ido a ver a Marta y a María, para darles el pésame por su hermano. Cuando Marta se enteró de que llegaba Jesús, salió a su encuentro, mientras María se quedaba en casa. Y dijo Marta a Jesús:\n-«Señor, si hubieras estado aquí no habría muerto mi hermano. Pero aún ahora sé que todo lo que pidas a Dios, Dios te lo concederá.»\nJesús le dijo:\n-«Tu hermano resucitará.»\nMarta respondió:\n-«Sé que resucitará en la resurrección del último día.»\nJesús le dice:\n-«Yo soy la resurrección y la vida: el que cree en mí, aunque haya muerto, vivirá; y el que está vivo y cree en mí, no morirá para siempre. ¿Crees esto?»\nElla le contestó:\n-«Sí, Señor: yo creo que tú eres el Mesías, el Hijo de Dios, el que tenía que venir al mundo.»"
+      }
+    },
+    {
+      "numero": 3,
+      "monicion": "La esperanza de Job, que confía en la intervención de Dios que lo sacará de la terrible prueba (1ª lect.), se hace realidad en Cristo y promesa para todos los que escuchan su palabra y creen en él. De este modo, poseen ya la vida eterna y empiezan a pasar de la muerte a la vida (Ev.). El salmo recoge los sentimientos del que espera pasar de este mundo a la casa del Padre.",
+      "primera": {
+        "cita": "libro de Job 19, 1. 23-27",
+        "titulo": "",
+        "texto": "Respondió Job a sus amigos:\n-«¡Ojalá se escribieran mis palabras,\nojalá se grabaran en cobre,\ncon cincel de hierro y en plomo\nse escribieran para siempre en la roca!\nYo sé que está vivo mi Redentor,\ny que al final se alzará sobre el polvo:\ndespués que me arranquen la piel,\nya sin carne, veré a Dios;\nyo mismo lo veré, y no otro,\nmis propios ojos lo verán.»"
+      },
+      "salmo": {
+        "cita": "Sal 41, 2. 3. 5bcd; 42, 3. 4. 5",
+        "antifona": "Mi alma tiene sed del Dios vivo.",
+        "texto": "V/. Mi alma tiene sed del Dios vivo.\nR/. Mi alma tiene sed del Dios vivo.\n\nV/. Como busca la cierva corrientes de agua, así mi alma te busca a ti, Dios mío. R/.\n\nV/. Tiene sed de Dios, del Dios vivo: ¿cuándo entraré a ver el rostro de Dios? R/.\n\nV/. Recuerdo cómo marchaba a la cabeza del grupo,\nhacia la casa de Dios, entre cantos de júbilo y alabanza. R/.\n\nV/. Envía tu luz y tu verdad: que ellas me guíen y me conduzcan hasta tu monte santo,\nhasta tu morada. R/.\n\nV/. Que yo me acerque al altar de Dios, al Dios de mi alegría;\nque te dé gracias al son de la cítara, Dios, Dios mío. R/.\n\nV/. ¿Por qué te acongojas, alma mía, por qué te me turbas?\nEspera en Dios, que volverás a alabarlo: «Salud de mi rostro, Dios mío.» R/."
+      },
+      "evangelio": {
+        "cita": "Juan 5,24-29",
+        "titulo": "",
+        "texto": "En aquel tiempo, dijo Jesús a los judíos:\n-«Os lo aseguro: Quien escucha mi palabra y cree al que me envió posee la vida eterna y no se le llamará a juicio, porque ha pasado ya de la muerte a la vida.\nOs aseguro que llega la hora, y ya está aquí, en que los muertos oirán la voz del Hijo de Dios, y los que hayan oído vivirán.\nPorque, igual que el Padre dispone de la vida, así ha dado también al Hijo el disponer de la vida. Y le ha dado potestad de juzgar, porque es el Hijo del hombre.\nNo os sorprenda, porque viene la hora en que los que están en el sepulcro oirán su voz: los que hayan hecho el bien saldrán a una resurrección de vida; los que hayan hecho el mal, a una resurrección de juicio.»"
+      }
+    },
+    {
+      "numero": 4,
+      "monicion": "El Espíritu Santo, primicia de la resurrección, aviva en nosotros la fe y el ansia de la plena manifestación de nuestra condición de hijos de Dios (1ª lect.). Esa fe empieza a dar fruto de vida eterna en este mundo y es una prenda de la resurrección futura (Ev.). Por esto, los que esperan en el Señor no quedarán defraudados (salmo).",
+      "primera": {
+        "cita": "carta del apóstol san Pablo a los Romanos 8, 14-23",
+        "titulo": "",
+        "texto": "Hermanos:\nLos que se dejan llevar por el Espíritu de Dios, ésos son hijos de Dios.\nHabéis recibido, no un espíritu de esclavitud, para recaer en el temor, sino un espíritu de hijos adoptivos, que nos hace gritar: «¡Abba! (Padre).»\nEse Espíritu y nuestro espíritu dan testimonio, dan un testimonio concorde:\nque somos hijos de Dios; y, si somos hijos, también herederos; herederos de Dios y coherederos con Cristo, ya que sufrimos con él para ser también con él glorificados.\nSostengo, además, que los sufrimientos de ahora no pesan lo que la gloria que un día se nos descubrirá.\nPorque la creación, expectante, está aguardando la plena manifestación de los hijos de Dios; ella fue sometida a la frustración, no por su voluntad, sino por uno que la sometió; pero fue con la esperanza de que la creación misma se vería liberada de la esclavitud de la corrupción, para entrar en la libertad gloriosa de los hijos de Dios.\nPorque sabemos que hasta hoy la creación entera está gimiendo toda ella con dolores de parto.\nY no sólo eso; también nosotros, que poseemos las primicias del Espíritu, gemimos en nuestro interior, aguardando la hora de ser hijos de Dios, la redención de nuestro cuerpo."
+      },
+      "salmo": {
+        "cita": "Sal 24, 4bc-5ab. 6 y 7bc. 17 y 20",
+        "antifona": "Los que esperan en ti, Señor, no quedan defraudados.",
+        "texto": "V/. Los que esperan en ti, Señor, no quedan defraudados.\nR/. Los que esperan en ti, Señor, no quedan defraudados.\n\nV/. Señor, enséñame tus caminos, instrúyeme en tus sendas: haz que camine con lealtad;\nenséñame, porque tú eres mi Dios y Salvador. R/.\n\nV/. Recuerda, Señor, que tu ternura y tu misericordia son eternas;\nacuérdate de mí con misericordia, por tu bondad, Señor. R/.\n\nV/. Ensancha mi corazón oprimido y sácame de mis tribulaciones.\nGuarda mi vida y líbrame, no quede yo defraudado de haber acudido a ti. R/."
+      },
+      "evangelio": {
+        "cita": "Juan 6,37-40",
+        "titulo": "",
+        "texto": "En aquel tiempo, dijo Jesús a la gente:\n-«Todo lo que me da el Padre vendrá a mí, y al que venga a mí no lo echaré afuera, porque he bajado del cielo, no para hacer mi voluntad, sino la voluntad del que me ha enviado.\nÉsta es la voluntad del que me ha enviado: que no pierda nada de lo que me dio, sino que lo resucite en el último día.\nÉsta es la voluntad de mi Padre: que todo el que ve al Hijo y cree en él tenga vida eterna, y yo lo resucitaré en el último día. »"
+      }
+    },
+    {
+      "numero": 5,
+      "monicion": "La fe aviva el recuerdo de Cristo resucitado, expresión de la fidelidad de Dios (1ª lect.). Jesús mismo nos invita a creer en esa fidelidad de Dios y en su propia promesa de conducir a los que lo siguen hasta la casa de su Padre (Ev.). Él es el buen Pastor que se convierte en camino seguro hacia las fuentes tranquilas (salmo).",
+      "primera": {
+        "cita": "segunda carta del apóstol san Pablo a Timoteo 2,8-13",
+        "titulo": "",
+        "texto": "Querido hermano: Haz memoria de Jesucristo, resucitado de entre los muertos, nacido del linaje de David.\nEste ha sido mi Evangelio, por el que sufro hasta llevar cadenas, como un malhechor; pero la palabra de Dios no está encadenada.\nPor eso lo aguanto todo por los elegidos, para que ellos también alcancen la salvación, lograda por Cristo Jesús, con la gloria eterna.\nEs doctrina segura: Si morimos con él, viviremos con él. Si perseveramos, reinaremos con él. Si lo negamos, también él nos negará. Si somos infieles, él permanece fiel. porque no puede negarse a si mismo."
+      },
+      "salmo": {
+        "cita": "Sal 22, 1-3. 4. 5. 6",
+        "antifona": "El Señor es mi pastor, nada me falta.",
+        "texto": "V/. El Señor es mi pastor, nada me falta.\nR/. El Señor es mi pastor, nada me falta.\n\nV/. El Señor es mi pastor, nada me falta: en verdes praderas me hace recostar;\nme conduce hacia fuentes tranquilas y repara mis fuerzas;\nme guía por el sendero justo, por el honor de su nombre. R/.\n\nV/. Aunque camine por cañadas oscuras, nada temo,\nporque tú vas conmigo: tu vara y tu cayado me sosiegan. R/.\n\nV/. Preparas una mesa ante mí, enfrente de mis enemigos;\nme unges la cabeza con perfume, y mi copa rebosa. R/.\n\nV/. Tu bondad y tu misericordia me acompañan todos los días de mi vida,\ny habitaré en la casa del Señor por años sin término. R/."
+      },
+      "evangelio": {
+        "cita": "Juan 14,1-6",
+        "titulo": "",
+        "texto": "En aquel tiempo, dijo Jesús a sus discípulos:\n-«Que no tiemble vuestro corazón; creed en Dios y creed también en mí. En la casa de mi Padre hay muchas estancias; si no fuera así, ¿os habría dicho que voy a prepararos sitio? Cuando vaya y os prepare sitio, volveré y os llevaré conmigo, para que donde estoy yo, estéis también vosotros. Y adonde yo voy, ya sabéis el camino.»\nTomás le dice:\n-«Señor, no sabemos adónde vas, ¿cómo podemos saber el camino?»\nJesús le responde:\n-«Yo soy el camino, y la verdad, y la vida. Nadie va al Padre, sino por mí.»"
+      }
+    },
+    {
+      "numero": 6,
+      "monicion": "La confianza en la vida en Dios de los que han muerto a este mundo se basa en la fe en Cristo muerto y resucitado (1ª lect.). Este gran misterio ha sido revelado a la gente sencilla, que encuentra en él la fuente del consuelo verdadero (Ev.). Por eso, el creyente busca el rostro de Dios para desahogar su alma con él (salmo).",
+      "primera": {
+        "cita": "primera carta del apóstol san Pablo a los Tesalonicenses 4, 13-18",
+        "titulo": "",
+        "texto": "Hermanos, no queremos que ignoréis la suerte de los difuntos, para que no os aflijáis como los hombres sin esperanza.\nPues si creemos que Jesús ha muerto y resucitado, del mismo modo, a los que han muerto, Dios, por medio de Jesús, los llevará con él.\nY así estaremos siempre con el Señor.\nConsolaos, pues, mutuamente con estas palabras."
+      },
+      "salmo": {
+        "cita": "Sal 41, 2. 3. 5bcd; 42, 3. 4. 5",
+        "antifona": "Mi alma tiene sed del Dios vivo.",
+        "texto": "V/. Mi alma tiene sed del Dios vivo.\nR/. Mi alma tiene sed del Dios vivo.\n\nV/. Como busca la cierva corrientes de agua, así mi alma te busca a ti, Dios mío. R/.\n\nV/. Tiene sed de Dios, del Dios vivo: ¿cuándo entraré a ver el rostro de Dios? R/.\n\nV/. Recuerdo cómo marchaba a la cabeza del grupo,\nhacia la casa de Dios, entre cantos de júbilo y alabanza. R/.\n\nV/. Envía tu luz y tu verdad: que ellas me guíen y me conduzcan hasta tu monte santo,\nhasta tu morada. R/.\n\nV/. Que yo me acerque al altar de Dios, al Dios de mi alegría;\nque te dé gracias al son de la cítara, Dios, Dios mío. R/.\n\nV/. ¿Por qué te acongojas, alma mía, por qué te me turbas?\nEspera en Dios, que volverás a alabarlo: «Salud de mi rostro, Dios mío.» R/."
+      },
+      "evangelio": {
+        "cita": "Mateo 11,25-30",
+        "titulo": "",
+        "texto": "En aquel tiempo, exclamó Jesús:\n-«Te doy gracias, Padre, Señor de cielo y tierra, porque has escondido estas cosas a los sabios y entendidos y se las has revelado a la gente sencilla. Sí,\nPadre, así te ha parecido mejor.\nTodo me lo ha entregado mi Padre, y nadie conoce al Hijo más que el Padre, y nadie conoce al Padre sino el Hijo, y aquel a quien el Hijo se lo quiera revelar.\nVenid a mí todos los que estáis cansados y agobiados, y yo os aliviaré. Cargad con mi yugo y aprended de mí, que soy manso y humilde de corazón, y encontraréis vuestro descanso. Porque mi yugo es llevadero y mi carga ligera.»"
+      }
+    },
+    {
+      "numero": 7,
+      "monicion": "El cristiano, muerto al pecado con Cristo en el bautismo, ha entrado también en la vida nueva de la resurrección (1ª lect.). Destruida la personalidad de pecadores, nuestra existencia ha de estar marcada por las obras del amor, sobre las que un día seremos interpelados (Ev.). El bautismo es un misterio de iluminación (salmo).",
+      "primera": {
+        "cita": "carta del apóstol san Pablo a los Romanos 6, 3-9",
+        "titulo": "",
+        "texto": "Hermanos:\nLos que por el bautismo nos incorporamos a Cristo fuimos incorporados a su muerte.\nPor el bautismo fuimos sepultados con él en la muerte, para que, así como Cristo fue resucitado de entre los muertos por la gloria del Padre, así también nosotros andemos en una vida nueva.\nPor tanto, si hemos muerto con Cristo, creemos que también viviremos con él; pues sabemos que Cristo, una vez resucitado de entre los muertos, ya no muere más; la muerte ya no tiene dominio sobre él."
+      },
+      "salmo": {
+        "cita": "Sal 26, 1. 4. 7 y 8b y 9a. 13-14",
+        "antifona": "El Señor es mi luz y mi salvación.",
+        "texto": "V/. El Señor es mi luz y mi salvación.\nR/. El Señor es mi luz y mi salvación.\n\nV/. El Señor es mi luz y mi salvación, ¿a quién temeré?\nEl Señor es la defensa de mi vida, ¿quién me hará temblar? R/.\n\nV/. Una cosa pido al Señor, eso buscaré: habitar en la casa del Señor por los días de mi vida;\ngozar de la dulzura del Señor, contemplando su templo. R/.\n\nV/. Escúchame, Señor, que te llamo;\nten piedad, respóndeme. Tu rostro buscaré, Señor, no me escondas tu rostro. R/.\n\nV/. Espero gozar de la dicha del Señor en el país de la vida.\nEspera en el Señor, sé valiente, ten ánimo, espera en el Señor. R/."
+      },
+      "evangelio": {
+        "cita": "Mateo 25,31-46",
+        "titulo": "",
+        "texto": "En aquel tiempo, dijo Jesús a sus discípulos:\n-«Cuando venga en su gloria el Hijo del hombre, y todos los ángeles con él, se sentará en el trono de su gloria, y serán reunidas ante él todas las naciones.\nÉl separará a unos de otros, como un pastor separa las ovejas de las cabras.\nY pondrá las ovejas a su derecha y las cabras a su izquierda.\nEntonces dirá el rey a los de su derecha: \"Venid vosotros, benditos de mi Padre; heredad el reino preparado para vosotros desde la creación del mundo.\nPorque tuve hambre y me disteis de comer, tuve sed y me disteis de beber, fui forastero y me hospedasteis, estuve desnudo y me vestisteis, enfermo y me visitasteis, en la cárcel y vinisteis a verme.\"\nEntonces los justos le contestarán: \"Señor, ¿cuándo te vimos con hambre y te alimentamos, o con sed y te dimos de beber?; ¿cuándo te vimos forastero y te hospedamos, o desnudo y te vestimos?; ¿cuándo te vimos enfermo o en la cárcel y fuimos a verte?\"\nY el rey les dirá: \"Os aseguro que cada vez que lo hicisteis con uno de éstos, mis humildes hermanos, conmigo lo hicisteis.\"\nY entonces dirá a los de su izquierda: \"Apartaos de mí, malditos, id al fuego eterno preparado para el diablo y sus ángeles. Porque tuve hambre y no me disteis de comer, tuve sed v no me disteis de beber, fui forastero y no me hospedasteis, estuve desnudo y no me vestisteis, enfermo y en la cárcel y no me visitasteis.\"\nEntonces también éstos contestarán: \"Señor, ¿cuándo te vimos con hambre o con sed, o forastero o desnudo, o enfermo o en la cárcel, y no te asistimos?\"\nY él replicará: \"Os aseguro que cada vez que no lo hicisteis con uno de éstos, los humildes, tampoco lo hicisteis conmigo.\"\nY éstos irán al castigo eterno, y los justos a la vida eterna.»"
+      }
+    },
+    {
+      "numero": 8,
+      "monicion": "La señal de haber pasado de la muerte a la vida en el bautismo es el vivir amando a los hermanos (1ª lect.). Por eso, dichosos, como Cristo, los que han hecho de las bienaventuranzas el programa de su vida (Ev.). Confiemos en el Señor, que nos ayudará a vencer el egoísmo (salmo).",
+      "primera": {
+        "cita": "primera carta del apóstol san Juan 3, 14-16",
+        "titulo": "",
+        "texto": "Queridos hermanos:\nNosotros hemos pasado de la muerte a la vida: lo sabemos porque amamos a los hermanos.\nEl que no ama permanece en la muerte. El que odia a su hermano es un homicida. Y sabéis que ningún homicida lleva en sí vida eterna. En esto hemos conocido el amor: en que él dio su vida por nosotros. También nosotros debemos dar nuestra vida por los hermanos."
+      },
+      "salmo": {
+        "cita": "Sal 24, 4bc-5ab. 6 y 7bc. 20-21",
+        "antifona": "A ti, Señor, levanto mi alma.",
+        "texto": "V/. A ti, Señor, levanto mi alma.\nR/. A ti, Señor, levanto mi alma.\n\nV/. Señor, enséñame tus caminos, instrúyeme en tus sendas haz que camine con lealtad;\nenséñame, porque tú eres mi Dios y Salvador. R/.\n\nV/. Recuerda, Señor, que tu ternura y tu misericordia son eternas;\nacuérdate de mí con misericordia, por tu bondad, Señor. R/.\n\nV/. Guarda mi vida y líbrame, no quede yo defraudado de haber acudido a ti.\nLa inocencia y la rectitud me protegerán, porque espero en ti. R/."
+      },
+      "evangelio": {
+        "cita": "Mateo 5, 1-12a",
+        "titulo": "",
+        "texto": "En aquel tiempo, al ver Jesús el gentío, subió a la montaña, se sentó, y se acercaron sus discípulos; y él se puso a hablar, enseñándoles:\n-«Dichosos los pobres en el espíritu,\nporque de ellos es el reino de los cielos.\nDichosos los sufridos,\nporque ellos heredarán la tierra.\nDichosos los que lloran,\nporque ellos serán consolados.\nDichosos los que tienen hambre y sed de la justicia,\nporque ellos quedarán saciados.\nDichosos los misericordiosos,\nporque ellos alcanzarán misericordia.\nDichosos los limpios de corazón,\nporque ellos verán a Dios.\nDichosos los que trabajan por la paz,\nporque ellos se llamarán Hijos de Dios.\nDichosos los perseguidos por causa de la justicia,\nporque de ellos es el reino de los cielos.\nDichosos vosotros cuando os insulten y os persigan y os calumnien de cualquier modo por mi causa. Estad alegres y contentos, porque vuestra recompensa será grande en el cielo.»"
+      }
+    },
+    {
+      "numero": 9,
+      "monicion": "El cristiano, que en esta vida se ha alimentado de la Eucaristía, lleva dentro de sí -la energíade la resurrección, que transformará un día su condición mortal (1ª lect.). Es la fuerza del grano de trigo, Cristo, que da fruto en nosotros, haciéndonos morir con él para alcanzar la vida eterna (Ev.). Los que confían en el poder de este misterio no quedarán defraudados (salmo).",
+      "primera": {
+        "cita": "carta del apóstol san Pablo a los Filipenses 3,20-21",
+        "titulo": "",
+        "texto": "Hermanos:\nNosotros somos ciudadanos del cielo, de donde aguardamos un Salvador: el Señor Jesucristo.\nÉl transformará nuestro cuerpo humilde, según el modelo de su cuerpo glorioso, con esa energía que posee para sometérselo todo."
+      },
+      "salmo": {
+        "cita": "Sal 24, 4bc-5ab. 6 y 7bc. 20-21",
+        "antifona": "A ti, Señor, levanto mi alma.",
+        "texto": "V/. A ti, Señor, levanto mi alma.\nR/. A ti, Señor, levanto mi alma.\n\nV/. Señor, enséñame tus caminos, instrúyeme en tus sendas haz que camine con lealtad;\nenséñame, porque tú eres mi Dios y Salvador. R/.\n\nV/. Recuerda, Señor, que tu ternura y tu misericordia son eternas;\nacuérdate de mí con misericordia, por tu bondad, Señor. R/.\n\nV/. Guarda mi vida y líbrame, no quede yo defraudado de haber acudido a ti.\nLa inocencia y la rectitud me protegerán, porque espero en ti. R/."
+      },
+      "evangelio": {
+        "cita": "Juan 12,23-28",
+        "titulo": "",
+        "texto": "En aquel tiempo, dijo Jesús a sus discípulos:\n-«Ha llegado la hora de que sea glorificado el Hijo del hombre.\nOs aseguro que si el grano de trigo no cae en tierra y muere, queda infecundo; pero si muere, da mucho fruto. El que se ama a sí mismo se pierde, y el que se aborrece a sí mismo en este mundo se guardará para la vida eterna. El que quiera servirme, que me siga, y donde esté yo, allí también estará mi servidor; a quien me sirva, el Padre lo premiará.\nAhora mi alma está agitada, y ¿qué diré?: Padre, líbrame de esta hora. Pero si por esto he venido, para esta hora. Padre, glorifica tu nombre.»\nEntonces vino una voz del cielo:\n-«Lo he glorificado y volveré a glorificarlo.»"
+      }
+    },
+    {
+      "numero": 10,
+      "monicion": "La angustia de la muerte se traduce, en el creyente, en la búsqueda de Dios (1ª lect. y salmo). Como los discípulos de Emaús, le pedimos que se quede con nosotros porque se acerca la noche. Su respuesta es sentarse con nosotros a la mesa y darnos su cuerpo como alimento (Ev.).",
+      "primera": {
+        "cita": "libro de Job 19, 1. 23-27",
+        "titulo": "",
+        "texto": "Respondió Job a sus amigos:\n-«¡Ojalá se escribieran mis palabras,\nojalá se grabaran en cobre,\ncon cincel de hierro y en plomo\nse escribieran para siempre en la roca!\nYo sé que está vivo mi Redentor,\ny que al final se alzará sobre el polvo:\ndespués que me arranquen la piel,\nya sin carne, veré a Dios;\nyo mismo lo veré, y no otro,\nmis propios ojos lo verán.»"
+      },
+      "salmo": {
+        "cita": "Sal 41, 2. 3. 5bcd; 42, 3. 4. 5",
+        "antifona": "Mi alma tiene sed del Dios vivo.",
+        "texto": "V/. Mi alma tiene sed del Dios vivo.\nR/. Mi alma tiene sed del Dios vivo.\n\nV/. Como busca la cierva corrientes de agua, así mi alma te busca a ti, Dios mío.\nTiene sed de Dios, del Dios vivo: ¿cuándo entraré a ver el rostro de Dios? R/.\n\nV/. Recuerdo cómo marchaba a la cabeza del grupo,\nhacia la casa de Dios, entre cantos de júbilo y alabanza. R/.\n\nV/. Envía tu luz y tu verdad: que ellas me guíen y me conduzcan hasta tu monte santo,\nhasta tu morada. R/.\n\nV/. Que yo me acerque al altar de Dios, al Dios de mi alegría;\nque te dé gracias al son de la cítara, Dios, Dios mío. R/.\n\nV/. ¿Por qué te acongojas, alma mía, por qué te me turbas?\nEspera en Dios, que volverás a alabarlo: «Salud de mi rostro, Dios mío.» R/."
+      },
+      "evangelio": {
+        "cita": "Lucas 24, 13-16. 28-35",
+        "titulo": "",
+        "texto": "Dos discípulos de Jesús iban andando aquel mismo día, el primero de la semana, a una aldea llamada Emaús, distante unas dos leguas de Jerusalén; iban comentando todo lo que había sucedido. Mientras conversaban y discutían, Jesús en persona se acercó y se puso a caminar con ellos. Pero sus ojos no eran capaces de reconocerlo.\nYa cerca de la aldea donde iban, él hizo ademán de seguir adelante; pero ellos le apremiaron, diciendo: -«Quédate con nosotros, porque atardece y el día va de caída. »\nY entró para quedarse con ellos. Sentado a la mesa con ellos, tomó el pan, pronunció la bendición, lo partió y se lo dio. A ellos se les abrieron los ojos y lo reconocieron. Pero él desapareció.\nEllos comentaron: -«¿No ardía nuestro corazón mientras nos hablaba por el camino y nos explicaba las Escrituras?» Y, levantándose al momento, se volvieron a Jerusalén, donde encontraron reunidos a los Once con sus compañeros, que estaban diciendo:\n-«Era verdad, ha resucitado el Señor y se ha aparecido a Simón.»\nY ellos contaron lo que les había pasado por el camino y cómo lo habían reconocido al partir el pan."
+      }
+    },
+    {
+      "numero": 11,
+      "monicion": "La muerte del cristiano representa el final de una vida concebida como una ofrenda a Dios y un servicio (1ª lect.). Ante la muerte de los demás, debemos afirmar nuestra confianza en que el Señor no dejará de manifestar su gloria (Ev.). Con el salmista, renovemos nuestra fe esperanzada en la palabra del Señor (salmo).",
+      "primera": {
+        "cita": "carta del apóstol san Pablo a los Romanos 14, 7-9. 10c-12",
+        "titulo": "",
+        "texto": "Hermanos:\nNinguno de nosotros vive para sí mismo y ninguno muere para sí mismo.\nSi vivimos, vivimos para el Señor; si morimos, morimos para el Señor; en la vida y en la muerte somos del Señor.\nPara esto murió y resucitó Cristo: para ser Señor de vivos y muertos.\nTodos compareceremos ante el tribunal de Dios, porque está escrito:\n«Por mi vida, dice el Señor,\nante mí se doblará toda rodilla,\na mí me alabará toda lengua. »\nPor eso, cada uno dará cuenta a Dios de sí mismo."
+      },
+      "salmo": {
+        "cita": "Sal 129, 1-2. 3-4. 5-6. 7. 8",
+        "antifona": "Espero en el Señor, espero en su palabra.",
+        "texto": "V/. Espero en el Señor, espero en su palabra.\nR/. Espero en el Señor, espero en su palabra.\n\nV/. Desde lo hondo a ti grito, Señor;\nSeñor, escucha mi voz;\nestén tus oídos atentos a la voz de mi súplica. R/.\n\nV/. Si llevas cuenta de los delitos, Señor, ¿quién podrá resistir?\nPero de ti procede el perdón, y así infundes respeto. R/.\n\nV/. Mi alma espera en el Señor, espera en su palabra;\nmi alma aguarda al Señor, más que el centinela la aurora. R/.\n\nV/. Aguarde Israel al Señor, como el centinela la aurora;\nporque del Señor viene la misericordia, la redención copiosa. R/.\n\nV/. Y él redimirá a Israel de todos sus delitos. R/."
+      },
+      "evangelio": {
+        "cita": "Juan 11,32-45",
+        "titulo": "",
+        "texto": "En aquel tiempo, cuando llegó María, la hermana de Lázaro; adonde estaba\nJesús, al verlo se echó a sus pies diciéndole: -«Señor, si hubieras estado aquí no habría muerto mi hermano.»\nJesús, viéndola llorar a ella y viendo llorar a los judíos que la acompañaban, sollozó y, muy conmovido, preguntó: -«¿Dónde lo habéis enterrado?»\nLe contestaron: -«Señor, ven a verlo.»\nJesús se echó a llorar.\nLos judíos comentaban: -«¡Cómo lo quería!»\nPero algunos dijeron: -«Y uno que le ha abierto los ojos a un ciego, ¿no podía haber impedido que muriera éste?»\nJesús, sollozando de nuevo, llega al sepulcro. Era una cavidad cubierta con una losa.\nDice Jesús: -«Quitad la losa.»\nMarta, la hermana del muerto, le \"dice: -«Señor, ya huele mal, porque lleva cuatro días.»\nJesús le dice: -«¿No te he dicho que si crees verás la gloria de Dios?»\nEntonces quitaron la losa.\nJesús, levantando los ojos a lo alto, dijo: -«Padre, te doy gracias porque me has escuchado; yo sé que tú me escuchas siempre; pero lo digo por la gente que me rodea, para que crean que tú me has enviado.»\nY dicho esto, gritó con voz potente: -«Lázaro, ven afuera.» El muerto salió, los pies y las manos atados con vendas, y la cara envuelta en un sudario. Jesús les dijo: -«Desatadlo y dejadlo andar.»\nY muchos judíos que habían venido a casa de María, al ver lo que había hecho\nJesús, creyeron en él."
+      }
+    },
+    {
+      "numero": 12,
+      "monicion": "Dios mismo sostiene la esperanza de los que se someten con fe a su voluntad (1ª lect.). Dichosos los que saben permanecer en vela y están preparados (Ev.). El amor de Dios, amor de Padre, ofrece protección y fortaleza a los que confían en él (salmo).",
+      "primera": {
+        "cita": "libro de las Lamentaciones 3, 17-26",
+        "titulo": "",
+        "texto": "Me han arrancado la paz,\ny ni me acuerdo de la dicha;\nme digo: «Se me acabaron las fuerzas\ny mi esperanza en el Señor.»\nFíjate en mi aflicción y en mi amargura,\nen la hiel que me envenena;\nno hago más que pensar en ello,\ny estoy abatido.\nPero hay algo que traigo a la memoria\ny me da esperanza:\nque la misericordia del Señor no termina\ny no se acaba su compasión;\nantes bien, se renuevan cada mañana:\n¡qué grande es tu fidelidad!\nEl Señor es mi lote, me digo,\ny espero en él.\nEl Señor es bueno para los que en él esperan\ny lo buscan;\nes bueno esperar en silencio\nla salvación del Señor."
+      },
+      "salmo": {
+        "cita": "Sal 102, 8 y 10. 13-14. 15-16. 17-18",
+        "antifona": "El Señor es quien salva a los justos.",
+        "texto": "V/. El Señor es quien salva a los justos.\nR/. El Señor es quien salva a los justos.\n\nV/. El Señor es compasivo y misericordioso, lento a la ira y rico en clemencia;\nno nos trata como merecen nuestros pecados ni nos paga según nuestras culpas. R/.\n\nV/. Como un padre siente ternura por sus hijos,\nsiente el Señor ternura por sus fieles;\nporque él conoce nuestra masa, se acuerda de que somos barro. R/.\n\nV/. Los días del hombre duran lo que la hierba,\nflorecen como la flor del campo, que el viento la roza,\ny ya no existe, su terreno no volverá a verla. R/.\n\nV/. Pero la misericordia del Señor dura siempre,\nsu justicia pasa de hijos a nietos: para los que guardan la alianza y recitan y cumplen sus mandatos. R/."
+      },
+      "evangelio": {
+        "cita": "Lucas 12,35-40",
+        "titulo": "",
+        "texto": "En aquel tiempo, dijo Jesús a sus discípulos:\n-«Tened ceñida la cintura y encendidas las lámparas. Vosotros estad como los que aguardan a que su señor vuelva de la boda, para abrirle apenas venga y llame. Dichosos los criados a quienes el señor, al llegar, los encuentre en vela; os aseguro que se ceñirá, los hará sentar a la mesa y los irá sirviendo.\nY, si llega entrada la noche o de madrugada y los encuentra así, dichosos ellos. Comprended que si supiera el dueño de casa a qué hora viene el ladrón, no le dejaría abrir un boquete.\nLo mismo vosotros, estad preparados, porque a la hora que menos penséis viene el Hijo del hombre.»"
+      }
+    },
+    {
+      "numero": 13,
+      "monicion": "El sufrimiento y las pruebas de esta vida purifican al hombre y lo preparan para el encuentro con Dios (1ª lect.). Estas pruebas lo ayudan a permanecer vigilante (Ev.). El salmo canta anticipadamente la liberación de toda desgracia.",
+      "primera": {
+        "cita": "libro de la Sabiduría 3, 1-6. 9",
+        "titulo": "",
+        "texto": "La vida de los justos está en manos de Dios,\ny no los tocará el tormento.\nLa gente insensata pensaba que morían,\nconsideraba su tránsito como una desgracia,\ny su partida de entre nosotros como una destrucción;\npero ellos están en paz.\nLa gente pensaba que cumplían una pena,\npero ellos esperaban de lleno la inmortalidad;\nsufrieron pequeños castigos, recibirán grandes favores,\nporque Dios los puso a prueba\ny los halló dignos de sí;\nlos probó como oro en crisol,\nlos recibió como sacrificio del holocausto.\nLos que confían en él comprenderán la verdad,\nlos fieles a su amor seguirán a su lado;\nporque quiere a sus devotos, se apiada de ellos\ny mira por sus elegidos."
+      },
+      "salmo": {
+        "cita": "Sal 114, 5-6; 115, 10-11. 15-16ac",
+        "antifona": "Caminaré en presencia del Señor en el país de la vida.",
+        "texto": "V/. Caminaré en presencia del Señor en el país de la vida.\nR/. Caminaré en presencia del Señor en el país de la vida.\n\nV/. El Señor es benigno y justo, nuestro Dios es compasivo;\nel Señor guarda a los sencillos: estando yo sin fuerzas, me salvó. R/.\n\nV/. Tenía fe, aun cuando dije: «¡Qué desgraciado soy!»\nYo decía en mi apuro: «Los hombres son unos mentirosos.» R/.\n\nV/. Mucho le cuesta al Señor la muerte de sus fieles.\nSeñor, yo soy tu siervo, rompiste mis cadenas. R/."
+      },
+      "evangelio": {
+        "cita": "Mateo 25,1-13",
+        "titulo": "",
+        "texto": "En aquel tiempo, dijo Jesús a sus discípulos esta parábola:\n-«Se parecerá el reino de los cielos a diez doncellas que tomaron sus lámparas y salieron a esperar al esposo. Cinco de ellas eran necias y cinco eran sensatas.\nLas necias, al tomar las lámparas, se dejaron el aceite; en cambio, las sensatas se llevaron alcuzas de aceite con las lámparas.\nEl esposo tardaba, les entró sueño a todas y se durmieron.\nA medianoche se oyó una voz: \"¡Que llega el esposo, salid a recibirlo!\"\nEntonces se despertaron todas aquellas doncellas y se pusieron a preparar sus lámparas.\nY las necias dijeron a las sensatas:\n\"Dadnos un poco de vuestro aceite, que se nos apagan las lámparas.\"\nPero las sensatas contestaron:\n\"Por si acaso no hay bastante para vosotras y nosotras, mejor es que vayáis a la tienda y os lo compréis.\"\nMientras iban a comprarlo, llegó el esposo, y las que estaban preparadas entraron con él al banquete de bodas, y se cerró la puerta.\nMás tarde llegaron también las otras doncellas, diciendo:\n\"Señor, señor, ábrenos.\"\nPero él respondió:\n\"Os lo aseguro: no os conozco.\"\nPor tanto, velad, porque no sabéis el día ni la hora. »"
+      }
+    },
+    {
+      "numero": 14,
+      "monicion": "La visión apocalíptica de la resurrección de los muertos y del juicio efectuado por Dios en base a las obras de cada uno (1ª lect. y Ev.) anuncia también el principio de los cielos nuevos y de la tierra nueva, en lo que todo será transformado. El salmo expresa la convicción de que nadie es inocente frente a Dios, pero manifiesta también la confianza en él.",
+      "primera": {
+        "cita": "libro del Apocalipsis 20, 11-21, 1",
+        "titulo": "",
+        "texto": "Yo, Juan, vi un trono blanco y grande, y al que estaba sentado en él. A su presencia desaparecieron cielo y tierra, porque no hay sitio para ellos.\nVi a los muertos, pequeños y grandes, de pie ante el trono. Se abrieron los libros y se abrió otro libro, el libro de la vida. Los muertos fueron juzgados según sus obras, escritas en los libros.\nEl mar entregó sus muertos, muerte y abismo entregaron sus muertos, y todos fueron juzgados según sus obras. Después muerte y abismo fueron arrojados al lago de fuego -el lago de fuego es la segunda muerte-. Los que no estaban escritos en el libro de la vida fueron arrojados al lago de fuego.\nLuego vi un cielo nuevo y una tierra nueva, porque el primer cielo y la primera tierra han pasado, y el mar ya no existe."
+      },
+      "salmo": {
+        "cita": "Sal 142, 1-2. 5-6. 7ab y 8ab. 10",
+        "antifona": "Señor, escucha mi oración.",
+        "texto": "V/. Señor, escucha mi oración.\nR/. Señor, escucha mi oración.\n\nV/. Señor, escucha mi oración;\ntú, que eres fiel, atiende a mi súplica;\ntú, que eres justo, escúchame. No llames a juicio a tú siervo,\npues ningún hombre vivo es inocente frente a ti. R/.\n\nV/. Recuerdo los tiempos antiguos, medito todas tus acciones,\nconsidero las obras de tus manos y extiendo mis brazos hacia ti: tengo sed de ti como tierra reseca. R/.\n\nV/. Escúchame en seguida, Señor, que me falta el aliento.\nEn la mañana hazme escuchar tu gracia, ya que confío en ti. R/.\n\nV/. Enséñame a cumplir tu voluntad, ya que tú eres mi Dios.\nTu espíritu, que es bueno, me guíe por tierra llana. R/."
+      },
+      "evangelio": {
+        "cita": "Mateo 25,31-46",
+        "titulo": "",
+        "texto": "En aquel tiempo, dijo Jesús a sus discípulos:\n-«Cuando venga en su gloria el Hijo del hombre, y todos los ángeles con él, se sentará en el trono de su gloria, y serán reunidas ante él todas las naciones.\nÉl separará a unos de otros, como un pastor separa las ovejas de las cabras.\nY pondrá las ovejas a su derecha y las cabras a su izquierda.\nEntonces dirá el rey a los de su derecha: \"Venid vosotros, benditos de mi Padre; heredad el reino preparado para vosotros desde la creación del mundo.\nPorque tuve hambre y me disteis de comer, tuve sed y me disteis de beber, fui forastero y me hospedasteis, estuve desnudo y me vestisteis, enfermo y me visitasteis, en la cárcel y vinisteis a verme.\"\nEntonces los justos le contestarán: \"Señor, ¿cuándo te vimos con hambre y te alimentamos, o con sed y te dimos de beber?; ¿cuándo te vimos forastero y te hospedamos, o desnudo y te vestimos?; ¿cuándo te vimos enfermo o en la cárcel y fuimos a verte?\"\nY el rey les dirá: \"Os aseguro que cada vez que lo hicisteis con uno de éstos, mis humildes hermanos, conmigo lo hicisteis.\"\nY entonces dirá a los de su izquierda: \"Apartaos de mí, malditos, id al fuego eterno preparado para el diablo y sus ángeles. Porque tuve hambre y no me disteis de comer, tuve sed v no me disteis de beber, fui forastero y no me hospedasteis, estuve desnudo y no me vestisteis, enfermo y en la cárcel y no me visitasteis.\"\nEntonces también éstos contestarán: \"Señor, ¿cuándo te vimos con hambre o con sed, o forastero o desnudo, o enfermo o en la cárcel, y no te asistimos?\"\nY él replicará: \"Os aseguro que cada vez que no lo hicisteis con uno de éstos, los humildes, tampoco lo hicisteis conmigo.\"\nY éstos irán al castigo eterno, y los justos a la vida eterna.»"
+      }
+    },
+    {
+      "numero": 15,
+      "monicion": "La fe en la resurrección futura, manifestada ya antes de la plena revelación de Jesucristo, se traduce en la oración y en las obras de piedad para con los difuntos (1ª lect.). Esta fe, incomprensible para los sabios del mundo, es un don de Dios para los sencillos y los que acuden a él (Ev.). El salmo expresa la confianza en esta preferencia divina por los sencillos.",
+      "primera": {
+        "cita": "segundo libro de los Macabeos 12,43-46",
+        "titulo": "",
+        "texto": "En aquellos días, Judas, jefe de Israel, recogió dos mil dracmas de plata en una colecta y las envió a Jerusalén a que ofreciesen un sacrificio de expiación.\nObró con gran rectitud y nobleza, pensando en la resurrección. Si no hubiera esperado la resurrección de los caídos, habría sido inútil y ridículo rezar por los muertos. Pero, considerando que a los que habían muerto piadosamente les estaba reservado un magnífico premio, la idea es piadosa y santa.\nPor eso, hizo una expiación por los muertos, para que fueran liberados del pecado."
+      },
+      "salmo": {
+        "cita": "Sal 114, 5-6; 115, 10-11. 15-16ac",
+        "antifona": "Caminaré en presencia del Señor en el país de la vida.",
+        "texto": "V/. Caminaré en presencia del Señor en el país de la vida.\nR/. Caminaré en presencia del Señor en el país de la vida.\n\nV/. El Señor es benigno y justo, nuestro Dios es compasivo;\nel Señor guarda a los sencillos: estando yo sin fuerzas, me salvó. R/.\n\nV/. Tenía fe, aun cuando dije: «¡Qué desgraciado soy!»\nYo decía en mi apuro: «Los hombres son unos mentirosos.» R/.\n\nV/. Mucho le cuesta al Señor la muerte de sus fieles.\nSeñor, yo soy tu siervo, rompiste mis cadenas. R/."
+      },
+      "evangelio": {
+        "cita": "Mateo 11,25-30",
+        "titulo": "",
+        "texto": "En aquel tiempo, exclamó Jesús:\n-«Te doy gracias, Padre, Señor de cielo y tierra, porque has escondido estas cosas a los sabios y entendidos y se las has revelado a la gente sencilla. Sí,\nPadre, así te ha parecido mejor.\nTodo me lo ha entregado mi Padre, y nadie conoce al Hijo más que el Padre, y nadie conoce al Padre sino el Hijo, y aquel a quien el Hijo se lo quiera revelar.\nVenid a mí todos los que estáis cansados y agobiados, y yo os aliviaré. Cargad con mi yugo y aprended de mí, que soy manso y humilde de corazón, y encontraréis vuestro descanso. Porque mi yugo es llevadero y mi carga ligera.»"
+      }
+    },
+    {
+      "numero": 16,
+      "monicion": "Una nueva creación, una nueva Jerusalén, un nuevo pueblo convertido en morada de Dios y espacio de comunión permanente con él (1ª lect.). He aquí la promesa de Jesús, cuando se despide de los discípulos para ir a prepararles sitio junto a él (Ev.). El salmo expresa la alegría de los peregrinos al acercarse a la nueva morada de Dios con los hombres.",
+      "primera": {
+        "cita": "libro del Apocalipsis 21, 1-5a. 6b-7",
+        "titulo": "",
+        "texto": "Yo, Juan, vi un cielo nuevo y una tierra nueva, porque el primer cielo y la primera tierra han pasado, y el mar ya no existe.\nY vi la ciudad santa, la nueva Jerusalén, que descendía del cielo, enviada por Dios, arreglada como una novia que se adorna para su esposo.\nY escuché una voz potente que decía desde el trono: -«Ésta es la morada de Dios con los hombres: acampará entre ellos. Ellos serán su pueblo, y Dios estará con ellos y será su Dios. Enjugará las lágrimas de sus ojos. Ya no habrá muerte, ni luto, ni llanto, ni dolor. Porque el primer mundo ha pasado.»\nY el que estaba sentado en el trono dijo:\n-«Todo lo hago nuevo. Yo soy el alfa y la omega, el principio y el fin. Al sediento, yo le daré a beber de balde de la fuente de agua viva. Quien salga vencedor heredará esto, porque yo seré su Dios y él será mi hijo."
+      },
+      "salmo": {
+        "cita": "Sal 121, 1-2. 4-5. 6-7. 8-9",
+        "antifona": "¡Qué alegría cuando me dijeron: «Vamos a la casa del Señor»!",
+        "texto": "V/. ¡Qué alegría cuando me dijeron: «Vamos a la casa del Señor»!\nR/. ¡Qué alegría cuando me dijeron: «Vamos a la casa del Señor»!\n\nV/. ¡Qué alegría cuando me dijeron: «Vamos a la casa del Señor»!\nYa están pisando nuestros pies tus umbrales, Jerusalén. R/.\n\nV/. Allá suben las tribus, las tribus del Señor,\nsegún la costumbre de Israel, a celebrar el nombre del Señor;\nen ella están los tribunales de justicia, en el palacio de David. R/.\n\nV/. Desead la paz a Jerusalén: «Vivan seguros los que te aman,\nhaya paz dentro de tus muros, seguridad en tus palacios.» R/.\n\nV/. Por mis hermanos y compañeros, voy a decir: «La paz contigo.»\nPor la casa del Señor, nuestro Dios, te deseo todo bien. R/."
+      },
+      "evangelio": {
+        "cita": "Juan 14,1-6",
+        "titulo": "",
+        "texto": "En aquel tiempo, dijo Jesús a sus discípulos:\n-«Que no tiemble vuestro corazón; creed en Dios y creed también en mí. En la casa de mi Padre hay muchas estancias; si no fuera así, ¿os habría dicho que voy a prepararos sitio? Cuando vaya y os prepare sitio, volveré y os llevaré conmigo, para que donde estoy yo, estéis también vosotros. Y adonde yo voy, ya sabéis el camino.»\nTomás le dice:\n-«Señor, no sabemos adónde vas, ¿cómo podemos saber el camino?»\nJesús le responde:\n-«Yo soy el camino, y la verdad, y la vida. Nadie va al Padre, sino por mí.»"
+      }
+    },
+    {
+      "numero": 17,
+      "monicion": "Ver a Dios es el objeto supremo de la vida del justo, el don inefable del amor de Dios que nos ha hecho hijos suyos (1ª lect.). Cristo es el mediador de este don que se convierte, después de la muerte, en descanso y gozo eternos (Ev.). Los creyentes suspiran por este don en medio del destierro de la vida mortal (salmo).",
+      "primera": {
+        "cita": "primera carta del apóstol san Juan 3, 1-2",
+        "titulo": "",
+        "texto": "Queridos hermanos:\nMirad qué amor nos ha tenido el Padre para llamarnos hijos de Dios, pues ¡lo somos! El mundo no nos conoce porque no le conoció a él.\nQueridos, ahora somos hijos de Dios y aún no se ha manifestado lo que seremos. Sabemos que, cuando se manifieste, seremos semejantes a él, porque lo veremos tal cual es."
+      },
+      "salmo": {
+        "cita": "Sal 41, 2. 3. 5bcd; 42, 3. 4. 5",
+        "antifona": "Mi alma tiene sed del Dios vivo.",
+        "texto": "V/. Mi alma tiene sed del Dios vivo.\nR/. Mi alma tiene sed del Dios vivo.\n\nV/. Como busca la cierva corrientes de agua, así mi alma te busca a ti, Dios mío. R/.\n\nV/. Tiene sed de Dios, del Dios vivo: ¿cuándo entraré a ver el rostro de Dios? R/.\n\nV/. Recuerdo cómo marchaba a la cabeza del grupo,\nhacia la casa de Dios, entre cantos de júbilo y alabanza. R/.\n\nV/. Envía tu luz y tu verdad: que ellas me guíen y me conduzcan hasta tu monte santo,\nhasta tu morada. R/.\n\nV/. Que yo me acerque al altar de Dios, al Dios de mi alegría;\nque te dé gracias al son de la cítara, Dios, Dios mío. R/.\n\nV/. ¿Por qué te acongojas, alma mía, por qué te me turbas?\nEspera en Dios, que volverás a alabarlo: «Salud de mi rostro, Dios mío.» R/."
+      },
+      "evangelio": {
+        "cita": "Mateo 11,25-30",
+        "titulo": "",
+        "texto": "En aquel tiempo, exclamó Jesús:\n-«Te doy gracias, Padre, Señor de cielo y tierra, porque has escondido estas cosas a los sabios y entendidos y se las has revelado a la gente sencilla. Sí,\nPadre, así te ha parecido mejor.\nTodo me lo ha entregado mi Padre, y nadie conoce al Hijo más que el Padre, y nadie conoce al Padre sino el Hijo, y aquel a quien el Hijo se lo quiera revelar.\nVenid a mí todos los que estáis cansados y agobiados, y yo os aliviaré. Cargad con mi yugo y aprended de mí, que soy manso y humilde de corazón, y encontraréis vuestro descanso. Porque mi yugo es llevadero y mi carga ligera.»"
+      }
+    },
+    {
+      "numero": 18,
+      "monicion": "Los discípulos de Jesús somos ciudadanos del cielo. Nuestra verdadera morada está allí (1ª lect.). Jesús resucitado nos ha precedido en la casa del Padre. Él volverá para hacernos entrar en el lugar preparado (Ev.). A través de esta vida, caminamos como peregrinos hacia la casa del Señor (salmo).",
+      "primera": {
+        "cita": "carta del apóstol san Pablo a los Filipenses 3,20-21",
+        "titulo": "",
+        "texto": "Hermanos:\nNosotros somos ciudadanos del cielo, de donde aguardamos un Salvador: el Señor Jesucristo.\nÉl transformará nuestro cuerpo humilde, según el modelo de su cuerpo glorioso, con esa energía que posee para sometérselo todo."
+      },
+      "salmo": {
+        "cita": "Sal 121, 1-2. 4-5. 6-7. 8-9",
+        "antifona": "¡Qué alegría cuando me dijeron: «Vamos a la casa del Señor»!",
+        "texto": "V/. ¡Qué alegría cuando me dijeron: «Vamos a la casa del Señor»!\nR/. ¡Qué alegría cuando me dijeron: «Vamos a la casa del Señor»!\n\nV/. ¡Qué alegría cuando me dijeron: «Vamos a la casa del Señor»!\nYa están pisando nuestros pies tus umbrales, Jerusalén. R/.\n\nV/. Allá suben las tribus, las tribus del Señor,\nsegún la costumbre de Israel, a celebrar el nombre del Señor;\nen ella están los tribunales de justicia, en el palacio de David. R/.\n\nV/. Desead la paz a Jerusalén: «Vivan seguros los que te aman,\nhaya paz dentro de tus muros, seguridad en tus palacios.» R/.\n\nV/. Por mis hermanos y compañeros, voy a decir: «La paz contigo.»\nPor la casa del Señor, nuestro Dios, te deseo todo bien. R/."
+      },
+      "evangelio": {
+        "cita": "Juan 14,1-6",
+        "titulo": "",
+        "texto": "En aquel tiempo, dijo Jesús a sus discípulos:\n-«Que no tiemble vuestro corazón; creed en Dios y creed también en mí. En la casa de mi Padre hay muchas estancias; si no fuera así, ¿os habría dicho que voy a prepararos sitio? Cuando vaya y os prepare sitio, volveré y os llevaré conmigo, para que donde estoy yo, estéis también vosotros. Y adonde yo voy, ya sabéis el camino.»\nTomás le dice:\n-«Señor, no sabemos adónde vas, ¿cómo podemos saber el camino?»\nJesús le responde:\n-«Yo soy el camino, y la verdad, y la vida. Nadie va al Padre, sino por mí.»"
+      }
+    },
+    {
+      "numero": 19,
+      "monicion": "La fe que nos reune ante esta muerte nos ofrece el consuelo de saber que el mismo Hijo de Dios sufrió, para salvarnos, la muerte más desgarradora (Ev.). De él viene la salvación para todos aquellos que la esperan y están unidos a él por el sacramento del bautismo (1ª lect.). Desde lo más profundo de nuestro dolor, esperemos en la Palabra del Señor (salmo).",
+      "primera": {
+        "cita": "libro de las Lamentaciones 3, 17-26",
+        "titulo": "",
+        "texto": "Me han arrancado la paz,\ny ni me acuerdo de la dicha;\nme digo: «Se me acabaron las fuerzas\ny mi esperanza en el Señor.»\nFíjate en mi aflicción y en mi amargura,\nen la hiel que me envenena;\nno hago más que pensar en ello,\ny estoy abatido.\nPero hay algo que traigo a la memoria\ny me da esperanza:\nque la misericordia del Señor no termina\ny no se acaba su compasión;\nantes bien, se renuevan cada mañana:\n¡qué grande es tu fidelidad!\nEl Señor es mi lote, me digo,\ny espero en él.\nEl Señor es bueno para los que en él esperan\ny lo buscan;\nes bueno esperar en silencio\nla salvación del Señor."
+      },
+      "salmo": {
+        "cita": "Sal 129, 1-2. 3-4. 5-6. 7. 8",
+        "antifona": "Espero en el Señor, espero en su palabra.",
+        "texto": "V/. Espero en el Señor, espero en su palabra.\nR/. Espero en el Señor, espero en su palabra.\n\nV/. Desde lo hondo a ti grito, Señor;\nSeñor, escucha mi voz;\nestén tus oídos atentos a la voz de mi súplica. R/.\n\nV/. Si llevas cuenta de los delitos, Señor, ¿quién podrá resistir?\nPero de ti procede el perdón, y así infundes respeto. R/.\n\nV/. Mi alma espera en el Señor, espera en su palabra;\nmi alma aguarda al Señor, más que el centinela la aurora. R/.\n\nV/. Aguarde Israel al Señor, como el centinela la aurora;\nporque del Señor viene la misericordia, la redención copiosa. R/.\n\nV/. Y él redimirá a Israel de todos sus delitos. R/."
+      },
+      "evangelio": {
+        "cita": "Juan 19, 17-18. 25-30",
+        "titulo": "",
+        "texto": "En aquel tiempo, Jesús, cargando con la cruz, salió al sitio llamado «de la Calavera» (que en hebreo se dice Gólgota), donde lo crucificaron; y con él a otros dos, uno a cada lado, y en medio, Jesús.\nJunto a la cruz de Jesús estaban su madre, la hermana de su madre, María, la de Cleofás, y María, la Magdalena. Jesús, al ver a su madre y cerca al discípulo que tanto quería, dijo a su madre: -«Mujer, ahí tienes a tu hijo.»\nLuego, dijo al discípulo: -«Ahí tienes a tu madre.»\nY desde aquella hora, el discipulo la recibió en su casa.\nDespués de esto, sabiendo Jesús que todo había llegado a su término, para que se cumpliera la Escritura dijo: -«Tengo sed. »\nHabía allí un jarro lleno de vinagre. Y, sujetando una esponja empapada en vinagre a una caña de hisopo, se la acercaron a la boca. Jesús, cuando tomó el vinagre, dijo: -«Está cumplido.»\nE, inclinando la cabeza, entregó el espíritu."
+      }
+    },
+    {
+      "numero": 20,
+      "monicion": "Morir joven no es un castigo de Dios. Para él no cuentan los años, sino una vida pura y santa (1ª lect.). El recuerdo de Jesucristo, muerto joven también, contribuirá a mitigar nuestra pena. Él devolvió la vida al hijo de la viuda Naín, para anunciar que él tiene el poder de dar la vida eterna (Ev.). Nuestros difuntos estarán con el Señor “en el país de la vida” (salmo).",
+      "primera": {
+        "cita": "libro de la Sabiduría 4, 7-15",
+        "titulo": "",
+        "texto": "El justo, aunque muera prematuramente,\ntendrá descanso;\nvejez venerable no son los muchos días,\nni se mide por el número de años;\ncanas del hombre son la prudencia,\ny edad avanzada, una vida sin tacha.\nAgradó a Dios, y Dios lo amó,\nvivía entre pecadores, y Dios se lo llevó;\nlo arrebató, para que la malicia\nno pervirtiera su conciencia,\npara que la perfidia no sedujera su alma;\nla fascinación del vicio ensombrece la virtud,\nel vértigo de la pasión\npervierte una mente sin malicia.\nMaduró en pocos años, cumplió mucho tiempo;\ncomo su alma era agradable a Dios,\nse dio prisa en salir de la maldad;\nla gente lo ve y no lo comprende,\nno se da cuenta de esto:\nque quiere a sus elegidos, se apiada de ellos\ny mira por sus devotos."
+      },
+      "salmo": {
+        "cita": "Sal 114, 5-6; 115, 10-11. 15-16ac",
+        "antifona": "Caminaré en presencia del Señor en el país de la vida.",
+        "texto": "V/. Caminaré en presencia del Señor en el país de la vida.\nR/. Caminaré en presencia del Señor en el país de la vida.\n\nV/. El Señor es benigno y justo, nuestro Dios es compasivo;\nel Señor guarda a los sencillos: estando yo sin fuerzas, me salvó. R/.\n\nV/. Tenía fe, aun cuando dije: «¡Qué desgraciado soy!»\nYo decía en mi apuro: «Los hombres son unos mentirosos.» R/.\n\nV/. Mucho le cuesta al Señor la muerte de sus fieles.\nSeñor, yo soy tu siervo, rompiste mis cadenas. R/."
+      },
+      "evangelio": {
+        "cita": "Lucas 7, 11-17",
+        "titulo": "",
+        "texto": "En aquel tiempo, iba Jesús camino de una ciudad llamada Naín, e iban con él sus discípulos y mucho gentío.\nCuando se acercaba a la entrada de la ciudad, resultó que sacaban a enterrar a un muerto, hijo único de su madre, que era viuda; y un gentío considerable de la ciudad la acompañaba.\nAl verla el Señor, le dio lástima y le dijo: -«No llores.»\nSe acercó al ataúd, lo tocó (los que lo llevaban se pararon) y dijo:\n-«¡Muchacho, a ti te lo digo, levántate!»\nEl muerto se incorporó y empezó a hablar, y Jesús se lo entregó a su madre.\nTodos, sobrecogidos, daban gloria a Dios, diciendo: -«Un gran Profeta ha surgido entre nosotros. Dios ha visitado a su pueblo.»\nLa noticia del hecho se divulgó por toda la comarca y por Judea entera."
+      }
+    },
+    {
+      "numero": 21,
+      "monicion": "Cristo resucitado es el nuevo Adán que ha vencido a la muerte y encabeza una nueva humanidad destinada a la resurrección y a la vida (1ª lect.). La tumba vacía de Jesús es el testimonio mudo de que la muerte no podía retener al que la aniquiló para siempre (Ev.). El salmo canta la certeza del justo que cree en el Señor y espera en la victoria final.",
+      "primera": {
+        "cita": "primera carta del Apóstol San Pablo a los Corintios 15, 20-24a. 25-28",
+        "titulo": "",
+        "texto": "Hermanos:\nCristo resucitó de entre los muertos: el primero de todos.\nSi por un hombre vino la muerte, por un hombre ha venido la resurrección. Si por Adán murieron todos, por Cristo todos volverán a la vida. Pero cada uno en su puesto: primero Cristo, como primicia; después, cuando él vuelva, todos los que son de Cristo; después los últimos, cuando Cristo devuelva a Dios Padre su reino.\nCristo tiene que reinar hasta que Dios haga de sus enemigos estrado de sus pies. El último enemigo aniquilado será la muerte. Porque Dios ha sometido todo bajo sus pies.\nPero, al decir que lo ha sometido todo, es evidente que excluye al que le ha sometido todo.\nY, cuando todo esté sometido, entonces también el Hijo se someterá a Dios, al que se lo había sometido todo.\nY así Dios lo será todo para todos."
+      },
+      "salmo": {
+        "cita": "Sal 26, 1. 4. 7 y 8b y 9a. 13-14",
+        "antifona": "El Señor es mi luz y mi salvación.",
+        "texto": "V/. El Señor es mi luz y mi salvación.\nR/. El Señor es mi luz y mi salvación.\n\nV/. El Señor es mi luz y mi salvación, ¿a quién temeré?\nEl Señor es la defensa de mi vida, ¿quién me hará temblar? R/.\n\nV/. Una cosa pido al Señor, eso buscaré: habitar en la casa del Señor por los días de mi vida;\ngozar de la dulzura del Señor, contemplando su templo. R/.\n\nV/. Escúchame, Señor, que te llamo;\nten piedad, respóndeme. Tu rostro buscaré, Señor, no me escondas tu rostro. R/.\n\nV/. Espero gozar de la dicha del Señor en el país de la vida.\nEspera en el Señor, sé valiente, ten ánimo, espera en el Señor. R/."
+      },
+      "evangelio": {
+        "cita": "Marcos 15, 33-39; 16, 1-6",
+        "titulo": "",
+        "texto": "Al llegar el mediodía, toda la región quedó en tinieblas hasta la media tarde.\nY, a la media tarde, Jesús clamó con voz potente:\n-«Eloí, Eloí, lamá sabaktaní.»\n(Que significa: «Dios mío,: Dios mío, ¿por qué me has abandonado?»)\nAlgunos de los presentes, al oírlo, decían:\n-«Mira, está llamando a Elías.»\nY uno echó a correr y, empapando una esponja en vinagre, la sujetó a una caña, y le daba de beber, diciendo:\n-«Dejad, a ver si viene Elías a bajarlo.»\nY Jesús, dando un fuerte grito, expiró.\nEl velo del templo se rasgó en dos, de arriba abajo.\nEl centurión, que estaba enfrente, al ver cómo había expirado, dijo:\n-«Realmente este hombre era Hijo de Dios.»\nPasado el sábado, María Magdalena, María la de Santiago, y Salomé compraron aromas para ir a embalsamar a Jesús. Y muy temprano, el primer día de la semana, al salir el sol, fueron al sepulcro. Y se decían unas a otras:\n-«¿Quién nos correrá la piedra de la entrada del sepulcro?\nAl mirar, vieron que la piedra estaba corrida, y eso que era muy grande. Entraron en el sepulcro y vieron a un joven sentado a la derecha, vestido de blanco.\nY se asustaron. Él les dijo:\n-«No os asustéis. ¿Buscáis a Jesús el Nazareno, el crucificado? No está aquí.\nHa resucitado. Mirad el sitio donde lo pusieron.»"
+      }
+    }
+  ],
+  "oraciones_fieles": [
+    {
+      "numero": 1,
+      "texto": "Celebrante: Hermanos: Invoquemos confiadamente a Dios, Padre todopoderoso, que ha resucitado a su Hijo de entre los muertos, para que escuche nuestra plegaria por los vivos y los difuntos. Lector: Por nuestro hermano/a N, que, formando parte de esta comunidad cristiana, ha terminado su peregrinación terrena, roguemos al Señor. Por la Iglesia Santa de Dios, que debe ser en el mundo testimonio del destino feliz que sobrepasa las fronteras de la muerte, roguemos al Señor. Por la paz de las naciones y de los hombres, llamados a la vida verdadera que supera todo dolor, roguemos al Señor. Por todos los presentes, especialmente por los familiares de nuestro/a hermano/a N, que desean el consuelo y la esperanza, roguemos al Señor. Por todos los fieles difuntos, que nos han precedido con la señal de la fe, roguemos al Señor. Celebrante: Oh Dios, sólo tú conoces lo que hay en el corazón de cada ser humano, recibe nuestras súplicas y concede a los difuntos entrar en la felicidad de tu descanso. Por Jesucristo, nuestro Señor. Amén."
+    },
+    {
+      "numero": 2,
+      "texto": "Celebrante: Oremos, hermanos, en favor de nuestro/a hermano/a difunto/a N y de los que lloran su muerte, y pidamos también por las necesidades de la Iglesia y de todo el mundo. Lector: Para que el Padre misericordioso acoja a su siervo/a N y le conceda la abundancia de su perdón y de su paz, roguemos al Señor. Para que todos los cristianos tengan sentimientos de misericordia y se ayuden fraternalmente en todas las situaciones dolorosas, roguemos al Señor. Para que la paz de Cristo esté en el corazón de todos los presentes y se produzca frutos de solidaridad y de justicia, roguemos al Señor. Para que las naciones de la tierra vivan en paz y concordia, y los pueblos menos favorecidos encuentren la ayuda que necesitan, roguemos a Señor. Para que los fieles difuntos, purificados de sus culpas, alcancen la eterna bienaventuranza, roguemos al Señor. Celebrante: Padre de bondad, tu Hijo, al morir, destruyó nuestra muerte y, al resucitar, restauró la vida; concédenos ser en el mundo fermento de renovación y haz que un día nos encontremos todos en tu reino glorioso. Por Jesucristo, nuestro Señor. Amén."
+    },
+    {
+      "numero": 3,
+      "texto": "Celebrante: Pidamos confiadamente por nuestro/a hermano/a N, y también por la Iglesia y por todos los hombres. Lector: Para que Dios reciba a este hijo/a suyo/a y le dé la felicidad que no tiene fin, roguemos al Señor. Para que acepte el bien que nuestro/a hermano/a hizo mientras peregrinó en este mundo, roguemos al Señor. Para que perdone sus pecados y debilidades y cancele todas sus deudas, roguemos al Señor. Para que consuele a los familiares y amigos que lloran su ausencia, roguemos al Señor. Para que dé fortaleza y esperanza a todos los que sufren, roguemos al Señor. Para que nos haga crecer en la fe y madurar en el amor a cuantos participamos en esta celebración, roguemos al Señor. Para que reciba en la felicidad de su reino a todos los difuntos, roguemos al Señor. Celebrante: Escucha, Señor, las oraciones que te dirigimos en favor de nuestro/a hermano/a N y de todos los fieles difuntos; llévalos, junto a ti, al lugar de la luz y de la vida. Por Jesucristo, nuestro Señor. Amén."
+    },
+    {
+      "numero": 4,
+      "texto": "Celebrante: Oremos a Jesucristo, el Señor, por nuestro/a hermano/a N que ha pasado ya de la muerte a la vida. Lector: Para que introduzca en la gran asamblea de sus elegidos al que (a la que) incorporó a su Iglesia por el Bautismo, roguemos al Señor. Para que admita en el banquete del reino eterno al que (a la que) alimentó con el pan de la Eucaristía, roguemos al Señor. Para que conceda la salud eterna al que (a la que) ungió con el óleo de la salvación, roguemos al Señor. Para que perdone todas sus culpas al que (a la que) reconcilió con su Iglesia por la Penitencia, roguemos al Señor. Para que viva en plenitud lo que creyó y esperó, roguemos al Señor. Para que consuele en su pena a los familiares y amigos, él, que lloró por la muerte de su amigo Lázaro, roguemos al Señor. Para que tenga en cuenta las buenas obras de aquellos que mueren con la esperanza puesta en él y los recompense generosamente, él, que es juez misericordioso, roguemos al Señor. Celebrante: Señor Jesús, escucha nuestras súplicas, tú que por amor a nosotros pasaste por el trance de la muerte y vives y reinas por los siglos de los siglos. Amén."
+    },
+    {
+      "numero": 5,
+      "texto": "Celebrante: Oremos a Dios Padre, que en Jesucristo, su Hijo, resucitado de entre los muertos, nos promete la resurrección y la vida. Lector: Por nuestro/a hermano/a N, para que, renacido/a hijo/a de Dios por el Bautismo, alcance la plenitud de la vida, roguemos al Señor. Para que, alimentado/a con el pan de la Eucaristía, resucite glorioso/a en Cristo, roguemos al Señor. Para que, ungido/a con el óleo de la curación, consiga la salud eterna, roguemos al Señor. Por lo aquí reunidos, la familia, los amigos; para que, consolándonos mutuamente, recibamos el consuelo de Cristo, roguemos al Señor. Por todos los que han muerto con la esperanza de la resurrección y por todos los difuntos, cuya fe sólo Dios conoce; para que vivan en Cristo para siempre, roguemos al Señor. Celebrante: Te lo pedimos por Jesucristo, tu Hijo, que lloró por su amigo Lázaro, que consoló a los que lloraban por la muerte de personas queridas, que se entregó por nosotros hasta la muerte y resucitó glorioso del sepulcro, que vive y reina por los siglos de los siglos. Amén."
+    },
+    {
+      "numero": 6,
+      "texto": "Celebrante: Oremos a Jesucristo, el Señor, el Primogénito de entre los muertos, diciendo: Te lo pedimos Señor. Lector: Salva Señor a nuestro/a hermano/a N que nos ha dejado, para que viva feliz junto a ti. Oremos. Ilumínale/a con el resplandor de tu gloria, pues caminó por este mundo guiado/a por la fe. Oremos. Acógele/a junto a ti en la casa del Padre, pues creyó y esperó en ti. Oremos. Consuela a su familia, a sus amigos, que lloran su ausencia, tú que a todos invitas a acercarse a ti. Oremos. Reconforta su ánimo abatido por el dolor con la firme esperanza de la resurrección. Oremos. Acoge con misericordia a todos los que cada día abandonan este mundo para ir a tu encuentro. Oremos. Muestra tu amor compasivo a todos los que sufren, alivia sus dolores y encamínalos hacia la felicidad eterna. Oremos. Celebrante: Señor Jesús, tú eres el Hijo de Dios; a ti acudimos; sólo tú tienes palabras de vida eterna. Tú que vives y reinas por los siglos de los siglos. Amén."
+    },
+    {
+      "numero": 7,
+      "texto": "Celebrante: Oremos al Señor, nuestro Dios. Lector: Por nuestro/a hermano/a N para que le perdone todas sus culpas, roguemos al Señor. Para que tenga en cuenta sus buenas obras, roguemos al Señor. Para que lo reciba en la gloria de su reino, roguemos al Señor. Por sus familiares y amigos; para que los consuele en su tribulación, roguemos al Señor. Por todos los difuntos; para que los acoja en su misericordia, roguemos al Señor. Celebrante: Señor, Dios nuestro, que no quieres que nadie se pierda, desde lo hondo a ti acudimos; escucha nuestra oración. Tú que vives y reinas por los siglos de los siglos. Amén."
+    }
+  ]
+}
