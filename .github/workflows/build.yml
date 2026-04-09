@@ -11,6 +11,9 @@ on:
       - 'generate_site.py'
       - 'templates/**'
       - 'assets/**'
+      - 'requirements.txt'
+      - '.github/workflows/build.yml'
+      - 'tests/**'
   workflow_dispatch:
 
 permissions:
