@@ -272,6 +272,11 @@ def generate_sitemap(all_days, outdir):
     lines.append(f"    <loc>{base}/</loc>")
     lines.append("  </url>")
 
+    # Search page
+    lines.append("  <url>")
+    lines.append(f"    <loc>{base}/buscar/</loc>")
+    lines.append("  </url>")
+
     for day_data in all_days:
         d = day_data["date_iso"]
         url = f"{base}/{d[:4]}/{d[5:7]}/{d[8:10]}/"
@@ -284,6 +289,15 @@ def generate_sitemap(all_days, outdir):
     (Path(outdir) / "sitemap.xml").write_text(
         "\n".join(lines), encoding="utf-8"
     )
+
+
+def generate_search_page(outdir, templates):
+    """Render /buscar/ search page."""
+    template = templates.get_template("buscar.html")
+    html = template.render(day=None)
+    buscar_dir = Path(outdir) / "buscar"
+    buscar_dir.mkdir(parents=True, exist_ok=True)
+    (buscar_dir / "index.html").write_text(html, encoding="utf-8")
 
 
 def generate_404(outdir, templates):
@@ -349,6 +363,7 @@ def build_site(today=None, days_back=30, days_forward=365, outdir=None):
     generate_search_index(all_days, outdir)
     generate_calendar_data(all_days, outdir)
     generate_sitemap(all_days, outdir)
+    generate_search_page(outdir, templates)
     generate_404(outdir, templates)
     copy_assets(outdir)
     generate_robots(outdir)

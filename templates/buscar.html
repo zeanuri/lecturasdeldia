@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Buscar — Lecturas del Día{% endblock %}
+{% block description %}Busca lecturas por fecha, cita bíblica, santo o tema{% endblock %}
+
+{% block canonical %}
+<link rel="canonical" href="https://lecturasdeldia.org/buscar/">
+{% endblock %}
+
+{% block content %}
+<div class="search-page">
+  <h1>Buscar lecturas</h1>
+
+  <p class="search-help">
+    Busca entre todas las lecturas del año litúrgico por:
+  </p>
+  <ul class="search-help-list">
+    <li><strong>Cita bíblica</strong> — Salmo 23, Mateo 5, Génesis 1...</li>
+    <li><strong>Día litúrgico</strong> — Domingo de Pascua, Miércoles de Ceniza...</li>
+    <li><strong>Santo o memoria</strong> — San José, Santa Teresa...</li>
+    <li><strong>Fecha</strong> — 25 de diciembre, abril...</li>
+    <li><strong>Tema</strong> — palabras del título de las lecturas</li>
+  </ul>
+
+  <input type="search" id="search-input" placeholder="Ej: Sal 23, Domingo de Pascua, San José..." autocomplete="off" autofocus>
+
+  <div id="search-results"></div>
+
+  <a href="/" class="search-back">&larr; Volver a las lecturas de hoy</a>
+</div>
+{% endblock %}

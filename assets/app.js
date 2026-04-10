@@ -151,48 +151,38 @@
     });
   }
 
-  // ── 3. Search ──────────────────────────────────────────────────────────
+  // ── 3. Search (dedicated /buscar/ page) ─────────────────────────────────
 
   function initSearch() {
-    var toggle = document.getElementById('search-toggle');
-    var panel = document.getElementById('search-panel');
     var input = document.getElementById('search-input');
     var results = document.getElementById('search-results');
-    if (!toggle || !panel) return;
+    if (!input || !results) return;
 
     var searchIndex = null;
     var debounceTimer = null;
 
-    toggle.addEventListener('click', function () {
-      var isHidden = panel.hidden;
-      panel.hidden = !isHidden;
-      if (!panel.hidden) {
-        // Lazy load search index on first open
-        if (!searchIndex) {
-          fetch('/search-index.json')
-            .then(function (r) { return r.json(); })
-            .then(function (data) {
-              searchIndex = data;
-            })
-            .catch(function () {
-              searchIndex = [];
-            });
+    // Load search index immediately on the search page
+    fetch('/search-index.json')
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        searchIndex = data;
+        // If user already typed while loading, run search now
+        if (input.value.trim().length >= 2) {
+          doSearch(input.value.trim());
         }
-        if (input) input.focus();
-      }
+      })
+      .catch(function () {
+        searchIndex = [];
+      });
+
+    input.addEventListener('input', function () {
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(function () {
+        doSearch(input.value.trim());
+      }, 200);
     });
 
-    if (input) {
-      input.addEventListener('input', function () {
-        clearTimeout(debounceTimer);
-        debounceTimer = setTimeout(function () {
-          doSearch(input.value.trim());
-        }, 200);
-      });
-    }
-
     function doSearch(query) {
-      if (!results) return;
       if (!searchIndex) {
         results.innerHTML = '';
         return;
@@ -221,7 +211,7 @@
       }
 
       if (matches.length === 0) {
-        results.innerHTML = '<p style="padding:0.5rem;color:var(--color-text-muted);font-size:0.9rem;">Sin resultados</p>';
+        results.innerHTML = '<p class="search-empty">La b\u00fasqueda no ha dado resultados</p>';
         return;
       }
 
