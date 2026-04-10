@@ -463,6 +463,46 @@ article[data-date] {
   color: var(--color-text-muted);
 }
 
+/* ── Saint proper readings (alternative) ───────────────────────────────── */
+
+.saint-readings {
+  max-width: var(--max-width);
+  margin: 1.5rem auto 0;
+  padding: 0 var(--spacing);
+}
+
+.saint-readings-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-brand);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.saint-readings-toggle:hover {
+  background: rgba(0, 107, 84, 0.05);
+}
+
+.saint-readings-toggle[aria-expanded="true"] .chevron {
+  transform: rotate(180deg);
+}
+
+.saint-readings-content {
+  margin-top: 0.5rem;
+}
+
+.saint-reading-label {
+  cursor: default;
+}
+
 /* ── Color badges ───────────────────────────────────────────────────────── */
 
 .color-badge {

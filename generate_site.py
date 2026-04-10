@@ -106,6 +106,27 @@ def get_day_data(d: date) -> dict:
                 "antifona": r.get("antifona", ""),
             })
 
+    # Saint's proper readings (alternative for memorias)
+    saint_readings = []
+    memorial = result.get("memorial", "")
+    if memorial and result.get("readings_source") == "feriales":
+        santos_key = f"{d.month:02d}-{d.day:02d}"
+        lec = liturgia._leccionario_cache or {}
+        santo = lec.get("santos", {}).get(santos_key, {})
+        if santo and not santo.get("comun_ref"):
+            for key in ("primera", "salmo", "segunda", "evangelio"):
+                r = santo.get(key)
+                if not r or not isinstance(r, dict) or not r.get("texto"):
+                    continue
+                saint_readings.append({
+                    "key": key,
+                    "label": _READING_LABELS.get(key, key),
+                    "cita": r.get("cita", ""),
+                    "titulo": r.get("titulo", ""),
+                    "texto": r.get("texto", ""),
+                    "antifona": r.get("antifona", ""),
+                })
+
     fecha_corta = f"{d.day}/{d.month}/{d.year}"
 
     return {
@@ -126,6 +147,7 @@ def get_day_data(d: date) -> dict:
         "memorial_note": result.get("memorial_note", ""),
         "readings_source": result.get("readings_source", ""),
         "readings": readings,
+        "saint_readings": saint_readings,
     }
 
 

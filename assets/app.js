@@ -389,6 +389,21 @@
     return div.innerHTML;
   }
 
+  // ── 5. Saint readings toggle ────────────────────────────────────────────
+
+  function initSaintReadings() {
+    var toggle = document.querySelector('.saint-readings-toggle');
+    if (!toggle) return;
+    var content = document.getElementById('saint-readings-content');
+    if (!content) return;
+
+    toggle.addEventListener('click', function () {
+      var expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+      content.hidden = expanded;
+    });
+  }
+
   // ── Init ───────────────────────────────────────────────────────────────
 
   document.addEventListener('DOMContentLoaded', function () {
@@ -396,6 +411,7 @@
     initDownload();
     initSearch();
     initCalendar();
+    initSaintReadings();
   });
 
 })();

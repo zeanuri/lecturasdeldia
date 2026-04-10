@@ -78,5 +78,37 @@
     </div>
     {% endfor %}
   </section>
+
+  {% if day.saint_readings %}
+  <section class="saint-readings">
+    <button class="saint-readings-toggle" aria-expanded="false" aria-controls="saint-readings-content">
+      <span>&#9733; Lecturas propias: {{ day.memorial }}</span>
+      <span class="chevron">&#9660;</span>
+    </button>
+    <div id="saint-readings-content" class="saint-readings-content" hidden>
+      {% for r in day.saint_readings %}
+      <div class="reading">
+        <div class="reading-header saint-reading-label">
+          <span class="reading-label">{{ r.label }}</span>
+          <span class="reading-cita">{{ r.cita }}</span>
+        </div>
+        <div class="reading-text">
+          {% if r.titulo %}
+          <p class="titulo"><em>{{ r.titulo }}</em></p>
+          {% endif %}
+          {% if r.antifona %}
+          <p class="antifona"><strong>R/</strong> {{ r.antifona }}</p>
+          {% endif %}
+          {% for paragraph in r.texto.split('\n') %}
+          {% if paragraph.strip() %}
+          <p>{{ paragraph }}</p>
+          {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
 </article>
 {% endblock %}
