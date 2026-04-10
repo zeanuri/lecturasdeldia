@@ -114,6 +114,22 @@ header {
   margin: 0 auto;
   padding: var(--spacing);
   text-align: center;
+  position: relative;
+}
+
+.header-home {
+  position: absolute;
+  left: var(--spacing);
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  color: var(--color-brand);
+  text-decoration: none;
+}
+
+.header-home:hover {
+  text-decoration: underline;
 }
 
 .site-title {
