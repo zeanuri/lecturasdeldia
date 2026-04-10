@@ -113,7 +113,11 @@ def get_day_data(d: date) -> dict:
         santos_key = f"{d.month:02d}-{d.day:02d}"
         lec = liturgia._leccionario_cache or {}
         santo = lec.get("santos", {}).get(santos_key, {})
-        if santo and not santo.get("comun_ref"):
+        has_full_readings = santo and all(
+            isinstance(santo.get(k), dict) and santo.get(k, {}).get("texto")
+            for k in ("primera", "salmo", "evangelio")
+        )
+        if has_full_readings:
             for key in ("primera", "salmo", "segunda", "evangelio"):
                 r = santo.get(key)
                 if not r or not isinstance(r, dict) or not r.get("texto"):
