@@ -39,6 +39,9 @@
     <div class="memorial-note">
       <span class="memorial-icon">&#9733;</span>
       {{ day.memorial }}{% if day.memorial_rank %} <span class="memorial-rank">({{ day.memorial_rank }})</span>{% endif %}{% if day.memorial_note %} — {{ day.memorial_note }}{% endif %}
+      {% if day.saint_readings %}
+      <a href="#" id="alt-readings-toggle" class="alt-readings-link">Lecturas alternativas</a>
+      {% endif %}
     </div>
     {% endif %}
   </header>
@@ -80,34 +83,29 @@
   </section>
 
   {% if day.saint_readings %}
-  <section class="saint-readings">
-    <button class="saint-readings-toggle" aria-expanded="false" aria-controls="saint-readings-content">
-      <span>&#9733; Lecturas propias: {{ day.memorial }}</span>
-      <span class="chevron">&#9660;</span>
-    </button>
-    <div id="saint-readings-content" class="saint-readings-content" hidden>
-      {% for r in day.saint_readings %}
-      <div class="reading">
-        <div class="reading-header saint-reading-label">
-          <span class="reading-label">{{ r.label }}</span>
-          <span class="reading-cita">{{ r.cita }}</span>
-        </div>
-        <div class="reading-text">
-          {% if r.titulo %}
-          <p class="titulo"><em>{{ r.titulo }}</em></p>
-          {% endif %}
-          {% if r.antifona %}
-          <p class="antifona"><strong>R/</strong> {{ r.antifona }}</p>
-          {% endif %}
-          {% for paragraph in r.texto.split('\n') %}
-          {% if paragraph.strip() %}
-          <p>{{ paragraph }}</p>
-          {% endif %}
-          {% endfor %}
-        </div>
+  <section class="readings" id="saint-readings" hidden>
+    {% for r in day.saint_readings %}
+    <div class="reading">
+      <button class="reading-header" aria-expanded="true" aria-controls="saint-text-{{ r.key }}">
+        <span class="reading-label">{{ r.label }}</span>
+        <span class="reading-cita">{{ r.cita }}</span>
+        <span class="chevron">&#9660;</span>
+      </button>
+      <div id="saint-text-{{ r.key }}" class="reading-text">
+        {% if r.titulo %}
+        <p class="titulo"><em>{{ r.titulo }}</em></p>
+        {% endif %}
+        {% if r.antifona %}
+        <p class="antifona"><strong>R/</strong> {{ r.antifona }}</p>
+        {% endif %}
+        {% for paragraph in r.texto.split('\n') %}
+        {% if paragraph.strip() %}
+        <p>{{ paragraph }}</p>
+        {% endif %}
+        {% endfor %}
       </div>
-      {% endfor %}
     </div>
+    {% endfor %}
   </section>
   {% endif %}
 </article>

@@ -389,18 +389,23 @@
     return div.innerHTML;
   }
 
-  // ── 5. Saint readings toggle ────────────────────────────────────────────
+  // ── 5. Alternative saint readings toggle ────────────────────────────────
 
   function initSaintReadings() {
-    var toggle = document.querySelector('.saint-readings-toggle');
+    var toggle = document.getElementById('alt-readings-toggle');
     if (!toggle) return;
-    var content = document.getElementById('saint-readings-content');
-    if (!content) return;
+    var ferial = document.querySelector('section.readings:not(#saint-readings)');
+    var saint = document.getElementById('saint-readings');
+    if (!ferial || !saint) return;
 
-    toggle.addEventListener('click', function () {
-      var expanded = toggle.getAttribute('aria-expanded') === 'true';
-      toggle.setAttribute('aria-expanded', expanded ? 'false' : 'true');
-      content.hidden = expanded;
+    var showingSaint = false;
+
+    toggle.addEventListener('click', function (e) {
+      e.preventDefault();
+      showingSaint = !showingSaint;
+      ferial.hidden = showingSaint;
+      saint.hidden = !showingSaint;
+      toggle.textContent = showingSaint ? 'Lecturas del día' : 'Lecturas alternativas';
     });
   }
 
