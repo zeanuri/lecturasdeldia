@@ -611,6 +611,16 @@ footer a:hover {
   color: var(--color-text-light);
 }
 
+footer .footer-brand {
+  color: var(--color-brand);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+footer .footer-brand:hover {
+  color: var(--color-brand-light);
+}
+
 /* ── Error page ─────────────────────────────────────────────────────────── */
 
 .error-page {
