@@ -242,12 +242,12 @@ header {
   font-family: var(--font-ui);
   font-size: 0.85rem;
   font-weight: 600;
-  color: var(--color-red);
+  color: var(--color-brand);
   line-height: 1;
 }
 
 #calendar-toggle:hover {
-  background: rgba(192, 57, 43, 0.06);
+  background: rgba(0, 107, 84, 0.06);
 }
 
 /* ── Calendar panel ─────────────────────────────────────────────────────── */
