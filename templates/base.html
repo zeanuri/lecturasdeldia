@@ -17,13 +17,7 @@
 <body{% if day and day.color_css %} data-color="{{ day.color_css }}"{% endif %}>
   <header>
     <a href="/" class="site-title">Lecturas del Día</a>
-    <button id="search-toggle" aria-label="Buscar" title="Buscar">&#128269;</button>
   </header>
-
-  <div id="search-panel" hidden>
-    <input type="search" id="search-input" placeholder="Buscar por fecha, lectura, santo..." autocomplete="off">
-    <div id="search-results"></div>
-  </div>
 
   {% block content %}{% endblock %}
 

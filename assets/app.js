@@ -48,6 +48,9 @@
         });
         updateExpandAllLabel();
       });
+
+      // Set initial label based on template state (default: expanded)
+      updateExpandAllLabel();
     }
 
     function areAllExpanded() {
@@ -341,11 +344,16 @@
         if (entry) {
           var isToday = iso === todayIso;
           var cls = 'cal-day' + (isToday ? ' today' : '');
-          var dotColor = entry.color === 'white' ? 'var(--color-white-dot)' : 'var(--color-' + entry.color + ')';
+          var dotStyle;
+          if (entry.color === 'white') {
+            dotStyle = 'background:#fff;border:1.5px solid var(--color-brand)';
+          } else {
+            dotStyle = 'background:var(--color-' + entry.color + ')';
+          }
 
           html += '<a class="' + cls + '" href="' + entry.url + '" title="' + escapeHtml(entry.nombre) + '">';
           html += d;
-          html += '<span class="dot" style="background:' + dotColor + '"></span>';
+          html += '<span class="dot" style="' + dotStyle + '"></span>';
           html += '</a>';
         } else {
           html += '<span class="cal-day muted">' + d + '</span>';
@@ -359,7 +367,7 @@
       html += '<span><span class="dot" style="background:var(--color-purple)"></span> Morado</span>';
       html += '<span><span class="dot" style="background:var(--color-green)"></span> Verde</span>';
       html += '<span><span class="dot" style="background:var(--color-red)"></span> Rojo</span>';
-      html += '<span><span class="dot" style="background:var(--color-white-dot)"></span> Blanco</span>';
+      html += '<span><span class="dot" style="background:#fff;border:1.5px solid var(--color-brand)"></span> Blanco</span>';
       html += '<span><span class="dot" style="background:var(--color-pink)"></span> Rosa</span>';
       html += '</div>';
 

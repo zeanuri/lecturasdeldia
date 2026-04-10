@@ -26,26 +26,43 @@
 
 <article data-date="{{ day.date_iso }}">
   <header class="day-header">
+    <p class="date-day">{{ day.day_name }}</p>
+    <p class="date">{{ day.fecha_corta }}</p>
     <h1>{{ day.name }}</h1>
-    <p class="date">{{ day.fecha_larga }}</p>
-    <p class="meta">
-      <span class="color-badge color-{{ day.color_css }}">{{ day.color }}</span>
-      <span class="rank">{{ day.rank }}</span>
-      &middot; {{ day.season }}
-      {% if day.sunday_cycle %} &middot; {{ day.sunday_cycle }}{% endif %}
-      {% if day.weekday_cycle %} &middot; {{ day.weekday_cycle }}{% endif %}
-    </p>
+    <ul class="meta-pills">
+      <li class="pill season-pill color-{{ day.color_css }}">{{ day.season }}</li>
+      <li class="pill">{{ day.rank }}</li>
+      {% if day.sunday_cycle %}<li class="pill">{{ day.sunday_cycle }}</li>{% endif %}
+      {% if day.weekday_cycle %}<li class="pill">{{ day.weekday_cycle }}</li>{% endif %}
+    </ul>
+    {% if day.memorial and day.memorial != day.name %}
+    <div class="memorial-note">
+      <span class="memorial-icon">&#9733;</span>
+      {{ day.memorial }}{% if day.memorial_rank %} <span class="memorial-rank">({{ day.memorial_rank }})</span>{% endif %}{% if day.memorial_note %} — {{ day.memorial_note }}{% endif %}
+    </div>
+    {% endif %}
   </header>
+
+  <div class="actions">
+    <button id="expand-all">&#128214; Colapsar todas</button>
+    <button id="download-txt">&#128229; Descargar lecturas (.txt)</button>
+    <button id="search-toggle" aria-label="Buscar" title="Buscar">&#128269; Buscar</button>
+  </div>
+
+  <div id="search-panel" hidden>
+    <input type="search" id="search-input" placeholder="Buscar por fecha, lectura, santo..." autocomplete="off">
+    <div id="search-results"></div>
+  </div>
 
   <section class="readings">
     {% for r in day.readings %}
     <div class="reading">
-      <button class="reading-header" aria-expanded="false" aria-controls="text-{{ r.key }}">
+      <button class="reading-header" aria-expanded="true" aria-controls="text-{{ r.key }}">
         <span class="reading-label">{{ r.label }}</span>
         <span class="reading-cita">{{ r.cita }}</span>
         <span class="chevron">&#9660;</span>
       </button>
-      <div id="text-{{ r.key }}" class="reading-text" hidden>
+      <div id="text-{{ r.key }}" class="reading-text">
         {% if r.titulo %}
         <p class="titulo"><em>{{ r.titulo }}</em></p>
         {% endif %}
@@ -61,19 +78,5 @@
     </div>
     {% endfor %}
   </section>
-
-  {% if day.memorial and day.memorial != day.name %}
-  <section class="memorial-note">
-    <p><strong>Memorial:</strong> {{ day.memorial }}
-    {% if day.memorial_rank %} ({{ day.memorial_rank }}){% endif %}
-    {% if day.memorial_note %} — {{ day.memorial_note }}{% endif %}
-    </p>
-  </section>
-  {% endif %}
-
-  <div class="actions">
-    <button id="expand-all">&#128214; Expandir todas</button>
-    <button id="download-txt">&#128229; Descargar lecturas (.txt)</button>
-  </div>
 </article>
 {% endblock %}

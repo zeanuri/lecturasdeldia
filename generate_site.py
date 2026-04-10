@@ -106,9 +106,13 @@ def get_day_data(d: date) -> dict:
                 "antifona": r.get("antifona", ""),
             })
 
+    fecha_corta = f"{d.day}/{d.month}/{d.year}"
+
     return {
         "date": result.get("date", d.isoformat()),
         "date_iso": d.isoformat(),
+        "day_name": day_name,
+        "fecha_corta": fecha_corta,
         "fecha_larga": fecha_larga,
         "name": result.get("name", ""),
         "rank": result.get("rank", ""),
