@@ -202,7 +202,7 @@
         return;
       }
 
-      var q = query.toLowerCase();
+      var q = query.toLowerCase().replace(/\bsalmo\b/g, 'sal');
       var matches = [];
 
       for (var i = 0; i < searchIndex.length && matches.length < 15; i++) {
