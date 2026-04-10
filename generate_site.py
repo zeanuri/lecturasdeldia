@@ -70,10 +70,12 @@ def load_templates(templates_dir=None):
     """Return a Jinja2 Environment with FileSystemLoader."""
     if templates_dir is None:
         templates_dir = TEMPLATES_DIR
-    return Environment(
+    env = Environment(
         loader=FileSystemLoader(str(templates_dir)),
         autoescape=True,
     )
+    env.globals["cache_bust"] = int(date.today().strftime("%Y%m%d"))
+    return env
 
 
 def get_day_data(d: date) -> dict:

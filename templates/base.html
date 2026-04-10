@@ -11,7 +11,7 @@
   <meta property="og:type" content="website">
   {% endblock %}
   {% block canonical %}{% endblock %}
-  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="/assets/style.css?v={{ cache_bust }}">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 </head>
 <body{% if day and day.color_css %} data-color="{{ day.color_css }}"{% endif %}>
@@ -27,6 +27,6 @@
     <p><a href="https://github.com/zeanuri/lecturasdeldia" target="_blank" rel="noopener">GitHub</a></p>
   </footer>
 
-  <script src="/assets/app.js"></script>
+  <script src="/assets/app.js?v={{ cache_bust }}"></script>
 </body>
 </html>
