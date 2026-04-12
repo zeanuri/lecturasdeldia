@@ -1403,6 +1403,9 @@ def format_html(r: dict, readings: dict | None = None) -> str:
     texto_salmo = _text_to_html(_r('salmo').get('texto', '')) or '<!-- TEXTO_SALMO -->'
     cita_ev = _r('evangelio').get('cita', '<!-- CITA_EVANGELIO -->')
     texto_ev = _text_to_html(_r('evangelio').get('texto', '')) or '<!-- TEXTO_EVANGELIO -->'
+    acl_tipo = _r('aclamacion').get('tipo', '')
+    acl_texto = _r('aclamacion').get('texto', '')
+    acl_cita = _r('aclamacion').get('cita', '')
     source_text = "Leccionario CEE (offline)" if readings else "<!-- FUENTE -->"
 
     return f"""<!DOCTYPE html>
@@ -1431,6 +1434,13 @@ def format_html(r: dict, readings: dict | None = None) -> str:
   .separator {{ border: none; border-top: 1px solid #e0e0e0; margin: 2rem 0; }}
   .source {{ font-family: 'Inter', sans-serif; font-size: 0.75rem; color: #aaa; text-align: center; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e0e0e0; }}
   .placeholder {{ font-family: 'Inter', sans-serif; font-size: 0.85rem; color: #bbb; font-style: italic; padding: 1rem; border: 1px dashed #ddd; border-radius: 4px; }}
+  .aclamacion {{ margin-bottom: 2.5rem; }}
+  .aclamacion summary {{ font-family: 'Inter', sans-serif; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: {theme['accent']}; cursor: pointer; list-style: none; display: flex; align-items: center; gap: 0.4rem; }}
+  .aclamacion summary::-webkit-details-marker {{ display: none; }}
+  .aclamacion summary::before {{ content: '\\25B6'; font-size: 0.6rem; transition: transform 0.2s; }}
+  .aclamacion[open] summary::before {{ transform: rotate(90deg); }}
+  .aclamacion-cite {{ font-family: 'Inter', sans-serif; font-size: 0.85rem; font-weight: 500; color: {theme['header']}; margin-top: 0.5rem; margin-bottom: 0.4rem; }}
+  .aclamacion-text {{ font-size: 1.05rem; line-height: 1.6; color: #555; font-style: italic; }}
 </style>
 </head>
 <body>
@@ -1460,6 +1470,8 @@ def format_html(r: dict, readings: dict | None = None) -> str:
   <hr class="separator">
 
   {"" if not _r('segunda').get('texto') and not _r('segunda').get('cita') else '<div class="reading" id="lectura-2"><p class="reading-label">2&ordf; Lectura</p><p class="reading-cite">' + _r('segunda').get('cita', '') + '</p><div class="reading-text">' + _text_to_html(_r('segunda').get('texto', '')) + '</div></div><hr class="separator">'}
+
+  {"" if not acl_texto else '<details class="aclamacion"><summary>Aclamaci&oacute;n — ' + (acl_tipo.capitalize() if acl_tipo else 'Aleluya') + '</summary>' + ('<p class="aclamacion-cite">' + acl_cita + '</p>' if acl_cita else '') + '<p class="aclamacion-text">' + acl_texto + '</p></details><hr class="separator">'}
 
   <div class="reading" id="evangelio">
     <p class="reading-label">Evangelio</p>
