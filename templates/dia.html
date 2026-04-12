@@ -54,6 +54,18 @@
 
   <section class="readings">
     {% for r in day.readings %}
+    {% if r.key == 'evangelio' and day.aclamacion %}
+    <div class="reading aclamacion-section">
+      <button class="reading-header" aria-expanded="false" aria-controls="text-aclamacion">
+        <span class="reading-label">Aclamación — {{ day.aclamacion.tipo | capitalize }}</span>
+        {% if day.aclamacion.cita %}<span class="reading-cita">{{ day.aclamacion.cita }}</span>{% endif %}
+        <span class="chevron">&#9660;</span>
+      </button>
+      <div id="text-aclamacion" class="reading-text" hidden>
+        <p class="aclamacion-verso">{{ day.aclamacion.texto }}</p>
+      </div>
+    </div>
+    {% endif %}
     <div class="reading">
       <button class="reading-header" aria-expanded="true" aria-controls="text-{{ r.key }}">
         <span class="reading-label">{{ r.label }}</span>
@@ -76,21 +88,6 @@
     </div>
     {% endfor %}
   </section>
-
-  {% if day.aclamacion %}
-  <section class="readings aclamacion-section">
-    <div class="reading">
-      <button class="reading-header" aria-expanded="false" aria-controls="text-aclamacion">
-        <span class="reading-label">Aclamación — {{ day.aclamacion.tipo | capitalize }}</span>
-        {% if day.aclamacion.cita %}<span class="reading-cita">{{ day.aclamacion.cita }}</span>{% endif %}
-        <span class="chevron">&#9660;</span>
-      </button>
-      <div id="text-aclamacion" class="reading-text" hidden>
-        <p class="aclamacion-verso">{{ day.aclamacion.texto }}</p>
-      </div>
-    </div>
-  </section>
-  {% endif %}
 
   {% if day.saint_readings %}
   <section class="readings" id="saint-readings" hidden>
