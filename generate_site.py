@@ -108,6 +108,17 @@ def get_day_data(d: date) -> dict:
                 "antifona": r.get("antifona", ""),
             })
 
+    # Gospel acclamation
+    aclamacion = {}
+    if readings_raw:
+        acl = readings_raw.get("aclamacion")
+        if isinstance(acl, dict) and acl.get("texto"):
+            aclamacion = {
+                "tipo": acl.get("tipo", "aleluya"),
+                "texto": acl.get("texto", ""),
+                "cita": acl.get("cita", ""),
+            }
+
     # Saint's proper readings (alternative for memorias)
     saint_readings = []
     memorial = result.get("memorial", "")
@@ -153,6 +164,7 @@ def get_day_data(d: date) -> dict:
         "memorial_note": result.get("memorial_note", ""),
         "readings_source": result.get("readings_source", ""),
         "readings": readings,
+        "aclamacion": aclamacion,
         "saint_readings": saint_readings,
     }
 

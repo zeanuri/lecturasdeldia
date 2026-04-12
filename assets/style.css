@@ -637,6 +637,21 @@ article[data-date] {
 }
 
 
+/* ── Aclamación ────────────────────────────────────────────────────────── */
+
+.aclamacion-section {
+  border-top: 1px solid var(--color-border);
+}
+
+.aclamacion-section .reading {
+  border-bottom: none;
+}
+
+.aclamacion-verso {
+  font-style: italic;
+  color: var(--color-text-light);
+}
+
 /* ── Day actions ────────────────────────────────────────────────────────── */
 
 .actions {
