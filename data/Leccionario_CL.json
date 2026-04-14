@@ -3724,7 +3724,7 @@
         "salmo": {
           "cita": "Sal 96, 1 y 6. 11-12",
           "antifona": "Hoy brillará una luz sobre nosotros, porque nos ha nacido el Señor.",
-          "texto": "V/. Hoy brillará una luz sobre nosotros, porque nos ha nacido el Señor. R/.\n\nV/. porque nos ha nacido el Señor. R/."
+          "texto": "V/. El Señor reina, la tierra goza, se alegran las islas innumerables. Los cielos pregonan su justicia, y todos los pueblos contemplan su gloria. R/.\n\nV/. Amanece la luz para el justo, y la alegría para los rectos de corazón. Alegraos, justos, con el Señor, celebrad su santo nombre. R/."
         },
         "segunda": {
           "titulo": "Según su propia misericordia nos ha salvado",
@@ -3830,7 +3830,7 @@
         "primera": {
           "titulo": "La sabiduría de Dios habitó en el pueblo escogido",
           "cita": "Eclesiástico 24, 1-2. 8-12",
-          "texto": "La sabiduría de Dios habitó en el pueblo escogido\nLa sabiduría se alaba a sí misma, se gloría en medio de su pueblo,\nabre la boca en la asamblea del Altísimo y se gloría delante de sus Potestades.\nEn medio de su pueblo será ensalzada, y admirada en la congregación plena de los santos;\nrecibirá alabanzas de la muchedumbre de los escogidos y será bendita entre los benditos.\nEl Creador del universo me ordenó, el Creador estableció mi morada: — «Habita en Jacob, sea Israel tu heredad.»\nDesde el principio, antes de los siglos, me creó, y no cesaré jamás.\nEn la santa morada, en su presencia, ofrecí culto y en Sión me establecí; en la ciudad escogida me hizo descansar, en Jerusalén reside mi poder.\nEché raíces entre un pueblo glorioso, en la porción del Señor, en su heredad, y resido en la congregación plena de los santos."
+          "texto": "La sabiduría se alaba a sí misma, se gloría en medio de su pueblo,\nabre la boca en la asamblea del Altísimo y se gloría delante de sus Potestades.\nEn medio de su pueblo será ensalzada, y admirada en la congregación plena de los santos;\nrecibirá alabanzas de la muchedumbre de los escogidos y será bendita entre los benditos.\nEl Creador del universo me ordenó, el Creador estableció mi morada: — «Habita en Jacob, sea Israel tu heredad.»\nDesde el principio, antes de los siglos, me creó, y no cesaré jamás.\nEn la santa morada, en su presencia, ofrecí culto y en Sión me establecí; en la ciudad escogida me hizo descansar, en Jerusalén reside mi poder.\nEché raíces entre un pueblo glorioso, en la porción del Señor, en su heredad, y resido en la congregación plena de los santos."
         },
         "salmo": {
           "cita": "Sal 147, 12-13. 14-15. 19-20 (R.: Jn 1, 14)",
@@ -3839,8 +3839,8 @@
         },
         "segunda": {
           "titulo": "Nos ha destinado en la persona de Cristo a ser sus hijos",
-          "cita": "Efesios 1, 2-3a. 5-6",
-          "texto": "Ahora ha sido revelado que también los gentiles son coherederos de la promesa\nHermanos:\nHabéis oído hablar de la distribución de la gracia de Dios que se me ha dado en favor vuestro.\nYa que se me dio a conocer por revelación el misterio, que no había sido manifestado a los hombres en otros tiempos, como ha sido revelado ahora por el Espíritu a sus santos apóstoles y profetas: que también los gentiles son coherederos,\nmiembros del mismo cuerpo y partícipes de la promesa en Jesucristo, por el Evangelio."
+          "cita": "Efesios 1, 3-6. 15-18",
+          "texto": "Bendito sea Dios,\nPadre de nuestro Señor Jesucristo,\nque nos ha bendecido en la persona de Cristo con toda clase de bienes espirituales y celestiales.\nÉl nos eligió en la persona de Cristo, antes de crear el mundo,\npara que fuésemos santos e irreprochables ante él por el amor.\nÉl nos ha destinado en la persona de Cristo, por pura iniciativa suya, a ser sus hijos,\npara que la gloria de su gracia, que tan generosamente nos ha concedido en su querido Hijo, redunde en alabanza suya.\nPor eso yo, que he oído hablar de vuestra fe en el Señor Jesús y de vuestro amor a todos los santos, no ceso de dar gracias por vosotros, recordándoos en mi oración, a fin de que el Dios de nuestro Señor Jesucristo, el Padre de la gloria, os dé espíritu de sabiduría y revelación para conocerlo. Ilumine los ojos de vuestro corazón, para que comprendáis cuál es la esperanza a la que os llama, cuál la riqueza de gloria que da en herencia a los santos."
         },
         "evangelio": {
           "titulo": "La Palabra se hizo carne y acampó entre nosotros",
@@ -3905,7 +3905,8 @@
         },
         "aclamacion": {
           "tipo": "versiculo",
-          "texto": "En el esplendor de la nube se oyó la voz del Padre: «Éste es mi Hijo, el amado; escuchadlo.»"
+          "texto": "En el esplendor de la nube se oyó la voz del Padre: «Éste es mi Hijo, el amado; escuchadlo.»",
+          "cita": "cf. Lc 9, 35"
         }
       },
       "cuaresma_4": {
@@ -3967,13 +3968,13 @@
       "ramos": {
         "day_name": "DOMINGO DE RAMOS EN LA PASIÓN DEL SEÑOR",
         "primera": {
-          "titulo": "PROCESIÓN DE LAS PALMAS",
-          "texto": "No me tapé el rostro ante los ultrajes, sabiendo que no quedaría defraudado Mi Señor me ha dado una lengua de iniciado, para saber decir al abatido una palabra de aliento.\nCada mañana me espabila el oído, para que escuche como los iniciados.\nEl Señor me abrió el oído. Y yo no resistí ni me eché atrás: ofrecí la espalda a los que me apaleaban, las mejillas a los que mesaban mi barba; no me tapé el rostro ante ultrajes ni salivazos.\nEl Señor me ayuda, por eso no sentía los ultrajes; por eso endurecí el rostro como pedernal, sabiendo que no quedaría defraudado.",
-          "cita": "santo evangelio según san Lucas 19, 28-40"
+          "titulo": "No me tapé el rostro ante los ultrajes, sabiendo que no quedaría defraudado",
+          "texto": "Mi Señor me ha dado una lengua de iniciado, para saber decir al abatido una palabra de aliento.\nCada mañana me espabila el oído, para que escuche como los iniciados.\nEl Señor me abrió el oído. Y yo no resistí ni me eché atrás: ofrecí la espalda a los que me apaleaban, las mejillas a los que mesaban mi barba; no me tapé el rostro ante ultrajes ni salivazos.\nEl Señor me ayuda, por eso no sentía los ultrajes; por eso endurecí el rostro como pedernal, sabiendo que no quedaría defraudado.",
+          "cita": "Isaías 50, 4-7"
         },
         "evangelio": {
           "titulo": "Bendito el que viene en nombre del Señor",
-          "cita": "Lucas 19, 28-40",
+          "cita": "Lucas 22, 14—23, 56",
           "texto": "He deseado enormemente comer esta comida pascual con vosotros, antes de padecer\nC. Llegada la hora, se sentó Jesús con sus discípulos y les dijo:\n+ — «He deseado enormemente comer esta comida pascual con vosotros, antes de padecer, porque os digo que ya no la volveré a comer, hasta que se cumpla en el reino de Dios.»\nC. Y, tomando una copa, pronunció la acción de gracias y dijo:\n+ —«Tomad esto, repartidlo entre vosotros; porque os digo que no beberé desde ahora del fruto de la vid, hasta que venga el reino de Dios.»\nHaced esto en memoria mía\nC. Y, tomando pan, pronunció la acción de gracias, lo partió y se lo dio, diciendo:\n+ — «Esto es mi cuerpo, que se entrega por vosotros; haced esto en memoria mía.»\nC. Después de cenar, hizo lo mismo con la copa, diciendo:\n+ —«Esta copa es la nueva alianza, sellada con mi sangre, que se derrama por vosotros.»\n¡Ay de ése que entrega al Hijo del hombre!\n+ — «Pero mirad: la mano del que me entrega está con la mía en la mesa. Porque el Hijo del hambre se va, según lo establecido; pero, ¡ay de ése que lo entrega!»\nC. Ellos empezaron a preguntarse unos a otros quien de ellos podía ser el que iba a hacer eso.\nYo estoy en medio de vosotros como el que sirve\nC. Los discípulos se pusieron a disputar sobre quién de ellos debía ser tenido como el primero. Jesús les dijo:\n+ — «Los reyes de las naciones las dominan, y los que ejercen la autoridad se hacen llamar bienhechores. Vosotros no hagáis así, sino que el primero entre vosotros pórtese como el menor, y el que gobierne, como el que sirve.\nPorque, ¿quién es más, el que está en la mesa o el que sirve? ¿Verdad que el que está en la mesa? Pues yo estoy en medio de vosotros como el que sirve.\nVosotros sois los que habéis perseverado conmigo en mis pruebas, y yo os transmito el reino como me lo transmitió mi Padre a mí: comeréis y beberéis a mi mesa en mi reino, y os sentaréis en tronos para regir a las doce tribus de Israel.»\nTú, cuando te recobres, da firmeza a tus hermanos\nC. Y añadió:\n+ —«Simón, Simón, mira que Satanás os ha reclamado para cribaros como trigo. Pero yo he pedido por ti, para que tu fe no se apague. Y tú, cuando te recobres, da firmeza a tus hermanos.»\nC. Él le contestó:\nS. —«Señor, contigo estoy dispuesto a ir incluso a la cárcel y a la muerte.»\nC. Jesús le replicó:\n+ —«Te digo, Pedro, que no cantará hoy el gallo antes que tres veces hayas negado conocerme.»\nTiene que cumplirse en mí lo que está escrito\nC. Y dijo a todos:\n+ — «Cuando os envié sin bolsa, ni alforja, ni sandalias, ¿os faltó algo?»\nC. Contestaron:\nS. —«Nada.»\nC. Él añadió:\n+ —«Pero ahora, el que tenga bolsa que la coja, y lo mismo la alforja; y el que no tiene espada, que venda su manto y compre una. Porque os aseguro que tiene que cumplirse en mí lo que está escrito: \"Fue contado con los malhechores.\" Lo que se refiere a mí toca a su fin.»\nC. Ellos dijeron:\nS. — «Señor, aquí hay dos espadas.»\nC. Él les contestó:\n— «Basta.»\nEn medio de su angustia, oraba con más insistencia\nC. Y salió Jesús, como de costumbre, al monte de los Olivos, y lo siguieron los discípulos. Al llegar al sitio, les dijo:\n+ — «Orad, para no caer en la tentación.»\nC. El se arrancó de ellos, alejándose como a un tiro de piedra y, arrodillado, oraba, diciendo:\n+ — «Padre, si quieres, aparta de mí ese cáliz; pero que no se haga mi voluntad, sino la tuya.»\nC. Y se le apareció un ángel del cielo, que lo animaba. En medio de su angustia, oraba con más insistencia. Y le bajaba hasta el suelo un sudor como de gotas de sangre. Y, levantándose de la oración, fue hacia sus discípulos, los encontró dormidos por la pena, y les dijo:\n+ — «¿Por qué dormís? Levantaos y orad, para no caer en la tentación.»\nJudas, ¿con un beso entregas al Hijo del hombre?\nC. Todavía estaba hablando, cuando aparece gente; y los guiaba el llamado Judas, uno de los Doce. Y se acercó a besar a Jesús.\nJesús le dijo:\n+ — «Judas, ¿con un beso entregas al Hijo del hombre?»\nC. Al darse cuenta los que estaban con él de lo que iba a pasar, dijeron:\nS. —«Señor, ¿herimos con la espada?»\nC. Y uno de ellos hirió al criado del sumo sacerdote y le cortó la oreja derecha.\nJesús intervino, diciendo:\n+ —«Dejadlo, basta.»\nC. Y, tocándole la oreja, lo curó. Jesús dijo a los sumos sacerdotes y a los oficiales del templo, y a los ancianos que habían venido contra él:\n+ —«¿Habéis salido con espadas y palos, como a caza de un bandido? A diario estaba en el templo con vosotros, y no me echasteis mano. Pero ésta es vuestra hora: la del poder de las tinieblas.»\nPedro, saliendo afuera, lloró amargamente\nC. Ellos lo prendieron, se lo llevaron y lo hicieron entrar en casa del sumo sacerdote. Pedro lo seguía desde lejos. Ellos encendieron fuego en medio del patio, se sentaron alrededor, y Pedro se sentó entre ellos.\nAl verlo una criada sentado junto a la lumbre, se lo quedó mirando y dijo:\nS. —«También éste estaba con él.»\nC. Pero él lo negó, diciendo:\nS. —«No lo conozco, mujer.»\nC. Poco después lo vio otro y le dijo:\nS. — «Tú también eres uno de ellos.»\nC. Pedro replicó:\nS. — «Hombre, no lo soy.»\nC. Pasada cosa de una hora, otro insistía:\nS. — «Sin duda, también éste estaba con él, porque es galileo.»\nC. Pedro contestó:\nS. — «Hombre, no sé de qué me hablas.»\nC. Y, estaba todavía hablando, cuando cantó un gallo. El Señor, volviéndose, le echó una mirada a Pedro, y Pedro se acordó de la palabra que el Señor le había dicho: «Antes de que cante hoy el gallo, me negaras tres veces.» Y, saliendo afuera, lloró amargamente.\nHaz de profeta; ¿quién te ha pegado?\nC. Y los hombres que sujetaban a Jesús se burlaban de él, dándole golpes. Y, tapándole la cara, le preguntaban:\nS. —«Haz de profeta; ¿quién te ha pegado?»\nC. Y proferían contra él otros muchos insultos.\nLo hicieron comparecer ante su Sanedrín\nC. Cuando se hizo de día, se reunió el senado del pueblo, o sea, sumos sacerdotes y escribas, y, haciéndole comparecer ante su Sanedrín, le dijeron:\nS. — «Si tú eres el Mesías, dínoslo.»\nC. Él les contestó:\n— «Si os lo digo, no lo vais a creer; y si os preguntó, no me vais a responder. Desde ahora, el Hijo del hombre estará sentado a la derecha de Dios todopoderoso.»\nC. Dijeron todos:\nS. —«Entonces, ¿tú eres el Hijo de Dios?»\nC. Él les contestó:\n+ —«Vosotros lo decís, yo lo soy.»\nC. Ellos dijeron:\nS. —«¿Que necesidad tenemos ya de testimonios? Nosotros mismos lo hemos oído de su boca.»\nC. Se levantó toda la asamblea, y llevaron a Jesús a presencia de Pilato.\nNo encuentro ninguna culpa en este hombre C. Y se pusieron a acusarlo, diciendo:\nS. —«Hemos comprobado que éste anda amotinando a nuestra nación, y oponiéndose a que se paguen tributos al César, y diciendo que él es el Mesías rey.» C. Pilato preguntó a Jesús:\nS. —«¿Eres tú el rey de los judíos?»\nC. Él le contestó:\n+ —«Tú lo dices.»\nC. Pilato dijo a los sumos sacerdotes y a la gente:\nS. — «No encuentro ninguna culpa en este hombre.»\nC. Ellos insistían con más fuerza, diciendo:\nS. — «Solivianta al pueblo enseñando por toda Judea, desde Galilea hasta aquí.»\nC. Pilato, al oírlo, preguntó si era galileo; y, al enterarse que era de la jurisdicción de Herodes, se lo remitió. Herodes estaba precisamente en Jerusalén por aquellos días.\nHerodes, con su escolta, lo trato con desprecio\nC. Herodes, al ver a Jesús, se puso muy contento; pues hacía bastante tiempo que quería verlo, porque oía hablar de él y esperaba verle hacer algún milagro. Le hizo un interrogatorio bastante largo; pero él no le contestó ni palabra.\nEstaban allí los sumos sacerdotes y los escribas acusándolo con ahinco. Herodes, con su escolta, lo trató con desprecio y se burló de él; y, poniéndole una vestidura blanca, se lo remitió a Pilato. Aquel mismo día se hicieron amigos Herodes y Pilato, porque antes se llevaban muy mal.\nPilato entregó a Jesús a su arbitrio\nC. Pilato, convocando a los sumos sacerdotes, a las autoridades y al pueblo, les dijo: S. —«Me habéis traído a este hombre, alegando que alborota al pueblo; y resulta que yo lo he interrogado delante de vosotros, y no he encontrado en este hombre ninguna de las culpas que le imputáis; ni Herodes tampoco, porque nos lo ha remitido: ya veis que nada digno de muerte se le ha probado. Así que le daré un escarmiento y lo soltaré.»\nC. Por la fiesta tenía que soltarles a uno. Ellos vociferaron en masa, diciendo:\nS. —«¡Fuera ése! Suéltanos a Barrabás.»\nC. A éste lo habían metido en la cárcel por una revuelta acaecida en la ciudad y un homicidio.\nPilato volvió a dirigirles la palabra con intención de soltar a Jesús. Pero ellos seguían gritando:\nS. —«¡Crucifícalo, crucifícalo!»\nC. Él les dijo por tercera vez:\nS. —«Pues, ¿qué mal ha hecho éste? No he encontrado en él ningún delito que merezca la muerte. Así es que le daré un escarmiento y lo soltaré.»\nC. Ellos se le echaban encima, pidiendo a gritos que lo crucificara; e iba creciendo el griterío.\nPilato decidió que se cumpliera su petición: soltó al que le pedían (al que había metido en la cárcel por revuelta y homicidio), y a Jesús se lo entregó a su arbitrio.\nHijas de Jerusalén, no lloréis por mí\nC. Mientras lo conducían, echaron mano de un cierto Simón de Cirene, que volvía del campo, y le cargaron la cruz, para que la llevase detrás de Jesús.\nLo seguía un gran gentío del pueblo, y de mujeres que se daban golpes y lanzaban lamentos por él.\nJesús se volvió hacia ellas y les dijo:\n+ — «Hijas de Jerusalén, no lloréis por mí, llorad por vosotras y por vuestros hijos, porque mirad que llegará el día en que dirán: \"Dichosas las estériles y los vientres que no han dado a luz y los pechos que no han criado.\" Entonces empezarán a decirles a los montes: \"Desplomaos sobre nosotros\", y a las colinas: \"Sepultadnos\"; porque, si así tratan al leño verde, ¿qué pasará con el seco?»\nC. Conducían también a otros dos malhechores para ajusticiarlos con él.\nPadre, perdónalos, porque no saben lo que hacen\nC. Y, cuando llegaron al lugar llamado «La Calavera», lo crucificaron allí, a él y a los malhechores, uno a la derecha y otro a la izquierda.\nJesús decía:\n+ — «Padre, perdónalos, porque no saben lo que hacen.»\nC. Y se repartieron sus ropas, echándolas a suerte.\nÉste es el rey de los judíos\nC. El pueblo estaba mirando.\nLas autoridades le hacían muecas, diciendo:\nS. —«A otros ha salvado; que se salve a sí mismo, si él es el Mesías de Dios, el Elegido.»\nC. Se burlaban de él también los soldados, ofreciéndole vinagre y diciendo:\nS. — «Si eres tú el rey de los judíos, sálvate a ti mismo.»\nC. Había encima un letrero en escritura griega, latina y hebrea: «Éste es el rey de los judíos.»\nHoy estarás conmigo en el paraíso\nC. Uno de los malhechores crucificados lo insultaba, diciendo:\nS. — «¿No eres tú el Mesías? Sálvate a ti mismo y a nosotros.»\nC. Pero el otro le increpaba:\nS. —«¿Ni siquiera temes tú a Dios, estando en el mismo suplicio? Y lo nuestro es justo, porque recibimos el pago de lo que hicimos; en cambio, éste no ha faltado en nada.»\nC. Y decía:\nS. — «Jesús, acuérdate de mi cuando llegues a tu reino.»\nC. Jesús le respondió:\n+ —«Te lo aseguro: hoy estarás conmigo en el paraíso.»\nPadre, a tus manos encomiendo mi espíritu\nC. Era ya eso de mediodía, y vinieron las tinieblas sobre toda la región, hasta la media tarde; porque se oscureció el sol. El velo del templo se rasgó por medio. Y Jesús, clamando con voz potente, dijo:\n+ — «Padre, a tus manos encomiendo mi espíritu.»\nC. Y, dicho esto, expiró.\nTodos se arrodillan, y se hace una pausa\nC. El centurión, al ver lo que pasaba, daba gloria a Dios, diciendo:\nS. —«Realmente, este hombre era justo.»\nC. Toda la muchedumbre que había acudido a este espectáculo, habiendo visto lo que ocurría, se volvía dándose golpes de pecho.\nTodos sus conocidos se mantenían a distancia, y lo mismo las mujeres que lo habían seguido desde Galilea y que estaban mirando.\nJosé colocó el cuerpo de Jesús en un sepulcro excavado\nC. Un hombre llamado José, que era senador, hombre bueno y honrado (que no había votado a favor de la decisión y del crimen de ellos), que era natural de Arimatea, pueblo de Judea, y que aguardaba el reino de Dios, acudió a Pilato a pedirle el cuerpo de Jesús. Y, bajándolo, lo envolvió en una sábana y lo colocó en un sepulcro excavado en la roca, donde no habían puesto a nadie todavía.\nEra el día de la Preparación y rayaba el sábado. Las mujeres que lo habían acompañado desde Galilea fueron detrás a examinar el sepulcro y cómo colocaban su cuerpo. A la vuelta, prepararon aromas y ungüentos. Y el sábado guardaron reposo, conforme al mandamiento."
         },
         "salmo": {
@@ -3985,6 +3986,11 @@
           "tipo": "versiculo",
           "cita": "Flp 2, 8-9",
           "texto": "Cristo, por nosotros, se sometió incluso a la muerte, y una muerte de cruz. Por eso Dios lo levantó sobre todo y le concedió el «Nombre-sobre-todo-nombre»."
+        },
+        "segunda": {
+          "titulo": "Se rebajó, por eso Dios lo levantó sobre todo",
+          "cita": "Filipenses 2, 6-11",
+          "texto": "Cristo, a pesar de su condición divina, no hizo alarde de su categoría de Dios;\nal contrario, se despojó de su rango y tomó la condición de esclavo, pasando por uno de tantos.\nY así, actuando como un hombre cualquiera, se rebajó hasta someterse incluso a la muerte, y una muerte de cruz.\nPor eso Dios lo levantó sobre todo y le concedió el «Nombre-sobre-todo-nombre»;\nde modo que al nombre de Jesús toda rodilla se doble en el cielo, en la tierra, en el abismo,\ny toda lengua proclame: Jesucristo es Señor, para gloria de Dios Padre."
         }
       },
       "jueves_santo": {
@@ -4046,14 +4052,14 @@
       "vigilia_pascual": {
         "day_name": "VIGILIA PASCUAL EN LA NOCHE SANTA",
         "primera": {
-          "titulo": "Los israelitas entraron en medio del mar a pie enjuto",
-          "cita": "Éxodo 14, 15—15, 1",
+          "titulo": "Vio Dios todo lo que había hecho; y era muy bueno",
+          "cita": "Génesis 1, 1—2, 2",
           "texto": "Vio Dios todo lo que había hecho; y era muy bueno — 2, 2\nAl principio creó Dios el cielo y la tierra. La tierra era un caos informe; sobre la faz del abismo, la tiniebla. Y el aliento de Dios se cernía sobre la faz de las aguas.\nY dijo Dios:\n—\t«Que exista la luz.»\nY la luz existió.\nY vio Dios que la luz era buena. Y separó Dios la luz de la tiniebla; llamó Dios a la luz «Día»; a la tiniebla, «Noche».\nPasó una tarde, pasó una mañana: el día primero.\nY dijo Dios:\n—\t«Que exista una bóveda entre las aguas, que separe aguas de aguas.»\nE hizo Dios una bóveda y separó las aguas de debajo de la bóveda de las aguas de encima de la bóveda.\nY así fue.\nY llamó Dios a la bóveda «Cielo».\nPasó una tarde, pasó una mañana: el día segundo.\nY dijo Dios:\n—\t«Que se junten las aguas de debajo del cielo en un solo sitio, y que aparezcan los continentes.»\nY así fue.\nY llamó Dios a los continentes «Tierra», y a la masa de las aguas la llamó «Mar».\nY vio Dios que era bueno.\nY dijo Dios:\n—\t«Verdee la tierra hierba verde que engendre semilla, y árboles frutales que den fruto según su especie y que lleven semilla sobre la tierra.»\nY así fue.\nLa tierra brotó hierba verde que engendraba semilla según su especie, y árboles que daban fruto y llevaban semilla según su especie.\nY vio Dios que era bueno.\nPasó una tarde, pasó una mañana: el día tercero.\nY dijo Dios:\n—\t«Que existan lumbreras en la bóveda del cielo, para separar el día de la noche, para señalar las fiestas, los días y los años; y sirvan de lumbreras en la bóveda del cielo, para dar luz sobre la tierra.»\nY así fue.\nE hizo Dios dos lumbreras grandes: la lumbrera mayor para regir el día, la lumbrera menor para regir la noche, y las estrellas. Y las puso Dios en la bóveda del cielo, para dar luz sobre la tierra; para regir el día y la noche, para separar la luz de la tiniebla.\nY vio Dios que era bueno.\nPasó una tarde, pasó una mañana: el día cuarto.\nY dijo Dios:\n—\t«Pululen las aguas un pulular de vivientes, y pájaros vuelen sobre la tierra frente a la bóveda del cielo.»\nY creó Dios los cetáceos y los vivientes que se deslizan y que el agua hizo pulular según sus especies, y las aves aladas según sus especies.\nY vio Dios que era bueno.\nY Dios los bendijo, diciendo:\n—\t«Creced, multiplicaos, llenad las aguas del mar; que las aves se multipliquen en la tierra.»\nPasó una tarde, pasó una mañana: el día quinto.\nY dijo Dios:\n—\t«Produzca la tierra vivientes según sus especies: animales domésticos, reptiles y fieras según sus especies.»\nY así fue.\nE hizo Dios las fieras según sus especies, los animales domésticos según sus especies y los reptiles según sus especies.\nY vio Dios que era bueno.\nY dijo Dios:\n—\t«Hagamos al hombre a nuestra imagen y semejanza; que domine los peces del mar, las aves del cielo, los animales domésticos, los reptiles de la tierra.»\nY creó Dios al hombre a su imagen; a imagen de Dios lo creó; hombre y mujer los creó.\nY los bendijo Dios y les dijo:\n—\t«Creced, multiplicaos, llenad la tierra y sometedla; dominad los peces del mar, las aves del cielo, los vivientes que se mueven sobre la tierra.»\nY dijo Dios:\n—«Mirad, os entrego todas las hierbas que engendran semilla sobre la faz de la tierra; y todos los árboles frutales que engendran semilla os servirán de alimento; y a todas las fieras de la tierra, a todas las aves del cielo, a todos los reptiles de la tierra, a todo ser que respira, la hierba verde les servirá de alimento.»\nY así fue.\nY vio Dios todo lo que había hecho; y era muy bueno.\nPasó una tarde, pasó una mañana: el día sexto.\nY quedaron concluidos el cielo, la tierra y sus ejércitos.\nY concluyó Dios para el día séptimo todo el trabajo que había hecho; y descansó el día séptimo de todo el trabajo que había hecho."
         },
         "salmo": {
-          "antifona": "Aleluya, aleluya, aleluya.",
-          "texto": "V/. Dad gracias al Señor porque es bueno, porque es eterna su misericordia. Diga la casa de Israel: eterna es su misericordia. R/.\n\nV/. La diestra del Señor es poderosa, la diestra del Señor es excelsa. No he de morir, viviré para contar las hazañas del Señor. R/.\n\nV/. La piedra que desecharon los arquitectos es ahora la piedra angular. Es el Señor quien lo ha hecho, ha sido un milagro patente. R/.",
-          "cita": "Sal 103, 1-2. 16ab-17. 22-23"
+          "antifona": "Envía tu espíritu, Señor, y repuebla la faz de la tierra.",
+          "texto": "V/. Bendice, alma mía, al Señor: ¡Dios mío, qué grande eres! Te vistes de belleza y majestad, la luz te envuelve como un manto. R/.\n\nV/. Asentaste la tierra sobre sus cimientos, y no vacilará jamás; la cubriste con el manto del océano, y las aguas se posaron sobre las montañas. R/.\n\nV/. De los manantiales sacas los ríos, para que fluyan entre los montes; junto a ellos habitan las aves del cielo, y entre las frondas se oye su canto. R/.\n\nV/. Desde tu morada riegas los montes, y la tierra se sacia de tu acción fecunda; haces brotar hierba para los ganados, y forraje para los que sirven al hombre. R/.\n\nV/. Cuántas son tus obras, Señor, y todas las hiciste con sabiduría; la tierra está llena de tus criaturas. ¡Bendice, alma mía, al Señor! R/.",
+          "cita": "Sal 103, 1-2a. 5-6. 10 y 12. 13-14. 24 y 35c (R.: cf. 30)"
         },
         "segunda": {
           "titulo": "El sacrificio de Abrahán, nuestro padre en la fe",
@@ -4294,7 +4300,7 @@
         "primera": {
           "titulo": "Se llama Babel, porque allí confundió el Señor la lengua de toda la tierra",
           "texto": "Se llama Babel, porque allí confundió el Señor la lengua de toda la tierra Toda la tierra hablaba la misma lengua con las mismas palabras.\nAl emigrar (el hombre) de oriente, encontraron una llanura en el país de Senaar y se establecieron allí.\nY se dijeron unos a otros:\n—\t«Vamos a preparar ladrillos y a cocerlos.»\nEmplearon ladrillos en vez de piedras, y alquitrán en vez de cemento.\nY dijeron:\n—\t«Vamos a construir una ciudad y una torre que alcance al cielo, para hacernos famosos, y para no dispersarnos por la superficie de la tierra.»\nEl Señor bajó a ver la ciudad y la torre que estaban construyendo los hombres; y se dijo:\n—«Son un solo pueblo con una sola lengua. Si esto no es más que el comienzo de su actividad, nada de lo que decidan hacer les resultará imposible. Voy a bajar y a confundir su lengua, de modo que uno no entienda la lengua del prójimo.»\nEl Señor los dispersó por la superficie de la tierra y cesaron de construir la ciudad. Por eso se llama Babel, porque allí confundió el Señor la lengua de toda la tierra, y desde allí los dispersó por la superficie de la tierra.",
-          "cita": "libro de Isaías 62, 1-5"
+          "cita": "Génesis 11, 1-9"
         },
         "salmo": {
           "cita": "Sal 103, 1-2a. 24. 27-28. 29bc-30 (R.: cf. 30)",
@@ -4376,7 +4382,7 @@
         "primera": {
           "titulo": "Sacó pan y vino",
           "texto": "En aquellos días, Melquisedec, rey de Salen, sacerdote del Dios altísimo, sacó pan y vino y bendijo a Abrán, diciendo:\n— «Bendito sea Abrán por el Dios altísimo, creador de cielo y tierra; bendito sea el Dios altísimo, que te ha entregado tus enemigos.»\nY Abrán le dio un décimo de cada cosa.",
-          "cita": "libro del Génesis 14, 18-20"
+          "cita": "Génesis 14, 18-20"
         },
         "salmo": {
           "cita": "Sal 109, 1. 2. 3. 4 (R.: 4bc)",
@@ -4495,8 +4501,8 @@
         "day_name": "DOMINGO V DEL TIEMPO ORDINARIO",
         "primera": {
           "titulo": "Aquí estoy, mándame",
-          "cita": "Isaías 6",
-          "texto": "Maldito quien confía en el hombre; bendito quien confía en el Señor\nAsí dice el Señor:\n«Maldito quien confía en el hombre, y en la carne busca su fuerza, apartando su corazón del Señor.\nSerá como un cardo en la estepa, no verá llegar el bien; habitará la aridez del desierto, tierra salobre e inhóspita.\nBendito quien confía en el Señor y pone en el Señor su confianza.\nSerá un árbol plantado junto al agua, que junto a la corriente echa raíces; cuando llegue el estío no lo sentirá, su hoja estará verde; en año de sequía no se inquieta, no deja de dar fruto.»"
+          "cita": "Isaías 6, 1-2a. 3-8",
+          "texto": "El año de la muerte del rey Ozías, vi al Señor sentado sobre un trono alto y excelso: la orla de su manto llenaba el templo.\nY vi serafines en pie junto a él. Y se gritaban uno a otro, diciendo:\n—«¡Santo, santo, santo, el Señor de los ejércitos, la tierra está llena de su gloria!»\nY temblaban los umbrales de las puertas al clamor de su voz, y el templo estaba lleno de humo.\nYo dije:\n—«¡Ay de mí, estoy perdido! Yo, hombre de labios impuros, que habito en medio de un pueblo de labios impuros, he visto con mis ojos al Rey y Señor de los ejércitos.»\nY voló hacia mí uno de los serafines, con un ascua en la mano, que había cogido del altar con unas tenazas; la aplicó a mi boca y me dijo:\n—«Mira; esto ha tocado tus labios, ha desaparecido tu culpa, está perdonado tu pecado.»\nEntonces, escuché la voz del Señor, que decía:\n—«¿A quién mandaré? ¿Quién irá por mí?»\nContesté:\n—«Aquí estoy, mándame.»"
         },
         "salmo": {
           "cita": "Sal 137, 1-2a. 2bc-3. 4-5. 7c-8 (R.: 1c)",
@@ -4822,7 +4828,7 @@
         },
         "salmo": {
           "cita": "Sal 39, 2. 3. 4. 18 (R.: 14b)",
-          "texto": "V/. R Señor, date prisa en socorrerme.\nR/. R Señor, date prisa en socorrerme.\n\nV/. Yo esperaba con ansia al Señor; él se inclinó y escuchó mi grito. R/.\n\nV/. Me levantó de la fosa fatal, de la charca fangosa; afianzó mis pies sobre roca, y aseguró mis pasos. R/.\n\nV/. Me puso en la boca un cántico nuevo, un himno a nuestro Dios. Muchos, al verlo, quedaron sobrecogidos y confiaron en el Señor. R/.\n\nV/. Yo soy pobre y desgraciado, pero el Señor se cuida de mí; tú eres mi auxilio y mi liberación: Dios mío, no tardes. R/.",
+          "texto": "V/. Señor, date prisa en socorrerme.\nR/. R Señor, date prisa en socorrerme.\n\nV/. Yo esperaba con ansia al Señor; él se inclinó y escuchó mi grito. R/.\n\nV/. Me levantó de la fosa fatal, de la charca fangosa; afianzó mis pies sobre roca, y aseguró mis pasos. R/.\n\nV/. Me puso en la boca un cántico nuevo, un himno a nuestro Dios. Muchos, al verlo, quedaron sobrecogidos y confiaron en el Señor. R/.\n\nV/. Yo soy pobre y desgraciado, pero el Señor se cuida de mí; tú eres mi auxilio y mi liberación: Dios mío, no tardes. R/.",
           "antifona": "Señor, date prisa en socorrerme."
         },
         "segunda": {
@@ -5025,11 +5031,11 @@
         "primera": {
           "titulo": "Mientras Moíses tenía en alto la mano, vencía Israel",
           "cita": "Éxodo 17, 8-13",
-          "texto": "En aquellos días, Amalec vino y atacó a los israelitas en Rafidín.\nMoisés dijo a Josué:\n— «Escoge unos cuantos hombres, haz una salida y ataca a Amalec. Mañana yo estaré en pie en la cima del monte, con el bastón maravilloso de Dios en la mano.» Hizo Josué lo que le decía Moisés, y atacó a Amalec; mientras Moisés, Aarón y Jur subían a la cima del monte.\nMientras Moisés tenía en alto la mano, vencía Israel; mientras la tenía baja, vencía Amalec. Y, como le pesaban las manos, sus compañeros cogieron una piedra y se la pusieron debajo, para que se sentase; mientras Aarón y Jur le sostenían los brazos, uno a cada lado.\nAsí sostuvo en alto las manos hasta la puesta del sol.\nJosué derrotó a Amalec y a su tropa, a filo de espada. alabra de Dios."
+          "texto": "En aquellos días, Amalec vino y atacó a los israelitas en Rafidín.\nMoisés dijo a Josué:\n— «Escoge unos cuantos hombres, haz una salida y ataca a Amalec. Mañana yo estaré en pie en la cima del monte, con el bastón maravilloso de Dios en la mano.» Hizo Josué lo que le decía Moisés, y atacó a Amalec; mientras Moisés, Aarón y Jur subían a la cima del monte.\nMientras Moisés tenía en alto la mano, vencía Israel; mientras la tenía baja, vencía Amalec. Y, como le pesaban las manos, sus compañeros cogieron una piedra y se la pusieron debajo, para que se sentase; mientras Aarón y Jur le sostenían los brazos, uno a cada lado.\nAsí sostuvo en alto las manos hasta la puesta del sol.\nJosué derrotó a Amalec y a su tropa, a filo de espada."
         },
         "salmo": {
           "cita": "Sal 120, 1-2. 3-4. 5-6. 7-8 (R.: 2)",
-          "texto": "V/. R El auxilio me viene del Señor, que hizo el cielo y la tierra.\nR/. R El auxilio me viene del Señor, que hizo el cielo y la tierra.\n\nV/. Levanto mis ojos a los montes: ¿de dónde me vendrá el auxilio? El auxilio me viene del Señor, que hizo el cielo y la tierra. R/.\n\nV/. No permitirá que resbale tu pie, tu guardián no duerme; no duerme ni reposa el guardián de Israel. R/.\n\nV/. El Señor te guarda a su sombra, está a tu derecha; de día el sol no te hará daño, ni la luna de noche. R/.\n\nV/. El Señor te guarda de todo mal, el guarda tu alma; el Señor guarda tus entradas y R/.",
+          "texto": "V/. El auxilio me viene del Señor, que hizo el cielo y la tierra.\nR/. R El auxilio me viene del Señor, que hizo el cielo y la tierra.\n\nV/. Levanto mis ojos a los montes: ¿de dónde me vendrá el auxilio? El auxilio me viene del Señor, que hizo el cielo y la tierra. R/.\n\nV/. No permitirá que resbale tu pie, tu guardián no duerme; no duerme ni reposa el guardián de Israel. R/.\n\nV/. El Señor te guarda a su sombra, está a tu derecha; de día el sol no te hará daño, ni la luna de noche. R/.\n\nV/. El Señor te guarda de todo mal, el guarda tu alma; el Señor guarda tus entradas y R/.",
           "antifona": "El auxilio me viene del Señor, que hizo el cielo y la tierra."
         },
         "segunda": {
@@ -5080,7 +5086,7 @@
         },
         "segunda": {
           "titulo": "Que Cristo sea glorificado en vosotros, y vosotros en él",
-          "cita": "Tesalonicenses 1, 11 - 2,2",
+          "cita": "2 Tesalonicenses 1, 11—2, 2",
           "texto": "Pedimos continuamente a Dios que os considere dignos de vuestra vocación, para que con su fuerza os permita cumplir buenos deseos y la tarea de la fe; para que así Jesús, nuestro Señor, sea glorificado en vosotros, y vosotros en él, según la gracia de nuestro Dios y del Señor Jesucristo.\nOs rogamos, hermanos, a propósito de la venida de nuestro Señor Jesucristo y de nuestra reunión con él, que no perdáis fácilmente la cabeza ni os alarméis por supuestas revelaciones, dichos o cartas nuestras, como si afirmásemos que el día del Señor está encima."
         },
         "evangelio": {
@@ -5093,7 +5099,7 @@
         "day_name": "DOMINGO XXXII DEL TIEMPO ORDINARIO",
         "primera": {
           "titulo": "El rey del universo nos resucitará para una vida eterna",
-          "cita": "Ezequiel 47",
+          "cita": "2 Macabeos 7, 1-2. 9-14",
           "texto": "En aquellos días, arrestaron a siete hermanos con su madre. El rey los hizo azotar con látigos y nervios para forzarlos a comer carne de cerdo, prohibida por la Ley. Uno de ellos habló en nombre de los demás:\n—\t«¿Qué pretendes sacar de nosotros? Estamos dispuestos a morir antes que quebrantar la ley de nuestros padres.»\nEl segundo, estando para morir, dijo:\n—«Tú, malvado, nos arrancas la vida presente; pero, cuando hayamos muerto por su ley, el rey del universo nos resucitará para una vida eterna.»\nDespués se divertían con el tercero. Invitado a sacar la lengua, lo hizo en seguida, y alargó las manos con gran valor. Y habló dignamente:\n—\t«De Dios las recibí, y por sus leyes las desprecio; espero recobrarlas del mismo Dios.»\nEl rey y su corte se asombraron del valor con que el joven despreciaba los tormentos.\nCuando murió éste, torturaron de modo semejante al cuarto. Y, cuando estaba para morir, dijo:\n—«Vale la pena morir a manos de los hombres, cuando se espera que Dios mismo nos resucitará. Tú, en cambio, no resucitarás para la vida.»"
         },
         "salmo": {
@@ -5103,31 +5109,31 @@
         },
         "segunda": {
           "titulo": "El Señor os dé fuerza para toda clase de palabras y de obras buenas",
-          "cita": "1 Corintios 3",
+          "cita": "2 Tesalonicenses 2, 16—3, 5",
           "texto": "Que Jesucristo, nuestro Señor, y Dios, nuestro Padre, que nos ha amado tanto y nos ha regalado un consuelo permanente y una gran esperanza, os consuele internamente y os dé fuerza para toda clase de palabras y de obras buenas.\nPor lo demás, hermanos, rezad por nosotros, para que la palabra de Dios siga el avance glorioso que comenzó entre vosotros, y para que nos libre de los hombres perversos y malvados, porque la fe no es de todos.\nEl Señor, que es fiel, os dará fuerzas y os librará del Maligno.\nPor el Señor, estamos seguros de que ya cumplís y seguiréis cumpliendo todo lo que os hemos enseñado.\nQue el Señor dirija vuestro corazón, para que améis a Dios y tengáis la constancia de Cristo."
         },
         "evangelio": {
           "titulo": "No es Dios de muertos, sino de vivos",
-          "cita": "Juan 2",
+          "cita": "Lucas 20, 27-38",
           "texto": "En aquel tiempo, se acercaron a Jesús unos saduceos, que niegan la resurrección, y le preguntaron:\n— «Maestro, Moisés nos dejó escrito: Si a uno se le muere su hermano, dejando mujer, pero sin hijos, cásese con la viuda y dé descendencia a su hermano. Pues bien, había siete hermanos: el primero se casó y murió sin hijos. Y el segundo y el tercero se casaron con ella, y así los siete murieron sin dejar hijos. Por último murió\nla mujer. Cuando llegue la resurrección, ¿de cuál de ellos será la mujer? Porque los siete han estado casados con ella.»\nJesús les contestó:\n—\t«En esta vida, hombres y mujeres se casan; pero los que sean juzgados dignos de la vida futura y de la resurrección de entre los muertos no se casarán. Pues ya no pueden morir, son como ángeles; son hijos de Dios, porque participan en la resurrección.\nY que resucitan los muertos, el mismo Moisés lo indica en el episodio de la zarza, cuando llama al Señor \"Dios de Abrahán, Dios de Isaac, Dios de Jacob\". No es Dios de muertos, sino de vivos; porque para él todos están vivos.»"
         }
       },
       "to_33": {
         "day_name": "DOMINGO XXXIII DEL TIEMPO ORDINARIO",
         "primera": {
-          "titulo": "Ungieron a David como rey de Israel",
-          "cita": "Malaquías 3",
-          "texto": "En aquellos días, todas las tribus de Israel fueron a Hebrón a ver a David y le dijeron:\n— «Hueso tuyo y carne tuya somos; ya hace tiempo, cuando todavía Saúl era nuestro rey, eras tú quien dirigías las entradas y salidas de Israel. Además el Señor te ha prometido: \"Tú serás el pastor de mi pueblo Israel, tú serás el jefe de Israel.\"» Todos los ancianos de Israel fueron a Hebrón a ver al rey, y el rey David hizo con ellos un pacto en Hebrón, en presencia del Señor, y ellos ungieron a David como rey de Israel."
+          "titulo": "Os iluminará un sol de justicia",
+          "cita": "Malaquías 3, 19-20a",
+          "texto": "Mirad que llega el día, ardiente como un horno:\nmalvados y perversos serán la paja, y los quemará el día que ha de venir\n—dice el Señor de los ejércitos—, y no quedará de ellos ni rama ni raíz.\nPero a los que honran mi nombre los iluminará un sol de justicia que lleva la salud en las alas."
         },
         "salmo": {
-          "cita": "Sal 97, 5-6. 7-8. 9 (R.: cf. 9)",
+          "cita": "Sal 97, 5-6. 7-9a. 9bc (R.: cf. 9)",
           "antifona": "El Señor llega para regir los pueblos con rectitud.",
           "texto": "V/. Tañed la cítara para el Señor, suenen los instrumentos: con clarines y al son de trompetas, aclamad al Rey y Señor. R/.\n\nV/. Retumbe el mar y cuanto contiene, la tierra y cuantos la habitan; aplaudan los ríos, aclamen los montes al Señor, que llega para regir la tierra. R/.\n\nV/. Regirá el orbe con justicia y los pueblos con rectitud. R/."
         },
         "segunda": {
-          "titulo": "Nos ha trasladado al reino de su Hijo querido",
-          "cita": "2 Tesalonicenses 3",
-          "texto": "Hermanos:\nDamos gracias a Dios Padre, que nos ha hecho capaces de compartir la herencia del pueblo santo en la luz.\nÉ1 nos ha sacado del dominio de las tinieblas, y nos ha trasladado al reino de su Hijo querido,\npor cuya sangre hemos recibido la redención, el perdón de los pecados.\nÉ1 es imagen de Dios invisible, primogénito de toda criatura;\nporque por medio de él fueron creadas todas las cosas: celestes y terrestres, visibles e invisibles,\nTronos, Dominaciones, Principados, Potestades; todo fue creado por él y para él.\nÉ1 es anterior a todo, y todo se mantiene en él.\nÉ1 es también la cabeza del cuerpo: de la Iglesia.\nÉ1 es el principio, el primogénito de entre los muertos, y así es el primero en todo. Porque en él quiso Dios que residiera toda la plenitud.\nY por él quiso reconciliar consigo todos los seres: los del cielo y los de la tierra, haciendo la paz por la sangre de su cruz."
+          "titulo": "El que no trabaja, que no coma",
+          "cita": "2 Tesalonicenses 3, 7-12",
+          "texto": "Hermanos:\nYa sabéis como tenéis que imitar nuestro ejemplo: no vivimos entre vosotros sin trabajar, nadie nos dio de balde el pan que comimos, sino que trabajamos y nos cansamos día y noche, a fin de no ser carga para nadie.\nNo es que no tuviésemos derecho para hacerlo, pero quisimos daros un ejemplo que imitar.\nCuando vivimos con vosotros os lo mandamos: El que no trabaja, que no coma.\nPorque nos hemos enterado de que algunos viven sin trabajar, muy ocupados en no hacer nada.\nPues a esos les mandamos y recomendamos, por el Señor Jesucristo, que trabajen con tranquilidad para ganarse el pan."
         },
         "evangelio": {
           "titulo": "Con vuestra perseverancia salvaréis vuestras almas",
@@ -5200,7 +5206,7 @@
         },
         "salmo": {
           "cita": "Sal 88, 4-5. 16-17. 27 y 29",
-          "antifona": "Cantaré eternamente las misericordias del Señor.",
+          "antifona": "Cantaré eternamente tus misericordias, Señor.",
           "texto": "V/. Sellé una alianza con mi elegido, jurando a David mi siervo: «Te fundaré un linaje perpetuo, edificaré tu trono para todas las edades.» R/.\n\nV/. Dichoso el pueblo que sabe aclamarte: caminará, oh Señor, a la luz de tu rostro; tu nombre es su gozo cada día, tu justicia es su orgullo. R/.\n\nV/. El me invocará: «Tú eres mi padre, mi Dios, mi Roca salvadora.» Le mantendré eternamente mi favor, y mi alianza con él será estable. R/."
         },
         "segunda": {
@@ -5376,6 +5382,12 @@
           "tipo": "aleluya",
           "cita": "cf. Mt 17, 5",
           "texto": "Éste es mi Hijo, el amado, mi predilecto. Escuchadlo."
+        },
+        "day_name": "LA TRANSFIGURACIÓN DEL SEÑOR",
+        "segunda": {
+          "titulo": "Esta voz del cielo la oímos nosotros",
+          "cita": "2 Pedro 1, 16-19",
+          "texto": "Queridos hermanos:\nCuando os dimos a conocer el poder y la última venida de nuestro Señor Jesucristo, no nos fundábamos en fábulas fantásticas, sino que habíamos sido testigos oculares de su grandeza.\nÉl recibió de Dios Padre honra y gloria, cuando la Sublime Gloria le trajo aquella voz: «Éste es mi Hijo amado, mi predilecto.» Esta voz, traída del cielo, la oímos nosotros, estando con él en la montaña sagrada.\nEsto nos confirma la palabra de los profetas, y hacéis muy bien en prestarle atención, como a una lámpara que brilla en un lugar oscuro, hasta que despunte el día, y el lucero nazca en vuestros corazones."
         }
       },
       "adviento_4": {
@@ -5386,7 +5398,7 @@
           "texto": "Así dice el Señor:\n«Pero tú, Belén de Efrata, pequeña entre las aldeas de Judá, de ti saldrá el jefe de\nIsrael.\nSu origen es desde lo antiguo, de tiempo inmemorial.\nLos entrega hasta el tiempo en que la madre dé a luz,\ny el resto de sus hermanos retornará a los hijos de Israel.\nEn pie, pastoreará con la fuerza del Señor, por el nombre glorioso del Señor, su\nDios.\nHabitarán tranquilos, porque se mostrará grande hasta los confines de la tierra, y\n\néste será nuestra paz.»"
         },
         "salmo": {
-          "cita": "Sal 79, 2ac y 3b. 15-16. 18-19 (R/.: 4)",
+          "cita": "Sal 79, 2ac y 3b. 15-16. 18-19 (R.: 4)",
           "antifona": "Oh Dios, restáuranos, que brille tu rostro y nos salve.",
           "texto": "V/. Pastor de Israel, escucha, tú que te sientas sobre querubines, resplandece. Despierta tu poder y ven a salvarnos. R/.\n\nV/. Dios de los ejércitos, vuélvete: mira desde el cielo, fíjate, ven a visitar tu viña, la cepa que tu diestra plantó, y que tú hiciste vigorosa. R/.\n\nV/. Que tu mano proteja a tu escogido, al hombre que tú fortaleciste. No nos alejaremos de ti: danos vida, para que invoquemos tu nombre. R/."
         },
