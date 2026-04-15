@@ -18,7 +18,10 @@
 {% block content %}
 <nav class="day-nav">
   <a href="/{{ prev_url }}/" class="nav-prev" title="{{ prev_label }}">&larr; {{ prev_label }}</a>
-  <button id="calendar-toggle" aria-label="Elegir fecha" title="Elegir fecha">Elegir fecha</button>
+  <div class="nav-center">
+    <a href="/" class="nav-btn">Hoy</a>
+    <button id="calendar-toggle" aria-label="Elegir otra fecha" title="Elegir otra fecha">Elegir otra fecha</button>
+  </div>
   <a href="/{{ next_url }}/" class="nav-next" title="{{ next_label }}">{{ next_label }} &rarr;</a>
 </nav>
 

@@ -281,6 +281,32 @@ header {
   text-decoration: none;
 }
 
+.nav-center {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+a.nav-btn {
+  display: inline-block;
+  background: none;
+  border: 1px solid var(--color-red);
+  border-radius: 6px;
+  padding: 0.4rem 0.7rem;
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-brand);
+  line-height: 1;
+  text-decoration: none;
+}
+
+a.nav-btn:hover {
+  background: rgba(0, 107, 84, 0.06);
+  color: var(--color-brand);
+  text-decoration: none;
+}
+
 #calendar-toggle {
   background: none;
   border: 1px solid var(--color-red);
