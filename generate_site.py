@@ -95,13 +95,41 @@ def get_day_data(d: date) -> dict:
     # Build readings list
     readings = []
     if readings_raw:
+        # Vigilia Pascual: insert 7 OT readings + psalms before epistle/gospel
+        if "vigilia_lecturas" in readings_raw:
+            for i, lec in enumerate(readings_raw["vigilia_lecturas"], 1):
+                p = lec.get("primera", {})
+                if p and isinstance(p, dict) and p.get("texto"):
+                    readings.append({
+                        "key": f"lectura_{i}",
+                        "label": f"Lectura {i}\u00aa",
+                        "cita": p.get("cita", ""),
+                        "titulo": p.get("titulo", ""),
+                        "texto": p.get("texto", ""),
+                        "antifona": "",
+                    })
+                s = lec.get("salmo", {})
+                if s and isinstance(s, dict) and s.get("texto"):
+                    readings.append({
+                        "key": f"salmo_{i}",
+                        "label": "Salmo Responsorial" if "Sal" in s.get("cita", "") else "Cántico",
+                        "cita": s.get("cita", ""),
+                        "titulo": "",
+                        "texto": s.get("texto", ""),
+                        "antifona": s.get("antifona", ""),
+                    })
+
         for key in ("primera", "salmo", "segunda", "evangelio"):
             r = readings_raw.get(key)
             if not r or not isinstance(r, dict):
                 continue
+            # For vigilia, label segunda as Epístola
+            label = _READING_LABELS.get(key, key)
+            if key == "segunda" and "vigilia_lecturas" in readings_raw:
+                label = "Epístola"
             readings.append({
                 "key": key,
-                "label": _READING_LABELS.get(key, key),
+                "label": label,
                 "cita": r.get("cita", ""),
                 "titulo": r.get("titulo", ""),
                 "texto": r.get("texto", ""),
