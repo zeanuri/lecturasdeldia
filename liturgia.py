@@ -1005,7 +1005,7 @@ def _build_dominical_key(result: dict) -> str | None:
     if "Ramos" in name: return "ramos"
     if "Jueves Santo" in name: return "jueves_santo"
     if "Viernes Santo" in name: return "viernes_santo"
-    if "Vigilia Pascual" in name or "Sábado Santo" in name or "Sabado Santo" in name: return "vigilia_pascual"
+    if "Vigilia Pascual" in name or "Sábado Santo" in name or "Sabado Santo" in name: return "vigilia_pascual"  # multi-entry: vigilia_pascual_lectura_1..7 + vigilia_pascual
     if "Resurreccion" in name or "Resurrección" in name: return "pascua_resurreccion"
 
     # Solemnities after Easter
@@ -1207,7 +1207,18 @@ def lookup_readings(result: dict) -> dict | None:
             day_key = _build_dominical_key(result)
             if day_key and cycle in lec.get("dominical", {}):
                 if day_key in lec["dominical"][cycle]:
-                    return lec["dominical"][cycle][day_key]
+                    entry = lec["dominical"][cycle][day_key]
+                    # Vigilia Pascual: merge 7 OT lectura entries into result
+                    if day_key == "vigilia_pascual":
+                        vigilia_lecturas = []
+                        for i in range(1, 8):
+                            lk = f"vigilia_pascual_lectura_{i}"
+                            if lk in lec["dominical"][cycle]:
+                                vigilia_lecturas.append(lec["dominical"][cycle][lk])
+                        if vigilia_lecturas:
+                            entry = dict(entry)
+                            entry["vigilia_lecturas"] = vigilia_lecturas
+                    return entry
         # For non-Sunday Solemnidades in strong seasons without dominical match,
         # try ferial_fuerte BEFORE santos (e.g., Easter octave days)
         if not is_sunday and season in ("Cuaresma", "Semana Santa", "Tiempo de Pascua", "Adviento", "Tiempo de Navidad"):
@@ -1282,8 +1293,21 @@ def format_readings(readings: dict) -> str:
     lines.append("  LECTURAS (CEE — Leccionario offline)")
     lines.append("  " + "-" * 50)
 
+    # Vigilia Pascual: render 7 OT readings first
+    if "vigilia_lecturas" in readings:
+        for i, lec in enumerate(readings["vigilia_lecturas"], 1):
+            p = lec.get("primera", {})
+            s = lec.get("salmo", {})
+            label = f"LECTURA {i}ª"
+            lines.append(f"  {label:14s} {p.get('cita', '')}")
+            if p.get('titulo'):
+                lines.append(f"  {'':14s} {p['titulo']}")
+            if s.get('cita'):
+                lines.append(f"  {'SALMO':14s} {s.get('cita', '')}")
+        lines.append("  " + "-" * 30)
+
     for key, label in [('primera', '1a LECTURA'), ('salmo', 'SALMO'),
-                       ('segunda', '2a LECTURA'), ('evangelio', 'EVANGELIO')]:
+                       ('segunda', 'EPÍSTOLA'), ('evangelio', 'EVANGELIO')]:
         r = readings.get(key)
         if not r or not isinstance(r, dict):
             continue
