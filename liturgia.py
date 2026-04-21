@@ -1077,6 +1077,11 @@ def _build_ferial_fuerte_key(result: dict) -> str | None:
 
     dia = _DAY_MAP.get(day_name)
 
+    # Movable Memoria Obligatoria feasts with proper readings stored here
+    # (name-keyed, not season/date-derived).
+    if "Madre de la Iglesia" in name:
+        return "maria_madre_iglesia"
+
     # Ash Wednesday itself (not post-ceniza ferias like "Jueves después de Ceniza")
     if "Ceniza" in name and "después" not in name.lower() and "despues" not in name.lower():
         return "ceniza"
@@ -1246,6 +1251,15 @@ def lookup_readings(result: dict) -> dict | None:
             day_key = _build_ferial_fuerte_key(result)
             if day_key and day_key in lec.get("ferial_fuerte", {}):
                 return lec["ferial_fuerte"][day_key]
+
+    # 3.5 Movable Memoria Obligatoria with proper readings stored in
+    # ferial_fuerte (e.g. María Madre de la Iglesia, lunes después de
+    # Pentecostés — falls in Tiempo Ordinario, so the strong-season
+    # ferial_fuerte branches above never reach it).
+    if memorial and readings_source == "propias" and not is_sunday:
+        ff_key = _build_ferial_fuerte_key(result)
+        if ff_key and ff_key in lec.get("ferial_fuerte", {}):
+            return lec["ferial_fuerte"][ff_key]
 
     # 4. Ferial TO
     if season == "Tiempo Ordinario" and not is_sunday:
