@@ -883,6 +883,11 @@
           "cita": "1 Cor 1, 1-3",
           "texto": "Pablo, llamado a ser apóstol de Jesucristo por voluntad de Dios, y Sóstenes, nuestro hermano, a la Iglesia de Dios que está en Corinto, a los santificados por Jesucristo, llamados santos con todos los que en cualquier lugar invocan el nombre de nuestro Señor Jesucristo, Señor de ellos y nuestro: a vosotros, gracia y paz de parte de Dios nuestro Padre y del Señor Jesucristo."
         },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Jn 1, 14a. 12a",
+          "texto": "El Verbo se hizo carne y habitó entre nosotros; a cuantos lo recibieron, les dio poder de ser hijos de Dios."
+        },
         "evangelio": {
           "titulo": "Este es el Cordero de Dios, que quita el pecado del mundo",
           "cita": "Jn 1, 29-34",
@@ -905,6 +910,11 @@
           "titulo": "Decid todos lo mismo y que no haya divisiones entre vosotros",
           "cita": "1 Cor 1, 10-13. 17",
           "texto": "Os ruego, hermanos, en nombre de nuestro Señor Jesucristo, que digáis todos lo mismo y que no haya divisiones entre vosotros. Estad bien unidos con un mismo pensar y un mismo sentir.\nPues, hermanos, me he enterado por los de Cloe de que hay discordias entre vosotros. Y os digo esto porque cada cual anda diciendo: «Yo soy de Pablo, yo soy de Apolo, yo soy de Cefas, yo soy de Cristo».\n¿Está dividido Cristo? ¿Fue crucificado Pablo por vosotros? ¿Fuisteis bautizados en nombre de Pablo?\nPues no me envió Cristo a bautizar, sino a anunciar el Evangelio, y no con sabiduría de palabras, para no hacer ineficaz la cruz de Cristo."
+        },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Cf. Mt 4, 23",
+          "texto": "Jesús proclamaba el evangelio del reino, y curaba toda dolencia del pueblo."
         },
         "evangelio": {
           "titulo": "Se estableció en Cafarnaún, para que se cumpliera lo dicho por Isaías",
@@ -929,6 +939,11 @@
           "cita": "1 Cor 1, 26-31",
           "texto": "Fijaos en vuestra asamblea, hermanos: no hay en ella muchos sabios en lo humano, ni muchos poderosos, ni muchos aristócratas; sino que, lo necio del mundo lo ha escogido Dios para humillar a los sabios, y lo débil del mundo lo ha escogido Dios para humillar lo poderoso.\nAún más, ha escogido la gente baja del mundo, lo despreciable, lo que no cuenta, para anular a lo que cuenta, de modo que nadie pueda gloriarse en presencia del Señor.\nA él se debe que vosotros estéis en Cristo Jesús, el cual se ha hecho para nosotros sabiduría de parte de Dios, justicia, santificación y redención.\nY así —como está escrito—: «el que se gloríe, que se gloríe en el Señor»."
         },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Mt 5, 12a",
+          "texto": "Alegraos y regocijaos, porque vuestra recompensa será grande en el cielo."
+        },
         "evangelio": {
           "titulo": "Bienaventurados los pobres en el espíritu",
           "cita": "Mt 5, 1-12a",
@@ -951,6 +966,11 @@
           "titulo": "Os anuncié el misterio de Cristo crucificado",
           "cita": "1 Cor 2, 1-5",
           "texto": "Yo mismo, hermanos, cuando vine a vosotros a anunciaros el misterio de Dios, no lo hice con sublime elocuencia o sabiduría, pues nunca entre vosotros me precié de saber cosa alguna, sino a Jesucristo, y este crucificado.\nTambién yo me presenté a vosotros débil y temblando de miedo; mi palabra y mi predicación no fue con persuasiva sabiduría humana, sino en la manifestación y el poder del Espíritu, para que vuestra fe no se apoye en la sabiduría de los hombres, sino en el poder de Dios."
+        },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Cf. Jn 8, 12b",
+          "texto": "Yo soy la luz del mundo —dice el Señor—; el que me sigue tendrá la luz de la vida."
         },
         "evangelio": {
           "titulo": "Vosotros sois la luz del mundo",
@@ -975,6 +995,11 @@
           "cita": "1 Cor 2, 6-10",
           "texto": "Hermanos:\nHablamos de sabiduría entre los perfectos; pero una sabiduría que no es de este mundo ni de los príncipes de este mundo, condenados a perecer, sino que enseñamos una sabiduría divina, misteriosa, escondida, predestinada por Dios antes de los siglos para nuestra gloria.\nNinguno de los príncipes de este mundo la ha conocido, pues, si la hubiesen conocido, nunca hubieran crucificado al Señor de la gloria.\nSino que, como está escrito: «Ni el ojo vio, ni el oído oyó, ni el hombre puede pensar lo que Dios ha preparado para los que lo aman».\nY Dios nos lo ha revelado por el Espíritu; pues el Espíritu lo sondea todo, incluso lo profundo de Dios."
         },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Cf. Mt 11, 25",
+          "texto": "Bendito seas, Padre, Señor del cielo y de la tierra, porque has revelado los misterios del reino a los pequeños."
+        },
         "evangelio": {
           "titulo": "Así se dijo a los antiguos; pero yo os digo",
           "cita": "Mt 5, 20-22a. 27-28. 33-34a. 37",
@@ -997,6 +1022,11 @@
           "titulo": "Todo es vuestro, vosotros de Cristo y Cristo de Dios",
           "cita": "1 Cor 3, 16-23",
           "texto": "Hermanos:\n¿No sabéis que sois templo de Dios y que el Espíritu de Dios habita en vosotros?\nSi alguno destruye el templo de Dios, Dios lo destruirá a él; porque el templo de Dios es santo: y ese templo sois vosotros.\nQue nadie se engañe. Si alguno de vosotros se cree sabio en este mundo, que se haga necio para llegar a ser sabio.\nPorque la sabiduría de este mundo es necedad ante Dios, como está escrito: «Él caza a los sabios en su astucia». Y también: «El Señor penetra los pensamientos de los sabios y conoce que son vanos».\nAsí, pues, que nadie se gloríe en los hombres, pues todo es vuestro: Pablo, Apolo, Cefas, el mundo, la vida, la muerte, lo presente, lo futuro. Todo es vuestro, vosotros de Cristo y Cristo de Dios."
+        },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "1 Jn 2, 5",
+          "texto": "Quien guarda la Palabra de Cristo, ciertamente el amor de Dios ha llegado en él a su plenitud."
         },
         "evangelio": {
           "titulo": "Amad a vuestros enemigos",
@@ -1021,6 +1051,11 @@
           "cita": "1 Cor 4, 1-5",
           "texto": "Hermanos:\nQue la gente solo vea en nosotros servidores de Cristo y administradores de los misterios de Dios. Ahora, lo que se busca en los administradores es que sean fieles. Para mí lo de menos es que me pidáis cuentas vosotros o un tribunal humano; ni siquiera yo me pido cuentas. La conciencia, es verdad, no me remuerde; pero tampoco por eso quedo absuelto: mi juez es el Señor.\nAsí, pues, no juzguéis antes de tiempo, dejad que venga el Señor. Él iluminará lo que esconden las tinieblas y pondrá al descubierto los designios del corazón; entonces cada uno recibirá de Dios lo que merece."
         },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Heb 4, 12ad",
+          "texto": "La palabra de Dios es viva y eficaz; juzga los deseos e intenciones del corazón."
+        },
         "evangelio": {
           "titulo": "No os agobiéis por el mañana",
           "cita": "Mt 6, 24-34",
@@ -1043,6 +1078,11 @@
           "titulo": "El hombre es justificado por la fe, sin obras de la Ley",
           "cita": "Rom 3, 21-25a. 28",
           "texto": "Hermanos:\nAhora, la justicia de Dios, atestiguada por la Ley y los Profetas, se ha manifestado independientemente de la Ley.\nPor la fe en Jesucristo viene la justicia de Dios a todos los que creen, sin distinción alguna. Pues todos pecaron y todos están privados de la gloria de Dios, y son justificados gratuitamente por su gracia, mediante la redención de Cristo Jesús, a quien constituyó sacrificio de propiciación mediante la fe en su sangre.\nSostenemos, pues, que el hombre es justificado por la fe, sin las obras de la Ley."
+        },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Jn 15, 5",
+          "texto": "Yo soy la vid, vosotros los sarmientos —dice el Señor—; el que permanece en mí y yo en él, ese da fruto abundante."
         },
         "evangelio": {
           "titulo": "La casa edificada sobre roca y la casa edificada sobre arena",
@@ -1067,6 +1107,11 @@
           "cita": "Rom 4, 18-25",
           "texto": "Hermanos:\nAbrahán, apoyado en la esperanza, creyó contra toda esperanza que llegaría a ser padre de muchos pueblos, de acuerdo con lo que se le había dicho: «Así será tu descendencia».\nY, aunque se daba cuenta de que su cuerpo estaba ya medio muerto –tenía unos cien años– y de que el seno de Sara era estéril, no vaciló en su fe.\nTodo lo contrario, ante la promesa divina no cedió a la incredulidad, sino que se fortaleció en la fe, dando gloria a Dios, pues estaba persuadido de que Dios es capaz de hacer lo que promete; por lo cual le fue contado como justicia.\nPero que «le fue contado» no está escrito solo por él; también está escrito por nosotros, a quienes se nos contará: nosotros, los que creemos en el que resucitó de entre los muertos a Jesucristo nuestro Señor, el cual fue entregado por nuestros pecados y resucitó para nuestra justificación."
         },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Lc 4, 18",
+          "texto": "El Señor me ha enviado a evangelizar a los pobres, a proclamar a los cautivos la libertad."
+        },
         "evangelio": {
           "titulo": "No he venido a llamar a justos sino a pecadores",
           "cita": "Mt 9, 9-13",
@@ -1089,6 +1134,11 @@
           "titulo": "Si fuimos reconciliados por la muerte del Hijo, ¡con cuánta más razón seremos salvados por su vida!",
           "cita": "Rom 5, 6-11",
           "texto": "Hermanos:\nCuando nosotros estábamos aún sin fuerza, en el tiempo señalado, Cristo murió por los impíos; ciertamente, apenas habrá quien muera por un justo; por una persona buena tal vez se atrevería alguien a morir; pues bien: Dios nos demostró su amor en que, siendo nosotros todavía pecadores, Cristo murió por nosotros.\n¡Con cuánta más razón, pues, justificados ahora por su sangre, seremos por él salvados del castigo!\nSi, cuando éramos enemigos, fuimos reconciliados con Dios por la muerte de su Hijo, ¡con cuánta más razón, estando ya reconciliados, seremos salvados por su vida!\nY no solo eso, sino que también nos gloriamos en Dios, por nuestro Señor Jesucristo, por quien hemos obtenido ahora la reconciliación."
+        },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Mc 1, 15",
+          "texto": "Está cerca el reino de Dios; convertíos y creed en el Evangelio."
         },
         "evangelio": {
           "titulo": "Llamó a sus doce discípulos y los envió",
@@ -1113,6 +1163,11 @@
           "cita": "Rom 5, 12-15",
           "texto": "Hermanos:\nLo mismo que por un hombre entró el pecado en el mundo, y por el pecado la muerte, y así la muerte se propagó a todos los hombres, porque todos pecaron…\nPues, hasta que llegó la ley había pecado en el mundo, pero el pecado no se imputaba porque no había ley. Pese a todo, la muerte reinó desde Adán hasta Moisés, incluso sobre los que no habían pecado con una transgresión como la de Adán, que era figura del que tenía que venir.\nSin embargo, no hay proporción entre el delito y el don: si por el delito de uno solo murieron todos, con mayor razón la gracia de Dios y el don otorgado en virtud de un hombre, Jesucristo, se han desbordado sobre todos."
         },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Jn 15, 26b. 27a",
+          "texto": "El Espíritu de la verdad dará testimonio de mí —dice el Señor—; y vosotros daréis testimonio."
+        },
         "evangelio": {
           "titulo": "No tengáis miedo a los que matan el cuerpo",
           "cita": "Mt 10, 26-33",
@@ -1135,6 +1190,11 @@
           "titulo": "Sepultados con él por el bautismo, andemos en una vida nueva",
           "cita": "Rom 6, 3-4. 8-11",
           "texto": "Hermanos:\nCuantos fuimos bautizados en Cristo Jesús fuimos bautizados en su muerte.\nPor el bautismo fuimos sepultados con él en la muerte, para que, lo mismo que Cristo resucitó de entre los muertos por la gloria del Padre, así también nosotros andemos en una vida nueva.\nSi hemos muerto con Cristo, creemos que también viviremos con él; pues sabemos que Cristo, una vez resucitado de entre los muertos, ya no muere más; la muerte ya no tiene dominio sobre él. Porque quien ha muerto, ha muerto al pecado de una vez para siempre; y quien vive, vive para Dios.\nLo mismo vosotros, consideraos muertos al pecado y vivos para Dios en Cristo Jesús."
+        },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "1 Pe 2, 9",
+          "texto": "Vosotros sois un linaje elegido, un sacerdocio real, una nación santa; anunciad las proezas del que os llamó de las tinieblas a su luz maravillosa."
         },
         "evangelio": {
           "titulo": "El que no carga con la cruz no es digno de mí. El que os recibe a vosotros, me recibe a mí",
@@ -1159,6 +1219,11 @@
           "cita": "Rom 8, 9. 11-13",
           "texto": "Hermanos:\nVosotros no estáis en la carne, sino en el Espíritu, si es que el Espíritu de Dios habita en vosotros; en cambio, si alguien no posee el Espíritu de Cristo no es de Cristo.\nY si el Espíritu del que resucitó a Jesús de entre los muertos habita en vosotros, el que resucitó de entre los muertos a Cristo Jesús también dará vida a vuestros cuerpos mortales, por el mismo Espíritu que habita en vosotros. Así pues, hermanos, somos deudores, pero no de la carne para vivir según la carne. Pues si vivís según la carne, moriréis; pero si con el Espíritu dais muerte a las obras del cuerpo, viviréis."
         },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Cf. Mt 11, 25",
+          "texto": "Bendito seas, Padre, Señor del cielo y de la tierra, porque has revelado los misterios del reino a los pequeños."
+        },
         "evangelio": {
           "titulo": "Soy manso y humilde de corazón",
           "cita": "Mt 11, 25-30",
@@ -1181,6 +1246,11 @@
           "titulo": "La creación, expectante, está aguardando la manifestación de los hijos de Dios",
           "cita": "Rom 8, 18-23",
           "texto": "Hermanos:\nConsidero que los sufrimientos de ahora no se pueden comparar con la gloria que un día se nos manifestará. Porque la creación, expectante, está aguardando la manifestación de los hijos de Dios; en efecto, la creación fue sometida a la frustración, no por su voluntad, sino por aquel que la sometió, con la esperanza de que la creación misma sería liberada de la esclavitud de la corrupción, para entrar en la gloriosa libertad de los hijos de Dios.\nPorque sabemos que hasta hoy toda la creación está gimiendo y sufre dolores de parto.\nY no solo eso, sino que también nosotros, que poseemos las primicias del Espíritu, gemimos en nuestro interior, aguardando la adopción filial, la redención de nuestro cuerpo."
+        },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "",
+          "texto": "La semilla es la palabra de Dios, y el sembrador es Cristo; todo el que lo encuentra vive para siempre."
         },
         "evangelio": {
           "titulo": "Salió el sembrador a sembrar",
@@ -1205,6 +1275,11 @@
           "cita": "Rom 8, 26-27",
           "texto": "Hermanos:\nEl Espíritu acude en ayuda de nuestra debilidad, pues nosotros no sabemos pedir como conviene; pero el Espíritu mismo intercede por nosotros con gemidos inefables.\nY el que escruta los corazones sabe cuál es el deseo del Espíritu, y que su intercesión por los santos es según Dios."
         },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Cf. Mt 11, 25",
+          "texto": "Bendito seas, Padre, Señor del cielo y de la tierra, porque has revelado los misterios del reino a los pequeños."
+        },
         "evangelio": {
           "titulo": "Dejadlos crecer juntos hasta la siega",
           "cita": "Mt 13, 24-30",
@@ -1227,6 +1302,11 @@
           "titulo": "Nos predestinó a reproducir la imagen de su Hijo",
           "cita": "Rom 8, 28-30",
           "texto": "Hermanos:\nSabemos que a los que aman a Dios todo les sirve para el bien; a los cuales ha llamado conforme a su designio.\nPorque a los que había conocido de antemano los predestinó a reproducir la imagen de su Hijo, para que él fuera el primogénito entre muchos hermanos.\nY a los que predestinó, los llamó; a los que llamó, los justificó; a los que justificó, los glorificó."
+        },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Cf. Mt 11, 25",
+          "texto": "Bendito seas, Padre, Señor del cielo y de la tierra, porque has revelado los misterios del reino a los pequeños."
         },
         "evangelio": {
           "titulo": "Vende todo lo que tiene y compra el campo",
@@ -1251,6 +1331,11 @@
           "cita": "Rom 8, 35. 37-39",
           "texto": "Hermanos:\n¿Quién nos separará del amor de Cristo?, ¿la tribulación?, ¿la angustia?, ¿la persecución?, ¿el hambre?, ¿la desnudez?, ¿el peligro?, ¿la espada?\nPero en todo esto vencemos de sobra gracias a aquel que nos ha amado. Pues estoy convencido de que ni muerte, ni vida, ni ángeles, ni principados, ni presente, ni futuro, ni potencias, ni altura, ni profundidad, ni ninguna otra criatura podrá separarnos del amor de Dios manifestado en Cristo Jesús, nuestro Señor."
         },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Mt 4, 4b",
+          "texto": "No solo de pan vive el hombre, sino de toda palabra que sale de la boca de Dios."
+        },
         "evangelio": {
           "titulo": "Comieron todos y se saciaron",
           "cita": "Mt 14, 13-21",
@@ -1273,6 +1358,11 @@
           "titulo": "Desearía ser un proscrito por el bien de mis hermanos",
           "cita": "Rom 9, 1-5",
           "texto": "Hermanos:\nDigo la verdad en Cristo, no miento —mi conciencia me atestigua que es así, en el Espíritu Santo—: siento una gran tristeza y un dolor incesante en mi corazón; pues desearía ser yo mismo un proscrito, alejado de Cristo, por el bien de mis hermanos, los de mi raza según la carne: ellos son israelitas y a ellos pertenecen el don de la filiación adoptiva, la gloria, las alianzas, el don de la ley, el culto y las promesas; suyos son los patriarcas y de ellos procede el Cristo, según la carne; el cual está por encima de todo, Dios bendito por los siglos. Amén."
+        },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Cf. Sal 129, 5",
+          "texto": "Espero en el Señor, espero en su palabra."
         },
         "evangelio": {
           "titulo": "Mándame ir a ti sobre el agua",
@@ -1297,6 +1387,11 @@
           "cita": "Rom 11, 13-15. 29-32",
           "texto": "Hermanos:\nA vosotros, gentiles, os digo: siendo como soy apóstol de los gentiles, haré honor a mi ministerio, por ver si doy celos a los de mi raza y salvo a algunos de ellos.\nPues si su rechazo es reconciliación del mundo, ¿qué no será su reintegración sino volver desde la muerte a la vida?\nPues los dones y la llamada de Dios son irrevocables.\nEn efecto, así como vosotros, en otro tiempo, desobedecisteis a Dios, pero ahora habéis obtenido misericordia por la desobediencia de ellos, así también estos han desobedecido ahora con ocasión de la misericordia que se os ha otorgado a vosotros, para que también ellos alcancen ahora misericordia.\nPues Dios nos encerró a todos en desobediencia, para tener misericordia de todos."
         },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Cf. Mt 4, 23",
+          "texto": "Jesús proclamaba el evangelio del reino, y curaba toda dolencia en el pueblo."
+        },
         "evangelio": {
           "titulo": "Mujer, qué grande es tu fe",
           "texto": "En aquel tiempo, Jesús salió y se retiró a la región de Tiro y Sidón.\nEntonces una mujer cananea, saliendo de uno de aquellos lugares, se puso a gritarle:\n«Ten compasión de mí, Señor, Hijo de David. Mi hija tiene un demonio muy malo».\nÉl no le respondió nada. Entonces los discípulos se le acercaron a decirle:\n«Atiéndela, que viene detrás gritando».\nÉl les contestó:\n«Solo he sido enviado a las ovejas descarriadas de Israel».\nElla se acercó y se postró ante él diciendo:\n«Señor, ayúdame».\nÉl le contestó:\n«No está bien tomar el pan de los hijos y echárselo a los perritos ».\nPero ella repuso:\n«Tienes razón, Señor; pero también los perritos se comen las migajas que caen de la mesa de los amos».\nJesús le respondió:\n«Mujer, qué grande es tu fe: que se cumpla lo que deseas».\nEn aquel momento quedó curada su hija.",
@@ -1319,6 +1414,11 @@
           "titulo": "De él, por él y para él existe todo",
           "cita": "Rom 11, 33-36",
           "texto": "¡Qué abismo de riqueza, de sabiduría y de conocimiento el de Dios! ¡Qué insondables sus decisiones y qué irrastreables sus caminos!\nEn efecto, ¿quién conoció la mente del Señor? O ¿quién fue su consejero? O ¿quién le ha dado primero para tener derecho a la recompensa?\nPorque de él, por él y para él existe todo. A él la gloria por los siglos. Amén."
+        },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Mt 16, 18",
+          "texto": "Tú eres Pedro, y sobre esta piedra edificaré mi Iglesia, y el poder del infierno no la derrotará."
         },
         "evangelio": {
           "titulo": "Tú eres Pedro, y te daré las llaves del reino de los cielos",
@@ -1366,6 +1466,11 @@
           "cita": "Flp 1, 20c-24. 27a",
           "texto": "Hermanos:\nCristo será glorificado en mi cuerpo, por mi vida o por mi muerte.\nPara mí la vida es Cristo y el morir una ganancia. Pero, si el vivir esta vida mortal me supone trabajo fructífero, no sé qué escoger.\nMe encuentro en esta alternativa: por un lado, deseo partir para estar con Cristo, que es con mucho lo mejor; pero, por otro, quedarme en esta vida veo que es más necesario para vosotros.\nLo importante es que vosotros llevéis una vida digna del Evangelio de Cristo."
         },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Cf. Hch 16, 14b",
+          "texto": "Abre, Señor, nuestro corazón, para que aceptemos las palabras de tu Hijo."
+        },
         "evangelio": {
           "titulo": "¿Vas a tener tú envidia porque yo soy bueno?",
           "cita": "Mt 20, 1-16",
@@ -1388,6 +1493,11 @@
           "titulo": "Tened entre vosotros los sentimientos propios de Cristo Jesús",
           "cita": "Flp 2, 1-5",
           "texto": "Hermanos:\nSi queréis darme el consuelo de Cristo\ny aliviarme con vuestro amor, si nos une el mismo Espíritu y tenéis entrañas compasivas, dadme esta gran alegría:\nmanteneos unánimes y concordes con un mismo amor y un mismo sentir.\nNo obréis por envidia ni por ostentación, dejaos guiar por la humildad y considerad siempre superiores a los demás.\nNo os encerréis en vuestros intereses, sino buscad todos el interés de los demás.\nTened entre vosotros los sentimientos propios de una vida en Cristo Jesús.\n[El, a pesar de su condición divina, no hizo alarde de su categoría de Dios;\nal contrario, se despojó de su rango y tomó la condición de esclavo, pasando por uno de tantos.\nY así, actuando como un hombre cualquiera, se rebajó hasta someterse incluso a la muerte, y una muerte de cruz.\nPor eso Dios lo levantó sobre todo y le concedió el «Nombre-sobre-todo-nombre», de modo que al nombre de Jesús toda rodilla se doble — en el Cielo, en la Tierra, en el Abismo— y toda lengua proclame: «¡Jesucristo es Señor!» para gloria de Dios Padre."
+        },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Jn 10, 27",
+          "texto": "Mis ovejas escuchan mi voz —dice el Señor—, y yo las conozco, y ellas me siguen."
         },
         "evangelio": {
           "titulo": "Se arrepintió y fue. Los publicanos y las prostitutas van por delante de vosotros en el reino de Dios",
@@ -1412,6 +1522,11 @@
           "texto": "Hermanos:\nNada os preocupe; sino que, en toda ocasión, en la oración y en la súplica, con acción de gracias, vuestras peticiones sean presentadas a Dios.\nY la paz de Dios, que supera todo juicio, custodiará vuestros corazones y vuestros pensamientos en Cristo Jesús.\nFinalmente, hermanos, todo lo que es verdadero, noble, justo, puro, amable, laudable, todo lo que es virtud o mérito, tenedlo en cuenta.\nLo que aprendisteis, recibisteis, oísteis, visteis en mí, ponedlo por obra.\nY el Dios de la paz estará con vosotros.",
           "titulo": "Ponedlo por obra, y el Dios de la paz estará con vosotros"
         },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Cf. Jn 15, 16",
+          "texto": "Yo os he elegido del mundo —dice el Señor—, para que vayáis y deis fruto, y vuestro fruto permanezca."
+        },
         "evangelio": {
           "titulo": "Arrendará la viña a otros labradores",
           "cita": "Mt 21, 33-43",
@@ -1434,6 +1549,11 @@
           "titulo": "Todo lo puedo en aquel que me conforta",
           "cita": "Flp 4, 12-14. 19-20",
           "texto": "Hermanos:\nSé vivir en pobreza y abundancia. Estoy avezado en todo y para todo: a la hartura y al hambre, a la abundancia y a la privación. Todo lo puedo en aquel que me conforta. En todo caso, hicisteis bien en compartir mis tribulaciones.\nEn pago, mi Dios proveerá a todas vuestras necesidades con magnificencia, conforme a su riqueza en Cristo Jesús.\nA Dios, nuestro Padre, la gloria por los siglos de los siglos. Amén."
+        },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Cf. Ef 1, 17-18",
+          "texto": "El Padre de nuestro Señor Jesucristo ilumine los ojos de nuestro corazón, para que comprendamos cuál es la esperanza a la que nos llama."
         },
         "evangelio": {
           "titulo": "A todos los que encontréis, llamadlos a la boda",
@@ -1458,6 +1578,11 @@
           "cita": "1 Tes 1, 1-5b",
           "texto": "Pablo, Silvano y Timoteo a la Iglesia de los Tesalonicenses, en Dios Padre y en el Señor Jesucristo. A vosotros, gracia y paz.\nSiempre damos gracias a Dios por todos vosotros y os tenemos presentes en nuestras oraciones.\nAnte Dios, nuestro Padre, recordamos sin cesar la actividad de vuestra fe, el esfuerzo de vuestro amor y el aguante de vuestra esperanza en Jesucristo nuestro Señor.\nBien sabemos, hermanos amados de Dios, que él os ha elegido y que cuando se proclamó el Evangelio entre vosotros no hubo sólo palabras, sino además fuerza del Espíritu Santo y convicción profunda, como muy bien sabéis."
         },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Flp 2, 15d. 16a",
+          "texto": "Brilláis como lumbreras del mundo, manteniendo firme la palabra de la vida."
+        },
         "evangelio": {
           "titulo": "Dad al César lo que es del César y a Dios lo que es de Dios",
           "cita": "Mt 22, 15-21",
@@ -1481,6 +1606,11 @@
           "cita": "1 Tes 1, 5c-10",
           "texto": "Hermanos:\nSabéis cual fue nuestra actuación entre vosotros para vuestro bien. Y vosotros seguisteis nuestro ejemplo y el del Señor, acogiendo la Palabra entre tanta lucha con la alegría del Espíritu Santo. Así llegasteis a ser un modelo para todos los creyentes de Macedonia y de Acaya.\nDesde vuestra comunidad, la Palabra del Señor ha resonado no sólo en Macedonia y en Acaya, sino en todas partes; vuestra fe en Dios había corrido de boca en boca, de modo que nosotros no teníamos necesidad de explicar nada, ya que ellos mismos cuentan los detalles de la visita que os hicimos: cómo, abandonando los ídolos, os volvisteis a Dios, para servir al Dios vivo y verdadero, y vivir aguardando la vuelta de su Hijo Jesús desde el cielo, a quien ha resucitado de entre los muertos y que os libra del castigo futuro."
         },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Cf. Jn 14, 23",
+          "texto": "El que me ama guardará mi palabra —dice el Señor—, y mi Padre lo amará, y vendremos a él."
+        },
         "evangelio": {
           "titulo": "Amarás al Señor tu Dios, y a tu prójimo como a ti mismo",
           "cita": "Mt 22, 34-40",
@@ -1503,6 +1633,11 @@
           "titulo": "Deseábamos entregaros no solo el Evangelio de Dios, sino hasta nuestras propias personas",
           "cita": "1 Tes 2, 7b-9. 13",
           "texto": "El día del Señor llegará como un ladrón en la noche\nHermanos:\nEn lo referente al tiempo y a las circunstancias no necesitáis que os escriba.\nSabéis perfectamente que el Día del Señor llegará como un ladrón en la noche. Cuando estén diciendo: «paz y seguridad», entonces, de improviso, les sobrevendrá la ruina, como los dolores de parto a la que está encinta, y no podrán escapar.\nPero vosotros, hermanos, no vivís en tinieblas para que ese día no os sorprenda como un ladrón, porque todos sois hijos de la luz e hijos del día; no lo sois de la noche ni de las tinieblas.\nAsí, pues, no durmamos como los demás, sino estemos vigilantes y vivamos sobriamente."
+        },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Mt 23, 9b. 10b",
+          "texto": "Uno solo es vuestro Padre, el del cielo; y uno solo es vuestro maestro, el Mesías."
         },
         "evangelio": {
           "titulo": "Ellos dicen, pero no hacen",
@@ -1664,6 +1799,11 @@
           "cita": "Rom 12, 1-2",
           "texto": "Os exhorto, hermanos, por la misericordia de Dios, a que presentéis vuestros cuerpos como sacrificio vivo, santo, agradable a Dios; este es vuestro culto espiritual.\nY no os amoldéis a este mundo, sino transformaos por la renovación de la mente, para que sepáis discernir cuál es la voluntad de Dios, qué es lo bueno, lo que le agrada, lo perfecto."
         },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Cf. Ef 1, 17-18",
+          "texto": "El Padre de nuestro Señor Jesucristo ilumine los ojos de nuestro corazón, para que comprendamos cuál es la esperanza a la que nos llama."
+        },
         "evangelio": {
           "titulo": "Si alguno quiere venir en pos de mí, que se niegue a sí mismo",
           "cita": "Mt 16, 21-27",
@@ -1686,6 +1826,11 @@
           "titulo": "La plenitud de la ley es el amor",
           "cita": "Rom 13, 8-10",
           "texto": "Hermanos:\nA nadie le debáis nada, más que el amor mutuo; porque el que ama ha cumplido el resto de la ley. De hecho, el «no cometerás adulterio, no matarás, no robarás, no codiciarás», y cualquiera de los otros mandamientos, se resume en esto: «Amarás a tu prójimo como a ti mismo».\nEl amor no hace mal a su prójimo; por eso la plenitud de la ley es el amor."
+        },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "2 Cor 5, 19ac",
+          "texto": "Dios estaba en Cristo reconciliando al mundo consigo, y ha puesto en nosotros el mensaje de la reconciliación."
         },
         "evangelio": {
           "titulo": "Si te hace caso, has salvado a tu hermano",
@@ -1737,6 +1882,11 @@
           "titulo": "Dios llevará con él, por medio de Jesús, a los que han muerto",
           "cita": "1 Tes 4, 13-14",
           "texto": "Hermanos:\nNo queremos que ignoréis la suerte de los difuntos para que no os aflijáis como los hombres sin esperanza.\nPues si creemos que Jesús ha muerto y resucitado, del mismo modo, a los que han muerto, Dios, por medio de Jesús, los llevará con él.\nEsto es lo que os decimos como palabra del Señor:\nNosotros, los que vivimos, los que quedemos cuando venga el Señor, no llevaremos ventaja a los difuntos.\nPues él mismo, el Señor, cuando se dé la orden, a la voz del arcángel y al sonido de la trompeta divina, descenderá del cielo, y los muertos en Cristo resucitarán en primer lugar.\nDespués nosotros, los que vivamos, los que quedemos, seremos arrebatados en nubes, junto con ellos, al encuentro del Señor, en el aire.\nY así estaremos siempre con el Señor.\nConsolaos, pues, mutuamente con estas palabras."
+        },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Mt 24, 42a. 44",
+          "texto": "Estad en vela y preparados, porque a la hora que menos penséis viene el Hijo del hombre."
         },
         "evangelio": {
           "titulo": "¡Que llega el esposo, salid a su encuentro!",
@@ -4589,6 +4739,11 @@
           "antifona": "Contad las maravillas del Señor a todas las naciones.",
           "texto": "V/. Cantad al Señor un cántico nuevo, cantad al Señor, toda la tierra; cantad al Señor, bendecid su nombre. R/.\n\nV/. Proclamad día tras día su victoria, contad a los pueblos su gloria, sus maravillas a todas las naciones. R/.\n\nV/. Familias de los pueblos, aclamad al Señor, adamad la gloria y el poder del Señor, aclamad la gloria del nombre del Señor. R/.\n\nV/. Postraos ante el Señor en el atrio sagrado, tiemble en su presencia la tierra toda. Decid a los pueblos: «El Señor es rey, él gobierna a los pueblos rectamente.» R/."
         },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Cf. 2 Tes 2, 14",
+          "texto": "Dios nos llamó por medio del Evangelio para que sea nuestra la gloria de nuestro Señor Jesucristo."
+        },
         "evangelio": {
           "titulo": "Este fue el primero de los signos que Jesús realizó en Caná de Galilea",
           "cita": "Jn 2, 1-11",
@@ -4611,6 +4766,11 @@
           "titulo": "Vosotros sois el cuerpo de Cristo, y cada uno es un miembro",
           "cita": "1 Cor 12, 12-14. 27",
           "texto": "Lo mismo que el cuerpo es uno y tiene muchos miembros, y todos los miembros del cuerpo, a pesar de ser muchos, son un solo cuerpo, así es también Cristo.\nTodos nosotros, judíos y griegos, esclavos y libres, hemos sido bautizados en un mismo Espíritu, para formar un solo cuerpo. Y todos hemos bebido de un solo Espíritu.\nEl cuerpo tiene muchos miembros, no uno solo.\nSi el pie dijera: «No soy mano, luego no formo parte del cuerpo», ¿dejaría por eso de ser parte del cuerpo? Si el oído dijera: «No soy ojo, luego no formo parte del cuerpo», ¿dejaría por eso de ser parte del cuerpo? Si el cuerpo entero fuera ojo, ¿cómo oiría? Si el cuerpo entero fuera oído, ¿cómo olería? Pues bien, Dios distribuyó el cuerpo y cada uno de los miembros como él quiso.\nSi todos fueran un mismo miembro, ¿dónde estaría el cuerpo?\nLos miembros son muchos, es verdad, pero el cuerpo es uno solo.\nEl ojo no puede decir a la mano: «No te necesito»; y la cabeza no puede decir a los pies: «No os necesito.» Más aún, los miembros que parecen más débiles son más necesarios. Los que nos parecen despreciables, los apreciamos más. Los menos decentes, los tratamos con más decoro. Porque los miembros más decentes no lo necesitan.\nAhora bien, Dios organizó los miembros del cuerpo dando mayor honor a los que menos valían.\nAsí, no hay divisiones en el cuerpo, porque todos los miembros por igual se preocupan unos de otros.\nCuando un miembro sufre, todos sufren con él; cuando un miembro es honrado, todos se felicitan.\nPues bien, vosotros sois el cuerpo de Cristo, y cada uno es un miembro.\nY Dios os ha distribuido en la Iglesia: en el primer puesto los apóstoles, en el segundo los profetas, en el tercero los maestros, después vienen los milagros, luego el don de curar, la beneficencia, el gobierno, la diversidad de lenguas.\n¿Acaso son todos apóstoles? ¿O todos son profetas? ¿O todos maestros? ¿O hacen todos milagros? ¿Tienen todos don para curar? ¿Hablan todos en lenguas o todos las interpretan?"
+        },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Lc 4, 18",
+          "texto": "El Señor me ha enviado a evangelizar a los pobres, a proclamar a los cautivos la libertad."
         },
         "evangelio": {
           "titulo": "Hoy se ha cumplido esta Escritura",
@@ -4635,6 +4795,11 @@
           "cita": "1 Cor 13, 4-13",
           "texto": "Ambicionad los carismas mejores. Y aún os voy a mostrar un camino excepcional. Ya podría yo hablar las lenguas de los hombres y de los ángeles; si no tengo amor, no soy más que un metal que resuena o unos platillos que aturden.\nYa podría tener el don de profecía y conocer todos los secretos y todo el saber, podría tener fe como para mover montañas; si no tengo amor, no soy nada.\nPodría repartir en limosnas todo lo que tengo y aun dejarme quemar vivo; si no tengo amor, de nada me sirve.\nEl amor es paciente, afable; no tiene envidia; no presume ni se engríe; no es mal educado ni egoísta; no se irrita; no lleva cuentas del mal; no se alegra de la injusticia, sino que goza con la verdad.\nDisculpa sin limites, cree sin límites, espera sin límites, aguanta sin límites.\nEl amor no pasa nunca.\n¿El don de profecía?, se acabará. ¿El don de lenguas?, enmudecerá. ¿El saber?, se acabará.\nPorque limitado es nuestro saber y limitada es nuestra profecía; pero, cuando venga lo perfecto, lo limitado se acabará.\nCuando yo era niño, hablaba como un niño, sentía como un niño, razonaba como un niño. Cuando me hice un hombre acabé con las cosas de niño.\nAhora vemos confusamente en un espejo; entonces veremos cara a cara. Mi conocer es por ahora limitado; entonces podré conocer como Dios me conoce.\nEn una palabra: quedan la fe, la esperanza, el amor: estas tres. La más grande es el amor."
         },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Lc 4, 18",
+          "texto": "El Señor me ha enviado a evangelizar a los pobres, a proclamar a los cautivos la libertad."
+        },
         "evangelio": {
           "titulo": "Jesús, como Elías y Eliseo, no solo es enviado a los judíos",
           "cita": "Lc 4, 21-30",
@@ -4657,6 +4822,11 @@
           "titulo": "Predicamos así, y así lo creísteis vosotros",
           "cita": "1 Cor 15, 3-8. 11",
           "texto": "Os recuerdo, hermanos, el Evangelio que os proclamé y que vosotros aceptasteis, y en el que estáis fundados, y que os está salvando, si es que conserváis el Evangelio que os proclamé; de lo contrario, se ha malogrado vuestra adhesión a la fe.\nPorque lo primero que yo os transmití, tal como lo había recibido, fue esto: que Cristo murió por nuestros pecados, según las Escrituras; que fue sepultado y que resucitó al tercer día, según las Escrituras; que se le apareció a Cefas y más tarde a los Doce; después se apareció a más de quinientos hermanos juntos, la mayoría de los cuales viven todavía, otros han muerto; después se le apareció a Santiago, después a todos los apóstoles; por último, se me apareció también a mí.\nPorque yo soy el menor de los apóstoles y no soy digno de llamarme apóstol, porque he perseguido a la Iglesia de Dios.\nPero por la gracia de Dios soy lo que soy, y su gracia no se ha frustrado en mí. Antes bien, he trabajado más que todos ellos. Aunque no he sido yo, sino la gracia de Dios conmigo. Pues bien; tanto ellos como yo esto es lo que predicamos; esto es lo que habéis creído."
+        },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Mt 4, 19",
+          "texto": "Venid en pos de mí —dice el Señor—, y os haré pescadores de hombres."
         },
         "evangelio": {
           "titulo": "Dejándolo todo, lo siguieron",
@@ -4681,6 +4851,11 @@
           "cita": "1 Cor 15, 45-49",
           "texto": "Hermanos:\nEl primer hombre, Adán, se convirtió en ser viviente. El último Adán, en espíritu vivificante.\nPero no fue primero lo espiritual, sino primero lo material y después lo espiritual.\nEl primer hombre, que proviene de la tierra, es terrenal; el segundo hombre es del cielo.\nComo el hombre terrenal, así son los de la tierra; como el celestial, así son los del cielo. Y lo mismo que hemos llevado la imagen del hombre terrenal, llevaremos también la imagen del celestial."
         },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Jn 13, 34",
+          "texto": "Os doy un mandamiento nuevo —dice el Señor—: que os améis unos a otros, como yo os he amado."
+        },
         "evangelio": {
           "titulo": "Sed misericordiosos como vuestro Padre es misericordioso",
           "cita": "Lc 6, 27-38",
@@ -4703,6 +4878,11 @@
           "titulo": "Nos da la victoria por medio de Jesucristo",
           "cita": "1 Cor 15, 54-58",
           "texto": "Hermanos:\nCuando esto corruptible se vista de incorrupción, y esto mortal se vista de inmortalidad, entonces se cumplirá la palabra que está escrita:\n«La muerte ha sido absorbida en la victoria. ¿Dónde está, muerte, tu victoria? ¿Dónde está, muerte, tu aguijón?».\nEl aguijón de la muerte es el pecado, y la fuerza del pecado, la ley.\n¡Gracias a Dios, que nos da la victoria por medio de nuestro Señor Jesucristo!\nDe modo que, hermanos míos queridos, manteneos firmes e inconmovibles.\nEntregaos siempre sin reservas a la obra del Señor, convencidos de que vuestro esfuerzo no será vano en el Señor."
+        },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Flp 2, 15d. 16a",
+          "texto": "Brilláis como lumbreras del mundo, manteniendo firme la palabra de la vida."
         },
         "evangelio": {
           "titulo": "De lo que rebosa el corazón habla la boca",
@@ -4727,6 +4907,11 @@
           "cita": "Gál 1, 1-2. 6-10",
           "texto": "Pablo, apóstol no de parte de hombres ni por mediación de ningún hombre, sino por Jesucristo y Dios Padre, que lo resucitó de entre los muertos, y todos los hermanos que están conmigo, a las iglesias de Galacia.\nMe maravilla que hayáis abandonado tan pronto al que os llamó por la gracia de Cristo, y os hayáis pasado a otro evangelio.\nNo es que haya otro evangelio; lo que pasa es que algunos os están turbando y quieren deformar el Evangelio de Cristo.\nPues bien, aunque nosotros mismos o un ángel del cielo os predicara un evangelio distinto del que os hemos predicado, ¡sea anatema!\nLo he dicho y lo repito: Si alguien os anuncia un evangelio diferente del que recibisteis, ¡sea anatema!\nCuando digo esto, ¿busco la aprobación de los hombres, o la de Dios?, ¿o trato de agradar a los hombres? Si siguiera todavía agradando a los hombres, no sería siervo de Cristo."
         },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Cf. Jn 3, 16",
+          "texto": "Tanto amó Dios al mundo, que entregó a su Unigénito; todo el que cree en él tiene vida eterna."
+        },
         "evangelio": {
           "titulo": "Ni en Israel he encontrado tanta fe",
           "cita": "Lc 7, 1-10",
@@ -4749,6 +4934,11 @@
           "titulo": "Reveló a su Hijo en mí para que lo anunciara entre los gentiles",
           "cita": "Gál 1, 11-19",
           "texto": "Os hago saber, hermanos, que el Evangelio anunciado por mí no es de origen humano; pues yo no lo he recibido ni aprendido de ningún hombre, sino por revelación de Jesucristo.\nPorque habéis oído hablar de mi pasada conducta en el judaísmo: con qué saña perseguía a la Iglesia de Dios y la asolaba, y aventajaba en el judaísmo a muchos de mi edad y de mi raza como defensor muy celoso de las tradiciones de mis antepasados.\nPero, cuando aquel que me escogió desde el seno de mi madre y me llamó por su gracia, se dignó revelar a su Hijo en mí para que lo anunciara entre los gentiles, no consulté con hombres ni subí a Jerusalén a ver a los apóstoles anteriores a mí, sino que, enseguida, me fui a Arabia, y volví a Damasco.\nDespués, pasados tres años, subí a Jerusalén para conocer a Cefas, y permanecí quince días con él.\nDe los otros apóstoles no vi a ninguno, sino a Santiago, el hermano del Señor."
+        },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Lc 7, 16",
+          "texto": "Un gran Profeta ha surgido entre nosotros. Dios ha visitado a su pueblo."
         },
         "evangelio": {
           "titulo": "¡Muchacho, a ti te lo digo, levántate!",
@@ -4773,6 +4963,11 @@
           "cita": "Gál 2, 16. 19-21",
           "texto": "Hermanos:\nSabiendo que el hombre no es justificado por las obras de la ley, sino por la fe en Jesucristo, también nosotros hemos creído en Cristo Jesús, para ser justificados por la fe de Cristo y no por las obras de la ley.\nPues por las obras de la ley no será justificado nadie.\nPues yo he muerto a la ley por medio de la ley, con el fin de vivir para Dios.\nEstoy crucificado con Cristo; vivo, pero no soy yo el que vive, es Cristo quien vive en mí.\nY mi vida de ahora en la carne, la vivo en la fe del Hijo de Dios, que me amó y se entregó por mí.\nNo anulo la gracia de Dios; pero si la justificación es por medio de la ley, Cristo habría muerto en vano."
         },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "1 Jn 4, 10b",
+          "texto": "Dios nos amó y nos envió a su Hijo como víctima de propiciación por nuestros pecados."
+        },
         "evangelio": {
           "titulo": "Sus muchos pecados han quedado perdonados, porque ha amado mucho",
           "cita": "Lc 7, 36-50",
@@ -4795,6 +4990,11 @@
           "titulo": "Cuantos habéis sido bautizados os habéis revestido de Cristo",
           "cita": "Gál 3, 26-29",
           "texto": "Hermanos:\nTodos sois hijos de Dios por la fe en Cristo Jesús.\nCuantos habéis sido bautizados en Cristo, os habéis revestido de Cristo.\nNo hay judío y griego, esclavo y libre, hombre y mujer, porque todos vosotros sois uno en Cristo Jesús.\nY si sois de Cristo, sois descendencia de Abrahán y herederos según la promesa."
+        },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Jn 10, 27",
+          "texto": "Mis ovejas escuchan mi voz —dice el Señor—, y yo las conozco, y ellas me siguen."
         },
         "evangelio": {
           "titulo": "Tú eres el Mesías de Dios. El Hijo del hombre tiene que padecer mucho",
@@ -4819,6 +5019,11 @@
           "cita": "Gal 5, 1. 13-18",
           "texto": "Hermanos:\nPara la libertad nos ha liberado Cristo.\nManteneos, pues, firmes, y no dejéis que vuelvan a someteros a yugos de esclavitud.\nVosotros, hermanos, habéis sido llamados a la libertad; ahora bien, no utilicéis la libertad como estímulo para la carne; al contrario, sed esclavos unos de otros por amor.\nPorque toda la ley se cumple en una sola frase, que es: «Amarás a tu prójimo como a ti mismo».\nPero, cuidado, pues mordiéndoos y devorándoos unos a otros acabaréis por destruiros mutuamente.\nFrente a ello, yo os digo: caminad según el Espíritu y no realizaréis los deseos de la carne; pues la carne desea contra el espíritu y el espíritu contra la carne; efectivamente, hay entre ellos un antagonismo tal que no hacéis lo que quisierais.\nPero si sois conducidos por el Espíritu, no estáis bajo la ley."
         },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "1 Sam 3, 9c; Jn 6, 68c",
+          "texto": "Habla, Señor, que tu siervo escucha; tú tienes palabras de vida eterna."
+        },
         "evangelio": {
           "titulo": "Tomó la decisión de ir a Jerusalén. Te seguiré adondequiera que vayas",
           "cita": "Lc 9, 51-62",
@@ -4841,6 +5046,11 @@
           "titulo": "Llevo en mi cuerpo las marcas de Jesús",
           "cita": "Gál 6, 14-18",
           "texto": "Hermanos:\nDios me libre de gloriarme si no es en la cruz de nuestro Señor Jesucristo, por la cual el mundo está crucificado para mí, y yo para el mundo.\nPues lo que cuenta no es la circuncisión ni la incircuncisión, sino la nueva criatura.\nLa paz y la misericordia de Dios vengan sobre todos los que se ajustan a esta norma; también sobre el Israel de Dios.\nEn adelante, que nadie me moleste, pues yo llevo en mi cuerpo las marcas de Jesús.\nLa gracia de nuestro Señor Jesucristo esté con vuestro espíritu, hermanos. Amén."
+        },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Col 3, 15a. 16a",
+          "texto": "La paz de Cristo reine en vuestro corazón; la Palabra de Cristo habite entre vosotros en toda su riqueza."
         },
         "evangelio": {
           "titulo": "Descansará sobre ellos vuestra paz",
@@ -4865,6 +5075,11 @@
           "cita": "Col 1, 15-20",
           "texto": "Cristo Jesús es imagen del Dios invisible,\nprimogénito de toda criatura;\nporque en él fueron creadas todas las cosas:\ncelestes y terrestres,\nvisibles e invisibles.\nTronos y Dominaciones,\nPrincipados y Potestades;\ntodo fue creado por él y para él.\nÉl es anterior a todo,\ny todo se mantiene en él.\nÉl es también la cabeza del cuerpo: de la Iglesia.\nÉl es el principio, el primogénito de entre los muertos,\ny así es el primero en todo.\nPorque en él quiso Dios que residiera toda la plenitud.\nY por él y para él\nquiso reconciliar todas las cosas,\nlas del cielo y las de la tierra,\nhaciendo la paz por la sangre de su cruz."
         },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Cf. Jn 6, 63c. 68c",
+          "texto": "Tus palabras, Señor, son espíritu y vida; tú tienes palabras de vida eterna."
+        },
         "evangelio": {
           "titulo": "¿Quién es mi prójimo?",
           "cita": "Lc 10, 25-37",
@@ -4887,6 +5102,11 @@
           "titulo": "El misterio escondido desde siglos, revelado ahora a los santos",
           "cita": "Col 1, 24-28",
           "texto": "Hermanos:\nAhora me alegro de mis sufrimientos por vosotros: así completo en mi carne lo que falta a los padecimientos de Cristo, en favor de su cuerpo que es la Iglesia, de la cual Dios me ha nombrado servidor, conforme al encargo que me ha sido encomendado en orden a vosotros: llevar a plenitud la palabra de Dios, el misterio escondido desde siglos y generaciones y revelado ahora a sus santos, a quienes Dios ha querido dar a conocer cuál es la riqueza de la gloria de este misterio entre los gentiles, que es Cristo en vosotros, la esperanza de la gloria.\nNosotros anunciamos a ese Cristo; amonestamos a todos, enseñamos a todos, con todos los recursos de la sabiduría, para presentarlos a todos perfectos en Cristo."
+        },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Cf. Lc 8, 15",
+          "texto": "Bienaventurados los que escuchan la palabra de Dios con un corazón noble y generoso, la guardan y dan fruto con perseverancia."
         },
         "evangelio": {
           "titulo": "Marta lo recibió. María ha escogido la parte mejor",
@@ -4911,6 +5131,11 @@
           "cita": "Col 2, 12-14",
           "texto": "Hermanos:\nPor el bautismo fuisteis sepultados con Cristo y habéis resucitado con él, por la fe en la fuerza de Dios que lo resucitó de los muertos.\nY a vosotros, que estabais muertos por vuestros pecados y la incircuncisión de vuestra carne, os vivificó con él, y nos perdonó todos los pecados.\nCanceló la nota de cargo que nos condenaba con sus cláusulas contrarias a nosotros; la quitó de en medio, clavándola en la cruz."
         },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Rom 8, 15bc",
+          "texto": "Habéis recibido un Espíritu de hijos de adopción, en el que clamamos: «¡“Abba”, Padre!»."
+        },
         "evangelio": {
           "titulo": "Pedid y se os dará",
           "cita": "Lc 11, 1-13",
@@ -4933,6 +5158,11 @@
           "titulo": "Buscad los bienes de allá arriba, donde está Cristo",
           "cita": "Col 3, 1-5. 9-11",
           "texto": "Hermanos:\nSi habéis resucitado con Cristo, buscad los bienes de allá arriba, donde Cristo está sentado a la derecha de Dios; aspirad a los bienes de arriba, no a los de la tierra.\nPorque habéis muerto; y vuestra vida está con Cristo escondida en Dios. Cuando aparezca Cristo, vida vuestra, entonces también vosotros apareceréis gloriosos, juntamente con él.\nEn consecuencia, dad muerte a todo lo terreno que hay en vosotros: la fornicación, la impureza, la pasión, la codicia y la avaricia, que es una idolatría.\n¡No os mintáis unos a otros!: os habéis despojado del hombre viejo, con sus obras, y os habéis revestido de la nueva condición que, mediante el conocimiento, se va renovando a imagen de su Creador, donde no hay griego y judío, circunciso e incircunciso, bárbaro, escita, esclavo y libre, sino Cristo, que lo es todo, y en todos."
+        },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Mt 5, 3",
+          "texto": "Bienaventurados los pobres en el espíritu, porque de ellos es el reino de los cielos."
         },
         "evangelio": {
           "titulo": "¿De quién será lo que has preparado?",
@@ -4957,6 +5187,11 @@
           "cita": "Heb 11, 1-2. 8-12",
           "texto": "La fe es seguridad de lo que se espera, y prueba de lo que no se ve.\nPor su fe, son recordados los antiguos.\nPor fe, obedeció Abrahán a la llamada y salió hacia la tierra que iba a recibir en heredad. Salió sin saber adónde iba.\nPor fe, vivió como extranjero en la tierra prometida, habitando en tiendas— y lo mismo Isaac y Jacob, herederos de la misma promesa—, mientras esperaba la ciudad de sólidos cimientos cuyo arquitecto y constructor iba a ser Dios.\nPor fe, también Sara, cuando ya le había pasado la edad, obtuvo fuerza para fundar un linaje, porque juzgó digno de fe al que se lo prometía.\nY así, de uno solo y, en este aspecto, ya extinguido, nacieron hijos numerosos como las estrellas del cielo y como la arena incontable de las playas.\nCon fe murieron todos éstos, sin haber recibido lo prometido; pero viéndolo y saludándolo de lejos, confesando que eran huéspedes y peregrinos en la tierra.\nEs claro que los que así hablan están buscando una patria; pues, si añoraban la patria de donde habían salido, estaban a tiempo para volver.\nPero ellos ansiaban una patria mejor, la del cielo.\nPor eso Dios no tiene reparo en llamarse su Dios: porque les tenía preparada una ciudad.\nPor fe, Abrahán, puesto a prueba, ofreció a Isaac; y era su hijo único lo que ofrecía,\nel destinatario de la promesa, del cual le había dicho Dios: «Isaac continuará tu descendencia.»\nPero Abrahán pensó que Dios tiene poder hasta para hacer resucitar muertos.\nY así, recobró a Isaac como figura del futuro."
         },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Mt 24, 42a. 44",
+          "texto": "Estad en vela y preparados, porque a la hora que menos penséis viene el Hijo del hombre."
+        },
         "evangelio": {
           "titulo": "Lo mismo vosotros, estad preparados",
           "cita": "Lc 12, 35-40",
@@ -4979,6 +5214,11 @@
           "titulo": "Corramos, con constancia, en la carrera que nos toca",
           "cita": "Heb 12, 1-4",
           "texto": "Hermanos:\nTeniendo una nube tan ingente de testigos, corramos, con constancia, en la carrera que nos toca, renunciando a todo lo que nos estorba y al pecado que nos asedia, fijos los ojos en el que inició y completa nuestra fe, Jesús, quien, en lugar del gozo inmediato, soportó la cruz, despreciando la ignominia, y ahora está sentado a la derecha del trono de Dios.\nRecordad al que soportó tal oposición de los pecadores, y no os canséis ni perdáis el ánimo.\nTodavía no habéis llegado a la sangre en vuestra pelea contra el pecado."
+        },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Jn 10, 27",
+          "texto": "Mis ovejas escuchan mi voz —dice el Señor—, y yo las conozco, y ellas me siguen."
         },
         "evangelio": {
           "titulo": "No he venido a traer paz, sino división",
@@ -5003,6 +5243,11 @@
           "cita": "Heb 12, 5-7. 11-13",
           "texto": "Hermanos:\nHabéis olvidado la exhortación paternal que os dieron:\n«Hijo mío, no rechaces la corrección del Señor,\nni te desanimes por su reprensión;\nporque el Señor reprende a los que ama\ny castiga a sus hijos preferidos».\nSoportáis la prueba para vuestra corrección, porque Dios os trata como a hijos, pues ¿qué padre no corrige a sus hijos?\nNinguna corrección resulta agradable, en el momento, sino que duele; pero luego produce fruto apacible de justicia a los ejercitados en ella.\nPor eso, fortaleced las manos débiles, robusteced las rodillas vacilantes, y caminad por una senda llana: así el pie cojo, no se retuerce, sino que se cura."
         },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Jn 14, 6bc",
+          "texto": "Yo soy el camino y la verdad y la vida —dice el Señor—; nadie va al Padre sino por mí."
+        },
         "evangelio": {
           "titulo": "Vendrán de oriente y occidente, y se sentarán a la mesa en el reino de Dios",
           "cita": "Lc 13, 22-30",
@@ -5025,6 +5270,11 @@
           "titulo": "Vosotros os habéis acercado al monte Sion, ciudad del Dios vivo",
           "cita": "Heb 12, 18-19. 22-24a",
           "texto": "Hermanos:\nNo os habéis acercado a un fuego tangible y encendido, a densos nubarrones, a la tormenta, al sonido de la trompeta; ni al estruendo de las palabras, oído el cual, ellos rogaron que no continuase hablando.\nVosotros os habéis acercado al monte Sion, ciudad del Dios vivo, Jerusalén del cielo, a las miríadas de ángeles, a la asamblea festiva de los primogénitos inscritos en el cielo, a Dios, juez de todos; a las almas de los justos que han llegado a la perfección, y al Mediador de la nueva alianza, Jesús."
+        },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Mt 11, 29ab",
+          "texto": "Tomad mi yugo sobre vosotros —dice el Señor—, y aprended de mí, que soy manso y humilde de corazón."
         },
         "evangelio": {
           "titulo": "El que se enaltece será humillado, y el que se humilla será enaltecido",
@@ -5049,6 +5299,11 @@
           "cita": "Flm 9b-10. 12-17",
           "texto": "Querido hermano:\nYo, Pablo, anciano, y ahora prisionero por Cristo Jesús, te recomiendo a Onésimo, mi hijo, a quien engendré en la prisión. Te lo envío como a hijo.\nMe hubiera gustado retenerlo junto a mí, para que me sirviera en nombre tuyo en esta prisión que sufro por el Evangelio; pero no he querido retenerlo sin contar contigo: así me harás este favor, no a la fuerza, sino con toda libertad.\nQuizá se apartó de ti por breve tiempo para que lo recobres ahora para siempre; y no como esclavo, sino como algo mejor que un esclavo, como un hermano querido, que si lo es mucho para mí, cuánto más para ti, humanamente y en el Señor.\nSi me consideras compañero tuyo, recíbelo a él como a mí."
         },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Sal 118, 135",
+          "texto": "Haz brillar tu rostro sobre tu siervo, enséñame tus decretos."
+        },
         "evangelio": {
           "titulo": "Aquel que no renuncia a todos sus bienes no puede ser discípulo mío",
           "cita": "Lc 14, 25-33",
@@ -5071,6 +5326,11 @@
           "titulo": "Cristo vino para salvar a los pecadores",
           "cita": "1 Tim 1, 12-17",
           "texto": "Querido hermano:\nDoy gracias a Cristo Jesús, nuestro Señor, que me hizo capaz, se fió de mí y me confió este ministerio.\nEso que yo antes era un blasfemo, un perseguidor y un insolente.\nPero Dios tuvo compasión de mí, porque yo no era creyente y no sabía lo que hacia. El Señor derrochó su gracia en mí, dándome la fe y el amor en Cristo Jesús.\nPodéis fiaros y aceptar sin reserva lo que os digo: que Cristo Jesús vino al mundo para salvar a los pecadores, y yo soy el primero.\nY por eso se compadeció de mí: para que en mí, el primero, mostrara Cristo Jesús toda su paciencia, y pudiera ser modelo de todos los que creerán en él y tendrán\nvida eterna.\nAl Rey de los siglos, inmortal, invisible, único Dios, honor y gloria por los siglos de los siglos. Amén."
+        },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "2 Cor 5, 19ac",
+          "texto": "Dios estaba en Cristo reconciliando al mundo consigo, y ha puesto en nosotros el mensaje de la reconciliación."
         },
         "evangelio": {
           "titulo": "Habrá más alegría en el cielo por un solo pecador que se convierta",
@@ -5095,6 +5355,11 @@
           "cita": "1 Tim 2, 1-8",
           "texto": "Querido hermano:\nTe ruego, lo primero de todo, que hagáis oraciones, plegarias, súplicas, acciones de gracias por todos los hombres, por los reyes y por todos los que ocupan cargos, para que podamos llevar una vida tranquila y apacible, con toda piedad y decoro. Eso es bueno y grato ante los ojos de nuestro Salvador, Dios, que quiere que todos los hombres se salven y lleguen al conocimiento de la verdad.\nPues Dios es uno, y uno solo es el mediador entre Dios y los hombres, el hombre Cristo Jesús, que se entregó en rescate por todos: éste es el testimonio en el tiempo apropiado: para él estoy puesto como anunciador y apóstol —digo la verdad, no miento—, maestro de los gentiles en fe y verdad.\nQuiero que sean los hombres los que recen en cualquier lugar, alzando las manos limpias de ira y divisiones."
         },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "2 Cor 8, 9",
+          "texto": "Jesucristo, siendo rico, se hizo pobre para enriqueceros con su pobreza."
+        },
         "evangelio": {
           "titulo": "No podéis servir a Dios y al dinero",
           "cita": "Lc 16, 10-13",
@@ -5117,6 +5382,11 @@
           "titulo": "Guarda el mandamiento hasta la manifestación del Señor",
           "cita": "1 Tim 6, 11-16",
           "texto": "Hombre de Dios, practica la justicia, la piedad, la fe, el amor, la paciencia, la delicadeza.\nCombate el buen combate de la fe.\nConquista la vida eterna a la que fuiste llamado, y de la que hiciste noble profesión ante muchos testigos.\nEn presencia de Dios, que da la vida al universo, y de Cristo Jesús, que dio testimonio ante Poncio Pilato con tan noble profesión: te insisto en que guardes el mandamiento sin mancha ni reproche, hasta la manifestación de nuestro Señor Jesucristo, que en tiempo oportuno mostrará el bienaventurado y único Soberano, Rey de los reyes y Señor de los señores, el único poseedor de la inmortalidad, que habita en una luz inaccesible, a quien ningún hombre ha visto ni puede ver.\nA él honor e imperio eterno. Amén."
+        },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "2 Cor 8, 9",
+          "texto": "Jesucristo, siendo rico, se hizo pobre para enriqueceros con su pobreza."
         },
         "evangelio": {
           "titulo": "Recibiste bienes, y Lázaro males: ahora él es aquí consolado, mientras que tú eres atormentado",
@@ -5141,6 +5411,11 @@
           "cita": "2 Tim 1, 6-8. 13-14",
           "texto": "Reaviva el don de Dios, que recibiste cuando te impuse las manos; porque Dios no nos ha dado un espíritu cobarde, sino un espíritu de energía, amor y buen juicio.\nNo te avergüences de dar testimonio de nuestro Señor y de mí, su prisionero.\nToma parte en los duros trabajos del Evangelio, según la fuerza de Dios.\nTen delante la visión que yo te di con mis palabras sensatas y vive con fe y amor en Cristo Jesús.\nGuarda este precioso depósito con la ayuda del Espíritu Santo que habita en nosotros."
         },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Cf. 1 Pe 1, 25",
+          "texto": "La palabra del Señor permanece para siempre; esta es la palabra del Evangelio que os ha sido anunciada."
+        },
         "evangelio": {
           "titulo": "¡Si tuvierais fe!",
           "texto": "En aquel tiempo, los apóstoles le dijeron al Señor:\n«Auméntanos la fe».\nEl Señor dijo:\n«Si tuvierais fe como un granito de mostaza, diríais a esa morera:\n“Arráncate de raíz y plántate en el mar”, y os obedecería.\n¿Quién de vosotros, si tiene un criado labrando o pastoreando, le dice cuando vuelve del campo: “Enseguida, ven y ponte a la mesa”?\n¿No le diréis más bien: “Prepárame de cenar, cíñete y sírveme mientras como y bebo, y después comerás y beberás tú”?\n¿Acaso tenéis que estar agradecidos al criado porque ha hecho lo mandado? Lo mismo vosotros: cuando hayáis hecho todo lo que se os ha mandado, decid:\n“Somos siervos inútiles, hemos hecho lo que teníamos que hacer”».",
@@ -5163,6 +5438,11 @@
           "titulo": "Si perseveramos, también reinaremos con Cristo",
           "cita": "2 Tim 2, 8-13",
           "texto": "Querido hermano:\nHaz memoria de Jesucristo, resucitado de entre los muertos, nacido del linaje de David.\nÉste ha sido mi Evangelio, por el que sufro hasta llevar cadenas, como un malhechor; pero la palabra de Dios no está encadenada.\nPor eso lo aguanto todo por los elegidos, para que ellos también alcancen la salvación, lograda por Cristo Jesús, con la gloria eterna.\nEs doctrina segura: Si morimos con él, viviremos con él. Si perseveramos, reinaremos con él. Si lo negamos, también él nos negará. Si somos infieles, él permanece fiel, porque no puede negarse a sí mismo."
+        },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "1 Tes 5, 18",
+          "texto": "Dad gracias en toda ocasión: esta es la voluntad de Dios en Cristo Jesús respecto de vosotros."
         },
         "evangelio": {
           "titulo": "¿No ha habido quien volviera a dar gloria a Dios más que este extranjero?",
@@ -5187,6 +5467,11 @@
           "cita": "2 Tim 3, 14 — 4, 2",
           "texto": "Permanece en lo que has aprendido y se te ha confiado, sabiendo de quién lo aprendiste y que desde niño conoces la sagrada Escritura; ella puede darte la sabiduría que, por la fe en Cristo Jesús, conduce a la salvación.\nToda Escritura inspirada por Dios es también útil para enseñar, para reprender, para corregir, para educar en la virtud; así el hombre de Dios estará perfectamente equipado para toda obra buena.\nAnte Dios y ante Cristo Jesús, que ha de juzgar a vivos y muertos, te conjuro por su venida en majestad: proclama la palabra, insiste a tiempo y a destiempo, reprende, reprocha, exhorta, con toda paciencia y deseo de instruir."
         },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Heb 4, 12ad",
+          "texto": "La palabra de Dios es viva y eficaz; juzga los deseos e intenciones del corazón."
+        },
         "evangelio": {
           "titulo": "Dios hará justicia a sus elegidos que claman ante él",
           "cita": "Lc 18, 1-8",
@@ -5209,6 +5494,11 @@
           "titulo": "Me está reservada la corona de la justicia",
           "cita": "2 Tim 4, 6-8. 16-18",
           "texto": "Querido hermano:\nYo estoy a punto de ser sacrificado, y el momento de mi partida es inminente.\nHe combatido bien mi combate, he corrido hasta la meta, he mantenido la fe.\nAhora me aguarda la corona merecida, con la que el Señor, juez justo, me premiará en aquel día; y no sólo a mí, sino a todos los que tienen amor a su venida.\nLa primera vez que me defendí, todos me abandonaron, y nadie me asistió. Que Dios los perdone.\nPero el Señor me ayudó y me dio fuerzas para anunciar íntegro el mensaje, de modo que lo oyeran todos los gentiles. Él me libró de la boca del león.\nEl Señor seguirá librándome de todo mal, me salvará y me llevará a su reino del cielo.\nA él la gloria por los siglos de los siglos. Amén."
+        },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "2 Cor 5, 19ac",
+          "texto": "Dios estaba en Cristo reconciliando al mundo consigo, y ha puesto en nosotros el mensaje de la reconciliación."
         },
         "evangelio": {
           "titulo": "El publicano bajó a su casa justificado, y el fariseo no",
@@ -5233,6 +5523,11 @@
           "cita": "2 Tes 1, 11 — 2, 2",
           "texto": "Hermanos:\nOramos continuamente por vosotros, para que nuestro Dios os haga dignos de la vocación y con su poder lleve a término todo propósito de hacer el bien y la tarea de la fe. De este modo, el nombre de nuestro Señor Jesús será glorificado en vosotros y vosotros en él, según la gracia de nuestro Dios y del Señor Jesucristo.\nA propósito de la venida de nuestro Señor Jesucristo y de nuestra reunión con él, os rogamos, hermanos, que no perdáis fácilmente la cabeza ni os alarméis por alguna revelación, rumor o supuesta carta nuestra, como si el día del Señor estuviera encima."
         },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Cf. Jn 3, 16",
+          "texto": "Tanto amó Dios al mundo, que entregó a su Unigénito; todo el que cree en él tiene vida eterna."
+        },
         "evangelio": {
           "titulo": "El Hijo del hombre ha venido a buscar y a salvar lo que estaba perdido",
           "cita": "Lc 19, 1-10",
@@ -5256,6 +5551,11 @@
           "cita": "2 Tes 2, 16 — 3, 5",
           "texto": "Hermanos:\nQue el mismo Señor nuestro, Jesucristo, y Dios, nuestro Padre, que nos ha amado y nos ha regalado un consuelo eterno y una esperanza dichosa, consuele vuestros corazones y os dé fuerza para toda clase de palabras y obras buenas.\nPor lo demás, hermanos, orad por nosotros, para que la palabra del Señor siga avanzando y sea glorificada, como lo fue entre vosotros, y para que nos veamos libres de la gente perversa y malvada, porque la fe no es de todos.\nEl Señor, que es fiel, os dará fuerzas y os librará del Maligno.\nEn cuanto a vosotros, estamos seguros en el Señor de que ya cumplís y seguiréis cumpliendo todo lo que os hemos mandado.\nQue el Señor dirija vuestros corazones hacia el amor de Dios y la paciencia en Cristo."
         },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Ap 1, 5a. 6b",
+          "texto": "Jesucristo es el primogénito de entre los muertos; a él, la gloria y el poder por los siglos de los siglos."
+        },
         "evangelio": {
           "titulo": "No es Dios de muertos, sino de vivos",
           "cita": "Lc 20, 27. 34-38",
@@ -5278,6 +5578,11 @@
           "titulo": "Si alguno no quiere trabajar, que no coma",
           "cita": "2 Tes 3, 7-12",
           "texto": "Hermanos:\nYa sabéis vosotros cómo tenéis que imitar nuestro ejemplo: No vivimos entre vosotros sin trabajar, no comimos de balde el pan de nadie, sino que con cansancio y fatiga, día y noche, trabajamos a fin de no ser una carga para ninguno de vosotros.\nNo porque no tuviéramos derecho, sino para daros en nosotros un modelo que imitar.\nAdemás, cuando estábamos entre vosotros, os mandábamos que si alguno no quiere trabajar, que no coma.\nPorque nos hemos enterado de que algunos viven desordenadamente, sin trabajar, antes bien metiéndose en todo.\nA esos les mandamos y exhortamos, por el Señor Jesucristo, que trabajen con sosiego para comer su propio pan."
+        },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Lc 21, 28bc",
+          "texto": "Levantaos, alzad la cabeza: se acerca vuestra liberación."
         },
         "evangelio": {
           "titulo": "Con vuestra perseverancia salvaréis vuestras almas",
@@ -5412,6 +5717,11 @@
           "titulo": "Si Cristo no ha resucitado, vuestra fe no tiene sentido",
           "cita": "1 Cor 15, 12. 16-20",
           "texto": "Hermanos:\nSi se anuncia que Cristo ha resucitado de entre los muertos, ¿cómo dicen algunos de entre vosotros que no hay resurrección de muertos?\nPues si los muertos no resucitan, tampoco Cristo ha resucitado; y, si Cristo no ha resucitado, vuestra fe no tiene sentido, seguís estando en vuestros pecados; de modo que incluso los que murieron en Cristo han perecido.\nSi hemos puesto nuestra esperanza en Cristo solo en esta vida, somos los más desgraciados de toda la humanidad.\nPero Cristo ha resucitado de entre los muertos y es primicia de los que han muerto."
+        },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Lc 6, 23ab",
+          "texto": "Alegraos y saltad de gozo —dice el Señor—, porque vuestra recompensa será grande en el cielo."
         },
         "evangelio": {
           "titulo": "Bienaventurados los pobres. Ay de vosotros, los ricos",
@@ -15416,6 +15726,11 @@
         "antifona": "Id al mundo entero y proclamad el Evangelio.",
         "texto": "V/. Alabad al Señor, todas las naciones, aclamadlo, todos los pueblos. R/.\n\nV/. Firme es su misericordia con nosotros, su fidelidad dura por siempre. R/."
       },
+      "aclamacion": {
+        "tipo": "aleluya",
+        "cita": "Cf. Jn 15, 16",
+        "texto": "Yo os he elegido del mundo —dice el Señor—, para que vayáis y deis fruto, y vuestro fruto permanezca."
+      },
       "evangelio": {
         "titulo": "Id al mundo entero y proclamad el Evangelio",
         "cita": "Mc 16, 15-18",
@@ -15434,6 +15749,11 @@
         "cita": "Sal 95, 1-2a. 2b-3. 7-8a. 10 (R.: cf. 3)",
         "antifona": "Contad las maravillas del Señor a todas las naciones.",
         "texto": "V/. Cantad al Señor un cántico nuevo, porque ha hecho maravillas. Cantad al Señor un cántico nuevo, porque ha hecho maravillas: su diestra le ha dado la victoria, su santo brazo. R/.\n\nV/. El Señor da a conocer su victoria, revela a las naciones su justicia: se acordó de su misericordia y su fidelidad en favor de la casa de Israel. R/.\n\nV/. Los confines de la tierra han contemplado la victoria de nuestro Dios. Aclama al Señor, tierra entera; gritad, vitoread, tocad. R/."
+      },
+      "aclamacion": {
+        "tipo": "aleluya",
+        "cita": "F 723, 4",
+        "texto": ""
       },
       "evangelio": {
         "titulo": "La mies es abundante y los obreros pocos",
@@ -15576,6 +15896,11 @@
       "comun_ref": [
         "Del Común de santos y santas (para los educadores), p. 390."
       ],
+      "aclamacion": {
+        "tipo": "aleluya",
+        "cita": "F 735, 2",
+        "texto": ""
+      },
       "evangelio": {
         "titulo": "Vende lo que tienes, dale el dinero a los pobres, y luego sígueme",
         "cita": "F 736, 2",
@@ -15882,6 +16207,11 @@
         "cita": "Heb 10, 4-10",
         "texto": "Hermanos:\nEs imposible que la sangre de los toros y de los machos cabríos quite los pecados.\nPor eso, al entrar Cristo en el mundo dice:\n«Tú no quisiste sacrificios ni ofrendas,\npero me formaste un cuerpo;\nno aceptaste\nholocaustos ni víctimas expiatorias.\nEntonces yo dije: He aquí que vengo\n—pues así está escrito en el comienzo del libro acerca de mí—\npara hacer, ¡oh, Dios!, tu voluntad».\nPrimero dice: «Tú no quisiste sacrificios ni ofrendas, ni holocaustos, ni víctimas expiatorias», que se ofrecen según la ley.\nDespués añade: «He aquí que vengo para hacer tu voluntad».\nNiega lo primero, para afirmar lo segundo.\nY conforme a esa voluntad todos quedamos santificados por la oblación del cuerpo de Jesucristo, hecha una vez para siempre."
       },
+      "aclamacion": {
+        "tipo": "aleluya",
+        "cita": "Jn 1, 14ab",
+        "texto": "El Verbo se hizo carne y habitó entre nosotros, y hemos contemplado su gloria."
+      },
       "evangelio": {
         "titulo": "Concebirás en tu vientre y darás a luz un hijo",
         "texto": "En aquel tiempo, el ángel Gabriel fue enviado por Dios a una ciudad de Galilea llamada Nazaret, a una virgen desposada con un hombre llamado José, de la casa de David; el nombre de la virgen era María.\nEl ángel, entrando en su presencia, dijo:\n«Alégrate, llena de gracia, el Señor está contigo».\nElla se turbó grandemente ante estas palabras y se preguntaba qué saludo era aquel. El ángel le dijo:\n«No temas, María, porque has encontrado gracia ante Dios. Concebirás en tu vientre y darás a luz un hijo, y le pondrás por nombre Jesús. Será grande, se llamará Hijo del Altísimo, el Señor Dios le dará el trono de David, su padre; reinará sobre la casa de Jacob para siempre, y su reino no tendrá fin».\nY María dijo al ángel:\n«¿Cómo será eso, pues no conozco varón?».\nEl ángel le contestó:\n«El Espíritu Santo vendrá sobre ti, y la fuerza del Altísimo te cubrirá con su sombra; por eso el Santo que va a nacer será llamado Hijo de Dios. También tu pariente Isabel ha concebido un hijo en su vejez, y ya está de seis meses la que llamaban estéril, “porque para Dios nada hay imposible”».\nMaría contestó:\n«He aquí la esclava del Señor; hágase en mí según tu palabra».\nY el ángel se retiró.",
@@ -16066,6 +16396,11 @@
         "antifona": "Lámpara es tu palabra para mis pasos, luz en mi sendero.",
         "texto": "V/. Aparto mi pie de toda senda mala, para guardar tu palabra; no me aparto de tus mandamientos, porque tú me has instruido. R/.\n\nV/. ¡Qué dulce al paladar tu promesa: más que miel en la boca! Considero tus decretos, y odio el camino de la mentira. R/."
       },
+      "aclamacion": {
+        "tipo": "aleluya",
+        "cita": "Mt 5, 16",
+        "texto": "Brille así vuestra luz ante los hombres, para que vean vuestras buenas obras y den gloria a vuestro Padre."
+      },
       "evangelio": {
         "titulo": "Vosotros sois la luz del mundo",
         "cita": "Mt 5, 13-16",
@@ -16104,6 +16439,11 @@
         "antifona": "Bendice, alma mía, al Señor.",
         "texto": "V/. Bendice, alma mía, al Señor, y todo mi ser a su santo nombre. Bendice, alma mía, al Señor, y no olvides sus beneficios. R/.\n\nV/. Él perdona todas tus culpas y cura todas tus enfermedades; él rescata tu vida de la fosa y te colma de gracia y de ternura. R/.\n\nV/. El Señor es compasivo y misericordioso, lento a la ira y rico en clemencia; no está siempre acusando ni guarda rencor perpetuo. R/.\n\nV/. Como un padre siente ternura por sus hijos, siente el Señor ternura por sus fieles; porque él conoce nuestra masa, se acuerda de que somos barro. R/.\n\nV/. Pero la misericordia del Señor dura siempre, su justicia pasa de hijos a nietos, para los que guardan la alianza. R/."
       },
+      "aclamacion": {
+        "tipo": "aleluya",
+        "cita": "Cf. Mt 11, 25",
+        "texto": "Bendito seas, Padre, Señor del cielo y de la tierra, porque has revelado los misterios del reino a los pequeños."
+      },
       "evangelio": {
         "titulo": "Has escondido estas cosas a los sabios, y las has revelado a los pequeños",
         "cita": "Mt 11, 25-30",
@@ -16136,6 +16476,11 @@
         "cita": "Sal 89, 2. 3-4. 12-13. 14 y 16 (R.: 17c)",
         "antifona": "Haz prósperas, Señor, las obras de nuestras manos.",
         "texto": "V/. Antes que naciesen los montes o fuera engendrado el orbe de la tierra, desde siempre y por siempre tú eres Dios. - R/.\n\nV/. reduces el hombre a polvo, diciendo: «Retornad, hijos de Adán.» Mil años en tu presencia son un ayer, que paso; una vela nocturna. R/.\n\nV/. Enséñanos a calcular nuestros años, para que adquiramos un corazón sensato. Vuélvete, Señor, ¿hasta cuándo? Ten compasión de tus siervos. R/.\n\nV/. Por la mañana sácianos de tu misericordia, y toda nuestra vida será alegría y júbilo. Que tus siervos vean tu acción, y sus hijos tu gloria. R/."
+      },
+      "aclamacion": {
+        "tipo": "aleluya",
+        "cita": "Sal 67, 20",
+        "texto": "Bendito el Señor cada día, Dios lleva nuestras cargas, es nuestra salvación."
       },
       "evangelio": {
         "titulo": "¿No es el hijo del carpintero?",
@@ -16208,6 +16553,11 @@
         "cita": "Hch 13, 46-49",
         "texto": "En aquellos días, Pablo y Bernabé dijeron a los judíos:\n«Teníamos que anunciaros primero a vosotros la palabra de Dios; pero como la rechazáis y no os consideráis dignos de la vida eterna, sabed que nos dedicamos a los gentiles. Así nos lo ha mandado el Señor: “Yo te he puesto como luz de los gentiles, para que lleves la salvación hasta el confín de la tierra”».\nCuando los gentiles oyeron esto, se alegraron y alababan la palabra del Señor; y creyeron los que estaban destinados a la vida eterna.\nLa palabra del Señor se iba difundiendo por toda la región."
       },
+      "aclamacion": {
+        "tipo": "aleluya",
+        "cita": "Mt 5, 16",
+        "texto": "Brille así vuestra luz ante los hombres, para que vean vuestras buenas obras y den gloria al Padre."
+      },
       "evangelio": {
         "titulo": "Vosotros sois la luz del mundo",
         "cita": "Mt 5, 13-19",
@@ -16272,6 +16622,11 @@
         "texto": "V/. Dichoso el hombre que no sigue el consejo de los impíos, ni entra por la senda de los pecadores, ni se sienta en la reunión de los cínicos; sino que su gozo es la ley del Señor, y medita su ley día y noche. R/.\n\nV/. Será como un árbol plantado al borde de la acequia: da fruto en su sazón y no se marchitan sus hojas; y cuanto emprende tiene buen fin. R/.\n\nV/. No así los impíos, no así; serán paja que arrebata el viento. Porque el Señor protege el camino de los justos, pero el camino de los impíos acaba mal. R/.",
         "antifona": "Su gozo es la ley del Señor."
       },
+      "aclamacion": {
+        "tipo": "aleluya",
+        "cita": "Jn 15, 9b. 5b",
+        "texto": "Permaneced en mi amor —dice el Señor—; el que permanece en mí y yo en él, ese da fruto abundante."
+      },
       "evangelio": {
         "titulo": "Yo soy la verdadera vid, y mi Padre es el labrador",
         "texto": "En aquel tiempo, dijo Jesús a sus discípulos:\n«Yo soy la verdadera vid, y mi Padre es el labrador. A todo sarmiento que no da fruto en mí lo arranca, y a todo el que da fruto lo poda, para que dé más fruto.\nVosotros ya estáis limpios por la palabra que os he hablado; permaneced en mí, y yo en vosotros.\nComo el sarmiento no puede dar fruto por sí, si no permanece en la vid, así tampoco vosotros, si no permanecéis en mí.\nYo soy la vid, vosotros los sarmientos; el que permanece en mí y yo en él, ese da fruto abundante; porque sin mí no podéis hacer nada. Al que no permanece en mí lo tiran fuera, como el sarmiento, y se seca; luego los recogen y los echan al fuego, y arden.\nSi permanecéis en mí y mis palabras permanecen en vosotros, pedid lo que deseáis, y se realizará».",
@@ -16290,6 +16645,11 @@
         "cita": "Sal 1, 1-2. 3. 4 y 6 (R.: 2a)",
         "antifona": "Su gozo es la ley del Señor.",
         "texto": "V/. Dichoso el hombre que no sigue el consejo de los impíos, ni entra por la senda de los pecadores, ni se sienta en la reunión de los cínicos; sino que su gozo es la ley del Señor, y medita su ley día y noche. R/.\n\nV/. Será como un árbol plantado al borde de la acequia: da fruto en su sazón y no se marchitan sus hojas; y cuanto emprende tiene buen fin. R/.\n\nV/. No así los impíos, no así; serán paja que arrebata el viento. Porque el Señor protege el camino de los justos, pero el camino de los impíos acaba mal. R/."
+      },
+      "aclamacion": {
+        "tipo": "aleluya",
+        "cita": "F 741, 3",
+        "texto": ""
       },
       "evangelio": {
         "titulo": "Has escondido estas cosas a los sabios y las has revelado a la gente sencilla",
@@ -16436,6 +16796,11 @@
         "cita": "Is 12, 2-3. 4bcde. 5-6 (R.: 6b)",
         "antifona": "Qué grande es en medio de ti el Santo de Israel.",
         "texto": "V/. El Señor es mi Dios y salvador: confiaré y no temeré, porque mi fuerza y mi poder es el Señor, él fue mi salvación. Y sacaréis aguas con gozo de las fuentes de la salvación. R/.\n\nV/. Dad gracias al Señor, invocad su nombre, contad a los pueblos sus hazañas, proclamad que su nombre es excelso. R/.\n\nV/. Tañed para el Señor, que hizo proezas, anunciadlas a toda la tierra; gritad jubilosos, habitantes de Sión: «Qué grande es en medio de ti el Santo de Israel.» R/."
+      },
+      "aclamacion": {
+        "tipo": "aleluya",
+        "cita": "Cf. Lc 1, 45",
+        "texto": "Bienaventurada tú, que has creído, Virgen María, porque lo que te ha dicho el Señor se cumplirá."
       },
       "evangelio": {
         "titulo": "¿Quién soy yo para que me visite la madre de mi Señor?",
@@ -16610,6 +16975,11 @@
         "cita": "F 715, 4",
         "antifona": "Aquí estoy, Señor, para hacer tu voluntad.",
         "texto": "V/. Yo esperaba con ansia al Señor; él se inclinó y escuchó mi grito. Me puso en la boca un cántico nuevo, un himno a nuestro Dios. R/.\n\nV/. Tú no quieres sacrificios ni ofrendas, y, en cambio, me abriste el oído; no pides sacrificio expiatorio. Entonces yo digo: «Aquí estoy —como está escrito en mi libro— para hacer tu voluntad.» Dios mío, lo quiero, y llevo tu ley en las entrañas. R/.\n\nV/. He proclamado tu salvación ante la gran asamblea; no he cerrado los labios: Señor, tú lo sabes. R/.\n\nV/. No me he guardado en el pecho tu defensa, he contado tu fidelidad y tu salvación, no he negado tu misericordia y tu lealtad ante la gran asamblea. R/."
+      },
+      "aclamacion": {
+        "tipo": "aleluya",
+        "cita": "F 717, 1",
+        "texto": ""
       },
       "evangelio": {
         "titulo": "Vuestro Padre ha tenido a bien daros el reino",
@@ -16952,6 +17322,11 @@
         "antifona": "Mi alma está sedienta de ti, mi Dios.",
         "texto": "V/. Oh Dios, tú eres mi Dios, por ti madrugo, mi alma está sedienta de ti; mi carne tiene ansia de ti, como tierra reseca, agostada, sin agua. R/.\n\nV/. ¡Cómo te contemplaba en el santuario viendo tu fuerza y tu gloria! Tu gracia vale más que la vida, te alabaran mis labios. R/.\n\nV/. Toda mi vida te bendeciré y alzaré las manos invocándote. Me saciaré como de enjundia y de manteca, y mis labios te alabaran jubilosos. R/.\n\nV/. Porque fuiste mi auxilio, y a la sombra de tus alas canto con júbilo; mi alma está unida a ti, y tu diestra me sostiene. R/."
       },
+      "aclamacion": {
+        "tipo": "aleluya",
+        "cita": "",
+        "texto": "«¿Qué has visto de camino, María, en la mañana?» «A mi Señor glorioso, la tumba abandonada»."
+      },
       "evangelio": {
         "titulo": "Mujer, ¿por qué lloras?, ¿a quién buscas?",
         "texto": "El primer día de la semana, María Magdalena fue al sepulcro al amanecer, cuando aún estaba oscuro, y vio la losa quitada del sepulcro.\nFuera, junto al sepulcro, estaba María, llorando. Mientras lloraba, se asomo al sepulcro y vio dos ángeles vestidos de blanco, sentados, uno a la cabecera y otro a los pies, donde había estado el cuerpo de Jesús.\nEllos le preguntan:\n-«Mujer, ¿por que lloras?»\nElla les contesta:\n-«Porque se han llevado a mi Señor y no sé dónde lo han puesto.»\nDicho esto, da media vuelta y ve a Jesús, de pie, pero no sabía que era Jesús.\nJesús le dice:\n-«Mujer, ¿por qué lloras?, ¿a quién buscas?»\nElla, tomándolo por el hortelano, le contesta:\n-«Señor, si tú te lo has llevado, dime dónde lo has puesto y yo lo recogeré.»\nJesús le dice:\n-« ¡María! »\nElla se vuelve y le dice:\n-«¡Rabboni!», que significa: «¡Maestro!»\nJesús le dice:\n-«Suéltame, que todavía no he subido al Padre. Anda, ve a mis hermanos y diles: \"Subo al Padre mío y Padre vuestro, al Dios mío y Dios vuestro.\"»\nMaría Magdalena fue y anunció a los discípulos:\n-«He visto al Señor y ha dicho esto.»",
@@ -16971,6 +17346,11 @@
       },
       "salmo": {
         "ref": "Sal 33, 2-3. 4-5. 6-7. 8-9. 10-11, p. 400. EVANGELIO: Jn 15, 1-8, p. 447."
+      },
+      "aclamacion": {
+        "tipo": "aleluya",
+        "cita": "Jn 15, 9b. 5b",
+        "texto": "Permaneced en mi amor —dice el Señor—; el que permanece en mí y yo en él, ese da fruto abundante."
       },
       "evangelio": {
         "titulo": "El que permanece en mí y yo en él, ese da fruto abundante",
@@ -16995,6 +17375,11 @@
         "titulo": "Llevamos siempre y en todas partes en el cuerpo la muerte de Jesús",
         "cita": "2 Cor 4, 7-15",
         "texto": "Hermanos:\nLlevamos este tesoro en vasijas de barro, para que se vea que una fuerza tan extraordinaria es de Dios y no proviene de nosotros.\nAtribulados en todo, mas no aplastados; apurados, mas no desesperados; perseguidos, pero no abandonados; derribados, mas no aniquilados, llevando siempre y en todas partes en el cuerpo la muerte de Jesús, para que también la vida de Jesús se manifieste en nuestro cuerpo.\nPues, mientras vivimos, continuamente nos están entregando a la muerte por causa de Jesús; para que también la vida de Jesús se manifieste en nuestra carne mortal. De este modo, la muerte actúa en nosotros, y la vida en vosotros.\nPero teniendo el mismo espíritu de fe, según lo que está escrito: «Creí, por eso hablé», también nosotros creemos y por eso hablamos; sabiendo que quien resucitó al Señor Jesús también nos resucitará a nosotros con Jesús y nos presentará con vosotros ante él.\nPues todo esto es para vuestro bien, a fin de que cuantos más reciban la gracia, mayor sea el agradecimiento, para gloria de Dios."
+      },
+      "aclamacion": {
+        "tipo": "aleluya",
+        "cita": "",
+        "texto": "Astro brillante de España, apóstol Santiago, tu cuerpo descansa en la paz, tu gloria pervive entre nosotros."
       },
       "evangelio": {
         "titulo": "Mi cáliz lo beberéis",
@@ -17187,6 +17572,11 @@
         "antifona": "El Señor reina, altísimo sobre toda la tierra.",
         "texto": "V/. El Señor reina, la tierra goza, se alegran las islas innumerables. Tiniebla y nube lo rodean, justicia y derecho sostienen su trono. R/.\n\nV/. Los montes se derriten como cera ante el dueño de toda la tierra; los cielos pregonan su justicia, y todos los pueblos contemplan su gloria. R/.\n\nV/. Porque tú eres, Señor, altísimo sobre toda la tierra, encumbrado sobre todos los dioses. R/."
       },
+      "aclamacion": {
+        "tipo": "aleluya",
+        "cita": "Mt 17, 5c",
+        "texto": "Este es mi Hijo, el amado, en quien me complazco. Escuchadlo."
+      },
       "evangelio": {
         "titulo": "Mientras oraba, el aspecto de su rostro cambió",
         "texto": "En aquel tiempo, Jesús tomó consigo a Pedro, a Santiago y a su hermano Juan y se los llevó aparte a una montaña alta.\nSe transfiguró delante de ellos, y su rostro resplandecía como el sol, y sus vestidos se volvieron blancos como la luz.\nY se les aparecieron Moisés y Elías conversando con él.\nPedro, entonces, tomó la palabra y dijo a Jesús:\n-«Señor, ¡qué bien se está aquí! Si quieres, haré tres tiendas: una para ti, otra para Moisés y otra para Elías.»\nTodavía estaba hablando cuando una nube luminosa los cubrió con su sombra, y una voz desde la nube decía:\n-«Éste es mi Hijo, el amado, mi predilecto. Escuchadlo.»\nAl oírlo, los discípulos cayeron de bruces, llenos de espanto.\nJesús se acercó y, tocándolos, les dijo:\n-«Levantaos, no temáis.»\nAl alzar los ojos, no vieron a nadie más que a Jesús, solo.\nCuando bajaban de la montaña, Jesús les mandó:\n-«No contéis a nadie la visión hasta que el Hijo del hombre resucite de entre los muertos.»",
@@ -17319,6 +17709,11 @@
         "titulo": "Primero Cristo, como primicia; después todos los que son de Cristo",
         "cita": "1 Cor 15, 20-27a",
         "texto": "Hermanos:\nCuando esto corruptible se vista de incorrupción, y esto mortal se vista de inmortalidad, entonces se cumplirá la palabra que está escrita:\n«La muerte ha sido absorbida en la victoria. ¿Dónde está, muerte, tu victoria? ¿Dónde está, muerte, tu aguijón?».\nEl aguijón de la muerte es el pecado, y la fuerza del pecado, la ley.\n¡Gracias a Dios, que nos da la victoria por medio de nuestro Señor Jesucristo!"
+      },
+      "aclamacion": {
+        "tipo": "aleluya",
+        "cita": "",
+        "texto": "María ha sido asunta al cielo, se alegra el ejército de los ángeles."
       },
       "evangelio": {
         "titulo": "El Poderoso ha hecho obras grandes en mí: enaltece a los humildes",
@@ -17622,6 +18017,11 @@
         "texto": "V/. Porque yo confío en tu misericordia: alegra mi corazón con tu auxilio. R/.\n\nV/. Y cantaré al Señor por el bien que me ha hecho. R/.",
         "antifona": "Desbordo de gozo con el Señor."
       },
+      "aclamacion": {
+        "tipo": "aleluya",
+        "cita": "",
+        "texto": "Dichosa eres, santa Virgen María, y digna de toda alabanza: de ti salió el sol de justicia, Cristo, nuestro Dios."
+      },
       "evangelio": {
         "titulo": "La criatura que hay en ella viene del Espíritu Santo",
         "texto": "Abrahán engendró a Isaac, Isaac a Jacob, Jacob a Judá y a sus hermanos. Judá engendró, de Tamar, a Farés y a Zará, Farés a Esrón, Esrón a Aram, Aram a Aminadab, Aminadab a Naasón, Naasón a Salmón, Salmón engendró, de Rahab, a Booz; Booz engendró, de Rut, a Obed; Obed a Jesé, Jesé engendró a David, el rey. David, de la mujer de Urías, engendró a Salomón, Salomón a Roboam, Roboam a Abías, Abías a Asaf, Asaf a Josafat, Josafat a Joram, Joram a Ozías, Ozías a Joatán, Joatán a Acaz, Acaz a Ezequías, Ezequías engendró a Manasés, Manasés a Amós, Amós a Josías; Josías engendró a Jeconías y a sus hermanos, cuando el destierro de Babilonia.\nDespués del destierro de Babilonia, Jeconías engendró a Salatiel, Salatiel a Zorobabel, Zorobabel a Abiud, Abiud a Eliaquín, Eliaquín a Azor, Azor a Sadoc, Sadoc a Aquim, Aquim a Eliud, Eliud a Eleazar, Eleazar a Matán, Matán a Jacob; y Jacob engendró a José, el esposo de María, de la cual nació Jesús, llamado Cristo.\nEl nacimiento de Jesucristo fue de esta manera:\nMaría, su madre, estaba desposada con José y, antes de vivir juntos, resultó que ella esperaba un hijo por obra del Espíritu Santo.\nJosé, su esposo, que era justo y no quería denunciarla, decidió repudiarla en secreto. Pero, apenas había tomado esta resolución, se le apareció en sueños un ángel del Señor que le dijo:\n-«José, hijo de David, no tengas reparo en llevarte a María, tu mujer, porque la criatura que hay en ella viene del Espíritu Santo. Dará a luz un hijo, y tú le pondrás por nombre Jesús, porque él salvará a su pueblo de los pecados.»\nTodo esto sucedió para que se cumpliese lo que había dicho el Señor por el Profeta: «Mirad: la Virgen concebirá y dará a luz un hijo y le pondrá por nombre Emmanuel, que significa \"Dios-con-nosotros\".»",
@@ -17661,6 +18061,11 @@
         "antifona": "No olvidéis las acciones del Señor.",
         "texto": "V/. Escucha, pueblo mío, mi enseñanza, inclina el oído a las palabras de mi boca: que voy a abrir mi boca a las sentencias, para que broten los enigmas del pasado. R/.\n\nV/. Cuando los hacía morir, lo buscaban, y madrugaban para volverse hacia Dios; se acordaban de que Dios era su roca, el Dios Altísimo su redentor. R/.\n\nV/. Lo adulaban con sus bocas, pero sus lenguas mentían: su corazón no era sincero con él, ni eran fieles a su alianza. R/.\n\nV/. Él, en cambio, sentía lástima, perdonaba la culpa y no los destruía: una y otra vez reprimió su cólera, y no despertaba todo su furor. R/."
       },
+      "aclamacion": {
+        "tipo": "aleluya",
+        "cita": "",
+        "texto": "Te adoramos, oh, Cristo, y te bendecimos: porque con tu cruz has redimido el mundo."
+      },
       "evangelio": {
         "titulo": "Tiene que ser elevado el Hijo del hombre",
         "texto": "En aquel tiempo, dijo Jesús a Nicodemo:\n«Nadie ha subido al cielo sino el que bajó del cielo, el Hijo del hombre.\nLo mismo que Moisés elevó la serpiente en el desierto, así tiene que ser elevado el Hijo del hombre, para que todo el que cree en él tenga vida eterna.\nPorque tanto amó Dios al mundo, que entregó a su Unigénito, para que todo el que cree en él no perezca, sino que tenga vida eterna.\nPorque Dios no envió a su Hijo al mundo para juzgar al mundo, sino para que el mundo se salve por él».",
@@ -17679,6 +18084,11 @@
         "cita": "Sal 30, 2-3a. 3bc-4. 5-6. 15-16. 20 (R.: 17b)",
         "antifona": "Sálvame, Señor, por tu misericordia.",
         "texto": "V/. A ti, Señor, me acojo: no quede yo nunca defraudado; tú, que eres justo, ponme a salvo, inclina tu oído hacia mí. R/.\n\nV/. Ven aprisa a librarme, sé la roca de mi refugio, un baluarte donde me salve, tú que eres mi roca y mi baluarte; por tu nombre dirígeme y guíame. R/.\n\nV/. Sácame de la red que me han tendido, porque tú eres mi amparo. A tus manos encomiendo mi espíritu: tú, el Dios leal, me librarás. R/.\n\nV/. Pero yo confío en ti, Señor, te digo: «Tú eres mi Dios.» En tu mano están mis azares: líbrame de los enemigos que me persiguen. R/.\n\nV/. Qué bondad tan grande, Señor, reservas para tus fieles, y concedes a los que a ti se acogen a la vista de todos. R/."
+      },
+      "aclamacion": {
+        "tipo": "aleluya",
+        "cita": "",
+        "texto": "Feliz la Virgen María, que, sin morir, mereció la palma del martirio junto a la cruz del Señor."
       },
       "evangelio": {
         "titulo": "A ti misma una espada te traspasará el alma",
@@ -17755,6 +18165,11 @@
         "antifona": "A toda la tierra alcanza su pregón.",
         "texto": "V/. El cielo proclama la gloria de Dios, el firmamento pregona la obra de sus manos: el día al día le pasa el mensaje, la noche a la noche se lo susurra. R/.\n\nV/. Sin que hablen, sin que pronuncien, sin que resuene su voz, a toda la tierra alcanza su pregón, y hasta los limites del orbe su lenguaje. R/."
       },
+      "aclamacion": {
+        "tipo": "aleluya",
+        "cita": "",
+        "texto": "A ti, oh, Dios, te alabamos, a ti, Señor, te reconocemos; a ti te ensalza el glorioso coro de los apóstoles, Señor."
+      },
       "evangelio": {
         "titulo": "Sígueme. Él se levantó y lo siguió",
         "cita": "Mt 9, 9-13",
@@ -17823,6 +18238,11 @@
         "antifona": "Delante de los ángeles tañeré para ti, Señor.",
         "texto": "V/. Daré gracias a tu nombre: por tu misericordia y tu lealtad, porque tu promesa supera a tu fama; cuando te invoqué, me escuchaste, acreciste el valor en mi alma. R/.\n\nV/. Que te den gracias, Señor, los reyes de la tierra, al escuchar el oráculo de tu boca; canten los caminos del Señor, porque la gloria del Señor es grande. R/.",
         "cita": "Sal 137, 1bcd-2a. 2bcd-3. 4-5 (R.: 1d)"
+      },
+      "aclamacion": {
+        "tipo": "aleluya",
+        "cita": "Sal 102, 21",
+        "texto": "Bendecid al Señor, ejércitos suyos, servidores que cumplís sus deseos."
       },
       "evangelio": {
         "titulo": "Veréis a los ángeles de Dios subir y bajar sobre el Hijo del hombre",
@@ -17977,6 +18397,11 @@
         "cita": "Sant 5, 13-18",
         "texto": "Hermanos:\nEl que es de Cristo es una criatura nueva. Lo antiguo ha pasado, lo nuevo ha comenzado.\nTodo esto viene de Dios, que por medio de Cristo nos reconcilió consigo y nos encargó el ministerio de la reconciliación.\nEs decir, Dios mismo estaba en Cristo reconciliando al mundo consigo, sin pedirle cuentas de sus pecados, y a nosotros nos ha confiado la palabra de la reconciliación.\nPor eso, nosotros actuamos como enviados de Cristo, y es como si Dios mismo os exhortara por nuestro medio.\nEn nombre de Cristo os pedimos que os reconciliéis con Dios.\nAl que no había pecado Dios lo hizo expiación por nuestro pecado, para que nosotros, unidos a él, recibamos la justificación de Dios."
       },
+      "aclamacion": {
+        "tipo": "aleluya",
+        "cita": "Sal 67, 20b. 21a",
+        "texto": "Dios lleva nuestras cargas, es nuestra salvación. Nuestro Dios es un Dios que salva."
+      },
       "evangelio": {
         "titulo": "Dios hará justicia a sus elegidos que claman ante él",
         "cita": "Lc 18, 1-8",
@@ -18079,6 +18504,11 @@
         "cita": "Sal 26, 1bcde. 3. 4. 5",
         "antifona": "El Señor me ha coronado, sobre la columna me ha exaltado.",
         "texto": "V/. Si un ejército acampa contra mí, mi corazón no tiembla; si me declaran la guerra, me siento tranquilo. R/.\n\nV/. Una cosa pido al Señor, eso buscaré: habitar en la casa del Señor por los días de mi vida; gozar de la dulzura del Señor, contemplando su templo. R/.\n\nV/. Él me protegerá en su tienda el día del peligro; me esconderá en lo escondido de su morada, me alzará sobre la roca. R/."
+      },
+      "aclamacion": {
+        "tipo": "aleluya",
+        "cita": "Sal 39, 3d. 4a",
+        "texto": "Afianzó mis pies sobre roca, me puso en la boca un cántico nuevo."
       },
       "evangelio": {
         "titulo": "Bienaventurado el vientre que te llevó",
@@ -18273,6 +18703,11 @@
         "antifona": "A toda la tierra alcanza su pregón.",
         "texto": "V/. El cielo proclama la gloria de Dios, el firmamento pregona la obra de sus manos: el día al día le pasa el mensaje, la noche a la noche se lo susurra. R/.\n\nV/. Sin que hablen, sin que pronuncien, sin que resuene su voz, a toda la tierra alcanza su pregón, y hasta los limites del orbe su lenguaje. R/."
       },
+      "aclamacion": {
+        "tipo": "aleluya",
+        "cita": "",
+        "texto": "A ti, oh, Dios, te alabamos, a ti, Señor, te reconocemos; a ti te ensalza el glorioso coro de los apóstoles, Señor."
+      },
       "evangelio": {
         "titulo": "Escogió de entre ellos a doce, a los que también nombró apóstoles",
         "texto": "En aquellos días, Jesús salió al monte a orar y pasó la noche orando a Dios.\nCuando se hizo de día, llamó a sus discípulos, escogió de entre ellos a doce, a los que también nombró apóstoles: Simón, al que puso de nombre Pedro, y Andrés, su hermano; Santiago, Juan, Felipe, Bartolomé, Mateo, Tomás, Santiago el de Alfeo, Simón, llamado el Zelote; Judas el de Santiago y Judas Iscariote, que fue el traidor.\nDespués de bajar con ellos, se paró en una llanura con un grupo grande de discípulos y una gran muchedumbre del pueblo, procedente de toda Judea, de Jerusalén y de la costa de Tiro y de Sidón.\nVenían a oírlo y a que los curara de sus enfermedades; los atormentados por espíritus inmundos quedaban curados, y toda la gente trataba de tocarlo, porque salía de él una fuerza que los curaba a todos.",
@@ -18376,6 +18811,11 @@
         "titulo": "Sois templo de Dios",
         "cita": "1 Cor 3, 9c-11. 16-17",
         "texto": "Hermanos:\nSois edificio de Dios. Conforme al don que Dios me ha dado, yo, como hábil arquitecto, coloqué el cimiento, otro levanta el edificio. Mire cada uno cómo construye.\nNadie puede poner otro cimiento fuera del ya puesto, que es Jesucristo.\n¿No sabéis que sois templo de Dios y que el Espíritu de Dios habita en vosotros?\nSi alguno destruye el templo de Dios, Dios lo destruirá a él; porque el templo de Dios es santo: ese templo sois vosotros."
+      },
+      "aclamacion": {
+        "tipo": "aleluya",
+        "cita": "2 Crón 7, 16a",
+        "texto": "He elegido y santificado este templo —dice el Señor— para que mi Nombre esté en él eternamente."
       },
       "evangelio": {
         "titulo": "Hablaba del templo de su cuerpo",
@@ -18518,6 +18958,11 @@
         "cita": "Sal 97, 1bcde. 2-3ab. 3cd-4. 5-6 (R.: 2b)",
         "antifona": "El Señor revela a las naciones su justicia.",
         "texto": "V/. Cantad al Señor un cántico nuevo, porque ha hecho maravillas: su diestra le ha dado la victoria, su santo brazo. R/.\n\nV/. El Señor da a conocer su victoria, revela a las naciones su justicia: se acordó de su misericordia y su fidelidad en favor de la casa de Israel. R/.\n\nV/. Los confines de la tierra han contemplado la victoria de nuestro Dios. Aclama al Señor, tierra entera; gritad, vitoread, tocad. R/.\n\nV/. Tañed la cítara para el Señor, suenen los instrumentos: con clarines y al son de trompetas, aclamad al Rey y Señor. R/."
+      },
+      "aclamacion": {
+        "tipo": "aleluya",
+        "cita": "",
+        "texto": "A ti, oh, Dios, te alabamos, a ti, Señor, te reconocemos; a ti te ensalza el glorioso coro de los apóstoles, Señor."
       },
       "evangelio": {
         "titulo": "Mándame ir a ti sobre el agua",
@@ -18716,6 +19161,11 @@
         "cita": "Ef 1, 3-6. 11-12",
         "texto": "Bendito sea Dios, Padre de nuestro Señor Jesucristo,\nque nos ha bendecido en Cristo\ncon toda clase de bendiciones espirituales en los cielos.\nÉl nos eligió en Cristo antes de la fundación del mundo\npara que fuésemos santos e intachables ante él por el amor.\nÉl nos ha destinado por medio de Jesucristo,\nsegún el beneplácito de su voluntad,\na ser sus hijos,\npara alabanza de la gloria de su gracia,\nque tan generosamente nos ha concedido en el Amado.\nEn él hemos heredado también,\nlos que ya estábamos destinados por decisión\ndel que lo hace todo según su voluntad,\npara que seamos alabanza de su gloria\nquienes antes esperábamos en el Mesías."
       },
+      "aclamacion": {
+        "tipo": "aleluya",
+        "cita": "Cf. Lc 1, 28. 42",
+        "texto": "Alégrate, María, llena de gracia, el Señor está contigo, bendita tú entre las mujeres."
+      },
       "evangelio": {
         "titulo": "Alégrate, llena de gracia, el Señor está contigo",
         "texto": "En aquel tiempo, el ángel Gabriel fue enviado por Dios a una ciudad de Galilea llamada Nazaret, a una virgen desposada con un hombre llamado José, de la casa de David; el nombre de la virgen era María.\nEl ángel, entrando en su presencia, dijo:\n«Alégrate, llena de gracia, el Señor está contigo».\nElla se turbó grandemente ante estas palabras y se preguntaba qué saludo era aquel. El ángel le dijo:\n«No temas, María, porque has encontrado gracia ante Dios. Concebirás en tu vientre y darás a luz un hijo, y le pondrás por nombre Jesús. Será grande, se llamará Hijo del Altísimo, el Señor Dios le dará el trono de David, su padre; reinará sobre la casa de Jacob para siempre, y su reino no tendrá fin».\nY María dijo al ángel:\n«¿Cómo será eso, pues no conozco varón?».\nEl ángel le contestó:\n«El Espíritu Santo vendrá sobre ti, y la fuerza del Altísimo te cubrirá con su sombra; por eso el Santo que va a nacer será llamado Hijo de Dios. También tu pariente Isabel ha concebido un hijo en su vejez, y ya está de seis meses la que llamaban estéril, “porque para Dios nada hay imposible”».\nMaría contestó:\n«He aquí la esclava del Señor; hágase en mí según tu palabra».\nY el ángel se retiró.",
@@ -18867,6 +19317,11 @@
         "antifona": "Alegraos, justos, con el Señor.",
         "texto": "V/. El Señor reina, la tierra goza, se alegran las islas innumerables. Tiniebla y nube lo rodean, justicia y derecho sostienen su trono. R/.\n\nV/. Los montes se derriten como cera ante el dueño de toda la tierra; los cielos pregonan su justicia, y todos los pueblos contemplan su gloria. R/.\n\nV/. Amanece la luz para el justo, y la alegría para los rectos de corazón. Alegraos, justos, con el Señor, celebrad su santo nombre. R/."
       },
+      "aclamacion": {
+        "tipo": "aleluya",
+        "cita": "",
+        "texto": "A ti, oh, Dios, te alabamos, a ti, Señor, te reconocemos; a ti te ensalza el glorioso coro de los apóstoles, Señor."
+      },
       "evangelio": {
         "titulo": "El otro discípulo corría más que Pedro; se adelantó y llegó primero al sepulcro",
         "texto": "El primer día de la semana, María Magdalena echó a correr y fue donde estaba Simón Pedro y el otro discípulo, a quien tanto quería Jesús, y les dijo:\n-«Se han llevado del sepulcro al Señor y no sabemos dónde lo han puesto.»\nSalieron Pedro y el otro discípulo camino del sepulcro. Los dos corrían juntos, pero el otro discípulo corría más que Pedro; se adelantó y llegó primero al sepulcro; y, asomándose, vio las vendas en el suelo; pero no entró.\nLlegó también Simón Pedro detrás de él y entró en el sepulcro: vio las vendas en el suelo y el sudario con que le habían cubierto la cabeza, no por el suelo con las vendas, sino enrollado en un sitio aparte.\nEntonces entró también el otro discípulo, el que había llegado primero al sepulcro; vio y creyó.",
@@ -18886,6 +19341,11 @@
         "cita": "Sal 123, 2-3. 4-5. 7c-8 (R.: 7ab)",
         "antifona": "Hemos salvado la vida, como un pájaro de la trampa del cazador.",
         "texto": "V/. Si el Señor no hubiera estado de nuestra parte, cuando nos asaltaban los hombres, nos habrían tragado vivos: tanto ardía su ira contra nosotros. R/.\n\nV/. Nos habrían arrollado las aguas, llegándonos el torrente hasta el cuello; nos habrían llegado hasta el cuello las aguas espumantes. R/.\n\nV/. La trampa se rompió, y escapamos. Nuestro auxilio es el nombre del Señor, que hizo el cielo y la tierra. R/."
+      },
+      "aclamacion": {
+        "tipo": "aleluya",
+        "cita": "",
+        "texto": "A ti, oh, Dios, te alabamos, a ti, Señor, te reconocemos; a ti te ensalza el blanco ejército de los mártires, Señor."
       },
       "evangelio": {
         "titulo": "Herodes mató a todos los niños en Belén",
@@ -18924,6 +19384,11 @@
       "saint_name": "Santa Teresa Benedicta de la Cruz (Edith Stein), virgen y mártir, patrona de Europa",
       "comun_ref": "Común de mártires o Común de vírgenes",
       "evangelio_propio": true,
+      "aclamacion": {
+        "tipo": "aleluya",
+        "cita": "",
+        "texto": "Ven, esposa de Cristo, recibe la corona, que el Señor te preparó para toda la eternidad."
+      },
       "evangelio": {
         "titulo": "¡Que llega el esposo, salid a su encuentro!",
         "cita": "Mt 25, 1-13",
