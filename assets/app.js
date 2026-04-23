@@ -54,11 +54,13 @@
     }
 
     function areAllExpanded() {
-      if (headers.length === 0) return false;
+      var count = 0;
       for (var i = 0; i < headers.length; i++) {
+        if (headers[i].closest('.aclamacion-section')) continue;
+        count++;
         if (headers[i].getAttribute('aria-expanded') !== 'true') return false;
       }
-      return true;
+      return count > 0;
     }
 
     function updateExpandAllLabel() {
