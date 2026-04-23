@@ -124,19 +124,25 @@ header {
   transform: translateY(-50%);
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   line-height: 0;
   text-decoration: none;
-  transition: opacity 0.15s ease;
+  background: #fff;
+  padding: 6px 8px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .header-home img {
-  height: 36px;
+  height: 32px;
   width: auto;
   display: block;
 }
 
 .header-home:hover {
-  opacity: 0.75;
+  transform: translateY(-50%) scale(1.04);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
 }
 
 .site-title {
@@ -793,6 +799,10 @@ footer .footer-brand:hover {
     position: static;
     transform: none;
     align-self: flex-start;
+  }
+
+  .header-home:hover {
+    transform: scale(1.04);
   }
 
   .day-header h1 {
