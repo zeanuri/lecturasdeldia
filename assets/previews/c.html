@@ -16,16 +16,11 @@
       max-width: 720px;
       margin: 0 auto;
       padding: 0.75rem 1.5rem;
-      display: flex;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
       align-items: center;
       gap: 1rem;
-      justify-content: space-between;
       border-bottom: 1px solid var(--color-border, #2a2a2a);
-    }
-    .masthead .left {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
     }
     .masthead .logo {
       background: #fff;
@@ -34,18 +29,24 @@
       box-shadow: 0 1px 3px rgba(0,0,0,0.08);
       display: inline-flex;
       line-height: 0;
+      justify-self: start;
     }
     .masthead .logo img { height: 32px; width: auto; display: block; }
     .masthead .site-title {
       font-family: var(--font-ui);
-      font-size: 0.9rem;
-      letter-spacing: 0.04em;
-      color: var(--color-text-light, #888);
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--color-brand);
       text-decoration: none;
+      justify-self: center;
+      text-align: center;
     }
     .masthead .actions-bar {
       display: flex;
       gap: 0.5rem;
+      justify-self: end;
     }
     .masthead .actions-bar a,
     .masthead .actions-bar button {
@@ -139,10 +140,22 @@
     }
     .day-card .memorial .star { color: #c9a227; }
 
+    /* Center the action buttons (Colapsar / Descargar / Buscar) */
+    .actions { justify-content: center; }
+
     @media (max-width: 640px) {
       .day-card .card { padding: 1rem 2.5rem; }
       .day-card h1 { font-size: 1.3rem; }
-      .masthead .site-title { display: none; }
+      .masthead {
+        grid-template-columns: auto 1fr;
+        gap: 0.5rem;
+      }
+      .masthead .site-title {
+        grid-column: 1 / -1;
+        order: 3;
+        font-size: 0.95rem;
+      }
+      .masthead .actions-bar { justify-self: end; }
     }
   </style>
 </head>
@@ -157,12 +170,10 @@
   </div>
 
   <div class="masthead">
-    <div class="left">
-      <a href="https://bizkeliza.org" target="_blank" rel="noopener" class="logo">
-        <img src="/assets/logo-bilbao.png" alt="Diócesis de Bilbao">
-      </a>
-      <a href="/" class="site-title">Lecturas del día</a>
-    </div>
+    <a href="https://bizkeliza.org" target="_blank" rel="noopener" class="logo">
+      <img src="/assets/logo-bilbao.png" alt="Diócesis de Bilbao">
+    </a>
+    <a href="/" class="site-title">Lecturas del día</a>
     <div class="actions-bar">
       <a href="/">Hoy</a>
       <button type="button">📅 Fecha</button>
