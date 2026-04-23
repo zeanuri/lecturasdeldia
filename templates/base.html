@@ -15,12 +15,17 @@
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 </head>
 <body{% if day and day.color_css %} data-color="{{ day.color_css }}"{% endif %}>
-  <header>
+  <div class="masthead">
     <a href="https://bizkeliza.org" target="_blank" rel="noopener" class="header-home" aria-label="Diócesis de Bilbao — bizkeliza.org">
       <img src="/assets/logo-bilbao.png?v={{ cache_bust }}" alt="Bilboko Elizbarrutia — Diócesis de Bilbao" width="167" height="48">
     </a>
     <a href="/" class="site-title">Lecturas del Día</a>
-  </header>
+    <div class="masthead-actions">
+      <a href="/" class="masthead-btn">Hoy</a>
+      <button id="calendar-toggle" type="button" class="masthead-btn" aria-label="Elegir otra fecha" title="Elegir otra fecha">&#128197; Fecha</button>
+    </div>
+  </div>
+  <div id="calendar-panel" hidden></div>
 
   {% block content %}{% endblock %}
 

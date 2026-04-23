@@ -107,57 +107,83 @@ body[data-color="pink"]::before {
   background: var(--color-pink);
 }
 
-/* ── Site header ────────────────────────────────────────────────────────── */
+/* ── Masthead ───────────────────────────────────────────────────────────── */
 
-header {
+.masthead {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: var(--spacing);
-  text-align: center;
-  position: relative;
+  padding: 0.75rem var(--spacing);
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid var(--color-border);
 }
 
 .header-home {
-  position: absolute;
-  left: var(--spacing);
-  top: 50%;
-  transform: translateY(-50%);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   line-height: 0;
   text-decoration: none;
   background: #fff;
-  padding: 6px 8px;
+  padding: 4px 6px;
   border-radius: 8px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.08);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
+  justify-self: start;
 }
 
 .header-home img {
-  height: 48px;
+  height: 32px;
   width: auto;
   display: block;
 }
 
 .header-home:hover {
-  transform: translateY(-50%) scale(1.04);
+  transform: scale(1.04);
   box-shadow: 0 2px 6px rgba(0,0,0,0.12);
 }
 
 .site-title {
   font-family: var(--font-ui);
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   color: var(--color-brand);
   text-decoration: none;
+  justify-self: center;
+  text-align: center;
 }
 
 .site-title:hover {
   color: var(--color-brand-light);
+}
+
+.masthead-actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-self: end;
+}
+
+.masthead-btn {
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+  background: transparent;
+  color: var(--color-brand);
+  border: 1px solid var(--color-brand);
+  border-radius: 6px;
   text-decoration: none;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.masthead-btn:hover {
+  background: rgba(0, 107, 84, 0.08);
+  color: var(--color-brand);
 }
 
 
@@ -267,75 +293,7 @@ header {
   text-decoration: underline;
 }
 
-/* ── Day navigation ─────────────────────────────────────────────────────── */
-
-.day-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0.75rem var(--spacing);
-  font-family: var(--font-ui);
-  font-size: 1rem;
-}
-
-.day-nav a {
-  color: var(--color-brand);
-  text-decoration: none;
-  font-weight: 600;
-  padding: 0.4rem 0.6rem;
-  border-radius: 6px;
-}
-
-.day-nav a:hover {
-  color: var(--color-brand-light);
-  background: rgba(0, 107, 84, 0.06);
-  text-decoration: none;
-}
-
-.nav-center {
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-}
-
-a.nav-btn {
-  display: inline-block;
-  background: none;
-  border: 1px solid var(--color-red);
-  border-radius: 6px;
-  padding: 0.4rem 0.7rem;
-  font-family: var(--font-ui);
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--color-brand);
-  line-height: 1;
-  text-decoration: none;
-}
-
-a.nav-btn:hover {
-  background: rgba(0, 107, 84, 0.06);
-  color: var(--color-brand);
-  text-decoration: none;
-}
-
-#calendar-toggle {
-  background: none;
-  border: 1px solid var(--color-red);
-  border-radius: 6px;
-  padding: 0.4rem 0.7rem;
-  cursor: pointer;
-  font-family: var(--font-ui);
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--color-brand);
-  line-height: 1;
-}
-
-#calendar-toggle:hover {
-  background: rgba(0, 107, 84, 0.06);
-}
+/* (Day navigation now lives inside the day card — see .day-card .nav-arrow) */
 
 /* ── Calendar panel ─────────────────────────────────────────────────────── */
 
@@ -461,95 +419,112 @@ article[data-date] {
   padding: 0 var(--spacing) var(--spacing);
 }
 
-/* ── Liturgical header ──────────────────────────────────────────────────── */
+/* ── Day card ───────────────────────────────────────────────────────────── */
 
-.day-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.day-card {
+  max-width: var(--max-width);
+  margin: 1.5rem auto 1rem;
+  padding: 0 var(--spacing);
+}
+
+.day-card .card {
+  position: relative;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  border-radius: 12px;
+  padding: 1.25rem 3rem;
   text-align: center;
-  margin-bottom: var(--spacing);
-  padding-bottom: var(--spacing);
-  border-bottom: 1px solid var(--color-border);
 }
 
-.day-header .date-day {
+.day-card .nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: var(--color-brand);
+  text-decoration: none;
+  padding: 0.5rem 0.7rem;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.day-card .nav-arrow.prev { left: 0.5rem; }
+.day-card .nav-arrow.next { right: 0.5rem; }
+
+.day-card .nav-arrow:hover {
+  background: rgba(0, 107, 84, 0.08);
+  color: var(--color-brand-light);
+}
+
+.day-card .date-line {
   font-family: var(--font-ui);
-  color: var(--color-text-muted);
-  font-size: 0.85rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-bottom: 0;
-}
-
-.day-header .date {
-  font-family: var(--font-ui);
   color: var(--color-text-muted);
-  font-size: 0.85rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.5rem;
 }
 
-.day-header h1 {
+.day-card h1 {
+  margin: 0 0 0.75rem;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.25;
   color: var(--color-brand);
+}
+
+.day-card .pills {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 0.9rem;
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  color: var(--color-text-light);
   margin-bottom: 0.5rem;
 }
 
-/* ── Meta pills ────────────────────────────────────────────────────────── */
-
-.meta-pills {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.4rem;
-  list-style: none;
-  margin-bottom: 0.6rem;
-}
-
-.pill {
-  font-family: var(--font-ui);
-  font-size: 0.75rem;
-  padding: 0.2rem 0.6rem;
-  border-radius: 12px;
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  color: var(--color-text-light);
+.day-card .pills span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
   white-space: nowrap;
 }
 
-.pill.season-pill {
-  font-weight: 600;
-  border: none;
-  color: #fff;
+.day-card .pills .dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-text-muted);
+  display: inline-block;
 }
 
-.pill.season-pill.color-purple { background: var(--color-purple); color: #fff; }
-.pill.season-pill.color-red { background: var(--color-red); color: #fff; }
-.pill.season-pill.color-green { background: var(--color-green); color: #fff; }
-.pill.season-pill.color-white { background: #fff; color: var(--color-brand); border: 1.5px solid var(--color-brand); }
-.pill.season-pill.color-pink { background: var(--color-pink); color: #fff; }
+.day-card .pills .dot-purple { background: var(--color-purple); }
+.day-card .pills .dot-red    { background: var(--color-red); }
+.day-card .pills .dot-green  { background: var(--color-green); }
+.day-card .pills .dot-pink   { background: var(--color-pink); }
+.day-card .pills .dot-white  {
+  background: #fff;
+  border: 1.5px solid var(--color-brand);
+}
 
-/* ── Memorial note ─────────────────────────────────────────────────────── */
-
-.memorial-note {
+.day-card .memorial {
   font-family: var(--font-ui);
   font-size: 0.85rem;
-  color: var(--color-text-light);
-  background: rgba(0, 107, 84, 0.05);
-  border-left: 3px solid var(--color-brand);
-  padding: 0.5rem 0.75rem;
-  border-radius: 0 6px 6px 0;
+  color: var(--color-text);
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--color-border);
+  margin-top: 0.6rem;
 }
 
-.memorial-icon {
-  color: var(--color-brand);
+.day-card .memorial .star {
+  color: #c9a227;
   margin-right: 0.2rem;
 }
 
-.memorial-rank {
+.day-card .memorial em {
   color: var(--color-text-muted);
+  font-style: normal;
 }
 
 /* ── Alternative readings link ─────────────────────────────────────────── */
@@ -695,6 +670,7 @@ article[data-date] {
 
 .actions {
   display: flex;
+  justify-content: center;
   gap: 0.75rem;
   margin-bottom: 1rem;
   padding-bottom: 0.75rem;
@@ -787,42 +763,37 @@ footer .footer-brand:hover {
 
 /* ── Responsive (small screens) ─────────────────────────────────────────── */
 
-/* Header collapses to a column earlier than the rest, because the full
-   diocesan logo + centered title would otherwise collide on tablets. */
+/* On tablets the centered title would crowd the logo + buttons, so
+   collapse the masthead to two rows: [logo + buttons] / [title full width]. */
 @media (max-width: 640px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
+  .masthead {
+    grid-template-columns: auto 1fr;
+    gap: 0.5rem 0.75rem;
   }
-
-  .header-home {
-    position: static;
-    transform: none;
-    align-self: flex-start;
+  .masthead .site-title {
+    grid-column: 1 / -1;
+    order: 3;
+    font-size: 0.95rem;
+    text-align: center;
+    justify-self: center;
   }
-
-  .header-home:hover {
-    transform: scale(1.04);
-  }
+  .day-card .card { padding: 1rem 2.5rem; }
+  .day-card h1 { font-size: 1.3rem; }
 }
 
 @media (max-width: 480px) {
-
-  .day-header h1 {
-    font-size: 1.3rem;
-  }
-
   .reading-text {
     font-size: 1rem;
   }
 
   .actions {
     flex-direction: column;
+    align-items: stretch;
   }
 
-  .actions button {
+  .actions button,
+  .actions .action-link {
     width: 100%;
+    text-align: center;
   }
 }

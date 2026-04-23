@@ -16,38 +16,30 @@
 {% endblock %}
 
 {% block content %}
-<nav class="day-nav">
-  <a href="/{{ prev_url }}/" class="nav-prev" title="{{ prev_label }}">&larr; {{ prev_label }}</a>
-  <div class="nav-center">
-    <a href="/" class="nav-btn">Hoy</a>
-    <button id="calendar-toggle" aria-label="Elegir otra fecha" title="Elegir otra fecha">Elegir otra fecha</button>
-  </div>
-  <a href="/{{ next_url }}/" class="nav-next" title="{{ next_label }}">{{ next_label }} &rarr;</a>
-</nav>
-
-<div id="calendar-panel" hidden></div>
-
 <article data-date="{{ day.date_iso }}">
-  <header class="day-header">
-    <p class="date-day">{{ day.day_name }}</p>
-    <p class="date">{{ day.fecha_corta }}</p>
-    <h1>{{ day.name }}</h1>
-    <ul class="meta-pills">
-      <li class="pill season-pill color-{{ day.color_css }}">{{ day.season }}</li>
-      <li class="pill">{{ day.rank }}</li>
-      {% if day.sunday_cycle %}<li class="pill">{{ day.sunday_cycle }}</li>{% endif %}
-      {% if day.weekday_cycle %}<li class="pill">{{ day.weekday_cycle }}</li>{% endif %}
-    </ul>
-    {% if day.memorial and day.memorial != day.name %}
-    <div class="memorial-note">
-      <span class="memorial-icon">&#9733;</span>
-      {{ day.memorial }}{% if day.memorial_rank %} <span class="memorial-rank">({{ day.memorial_rank }})</span>{% endif %}{% if day.memorial_note %} — {{ day.memorial_note }}{% endif %}
-      {% if day.saint_readings %}
-      <a href="#" id="alt-readings-toggle" class="alt-readings-link">Lecturas alternativas</a>
+  <div class="day-card">
+    <div class="card">
+      <a href="/{{ prev_url }}/" class="nav-arrow prev" title="{{ prev_label }}" aria-label="Día anterior">&larr;</a>
+      <a href="/{{ next_url }}/" class="nav-arrow next" title="{{ next_label }}" aria-label="Día siguiente">&rarr;</a>
+      <div class="date-line">{{ day.day_name }} &middot; {{ day.fecha_corta }}</div>
+      <h1>{{ day.name }}</h1>
+      <div class="pills">
+        <span><span class="dot dot-{{ day.color_css }}"></span>{{ day.season }}</span>
+        <span><span class="dot"></span>{{ day.rank }}</span>
+        {% if day.sunday_cycle %}<span><span class="dot"></span>{{ day.sunday_cycle }}</span>{% endif %}
+        {% if day.weekday_cycle %}<span><span class="dot"></span>{{ day.weekday_cycle }}</span>{% endif %}
+      </div>
+      {% if day.memorial and day.memorial != day.name %}
+      <div class="memorial">
+        <span class="star">&#9733;</span>
+        {{ day.memorial }}{% if day.memorial_rank %} <em>({{ day.memorial_rank }})</em>{% endif %}{% if day.memorial_note %} &mdash; {{ day.memorial_note }}{% endif %}
+        {% if day.saint_readings %}
+        <a href="#" id="alt-readings-toggle" class="alt-readings-link">Lecturas alternativas</a>
+        {% endif %}
+      </div>
       {% endif %}
     </div>
-    {% endif %}
-  </header>
+  </div>
 
   <div class="actions">
     <button id="expand-all">&#128214; Colapsar todas</button>
