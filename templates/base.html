@@ -16,7 +16,9 @@
 </head>
 <body{% if day and day.color_css %} data-color="{{ day.color_css }}"{% endif %}>
   <header>
-    <a href="https://bizkeliza.org" target="_blank" rel="noopener" class="header-home">← bizkeliza.org</a>
+    <a href="https://bizkeliza.org" target="_blank" rel="noopener" class="header-home" aria-label="Diócesis de Bilbao — bizkeliza.org">
+      <img src="/assets/cross-bilbao.png?v={{ cache_bust }}" alt="Diócesis de Bilbao" width="40" height="36">
+    </a>
     <a href="/" class="site-title">Lecturas del Día</a>
   </header>
 

@@ -122,14 +122,21 @@ header {
   left: var(--spacing);
   top: 50%;
   transform: translateY(-50%);
-  font-family: var(--font-ui);
-  font-size: 0.75rem;
-  color: var(--color-brand);
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
   text-decoration: none;
+  transition: opacity 0.15s ease;
+}
+
+.header-home img {
+  height: 36px;
+  width: auto;
+  display: block;
 }
 
 .header-home:hover {
-  text-decoration: underline;
+  opacity: 0.75;
 }
 
 .site-title {
