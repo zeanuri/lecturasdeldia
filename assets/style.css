@@ -135,7 +135,7 @@ header {
 }
 
 .header-home img {
-  height: 32px;
+  height: 48px;
   width: auto;
   display: block;
 }
@@ -787,12 +787,14 @@ footer .footer-brand:hover {
 
 /* ── Responsive (small screens) ─────────────────────────────────────────── */
 
-@media (max-width: 480px) {
+/* Header collapses to a column earlier than the rest, because the full
+   diocesan logo + centered title would otherwise collide on tablets. */
+@media (max-width: 640px) {
   header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.25rem;
+    gap: 0.5rem;
   }
 
   .header-home {
@@ -804,6 +806,9 @@ footer .footer-brand:hover {
   .header-home:hover {
     transform: scale(1.04);
   }
+}
+
+@media (max-width: 480px) {
 
   .day-header h1 {
     font-size: 1.3rem;
