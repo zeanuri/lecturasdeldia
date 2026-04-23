@@ -12,7 +12,9 @@
   {% endblock %}
   {% block canonical %}{% endblock %}
   <link rel="stylesheet" href="/assets/style.css?v={{ cache_bust }}">
-  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192x192.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 </head>
 <body{% if day and day.color_css %} data-color="{{ day.color_css }}"{% endif %}>
   <div class="masthead">
