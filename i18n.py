@@ -162,14 +162,14 @@ I18N_EU = {
     "search_help_cita_label": "Bibliako aipamena",
     "search_help_cita_examples": "Sal 23, Mt 5, Has 1...",
     "search_help_dia_label": "Liturgiako eguna",
-    "search_help_dia_examples": "Pazko Domekea, Hauts Eguaztena...",  # REVIEW
+    "search_help_dia_examples": "Pazko Igandea, Hauts Asteazkena...",
     "search_help_santo_label": "Santua edo oroitzapena",
     "search_help_santo_examples": "Joseba santua, Teresa santa...",  # REVIEW
     "search_help_fecha_label": "Data",
     "search_help_fecha_examples": "abenduaren 25a, apirila...",
     "search_help_tema_label": "Gaia",
     "search_help_tema_examples": "irakurgaien izenburuetako berbak",
-    "search_placeholder": "Adib.: Sal 23, Pazko Domekea, Joseba santua...",  # REVIEW
+    "search_placeholder": "Adib.: Sal 23, Pazko Igandea, Joseba santua...",
     "search_back": "Itzuli gaurko irakurgaietara",
 
     # 404.html
@@ -245,19 +245,20 @@ I18N_EU = {
 }
 
 
-# Spanish day-name -> bizkaiera (for fecha_larga). liturgia.calculate() returns
+# Spanish day-name -> batua (for fecha_larga). liturgia.calculate() returns
 # Spanish day_name; we map at the presentation boundary so calculate() stays
-# untouched as the canonical liturgical model.
+# untouched as the canonical liturgical model. Batua throughout to match the
+# liturgical day names in liturgical_names_eu.py — no dialect mixing in titles.
 DAY_ES_TO_EU = {
     "Lunes": "Astelehena",
     "Martes": "Asteartea",
     "Miercoles": "Asteazkena",
     "Miércoles": "Asteazkena",
-    "Jueves": "Eguena",
-    "Viernes": "Barikua",
-    "Sabado": "Zapatua",
-    "Sábado": "Zapatua",
-    "Domingo": "Domekea",
+    "Jueves": "Osteguna",
+    "Viernes": "Ostirala",
+    "Sabado": "Larunbata",
+    "Sábado": "Larunbata",
+    "Domingo": "Igandea",
 }
 
 

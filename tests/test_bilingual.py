@@ -52,9 +52,9 @@ def test_calendar_arrays_have_right_length():
 # ── Basque day-name mapping ────────────────────────────────────────────────
 
 def test_localize_day_name_eu_known():
-    assert localize_day_name("Domingo", "eu") == "Domekea"
+    assert localize_day_name("Domingo", "eu") == "Igandea"
     assert localize_day_name("Lunes", "eu") == "Astelehena"
-    assert localize_day_name("Sábado", "eu") == "Zapatua"
+    assert localize_day_name("Sábado", "eu") == "Larunbata"
 
 
 def test_localize_day_name_es_passthrough():
@@ -225,7 +225,7 @@ def test_eu_vigilia_has_full_structure(lectionaries):
 def test_localize_liturgical_name_sundays():
     from liturgical_names_eu import localize_name
     assert localize_name("I Domingo de Adviento", "eu") == "Abenduko I Igandea"
-    assert localize_name("IV Domingo de Pascua", "eu") == "Bazko-aldiko IV Igandea"
+    assert localize_name("IV Domingo de Pascua", "eu") == "Pazko-aldiko IV Igandea"
     assert localize_name("XIV Domingo del Tiempo Ordinario", "eu") == "Urtean Zehar XIV Igandea"
     assert localize_name("II Domingo de Cuaresma", "eu") == "Garizumako II Igandea"
 
@@ -239,7 +239,7 @@ def test_localize_liturgical_name_weekdays():
 
 def test_localize_liturgical_name_solemnities():
     from liturgical_names_eu import localize_name
-    assert localize_name("Domingo de Resurreccion", "eu") == "Jaunaren Biztuerako Bazko Igandea"
+    assert localize_name("Domingo de Resurreccion", "eu") == "Jaunaren Biztuerako Pazko Igandea"
     assert localize_name("Santisima Trinidad", "eu") == "Hirutasun Igandea"
     assert localize_name("Santisimo Cuerpo y Sangre de Cristo (Corpus Christi)", "eu") == "Kristoren Gorputz-Odol Santuak"
     assert localize_name("Nuestro Senor Jesucristo, Rey del Universo", "eu") == "Kristo Errege"
@@ -270,7 +270,7 @@ def test_eu_page_renders_batua_h1(lectionaries):
     """The H1 day name on EU pages must be translated to batua, not Spanish."""
     d = date(2026, 4, 26)  # IV Domingo de Pascua (Year A in 2026 calendar)
     day = generate_site.get_day_data(d, "eu", lectionaries)
-    assert day["name"].startswith("Bazko-aldiko"), day["name"]
+    assert day["name"].startswith("Pazko-aldiko"), day["name"]
 
 
 def test_no_spanish_reading_text_in_eu_page(tmp_path, lectionaries):

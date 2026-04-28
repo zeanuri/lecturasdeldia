@@ -122,8 +122,8 @@ EXACT_NAME_ES_TO_EU = {
     "Sabado Santo": "Larunbat Santua",
     "Sábado Santo": "Larunbat Santua",
     "Vigilia Pascual": "Pazko Bijilia",
-    "Domingo de Resurreccion": "Jaunaren Biztuerako Bazko Igandea",
-    "Domingo de Resurrección": "Jaunaren Biztuerako Bazko Igandea",
+    "Domingo de Resurreccion": "Jaunaren Biztuerako Pazko Igandea",
+    "Domingo de Resurrección": "Jaunaren Biztuerako Pazko Igandea",
 
     # ── Easter season specific ──────────────────────────────────────
     "La Ascension del Senor": "Igokunde Igandea",
@@ -262,7 +262,7 @@ _PATTERNS = [
     (re.compile(rf"^{_ROMAN}\s+Domingo\s+de\s+Cuaresma$", re.IGNORECASE),
      "Garizumako {roman} Igandea"),
     (re.compile(rf"^{_ROMAN}\s+Domingo\s+de\s+Pascua$", re.IGNORECASE),
-     "Bazko-aldiko {roman} Igandea"),
+     "Pazko-aldiko {roman} Igandea"),
     (re.compile(rf"^{_ROMAN}\s+Domingo\s+del?\s+Tiempo\s+Ordinario$", re.IGNORECASE),
      "Urtean Zehar {roman} Igandea"),
     # II Domingo de Navidad — handled by EXACT but if the form is different:
@@ -275,7 +275,7 @@ _PATTERNS = [
     (re.compile(rf"^{_WD}\s+de\s+la\s+{_ROMAN}\s+Semana\s+de\s+Cuaresma$", re.IGNORECASE),
      "Garizumako {roman}. Asteko {wd_eu}"),
     (re.compile(rf"^{_WD}\s+de\s+la\s+{_ROMAN}\s+Semana\s+de\s+Pascua$", re.IGNORECASE),
-     "Bazko-aldiko {roman}. Asteko {wd_eu}"),
+     "Pazko-aldiko {roman}. Asteko {wd_eu}"),
     (re.compile(rf"^{_WD}\s+de\s+la\s+{_ROMAN}\s+Semana\s+del?\s+Tiempo\s+Ordinario$", re.IGNORECASE),
      "Urtean Zeharreko {roman}. Asteko {wd_eu}"),
     # Octave of Easter: "Lunes de la Octava de Pascua"
@@ -285,7 +285,7 @@ _PATTERNS = [
     # Days after Ash Wednesday (before I Sunday of Lent):
     # "Jueves despues de Ceniza"
     (re.compile(rf"^{_WD}\s+despu[eé]s\s+de\s+Ceniza$", re.IGNORECASE),
-     "Hauts Eguaztenaren ondorengo {wd_eu}"),  # REVIEW
+     "Hauts Asteazkenaren ondorengo {wd_eu}"),
 
     # Late-Advent ferias: "Feria del 17-24 de Diciembre (17 dic)"
     (re.compile(r"^Feria\s+del\s+17-24\s+de\s+Diciembre\s+\((?P<dia>\d{1,2})\s+dic\)$", re.IGNORECASE),
