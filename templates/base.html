@@ -29,7 +29,6 @@
     <a href="https://bizkeliza.org" target="_blank" rel="noopener" class="header-home" aria-label="{{ i18n.diocese_aria }}">
       <img src="/assets/logo-bilbao.png?v={{ cache_bust }}" alt="{{ i18n.diocese_alt }}" width="167" height="48">
     </a>
-    <a href="{% if lang == 'eu' %}/eu/{% else %}/{% endif %}" class="site-title">{{ i18n.site_title }}</a>
     <nav class="lang-toggle" aria-label="Lecturas / Irakurgaiak">
       <a href="{{ toggle_url_es }}"{% if lang == 'es' %} class="active" aria-current="page"{% endif %}>{{ i18n.toggle_label_es }}</a>
       <a href="{{ toggle_url_eu }}"{% if lang == 'eu' %} class="active" aria-current="page"{% endif %}>{{ i18n.toggle_label_eu }}</a>
