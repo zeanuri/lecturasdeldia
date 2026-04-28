@@ -1,30 +1,42 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="{{ i18n.lang }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% block title %}Lecturas del Día{% endblock %}</title>
-  <meta name="description" content="{% block description %}Lecturas de la Misa del día — Conferencia Episcopal Española{% endblock %}">
+  <title>{% block title %}{{ i18n.site_title }}{% endblock %}</title>
+  <meta name="description" content="{% block description %}{{ i18n.meta_description_default }}{% endblock %}">
   {% block og %}
-  <meta property="og:title" content="Lecturas del Día">
-  <meta property="og:description" content="Lecturas de la Misa del día — CEE">
+  <meta property="og:title" content="{{ i18n.site_title }}">
+  <meta property="og:description" content="{{ i18n.og_description_default }}">
   <meta property="og:type" content="website">
   {% endblock %}
-  {% block canonical %}{% endblock %}
+  {% block canonical %}
+  {% if canonical_self %}<link rel="canonical" href="https://lecturasdeldia.org{{ canonical_self }}">{% endif %}
+  {% endblock %}
+  {% if canonical_es and canonical_eu %}
+  <link rel="alternate" hreflang="es" href="https://lecturasdeldia.org{{ canonical_es }}">
+  <link rel="alternate" hreflang="eu" href="https://lecturasdeldia.org{{ canonical_eu }}">
+  <link rel="alternate" hreflang="x-default" href="https://lecturasdeldia.org{{ canonical_es }}">
+  {% endif %}
   <link rel="stylesheet" href="/assets/style.css?v={{ cache_bust }}">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192x192.png">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <script id="i18n-data" type="application/json">{{ i18n | tojson }}</script>
 </head>
 <body{% if day and day.color_css %} data-color="{{ day.color_css }}"{% endif %}>
   <div class="masthead">
-    <a href="https://bizkeliza.org" target="_blank" rel="noopener" class="header-home" aria-label="Diócesis de Bilbao — bizkeliza.org">
-      <img src="/assets/logo-bilbao.png?v={{ cache_bust }}" alt="Bilboko Elizbarrutia — Diócesis de Bilbao" width="167" height="48">
+    <a href="https://bizkeliza.org" target="_blank" rel="noopener" class="header-home" aria-label="{{ i18n.diocese_aria }}">
+      <img src="/assets/logo-bilbao.png?v={{ cache_bust }}" alt="{{ i18n.diocese_alt }}" width="167" height="48">
     </a>
-    <a href="/" class="site-title">Lecturas del Día</a>
+    <a href="{% if lang == 'eu' %}/eu/{% else %}/{% endif %}" class="site-title">{{ i18n.site_title }}</a>
+    <nav class="lang-toggle" aria-label="Lecturas / Irakurgaiak">
+      <a href="{{ toggle_url_es }}"{% if lang == 'es' %} class="active" aria-current="page"{% endif %}>{{ i18n.toggle_label_es }}</a>
+      <a href="{{ toggle_url_eu }}"{% if lang == 'eu' %} class="active" aria-current="page"{% endif %}>{{ i18n.toggle_label_eu }}</a>
+    </nav>
     <div class="masthead-actions">
-      <a href="/" class="masthead-btn">Hoy</a>
-      <button id="calendar-toggle" type="button" class="masthead-btn" aria-label="Elegir otra fecha" title="Elegir otra fecha">&#128197; Fecha</button>
+      <a href="{% if lang == 'eu' %}/eu/{% else %}/{% endif %}" class="masthead-btn">{{ i18n.today_btn }}</a>
+      <button id="calendar-toggle" type="button" class="masthead-btn" aria-label="{{ i18n.date_btn_aria }}" title="{{ i18n.date_btn_aria }}">&#128197; {{ i18n.date_btn }}</button>
     </div>
   </div>
   <div id="calendar-panel" hidden></div>
@@ -33,8 +45,8 @@
 
   <footer>
     <p>
-      <a href="https://bizkeliza.org" target="_blank" rel="noopener" class="footer-brand" aria-label="Diócesis de Bilbao — bizkeliza.org">
-        <img src="/assets/logo-bilbao.png?v={{ cache_bust }}" alt="Bilboko Elizbarrutia — Diócesis de Bilbao" width="167" height="48">
+      <a href="https://bizkeliza.org" target="_blank" rel="noopener" class="footer-brand" aria-label="{{ i18n.diocese_aria }}">
+        <img src="/assets/logo-bilbao.png?v={{ cache_bust }}" alt="{{ i18n.diocese_alt }}" width="167" height="48">
       </a>
     </p>
     <p><a href="https://github.com/zeanuri/lecturasdeldia" target="_blank" rel="noopener">GitHub</a></p>

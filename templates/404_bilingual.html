@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es" id="root-html">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title id="page-title">{{ i18n_es.not_found_title }} &mdash; {{ i18n_es.site_title }}</title>
+  <meta name="description" content="{{ i18n_es.not_found_description }}">
+  <link rel="stylesheet" href="/assets/style.css?v={{ cache_bust }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+</head>
+<body>
+  <div class="masthead">
+    <a href="/" class="site-title" id="brand-link">{{ i18n_es.site_title }}</a>
+    <nav class="lang-toggle">
+      <a href="/" id="toggle-es" class="active">Lecturas</a>
+      <a href="/eu/" id="toggle-eu">Irakurgaiak</a>
+    </nav>
+  </div>
+
+  <article class="error-page" id="content-es">
+    <h1>{{ i18n_es.not_found_h1 }}</h1>
+    <p>{{ i18n_es.not_found_body }}</p>
+    <p><a href="/">{{ i18n_es.not_found_link }}</a></p>
+  </article>
+  <article class="error-page" id="content-eu" hidden>
+    <h1>{{ i18n_eu.not_found_h1 }}</h1>
+    <p>{{ i18n_eu.not_found_body }}</p>
+    <p><a href="/eu/">{{ i18n_eu.not_found_link }}</a></p>
+  </article>
+
+  <script>
+    (function () {
+      var path = window.location.pathname || '';
+      var ref = document.referrer || '';
+      var inEu = path.indexOf('/eu/') === 0 || ref.indexOf('/eu/') !== -1;
+      if (!inEu) return;
+      document.getElementById('content-es').hidden = true;
+      document.getElementById('content-eu').hidden = false;
+      var html = document.getElementById('root-html');
+      html.lang = 'eu';
+      document.getElementById('page-title').textContent =
+        {{ i18n_eu.not_found_title | tojson }} + ' — ' + {{ i18n_eu.site_title | tojson }};
+      document.getElementById('brand-link').href = '/eu/';
+      document.getElementById('brand-link').textContent = {{ i18n_eu.site_title | tojson }};
+      document.getElementById('toggle-es').classList.remove('active');
+      document.getElementById('toggle-eu').classList.add('active');
+    })();
+  </script>
+</body>
+</html>

@@ -1,13 +1,13 @@
 {% extends "base.html" %}
 
-{% block title %}Fecha no disponible — Lecturas del Día{% endblock %}
+{% block title %}{{ i18n.not_found_title }} — {{ i18n.site_title }}{% endblock %}
 
-{% block description %}La fecha solicitada no está disponible.{% endblock %}
+{% block description %}{{ i18n.not_found_description }}{% endblock %}
 
 {% block content %}
 <article class="error-page">
-  <h1>Fecha no disponible</h1>
-  <p>La fecha solicitada no tiene lecturas generadas.</p>
-  <p><a href="/">Ir a las lecturas de hoy</a></p>
+  <h1>{{ i18n.not_found_h1 }}</h1>
+  <p>{{ i18n.not_found_body }}</p>
+  <p><a href="/">{{ i18n.not_found_link }}</a></p>
 </article>
 {% endblock %}

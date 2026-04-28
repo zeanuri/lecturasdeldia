@@ -1,10 +1,29 @@
 /* ═══════════════════════════════════════════════════════════════════════════
-   Lecturas del Dia — Client-side interactions
+   Lecturas del Dia / Egunaren Irakurgaiak — Client-side interactions
    Vanilla JS, no framework, no build step.
+   Bilingual (ES + EU): all language-specific strings come from the
+   <script id="i18n-data"> JSON block injected by base.html.
    ═══════════════════════════════════════════════════════════════════════════ */
 
 (function () {
   'use strict';
+
+  // ── i18n + lang root ───────────────────────────────────────────────────
+
+  var I18N = {};
+  try {
+    var rawI18n = document.getElementById('i18n-data');
+    if (rawI18n) I18N = JSON.parse(rawI18n.textContent);
+  } catch (_) {
+    I18N = {};
+  }
+
+  // /eu/... → '/eu' prefix; ES → '' (apex).
+  var LANG_ROOT = window.location.pathname.indexOf('/eu/') === 0 ? '/eu' : '';
+
+  function t(key, fallback) {
+    return (I18N && typeof I18N[key] === 'string') ? I18N[key] : (fallback || '');
+  }
 
   // ── 1. Expand / Collapse Readings ──────────────────────────────────────
 
@@ -65,11 +84,10 @@
 
     function updateExpandAllLabel() {
       if (!expandAllBtn) return;
-      if (areAllExpanded()) {
-        expandAllBtn.innerHTML = '&#128214; Colapsar todas';
-      } else {
-        expandAllBtn.innerHTML = '&#128214; Expandir todas';
-      }
+      var label = areAllExpanded()
+        ? t('expand_all_collapse', 'Colapsar todas')
+        : t('expand_all_open', 'Expandir todas');
+      expandAllBtn.innerHTML = '&#128214; ' + escapeHtml(label);
     }
   }
 
@@ -137,15 +155,16 @@
       });
 
       // Footer
-      lines.push('Fuente: lecturasdeldia.org \u2014 Textos CEE');
+      lines.push(t('download_footer', 'Fuente: lecturasdeldia.org — Textos CEE'));
 
       var text = lines.join('\n');
       var blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
       var url = URL.createObjectURL(blob);
 
+      var suffix = t('download_filename_suffix', '_lecturas');
       var a = document.createElement('a');
       a.href = url;
-      a.download = dateIso + '_lecturas.txt';
+      a.download = dateIso + suffix + '.txt';
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
@@ -153,7 +172,7 @@
     });
   }
 
-  // ── 3. Search (dedicated /buscar/ page) ─────────────────────────────────
+  // ── 3. Search (dedicated /buscar/ or /eu/bilatu/ page) ──────────────────
 
   function initSearch() {
     var input = document.getElementById('search-input');
@@ -163,12 +182,10 @@
     var searchIndex = null;
     var debounceTimer = null;
 
-    // Load search index immediately on the search page
-    fetch('/search-index.json')
+    fetch(LANG_ROOT + '/search-index.json')
       .then(function (r) { return r.json(); })
       .then(function (data) {
         searchIndex = data;
-        // If user already typed while loading, run search now
         if (input.value.trim().length >= 2) {
           doSearch(input.value.trim());
         }
@@ -213,7 +230,8 @@
       }
 
       if (matches.length === 0) {
-        results.innerHTML = '<p class="search-empty">La b\u00fasqueda no ha dado resultados</p>';
+        var msg = t('search_no_results', 'La búsqueda no ha dado resultados');
+        results.innerHTML = '<p class="search-empty">' + escapeHtml(msg) + '</p>';
         return;
       }
 
@@ -222,7 +240,7 @@
         html += '<a class="search-result" href="' + m.url + '">';
         html += '<span class="search-fecha">' + escapeHtml(m.fecha) + '</span><br>';
         html += '<span class="search-nombre">' + escapeHtml(m.nombre) + '</span><br>';
-        html += '<span class="search-citas">' + escapeHtml(m.citas.replace(/\|/g, ' \u00b7 ')) + '</span>';
+        html += '<span class="search-citas">' + escapeHtml(m.citas.replace(/\|/g, ' · ')) + '</span>';
         html += '</a>';
       });
       results.innerHTML = html;
@@ -239,13 +257,15 @@
     var calData = null;
     var calCurrentMonth = null; // { year, month } (month is 0-based)
 
-    var MONTH_NAMES = [
+    var MONTH_NAMES = (I18N && I18N.calendar_month_names) || [
       'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
       'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'
     ];
-    var DAY_HEADERS = ['Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'S\u00e1', 'Do'];
+    var DAY_HEADERS = (I18N && I18N.calendar_day_headers) || ['Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sá', 'Do'];
+    var LEGEND = (I18N && I18N.calendar_legend) || {
+      purple: 'Morado', green: 'Verde', red: 'Rojo', white: 'Blanco', pink: 'Rosa'
+    };
 
-    // Get initial month from page date
     var article = document.querySelector('article[data-date]');
     if (article) {
       var dateStr = article.getAttribute('data-date');
@@ -260,9 +280,8 @@
       var isHidden = panel.hidden;
       panel.hidden = !isHidden;
       if (!panel.hidden) {
-        // Lazy load calendar data on first open
         if (!calData) {
-          fetch('/calendario/data.json')
+          fetch(LANG_ROOT + '/calendario/data.json')
             .then(function (r) { return r.json(); })
             .then(function (data) {
               calData = data;
@@ -294,41 +313,32 @@
       if (!calData) return;
 
       var year = calCurrentMonth.year;
-      var month = calCurrentMonth.month; // 0-based
+      var month = calCurrentMonth.month;
 
       var today = new Date();
       var todayIso = today.getFullYear() + '-' +
         String(today.getMonth() + 1).padStart(2, '0') + '-' +
         String(today.getDate()).padStart(2, '0');
 
-      // Header
       var html = '<div class="calendar-header">';
       html += '<button id="cal-prev-month">&larr;</button>';
-      html += '<h3>' + MONTH_NAMES[month] + ' ' + year + '</h3>';
+      html += '<h3>' + escapeHtml(MONTH_NAMES[month]) + ' ' + year + '</h3>';
       html += '<button id="cal-next-month">&rarr;</button>';
       html += '</div>';
 
-      // Grid
       html += '<div class="calendar-grid">';
-
-      // Day headers (Mon-first)
       DAY_HEADERS.forEach(function (d) {
-        html += '<div class="cal-weekday">' + d + '</div>';
+        html += '<div class="cal-weekday">' + escapeHtml(d) + '</div>';
       });
 
-      // First day of month — convert to Monday-based (0=Mon, 6=Sun)
       var firstDay = new Date(year, month, 1);
-      var startDow = (firstDay.getDay() + 6) % 7; // 0=Mon
-
-      // Days in month
+      var startDow = (firstDay.getDay() + 6) % 7;
       var daysInMonth = new Date(year, month + 1, 0).getDate();
 
-      // Empty cells before first day
       for (var i = 0; i < startDow; i++) {
         html += '<span></span>';
       }
 
-      // Day cells
       for (var d = 1; d <= daysInMonth; d++) {
         var iso = year + '-' + String(month + 1).padStart(2, '0') + '-' + String(d).padStart(2, '0');
         var entry = calData[iso];
@@ -356,16 +366,15 @@
 
       // Legend
       html += '<div class="calendar-legend">';
-      html += '<span><span class="dot" style="background:var(--color-purple)"></span> Morado</span>';
-      html += '<span><span class="dot" style="background:var(--color-green)"></span> Verde</span>';
-      html += '<span><span class="dot" style="background:var(--color-red)"></span> Rojo</span>';
-      html += '<span><span class="dot" style="background:#fff;border:1.5px solid var(--color-brand)"></span> Blanco</span>';
-      html += '<span><span class="dot" style="background:var(--color-pink)"></span> Rosa</span>';
+      html += '<span><span class="dot" style="background:var(--color-purple)"></span> ' + escapeHtml(LEGEND.purple || '') + '</span>';
+      html += '<span><span class="dot" style="background:var(--color-green)"></span> ' + escapeHtml(LEGEND.green || '') + '</span>';
+      html += '<span><span class="dot" style="background:var(--color-red)"></span> ' + escapeHtml(LEGEND.red || '') + '</span>';
+      html += '<span><span class="dot" style="background:#fff;border:1.5px solid var(--color-brand)"></span> ' + escapeHtml(LEGEND.white || '') + '</span>';
+      html += '<span><span class="dot" style="background:var(--color-pink)"></span> ' + escapeHtml(LEGEND.pink || '') + '</span>';
       html += '</div>';
 
       panel.innerHTML = html;
 
-      // Bind prev/next buttons
       var prevBtn = document.getElementById('cal-prev-month');
       var nextBtn = document.getElementById('cal-next-month');
       if (prevBtn) prevBtn.addEventListener('click', function () { changeMonth(-1); });
@@ -377,7 +386,7 @@
 
   function escapeHtml(str) {
     var div = document.createElement('div');
-    div.appendChild(document.createTextNode(str));
+    div.appendChild(document.createTextNode(str == null ? '' : String(str)));
     return div.innerHTML;
   }
 
@@ -397,7 +406,9 @@
       showingSaint = !showingSaint;
       ferial.hidden = showingSaint;
       saint.hidden = !showingSaint;
-      toggle.textContent = showingSaint ? 'Lecturas del día' : 'Lecturas alternativas';
+      toggle.textContent = showingSaint
+        ? t('alt_readings_back', 'Lecturas del día')
+        : t('alt_readings_link', 'Lecturas alternativas');
     });
   }
 

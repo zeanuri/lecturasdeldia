@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ i18n.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="0;url={{ today_url }}">
+  <title>{{ i18n.site_title }}</title>
+</head>
+<body>
+  <script>
+    var now = new Date();
+    var y = now.getFullYear();
+    var m = String(now.getMonth() + 1).padStart(2, '0');
+    var d = String(now.getDate()).padStart(2, '0');
+    window.location.replace('{{ lang_path }}' + y + '/' + m + '/' + d + '/');
+  </script>
+  <p>{{ i18n.redirect_msg }} <a href="{{ today_url }}">{{ i18n.redirect_link }}</a>...</p>
+</body>
+</html>

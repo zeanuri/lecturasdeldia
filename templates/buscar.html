@@ -1,31 +1,31 @@
 {% extends "base.html" %}
 
-{% block title %}Buscar — Lecturas del Día{% endblock %}
-{% block description %}Busca lecturas por fecha, cita bíblica, santo o tema{% endblock %}
+{% block title %}{{ i18n.search_page_title_prefix }} — {{ i18n.site_title }}{% endblock %}
+{% block description %}{{ i18n.search_meta_description }}{% endblock %}
 
 {% block canonical %}
-<link rel="canonical" href="https://lecturasdeldia.org/buscar/">
+<link rel="canonical" href="https://lecturasdeldia.org{{ canonical_self }}">
 {% endblock %}
 
 {% block content %}
 <div class="search-page">
-  <h1>Buscar lecturas</h1>
+  <h1>{{ i18n.search_h1 }}</h1>
 
   <p class="search-help">
-    Busca entre todas las lecturas del año litúrgico por:
+    {{ i18n.search_help_intro }}
   </p>
   <ul class="search-help-list">
-    <li><strong>Cita bíblica</strong> — Salmo 23, Mateo 5, Génesis 1...</li>
-    <li><strong>Día litúrgico</strong> — Domingo de Pascua, Miércoles de Ceniza...</li>
-    <li><strong>Santo o memoria</strong> — San José, Santa Teresa...</li>
-    <li><strong>Fecha</strong> — 25 de diciembre, abril...</li>
-    <li><strong>Tema</strong> — palabras del título de las lecturas</li>
+    <li><strong>{{ i18n.search_help_cita_label }}</strong> — {{ i18n.search_help_cita_examples }}</li>
+    <li><strong>{{ i18n.search_help_dia_label }}</strong> — {{ i18n.search_help_dia_examples }}</li>
+    <li><strong>{{ i18n.search_help_santo_label }}</strong> — {{ i18n.search_help_santo_examples }}</li>
+    <li><strong>{{ i18n.search_help_fecha_label }}</strong> — {{ i18n.search_help_fecha_examples }}</li>
+    <li><strong>{{ i18n.search_help_tema_label }}</strong> — {{ i18n.search_help_tema_examples }}</li>
   </ul>
 
-  <input type="search" id="search-input" placeholder="Ej: Sal 23, Domingo de Pascua, San José..." autocomplete="off" autofocus>
+  <input type="search" id="search-input" placeholder="{{ i18n.search_placeholder }}" autocomplete="off" autofocus>
 
   <div id="search-results"></div>
 
-  <a href="/" class="search-back">&larr; Volver a las lecturas de hoy</a>
+  <a href="{% if lang == 'eu' %}/eu/{% else %}/{% endif %}" class="search-back">&larr; {{ i18n.search_back }}</a>
 </div>
 {% endblock %}

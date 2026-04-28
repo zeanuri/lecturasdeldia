@@ -1,26 +1,26 @@
 {% extends "base.html" %}
 
-{% block title %}Lecturas del {{ day.fecha_larga }} — {{ day.name }}{% endblock %}
+{% block title %}{{ i18n.dia_title_prefix }} {{ day.fecha_larga }} — {{ day.name }}{% endblock %}
 
 {% block description %}{{ day.readings | map(attribute='cita') | select('defined') | join(', ') }}{% endblock %}
 
 {% block og %}
-<meta property="og:title" content="Lecturas del {{ day.fecha_larga }}">
+<meta property="og:title" content="{{ i18n.dia_title_prefix }} {{ day.fecha_larga }}">
 <meta property="og:description" content="{{ day.name }} — {{ day.readings | map(attribute='cita') | select('defined') | join(', ') }}">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://lecturasdeldia.org/{{ day.date_iso[:4] }}/{{ day.date_iso[5:7] }}/{{ day.date_iso[8:10] }}/">
+<meta property="og:url" content="https://lecturasdeldia.org{{ canonical_self }}">
 {% endblock %}
 
 {% block canonical %}
-<link rel="canonical" href="https://lecturasdeldia.org/{{ day.date_iso[:4] }}/{{ day.date_iso[5:7] }}/{{ day.date_iso[8:10] }}/">
+<link rel="canonical" href="https://lecturasdeldia.org{{ canonical_self }}">
 {% endblock %}
 
 {% block content %}
 <article data-date="{{ day.date_iso }}">
   <div class="day-card">
     <div class="card">
-      <a href="/{{ prev_url }}/" class="nav-arrow prev" title="{{ prev_label }}" aria-label="Día anterior">&larr;</a>
-      <a href="/{{ next_url }}/" class="nav-arrow next" title="{{ next_label }}" aria-label="Día siguiente">&rarr;</a>
+      <a href="/{{ prev_url }}/" class="nav-arrow prev" title="{{ prev_label }}" aria-label="{{ i18n.prev_aria }}">&larr;</a>
+      <a href="/{{ next_url }}/" class="nav-arrow next" title="{{ next_label }}" aria-label="{{ i18n.next_aria }}">&rarr;</a>
       <div class="date-line">{{ day.day_name }} &middot; {{ day.fecha_corta }}</div>
       <h1>{{ day.name }}</h1>
       <div class="pills">
@@ -34,7 +34,7 @@
         <span class="star">&#9733;</span>
         {{ day.memorial }}{% if day.memorial_rank %} <em>({{ day.memorial_rank }})</em>{% endif %}{% if day.memorial_note %} &mdash; {{ day.memorial_note }}{% endif %}
         {% if day.saint_readings %}
-        <a href="#" id="alt-readings-toggle" class="alt-readings-link">Lecturas alternativas</a>
+        <a href="#" id="alt-readings-toggle" class="alt-readings-link">{{ i18n.alt_readings_link }}</a>
         {% endif %}
       </div>
       {% endif %}
@@ -42,9 +42,9 @@
   </div>
 
   <div class="actions">
-    <button id="expand-all">&#128214; Colapsar todas</button>
-    <button id="download-txt">&#128229; Descargar lecturas (.txt)</button>
-    <a href="/buscar/" class="action-link" title="Buscar">&#128269; Buscar</a>
+    <button id="expand-all">&#128214; {{ i18n.expand_all_collapse }}</button>
+    <button id="download-txt">&#128229; {{ i18n.download_txt }}</button>
+    <a href="{% if lang == 'eu' %}/eu/bilatu/{% else %}/buscar/{% endif %}" class="action-link" title="{{ i18n.search_btn }}">&#128269; {{ i18n.search_btn }}</a>
   </div>
 
   <section class="readings">
@@ -52,7 +52,7 @@
     {% if r.key == 'evangelio' and day.aclamacion %}
     <div class="reading aclamacion-section">
       <button class="reading-header" aria-expanded="false" aria-controls="text-aclamacion">
-        <span class="reading-label">Aclamación — {{ day.aclamacion.tipo | capitalize }}</span>
+        <span class="reading-label">{{ i18n.aclamacion_label_prefix }} — {{ day.aclamacion.tipo | capitalize }}</span>
         {% if day.aclamacion.cita %}<span class="reading-cita">{{ day.aclamacion.cita }}</span>{% endif %}
         <span class="chevron">&#9660;</span>
       </button>
@@ -61,6 +61,13 @@
       </div>
     </div>
     {% endif %}
+    {% if r.empty %}
+    <div class="reading reading-empty">
+      <p class="reading-empty-label"><strong>{{ r.label }}</strong>{% if r.cita %} &middot; <span class="reading-empty-cita">{{ r.cita }}</span>{% endif %}</p>
+      <p class="reading-empty-msg">{{ i18n.empty_reading_msg }}</p>
+      <a class="empty-fallback-link" href="{{ r.es_url }}">{{ i18n.read_in_spanish }} &rarr;</a>
+    </div>
+    {% else %}
     <div class="reading">
       <button class="reading-header" aria-expanded="true" aria-controls="text-{{ r.key }}">
         <span class="reading-label">{{ r.label }}</span>
@@ -81,6 +88,7 @@
         {% endfor %}
       </div>
     </div>
+    {% endif %}
     {% endfor %}
   </section>
 
