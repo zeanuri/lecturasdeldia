@@ -1176,22 +1176,9 @@ MOVABLE_MEMORIAL_GOSPEL = {
 }
 
 
-def is_empty_reading(r) -> bool:
-    """True when a reading dict has no usable text (empty or unmatched)."""
-    if not isinstance(r, dict):
-        return True
-    if r.get("unmatched"):
-        return True
-    return not (r.get("texto") or "").strip()
-
-
-def lookup_readings(result: dict, cache=None) -> dict | None:
-    """Maps calculate() result to leccionario readings.
-
-    `cache` lets callers inject an alternate leccionario (e.g. the Basque
-    Lezionarioa). When None, falls back to the global Spanish cache.
-    """
-    lec = cache if cache is not None else _load_leccionario()
+def lookup_readings(result: dict) -> dict | None:
+    """Maps calculate() result to leccionario readings."""
+    lec = _load_leccionario()
     if not lec:
         return None
 
