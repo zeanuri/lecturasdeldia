@@ -25,7 +25,9 @@ from book_codex import (
     DISPLAY_NAMES_ES,
     DISPLAY_NAMES_EU,
     SLUGS,
+    SLUGS_EU,
     clean_cita,
+    slug_for,
     walk_citas,
 )
 from liturgical_names_eu import (
@@ -687,12 +689,15 @@ def _slot_label(slot: str, lang: str) -> str:
 
 
 def generate_libro_page(book: str, entries: list[dict], outdir, templates, lang: str):
-    """Render /libros/<slug>/ (ES) or /eu/liburuak/<slug>/ (EU) for one book."""
+    """Render /libros/<slug>/ (ES, slug in Spanish) or
+    /eu/liburuak/<slug>/ (EU, slug in Basque) for one book."""
     i18n = get_i18n(lang)
-    slug = SLUGS.get(book)
+    slug = slug_for(book, lang)
     if not slug:
         return
     display = (DISPLAY_NAMES_EU if lang == "eu" else DISPLAY_NAMES_ES).get(book, book)
+    # The cross-language URL counterpart for hreflang/lang-toggle.
+    other_slug = slug_for(book, "es" if lang == "eu" else "eu")
 
     # Group + sort
     grouped: dict[str, list[dict]] = {}
@@ -744,16 +749,17 @@ def generate_libro_page(book: str, entries: list[dict], outdir, templates, lang:
         },
     }[lang]
 
-    es_path = f"/libros/{slug}/"
+    # ES path uses Spanish slug, EU path uses Basque slug — pure separation.
+    es_slug = slug if lang == "es" else other_slug
+    eu_slug = slug if lang == "eu" else other_slug
+    es_path = f"/libros/{es_slug}/"
+    eu_path = f"/eu/liburuak/{eu_slug}/"
     urls = page_urls(es_path, lang)
-    # /libros/ ⇆ /eu/liburuak/
-    if lang == "eu":
-        urls["canonical_self"] = f"/eu/liburuak/{slug}/"
-        urls["canonical_eu"] = f"/eu/liburuak/{slug}/"
-        urls["toggle_url_eu"] = f"/eu/liburuak/{slug}/"
-    else:
-        urls["canonical_eu"] = f"/eu/liburuak/{slug}/"
-        urls["toggle_url_eu"] = f"/eu/liburuak/{slug}/"
+    urls["canonical_es"] = es_path
+    urls["canonical_eu"] = eu_path
+    urls["canonical_self"] = eu_path if lang == "eu" else es_path
+    urls["toggle_url_es"] = es_path
+    urls["toggle_url_eu"] = eu_path
 
     template = templates.get_template("libros_book.html")
     html = template.render(
@@ -769,7 +775,7 @@ def generate_libro_page(book: str, entries: list[dict], outdir, templates, lang:
     )
 
     folder = "liburuak" if lang == "eu" else "libros"
-    target = Path(outdir) / folder / slug
+    target = Path(outdir) / folder / slug  # slug is already lang-appropriate
     target.mkdir(parents=True, exist_ok=True)
     (target / "index.html").write_text(html, encoding="utf-8")
 
@@ -786,20 +792,19 @@ def generate_libros_index(by_book: dict[str, list[dict]], outdir, templates, lan
             continue
         book_list.append({
             "code": book,
-            "slug": SLUGS[book],
+            "slug": slug_for(book, lang),
             "name": display_table.get(book, book),
             "count": len(entries),
         })
 
     es_path = "/libros/"
+    eu_path = "/eu/liburuak/"
     urls = page_urls(es_path, lang)
-    if lang == "eu":
-        urls["canonical_self"] = "/eu/liburuak/"
-        urls["canonical_eu"] = "/eu/liburuak/"
-        urls["toggle_url_eu"] = "/eu/liburuak/"
-    else:
-        urls["canonical_eu"] = "/eu/liburuak/"
-        urls["toggle_url_eu"] = "/eu/liburuak/"
+    urls["canonical_es"] = es_path
+    urls["canonical_eu"] = eu_path
+    urls["canonical_self"] = eu_path if lang == "eu" else es_path
+    urls["toggle_url_es"] = es_path
+    urls["toggle_url_eu"] = eu_path
 
     template = templates.get_template("libros_index.html")
     html = template.render(
@@ -837,7 +842,7 @@ def generate_book_aliases_json(by_book: dict[str, list[dict]], outdir, lang: str
     for canonical, entries in by_book.items():
         if not entries:
             continue
-        slug = SLUGS.get(canonical)
+        slug = slug_for(canonical, lang)
         if not slug:
             continue
         url = f"/{folder}/{slug}/" if lang == "es" else f"/eu/{folder}/{slug}/"

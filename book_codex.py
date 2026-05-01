@@ -223,6 +223,25 @@ SLUGS: dict[str, str] = {c: _slug_for(c) for c in CANONICAL_BOOKS_ES}
 SLUG_TO_CANONICAL: dict[str, str] = {v: k for k, v in SLUGS.items()}
 
 
+def _slug_eu_for(canonical: str) -> str:
+    """Slug for the EU URL: Basque display name lowercased + accent-stripped."""
+    name = DISPLAY_NAMES_EU.get(canonical, canonical).lower()
+    import unicodedata
+    name = ''.join(c for c in unicodedata.normalize('NFD', name)
+                   if unicodedata.category(c) != 'Mn')
+    name = name.replace(' ', '-')
+    return name
+
+
+SLUGS_EU: dict[str, str] = {c: _slug_eu_for(c) for c in CANONICAL_BOOKS_ES}
+SLUG_EU_TO_CANONICAL: dict[str, str] = {v: k for k, v in SLUGS_EU.items()}
+
+
+def slug_for(canonical: str, lang: str) -> str:
+    """Canonical → URL slug, language-aware."""
+    return (SLUGS_EU if lang == "eu" else SLUGS).get(canonical, "")
+
+
 # ── EU short forms (Basque liturgical abbreviations) ─────────────────────────
 # Mirrors ES_TO_EU_BOOK_ABBR in book_abbr_eu.py — the short Basque form of
 # each book. Used to build the EU-only alias map.
