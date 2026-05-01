@@ -24,10 +24,10 @@ import re
 # Inventory built from `Leccionario_CL.json` (every distinct prefix).
 ES_TO_EU_BOOK_ABBR: dict[str, str] = {
     # ── Pentateuch ─────────────────────────────────────────────────
-    "Gen": "Has", "Gén": "Has",          # Génesis -> Hasiera
-    "Ex": "Ir", "Éx": "Ir",              # Éxodo -> Irteera
+    "Gen": "Has",                         # Génesis -> Hasiera
+    "Ex": "Ir",                           # Éxodo -> Irteera
     "Lev": "Lb",                          # Levítico -> Lebitarrak       # REVIEW
-    "Num": "Zen", "Núm": "Zen",          # Números -> Zenbakiak          # REVIEW
+    "Num": "Zen",                         # Números -> Zenbakiak          # REVIEW
     "Dt": "Dt",                           # Deuteronomio
     # ── Historical ─────────────────────────────────────────────────
     "Jos": "Jos",                         # Josué
@@ -37,8 +37,8 @@ ES_TO_EU_BOOK_ABBR: dict[str, str] = {
     "2 Sam": "2 Sm",                                                       # REVIEW
     "1 Re": "1 Erg",                      # 1 Reyes -> Erregeak            # REVIEW
     "2 Re": "2 Erg",                                                        # REVIEW
-    "1 Crón": "1 Kro",                    # Crónicas -> Kronikak           # REVIEW
-    "2 Crón": "2 Kro",                                                       # REVIEW
+    "1 Cron": "1 Kro",                    # Crónicas -> Kronikak           # REVIEW
+    "2 Cron": "2 Kro",                                                       # REVIEW
     "Esd": "Esd",                         # Esdras
     "Neh": "Ne",                          # Nehemías
     "Tob": "Tb",                          # Tobías
@@ -84,7 +84,7 @@ ES_TO_EU_BOOK_ABBR: dict[str, str] = {
     "Rom": "Erm",                         # Romanos -> Erromatarrei         # REVIEW
     "1 Cor": "1 Kor",                     # 1 Corintios -> Korintoarrei
     "2 Cor": "2 Kor",
-    "Gal": "Gal", "Gál": "Gal",           # Gálatas
+    "Gal": "Gal",                         # Gálatas
     "Ef": "Ef",                           # Efesios
     "Flp": "Flp",                         # Filipenses (same letters)
     "Col": "Kol",                         # Colosenses
@@ -174,7 +174,7 @@ if __name__ == "__main__":
         "Mc 8, 1-9",
         "1 Pe 2, 4-9",
         "Eclo 24, 1-2. 8-12",
-        "Núm 21, 4-9",
+        "Num 21, 4-9",
         "Sant 5, 13-20",
     ]:
         print(f"  {cita!r:42} -> {localize_cita(cita, 'eu')!r}")
