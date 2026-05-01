@@ -2579,7 +2579,7 @@
         },
         "salmo": {
           "titulo": "",
-          "cita": "Sal 103, 1-2a. 5-6. 10 y 12. 13-14. 24 y 35c",
+          "cita": "Sal 103, 1-2a. 5-6. 10 y 12. 13-14. 24 y 35c (R.: cf. 30)",
           "texto": "",
           "antifona": "",
           "unmatched": true
@@ -2595,7 +2595,7 @@
         },
         "salmo": {
           "titulo": "",
-          "cita": "Sal 15, 5 y 8. 9-10. 11",
+          "cita": "Sal 15, 5 y 8. 9-10. 11 (R.: 1)",
           "texto": "",
           "antifona": "",
           "unmatched": true
@@ -2611,7 +2611,7 @@
         },
         "salmo": {
           "titulo": "",
-          "cita": "Ir 15, 1b-2. 3-4. 5-6. 17-18",
+          "cita": "Ir 15, 1b-2. 3-4. 5-6. 17-18 (R.: 1b)",
           "texto": "",
           "antifona": "",
           "unmatched": true
@@ -2627,7 +2627,7 @@
         },
         "salmo": {
           "titulo": "",
-          "cita": "Sal 29, 2 y 4. 5-6. 11 y 12a y 13b",
+          "cita": "Sal 29, 2 y 4. 5-6. 11 y 12a y 13b (R.: 2a)",
           "texto": "",
           "antifona": "",
           "unmatched": true
@@ -2643,7 +2643,7 @@
         },
         "salmo": {
           "titulo": "",
-          "cita": "Is 12, 2-3. 4bcde. 5-6",
+          "cita": "Is 12, 2-3. 4bcde. 5-6 (R.: 3)",
           "texto": "",
           "antifona": "",
           "unmatched": true
@@ -2659,7 +2659,7 @@
         },
         "salmo": {
           "titulo": "",
-          "cita": "Sal 18, 8. 9. 10. 11",
+          "cita": "Sal 18, 8. 9. 10. 11 (R.: Jn 6, 68c)",
           "texto": "",
           "antifona": "",
           "unmatched": true
@@ -2675,7 +2675,7 @@
         },
         "salmo": {
           "titulo": "",
-          "cita": "Sal 41, 3. 5cdef; 42, 3. 4",
+          "cita": "Sal 41, 3. 5cdef; 42, 3. 4 (R.: Sal 41, 2)",
           "texto": "",
           "antifona": "",
           "unmatched": true
@@ -5201,7 +5201,7 @@
         },
         "salmo": {
           "titulo": "",
-          "cita": "Sal 103, 1-2a. 5-6. 10 y 12. 13-14. 24 y 35c",
+          "cita": "Sal 103, 1-2a. 5-6. 10 y 12. 13-14. 24 y 35c (R.: cf. 30)",
           "texto": "",
           "antifona": "",
           "unmatched": true
@@ -5217,7 +5217,7 @@
         },
         "salmo": {
           "titulo": "",
-          "cita": "Sal 15, 5 y 8. 9-10. 11",
+          "cita": "Sal 15, 5 y 8. 9-10. 11 (R.: 1)",
           "texto": "",
           "antifona": "",
           "unmatched": true
@@ -5233,7 +5233,7 @@
         },
         "salmo": {
           "titulo": "",
-          "cita": "Ir 15, 1b-2. 3-4. 5-6. 17-18",
+          "cita": "Ir 15, 1b-2. 3-4. 5-6. 17-18 (R.: 1b)",
           "texto": "",
           "antifona": "",
           "unmatched": true
@@ -5249,7 +5249,7 @@
         },
         "salmo": {
           "titulo": "",
-          "cita": "Sal 29, 2 y 4. 5-6. 11 y 12a y 13b",
+          "cita": "Sal 29, 2 y 4. 5-6. 11 y 12a y 13b (R.: 2a)",
           "texto": "",
           "antifona": "",
           "unmatched": true
@@ -5265,7 +5265,7 @@
         },
         "salmo": {
           "titulo": "",
-          "cita": "Is 12, 2-3. 4bcde. 5-6",
+          "cita": "Is 12, 2-3. 4bcde. 5-6 (R.: 3)",
           "texto": "",
           "antifona": "",
           "unmatched": true
@@ -5281,7 +5281,7 @@
         },
         "salmo": {
           "titulo": "",
-          "cita": "Sal 18, 8. 9. 10. 11",
+          "cita": "Sal 18, 8. 9. 10. 11 (R.: Jn 6, 68c)",
           "texto": "",
           "antifona": "",
           "unmatched": true
@@ -5297,7 +5297,7 @@
         },
         "salmo": {
           "titulo": "",
-          "cita": "Sal 41, 3. 5cdef; 42, 3. 4",
+          "cita": "Sal 41, 3. 5cdef; 42, 3. 4 (R.: Sal 41, 2)",
           "texto": "",
           "antifona": "",
           "unmatched": true
@@ -7987,7 +7987,7 @@
         },
         "salmo": {
           "titulo": "",
-          "cita": "Sal 103, 1-2a. 5-6. 10 y 12. 13-14. 24 y 35c",
+          "cita": "Sal 103, 1-2a. 5-6. 10 y 12. 13-14. 24 y 35c (R.: cf. 30)",
           "texto": "",
           "antifona": "",
           "unmatched": true
@@ -8003,7 +8003,7 @@
         },
         "salmo": {
           "titulo": "",
-          "cita": "Sal 15, 5 y 8. 9-10. 11",
+          "cita": "Sal 15, 5 y 8. 9-10. 11 (R.: 1)",
           "texto": "",
           "antifona": "",
           "unmatched": true
@@ -8019,7 +8019,7 @@
         },
         "salmo": {
           "titulo": "",
-          "cita": "Ir 15, 1b-2. 3-4. 5-6. 17-18",
+          "cita": "Ir 15, 1b-2. 3-4. 5-6. 17-18 (R.: 1b)",
           "texto": "",
           "antifona": "",
           "unmatched": true
@@ -8035,7 +8035,7 @@
         },
         "salmo": {
           "titulo": "",
-          "cita": "Sal 29, 2 y 4. 5-6. 11 y 12a y 13b",
+          "cita": "Sal 29, 2 y 4. 5-6. 11 y 12a y 13b (R.: 2a)",
           "texto": "",
           "antifona": "",
           "unmatched": true
@@ -8051,7 +8051,7 @@
         },
         "salmo": {
           "titulo": "",
-          "cita": "Is 12, 2-3. 4bcde. 5-6",
+          "cita": "Is 12, 2-3. 4bcde. 5-6 (R.: 3)",
           "texto": "",
           "antifona": "",
           "unmatched": true
@@ -8067,7 +8067,7 @@
         },
         "salmo": {
           "titulo": "",
-          "cita": "Sal 18, 8. 9. 10. 11",
+          "cita": "Sal 18, 8. 9. 10. 11 (R.: Jn 6, 68c)",
           "texto": "",
           "antifona": "",
           "unmatched": true
@@ -8083,7 +8083,7 @@
         },
         "salmo": {
           "titulo": "",
-          "cita": "Sal 41, 3. 5cdef; 42, 3. 4",
+          "cita": "Sal 41, 3. 5cdef; 42, 3. 4 (R.: Sal 41, 2)",
           "texto": "",
           "antifona": "",
           "unmatched": true
