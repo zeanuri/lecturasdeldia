@@ -176,7 +176,7 @@ def test_localize_cita_known_substitutions():
     assert localize_cita("1 Cor 12, 4-11", "eu") == "1 Kor 12, 4-11"
     assert localize_cita("Rom 13, 11-14a", "eu") == "Erm 13, 11-14a"
     assert localize_cita("1 Pe 2, 4-9", "eu") == "1 P 2, 4-9"
-    assert localize_cita("Núm 21, 4-9", "eu") == "Zen 21, 4-9"
+    assert localize_cita("Num 21, 4-9", "eu") == "Zen 21, 4-9"
 
 
 def test_localize_cita_passthrough_unmapped_or_es():

@@ -173,6 +173,116 @@
   }
 
   // ── 3. Search (dedicated /buscar/ or /eu/bilatu/ page) ──────────────────
+  //
+  // Fully accent-insensitive substring search with bilingual book-name aliases.
+  // Pipeline: lowercase → strip diacritics → expand full book names to the
+  // language's CEE/Basque abbreviation. Applied to BOTH query and indexed
+  // haystack so e.g. "Génesis 1", "genesis 1", and "Gen 1" all match the
+  // entry stored as "Gen 1, 1".
+
+  function stripAccents(s) {
+    return s.normalize('NFD').replace(/[̀-ͯ]/g, '');
+  }
+
+  // Spanish full names → CEE abbreviation. Keys are post-strip-accents/lowercase.
+  var BOOK_ALIASES_ES = {
+    "genesis":"gen","exodo":"ex","levitico":"lev","numeros":"num",
+    "deuteronomio":"dt","josue":"jos","jueces":"jue",
+    "1 samuel":"1 sam","2 samuel":"2 sam",
+    "1 reyes":"1 re","2 reyes":"2 re",
+    "1 cronicas":"1 cron","2 cronicas":"2 cron",
+    "esdras":"esd","nehemias":"neh","tobias":"tob","judit":"jdt","ester":"est",
+    "1 macabeos":"1 mac","2 macabeos":"2 mac",
+    "salmos":"sal","salmo":"sal","proverbios":"prov","eclesiastes":"ecl",
+    "cantar":"cant","cantares":"cant","sabiduria":"sab","eclesiastico":"eclo",
+    "isaias":"is","jeremias":"jer","lamentaciones":"lam","baruc":"bar",
+    "ezequiel":"ez","daniel":"dan","oseas":"os","joel":"jl","amos":"am",
+    "abdias":"abd","jonas":"jon","miqueas":"miq","nahum":"nah","habacuc":"hab",
+    "sofonias":"sof","ageo":"ag","zacarias":"zac","malaquias":"mal",
+    "mateo":"mt","marcos":"mc","lucas":"lc","juan":"jn","hechos":"hch",
+    "romanos":"rom",
+    "1 corintios":"1 cor","2 corintios":"2 cor",
+    "galatas":"gal","efesios":"ef","filipenses":"flp","colosenses":"col",
+    "1 tesalonicenses":"1 tes","2 tesalonicenses":"2 tes",
+    "1 timoteo":"1 tim","2 timoteo":"2 tim",
+    "tito":"tit","filemon":"flm","hebreos":"heb","santiago":"sant",
+    "1 pedro":"1 pe","2 pedro":"2 pe",
+    "1 juan":"1 jn","2 juan":"2 jn","3 juan":"3 jn",
+    "judas":"jds","apocalipsis":"ap"
+  };
+
+  // Basque full names → Basque abbreviation. Includes Spanish full names so a
+  // user typing "Génesis" on the EU site still finds "Has 1, 1".
+  var BOOK_ALIASES_EU = {
+    "hasiera":"has","irteera":"ir","lebitarrak":"lb","zenbakiak":"zen",
+    "deuteronomioa":"dt","epaileak":"ep",
+    "1 samuel":"1 sm","2 samuel":"2 sm",
+    "1 erregeak":"1 erg","2 erregeak":"2 erg",
+    "1 kronikak":"1 kro","2 kronikak":"2 kro",
+    "ezra":"esd","tobit":"tb",
+    "1 makabearrak":"1 mak","2 makabearrak":"2 mak",
+    "salmoa":"sal","salmoak":"sal","salmoz":"sal","salmo":"sal",
+    "esaera zaharrak":"es","kohelet":"koh",
+    "kantarik ederrena":"ka","kantar":"ka",
+    "jakinduria":"jkd","sirakida":"si",
+    "auhenak":"aud","baruk":"ba","ezekiel":"ez",
+    "mikeas":"mi","habakuk":"hab","zakarias":"za","malakias":"ml",
+    "matiu":"mt","markos":"mk","lukas":"lk","joan":"jn","eginak":"eg",
+    "erromatarrei":"erm","romatarrei":"erm",
+    "1 korintoarrei":"1 kor","2 korintoarrei":"2 kor",
+    "galatarrei":"gal","efesoarrei":"ef","filipenseei":"flp","kolosarrei":"kol",
+    "1 tesalonikarrei":"1 tes","2 tesalonikarrei":"2 tes",
+    "1 timoteo":"1 tim","2 timoteo":"2 tim",
+    "filemon":"flm","hebrearrei":"heb",
+    "1 pedro":"1 p","2 pedro":"2 p",
+    "1 joan":"1 jn","2 joan":"2 jn","3 joan":"3 jn",
+    "apokalipsia":"ap",
+    // Spanish full names mapped to Basque abbreviations (cross-language search)
+    "genesis":"has","exodo":"ir","numeros":"zen","deuteronomio":"dt",
+    "1 samuel":"1 sm","2 samuel":"2 sm",
+    "1 reyes":"1 erg","2 reyes":"2 erg",
+    "1 cronicas":"1 kro","2 cronicas":"2 kro",
+    "esdras":"esd","tobias":"tb","ester":"est",
+    "1 macabeos":"1 mak","2 macabeos":"2 mak",
+    "salmos":"sal","proverbios":"es","eclesiastes":"koh",
+    "cantar":"ka","cantares":"ka","sabiduria":"jkd","eclesiastico":"si",
+    "isaias":"is","jeremias":"jr","lamentaciones":"aud","baruc":"ba",
+    "ezequiel":"ez","daniel":"dn","oseas":"os","joel":"jl","amos":"am",
+    "abdias":"ab","jonas":"jon","miqueas":"mi","nahum":"nah","habacuc":"hab",
+    "sofonias":"sof","ageo":"ag","zacarias":"za","malaquias":"ml",
+    "mateo":"mt","marcos":"mk","lucas":"lk","juan":"jn","hechos":"eg",
+    "romanos":"erm","galatas":"gal","efesios":"ef","filipenses":"flp",
+    "colosenses":"kol",
+    "1 corintios":"1 kor","2 corintios":"2 kor",
+    "1 tesalonicenses":"1 tes","2 tesalonicenses":"2 tes",
+    "tito":"tit","hebreos":"heb","santiago":"sant",
+    "1 juan":"1 jn","2 juan":"2 jn","3 juan":"3 jn",
+    "judas":"jud","apocalipsis":"ap"
+  };
+
+  var BOOK_ALIASES = LANG_ROOT === '/eu' ? BOOK_ALIASES_EU : BOOK_ALIASES_ES;
+  var ALIAS_KEYS = Object.keys(BOOK_ALIASES).sort(function (a, b) {
+    return b.length - a.length;
+  });
+  var ALIAS_RE = ALIAS_KEYS.length
+    ? new RegExp(
+        '\\b(?:' +
+          ALIAS_KEYS.map(function (k) { return k.replace(/\s+/g, '\\s+'); })
+                    .join('|') +
+          ')\\b',
+        'g'
+      )
+    : null;
+
+  function normalizeForSearch(s) {
+    var out = stripAccents(String(s || '').toLowerCase());
+    if (ALIAS_RE) {
+      out = out.replace(ALIAS_RE, function (m) {
+        return BOOK_ALIASES[m.replace(/\s+/g, ' ')] || m;
+      });
+    }
+    return out;
+  }
 
   function initSearch() {
     var input = document.getElementById('search-input');
@@ -180,18 +290,25 @@
     if (!input || !results) return;
 
     var searchIndex = null;
+    var normalizedHaystacks = null;  // parallel to searchIndex; built once at load
     var debounceTimer = null;
 
     fetch(LANG_ROOT + '/search-index.json')
       .then(function (r) { return r.json(); })
       .then(function (data) {
         searchIndex = data;
+        normalizedHaystacks = data.map(function (e) {
+          return normalizeForSearch([
+            e.fecha, e.nombre, e.citas, e.santos, e.titulos
+          ].join(' '));
+        });
         if (input.value.trim().length >= 2) {
           doSearch(input.value.trim());
         }
       })
       .catch(function () {
         searchIndex = [];
+        normalizedHaystacks = [];
       });
 
     input.addEventListener('input', function () {
@@ -202,7 +319,7 @@
     });
 
     function doSearch(query) {
-      if (!searchIndex) {
+      if (!searchIndex || !normalizedHaystacks) {
         results.innerHTML = '';
         return;
       }
@@ -211,21 +328,12 @@
         return;
       }
 
-      var q = query.toLowerCase().replace(/\bsalmo\b/g, 'sal');
+      var q = normalizeForSearch(query);
       var matches = [];
 
-      for (var i = 0; i < searchIndex.length && matches.length < 15; i++) {
-        var entry = searchIndex[i];
-        var haystack = [
-          entry.fecha || '',
-          entry.nombre || '',
-          entry.citas || '',
-          entry.santos || '',
-          entry.titulos || ''
-        ].join(' ').toLowerCase();
-
-        if (haystack.indexOf(q) !== -1) {
-          matches.push(entry);
+      for (var i = 0; i < normalizedHaystacks.length && matches.length < 15; i++) {
+        if (normalizedHaystacks[i].indexOf(q) !== -1) {
+          matches.push(searchIndex[i]);
         }
       }
 
