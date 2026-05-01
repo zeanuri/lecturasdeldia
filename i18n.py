@@ -44,7 +44,7 @@ I18N_ES = {
     "prev_aria": "Día anterior",
     "next_aria": "Día siguiente",
     "alt_readings_link": "Lecturas alternativas",
-    "expand_all_collapse": "Colapsar todas",
+    "expand_all_collapse": "Contraer todas",
     "download_txt": "Descargar lecturas (.txt)",
     "search_btn": "Buscar",
     "aclamacion_label_prefix": "Aclamación",

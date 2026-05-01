@@ -85,7 +85,7 @@
     function updateExpandAllLabel() {
       if (!expandAllBtn) return;
       var label = areAllExpanded()
-        ? t('expand_all_collapse', 'Colapsar todas')
+        ? t('expand_all_collapse', 'Contraer todas')
         : t('expand_all_open', 'Expandir todas');
       expandAllBtn.innerHTML = '&#128214; ' + escapeHtml(label);
     }
