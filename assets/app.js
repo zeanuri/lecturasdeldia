@@ -211,53 +211,37 @@
     "judas":"jds","apocalipsis":"ap"
   };
 
-  // Basque full names → Basque abbreviation. Includes Spanish full names so a
-  // user typing "Génesis" on the EU site still finds "Has 1, 1".
+  // Basque full names → Basque abbreviation. EU-PURE: no Spanish keys.
+  // Searches in Irakurgaiak (EU) operate strictly on Basque book names.
   var BOOK_ALIASES_EU = {
     "hasiera":"has","irteera":"ir","lebitarrak":"lb","zenbakiak":"zen",
-    "deuteronomioa":"dt","epaileak":"ep",
+    "deuteronomioa":"dt","josue":"jos","epaileak":"ep","rut":"rt",
     "1 samuel":"1 sm","2 samuel":"2 sm",
     "1 erregeak":"1 erg","2 erregeak":"2 erg",
     "1 kronikak":"1 kro","2 kronikak":"2 kro",
-    "ezra":"esd","tobit":"tb",
+    "esdras":"esd","ezra":"esd","nehemias":"ne","tobit":"tb","judit":"jdt","ester":"est",
     "1 makabearrak":"1 mak","2 makabearrak":"2 mak",
-    "salmoa":"sal","salmoak":"sal","salmoz":"sal","salmo":"sal",
+    "job":"job",
+    "salmoa":"sal","salmoak":"sal","salmoz":"sal","salmo":"sal","salmoen":"sal",
     "esaera zaharrak":"es","kohelet":"koh",
     "kantarik ederrena":"ka","kantar":"ka",
     "jakinduria":"jkd","sirakida":"si",
-    "auhenak":"aud","baruk":"ba","ezekiel":"ez",
-    "mikeas":"mi","habakuk":"hab","zakarias":"za","malakias":"ml",
-    "matiu":"mt","markos":"mk","lukas":"lk","joan":"jn","eginak":"eg",
-    "erromatarrei":"erm","romatarrei":"erm",
+    "isaias":"is","jeremias":"jr","auhenak":"aud","baruk":"ba","ezekiel":"ez","daniel":"dn",
+    "oseas":"os","joel":"jl","amos":"am","abdias":"ab","jonas":"jon",
+    "mikeas":"mi","nahum":"nah","habakuk":"hab","sofonias":"sof",
+    "ageo":"ag","zakarias":"za","malakias":"ml",
+    "mateo":"mt","matiu":"mt","markos":"mk","lukas":"lk","joan":"jn","eginak":"eg",
+    "erromatarrei":"erm",
     "1 korintoarrei":"1 kor","2 korintoarrei":"2 kor",
-    "galatarrei":"gal","efesoarrei":"ef","filipenseei":"flp","kolosarrei":"kol",
+    "galatarrei":"gal","efesoarrei":"ef","filipoarrei":"flp","filipenseei":"flp",
+    "kolosarrei":"kol",
     "1 tesalonikarrei":"1 tes","2 tesalonikarrei":"2 tes",
     "1 timoteo":"1 tim","2 timoteo":"2 tim",
-    "filemon":"flm","hebrearrei":"heb",
+    "tito":"tit","filemoni":"flm","filemon":"flm",
+    "hebrearrei":"heb","santiago":"sant",
     "1 pedro":"1 p","2 pedro":"2 p",
     "1 joan":"1 jn","2 joan":"2 jn","3 joan":"3 jn",
-    "apokalipsia":"ap",
-    // Spanish full names mapped to Basque abbreviations (cross-language search)
-    "genesis":"has","exodo":"ir","numeros":"zen","deuteronomio":"dt",
-    "1 samuel":"1 sm","2 samuel":"2 sm",
-    "1 reyes":"1 erg","2 reyes":"2 erg",
-    "1 cronicas":"1 kro","2 cronicas":"2 kro",
-    "esdras":"esd","tobias":"tb","ester":"est",
-    "1 macabeos":"1 mak","2 macabeos":"2 mak",
-    "salmos":"sal","proverbios":"es","eclesiastes":"koh",
-    "cantar":"ka","cantares":"ka","sabiduria":"jkd","eclesiastico":"si",
-    "isaias":"is","jeremias":"jr","lamentaciones":"aud","baruc":"ba",
-    "ezequiel":"ez","daniel":"dn","oseas":"os","joel":"jl","amos":"am",
-    "abdias":"ab","jonas":"jon","miqueas":"mi","nahum":"nah","habacuc":"hab",
-    "sofonias":"sof","ageo":"ag","zacarias":"za","malaquias":"ml",
-    "mateo":"mt","marcos":"mk","lucas":"lk","juan":"jn","hechos":"eg",
-    "romanos":"erm","galatas":"gal","efesios":"ef","filipenses":"flp",
-    "colosenses":"kol",
-    "1 corintios":"1 kor","2 corintios":"2 kor",
-    "1 tesalonicenses":"1 tes","2 tesalonicenses":"2 tes",
-    "tito":"tit","hebreos":"heb","santiago":"sant",
-    "1 juan":"1 jn","2 juan":"2 jn","3 juan":"3 jn",
-    "judas":"jud","apocalipsis":"ap"
+    "judas":"jud","apokalipsia":"ap"
   };
 
   var BOOK_ALIASES = LANG_ROOT === '/eu' ? BOOK_ALIASES_EU : BOOK_ALIASES_ES;
@@ -274,6 +258,21 @@
       )
     : null;
 
+  // Set of canonical book codes (alias VALUES). When the user's normalized
+  // query is one of these, switch from substring to word-boundary matching:
+  // typing "Col" is a search for the book Colosenses, NOT for words containing
+  // the substring "col" (which would otherwise match 50+ "miércoles").
+  var BOOK_ABBREVS = {};
+  for (var _ak in BOOK_ALIASES) {
+    if (Object.prototype.hasOwnProperty.call(BOOK_ALIASES, _ak)) {
+      BOOK_ABBREVS[BOOK_ALIASES[_ak]] = true;
+    }
+  }
+
+  function escapeRegExp(s) {
+    return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  }
+
   function normalizeForSearch(s) {
     var out = stripAccents(String(s || '').toLowerCase());
     if (ALIAS_RE) {
@@ -284,6 +283,33 @@
     return out;
   }
 
+  // Highlight a substring (already normalized) inside a display string by
+  // mapping back to the original via a parallel-normalized scan.
+  function highlightInText(text, normQ) {
+    if (!normQ || !text) return escapeHtml(text);
+    var normText = normalizeForSearch(text);
+    var idx = normText.indexOf(normQ);
+    if (idx === -1) return escapeHtml(text);
+    // Find the corresponding range in the original text. Because normalize may
+    // change length (alias replacement), do a best-effort: highlight the same
+    // character offsets when normalization preserves length, otherwise wrap
+    // the whole match by approximating with the query length scaled.
+    if (normText.length === text.length) {
+      var pre = text.substring(0, idx);
+      var mid = text.substring(idx, idx + normQ.length);
+      var post = text.substring(idx + normQ.length);
+      return escapeHtml(pre) + '<mark>' + escapeHtml(mid) + '</mark>' + escapeHtml(post);
+    }
+    return escapeHtml(text);
+  }
+
+  function pluralCount(n) {
+    if (n === 1) {
+      return t('search_results_count_one', '1 resultado');
+    }
+    return t('search_results_count_many', '{n} resultados').replace('{n}', n);
+  }
+
   function initSearch() {
     var input = document.getElementById('search-input');
     var results = document.getElementById('search-results');
@@ -291,34 +317,67 @@
 
     var searchIndex = null;
     var normalizedHaystacks = null;  // parallel to searchIndex; built once at load
+    var bookAliases = null;          // { normalized_alias: redirect_url }
     var debounceTimer = null;
+    var MAX_RESULTS = 50;
 
-    fetch(LANG_ROOT + '/search-index.json')
-      .then(function (r) { return r.json(); })
-      .then(function (data) {
-        searchIndex = data;
-        normalizedHaystacks = data.map(function (e) {
-          return normalizeForSearch([
-            e.fecha, e.nombre, e.citas, e.santos, e.titulos
-          ].join(' '));
+    function loadIndex() {
+      return fetch(LANG_ROOT + '/search-index.json')
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+          searchIndex = data;
+          normalizedHaystacks = data.map(function (e) {
+            return normalizeForSearch([
+              e.fecha, e.nombre, e.citas, e.santos, e.titulos
+            ].join(' '));
+          });
+        })
+        .catch(function () {
+          searchIndex = [];
+          normalizedHaystacks = [];
         });
-        if (input.value.trim().length >= 2) {
-          doSearch(input.value.trim());
-        }
-      })
-      .catch(function () {
-        searchIndex = [];
-        normalizedHaystacks = [];
-      });
+    }
+
+    function loadAliases() {
+      return fetch(LANG_ROOT + '/book-aliases.json')
+        .then(function (r) { return r.json(); })
+        .then(function (data) { bookAliases = data || {}; })
+        .catch(function () { bookAliases = {}; });
+    }
+
+    Promise.all([loadIndex(), loadAliases()]).then(function () {
+      // Read ?q= from the URL — shareable searches.
+      var urlQ = new URLSearchParams(window.location.search).get('q');
+      if (urlQ && urlQ.trim().length >= 2) {
+        input.value = urlQ;
+        doSearch(urlQ.trim(), false);
+      } else if (input.value.trim().length >= 2) {
+        doSearch(input.value.trim(), false);
+      }
+    });
 
     input.addEventListener('input', function () {
       clearTimeout(debounceTimer);
       debounceTimer = setTimeout(function () {
-        doSearch(input.value.trim());
+        doSearch(input.value.trim(), true);
       }, 200);
     });
 
-    function doSearch(query) {
+    function updateUrlQuery(q) {
+      try {
+        var url = new URL(window.location.href);
+        if (q && q.length >= 2) {
+          url.searchParams.set('q', q);
+        } else {
+          url.searchParams.delete('q');
+        }
+        window.history.replaceState({}, '', url.toString());
+      } catch (_) { /* no-op on old browsers */ }
+    }
+
+    function doSearch(query, updateUrl) {
+      if (updateUrl) updateUrlQuery(query);
+
       if (!searchIndex || !normalizedHaystacks) {
         results.innerHTML = '';
         return;
@@ -330,25 +389,69 @@
 
       var q = normalizeForSearch(query);
       var matches = [];
+      var totalMatched = 0;
 
-      for (var i = 0; i < normalizedHaystacks.length && matches.length < 15; i++) {
-        if (normalizedHaystacks[i].indexOf(q) !== -1) {
-          matches.push(searchIndex[i]);
+      // When q is a canonical book code (e.g., "col", "mt", "1 cor"), use
+      // word-boundary matching to avoid false hits from incidental substrings
+      // ("col" inside "miercoles", "lc" inside "calculo", etc.).
+      var useWordBoundary = BOOK_ABBREVS[q] === true;
+      var qRe = useWordBoundary
+        ? new RegExp('\\b' + escapeRegExp(q) + '\\b')
+        : null;
+
+      function testHaystack(haystack) {
+        return useWordBoundary ? qRe.test(haystack) : haystack.indexOf(q) !== -1;
+      }
+
+      for (var i = 0; i < normalizedHaystacks.length; i++) {
+        if (testHaystack(normalizedHaystacks[i])) {
+          totalMatched++;
+          if (matches.length < MAX_RESULTS) matches.push(searchIndex[i]);
         }
       }
 
+      var html = '';
+
       if (matches.length === 0) {
-        var msg = t('search_no_results', 'La búsqueda no ha dado resultados');
-        results.innerHTML = '<p class="search-empty">' + escapeHtml(msg) + '</p>';
+        // Smart empty state: if the (normalized) query is a known book alias,
+        // redirect to the /libros/<slug>/ page.
+        var redirectInfo = bookAliases ? bookAliases[q] : null;
+        if (redirectInfo && redirectInfo.url) {
+          var displayBook = redirectInfo.name || query;
+          var redirectMsg = t(
+            'search_redirect_book_known',
+            '“{q}” = {book}. No hay lecturas en el rango actual; ver todas las citas:'
+          ).replace('{q}', escapeHtml(query)).replace(/\{book\}/g, escapeHtml(displayBook));
+          var linkLabel = t(
+            'search_redirect_book_link',
+            'Ver todas las citas de {book}'
+          ).replace('{book}', escapeHtml(displayBook));
+          html += '<div class="search-redirect">';
+          html += '<p>' + redirectMsg + '</p>';
+          html += '<a class="search-redirect-link" href="' + escapeHtml(redirectInfo.url) + '">' + linkLabel + ' &rarr;</a>';
+          html += '</div>';
+        } else {
+          var msg = t('search_no_results', 'La búsqueda no ha dado resultados');
+          html = '<p class="search-empty">' + escapeHtml(msg) + '</p>';
+        }
+        results.innerHTML = html;
         return;
       }
 
-      var html = '';
+      // Header: count + (optional) truncation indicator
+      html += '<p class="search-count">' + escapeHtml(pluralCount(totalMatched));
+      if (totalMatched > matches.length) {
+        var truncMsg = t('search_truncated', 'Mostrando {shown} de {total} — refina tu búsqueda')
+          .replace('{shown}', matches.length).replace('{total}', totalMatched);
+        html += ' · <em>' + escapeHtml(truncMsg) + '</em>';
+      }
+      html += '</p>';
+
       matches.forEach(function (m) {
         html += '<a class="search-result" href="' + m.url + '">';
-        html += '<span class="search-fecha">' + escapeHtml(m.fecha) + '</span><br>';
-        html += '<span class="search-nombre">' + escapeHtml(m.nombre) + '</span><br>';
-        html += '<span class="search-citas">' + escapeHtml(m.citas.replace(/\|/g, ' · ')) + '</span>';
+        html += '<span class="search-fecha">' + highlightInText(m.fecha, q) + '</span><br>';
+        html += '<span class="search-nombre">' + highlightInText(m.nombre, q) + '</span><br>';
+        html += '<span class="search-citas">' + highlightInText(m.citas.replace(/\|/g, ' · '), q) + '</span>';
         html += '</a>';
       });
       results.innerHTML = html;

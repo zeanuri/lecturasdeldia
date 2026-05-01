@@ -148,6 +148,47 @@ def localize_cita(cita: str, lang: str = "eu") -> str:
     return cita
 
 
+# ── Full-string localizer ─────────────────────────────────────────────────────
+# Translates EVERY book token in a cita (not just the leading one), plus
+# the Spanish " y " connector that survives in chapter:verse listings like
+# "Sal 68, 31 y 33-34 (R.: Lc 23, 46)" → "Sal 68, 31 eta 33-34 (R.: Lk 23, 46)".
+#
+# The pattern is: match a known ES abbrev or "[1-3] <abbrev>" surrounded by
+# word boundaries, followed (eventually) by a digit. This catches both
+# leading and inline references.
+
+import re as _re
+
+# Pre-build a regex of all ES abbreviations (longest-first so "1 Cor" wins
+# before "1 Co"). Use look-ahead for the trailing digit to avoid eating
+# already-localized tokens that happen to share letters with ES abbrevs.
+_ES_BOOK_RE = _re.compile(
+    r'\b(' +
+    '|'.join(_re.escape(k) for k in _KEYS_LONGEST_FIRST) +
+    r')(?=[\s\.,;:]|$|\d)'
+)
+
+
+def localize_cita_full(cita: str, lang: str = "eu") -> str:
+    """Translate ALL Spanish biblical-citation fragments to Basque.
+
+    - Replaces every recognized ES book abbrev with its EU equivalent
+      (handles inline cross-references like "(R.: Lc 23, 46)").
+    - Replaces the Spanish " y " connector with " eta ".
+
+    Examples:
+        localize_cita_full("Sal 68, 8-10 y 11. 31 y 33-34 (R.: Lc 23, 46)", "eu")
+            -> "Sal 68, 8-10 eta 11. 31 eta 33-34 (R.: Lk 23, 46)"
+    """
+    if not cita or lang != "eu":
+        return cita or ""
+    out = _ES_BOOK_RE.sub(lambda m: ES_TO_EU_BOOK_ABBR[m.group(1)], cita)
+    # " y " (with surrounding spaces) → " eta ". Word-boundary protects names
+    # that legitimately contain "y" inside (none do in our citas, but be safe).
+    out = _re.sub(r'(?<=\s)y(?=\s)', 'eta', out)
+    return out
+
+
 def dump_review_table() -> str:
     """Return a human-readable table of every mapping."""
     out = ["Spanish abbrev    Basque abbrev"]

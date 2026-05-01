@@ -19,7 +19,15 @@ from jinja2 import Environment, FileSystemLoader
 
 import liturgia
 from i18n import COLOR_CSS, get as get_i18n, localize_day_name
-from book_abbr_eu import localize_cita
+from book_abbr_eu import localize_cita, localize_cita_full
+from book_codex import (
+    CANONICAL_BOOKS_ES,
+    DISPLAY_NAMES_ES,
+    DISPLAY_NAMES_EU,
+    SLUGS,
+    clean_cita,
+    walk_citas,
+)
 from liturgical_names_eu import (
     localize_name as localize_liturgical_name,
     localize_memorial,
@@ -425,13 +433,25 @@ def generate_index(outdir, today, templates, lang):
 
 
 def generate_search_index(all_days, outdir, lang):
-    """Per-language search-index.json (URLs include /eu/ prefix when lang=eu)."""
+    """Per-language search-index.json (URLs include /eu/ prefix when lang=eu).
+
+    Citas are run through book_codex.clean_cita to strip noise and canonicalize
+    leading book tokens, then for EU through localize_cita to swap the ES book
+    abbrev for its Basque equivalent.
+    """
     lang_path = LANG_ROOT[lang]
+
+    def _clean(cita: str) -> str:
+        c = clean_cita(cita)
+        # EU: translate EVERY book reference (not just the leading one) plus
+        # the Spanish " y " connector — the index must never mix languages.
+        return localize_cita_full(c, lang) if lang == "eu" else c
+
     entries = []
     for day_data in all_days:
         d = day_data["date_iso"]
         url = f"{lang_path}{d[:4]}/{d[5:7]}/{d[8:10]}/"
-        citas = "|".join(r.get("cita", "") for r in day_data.get("readings", []))
+        citas = "|".join(_clean(r.get("cita", "")) for r in day_data.get("readings", []))
         titulos = "|".join(
             r.get("titulo", "") for r in day_data.get("readings", []) if r.get("titulo")
         )
@@ -483,6 +503,362 @@ def generate_search_page(outdir, templates, lang, slug):
     target = Path(outdir) / slug
     target.mkdir(parents=True, exist_ok=True)
     (target / "index.html").write_text(html, encoding="utf-8")
+
+
+# ── Library / browse-by-book ───────────────────────────────────────────────────
+# Strategy C from the search audit: when a query matches a known book alias
+# but yields zero hits in the daily readings, the search UX redirects to a
+# static /libros/<slug>/ page that lists every cita of that book in the
+# entire lectionary, regardless of which year is currently indexed.
+
+# Liturgical-context grouping order on /libros/<slug>/.
+# (group_id, sort_priority). Lower priority = appears higher on the page.
+_GROUP_ORDER = {
+    "domingos_a": 10, "domingos_b": 11, "domingos_c": 12,
+    "ferial_fuerte": 20,
+    "ferial_to_i": 30, "ferial_to_ii": 31,
+    "santos": 40,
+    "rituales": 50, "difuntos": 51, "necesidades": 52,
+    "otros": 99,
+}
+
+
+def _group_for(ctx: dict) -> str:
+    section = ctx.get("section", "otros")
+    cycle = ctx.get("cycle")
+    if section == "dominical":
+        return f"domingos_{cycle.lower()}" if cycle in ("A", "B", "C") else "otros"
+    if section == "ferial_to":
+        if cycle == "I":
+            return "ferial_to_i"
+        if cycle == "II":
+            return "ferial_to_ii"
+        return "ferial_to_i"  # gospel-only entries fall here
+    if section == "ferial_fuerte":
+        return "ferial_fuerte"
+    if section == "santos":
+        return "santos"
+    if section == "rituales":
+        return "rituales"
+    if section in ("lecturas", "moniciones_entrada", "oraciones_fieles"):
+        return "difuntos"
+    if section in ("diversas_necesidades", "votivas"):
+        return "necesidades"
+    return "otros"
+
+
+def _collect_book_citas(lectionaries: dict[str, dict]) -> dict[str, list[dict]]:
+    """Walk each lectionary file and bucket every cita under its canonical book.
+
+    Returns: {canonical_book: [ {cita, group, slug, slot, lectionary_name}, ... ]}
+    """
+    by_book: dict[str, list[dict]] = {}
+
+    for lec_label, lec_data in lectionaries.items():
+        if lec_data is None:
+            continue
+        for book, cita, ctx in walk_citas(lec_data):
+            cleaned = clean_cita(cita)
+            entry = {
+                "cita": cleaned,
+                "group": _group_for(ctx),
+                "section": ctx.get("section", ""),
+                "cycle": ctx.get("cycle"),
+                "slug": ctx.get("slug", ""),
+                "slot": ctx.get("slot", ""),
+                "source": lec_label,
+            }
+            by_book.setdefault(book, []).append(entry)
+
+    return by_book
+
+
+def _format_label(entry: dict, lang: str) -> str:
+    """Human-readable label for one cita's liturgical context.
+
+    Fully language-aware: ES uses Spanish liturgical terminology,
+    EU uses Basque. No mixing.
+    """
+    section = entry["section"]
+    slug = entry["slug"]
+    cycle = entry["cycle"]
+
+    def roman(n: int) -> str:
+        vals = [(1000, "M"), (900, "CM"), (500, "D"), (400, "CD"),
+                (100, "C"), (90, "XC"), (50, "L"), (40, "XL"),
+                (10, "X"), (9, "IX"), (5, "V"), (4, "IV"), (1, "I")]
+        out = ""
+        for v, s in vals:
+            while n >= v:
+                out += s; n -= v
+        return out
+
+    L = {
+        "es": {
+            "dom": "Domingo", "cycle": "Ciclo", "to": "TO",
+            "adviento": "Adviento", "cuaresma": "Cuaresma", "pascua": "Pascua",
+            "semana": "Semana", "weekday_sep": ", ",
+            "months": ["enero", "febrero", "marzo", "abril", "mayo", "junio",
+                       "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"],
+            "day_of_month": "{d} de {m}",
+            "weekdays": {"lunes":"lunes","martes":"martes","miercoles":"miércoles",
+                         "jueves":"jueves","viernes":"viernes","sabado":"sábado","domingo":"domingo"},
+        },
+        "eu": {
+            "dom": "Igandea", "cycle": "Urtea", "to": "U.A.",  # Urtean Aldia
+            "adviento": "Abendua", "cuaresma": "Garizuma", "pascua": "Pazkoa",
+            "semana": "Astea", "weekday_sep": ", ",
+            "months": ["urtarrila", "otsaila", "martxoa", "apirila",
+                       "maiatza", "ekaina", "uztaila", "abuztua",
+                       "iraila", "urria", "azaroa", "abendua"],
+            "day_of_month": "{m}ren {d}a",
+            "weekdays": {"lunes":"astelehena","martes":"asteartea","miercoles":"asteazkena",
+                         "jueves":"osteguna","viernes":"ostirala","sabado":"larunbata","domingo":"igandea"},
+        },
+    }[lang]
+
+    if section == "dominical":
+        if slug.startswith("to_"):
+            try:
+                n = int(slug.split("_")[1])
+                return f"{L['dom']} {roman(n)} {L['to']} ({L['cycle']} {cycle})"
+            except (ValueError, IndexError):
+                pass
+        for prefix, name in (("adviento_", L["adviento"]),
+                             ("cuaresma_", L["cuaresma"]),
+                             ("pascua_", L["pascua"])):
+            if slug.startswith(prefix):
+                try:
+                    n = int(slug.split("_")[1])
+                    return f"{L['dom']} {roman(n)} {name} ({L['cycle']} {cycle})"
+                except (ValueError, IndexError):
+                    pass
+        return f"{slug.replace('_', ' ').capitalize()} ({L['cycle']} {cycle})"
+
+    if section == "ferial_to":
+        parts = slug.split("_", 1)
+        if len(parts) == 2 and parts[0].isdigit():
+            n = int(parts[0])
+            wd = L["weekdays"].get(parts[1], parts[1])
+            return f"{L['semana']} {roman(n)} {L['to']}{L['weekday_sep']}{wd} ({L['cycle']} {cycle or '—'})"
+        return slug.replace("_", " ")
+
+    if section == "ferial_fuerte":
+        # e.g. "pascua_2_lunes" → "Pascua II — lunes"
+        parts = slug.split("_")
+        if len(parts) >= 3 and parts[1].isdigit():
+            season_key = parts[0]
+            season_name = {"adviento": L["adviento"], "cuaresma": L["cuaresma"],
+                           "pascua": L["pascua"]}.get(season_key, season_key.capitalize())
+            wd = L["weekdays"].get(parts[2], parts[2])
+            return f"{season_name} {roman(int(parts[1]))} — {wd}"
+        return slug.replace("_", " ").capitalize()
+
+    if section == "santos":
+        if "-" in slug and len(slug) == 5:
+            mm, dd = slug.split("-")
+            try:
+                return L["day_of_month"].format(d=int(dd), m=L["months"][int(mm) - 1])
+            except (ValueError, IndexError):
+                pass
+        return slug
+
+    return slug.replace("_", " ").replace("/", " · ")
+
+
+def _slot_label(slot: str, lang: str) -> str:
+    labels = {
+        "es": {
+            "primera": "1ª lectura", "primera_alt": "1ª lectura (alt.)",
+            "segunda": "2ª lectura", "segunda_alt": "2ª lectura (alt.)",
+            "salmo": "salmo", "salmo_alt": "salmo (alt.)",
+            "evangelio": "evangelio", "evangelio_alt": "evangelio (alt.)",
+            "aclamacion": "aclamación",
+        },
+        "eu": {
+            "primera": "1. irakurgaia", "primera_alt": "1. irakurgaia (b.)",
+            "segunda": "2. irakurgaia", "segunda_alt": "2. irakurgaia (b.)",
+            "salmo": "salmoa", "salmo_alt": "salmoa (b.)",
+            "evangelio": "ebanjelioa", "evangelio_alt": "ebanjelioa (b.)",
+            "aclamacion": "aldarria",
+        },
+    }
+    return labels.get(lang, labels["es"]).get(slot, slot)
+
+
+def generate_libro_page(book: str, entries: list[dict], outdir, templates, lang: str):
+    """Render /libros/<slug>/ (ES) or /eu/liburuak/<slug>/ (EU) for one book."""
+    i18n = get_i18n(lang)
+    slug = SLUGS.get(book)
+    if not slug:
+        return
+    display = (DISPLAY_NAMES_EU if lang == "eu" else DISPLAY_NAMES_ES).get(book, book)
+
+    # Group + sort
+    grouped: dict[str, list[dict]] = {}
+    for e in entries:
+        cita_localized = localize_cita_full(e["cita"], lang) if lang == "eu" else e["cita"]
+        grouped.setdefault(e["group"], []).append({
+            "cita": cita_localized,
+            "label": _format_label(e, lang),
+            "slot": _slot_label(e["slot"], lang),
+        })
+
+    # Sort each group by label (rough chronological/canonical order within group)
+    for g in grouped:
+        grouped[g].sort(key=lambda x: (x["label"], x["cita"]))
+
+    # Order groups by liturgical priority
+    ordered_groups = sorted(
+        grouped.items(),
+        key=lambda kv: (_GROUP_ORDER.get(kv[0], 99), kv[0]),
+    )
+
+    # Group display names
+    group_titles = {
+        "es": {
+            "domingos_a": "Domingos — Ciclo A",
+            "domingos_b": "Domingos — Ciclo B",
+            "domingos_c": "Domingos — Ciclo C",
+            "ferial_fuerte": "Tiempos fuertes (Adviento · Navidad · Cuaresma · Pascua)",
+            "ferial_to_i": "Ferias del Tiempo Ordinario — Ciclo I",
+            "ferial_to_ii": "Ferias del Tiempo Ordinario — Ciclo II",
+            "santos": "Santos y memorias",
+            "rituales": "Misas rituales",
+            "difuntos": "Misas de difuntos",
+            "necesidades": "Misas por diversas necesidades",
+            "otros": "Otros",
+        },
+        "eu": {
+            "domingos_a": "Igandeak — A urtea",
+            "domingos_b": "Igandeak — B urtea",
+            "domingos_c": "Igandeak — C urtea",
+            "ferial_fuerte": "Aldi sendoak (Abendua · Eguberria · Garizuma · Pazkoa)",
+            "ferial_to_i": "Urtean zeharreko aldia — I urtea",
+            "ferial_to_ii": "Urtean zeharreko aldia — II urtea",
+            "santos": "Santuak",
+            "rituales": "Mezak",
+            "difuntos": "Hildakoen Mezak",
+            "necesidades": "Premietarako Mezak",
+            "otros": "Bestelakoak",
+        },
+    }[lang]
+
+    es_path = f"/libros/{slug}/"
+    urls = page_urls(es_path, lang)
+    # /libros/ ⇆ /eu/liburuak/
+    if lang == "eu":
+        urls["canonical_self"] = f"/eu/liburuak/{slug}/"
+        urls["canonical_eu"] = f"/eu/liburuak/{slug}/"
+        urls["toggle_url_eu"] = f"/eu/liburuak/{slug}/"
+    else:
+        urls["canonical_eu"] = f"/eu/liburuak/{slug}/"
+        urls["toggle_url_eu"] = f"/eu/liburuak/{slug}/"
+
+    template = templates.get_template("libros_book.html")
+    html = template.render(
+        day=None,
+        i18n=i18n,
+        lang=lang,
+        book_code=book,
+        book_name=display,
+        groups=ordered_groups,
+        group_titles=group_titles,
+        total_count=len(entries),
+        **urls,
+    )
+
+    folder = "liburuak" if lang == "eu" else "libros"
+    target = Path(outdir) / folder / slug
+    target.mkdir(parents=True, exist_ok=True)
+    (target / "index.html").write_text(html, encoding="utf-8")
+
+
+def generate_libros_index(by_book: dict[str, list[dict]], outdir, templates, lang: str):
+    """Render the /libros/ landing page listing all books with cita counts."""
+    i18n = get_i18n(lang)
+    display_table = DISPLAY_NAMES_EU if lang == "eu" else DISPLAY_NAMES_ES
+
+    book_list = []
+    for book in CANONICAL_BOOKS_ES:
+        entries = by_book.get(book, [])
+        if not entries:
+            continue
+        book_list.append({
+            "code": book,
+            "slug": SLUGS[book],
+            "name": display_table.get(book, book),
+            "count": len(entries),
+        })
+
+    es_path = "/libros/"
+    urls = page_urls(es_path, lang)
+    if lang == "eu":
+        urls["canonical_self"] = "/eu/liburuak/"
+        urls["canonical_eu"] = "/eu/liburuak/"
+        urls["toggle_url_eu"] = "/eu/liburuak/"
+    else:
+        urls["canonical_eu"] = "/eu/liburuak/"
+        urls["toggle_url_eu"] = "/eu/liburuak/"
+
+    template = templates.get_template("libros_index.html")
+    html = template.render(
+        day=None,
+        i18n=i18n,
+        lang=lang,
+        books=book_list,
+        **urls,
+    )
+
+    folder = "liburuak" if lang == "eu" else "libros"
+    target = Path(outdir) / folder
+    target.mkdir(parents=True, exist_ok=True)
+    (target / "index.html").write_text(html, encoding="utf-8")
+
+
+def generate_book_aliases_json(by_book: dict[str, list[dict]], outdir, lang: str):
+    """Emit /book-aliases.json — used by app.js to redirect zero-hit searches.
+
+    LANGUAGE-PURE: ES contains only Spanish variants (full names + CEE
+    abbrevs), EU contains only Basque variants (Hasiera, Has, Kolosarrei,
+    Kol, ...). The two language sites NEVER share alias keys — searches and
+    results stay strictly within one language.
+    """
+    import unicodedata
+    from book_codex import BOOK_VARIANTS_ES, ES_TO_EU_SHORT
+
+    def _key(s: str) -> str:
+        return ''.join(c for c in unicodedata.normalize('NFD', s.lower())
+                       if unicodedata.category(c) != 'Mn')
+
+    aliases: dict[str, dict] = {}
+    folder = "liburuak" if lang == "eu" else "libros"
+
+    for canonical, entries in by_book.items():
+        if not entries:
+            continue
+        slug = SLUGS.get(canonical)
+        if not slug:
+            continue
+        url = f"/{folder}/{slug}/" if lang == "es" else f"/eu/{folder}/{slug}/"
+
+        if lang == "es":
+            display = DISPLAY_NAMES_ES.get(canonical, canonical)
+            value = {"url": url, "name": display}
+            aliases[_key(canonical)] = value
+            aliases[_key(display)] = value
+            for variant, canon_target in BOOK_VARIANTS_ES.items():
+                if canon_target == canonical:
+                    aliases[_key(variant)] = value
+        else:
+            display = DISPLAY_NAMES_EU.get(canonical, canonical)
+            eu_short = ES_TO_EU_SHORT.get(canonical, canonical)
+            value = {"url": url, "name": display}
+            aliases[_key(eu_short)] = value
+            aliases[_key(display)] = value
+
+    out_path = Path(outdir) / "book-aliases.json"
+    out_path.write_text(json.dumps(aliases, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 def generate_sitemap(all_days_es, outdir):
@@ -579,6 +955,20 @@ def build_site(today=None, days_back=30, days_forward=365, outdir=None):
         # No Basque lectionary present — skip EU variant gracefully
         languages = languages[:1]
 
+    # Walk all four lectionary files once — feeds /libros/<book>/ pages.
+    all_lectionaries = {
+        "leccionario_cl": lectionaries.get("es"),
+        "lezionarioa_cl": lectionaries.get("eu"),
+    }
+    for extra in ("Leccionario_Difuntos.json",
+                  "Leccionario_Necesidades.json",
+                  "Leccionario_Rituales.json"):
+        p = DATA_DIR / extra
+        if p.exists():
+            with open(p, "r", encoding="utf-8") as f:
+                all_lectionaries[extra.replace(".json", "").lower()] = json.load(f)
+    by_book = _collect_book_citas(all_lectionaries)
+
     all_days_per_lang = {}
     for lang, lang_outdir, search_slug in languages:
         lang_outdir.mkdir(parents=True, exist_ok=True)
@@ -598,6 +988,12 @@ def build_site(today=None, days_back=30, days_forward=365, outdir=None):
         generate_search_index(days, lang_outdir, lang)
         generate_calendar_data(days, lang_outdir, lang)
         generate_search_page(lang_outdir, templates, lang, search_slug)
+
+        # /libros/ landing + per-book pages + alias JSON for the search UX
+        generate_libros_index(by_book, lang_outdir, templates, lang)
+        for book, entries in by_book.items():
+            generate_libro_page(book, entries, lang_outdir, templates, lang)
+        generate_book_aliases_json(by_book, lang_outdir, lang)
 
     # Site-wide files (live at the apex regardless of language).
     generate_sitemap(all_days_per_lang["es"], outdir)

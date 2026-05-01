@@ -105,9 +105,23 @@ I18N_ES = {
     "diocese_aria": "Diócesis de Bilbao — bizkeliza.org",
     "diocese_alt": "Bilboko Elizbarrutia — Diócesis de Bilbao",
 
+    # /libros/ — browse-by-book
+    "libros_page_title": "Libros del leccionario",
+    "libros_meta_description": "Índice de libros bíblicos del leccionario CEE — explora las citas de cada libro a lo largo del año litúrgico",
+    "libros_h1": "Libros del leccionario",
+    "libros_intro": "Explora las citas de cada libro bíblico tal como aparecen en el leccionario, agrupadas por contexto litúrgico (domingos, ferias, solemnidades, santos).",
+    "libros_book_meta_prefix": "Citas del libro de",
+    "libros_citas_label": "citas en el leccionario",
+    "search_back_to_search": "Volver a la búsqueda",
+
     # Strings consumed by app.js (calendar, expand/collapse, search, download)
     "expand_all_open": "Expandir todas",
     "search_no_results": "La búsqueda no ha dado resultados",
+    "search_results_count_one": "1 resultado",
+    "search_results_count_many": "{n} resultados",
+    "search_truncated": "Mostrando {shown} de {total} — refina tu búsqueda",
+    "search_redirect_book_known": "“{q}” es {book}. No hay lecturas de {book} en el rango actual, pero puedes ver todas sus citas en el leccionario:",
+    "search_redirect_book_link": "Ver todas las citas de {book}",
     "alt_readings_back": "Lecturas del día",
     "download_filename_suffix": "_lecturas",
     "download_footer": "Fuente: lecturasdeldia.org — Textos CEE",
@@ -222,9 +236,23 @@ I18N_EU = {
     "toggle_label_es": "Lecturas",
     "toggle_label_eu": "Irakurgaiak",
 
+    # /libros/ — liburuak biltegia
+    "libros_page_title": "Lekzionarioko liburuak",
+    "libros_meta_description": "Lekzionarioko liburu biblikoen aurkibidea — liburu bakoitzaren aipuak liturgia-urtean zehar",
+    "libros_h1": "Lekzionarioko liburuak",
+    "libros_intro": "Ikusi liburu bakoitzeko aipuak lekzionarioan agertzen diren bezala, liturgia-testuinguruaren arabera taldekatuta (igandeak, asteguneko mezak, jaiak, santuak).",
+    "libros_book_meta_prefix": "Liburuaren aipuak:",
+    "libros_citas_label": "aipu lekzionarioan",
+    "search_back_to_search": "Bilaketara itzuli",
+
     # Strings consumed by app.js
     "expand_all_open": "Guztiak zabaldu",
     "search_no_results": "Bilaketak ez dau emaitzarik eman",  # REVIEW
+    "search_results_count_one": "Emaitza 1",
+    "search_results_count_many": "{n} emaitza",
+    "search_truncated": "{total}-tik {shown} agertzen — bilaketa zehaztu",
+    "search_redirect_book_known": "“{q}” = {book}. Ez dago {book} liburuko irakurgairik tarte honetan, baina lekzionarioko aipu guztiak ikus ditzakezu:",
+    "search_redirect_book_link": "{book}-ren aipu guztiak ikusi",
     "alt_readings_back": "Eguneko irakurgaiak",
     "download_filename_suffix": "_irakurgaiak",
     "download_footer": "Iturria: lecturasdeldia.org -- CEE testuak",  # REVIEW

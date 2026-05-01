@@ -7,6 +7,10 @@ on:
     branches: [master]
     paths:
       - 'liturgia.py'
+      - 'book_codex.py'
+      - 'book_abbr_eu.py'
+      - 'liturgical_names_eu.py'
+      - 'i18n.py'
       - 'data/**'
       - 'generate_site.py'
       - 'templates/**'

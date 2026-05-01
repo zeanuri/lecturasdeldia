@@ -263,6 +263,178 @@ body[data-color="pink"]::before {
   text-align: center;
 }
 
+.search-count {
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin: 0.75rem 0 0.5rem;
+}
+
+.search-count em {
+  font-style: italic;
+  color: var(--color-brand);
+}
+
+.search-result mark,
+.libros-cita mark {
+  background: #fff3a3;
+  color: inherit;
+  padding: 0 1px;
+  border-radius: 2px;
+}
+
+.search-redirect {
+  padding: 1.25rem 1rem;
+  margin: 1rem 0;
+  background: var(--color-card-bg, #fafaf6);
+  border-left: 3px solid var(--color-brand);
+  border-radius: 4px;
+  font-family: var(--font-ui);
+}
+
+.search-redirect p {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+}
+
+.search-redirect-link {
+  display: inline-block;
+  font-weight: 600;
+  color: var(--color-brand);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.search-redirect-link:hover {
+  text-decoration: underline;
+}
+
+/* ── /libros/ — browse by book ──────────────────────────────────────────── */
+.libros-page,
+.libros-book-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: var(--font-body);
+}
+
+.libros-page h1,
+.libros-book-page h1 {
+  font-family: var(--font-heading, var(--font-body));
+  margin-bottom: 0.5rem;
+}
+
+.libros-intro {
+  color: var(--color-text-muted);
+  margin: 0.75rem 0 1.5rem;
+}
+
+.libros-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.5rem;
+}
+
+.libros-list li a {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 0.6rem 0.85rem;
+  background: var(--color-card-bg, #fafaf6);
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--color-text);
+  font-family: var(--font-ui);
+  border: 1px solid transparent;
+}
+
+.libros-list li a:hover {
+  border-color: var(--color-brand);
+}
+
+.libros-name { font-weight: 600; }
+.libros-code { font-size: 0.8rem; color: var(--color-text-muted); margin: 0 0.5rem; }
+.libros-count {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  background: rgba(0,0,0,0.05);
+  padding: 1px 6px;
+  border-radius: 10px;
+}
+
+.libros-breadcrumb {
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.libros-breadcrumb a {
+  color: var(--color-brand);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.libros-book-code {
+  font-family: var(--font-ui);
+  font-size: 0.65em;
+  color: var(--color-text-muted);
+  font-weight: 400;
+}
+
+.libros-book-summary {
+  color: var(--color-text-muted);
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+  margin: 0 0 1.5rem;
+}
+
+.libros-group {
+  margin: 1.5rem 0;
+}
+
+.libros-group h2 {
+  font-family: var(--font-ui);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-brand);
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.libros-cita-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.libros-cita-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 0.4rem 0.5rem;
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+  font-size: 0.95rem;
+  gap: 0.5rem;
+}
+
+.libros-cita {
+  font-family: var(--font-body);
+  font-weight: 600;
+  flex: 0 0 auto;
+}
+
+.libros-context {
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+}
+
 .search-back {
   display: inline-block;
   margin-top: 1.5rem;

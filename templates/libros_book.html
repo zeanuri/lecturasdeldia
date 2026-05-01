@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}{{ book_name }} — {{ i18n.libros_page_title }} — {{ i18n.site_title }}{% endblock %}
+{% block description %}{{ i18n.libros_book_meta_prefix }} {{ book_name }} ({{ book_code }}) — {{ total_count }} {{ i18n.libros_citas_label }}{% endblock %}
+
+{% block canonical %}
+<link rel="canonical" href="https://lecturasdeldia.org{{ canonical_self }}">
+{% endblock %}
+
+{% block content %}
+<div class="libros-book-page">
+  <p class="libros-breadcrumb">
+    <a href="{% if lang == 'eu' %}/eu/liburuak/{% else %}/libros/{% endif %}">&larr; {{ i18n.libros_h1 }}</a>
+  </p>
+
+  <h1>{{ book_name }} <span class="libros-book-code">({{ book_code }})</span></h1>
+  <p class="libros-book-summary">{{ total_count }} {{ i18n.libros_citas_label }}</p>
+
+  {% for group_id, entries in groups %}
+  <section class="libros-group">
+    <h2>{{ group_titles[group_id] }}</h2>
+    <ul class="libros-cita-list">
+    {% for e in entries %}
+      <li>
+        <span class="libros-cita">{{ e.cita }}</span>
+        <span class="libros-context">{{ e.label }}{% if e.slot %} · <em>{{ e.slot }}</em>{% endif %}</span>
+      </li>
+    {% endfor %}
+    </ul>
+  </section>
+  {% endfor %}
+
+  <a href="{% if lang == 'eu' %}/eu/bilatu/{% else %}/buscar/{% endif %}" class="search-back">&larr; {{ i18n.search_back_to_search }}</a>
+</div>
+{% endblock %}

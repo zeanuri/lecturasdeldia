@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}{{ i18n.libros_page_title }} — {{ i18n.site_title }}{% endblock %}
+{% block description %}{{ i18n.libros_meta_description }}{% endblock %}
+
+{% block canonical %}
+<link rel="canonical" href="https://lecturasdeldia.org{{ canonical_self }}">
+{% endblock %}
+
+{% block content %}
+<div class="libros-page">
+  <h1>{{ i18n.libros_h1 }}</h1>
+  <p class="libros-intro">{{ i18n.libros_intro }}</p>
+
+  <ul class="libros-list">
+  {% for book in books %}
+    <li>
+      <a href="{{ canonical_self }}{{ book.slug }}/">
+        <span class="libros-name">{{ book.name }}</span>
+        <span class="libros-code">{{ book.code }}</span>
+        <span class="libros-count">{{ book.count }}</span>
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+
+  <a href="{% if lang == 'eu' %}/eu/{% else %}/{% endif %}" class="search-back">&larr; {{ i18n.search_back }}</a>
+</div>
+{% endblock %}
