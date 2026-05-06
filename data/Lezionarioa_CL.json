@@ -109,9 +109,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 145, 6c-7. 8-9a. 9bc-10 (R.: cf. Is 35, 4)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/.\t\nBetiko eusten deutso Jaunak bere leialtasunari. \nZapalduen eskubideak defendatzen ditu, \ngose diranei ogia emoten.\nJaunak askatzen ditu presoak. R/.\nV/.\t\nJaunak zabaltzen ditu itsuen begiak,\nJaunak jasotzen konkortuak, \nJaunak maitatzen zintzoak,\nJaunak ditu etorkinak zaintzen. R/.\nV/.\t\nUmezurtzei eta alargunei zutunik deutse eusten, \nbaina gaiztoen nagusitza iraultzen. \nJauna errege da betieran, \nzure Jainkoa, Sion, errege gizaldien gizaldietan! R/.",
+          "antifona": "Goratu egizu Jauna, nire barrua. Edota: Aleluia.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p170_b02:overlap"
         },
         "segunda": {
           "titulo": "Egon sendo, laster etorriko da-eta Jauna.",
@@ -299,9 +300,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 97, 1bcde. 2-3ab. 3cd-4. 5-6 (R.: 3cd)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/. Kanta Jaunari kantu barria,\negintza harrigarriak egin ditu-eta;\ngaraipena emon deutsa bere eskumak,\nbere beso santuak. R/.\n\nV/. Bere garaipena ezagutuazo dau Jaunak,\nbere salbazino-egintza agertu nazinoen aurrean.\nEz da ahaztu bere maitasunaz,\nIsrael herriari deutsan leialtasunaz. R/.\n\nV/. Munduko bazter guztiek ikusi dabe\ngure Jainkoaren garaipena.\nEgin irrintzi Jaunari, lur osoa,\negin poz-oihu eta kantu, jo soinua. R/.\n\nV/. Ospatu Jauna zitaraz,\nzitaraz eta kantu-hotsez,\nturutaz eta adar-hotsez;\negin irrintzi errege dan Jaunari. R/.",
+          "antifona": "Kanta Jaunari kantu barri, egin ditu-eta hainbat harrigarri.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p084_b01:overlap"
         },
         "segunda": {
           "titulo": "Jainkoak Semearen bidez berba egin deusku.",
@@ -488,9 +490,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 28, 1b y 2. 3ac-4. 3b y 9c-10 (R.: 11b)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/.\nEmon Jaunari, zeruko izakiok, \nemon Jaunari bere izenaren ospea. \nAhuspeztu Jaunaren aurrean, \nbera santutasunez agertzean. R/.\nV/.\nJaunaren ahotsa ur gainean, \nJauna ur handien gainean.\nJaunaren ahotsa indartsu, \nJaunaren ahotsa dirdaitsu. R/.\nV/.\nJainko ospetsuak trumoia jo dau, \nharen tenpluan danek oihuka dinoe: Gora! \nUriolaren gainetik dago Jauna jesarrita,\ntronuan jesarri da Jauna betiko errege. R/.",
+          "antifona": "Bere herria bedeinkatuko dau bakea emonez Jaunak.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p182_b01:overlap"
         },
         "segunda": {
           "titulo": "Jainkoak Espiritu Santuaren indarraz igurtzi eban Jesus.",
@@ -601,9 +604,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 94, 1-2. 6-7c. 7d-9 (R.: cf. 7d-8a)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/.\nZatoze, egin deiogun poz-oihu Jaunari,\npoz-irrintzi, salbatzen gaituan harkaitzari.\nAurkeztu gakiozan eskerrak emonez,\negin deiogun jai txaloka eta kantari. R/.\n\nV/.\nZatoze, gurtu dagigun ahuspezturik,\nbelaunikatu gaitezan egin gaituan Jaunaren aurrean.\nBera da-eta gure Jainkoa,\neta gu harek larraturiko herria,\nharen zainpeko artaldea. R/.",
+          "antifona": "Entzungo ahal dozue gaur Jaunaren ahotsa!: «Ez gogortu zeuen bihotza».",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p109_b02:overlap"
         },
         "segunda": {
           "titulo": "Jainkoaren maitasuna gure bihotzetara isurita dago, emon jakun Espiritu Santuaren bitartez.",
@@ -638,9 +642,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 22, 1b-3a. 3b-4. 5. 6 (R.: 1b)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/. Jauna dot artzain, ez naz ezeren beharrizanean; \nlarre gurietan etzunarazoten nau,\nur-bazter nasaira eroaten \neta indarrak deustaz barritzen;\nbide segurutik naroa, \nbere izenari ohore eginez. R/.",
+          "antifona": "Jaunaren etxean naz biziko luzaroen luzaro.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v1_p064_b02:overlap"
         },
         "segunda": {
           "titulo": "Jagi zaitez hilen artetik, eta Kristok argituko zaitu.",
@@ -675,9 +680,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 115, 12-13. 15-16. 17-18 (R.: cf. 1 Kor 10, 16)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/. Zelan ordainduko deutsat Jaunari \negin deustan on guztia?\nSalbazino-edontzia dot jasoko \neta Jaunaren izenari dei egingo. R/.\n\nV/. Mingarri jako Jaunari \nbere fededunen heriotza.\nzure zerbitzari ezereza naz, Jauna,\naskatu dozuz nire kateak. R/.\n\nV/. Gorespen-oparia deutsut eskeiniko\neta Jaunaren izenari dei egingo.\nBeteko deutsadaz Jaunari agintzariak, \nherri guztiaren aurrean. R/.",
+          "antifona": "Salbamen-edontzia dot hartuko eta Jaunaren izenari dei egingo.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p470_b01:overlap"
         },
         "segunda": {
           "titulo": "Ogi honetatik jaten eta kaliza honetatik edaten dozuen bakoitzean, Jaunaren heriotza iragarten dozue.",
@@ -865,9 +871,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 22, 1b-3a. 3b-4. 5. 6 (R.: 1b)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/. Jauna dot artzain, ez naz ezeren beharrizanean; \nlarre gurietan etzunarazoten nau,\nur-bazter nasaira eroaten \neta indarrak deustaz barritzen;\nbide segurutik naroa, \nbere izenari ohore eginez. R/.",
+          "antifona": "Jaunaren etxean naz biziko luzaroen luzaro.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v1_p064_b02:overlap"
         },
         "segunda": {
           "titulo": "Zeuen artzain eta zaintzaileagana bihurtu zaree.",
@@ -964,11 +971,12 @@
           "_source": "jn14,15-21_eu.txt"
         },
         "aclamacion": {
-          "titulo": "",
+          "titulo": "Jn 14, 23",
           "cita": "Cf. Jn 14, 23",
-          "texto": "",
+          "texto": "Aleluia\nR/. Aleluia.\nV/. Ni maite nauanak gordeko dau nire hitza, dino Jaunak;\nnire Aitak maite izango dau,\neta Aita eta biok harengana etorriko gara. R/.",
           "tipo": "",
-          "unmatched": true
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p369_b02"
         }
       },
       "ascension": {
@@ -1454,11 +1462,12 @@
           "_source": "1co4,1-5_eu.txt"
         },
         "aclamacion": {
-          "titulo": "",
+          "titulo": "Heb 4, 12a d",
           "cita": "Heb 4, 12ad",
-          "texto": "",
+          "texto": "R/.\nAleluia.\nV/.\nBizia da Jainkoaren hitza, bizia eta eraginkorra,\neta barruko pentsamentuak eta asmoak aztertzen ditu.\nR/.",
           "tipo": "",
-          "unmatched": true
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p102_b02:overlap"
         },
         "evangelio": {
           "titulo": "Ez zaiteze kezkatu biharko egunaz.",
@@ -1679,9 +1688,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 144, 1bc-2. 8-9. 10-11. 13cd-14 (R.: cf. 1bc)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V.\t\nGoratuko zaitut, ene Jainko, ene errege, \nbedeinkatuko dot zure izena betiere.\nEgunero zaitut bedeinkatuko, \nbeti dot zure izena goratuko. R/.\nV.\t\nErrukiorra eta bihozbera da Jauna, \nhasarregatxa eta onginahiz betea. \nOna da Jauna guztientzat, \nerrukiz betea bere sorkari guztientzat. R/.",
+          "antifona": "Ene Jainko, ene errege, bedeinkatuko dot zure izena betiere. Edota: Aleluia.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p413_b02:overlap"
         },
         "segunda": {
           "titulo": "Espirituagaz gorputzaren egiteak hilarazoten badozuez, biziko zaree.",
@@ -1889,9 +1899,11 @@
         "aclamacion": {
           "titulo": "",
           "cita": "Cf. Sal 129, 5",
-          "texto": "",
+          "texto": "V/. Jaunaren zain nago,\nharen hitza dot itxaroten. R/.",
           "tipo": "",
-          "unmatched": true
+          "unmatched": false,
+          "antifona": "Aleluia",
+          "_source": "bizkaiera_pdf_extract.md#v2_p543_b01"
         },
         "evangelio": {
           "titulo": "Agindu egidazu Zeugana joateko ur gainean.",
@@ -2061,9 +2073,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 24, 4-5. 6-7. 8-9 (R.: 6a)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/. \nAzaldu niri, Jauna, zeure bideak, \nerakutsi zeure bidezidorrak.\nGidatu nagizu zeure leialtasunean, eta irakatsi, \nZeu zara-eta nire Jainko salbatzailea. R/.\n\nV/. \nIzan gogoan, Jauna, zeure errukia eta maitasuna, \nbetidanikoak dira-eta.\nGogoratu nitaz zeure maitasunean, \nzeure ontasunari dagokionez, Jauna. R/.\n\nV/. \nOna eta zuzena da Jauna,\nbidea erakusten deutse pekatariei.\nApalak zuzenbidez daroaz, \nbere bidea erakusten deutse apalei. R/.",
+          "antifona": "Erakutsi niri, Jauna, zeure bideak.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p078_b01:overlap"
         },
         "segunda": {
           "titulo": "Izan egizuez zeuengan Kristo Jesusi dagokiozan asmoak.",
@@ -2139,9 +2152,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 22, 1b-3a. 3b-4. 5. 6 (R.: 6cd)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/. Jauna dot artzain, ez naz ezeren beharrizanean; \nlarre gurietan etzunarazoten nau,\nur-bazter nasaira eroaten \neta indarrak deustaz barritzen;\nbide segurutik naroa, \nbere izenari ohore eginez. R/.",
+          "antifona": "Jaunaren etxean naz biziko luzaroen luzaro.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v1_p064_b02:overlap"
         },
         "segunda": {
           "titulo": "Danetarako badot indarra,indartzen nauan Haregan.",
@@ -2192,9 +2206,10 @@
         "aclamacion": {
           "titulo": "",
           "cita": "Flp 2, 15d. 16a",
-          "texto": "",
+          "texto": "* *  \n\nIzarrek munduan lez egiten dozue argi gizarte honetan,\nbizia emoten dauan mezuari sendo eutsiz.",
           "tipo": "",
-          "unmatched": true
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p545_b02:overlap"
         },
         "evangelio": {
           "titulo": "Emoiozue Zesarri Zesarrena, eta Jainkoari Jainkoarena.",
@@ -2229,11 +2244,12 @@
           "_source": "1ts1,5c-10_eu.txt"
         },
         "aclamacion": {
-          "titulo": "",
+          "titulo": "Jn 14, 23",
           "cita": "Cf. Jn 14, 23",
-          "texto": "",
+          "texto": "Aleluia\nR/. Aleluia.\nV/. Ni maite nauanak gordeko dau nire hitza, dino Jaunak;\nnire Aitak maite izango dau,\neta Aita eta biok harengana etorriko gara. R/.",
           "tipo": "",
-          "unmatched": true
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p369_b02"
         },
         "evangelio": {
           "titulo": "Maitatu egizu Jauna, zeure Jainkoa, eta zure lagun hurkoa zeure burua lez.",
@@ -2295,9 +2311,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 22, 1b-2a. 2b-3. 5. 6 (R.: 1b)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/.\nJauna dot artzain, ez naz ezeren beharrean;\nlarre gurietan etzunarazoten nau,\nur-bazter nasaira eroaten\neta indarrak deustaz barritzen;\nbide segurutik naroa,\nbere izenari ohore eginez. R/.\nV/.\nMahaia atontzen deustazu\narerioen begi-bistan;\norioz igurzten deustazu burua,\ngainezka dot edontzia. R/.",
+          "antifona": "Jauna dot artzain, ez naz ezeren beharrean.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p482_b02:overlap"
         },
         "segunda": {
           "titulo": "Kristok Jainko Aitari erreinua emongo deutsonean, Jainkoa guztietan guztia izango da.",
@@ -2366,9 +2383,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 129, 1b-2. 3-4. 5-7ab. 7cd-8 (R.: 7cd)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/.\t\nBarru-barrutik dei egiten deutsut, Jauna; \nentzun, Jauna, nire ahotsa!\nBegoz zuhur zure belarriak \nnire erregu-oihura.  R/.\nV/.\t\nErruak kontuan badozuz, Jauna, \nnork iraun zutunik, ene Jauna?\nBaina Zuri parkamena dagokizu, \nZuganako begirunean bizi gaitezan. R/.\nV/.\t\nJaunaren zain nago, zain dago nire barrua, \nharen hitza dot itxaroten;\nnire barrua Jaunaren gogo biziz dago,\ngauzaina egunsentiaren gogo biziz baino gehiago. R/.\nV/.\t\nGauzainak egunsentia lez,\nitxaron begi Israelek Jaunagan, \nJaunarena da-eta maitasuna, \nharena askapen betea.\nHarek askatuko dau Israel\nbere erru guztietatik. R/.",
+          "antifona": "Jaunagan dago errukia, harengan askatasun ugaria.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p288_b01:overlap"
         },
         "segunda": {
           "titulo": "Jesus hilen artetik biztu eban Jainkoaren Espiritua zuekan bizi da.",
@@ -2521,9 +2539,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 94, 1-2. 6-7c. 7d-9 (R.: cf. 7d-8a)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/.\nZatoze, egin deiogun poz-oihu Jaunari,\npoz-irrintzi, salbatzen gaituan harkaitzari.\nAurkeztu gakiozan eskerrak emonez,\negin deiogun jai txaloka eta kantari. R/.\n\nV/.\nZatoze, gurtu dagigun ahuspezturik,\nbelaunikatu gaitezan egin gaituan Jaunaren aurrean.\nBera da-eta gure Jainkoa,\neta gu harek larraturiko herria,\nharen zainpeko artaldea. R/.",
+          "antifona": "Entzungo ahal dozue gaur Jaunaren ahotsa!: «Ez gogortu zeuen bihotza».",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p109_b02:overlap"
         },
         "segunda": {
           "titulo": "Maitatzea da Lege osoa betetea.",
@@ -2703,11 +2722,12 @@
           "unmatched": true
         },
         "salmo": {
-          "titulo": "",
+          "titulo": "Atarako dozue ura pozik salbamenaren iturrietatik.",
           "cita": "Is 12, 2-3. 4bcde. 5-6 (R.: 3)",
-          "texto": "",
+          "texto": "R/.\t\nAtarako dozue ura pozik \nsalbamenaren iturrietatik.\nV/.\t\nBai, Jainkoa dot salbatzaile! \nBadot uste on eta ez naz bildur,\nJauna dot-eta indar eta kemen, \nha neure salbazino. R/.\nV/.\t\nAtarako dozue ura pozik \nsalbazinoaren iturrietatik. \n«Eskerrak Jaunari, dei egin haren izenari,\niragarri haren egintzak herriei, \naldarrikatu zein bikaina dan haren izena. R/.\nV/.\t\nKanta Jaunari, bikain jokatu dau-eta, \njakin begie honen barri mundu osoan.\nEgin poz-irrintzi eta oihu, Siongo bizilagunok, \nhandikiro dihardu-eta zuen alde Israelgo Santuak». R/.",
           "antifona": "",
-          "unmatched": true
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p357_b01:overlap"
         }
       },
       "vigilia_pascual_lectura_6": {
@@ -2721,9 +2741,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 18, 8. 9. 10. 11 (R.: Jn 6, 68c)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/.\nJaunaren legea bikain, barrua arnasbarritzen dau; \nJaunaren mandamentua fidagarri, heldubakoa zuhur egiten dau. R/.\nV/.\nJaunaren arauak zuzen, bihotzaren pozgarri;  \nJaunaren agindua distiratsu, begien argigarri. R/.\nV/.\nJaunaganako begirunea garbi, iraunkor betiko, \nJaunaren erabagiak egiazko, dan-danak bidezko.R/.\nV/.\nUrrea, urre araztua baino desiragarriago,  \neztia, ezti barria baino gozoago. R/.",
+          "antifona": "Zeuk daukazuz, Jauna, betiko bizia daben hitzak.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p502_b01:overlap"
         }
       },
       "vigilia_pascual_lectura_7": {
@@ -3045,9 +3066,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 97, 1bcde. 2-3ab. 3cd-4. 5-6 (R.: 3cd)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/. Kanta Jaunari kantu barria,\negintza harrigarriak egin ditu-eta;\ngaraipena emon deutsa bere eskumak,\nbere beso santuak. R/.\n\nV/. Bere garaipena ezagutuazo dau Jaunak,\nbere salbazino-egintza agertu nazinoen aurrean.\nEz da ahaztu bere maitasunaz,\nIsrael herriari deutsan leialtasunaz. R/.\n\nV/. Munduko bazter guztiek ikusi dabe\ngure Jainkoaren garaipena.\nEgin irrintzi Jaunari, lur osoa,\negin poz-oihu eta kantu, jo soinua. R/.\n\nV/. Ospatu Jauna zitaraz,\nzitaraz eta kantu-hotsez,\nturutaz eta adar-hotsez;\negin irrintzi errege dan Jaunari. R/.",
+          "antifona": "Kanta Jaunari kantu barri, egin ditu-eta hainbat harrigarri.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p084_b01:overlap"
         },
         "evangelio": {
           "titulo": "",
@@ -3227,11 +3249,12 @@
           "_source": "is55,1-11_eu.txt"
         },
         "salmo": {
-          "titulo": "",
+          "titulo": "Atarako dozue ura pozik salbamenaren iturrietatik.",
           "cita": "Is 12, 2-3. 4bcde. 5-6 (R.: 3)",
-          "texto": "",
+          "texto": "R/.\t\nAtarako dozue ura pozik \nsalbamenaren iturrietatik.\nV/.\t\nBai, Jainkoa dot salbatzaile! \nBadot uste on eta ez naz bildur,\nJauna dot-eta indar eta kemen, \nha neure salbazino. R/.\nV/.\t\nAtarako dozue ura pozik \nsalbazinoaren iturrietatik. \n«Eskerrak Jaunari, dei egin haren izenari,\niragarri haren egintzak herriei, \naldarrikatu zein bikaina dan haren izena. R/.\nV/.\t\nKanta Jaunari, bikain jokatu dau-eta, \njakin begie honen barri mundu osoan.\nEgin poz-irrintzi eta oihu, Siongo bizilagunok, \nhandikiro dihardu-eta zuen alde Israelgo Santuak». R/.",
           "antifona": "",
-          "unmatched": true
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p357_b01:overlap"
         },
         "segunda": {
           "titulo": "",
@@ -3265,9 +3288,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 94, 1-2. 6-7c. 7d-9 (R.: cf. 7d-8a)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/.\nZatoze, egin deiogun poz-oihu Jaunari,\npoz-irrintzi, salbatzen gaituan harkaitzari.\nAurkeztu gakiozan eskerrak emonez,\negin deiogun jai txaloka eta kantari. R/.\n\nV/.\nZatoze, gurtu dagigun ahuspezturik,\nbelaunikatu gaitezan egin gaituan Jaunaren aurrean.\nBera da-eta gure Jainkoa,\neta gu harek larraturiko herria,\nharen zainpeko artaldea. R/.",
+          "antifona": "Entzungo ahal dozue gaur Jaunaren ahotsa!: «Ez gogortu zeuen bihotza».",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p109_b02:overlap"
         },
         "segunda": {
           "titulo": "Jainkoaren maitasuna gure bihotzetara isurita dago, emon jakun Espiritu Santuaren bitartez.",
@@ -3302,9 +3326,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 22, 1b-3a. 3b-4. 5. 6 (R.: 1b)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/. Jauna dot artzain, ez naz ezeren beharrizanean; \nlarre gurietan etzunarazoten nau,\nur-bazter nasaira eroaten \neta indarrak deustaz barritzen;\nbide segurutik naroa, \nbere izenari ohore eginez. R/.",
+          "antifona": "Jaunaren etxean naz biziko luzaroen luzaro.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v1_p064_b02:overlap"
         },
         "segunda": {
           "titulo": "Jagi zaitez hilen artetik, eta Kristok argituko zaitu.",
@@ -3339,9 +3364,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 129, 1b-2. 3-4. 5-7ab. 7cd-8 (R.: 7cd)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/.\t\nBarru-barrutik dei egiten deutsut, Jauna; \nentzun, Jauna, nire ahotsa!\nBegoz zuhur zure belarriak \nnire erregu-oihura.  R/.\nV/.\t\nErruak kontuan badozuz, Jauna, \nnork iraun zutunik, ene Jauna?\nBaina Zuri parkamena dagokizu, \nZuganako begirunean bizi gaitezan. R/.\nV/.\t\nJaunaren zain nago, zain dago nire barrua, \nharen hitza dot itxaroten;\nnire barrua Jaunaren gogo biziz dago,\ngauzaina egunsentiaren gogo biziz baino gehiago. R/.\nV/.\t\nGauzainak egunsentia lez,\nitxaron begi Israelek Jaunagan, \nJaunarena da-eta maitasuna, \nharena askapen betea.\nHarek askatuko dau Israel\nbere erru guztietatik. R/.",
+          "antifona": "Jaunagan dago errukia, harengan askatasun ugaria.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p288_b01:overlap"
         },
         "segunda": {
           "titulo": "Jesus hilen artetik biztu eban Jainkoaren Espiritua zuekan bizi da.",
@@ -3415,9 +3441,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 115, 12-13. 15-16. 17-18 (R.: cf. 1 Kor 10, 16)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/. Zelan ordainduko deutsat Jaunari \negin deustan on guztia?\nSalbazino-edontzia dot jasoko \neta Jaunaren izenari dei egingo. R/.\n\nV/. Mingarri jako Jaunari \nbere fededunen heriotza.\nzure zerbitzari ezereza naz, Jauna,\naskatu dozuz nire kateak. R/.\n\nV/. Gorespen-oparia deutsut eskeiniko\neta Jaunaren izenari dei egingo.\nBeteko deutsadaz Jaunari agintzariak, \nherri guztiaren aurrean. R/.",
+          "antifona": "Salbamen-edontzia dot hartuko eta Jaunaren izenari dei egingo.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p470_b01:overlap"
         },
         "segunda": {
           "titulo": "Ogi honetatik jaten eta kaliza honetatik edaten dozuen bakoitzean, Jaunaren heriotza iragarten dozue.",
@@ -3707,11 +3734,12 @@
           "_source": "jn15,9-17_eu.txt"
         },
         "aclamacion": {
-          "titulo": "",
+          "titulo": "Jn 14, 23",
           "cita": "Cf. Jn 14, 23",
-          "texto": "",
+          "texto": "Aleluia\nR/. Aleluia.\nV/. Ni maite nauanak gordeko dau nire hitza, dino Jaunak;\nnire Aitak maite izango dau,\neta Aita eta biok harengana etorriko gara. R/.",
           "tipo": "",
-          "unmatched": true
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p369_b02"
         }
       },
       "ascension": {
@@ -3875,9 +3903,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 115, 12-13. 15-16. 17-18 (R.: 13)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/. Zelan ordainduko deutsat Jaunari \negin deustan on guztia?\nSalbazino-edontzia dot jasoko \neta Jaunaren izenari dei egingo. R/.\n\nV/. Mingarri jako Jaunari \nbere fededunen heriotza.\nzure zerbitzari ezereza naz, Jauna,\naskatu dozuz nire kateak. R/.\n\nV/. Gorespen-oparia deutsut eskeiniko\neta Jaunaren izenari dei egingo.\nBeteko deutsadaz Jaunari agintzariak, \nherri guztiaren aurrean. R/.",
+          "antifona": "Salbamen-edontzia dot hartuko eta Jaunaren izenari dei egingo.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p470_b01:overlap"
         },
         "segunda": {
           "titulo": "Zenbatez gehiago Kristoren odolak ez dau garbituko gure barrua!",
@@ -3912,11 +3941,12 @@
           "_source": "bizkaiera_pdf_extract.md#v3_p540_b03"
         },
         "salmo": {
-          "titulo": "",
+          "titulo": "Atarako dozue ura pozik salbamenaren iturrietatik.",
           "cita": "Is 12, 2-3. 4bcde. 5-6 (R.: 3)",
-          "texto": "",
+          "texto": "R/.\t\nAtarako dozue ura pozik \nsalbamenaren iturrietatik.\nV/.\t\nBai, Jainkoa dot salbatzaile! \nBadot uste on eta ez naz bildur,\nJauna dot-eta indar eta kemen, \nha neure salbazino. R/.\nV/.\t\nAtarako dozue ura pozik \nsalbazinoaren iturrietatik. \n«Eskerrak Jaunari, dei egin haren izenari,\niragarri haren egintzak herriei, \naldarrikatu zein bikaina dan haren izena. R/.\nV/.\t\nKanta Jaunari, bikain jokatu dau-eta, \njakin begie honen barri mundu osoan.\nEgin poz-irrintzi eta oihu, Siongo bizilagunok, \nhandikiro dihardu-eta zuen alde Israelgo Santuak». R/.",
           "antifona": "",
-          "unmatched": true
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p357_b01:overlap"
         },
         "segunda": {
           "titulo": "Ezagutuko dozue jakintza guztiaren gainetik dagoan Kristoren maitasuna.",
@@ -3992,9 +4022,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 24, 4-5a. 6-7cd. 8-9 (R.: 4a)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/. \nAzaldu niri, Jauna, zeure bideak, \nerakutsi zeure bidezidorrak.\nGidatu nagizu zeure leialtasunean, eta irakatsi, \nZeu zara-eta nire Jainko salbatzailea. R/.\n\nV/. \nIzan gogoan, Jauna, zeure errukia eta maitasuna, \nbetidanikoak dira-eta.\nGogoratu nitaz zeure maitasunean, \nzeure ontasunari dagokionez, Jauna. R/.\n\nV/. \nOna eta zuzena da Jauna,\nbidea erakusten deutse pekatariei.\nApalak zuzenbidez daroaz, \nbere bidea erakusten deutse apalei. R/.",
+          "antifona": "Erakutsi niri, Jauna, zeure bideak.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p078_b01:overlap"
         },
         "segunda": {
           "titulo": "Iheskorra da mundu honetako irudia.",
@@ -4031,9 +4062,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 94, 1-2. 6-7c. 7d-9 (R.: cf. 7d-8a)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/.\nZatoze, egin deiogun poz-oihu Jaunari,\npoz-irrintzi, salbatzen gaituan harkaitzari.\nAurkeztu gakiozan eskerrak emonez,\negin deiogun jai txaloka eta kantari. R/.\n\nV/.\nZatoze, gurtu dagigun ahuspezturik,\nbelaunikatu gaitezan egin gaituan Jaunaren aurrean.\nBera da-eta gure Jainkoa,\neta gu harek larraturiko herria,\nharen zainpeko artaldea. R/.",
+          "antifona": "Entzungo ahal dozue gaur Jaunaren ahotsa!: «Ez gogortu zeuen bihotza».",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p109_b02:overlap"
         },
         "segunda": {
           "titulo": "Neskatileak Jaunaren gauzetan dau ardurea, Berarentzat izateko.",
@@ -4228,9 +4260,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 80, 3-4. 5-6ab. 6c-8a. 10-11b (R.: 2a)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/.\nEkin kantuari, jo danbolina, \njo zitara gozoa eta harpa.\nJo turuta ilbarrian, \nilbeteko gure jaiegunean. R/.",
+          "antifona": "Egin pozez oihu laguntzaile dogun Jainkoari.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p256_b02:overlap"
         },
         "segunda": {
           "titulo": "Jesusen bizia agertzen da gure izate hilkor honetan.",
@@ -4266,9 +4299,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 129, 1b-2. 3-4. 5-7ab. 7cd-8 (R.: 7cd)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/.\t\nBarru-barrutik dei egiten deutsut, Jauna; \nentzun, Jauna, nire ahotsa!\nBegoz zuhur zure belarriak \nnire erregu-oihura.  R/.\nV/.\t\nErruak kontuan badozuz, Jauna, \nnork iraun zutunik, ene Jauna?\nBaina Zuri parkamena dagokizu, \nZuganako begirunean bizi gaitezan. R/.\nV/.\t\nJaunaren zain nago, zain dago nire barrua, \nharen hitza dot itxaroten;\nnire barrua Jaunaren gogo biziz dago,\ngauzaina egunsentiaren gogo biziz baino gehiago. R/.\nV/.\t\nGauzainak egunsentia lez,\nitxaron begi Israelek Jaunagan, \nJaunarena da-eta maitasuna, \nharena askapen betea.\nHarek askatuko dau Israel\nbere erru guztietatik. R/.",
+          "antifona": "Jaunagan dago errukia, harengan askatasun ugaria.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p288_b01:overlap"
         },
         "segunda": {
           "titulo": "Sinesten dogu, eta horregaitik berba egiten dogu.",
@@ -4425,9 +4459,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 122, 1b-2b. 2cdefg. 3-4 (R.: cf. 2)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "gutaz erruki dadin arte.\n\nV/.\nZugana jasotzen ditut begiak, \nzeruan errege zaran horrengana. R/.\nV/.\nZelan morroien begiak nagusien eskuetara \neta neskamearen begiak etxekoandrearen eskuetara,\nhalan dagoz gure begiak Jaunagana, \ngure Jainkoagana, \ngutaz errukitu dadin arte. R/.\nV/.\nErruki gutaz, Jauna, erruki! \nBuruz gain gagoz mespretxuz,\nburuz gain ustetsuen burlaz, \nharroen irainez. R/.",
+          "antifona": "Gure begiak Jaunagana dagoz,",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p416_b01:overlap"
         },
         "segunda": {
           "titulo": "Pozik harrotuko naz nire argaltasunez, Kristoren indarra bizi daiten nigan.",
@@ -4502,9 +4537,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 22, 1b-3a. 3b-4. 5. 6 (R.: 1b)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/. Jauna dot artzain, ez naz ezeren beharrizanean; \nlarre gurietan etzunarazoten nau,\nur-bazter nasaira eroaten \neta indarrak deustaz barritzen;\nbide segurutik naroa, \nbere izenari ohore eginez. R/.",
+          "antifona": "Jaunaren etxean naz biziko luzaroen luzaro.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v1_p064_b02:overlap"
         },
         "segunda": {
           "titulo": "Kristo da gure bakea; bat egin ditu Berak herri biak.",
@@ -4779,9 +4815,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 145, 6c-7. 8-9a. 9bc-10 (R.: 1b)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/.\t\nBetiko eusten deutso Jaunak bere leialtasunari. \nZapalduen eskubideak defendatzen ditu, \ngose diranei ogia emoten.\nJaunak askatzen ditu presoak. R/.\nV/.\t\nJaunak zabaltzen ditu itsuen begiak,\nJaunak jasotzen konkortuak, \nJaunak maitatzen zintzoak,\nJaunak ditu etorkinak zaintzen. R/.\nV/.\t\nUmezurtzei eta alargunei zutunik deutse eusten, \nbaina gaiztoen nagusitza iraultzen. \nJauna errege da betieran, \nzure Jainkoa, Sion, errege gizaldien gizaldietan! R/.",
+          "antifona": "Goratu egizu Jauna, nire barrua. Edota: Aleluia.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p170_b02:overlap"
         },
         "segunda": {
           "titulo": "Jainkoak ez al ditu, bada, behartsu diranak aukeratu, erreinuaren oinordeko izan daitezan?",
@@ -5035,11 +5072,12 @@
           "_source": "mc12,28b-34_eu.txt"
         },
         "aclamacion": {
-          "titulo": "",
+          "titulo": "Jn 14, 23",
           "cita": "Cf. Jn 14, 23",
-          "texto": "",
+          "texto": "Aleluia\nR/. Aleluia.\nV/. Ni maite nauanak gordeko dau nire hitza, dino Jaunak;\nnire Aitak maite izango dau,\neta Aita eta biok harengana etorriko gara. R/.",
           "tipo": "",
-          "unmatched": true
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p369_b02"
         }
       },
       "to_32": {
@@ -5054,9 +5092,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 145, 6c-7. 8-9a. 9bc-10 (R.: 1b)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/.\t\nBetiko eusten deutso Jaunak bere leialtasunari. \nZapalduen eskubideak defendatzen ditu, \ngose diranei ogia emoten.\nJaunak askatzen ditu presoak. R/.\nV/.\t\nJaunak zabaltzen ditu itsuen begiak,\nJaunak jasotzen konkortuak, \nJaunak maitatzen zintzoak,\nJaunak ditu etorkinak zaintzen. R/.\nV/.\t\nUmezurtzei eta alargunei zutunik deutse eusten, \nbaina gaiztoen nagusitza iraultzen. \nJauna errege da betieran, \nzure Jainkoa, Sion, errege gizaldien gizaldietan! R/.",
+          "antifona": "Goratu egizu Jauna, nire barrua. Edota: Aleluia.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p170_b02:overlap"
         },
         "segunda": {
           "titulo": "Kristok, askoren pekatuak kentzeko, behin bakarrik emon eban bere burua opari.",
@@ -5245,9 +5284,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 24, 4-5a. 6-7cd. 8-9 (R.: cf. 10)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/. \nAzaldu niri, Jauna, zeure bideak, \nerakutsi zeure bidezidorrak.\nGidatu nagizu zeure leialtasunean, eta irakatsi, \nZeu zara-eta nire Jainko salbatzailea. R/.\n\nV/. \nIzan gogoan, Jauna, zeure errukia eta maitasuna, \nbetidanikoak dira-eta.\nGogoratu nitaz zeure maitasunean, \nzeure ontasunari dagokionez, Jauna. R/.\n\nV/. \nOna eta zuzena da Jauna,\nbidea erakusten deutse pekatariei.\nApalak zuzenbidez daroaz, \nbere bidea erakusten deutse apalei. R/.",
+          "antifona": "Erakutsi niri, Jauna, zeure bideak.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p078_b01:overlap"
         },
         "segunda": {
           "titulo": "Ur ha, orain zuek salbatzen zaituen Bateoaren irudia da.",
@@ -5382,11 +5422,12 @@
           "unmatched": true
         },
         "salmo": {
-          "titulo": "",
+          "titulo": "Atarako dozue ura pozik salbamenaren iturrietatik.",
           "cita": "Is 12, 2-3. 4bcde. 5-6 (R.: 3)",
-          "texto": "",
+          "texto": "R/.\t\nAtarako dozue ura pozik \nsalbamenaren iturrietatik.\nV/.\t\nBai, Jainkoa dot salbatzaile! \nBadot uste on eta ez naz bildur,\nJauna dot-eta indar eta kemen, \nha neure salbazino. R/.\nV/.\t\nAtarako dozue ura pozik \nsalbazinoaren iturrietatik. \n«Eskerrak Jaunari, dei egin haren izenari,\niragarri haren egintzak herriei, \naldarrikatu zein bikaina dan haren izena. R/.\nV/.\t\nKanta Jaunari, bikain jokatu dau-eta, \njakin begie honen barri mundu osoan.\nEgin poz-irrintzi eta oihu, Siongo bizilagunok, \nhandikiro dihardu-eta zuen alde Israelgo Santuak». R/.",
           "antifona": "",
-          "unmatched": true
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p357_b01:overlap"
         }
       },
       "vigilia_pascual_lectura_6": {
@@ -5400,9 +5441,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 18, 8. 9. 10. 11 (R.: Jn 6, 68c)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/.\nJaunaren legea bikain, barrua arnasbarritzen dau; \nJaunaren mandamentua fidagarri, heldubakoa zuhur egiten dau. R/.\nV/.\nJaunaren arauak zuzen, bihotzaren pozgarri;  \nJaunaren agindua distiratsu, begien argigarri. R/.\nV/.\nJaunaganako begirunea garbi, iraunkor betiko, \nJaunaren erabagiak egiazko, dan-danak bidezko.R/.\nV/.\nUrrea, urre araztua baino desiragarriago,  \neztia, ezti barria baino gozoago. R/.",
+          "antifona": "Zeuk daukazuz, Jauna, betiko bizia daben hitzak.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p502_b01:overlap"
         }
       },
       "vigilia_pascual_lectura_7": {
@@ -5623,9 +5665,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 97, 1bcde. 2-3ab. 3cd-4. 5-6 (R.: 3cd)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/. Kanta Jaunari kantu barria,\negintza harrigarriak egin ditu-eta;\ngaraipena emon deutsa bere eskumak,\nbere beso santuak. R/.\n\nV/. Bere garaipena ezagutuazo dau Jaunak,\nbere salbazino-egintza agertu nazinoen aurrean.\nEz da ahaztu bere maitasunaz,\nIsrael herriari deutsan leialtasunaz. R/.\n\nV/. Munduko bazter guztiek ikusi dabe\ngure Jainkoaren garaipena.\nEgin irrintzi Jaunari, lur osoa,\negin poz-oihu eta kantu, jo soinua. R/.\n\nV/. Ospatu Jauna zitaraz,\nzitaraz eta kantu-hotsez,\nturutaz eta adar-hotsez;\negin irrintzi errege dan Jaunari. R/.",
+          "antifona": "Kanta Jaunari kantu barri, egin ditu-eta hainbat harrigarri.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p084_b01:overlap"
         },
         "segunda": {
           "titulo": "Jainkoak Semearen bidez berba egin deusku.",
@@ -5961,9 +6004,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 115, 12-13. 15-16. 17-18 (R.: cf. 1 Kor 10, 16)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/. Zelan ordainduko deutsat Jaunari \negin deustan on guztia?\nSalbazino-edontzia dot jasoko \neta Jaunaren izenari dei egingo. R/.\n\nV/. Mingarri jako Jaunari \nbere fededunen heriotza.\nzure zerbitzari ezereza naz, Jauna,\naskatu dozuz nire kateak. R/.\n\nV/. Gorespen-oparia deutsut eskeiniko\neta Jaunaren izenari dei egingo.\nBeteko deutsadaz Jaunari agintzariak, \nherri guztiaren aurrean. R/.",
+          "antifona": "Salbamen-edontzia dot hartuko eta Jaunaren izenari dei egingo.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p470_b01:overlap"
         },
         "segunda": {
           "titulo": "Ogi honetatik jaten eta kaliza honetatik edaten dozuen bakoitzean, Jaunaren heriotza iragarten dozue.",
@@ -6245,11 +6289,12 @@
           "_source": "jn14,23-29_eu.txt"
         },
         "aclamacion": {
-          "titulo": "",
+          "titulo": "Jn 14, 23",
           "cita": "Cf. Jn 14, 23",
-          "texto": "",
+          "texto": "Aleluia\nR/. Aleluia.\nV/. Ni maite nauanak gordeko dau nire hitza, dino Jaunak;\nnire Aitak maite izango dau,\neta Aita eta biok harengana etorriko gara. R/.",
           "tipo": "",
-          "unmatched": true
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p369_b02"
         }
       },
       "ascension": {
@@ -6488,9 +6533,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 22, 1b-3a. 3b-4. 5. 6 (R.: 1b)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/. Jauna dot artzain, ez naz ezeren beharrizanean; \nlarre gurietan etzunarazoten nau,\nur-bazter nasaira eroaten \neta indarrak deustaz barritzen;\nbide segurutik naroa, \nbere izenari ohore eginez. R/.",
+          "antifona": "Jaunaren etxean naz biziko luzaroen luzaro.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v1_p064_b02:overlap"
         },
         "segunda": {
           "titulo": "Honan erakusten dau Jainkoak guri deuskun maitasuna.",
@@ -6638,9 +6684,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 137, 1bcd-2a. 2bcd-3. 4-5. 7c-8 (R.: 1d)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V. Eskerrak emoten deutsudaz, Jauna, bihotz-bihotzez,\nnire hitzak entzun dozuzalako; \nkantuz goratzen zaitut aingeruen aurrean, \neta zure tenplu santurantz begira ahuspezten naz. R/.\n\nV. Eskerrak emoten deutsadaz zure izenari,\nzure maitasun eta leialtasunagaitik,\nParebakoak egin dozuz-eta\nzeure izena eta agintzaria.\nDei egin neutsunean, erantzun zeunstan, \nkemena bizkortu bihotzean. R/.\n\nV. Eskerrak emongo deutsuez, Jauna, munduko errege guztiek, \nzure ahoko berbak entzutean;\nkantuz ospatuko dabez Jaunaren bideak: \nhandia da Jaunaren ospea benetan. R/.\n\nV. Eskua luzatu eta salbatzen nozu. \nDana egingo dau Jaunak nire alde. \nJauna, zure maitasuna betikoa,\nez itzi bertan behera zeure eskuen lana! R/.",
+          "antifona": "Eresi egingo deutsut, Jauna, aingeruen aurrean.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p144_b01:overlap"
         },
         "segunda": {
           "titulo": "II. irakurgaia era laburrean.",
@@ -6731,9 +6778,10 @@
         "aclamacion": {
           "titulo": "",
           "cita": "Flp 2, 15d. 16a",
-          "texto": "",
+          "texto": "* *  \n\nIzarrek munduan lez egiten dozue argi gizarte honetan,\nbizia emoten dauan mezuari sendo eutsiz.",
           "tipo": "",
-          "unmatched": true
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p545_b02:overlap"
         },
         "evangelio": {
           "titulo": "Bihotzean ugari dagoanetik berba egiten dau ahoak.",
@@ -7072,9 +7120,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 137, 1bcd-2a. 2bcd-3. 6-7ab. 7c-8 (R.: 3a)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/.\t\nEskerrak emoten deutsudaz, Jauna, bihotz-bihotzez,\nnire hitzak entzun dozuzalako;\nkantuz goratzen zaitut aingeruen aurrean, \neta zure tenplu santurantz begira ahuspezten naz. R/.\nV/.\t\nEskerrak emoten deutsadaz zure izenari, \nzure maitasun eta leialtasunagaitik,\nparebakoak egin dozuz-eta \nzeure izena eta promesa.\nDei egin neutsunean, erantzun zeunstan,\nkemena bizkortu bihotzean. R/.",
+          "antifona": "Dei egin neutsunean, erantzun zeunstan, Jauna.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p514_b01:overlap"
         },
         "segunda": {
           "titulo": "Jainkoak Beragaz bizia emon eutsuen,zuen pekatu guztiak parkatuta.",
@@ -7428,9 +7477,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 145, 6c-7. 8-9a. 9bc-10 (R.: 1b)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/.\t\nBetiko eusten deutso Jaunak bere leialtasunari. \nZapalduen eskubideak defendatzen ditu, \ngose diranei ogia emoten.\nJaunak askatzen ditu presoak. R/.\nV/.\t\nJaunak zabaltzen ditu itsuen begiak,\nJaunak jasotzen konkortuak, \nJaunak maitatzen zintzoak,\nJaunak ditu etorkinak zaintzen. R/.\nV/.\t\nUmezurtzei eta alargunei zutunik deutse eusten, \nbaina gaiztoen nagusitza iraultzen. \nJauna errege da betieran, \nzure Jainkoa, Sion, errege gizaldien gizaldietan! R/.",
+          "antifona": "Goratu egizu Jauna, nire barrua. Edota: Aleluia.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p170_b02:overlap"
         },
         "segunda": {
           "titulo": "Bete agindua Jaunaren agertze egunera arte.",
@@ -7467,9 +7517,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 94, 1-2. 6-7c. 7d-9 (R.: cf. 7d-8a)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/.\nZatoze, egin deiogun poz-oihu Jaunari,\npoz-irrintzi, salbatzen gaituan harkaitzari.\nAurkeztu gakiozan eskerrak emonez,\negin deiogun jai txaloka eta kantari. R/.\n\nV/.\nZatoze, gurtu dagigun ahuspezturik,\nbelaunikatu gaitezan egin gaituan Jaunaren aurrean.\nBera da-eta gure Jainkoa,\neta gu harek larraturiko herria,\nharen zainpeko artaldea. R/.",
+          "antifona": "Entzungo ahal dozue gaur Jaunaren ahotsa!: «Ez gogortu zeuen bihotza».",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p109_b02:overlap"
         },
         "segunda": {
           "titulo": "Ez izan gure Jauna autortzeko lotsarik.",
@@ -7558,11 +7609,12 @@
           "_source": "2tm3,14-4,2_eu.txt"
         },
         "aclamacion": {
-          "titulo": "",
+          "titulo": "Heb 4, 12a d",
           "cita": "Heb 4, 12ad",
-          "texto": "",
+          "texto": "R/.\nAleluia.\nV/.\nBizia da Jainkoaren hitza, bizia eta eraginkorra,\neta barruko pentsamentuak eta asmoak aztertzen ditu.\nR/.",
           "tipo": "",
-          "unmatched": true
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p102_b02:overlap"
         },
         "evangelio": {
           "titulo": "Jainkoak egingo deutse zuzenbidea gau eta egun otoitzean dabilkozan bere aukeratuei.",
@@ -7623,9 +7675,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 144, 1bc-2. 8-9. 10-11. 13cd-14 (R.: cf. 1bc)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V.\t\nGoratuko zaitut, ene Jainko, ene errege, \nbedeinkatuko dot zure izena betiere.\nEgunero zaitut bedeinkatuko, \nbeti dot zure izena goratuko. R/.\nV.\t\nErrukiorra eta bihozbera da Jauna, \nhasarregatxa eta onginahiz betea. \nOna da Jauna guztientzat, \nerrukiz betea bere sorkari guztientzat. R/.",
+          "antifona": "Ene Jainko, ene errege, bedeinkatuko dot zure izena betiere. Edota: Aleluia.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p413_b02:overlap"
         },
         "segunda": {
           "titulo": "Jesus gure Jauna goratua izan bedi zuekan, eta zuek Haregan.",
@@ -7701,9 +7754,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 97, 5-6. 7-8. 9ab. 9cd (R.: cf. 9)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/. \nOspatu Jauna zitaraz, \nzitaraz eta kantu-hotsez,\nturutaz eta adar-hotsez;\negin irrintzi errege dan Jaunari. R/.\nV/. \nEgin begi orroe itsasoak eta bertako guztiak, \nmunduak eta bertan bizi diranek.\nEgin begie txalo ibaiek, \npoz-oihu aho batez mendiek. R/.\nV/. \nJaunaren aurrean, \nbadator-eta lurra epaitzera.\nJustiziaz epaituko dau mundua, \neta zuzenbidez herriak. R/.",
+          "antifona": "Badator Jauna herriak zuzentasunez epaitzera.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p457_b01:overlap"
         },
         "segunda": {
           "titulo": "Lanik egin gura ez dauanak ez dagiala jan.",
@@ -8129,11 +8183,12 @@
           "_source": "so3,14-18a_eu.txt"
         },
         "salmo": {
-          "titulo": "",
+          "titulo": "Atarako dozue ura pozik salbamenaren iturrietatik.",
           "cita": "Is 12, 2-3. 4bcde. 5-6 (R.: 6)",
-          "texto": "",
+          "texto": "R/.\t\nAtarako dozue ura pozik \nsalbamenaren iturrietatik.\nV/.\t\nBai, Jainkoa dot salbatzaile! \nBadot uste on eta ez naz bildur,\nJauna dot-eta indar eta kemen, \nha neure salbazino. R/.\nV/.\t\nAtarako dozue ura pozik \nsalbazinoaren iturrietatik. \n«Eskerrak Jaunari, dei egin haren izenari,\niragarri haren egintzak herriei, \naldarrikatu zein bikaina dan haren izena. R/.\nV/.\t\nKanta Jaunari, bikain jokatu dau-eta, \njakin begie honen barri mundu osoan.\nEgin poz-irrintzi eta oihu, Siongo bizilagunok, \nhandikiro dihardu-eta zuen alde Israelgo Santuak». R/.",
           "antifona": "",
-          "unmatched": true
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p357_b01:overlap"
         },
         "segunda": {
           "titulo": "Hurrean da Jauna.",
@@ -8232,11 +8287,12 @@
           "unmatched": true
         },
         "salmo": {
-          "titulo": "",
+          "titulo": "Atarako dozue ura pozik salbamenaren iturrietatik.",
           "cita": "Is 12, 2-3. 4bcde. 5-6 (R.: 3)",
-          "texto": "",
+          "texto": "R/.\t\nAtarako dozue ura pozik \nsalbamenaren iturrietatik.\nV/.\t\nBai, Jainkoa dot salbatzaile! \nBadot uste on eta ez naz bildur,\nJauna dot-eta indar eta kemen, \nha neure salbazino. R/.\nV/.\t\nAtarako dozue ura pozik \nsalbazinoaren iturrietatik. \n«Eskerrak Jaunari, dei egin haren izenari,\niragarri haren egintzak herriei, \naldarrikatu zein bikaina dan haren izena. R/.\nV/.\t\nKanta Jaunari, bikain jokatu dau-eta, \njakin begie honen barri mundu osoan.\nEgin poz-irrintzi eta oihu, Siongo bizilagunok, \nhandikiro dihardu-eta zuen alde Israelgo Santuak». R/.",
           "antifona": "",
-          "unmatched": true
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p357_b01:overlap"
         }
       },
       "vigilia_pascual_lectura_6": {
@@ -8250,9 +8306,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 18, 8. 9. 10. 11 (R.: Jn 6, 68c)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/.\nJaunaren legea bikain, barrua arnasbarritzen dau; \nJaunaren mandamentua fidagarri, heldubakoa zuhur egiten dau. R/.\nV/.\nJaunaren arauak zuzen, bihotzaren pozgarri;  \nJaunaren agindua distiratsu, begien argigarri. R/.\nV/.\nJaunaganako begirunea garbi, iraunkor betiko, \nJaunaren erabagiak egiazko, dan-danak bidezko.R/.\nV/.\nUrrea, urre araztua baino desiragarriago,  \neztia, ezti barria baino gozoago. R/.",
+          "antifona": "Zeuk daukazuz, Jauna, betiko bizia daben hitzak.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p502_b01:overlap"
         }
       },
       "vigilia_pascual_lectura_7": {
@@ -8370,9 +8427,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 94, 6-7c. 7d-9. 10-11 (R.: cf. 7d-8a)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/. Zatoze, gurtu dagigun ahuspezturik, \nbelaunikatu gaitezan egin gaituan Jaunaren aurrean.\nBera da-eta gure Jainkoa, \neta gu harek larraturiko herria, \nharen zainpeko artaldea. R/.\n\nV/. Entzungo ahal dozue gaur haren ahotsa!: \n«Ez gogortu bihotza Meriban lez, \nMasako egunean basamortuan lez,\ntentatu egin ninduen-eta zuen gurasoek, \nprobatu, Nik eginak ikusi arren». R/.\n\nV/. Berrogei urtez gogait eragin eustan belaunaldi harek, \neta esan neban: «Bihotz desleialeko herria dira,\nez dabez ezagutzen nire bideak».\nOrduan, zin egin neban hasarre: \n«Ez dira sartuko nire atsedenean». R/.",
+          "antifona": "Entzungo ahal dozue gaur Jaunaren ahotsa!: «Ez gogortu zeuen bihotza».",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p035_b01:overlap"
         }
       },
       "1_viernes": {
@@ -8441,9 +8499,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 110, 1b-2. 4-5. 9 y 10c (R.: cf. 5b)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/. \nBihotz-bihotzez emoten deutsadaz eskerrak Jaunari, \nzintzoekin batera batzarrean alkarturik.\nJaunak eginak handi dira, \ngogoko dabezan guztientzat aztergai. R/.\nV/. \nBere mirariak gogoangarri egin ditu; \nerrukiorra da Jauna eta bihozbera. \nBegirune deutsoenei janaria emon deutse, \ngogoan dau beti bere ituna. R/.\nV/. \nAskatasuna emon deutsa bere herriari,\nbetiko ezarri dau bere ituna,\nsantua eta bildurgarria da haren izena. \nBetiko dirau Jaunaren gorespenak. R/.",
+          "antifona": "Gogoan dau beti Jaunak bere ituna.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p057_b01:overlap"
         }
       },
       "2_miercoles": {
@@ -8530,9 +8589,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 97, 1bcde. 2-3ab. 3cd-4. 5-6 (R.: 1bc)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/. Kanta Jaunari kantu barria,\negintza harrigarriak egin ditu-eta;\ngaraipena emon deutsa bere eskumak,\nbere beso santuak. R/.\n\nV/. Bere garaipena ezagutuazo dau Jaunak,\nbere salbazino-egintza agertu nazinoen aurrean.\nEz da ahaztu bere maitasunaz,\nIsrael herriari deutsan leialtasunaz. R/.\n\nV/. Munduko bazter guztiek ikusi dabe\ngure Jainkoaren garaipena.\nEgin irrintzi Jaunari, lur osoa,\negin poz-oihu eta kantu, jo soinua. R/.\n\nV/. Ospatu Jauna zitaraz,\nzitaraz eta kantu-hotsez,\nturutaz eta adar-hotsez;\negin irrintzi errege dan Jaunari. R/.",
+          "antifona": "Kanta Jaunari kantu barri, egin ditu-eta hainbat harrigarri.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p084_b01:overlap"
         }
       },
       "3_martes": {
@@ -8691,9 +8751,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 47, 2. 3-4. 9. 10-11 (R.: 10)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/. Handi da Jauna, guztiz goresgarri. \nGure Jainkoaren urian haren mendi santua: \nmuino eder, lur osoaren pozgarri. R/. \nV/. Sion mendi, Jainkoaren egoitza, \nerrege handiaren uri.\nHango jauregien artean \ngotorleku sendo agiri da Jainkoa. R/.\nV/. Entzun genduana geuk ikusi dogu \nJaun ahalguztidunaren urian, geure Jainkoaren urian: \nsendo ezarri dauala Jainkoak betiko. R/.",
+          "antifona": "Oi Jainko, hausnartzen dogu zure maitasuna, zure tenpluaren erdian.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p127_b02:overlap"
         }
       },
       "4_viernes": {
@@ -8726,9 +8787,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 22, 1b-3a. 3b-4. 5. 6 (R.: 1b)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/. Jauna dot artzain, ez naz ezeren beharrizanean; \nlarre gurietan etzunarazoten nau,\nur-bazter nasaira eroaten \neta indarrak deustaz barritzen;\nbide segurutik naroa, \nbere izenari ohore eginez. R/.",
+          "antifona": "Jaunaren etxean naz biziko luzaroen luzaro.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v1_p064_b02:overlap"
         }
       },
       "5_lunes": {
@@ -8869,9 +8931,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 28, 1b y 2. 3ac-4. 3b y 9c-10 (R.: 11b)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/.\nEmon Jaunari, zeruko izakiok, \nemon Jaunari bere izenaren ospea. \nAhuspeztu Jaunaren aurrean, \nbera santutasunez agertzean. R/.\nV/.\nJaunaren ahotsa ur gainean, \nJauna ur handien gainean.\nJaunaren ahotsa indartsu, \nJaunaren ahotsa dirdaitsu. R/.\nV/.\nJainko ospetsuak trumoia jo dau, \nharen tenpluan danek oihuka dinoe: Gora! \nUriolaren gainetik dago Jauna jesarrita,\ntronuan jesarri da Jauna betiko errege. R/.",
+          "antifona": "Bere herria bedeinkatuko dau bakea emonez Jaunak.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p182_b01:overlap"
         }
       },
       "6_miercoles": {
@@ -9121,10 +9184,11 @@
       "8_sabado": {
         "day_name": "",
         "primera": {
-          "titulo": "",
+          "titulo": "Eten barik goratuko dot zure izena.",
           "cita": "Si 51, 12-20",
-          "texto": "",
-          "unmatched": true
+          "texto": "ZURE errukiaz gogoratu nintzan, Jauna,\neta Zuk gure alde betidanik egindakoaz:\nonik ataratzen dozuzala Zugan itxaroten dabenak\neta gaiztoen eskuetatik libratzen",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v4_p552_b02:overlap"
         },
         "salmo": {
           "titulo": "",
@@ -9826,9 +9890,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 115, 12-13. 15-16. 17-18 (R.: 13)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/. Zelan ordainduko deutsat Jaunari \negin deustan on guztia?\nSalbazino-edontzia dot jasoko \neta Jaunaren izenari dei egingo. R/.\n\nV/. Mingarri jako Jaunari \nbere fededunen heriotza.\nzure zerbitzari ezereza naz, Jauna,\naskatu dozuz nire kateak. R/.\n\nV/. Gorespen-oparia deutsut eskeiniko\neta Jaunaren izenari dei egingo.\nBeteko deutsadaz Jaunari agintzariak, \nherri guztiaren aurrean. R/.",
+          "antifona": "Salbamen-edontzia dot hartuko eta Jaunaren izenari dei egingo.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p470_b01:overlap"
         }
       },
       "15_sabado": {
@@ -9843,9 +9908,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 135, 1a. 23a. 24a. 10a. 11a. 12a. 13a. 14a. 15a (R.: 1b)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/. Eskerrak Jaunari, ona da-eta,\nR/. Haren maitasuna betikoa da-eta.\nV/. Gogoratu da gutaz gure jausialdian: R/.\nV/. Arerioakandik libratu gaitu: R/.\nV/. Egiptoko lehen-semeak jo ebazan: R/.\nV/. Israel handik atara eban: R/.\nV/. Ahalmen handiz eta esku indartsuz: R/.\nV/. Itsaso Gorria erdibitu egin eban: R/.\nV/. Israel herria tartetik igaroazo: R/.\nV/. Faraoia eta honen gudarostea Itsaso Gorrian hondoratu ebazan: R/.",
+          "antifona": "Haren maitasuna betikoa da-eta.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p473_b02:overlap"
         }
       },
       "16_lunes": {
@@ -10094,9 +10160,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 105, 6-7ab. 13-14. 21-22. 23 (R.: 4ab)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/.\t\nPekatu egin dogu gurasoen antzera, \noker jokatu dogu, errudun gara. \nGure gurasoek, Egipton zirala, \nez ebezan ulertu zure egintza harrigarriak. R/.\nV/.\t\nLaster ahaztu ziran haren egintzez \neta ez eben itxaropenik jarri haren egitasmoan.\nJan-gose bizia sortu jaken basamortuan \neta Jainkoa tentatu eben eremuan. R/.\nV/.\t\nAhaztu egin ziran Jainkoaz, euren salbatzaileaz, \nEgipton gauza ikusgarriak egin ebazanaz,\nKam-en lurraldean egintza harrigarriak \neta Itsaso Gorrian ikaragarriak egin ebazanaz. R/.\nV/.\t\nPrest egoan Jainkoa hareek hondatzeko, \nMoises bere aukeratuagaitik izan ez balitz;\ntartean sartu eta Jainkoaren aurrean jarri zan, \nharen hasarre hondatzailea baretzeko. R/.",
+          "antifona": "Gogoratu gutaz, Jauna, zeure herriaganako onginahiagaitik.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p040_b01:overlap"
         }
       },
       "18_jueves": {
@@ -10111,9 +10178,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 94, 1-2. 6-7c. 7d-9 (R.: cf. 7d-8a)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/.\nZatoze, egin deiogun poz-oihu Jaunari,\npoz-irrintzi, salbatzen gaituan harkaitzari.\nAurkeztu gakiozan eskerrak emonez,\negin deiogun jai txaloka eta kantari. R/.\n\nV/.\nZatoze, gurtu dagigun ahuspezturik,\nbelaunikatu gaitezan egin gaituan Jaunaren aurrean.\nBera da-eta gure Jainkoa,\neta gu harek larraturiko herria,\nharen zainpeko artaldea. R/.",
+          "antifona": "Entzungo ahal dozue gaur Jaunaren ahotsa!: «Ez gogortu zeuen bihotza».",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p109_b02:overlap"
         }
       },
       "18_viernes": {
@@ -10217,9 +10285,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 135, 1a. 2a. 3a. 16a. 17a. 18a. 21a. 22a y 24a (R.: 1b)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/.\t\nEskerrak Jaunari, ona da-eta:\nR/.\t\nHaren maitasuna betikoa da-eta.\nEdota: Aleluia.\nV/.\t\nEskerrak jainkoen Jainkoari: R/.\nV/.\t\nEskerrak jaunen Jaunari: R/.\nV/.\t\nBasamortuan zehar gidatu eban bere herria: R/.\nV/.\t\nErrege handiak jo ebazan: R/.\nV/.\t\nErrege ospetsuak hil: R/.\nV/.\t\nHareen lurraldeak ondare emon eutsozan: R/.\nV/.\t\nBere zerbitzari Israeli ondare: R/.\nV/.\t\nArerioakandik libratu gaitu: R/.",
+          "antifona": "Haren maitasuna betikoa da-eta.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p078_b01:overlap"
         }
       },
       "19_sabado": {
@@ -10324,9 +10393,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 145, 5-6. 7. 8-9a. 9bc-10 (R.: 1b)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/.\t\nZorionekoa Jakoben Jainkoa lagun dauana, \nJauna bere Jainkoa itxaropen dauana.\nBerak egin ditu zeru-lurrak eta itsasoa, \neta horreetan dagoan guztia. R/.\nV/.\t\nBetiko eusten deutso bere leialtasunari. \nZapalduen eskubideak defendatzen ditu, \ngose diranei ogia emoten.\nJaunak askatzen ditu presoak. R/.\nV/.\t\nJaunak zabaltzen ditu itsuen begiak,\nJaunak jasotzen konkortuak, \nJaunak maitatzen zintzoak,\nJaunak ditu etorkinak zaintzen. R/.\nV/.\t\nUmezurtzei eta alargunei zutunik deutse eusten, \nbaina gaiztoen nagusitza iraultzen. \nJauna errege da betieran, \nzure Jainkoa, Sion, errege gizaldien gizaldietan! R/.",
+          "antifona": "Goratu egizu Jauna, ene barrua.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p108_b01:overlap"
         }
       },
       "20_sabado": {
@@ -10467,9 +10537,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 95, 1 y 3. 4-5. 11-12. 13 (R.: cf. 13b)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/.\t\nKanta Jaunari kantu barria, \nkanta Jaunari, lur osoa, \nzabaldu haren ospea nazinoetan, \nharen mirariak herri guztietan. R/.\nV/.\t\nHandia da-eta Jauna, guztiz goresgarria, \njainko guztien aldean bildurgarria. \nEz dira ezer atzerritarren jainko guztiak; \nJaunak, ostera, zeruak egin ditu. R/.\nV/.\t\nPoztu bedi zerua, alaitu lurra, \negin begi orroe itsasoak eta bertako guztiak, \negin jai landa zabalak eta bertan dan guztiak,\negin poz-oihu, basoko zuhaitz guztiok. R/.\nV/.\t\nJaunaren aurrean, badator-eta, \nbadator lurra epaitzera.\nJustiziaz epaituko dau mundua \neta leialtasunez herriak. R/.",
+          "antifona": "Badator Jauna lurra epaitzera.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p150_b01:overlap"
         }
       },
       "22_martes": {
@@ -10484,9 +10555,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 26, 1bcde. 4. 13-14 (R.: 13)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "bizidunen lurrean.\n\nV. Jauna dot argi eta salbazino,\nnork ni bildurtu? \nJauna biziaren babes,\nnork ni izutu? R/.\n\nV. Gauza bat eskatzen deutsat Jaunari, \nhorren bila nabil ni:\nbizi nadila Jaunaren etxean \nneure bizitzako egun guztietan,\nJaunaren edertasuna miretsiz \neta haren tenplua zainduz. R/.\n\nV. Ziur dakit Jaunaren ontasuna gozatuko dodala \nbizidunen lurrean. \nItxaron Jaunagan! \nEutsi gogor, izan bihotz! \nItxaron Jaunagan! R/.",
+          "antifona": "Jaunaren ontasuna ikusi ustean nago",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p153_b01:overlap"
         }
       },
       "22_miercoles": {
@@ -10789,9 +10861,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 121, 1bc-2. 3-4ab. 4cd-5 (R.: cf. 1bc)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/.\nHau bai poza nirea, esan eustenean: \n«Goazen Jaunaren etxera!» .\nHona orain nire oinak \nzure ateetan, Jerusalem. R/.\nV/.\nJerusalem, uri lez ondo eraikia,\nberagan sendo batua! R/.\nV/.\nHara igoten dabe leinuek, Jaunaren leinuek, \nIsraelen lege danez, Jaunaren izena gorestera.\nHan dagoz ezarriak auzi-mahaiak, \nDaviden jauregiko mahaiak. R/.",
+          "antifona": "Goazen pozik Jaunaren etxera!",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p236_b01:overlap"
         }
       },
       "25_miercoles": {
@@ -11003,9 +11076,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 129, 1b-2. 3-4. 7cd-8 (R.: 3)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "nor dagoke zutunik, Jauna?\n\nV.\nBarru-barrutik dei egiten deutsut, Jauna; \nentzun, Jauna, nire deia!\nBegoz erne zure belarriak \nnire erregu-oihura. R/.\n\nV.\nErruak kontuan badozuz, Jauna, \nnork iraun zutunik, ene Jauna?\nBaina Zuri parkamena dagokizu, \nZuganako begirunean bizi gaitezan. R/.\n\nV.\nItxaron begi Israelek Jaunagan, \nJaunarena da-eta maitasuna, \nharena askapen betea.\nHarek askatuko dau Israel \nbere erru guztietatik. R/.",
+          "antifona": "Gure erruak gogoan badaukazuz, Jauna,",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p297_b01:overlap"
         }
       },
       "27_miercoles": {
@@ -11468,9 +11542,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 26, 1bcde. 4. 13-14 (R.: 13)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "bizidunen lurrean.\n\nV. Jauna dot argi eta salbazino,\nnork ni bildurtu? \nJauna biziaren babes,\nnork ni izutu? R/.\n\nV. Gauza bat eskatzen deutsat Jaunari, \nhorren bila nabil ni:\nbizi nadila Jaunaren etxean \nneure bizitzako egun guztietan,\nJaunaren edertasuna miretsiz \neta haren tenplua zainduz. R/.\n\nV. Ziur dakit Jaunaren ontasuna gozatuko dodala \nbizidunen lurrean. \nItxaron Jaunagan! \nEutsi gogor, izan bihotz! \nItxaron Jaunagan! R/.",
+          "antifona": "Jaunaren ontasuna ikusi ustean nago",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p153_b01:overlap"
         }
       },
       "31_viernes": {
@@ -11698,11 +11773,12 @@
           "_source": "1m4,36-37.52-59_eu.txt"
         },
         "salmo": {
-          "titulo": "",
+          "titulo": "Jaunak esana.",
           "cita": "1 Kro 29, 10bc. 11abc. 11d-12a. 12bcd (R.: 13b)",
-          "texto": "",
+          "texto": "R/.\t\nZure izen ospetsua goresten dogu, Jauna.\nV/.\t\nBedeinkatua Zu, Jauna, gure aita Israelen Jainkoa, \nbetidanik betidaino.  R/.\nV/.\t\nZeurea dozu, Jauna, handitasuna eta indarra, \nospea, distira eta nagusitasuna;\nzeurea dozu zeru-lurretan dagoan guztia, \nzeurea, Jauna, erregetza \neta diran guztien gaineko nagusitza.  R/.",
           "antifona": "",
-          "unmatched": true
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v4_p271_b02:overlap"
         }
       },
       "33_sabado": {
@@ -12005,9 +12081,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 55, 2-3. 9-10ab. 10c-11. 12-13 (R.: 5b)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "Erruki nitaz, Jainko, segika dabilkidaz, \negun osoan eraso egin eta zapaltzen nabe.\nEgun osoan segika ditut arerioak, \nugari dira-eta erasotzen deustenak. R/.\n\nGogoan dozuz nire ibilerak; \njaso nire malkoak zeure pergaminoan.\nEz ete dago dana zure liburuan idatzita? \nNik Zuri deitu eta arerioek atzera egitean, \norduan jakingo dot neure alde dodala Jainkoa. R/.\n\nJainkoaren promesa goratzen dot, \nJaunaren agintzaria goratzen, \nJainkoagan dot konfiantza. R/.\n\nEz naz ezeren bildur: \nzer egingo deust gizaki hutsak? \nEne Jainko, egin neutsuzan promesei deutset eutsiko \neta esker onez ditut beteko. R/.",
+          "antifona": "Jainkoagan dot konfiantza, ez naz ezeren bildur.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p065_b01:overlap"
         }
       },
       "2_viernes": {
@@ -12215,11 +12292,12 @@
           "_source": "bizkaiera_pdf_extract.md#v2_p128_b01"
         },
         "salmo": {
-          "titulo": "",
+          "titulo": "Jaunak esana.",
           "cita": "1 Kro 29, 10bc. 11abc. 11d-12a. 12bcd (R.: 12b)",
-          "texto": "",
+          "texto": "R/.\t\nZure izen ospetsua goresten dogu, Jauna.\nV/.\t\nBedeinkatua Zu, Jauna, gure aita Israelen Jainkoa, \nbetidanik betidaino.  R/.\nV/.\t\nZeurea dozu, Jauna, handitasuna eta indarra, \nospea, distira eta nagusitasuna;\nzeurea dozu zeru-lurretan dagoan guztia, \nzeurea, Jauna, erregetza \neta diran guztien gaineko nagusitza.  R/.",
           "antifona": "",
-          "unmatched": true
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v4_p271_b02:overlap"
         }
       },
       "4_viernes": {
@@ -12593,9 +12671,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 110, 1b-2. 5-6. 9 y 10c (R.: cf. 5b)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "Edota: Aleluia.\n\nV/.\nBihotz-bihotzez emoten deutsadaz eskerrak Jaunari, \nzintzoekin batera batzarrean alkarturik.\nJaunak eginak handi dira, \ngogoko dabezan guztientzat aztergai. R/.",
+          "antifona": "Gogoan dau beti Jaunak bere ituna.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p234_b02:overlap"
         }
       },
       "8_martes": {
@@ -12735,9 +12814,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 122, 1b-2b. 2cdefg (R.: 1b)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/.\nZugana jasotzen ditut begiak, \nzeruan errege zaran horrengana. R/.\nV/.\nZelan morroien begiak nagusien eskuetara \neta neskamearen begiak etxekoandrearen eskuetara,\nhalan dagoz gure begiak Jaunagana, \ngure Jainkoagana, \ngutaz errukitu dadin arte. R/.",
+          "antifona": "Zugana jasotzen ditut, Jauna, begiak.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p271_b01:overlap"
         }
       },
       "9_jueves": {
@@ -12752,9 +12832,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 24, 4-5a. 8-9. 10 y 14 (R.: 4a)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V. Azaldu niri, Jauna, zeure bideak,\nerakutsi zeure bidezidorrak.\nGidatu nagizu zeure leialtasunean, eta irakatsi,\nZeu zara-eta nire Jainko salbatzailea. R/.\n\nV. Ona eta zuzena da Jauna,\nbidea erakusten deutse pekatariei.\nApalak zuzenbidez daroaz,\nbere bidea erakusten deutse apalei. R/.",
+          "antifona": "Erakutsi niri, Jauna, zeure bideak.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p275_b02:overlap"
         }
       },
       "9_viernes": {
@@ -12841,9 +12922,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 15, 1b-2a. 4. 5 y 8. 11 (R.: 1b)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/. Gorde nagizu, Jainko, Zugan naz-eta babesten. Hau dinotsat Jaunari: «Zeu zaitut neure Jauna». R/.",
+          "antifona": "Zaindu nagizu, Jauna, babes bila nator-eta Zugana.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p302_b01:overlap"
         }
       },
       "10_jueves": {
@@ -13036,9 +13118,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 47, 2. 3-4. 10-11 (R.: cf. 9d)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "R/.\nSendo ezarri dau Jainkoak bere uria betiko.\nV/.\nHandi da Jauna, guztiz goragarri. \nGure Jainkoaren urian haren mendi santua: \nmuino eder, lur osoaren pozgarri. R/.\nV/.\nSion mendi, Jainkoaren egoitza, \nerrege handiaren uri.\nHango jauregien artean \ngotorleku sendo agiri da Jainkoa. R/.\nV/.\nOi Jainko, hausnartzen dogu zure maitasuna,\nzure tenpluaren erdian.\nZure ospea lez zure gorespena be, oi Jainko, \nmundu osora heltzen da;\nzure eskua justiziaz dago betea. R/.",
+          "antifona": "Sendo ezarri dau Jainkoak bere uria betiko.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p360_b01:overlap"
         }
       },
       "12_miercoles": {
@@ -13359,9 +13442,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 47, 2. 3-4. 5-6. 7-8 (R.: cf. 9d)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/.\nHandi da Jauna, guztiz goresgarri.\nGure Jainkoaren urian haren mendi santua:\ntontor eder, lur osoaren pozgarri. R/.\nV/.\nSion mendi, Jainkoaren egoitza,\nerrege handiaren uri.\nHango jauregien artean\ngotorleku sendo agiri da Jainkoa. R/.\nV/.\nHain zuzen, erregeak ziran alkartu,\ndanak batera haren aurka oldartu.\nBaina ikusi orduko izutu ziran,\neta ihesi joan ikaraz. R/.",
+          "antifona": "Sendo ezarri dau Jainkoak bere uria betiko.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p460_b01:overlap"
         }
       },
       "15_miercoles": {
@@ -13806,9 +13890,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 112, 1b-2. 3-4. 5-6 (R.: cf. 4b)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/.  \nGoratu egizue, Jaunaren zerbitzariok,  \ngoratu Jaunaren izena.  \nBedeinkatua izan bedi Jaunaren izena,  \norain eta beti.  R/.  \nV/.  \nEguzkiaren sorlekutik sarlekura,  \ngoratua izan bedi Jaunaren izena.  \nJauna herri guztien gainean garai dago,  \nharen ospea zerua baino gorago.  R/.",
+          "antifona": "Bedeinkatua izan bedi Jaunaren izena, orain eta beti.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v4_p555_b02:overlap"
         }
       },
       "19_jueves": {
@@ -13839,11 +13924,12 @@
           "_source": "ez16,59-63_eu.txt"
         },
         "salmo": {
-          "titulo": "",
+          "titulo": "Atarako dozue ura pozik salbamenaren iturrietatik.",
           "cita": "Is 12, 2-3. 4bcde. 5-6 (R.: 1d)",
-          "texto": "",
+          "texto": "R/.\t\nAtarako dozue ura pozik \nsalbamenaren iturrietatik.\nV/.\t\nBai, Jainkoa dot salbatzaile! \nBadot uste on eta ez naz bildur,\nJauna dot-eta indar eta kemen, \nha neure salbazino. R/.\nV/.\t\nAtarako dozue ura pozik \nsalbazinoaren iturrietatik. \n«Eskerrak Jaunari, dei egin haren izenari,\niragarri haren egintzak herriei, \naldarrikatu zein bikaina dan haren izena. R/.\nV/.\t\nKanta Jaunari, bikain jokatu dau-eta, \njakin begie honen barri mundu osoan.\nEgin poz-irrintzi eta oihu, Siongo bizilagunok, \nhandikiro dihardu-eta zuen alde Israelgo Santuak». R/.",
           "antifona": "",
-          "unmatched": true
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p357_b01:overlap"
         }
       },
       "19_sabado": {
@@ -13912,9 +13998,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 22, 1b-3a. 3b-4. 5. 6 (R.: 1b)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/. Jauna dot artzain, ez naz ezeren beharrizanean; \nlarre gurietan etzunarazoten nau,\nur-bazter nasaira eroaten \neta indarrak deustaz barritzen;\nbide segurutik naroa, \nbere izenari ohore eginez. R/.",
+          "antifona": "Jaunaren etxean naz biziko luzaroen luzaro.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v1_p064_b02:overlap"
         }
       },
       "20_jueves": {
@@ -14485,9 +14572,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 143, 1b y 2abc. 3-4 (R.: cf. 1a)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/.\t\nBedeinkatua Jauna, nire harkaitza, \nnire laguntzailea eta gaztelua, \ngotorlekua eta askatzailea,\nnire babeskia eta kerizpea. R/.\nV/.\t\nJauna, zer da gizakia Zu haretaz arduratzeko, \nzer gizasemea Zuk harengan pentsatzeko?\nArnasaldi baten antzeko da gizakia, \nihesi doan kerizpearen antzeko haren egunak. R/.",
+          "antifona": "Bedeinkatua Jauna, nire harkaitza.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p247_b01:overlap"
         }
       },
       "25_sabado": {
@@ -14574,9 +14662,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 26, 7-8ab. 8c-9abcd. 13-14 (R.: 13)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/.\nEntzun, Jauna, nire dei-hotsa, \nerruki zakidaz eta erantzun.\nBihotzak esaten deust: \n«Bilatu egizu haren aurpegia». R/.\n\nV/.\nZure aurpegi bila nabil, Jauna, \nez ezkutatu niri zeure aurpegia. \nEz baztertu zeure zerbitzari hau hasarre, \nZu zaitut-eta laguntza. R/.",
+          "antifona": "Jaunaren ontasuna ikusi ustean nago bizidunen lurrean.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p273_b02:overlap"
         }
       },
       "26_viernes": {
@@ -14600,10 +14689,11 @@
       "26_sabado": {
         "day_name": "",
         "primera": {
-          "titulo": "",
+          "titulo": "Orain, neure begiz ikusi zaitut! Beraz, damutzen naz esandakoaz.",
           "cita": "Job 42, 1-3. 5-6. 12-17",
-          "texto": "",
-          "unmatched": true
+          "texto": "J\nOBEK erantzun eutson Jaunari:\n«Badakit dana zeinkela Zuk,\nez dagoala ezinezko egitamurik Zuretzat.\nZeuk esana da:\n“Nor da nire egitasmoa amatatzen dauana, ezer jakin barik?”\nBai, jakin barik berba egin dot\nulertu ezin dodazan misterioei buruz.\nEntzutez bakarrik ezagutzen zindudazan;\norain neure begiz ikusi zaitut!\nBeraz, damutzen naz esandakoaz,\nhautsean eta errautsean jesarrita».\n\t Ondorengo urteetan aurrekoetan baino oparoago bedeinkatu eban Jaunak \nJob: hamaika mila ardi, sei mila gamelu, mila idi-pare eta mila asteme izan \nebazan. Zazpi seme eta hiru alaba be izan ebazan. Alaba zaharrenari Usoa \njarri eutson izena, bigarrenari Kanela Lorea, eta hirugarrenari Lurrunontzi. \nEz zan herrialde osoan Joben alabak baino emakume ederragorik; eta \nsemeak lez, oinordeko egin ebazan Jobek.\n\t Harrezkero, ehun eta berrogei urtez bizi izan zan Job, eta bere seme-\nalabak eta seme-alaben seme-alabak laugarren belaunaldira arte ikusi ahal \nizan ebazan. Zahartuta eta urtetsu hil zan Job.\nJaunak esana.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p280_b01:overlap"
         },
         "salmo": {
           "titulo": "",
@@ -14875,11 +14965,12 @@
           "_source": "ef3,2-12_eu.txt"
         },
         "salmo": {
-          "titulo": "",
+          "titulo": "Atarako dozue ura pozik salbamenaren iturrietatik.",
           "cita": "Is 12, 2-3. 4bcde. 5-6 (R.: cf. 3)",
-          "texto": "",
+          "texto": "R/.\t\nAtarako dozue ura pozik \nsalbamenaren iturrietatik.\nV/.\t\nBai, Jainkoa dot salbatzaile! \nBadot uste on eta ez naz bildur,\nJauna dot-eta indar eta kemen, \nha neure salbazino. R/.\nV/.\t\nAtarako dozue ura pozik \nsalbazinoaren iturrietatik. \n«Eskerrak Jaunari, dei egin haren izenari,\niragarri haren egintzak herriei, \naldarrikatu zein bikaina dan haren izena. R/.\nV/.\t\nKanta Jaunari, bikain jokatu dau-eta, \njakin begie honen barri mundu osoan.\nEgin poz-irrintzi eta oihu, Siongo bizilagunok, \nhandikiro dihardu-eta zuen alde Israelgo Santuak». R/.",
           "antifona": "",
-          "unmatched": true
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p357_b01:overlap"
         }
       },
       "29_jueves": {
@@ -14930,9 +15021,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 121, 1bc-2. 3-4ab. 4cd-5 (R.: cf. 1bc)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/.\nHau bai poza nirea, esan eustenean: \n«Goazen Jaunaren etxera!» .\nHona orain nire oinak \nzure ateetan, Jerusalem. R/.\nV/.\nJerusalem, uri lez ondo eraikia,\nberagan sendo batua! R/.\nV/.\nHara igoten dabe leinuek, Jaunaren leinuek, \nIsraelen lege danez, Jaunaren izena gorestera.\nHan dagoz ezarriak auzi-mahaiak, \nDaviden jauregiko mahaiak. R/.",
+          "antifona": "Goazen pozik Jaunaren etxera!",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p236_b01:overlap"
         }
       },
       "30_lunes": {
@@ -15037,9 +15129,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 41, 2. 3. 5cdef (R.: 3a)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/.\nBasahuntza gogo biziz uretara lez, \nhalantxe nire gogoa, nire Jainko, Zugana.\nJainkoaren egarri naz, Jainko biziaren egarri: \nnoiz helduko ete naz Jainkoaren aurpegia ikustera? R/.\n\nV/.\nBihotza urtzen jat barruan, gogora ekarriz \nzelan joaten nintzan tenplura, Jainkoaren etxera, \npoz-oihuz eta goraka, jai-giroan, jentetzagaz batera. R/.",
+          "antifona": "Jainko biziaren egarri naz.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p393_b01:overlap"
         }
       },
       "31_lunes": {
@@ -15126,9 +15219,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 121, 1bc-2. 3-4ab. 4cd-5 (R.: cf. 1bc)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/.\nHau bai poza nirea, esan eustenean: \n«Goazen Jaunaren etxera!» .\nHona orain nire oinak \nzure ateetan, Jerusalem. R/.\nV/.\nJerusalem, uri lez ondo eraikia,\nberagan sendo batua! R/.\nV/.\nHara igoten dabe leinuek, Jaunaren leinuek, \nIsraelen lege danez, Jaunaren izena gorestera.\nHan dagoz ezarriak auzi-mahaiak, \nDaviden jauregiko mahaiak. R/.",
+          "antifona": "Goazen pozik Jaunaren etxera!",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p236_b01:overlap"
         }
       },
       "31_sabado": {
@@ -15197,9 +15291,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 22, 1b-3a. 3b-4. 5. 6 (R.: 1b)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "V/. Jauna dot artzain, ez naz ezeren beharrizanean; \nlarre gurietan etzunarazoten nau,\nur-bazter nasaira eroaten \neta indarrak deustaz barritzen;\nbide segurutik naroa, \nbere izenari ohore eginez. R/.",
+          "antifona": "Jaunaren etxean naz biziko luzaroen luzaro.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v1_p064_b02:overlap"
         }
       },
       "32_jueves": {
@@ -17539,9 +17634,10 @@
       "salmo": {
         "titulo": "",
         "cita": "Sal 22, 1b-3a. 3bc-4. 5. 6 (R.: 6cd)",
-        "texto": "",
-        "antifona": "",
-        "unmatched": true
+        "texto": "V/. Jauna dot artzain, ez naz ezeren beharrizanean; \nlarre gurietan etzunarazoten nau,\nur-bazter nasaira eroaten \neta indarrak deustaz barritzen;\nbide segurutik naroa, \nbere izenari ohore eginez. R/.",
+        "antifona": "Jaunaren etxean naz biziko luzaroen luzaro.",
+        "unmatched": false,
+        "_source": "bizkaiera_pdf_extract.md#v1_p064_b02:overlap"
       },
       "evangelio": {
         "titulo": "Gaixo asko osatzen ditu Jesusek eta ogiak ugaritzen ditu.",
@@ -17659,9 +17755,10 @@
       "salmo": {
         "titulo": "",
         "cita": "Sal 84, 9abc y 10. 11-12. 13-14 (R.: Is 35, 4e)",
-        "texto": "",
-        "antifona": "",
-        "unmatched": true
+        "texto": "zeure salbamena emoiguzu.\n\nV. Entzungo dot Jainkoak dinoana: \nJaunak bakea agintzen deutse bere herriari eta fededunei.\nHurrean dabe salbazinoa begirune deutsoenek; \nbai, gure lurraldean kokatuko da Jaunaren aintza. R/.\n\nV. Maitasunak eta leialtasunak alkar dabe aurkitzen,\njustiziak eta bakeak alkar besarkatzen. \nLeialtasuna lurretik da ernetzen, \njustizia zerutik jaisten. R/.\n\nV. Jaunak emongo dau euria, \neta gure lurrak ekarriko bere uzta. \nHaren aurretik joango da justizia,\nharen pausuei jarraituko deutse ondoizateak. R/.",
+        "antifona": "Jauna, zeure onginahia erakutsi egiguzu,",
+        "unmatched": false,
+        "_source": "bizkaiera_pdf_extract.md#v1_p078_b01:overlap"
       },
       "evangelio": {
         "titulo": "Harritzekoak ikusi doguz gaur.",
@@ -17837,9 +17934,10 @@
       "salmo": {
         "titulo": "",
         "cita": "Sal 24, 4-5a. 6 y 7cd. 8-9 (R.: 4b)",
-        "texto": "",
-        "antifona": "",
-        "unmatched": true
+        "texto": "V/. \nAzaldu niri, Jauna, zeure bideak, \nerakutsi zeure bidezidorrak.\nGidatu nagizu zeure leialtasunean, eta irakatsi, \nZeu zara-eta nire Jainko salbatzailea. R/.\n\nV/. \nIzan gogoan, Jauna, zeure errukia eta maitasuna, \nbetidanikoak dira-eta.\nGogoratu nitaz zeure maitasunean, \nzeure ontasunari dagokionez, Jauna. R/.\n\nV/. \nOna eta zuzena da Jauna,\nbidea erakusten deutse pekatariei.\nApalak zuzenbidez daroaz, \nbere bidea erakusten deutse apalei. R/.",
+        "antifona": "Erakutsi niri, Jauna, zeure bideak.",
+        "unmatched": false,
+        "_source": "bizkaiera_pdf_extract.md#v2_p078_b01:overlap"
       },
       "evangelio": {
         "titulo": "Joanen bateoa nondik etorren?",
@@ -17897,9 +17995,10 @@
       "salmo": {
         "titulo": "",
         "cita": "Sal 84, 9abc y 10. 11-12. 13-14 (R.: cf. Is 45, 8)",
-        "texto": "",
-        "antifona": "",
-        "unmatched": true
+        "texto": "zeure salbamena emoiguzu.\n\nV. Entzungo dot Jainkoak dinoana: \nJaunak bakea agintzen deutse bere herriari eta fededunei.\nHurrean dabe salbazinoa begirune deutsoenek; \nbai, gure lurraldean kokatuko da Jaunaren aintza. R/.\n\nV. Maitasunak eta leialtasunak alkar dabe aurkitzen,\njustiziak eta bakeak alkar besarkatzen. \nLeialtasuna lurretik da ernetzen, \njustizia zerutik jaisten. R/.\n\nV. Jaunak emongo dau euria, \neta gure lurrak ekarriko bere uzta. \nHaren aurretik joango da justizia,\nharen pausuei jarraituko deutse ondoizateak. R/.",
+        "antifona": "Jauna, zeure onginahia erakutsi egiguzu,",
+        "unmatched": false,
+        "_source": "bizkaiera_pdf_extract.md#v1_p078_b01:overlap"
       },
       "evangelio": {
         "titulo": "Zoaze eta esan Joani ikusi eta entzun dozuena.",
@@ -18166,9 +18265,10 @@
       "salmo": {
         "titulo": "",
         "cita": "Sal 24, 4-5a. 8-9. 10 y 14 (R.: Lk 21, 28)",
-        "texto": "",
-        "antifona": "",
-        "unmatched": true
+        "texto": "V. Azaldu niri, Jauna, zeure bideak,\nerakutsi zeure bidezidorrak.\nGidatu nagizu zeure leialtasunean, eta irakatsi,\nZeu zara-eta nire Jainko salbatzailea. R/.\n\nV. Ona eta zuzena da Jauna,\nbidea erakusten deutse pekatariei.\nApalak zuzenbidez daroaz,\nbere bidea erakusten deutse apalei. R/.",
+        "antifona": "Erakutsi niri, Jauna, zeure bideak.",
+        "unmatched": false,
+        "_source": "bizkaiera_pdf_extract.md#v2_p275_b02:overlap"
       },
       "evangelio": {
         "titulo": "Joan Bateatzailearen jaiotza.",
@@ -18616,9 +18716,10 @@
       "salmo": {
         "titulo": "",
         "cita": "Sal 129, 1b-2. 3-4. 5-7ab. 7cd-8 (R.: 3)",
-        "texto": "",
-        "antifona": "",
-        "unmatched": true
+        "texto": "V/.\t\nBarru-barrutik dei egiten deutsut, Jauna; \nentzun, Jauna, nire ahotsa!\nBegoz zuhur zure belarriak \nnire erregu-oihura.  R/.\nV/.\t\nErruak kontuan badozuz, Jauna, \nnork iraun zutunik, ene Jauna?\nBaina Zuri parkamena dagokizu, \nZuganako begirunean bizi gaitezan. R/.\nV/.\t\nJaunaren zain nago, zain dago nire barrua, \nharen hitza dot itxaroten;\nnire barrua Jaunaren gogo biziz dago,\ngauzaina egunsentiaren gogo biziz baino gehiago. R/.\nV/.\t\nGauzainak egunsentia lez,\nitxaron begi Israelek Jaunagan, \nJaunarena da-eta maitasuna, \nharena askapen betea.\nHarek askatuko dau Israel\nbere erru guztietatik. R/.",
+        "antifona": "Jaunagan dago errukia, harengan askatasun ugaria.",
+        "unmatched": false,
+        "_source": "bizkaiera_pdf_extract.md#v2_p288_b01:overlap"
       },
       "evangelio": {
         "titulo": "Zoaz lehenengo senideagaz bakeak egitera.",
@@ -18904,9 +19005,10 @@
       "salmo": {
         "titulo": "",
         "cita": "Sal 24, 4-5a. 6 y 7cd. 8-9 (R.: 6a)",
-        "texto": "",
-        "antifona": "",
-        "unmatched": true
+        "texto": "V/. \nAzaldu niri, Jauna, zeure bideak, \nerakutsi zeure bidezidorrak.\nGidatu nagizu zeure leialtasunean, eta irakatsi, \nZeu zara-eta nire Jainko salbatzailea. R/.\n\nV/. \nIzan gogoan, Jauna, zeure errukia eta maitasuna, \nbetidanikoak dira-eta.\nGogoratu nitaz zeure maitasunean, \nzeure ontasunari dagokionez, Jauna. R/.\n\nV/. \nOna eta zuzena da Jauna,\nbidea erakusten deutse pekatariei.\nApalak zuzenbidez daroaz, \nbere bidea erakusten deutse apalei. R/.",
+        "antifona": "Erakutsi niri, Jauna, zeure bideak.",
+        "unmatched": false,
+        "_source": "bizkaiera_pdf_extract.md#v2_p078_b01:overlap"
       },
       "evangelio": {
         "titulo": "Alkarri parkatzen ez badeutsazue, Aitak ere ez deutsue parkatuko.",
@@ -18967,9 +19069,10 @@
       "salmo": {
         "titulo": "",
         "cita": "Sal 94, 1-2. 6-7c. 7d-9 (R.: cf. 7d-8a)",
-        "texto": "",
-        "antifona": "",
-        "unmatched": true
+        "texto": "V/.\nZatoze, egin deiogun poz-oihu Jaunari,\npoz-irrintzi, salbatzen gaituan harkaitzari.\nAurkeztu gakiozan eskerrak emonez,\negin deiogun jai txaloka eta kantari. R/.\n\nV/.\nZatoze, gurtu dagigun ahuspezturik,\nbelaunikatu gaitezan egin gaituan Jaunaren aurrean.\nBera da-eta gure Jainkoa,\neta gu harek larraturiko herria,\nharen zainpeko artaldea. R/.",
+        "antifona": "Entzungo ahal dozue gaur Jaunaren ahotsa!: «Ez gogortu zeuen bihotza».",
+        "unmatched": false,
+        "_source": "bizkaiera_pdf_extract.md#v2_p109_b02:overlap"
       },
       "evangelio": {
         "titulo": "Nigaz ez dagoanak, nire aurka dihardu.",
@@ -19254,9 +19357,10 @@
       "salmo": {
         "titulo": "",
         "cita": "Sal 22, 1b-3a. 3bc-4. 5. 6 (R.: 4ab)",
-        "texto": "",
-        "antifona": "",
-        "unmatched": true
+        "texto": "V/. Jauna dot artzain, ez naz ezeren beharrizanean; \nlarre gurietan etzunarazoten nau,\nur-bazter nasaira eroaten \neta indarrak deustaz barritzen;\nbide segurutik naroa, \nbere izenari ohore eginez. R/.",
+        "antifona": "Jaunaren etxean naz biziko luzaroen luzaro.",
+        "unmatched": false,
+        "_source": "bizkaiera_pdf_extract.md#v1_p064_b02:overlap"
       },
       "evangelio": {
         "titulo": "",
@@ -19846,9 +19950,10 @@
       "salmo": {
         "titulo": "",
         "cita": "Sal 26, 1bcde. 4. 13-14 (R.: cf. 4ac)",
-        "texto": "",
-        "antifona": "",
-        "unmatched": true
+        "texto": "bizidunen lurrean.\n\nV. Jauna dot argi eta salbazino,\nnork ni bildurtu? \nJauna biziaren babes,\nnork ni izutu? R/.\n\nV. Gauza bat eskatzen deutsat Jaunari, \nhorren bila nabil ni:\nbizi nadila Jaunaren etxean \nneure bizitzako egun guztietan,\nJaunaren edertasuna miretsiz \neta haren tenplua zainduz. R/.\n\nV. Ziur dakit Jaunaren ontasuna gozatuko dodala \nbizidunen lurrean. \nItxaron Jaunagan! \nEutsi gogor, izan bihotz! \nItxaron Jaunagan! R/.",
+        "antifona": "Jaunaren ontasuna ikusi ustean nago",
+        "unmatched": false,
+        "_source": "bizkaiera_pdf_extract.md#v3_p153_b01:overlap"
       },
       "evangelio": {
         "titulo": "Jesarritakoen artean banatu ebazan ogiak,bakotxak nahi eban adina.",
@@ -19983,11 +20088,12 @@
         "_source": "jn6,35-40_eu.txt"
       },
       "aclamacion": {
-        "titulo": "",
+        "titulo": "Hauxe da nire Aitaren nahia:",
         "cita": "Cf. Jn 6, 40",
-        "texto": "",
+        "texto": "Semeagan sinisten dauanak izan dagiala betiko bizia;\neta Neuk biztuko dot azken egunean, dino Jaunak.",
         "tipo": "",
-        "unmatched": true
+        "unmatched": false,
+        "_source": "bizkaiera_pdf_extract.md#v4_p460_b01"
       }
     },
     "pascua_3_jueves": {
@@ -20262,9 +20368,10 @@
       "salmo": {
         "titulo": "",
         "cita": "Sal 97, 1bcde. 2-3ab. 3cd-4 (R.: 3cd)",
-        "texto": "",
-        "antifona": "",
-        "unmatched": true
+        "texto": "egin ditu-eta hainbat harrigarri.\n\nV/.\t\nKanta Jaunari kantu barria, \negintza harrigarriak egin ditu-eta;\ngaraipena emon deutso bere eskumak, \nbere beso santuak.  R/.\nV/.\t\nBere garaipena ezagutuazo dau Jaunak, \nbere salbazino-egintza agertu nazinoen aurrean.\nEz da ahaztu bere maitasunaz, \nIsrael herriari deutson leialtasunaz.  R/.\nV/.\t\nMunduko bazter guztiek ikusi dabe \ngure Jainkoaren garaipena.\nEgin irrintzi Jaunari, lur osoa, \negin poz-oihu eta kantu, jo soinua.  R/.",
+        "antifona": "Kanta Jaunari kantu barri,",
+        "unmatched": false,
+        "_source": "bizkaiera_pdf_extract.md#v4_p252_b01:overlap"
       },
       "evangelio": {
         "titulo": "Ni ikusten nauanak Aita ere ikusten dau.",
@@ -20358,9 +20465,10 @@
       "salmo": {
         "titulo": "",
         "cita": "Sal 121, 1bc-2. 3-4b. 4c-5 (R.: cf. 1bc)",
-        "texto": "",
-        "antifona": "",
-        "unmatched": true
+        "texto": "V/.\nHau bai poza nirea, esan eustenean: \n«Goazen Jaunaren etxera!» .\nHona orain nire oinak \nzure ateetan, Jerusalem. R/.\nV/.\nJerusalem, uri lez ondo eraikia,\nberagan sendo batua! R/.\nV/.\nHara igoten dabe leinuek, Jaunaren leinuek, \nIsraelen lege danez, Jaunaren izena gorestera.\nHan dagoz ezarriak auzi-mahaiak, \nDaviden jauregiko mahaiak. R/.",
+        "antifona": "Goazen pozik Jaunaren etxera!",
+        "unmatched": false,
+        "_source": "bizkaiera_pdf_extract.md#v3_p236_b01:overlap"
       },
       "evangelio": {
         "titulo": "Norbait Nigan badago, Ni haregan lez, horrek frutu asko emoten dau.",
@@ -20878,9 +20986,10 @@
       "salmo": {
         "titulo": "",
         "cita": "Sal 86, 1b-2. 3 y 5. 6-7 (R.: 3)",
-        "texto": "",
-        "antifona": "",
-        "unmatched": true
+        "texto": "V/.\nHorra, mendi santuaren gainean oinarrituriko uria! \nJaunak Sion uria maiteago, \nIsraelgo beste bizitoki guztiak baino. \n\nV/.\nBai ospetsu berba egiten dabela zutaz, \nJainkoaren uri!\nSion uriaz esango da: \n«Han jaioak dira danak; \nGoi-goikoak dau ha sendo ezarri».  R/.\n\nV/.\nHona, Jaunak herrien zerrendan idatzi: \n«Han jaioak dira honeek guztiak».\nEta dantzan eginez kantatuko dabe: \n«Guztiek, Sion, zugan bizilekua».  R/.",
+        "antifona": "Bai ospetsu berba egiten dabela zutaz, Jainkoaren uri!",
+        "unmatched": false,
+        "_source": "bizkaiera_pdf_extract.md#v4_p102_b02:overlap"
       },
       "aclamacion": {
         "tipo": "",
@@ -20905,9 +21014,10 @@
       "salmo": {
         "titulo": "",
         "cita": "Sal 97, 1bcde. 2-3ab. 3cd-4 (R.: 3cd)",
-        "texto": "",
-        "antifona": "",
-        "unmatched": true
+        "texto": "egin ditu-eta hainbat harrigarri.\n\nV/.\t\nKanta Jaunari kantu barria, \negintza harrigarriak egin ditu-eta;\ngaraipena emon deutso bere eskumak, \nbere beso santuak.  R/.\nV/.\t\nBere garaipena ezagutuazo dau Jaunak, \nbere salbazino-egintza agertu nazinoen aurrean.\nEz da ahaztu bere maitasunaz, \nIsrael herriari deutson leialtasunaz.  R/.\nV/.\t\nMunduko bazter guztiek ikusi dabe \ngure Jainkoaren garaipena.\nEgin irrintzi Jaunari, lur osoa, \negin poz-oihu eta kantu, jo soinua.  R/.",
+        "antifona": "Kanta Jaunari kantu barri,",
+        "unmatched": false,
+        "_source": "bizkaiera_pdf_extract.md#v4_p252_b01:overlap"
       },
       "evangelio": {
         "titulo": "",
@@ -21672,9 +21782,10 @@
       "salmo": {
         "titulo": "",
         "cita": "Sal 22, 1b-3a. 3b-4. 5. 6 (R.: 1b)",
-        "texto": "",
-        "antifona": "",
-        "unmatched": true
+        "texto": "V/. Jauna dot artzain, ez naz ezeren beharrizanean; \nlarre gurietan etzunarazoten nau,\nur-bazter nasaira eroaten \neta indarrak deustaz barritzen;\nbide segurutik naroa, \nbere izenari ohore eginez. R/.",
+        "antifona": "Jaunaren etxean naz biziko luzaroen luzaro.",
+        "unmatched": false,
+        "_source": "bizkaiera_pdf_extract.md#v1_p064_b02:overlap"
       },
       "evangelio": {
         "titulo": "Zu Harria zara eta zuri emongo deutsudaz zeruetako erreinuaren giltzak.",
@@ -22528,18 +22639,20 @@
         "_source": "so3,14-18_eu.txt"
       },
       "salmo": {
-        "titulo": "",
+        "titulo": "Atarako dozue ura pozik salbamenaren iturrietatik.",
         "cita": "Is 12, 2-3. 4bcde. 5-6 (R.: 6b)",
-        "texto": "",
+        "texto": "R/.\t\nAtarako dozue ura pozik \nsalbamenaren iturrietatik.\nV/.\t\nBai, Jainkoa dot salbatzaile! \nBadot uste on eta ez naz bildur,\nJauna dot-eta indar eta kemen, \nha neure salbazino. R/.\nV/.\t\nAtarako dozue ura pozik \nsalbazinoaren iturrietatik. \n«Eskerrak Jaunari, dei egin haren izenari,\niragarri haren egintzak herriei, \naldarrikatu zein bikaina dan haren izena. R/.\nV/.\t\nKanta Jaunari, bikain jokatu dau-eta, \njakin begie honen barri mundu osoan.\nEgin poz-irrintzi eta oihu, Siongo bizilagunok, \nhandikiro dihardu-eta zuen alde Israelgo Santuak». R/.",
         "antifona": "",
-        "unmatched": true
+        "unmatched": false,
+        "_source": "bizkaiera_pdf_extract.md#v3_p357_b01:overlap"
       },
       "aclamacion": {
         "titulo": "",
         "cita": "Cf. Lk 1, 45",
-        "texto": "",
+        "texto": "*\nHalan eutsen gure gurasoei agindua,\nAbrahami eta ondorengoei betiko esana.  R/.\nAleluia\n\n\n R/.\t\nAleluia.\nV/.\t\nZorionekoa zu, Maria Birjina,\nJaunak esan deutsuna betiko dala sinistu dozulako! ( R/.)",
         "tipo": "",
-        "unmatched": true
+        "unmatched": false,
+        "_source": "bizkaiera_pdf_extract.md#v4_p592_b02"
       },
       "evangelio": {
         "titulo": "Nondik nire Jaunaren ama nigana etortea?",
@@ -22743,9 +22856,10 @@
       "salmo": {
         "titulo": "",
         "cita": "Sal 138, 1b-3. 13-14ab. 14c-15 (R.: cf. 14a)",
-        "texto": "",
-        "antifona": "",
-        "unmatched": true
+        "texto": "V.  \nJauna, Zeuk aztertzen nozu eta ezagutzen,\nbadakizu noiz jesartzen nazan eta noiz jagitzen.\nUrrundik barruntatzen dozuz nire asmoak; \nohartzen zara noiz nabilen eta noiz natzan, \nzehatz ezagutzen dozuz nire ibilbide guztiak.  R/.\nV.  \nZeuk eratu deustazu barrua, \namaren sabelean eiho nozu.\nEskerrak Zuri, harrigarriro egin nozulako, \nmiresgarriak dira zure egintzak!  R/.\nV.  \nBarru-barruraino ezagutzen ninduzun, \nnire hazur-maminak ez ziran Zuretzat ezkutu,\nisilpean eratzen niharduala, \nlurraren  barruan ehunduz ninoiala.  R/.",
+        "antifona": "Eskerrak Zuri, hain harrigarriro egin nozulako.",
+        "unmatched": false,
+        "_source": "bizkaiera_pdf_extract.md#v4_p116_b01:overlap"
       },
       "segunda": {
         "titulo": "Kristo etorri baino lehen, Joanek bihozbarritzeko bateoa iragarri eban.",
@@ -25176,9 +25290,10 @@
       "salmo": {
         "titulo": "",
         "cita": "Sal 97, 1bcde. 2-3ab. 3c-4 (R.: 1bc)",
-        "texto": "",
-        "antifona": "",
-        "unmatched": true
+        "texto": "egin ditu-eta hainbat harrigarri.\n\nV/.\t\nKanta Jaunari kantu barria, \negintza harrigarriak egin ditu-eta;\ngaraipena emon deutso bere eskumak, \nbere beso santuak.  R/.\nV/.\t\nBere garaipena ezagutuazo dau Jaunak, \nbere salbazino-egintza agertu nazinoen aurrean.\nEz da ahaztu bere maitasunaz, \nIsrael herriari deutson leialtasunaz.  R/.\nV/.\t\nMunduko bazter guztiek ikusi dabe \ngure Jainkoaren garaipena.\nEgin irrintzi Jaunari, lur osoa, \negin poz-oihu eta kantu, jo soinua.  R/.",
+        "antifona": "Kanta Jaunari kantu barri,",
+        "unmatched": false,
+        "_source": "bizkaiera_pdf_extract.md#v4_p252_b01:overlap"
       },
       "segunda": {
         "titulo": "Kristogan aukeratu gintuen Jainkoak mundua sortu baino lehen.",
@@ -27126,9 +27241,10 @@
       "Sal129,1-2.3-4.5-6.7-8(R+3)_eu.txt": {
         "titulo": "",
         "cita": "Sal 129, 1-2.3-4.5-6.7-8(R+3)",
-        "texto": "",
-        "_source": "Sal129,1-2.3-4.5-6.7-8(R+3)_eu.txt",
-        "antifona": ""
+        "texto": "V/.\t\nBarru-barrutik dei egiten deutsut, Jauna; \nentzun, Jauna, nire ahotsa!\nBegoz zuhur zure belarriak \nnire erregu-oihura.  R/.\nV/.\t\nErruak kontuan badozuz, Jauna, \nnork iraun zutunik, ene Jauna?\nBaina Zuri parkamena dagokizu, \nZuganako begirunean bizi gaitezan. R/.\nV/.\t\nJaunaren zain nago, zain dago nire barrua, \nharen hitza dot itxaroten;\nnire barrua Jaunaren gogo biziz dago,\ngauzaina egunsentiaren gogo biziz baino gehiago. R/.\nV/.\t\nGauzainak egunsentia lez,\nitxaron begi Israelek Jaunagan, \nJaunarena da-eta maitasuna, \nharena askapen betea.\nHarek askatuko dau Israel\nbere erru guztietatik. R/.",
+        "_source": "bizkaiera_pdf_extract.md#v2_p288_b01:overlap",
+        "antifona": "Jaunagan dago errukia, harengan askatasun ugaria.",
+        "unmatched": false
       },
       "Sal129,1-2.3-4.5-6.7-8(R+7bc)_eu.txt": {
         "titulo": "",
