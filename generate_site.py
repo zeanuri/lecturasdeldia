@@ -386,8 +386,9 @@ def generate_day(d, prev_d, next_d, outdir, templates, lang, lectionaries) -> di
     es_path = f"/{d.year:04d}/{d.month:02d}/{d.day:02d}/"
     urls = page_urls(es_path, lang)
 
-    prev_url = f"{prev_d.year}/{prev_d.month:02d}/{prev_d.day:02d}"
-    next_url = f"{next_d.year}/{next_d.month:02d}/{next_d.day:02d}"
+    prefix = "eu/" if lang == "eu" else ""
+    prev_url = f"{prefix}{prev_d.year}/{prev_d.month:02d}/{prev_d.day:02d}"
+    next_url = f"{prefix}{next_d.year}/{next_d.month:02d}/{next_d.day:02d}"
     prev_label = format_prev_next(prev_d, i18n)
     next_label = format_prev_next(next_d, i18n)
 

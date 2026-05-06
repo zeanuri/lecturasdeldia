@@ -303,3 +303,26 @@ def test_no_spanish_reading_text_in_eu_page(tmp_path, lectionaries):
             f"EU page contains forbidden ES phrase {phrase!r}: "
             "the no_translation_policy is being violated."
         )
+
+
+def test_eu_day_nav_arrows_stay_in_eu(tmp_path, lectionaries):
+    """Day-page prev/next arrows on EU pages must keep the user in /eu/."""
+    from jinja2 import Environment, FileSystemLoader
+
+    env = Environment(
+        loader=FileSystemLoader(str(ROOT / "templates")),
+        autoescape=True,
+    )
+    env.globals["cache_bust"] = 1
+
+    d = date(2026, 4, 27)
+    prev_d = date(2026, 4, 26)
+    next_d = date(2026, 4, 28)
+    outdir = tmp_path / "eu"
+    generate_site.generate_day(d, prev_d, next_d, outdir, env, "eu", lectionaries)
+    html = (outdir / "2026" / "04" / "27" / "index.html").read_text(encoding="utf-8")
+
+    assert 'href="/eu/2026/04/26/"' in html, "prev arrow on EU page must point to /eu/"
+    assert 'href="/eu/2026/04/28/"' in html, "next arrow on EU page must point to /eu/"
+    assert 'href="/2026/04/26/"' not in html, "prev arrow leaks to ES URL"
+    assert 'href="/2026/04/28/"' not in html, "next arrow leaks to ES URL"
