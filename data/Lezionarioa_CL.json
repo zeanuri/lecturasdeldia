@@ -5,11 +5,11 @@
     "cita_convention": "batua",
     "coverage_status": "Estaldura partziala; iturriak mugatuta",
     "coverage_pct_calendar_texto": 61,
-    "calendar_slots_populated": 1839,
+    "calendar_slots_populated": 1841,
     "calendar_slots_total": 2994,
     "coverage_source": "euskera/bizkaiera (1909 accepted Basque readings)",
     "no_translation_policy": true,
-    "last_built": "2026-04-29",
+    "last_built": "2026-06-02",
     "source": "",
     "translation": "",
     "volumes": []
@@ -16028,6 +16028,16 @@
           "_source": "mc11,27-33_eu.txt"
         }
       },
+      "9_lunes": {
+        "day_name": "",
+        "evangelio": {
+          "titulo": "Heldu eutsoen seme maiteari eta hil egin eben, eta mahastitik kanpora bota.",
+          "cita": "Mk 12, 1-12",
+          "texto": "Aldi haretan, Jesus parabola bidez berba egiten hasi jaken abadeburuei eta herriko zaharrei: Gizon batek mahastia landatu eban eta hesiz inguratu, bertan dolarea egin eta torrea eregi eban. Gero, nekazari batzuei errentan itzirik, urrunera joan zan.\n \nBere sasoian, morroi bat bialdu eutsen nekazariei, mahastiko frututik egokion partea jasotera; baina hareek morroiari heldu, jo eta esku hutsik bialdu eben. Barriro beste morroi bat bialdu eutsen; hau ere buruan jo eta irainez bete eben. Beste bat ere bialdu eutsen geroago, eta hil egin eben. Ondoren, beste asko bialdu eutsezan, eta batzuk jo eta besteak hil egin zitueen.\nBaeban oraindino beste norbait, bere seme maitea, eta haxe bialdu eutsen azkenik, bere barruan esanez: \"Izango deutsoe begirunea nire semeari\". Nekazariek, ostera, esan eutsoen alkarri: \"Oinordekoa dok! Hil dagigun eta mahastiaren jabe izango gaituk\". Hartu, hil eta mahastitik kanpora bota eben.\nZer egingo ete dau mahasti-jabeak? Joan eta garbitu egingo ditu nekazari horreek, eta mahastia beste batzuen esku itziko.\nEz al dozue irakurri Liburu Santuetako ha:\n\"Etxegileek baztertutako harria\ngiltzarri bihurtu da.\nJaunak egin dau hori,\ngure begien harrigarri\"?\nAbadeburu eta herriko zaharrak Jesus atxilotu guran ebilzan, ondo jabetu ziran-eta eurakaitik esan ebala parabola ha. Baina jentearen bildurrez, itzi eta alde egin eben.",
+          "unmatched": false,
+          "_source": "mc12,1-12_eu.txt"
+        }
+      },
       "9_martes": {
         "day_name": "",
         "evangelio": {
@@ -16056,6 +16066,16 @@
           "texto": "Aldi haretan, lege-maisu batek Jesusegana hurreratu eta itaundu eutsan: Zein da agindu guztietan nagusiena?\nJesusek erantzun: Hau da nagusiena: \"Entzun, Israel: Jauna, gure Jainkoa, Jaun bakarra da. Maitatu egizu Jauna, zeure Jainkoa, bihotz-bihotzez, gogo osoz, adimen guztiz eta indar guztiz\". Bigarrena, barriz, hau da: \"Maitatu lagun hurkoa zeure burua lez\". Ez da honeek baino agindu handiagorik.\nLege-maisuak esan eutsan: Ederto, Maisu; egia dinozu Jainkoa bakarra dala eta ez dala beste Jainkorik esatean, eta Ha bihotz-bihotzez, adimen guztiz eta indar guztiz maitatzea, eta lagun hurkoa nork bere burua lez maitatzea, erre-opari eta sakrifizio guztiak baino hobea dala esatea.\nEta Jesusek, zuhur erantzun ebala ikusirik, esan eutsan: Ez zagoz urrun Jainkoaren erreinutik.\nEta handik aurrera, ez zan inor itaunik egitera ausartzen.\n",
           "unmatched": false,
           "_source": "mc12,28b-34_eu.txt"
+        }
+      },
+      "9_viernes": {
+        "day_name": "",
+        "evangelio": {
+          "titulo": "Zelan dinoe Daviden seme dala Mesias?",
+          "cita": "Mk 12, 35-37",
+          "texto": "Aldi haretan, Jesusek, tenpluan irakasten ziharduala, esan eban: Zelan esan daikee lege-maisuek Mesias Daviden ondorengoa dala? Hona zer dinoan Davidek Espiritu Santuaren argiaz: \"Hona Jaunak nire Jaunari esana: Jesarri nire eskuman, zure arerioak oinazpian jarten deutsudazan bitartean\".\nDavidek berak \"Jauna\" esaten deutso; beraz, zelan izan daike ondorengoa?. Jentetza ugariak atseginez entzuten eutsan.",
+          "unmatched": false,
+          "_source": "mc12,35-37_eu.txt"
         }
       },
       "9_sabado": {
