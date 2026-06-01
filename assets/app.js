@@ -448,7 +448,7 @@
       html += '</p>';
 
       matches.forEach(function (m) {
-        html += '<a class="search-result" href="' + m.url + '">';
+        html += '<a class="search-result" href="' + escapeHtml(m.url) + '">';
         html += '<span class="search-fecha">' + highlightInText(m.fecha, q) + '</span><br>';
         html += '<span class="search-nombre">' + highlightInText(m.nombre, q) + '</span><br>';
         html += '<span class="search-citas">' + highlightInText(m.citas.replace(/\|/g, ' · '), q) + '</span>';
@@ -564,7 +564,7 @@
             dotStyle = 'background:var(--color-' + entry.color + ')';
           }
 
-          html += '<a class="' + cls + '" href="' + entry.url + '" title="' + escapeHtml(entry.nombre) + '">';
+          html += '<a class="' + cls + '" href="' + escapeHtml(entry.url) + '" title="' + escapeHtml(entry.nombre) + '">';
           html += d;
           html += '<span class="dot" style="' + dotStyle + '"></span>';
           html += '</a>';
