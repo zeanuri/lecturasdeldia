@@ -1678,24 +1678,29 @@
         "saint_name": "LA TRANSFIGURACIÓN",
         "rank": "Fiesta",
         "primera": {
-          "titulo": "La ley del Espíritu de vida en Cristo Jesús te ha librado de la ley del pecado y de la muerte",
-          "cita": "Rom 8, 1-4",
-          "texto": "Hermanos:\nNo hay condena alguna para los que están en Cristo Jesús, pues la ley del Espíritu de vida en Cristo Jesús te ha librado de la ley del pecado y de la muerte. Lo que era imposible a la ley, por cuanto que estaba debilitada a causa de la carne, lo ha hecho Dios: enviando a su Hijo en semejanza de carne de pecado y en orden al pecado, condenó el pecado en la carne, para que la justa exigencia de la ley se cumpliera en nosotros, los que actuamos no de acuerdo con la carne, sino de acuerdo con el Espíritu."
+          "titulo": "Su vestido era blanco como nieve",
+          "cita": "Dan 7, 9-10. 13-14",
+          "texto": "Miré y vi que colocaban unos tronos. Un anciano se sentó.\nSu vestido era blanco como nieve, su cabellera como lana limpísima;\nsu trono, llamas de fuego; sus ruedas, llamaradas;\nun río impetuoso de fuego brotaba y corría ante él.\nMiles y miles lo servían, millones estaban a sus órdenes.\nComenzó la sesión y se abrieron los libros.\nSeguí mirando. Y en mi visión nocturna\nvi venir una especie de hijo de hombre entre las nubes del cielo.\nAvanzó hacia el anciano y llegó hasta su presencia.\nA él se le dio poder, honor y reino.\nY todos los pueblos, naciones y lenguas lo sirvieron.\nSu poder es un poder eterno, no cesará.\nSu reino no acabará."
         },
         "salmo": {
-          "cita": "F 727, 3",
-          "antifona": "El Señor reina, altísimo sobre toda la tierra.",
-          "texto": "V/. Los montes se derriten como cera ante el dueño de toda la tierra; los cielos pregonan su justicia, y todos los pueblos contemplan su gloria. R/.\n\nV/. Porque tú eres, Señor, altísimo sobre toda la tierra, encumbrado sobre todos los dioses. R/."
+          "cita": "Sal 96, 1-2. 5-6. 9 (R.: 1a. 9b)",
+          "antifona": "El Señor reina, Altísimo sobre toda la tierra.",
+          "texto": "V/. El Señor reina, la tierra goza, se alegran las islas innumerables. Tiniebla y nube lo rodean, justicia y derecho sostienen su trono. R/.\n\nV/. Los montes se derriten como cera ante el Señor, ante el Señor de toda la tierra; los cielos pregonan su justicia, y todos los pueblos contemplan su gloria. R/.\n\nV/. Porque tú eres, Señor, Altísimo sobre toda la tierra, encumbrado sobre todos los dioses. R/."
+        },
+        "segunda": {
+          "titulo": "Esta voz del cielo es la que oímos",
+          "cita": "2 Pe 1, 16-19",
+          "texto": "Queridos hermanos:\nNo nos fundábamos en fábulas fantasiosas cuando os dimos a conocer el poder y la venida de nuestro Señor Jesucristo, sino en que habíamos sido testigos oculares de su grandeza.\nPorque él recibió de Dios Padre honor y gloria cuando desde la sublime Gloria se le transmitió aquella voz:\n«Este es mi Hijo amado, en quien me he complacido».\nY esta misma voz, transmitida desde el cielo, es la que nosotros oímos estando con él en la montaña sagrada.\nAsí tenemos más confirmada la palabra profética y hacéis muy bien en prestarle atención como a una lámpara que brilla en un lugar oscuro hasta que despunte el día y el lucero amanezca en vuestros corazones."
         },
         "evangelio": {
           "titulo": "Su rostro resplandecía como el sol",
-          "cita": "F 730, 1",
-          "texto": "En aquel tiempo, Jesús tomó consigo a Pedro, a Santiago y a su hermano Juan y se los llevó aparte a una montaña alta.\nSe transfiguró delante de ellos, y su rostro resplandecía como el sol, y sus vestidos se volvieron blancos como la luz.\nY se les aparecieron Moisés y Elías conversando con él.\nPedro, entonces, tomó la palabra y dijo a Jesús:\n-«Señor, ¡qué bien se está aquí! Si quieres, haré tres tiendas: una para ti, otra para Moisés y otra para Elías.»\nTodavía estaba hablando cuando una nube luminosa los cubrió con su sombra, y una voz desde la nube decía:\n-«Éste es mi Hijo, el amado, mi predilecto. Escuchadlo.»\nAl oírlo, los discípulos cayeron de bruces, llenos de espanto.\nJesús se acercó y, tocándolos, les dijo:\n-«Levantaos, no temáis.»\nAl alzar los ojos, no vieron a nadie más que a Jesús, solo.\nCuando bajaban de la montaña, Jesús les mandó:\n-«No contéis a nadie la visión hasta que el Hijo del hombre resucite de entre los muertos.»"
+          "cita": "Mt 17, 1-9",
+          "texto": "En aquel tiempo, Jesús tomó consigo a Pedro, a Santiago y a su hermano Juan, y subió con ellos aparte a un monte alto.\nSe transfiguró delante de ellos, y su rostro resplandecía como el sol, y sus vestidos se volvieron blancos como la luz.\nDe repente se les aparecieron Moisés y Elías conversando con él.\nPedro, entonces, tomó la palabra y dijo a Jesús:\n«Señor, ¡qué bueno es que estemos aquí! Si quieres, haré tres tiendas: una para ti, otra para Moisés y otra para Elías».\nTodavía estaba hablando cuando una nube luminosa los cubrió con su sombra y una voz desde la nube decía:\n«Este es mi Hijo, el amado, en quien me complazco. Escuchadlo».\nAl oírlo, los discípulos cayeron de bruces, llenos de espanto.\nJesús se acercó y, tocándolos, les dijo:\n«Levantaos, no temáis».\nAl alzar los ojos, no vieron a nadie más que a Jesús, solo.\nCuando bajaban del monte, Jesús les mandó:\n«No contéis a nadie la visión hasta que el Hijo del hombre resucite de entre los muertos»."
         },
         "aclamacion": {
-          "tipo": "aleluya",
-          "cita": "F 729, 1",
-          "texto": "Éste es mi Hijo, el amado, mi predilecto. Escuchadlo."
+          "tipo": "Aleluya",
+          "cita": "Mt 17, 5c",
+          "texto": "Este es mi Hijo, el amado, en quien me complazco. Escuchadlo."
         }
       },
       "cuaresma_5": {
@@ -3743,24 +3748,29 @@
         "saint_name": "LA TRANSFIGURACIÓN",
         "rank": "Fiesta",
         "primera": {
-          "titulo": "La ley del Espíritu de vida en Cristo Jesús te ha librado de la ley del pecado y de la muerte",
-          "cita": "Rom 8, 1-4",
-          "texto": "Hermanos:\nNo hay condena alguna para los que están en Cristo Jesús, pues la ley del Espíritu de vida en Cristo Jesús te ha librado de la ley del pecado y de la muerte. Lo que era imposible a la ley, por cuanto que estaba debilitada a causa de la carne, lo ha hecho Dios: enviando a su Hijo en semejanza de carne de pecado y en orden al pecado, condenó el pecado en la carne, para que la justa exigencia de la ley se cumpliera en nosotros, los que actuamos no de acuerdo con la carne, sino de acuerdo con el Espíritu."
+          "titulo": "Su vestido era blanco como nieve",
+          "cita": "Dan 7, 9-10. 13-14",
+          "texto": "Miré y vi que colocaban unos tronos. Un anciano se sentó.\nSu vestido era blanco como nieve, su cabellera como lana limpísima;\nsu trono, llamas de fuego; sus ruedas, llamaradas;\nun río impetuoso de fuego brotaba y corría ante él.\nMiles y miles lo servían, millones estaban a sus órdenes.\nComenzó la sesión y se abrieron los libros.\nSeguí mirando. Y en mi visión nocturna\nvi venir una especie de hijo de hombre entre las nubes del cielo.\nAvanzó hacia el anciano y llegó hasta su presencia.\nA él se le dio poder, honor y reino.\nY todos los pueblos, naciones y lenguas lo sirvieron.\nSu poder es un poder eterno, no cesará.\nSu reino no acabará."
         },
         "salmo": {
-          "cita": "F 727, 3",
-          "antifona": "El Señor reina, altísimo sobre toda la tierra.",
-          "texto": "V/. Los montes se derriten como cera ante el dueño de toda la tierra; los cielos pregonan su justicia, y todos los pueblos contemplan su gloria. R/.\n\nV/. Porque tú eres, Señor, altísimo sobre toda la tierra, encumbrado sobre todos los dioses. R/."
+          "cita": "Sal 96, 1-2. 5-6. 9 (R.: 1a. 9b)",
+          "antifona": "El Señor reina, Altísimo sobre toda la tierra.",
+          "texto": "V/. El Señor reina, la tierra goza, se alegran las islas innumerables. Tiniebla y nube lo rodean, justicia y derecho sostienen su trono. R/.\n\nV/. Los montes se derriten como cera ante el Señor, ante el Señor de toda la tierra; los cielos pregonan su justicia, y todos los pueblos contemplan su gloria. R/.\n\nV/. Porque tú eres, Señor, Altísimo sobre toda la tierra, encumbrado sobre todos los dioses. R/."
+        },
+        "segunda": {
+          "titulo": "Esta voz del cielo es la que oímos",
+          "cita": "2 Pe 1, 16-19",
+          "texto": "Queridos hermanos:\nNo nos fundábamos en fábulas fantasiosas cuando os dimos a conocer el poder y la venida de nuestro Señor Jesucristo, sino en que habíamos sido testigos oculares de su grandeza.\nPorque él recibió de Dios Padre honor y gloria cuando desde la sublime Gloria se le transmitió aquella voz:\n«Este es mi Hijo amado, en quien me he complacido».\nY esta misma voz, transmitida desde el cielo, es la que nosotros oímos estando con él en la montaña sagrada.\nAsí tenemos más confirmada la palabra profética y hacéis muy bien en prestarle atención como a una lámpara que brilla en un lugar oscuro hasta que despunte el día y el lucero amanezca en vuestros corazones."
         },
         "evangelio": {
-          "titulo": "Este es mi Hijo amado",
-          "cita": "F 730, 1",
-          "texto": "En aquel tiempo Jesús se llevó a Pedro, a Santiago y a Juan, subió con ellos solos\na una montaña alta, y se transfiguró delante de ellos. Sus vestidos se volvieron de\nun blanco deslumbrador, como no puede dejarlos ningún batanero del mundo.\nSe les aparecieron Elías y Moisés conversando con Jesús. Entonces Pedro tomó\nla palabra y le dijo a Jesús:\n—Maestro. ¡Qué bien se está aquí! Vamos a hacer tres chozas, una para ti, otra\npara Moisés y otra para Elías.\n\n============================================================\nPAGE 39\n============================================================\nEstaban asustados y no sabía lo que decía.\nSe formó una nube que los cubrió y salió una voz de la nube:\n—Este es mi Hijo amado; escuchadlo.\nDe pronto, al mirar alrededor, no vieron a nadie más que a Jesús, solo con ellos.\nCuando bajaban de la montaña, Jesús les mandó: No contéis a nadie lo que\nhabéis visto hasta que el Hijo del Hombre resucite de entre los muertos.\nEsto se les quedó grabado y discutían qué querría decir aquello de resucitar de\nentre los muertos."
+          "titulo": "Este es mi Hijo, el amado",
+          "cita": "Mc 9, 2-10",
+          "texto": "En aquel tiempo, Jesús tomó consigo a Pedro, a Santiago y a Juan, subió aparte con ellos solos a un monte alto, y se transfiguró delante de ellos. Sus vestidos se volvieron de un blanco deslumbrador, como no puede dejarlos ningún batanero del mundo.\nSe les aparecieron Elías y Moisés, conversando con Jesús.\nEntonces Pedro tomó la palabra y dijo a Jesús:\n«Maestro, ¡qué bueno es que estemos aquí! Vamos a hacer tres tiendas, una para ti, otra para Moisés y otra para Elías».\nNo sabía qué decir, pues estaban asustados.\nSe formó una nube que los cubrió y salió una voz de la nube:\n«Este es mi Hijo, el amado; escuchadlo».\nDe pronto, al mirar alrededor, no vieron a nadie más que a Jesús, solo con ellos.\nCuando bajaban del monte, les ordenó que no contasen a nadie lo que habían visto hasta que el Hijo del hombre resucitara de entre los muertos.\nEsto se les quedó grabado y discutían qué quería decir aquello de resucitar de entre los muertos."
         },
         "aclamacion": {
-          "tipo": "aleluya",
-          "cita": "F 729, 1",
-          "texto": "Éste es mi Hijo, el amado, mi predilecto. Escuchadlo."
+          "tipo": "Aleluya",
+          "cita": "Mt 17, 5c",
+          "texto": "Este es mi Hijo, el amado, en quien me complazco. Escuchadlo."
         }
       },
       "presentacion": {
@@ -5837,31 +5847,31 @@
         "date": "6\tde agosto",
         "saint_name": "LA TRANSFIGURACIÓN",
         "rank": "Fiesta",
+        "day_name": "LA TRANSFIGURACIÓN DEL SEÑOR",
         "primera": {
-          "titulo": "La ley del Espíritu de vida en Cristo Jesús te ha librado de la ley del pecado y de la muerte",
-          "cita": "Rom 8, 1-4",
-          "texto": "Hermanos:\nNo hay condena alguna para los que están en Cristo Jesús, pues la ley del Espíritu de vida en Cristo Jesús te ha librado de la ley del pecado y de la muerte. Lo que era imposible a la ley, por cuanto que estaba debilitada a causa de la carne, lo ha hecho Dios: enviando a su Hijo en semejanza de carne de pecado y en orden al pecado, condenó el pecado en la carne, para que la justa exigencia de la ley se cumpliera en nosotros, los que actuamos no de acuerdo con la carne, sino de acuerdo con el Espíritu."
+          "titulo": "Su vestido era blanco como nieve",
+          "cita": "Dan 7, 9-10. 13-14",
+          "texto": "Miré y vi que colocaban unos tronos. Un anciano se sentó.\nSu vestido era blanco como nieve, su cabellera como lana limpísima;\nsu trono, llamas de fuego; sus ruedas, llamaradas;\nun río impetuoso de fuego brotaba y corría ante él.\nMiles y miles lo servían, millones estaban a sus órdenes.\nComenzó la sesión y se abrieron los libros.\nSeguí mirando. Y en mi visión nocturna\nvi venir una especie de hijo de hombre entre las nubes del cielo.\nAvanzó hacia el anciano y llegó hasta su presencia.\nA él se le dio poder, honor y reino.\nY todos los pueblos, naciones y lenguas lo sirvieron.\nSu poder es un poder eterno, no cesará.\nSu reino no acabará."
         },
         "salmo": {
-          "cita": "F 727, 3",
-          "antifona": "El Señor reina, altísimo sobre toda la tierra.",
-          "texto": "V/. El Señor reina, la tierra goza, se alegran las islas innumerables. Justicia y derecho sostienen su trono. R/.\n\nV/. Los cielos pregonan su justicia, y todos los pueblos contemplan su gloria. Ante él se postran todos los dioses. R/.\n\nV/. Porque tú eres, Señor, altísimo sobre toda la tierra, encumbrado sobre todos los dioses. R/."
+          "cita": "Sal 96, 1-2. 5-6. 9 (R.: 1a. 9b)",
+          "antifona": "El Señor reina, Altísimo sobre toda la tierra.",
+          "texto": "V/. El Señor reina, la tierra goza, se alegran las islas innumerables. Tiniebla y nube lo rodean, justicia y derecho sostienen su trono. R/.\n\nV/. Los montes se derriten como cera ante el Señor, ante el Señor de toda la tierra; los cielos pregonan su justicia, y todos los pueblos contemplan su gloria. R/.\n\nV/. Porque tú eres, Señor, Altísimo sobre toda la tierra, encumbrado sobre todos los dioses. R/."
+        },
+        "segunda": {
+          "titulo": "Esta voz del cielo es la que oímos",
+          "cita": "2 Pe 1, 16-19",
+          "texto": "Queridos hermanos:\nNo nos fundábamos en fábulas fantasiosas cuando os dimos a conocer el poder y la venida de nuestro Señor Jesucristo, sino en que habíamos sido testigos oculares de su grandeza.\nPorque él recibió de Dios Padre honor y gloria cuando desde la sublime Gloria se le transmitió aquella voz:\n«Este es mi Hijo amado, en quien me he complacido».\nY esta misma voz, transmitida desde el cielo, es la que nosotros oímos estando con él en la montaña sagrada.\nAsí tenemos más confirmada la palabra profética y hacéis muy bien en prestarle atención como a una lámpara que brilla en un lugar oscuro hasta que despunte el día y el lucero amanezca en vuestros corazones."
         },
         "evangelio": {
           "titulo": "Mientras oraba, el aspecto de su rostro cambió",
-          "cita": "F 730, 1",
-          "texto": "En aquel tiempo, Jesús cogió a Pedro, a Juan y a Santiago y subió a lo alto de la\nmontaña, para orar. Y, mientras oraba, el aspecto de su rostro cambió, sus vestidos\nbrillaban de blancos.\nDe repente, dos hombres conversaban con él: eran Moisés y Elías, que, apareciendo\ncon gloria, hablaban de su muerte, que iba a consumar en Jerusalén.\nPedro y sus compañeros se caían de sueño; y, espabilándose, vieron su gloria y a los\ndos hombres que estaban con él. Mientras éstos se alejaban, dijo Pedro a Jesús:\n—«Maestro, qué bien se está aquí. Haremos tres tiendas: una para ti, otra para\nMoisés y otra para Elías.»\nNo sabía lo que decía.\nTodavía estaba hablando, cuando llegó una nube que los cubrió. Se asustaron al\n\n============================================================\nPAGE 37\n============================================================\nentrar en la nube. Una voz desde la nube decía:\n—«Éste es mi Hijo, el escogido, escuchadle.»\nCuando sonó la voz, se encontró Jesús solo. Ellos guardaron silencio y, por el\nmomento, no contaron a nadie nada de lo que habían visto."
+          "cita": "Lc 9, 28b-36",
+          "texto": "En aquel tiempo, tomó Jesús a Pedro, a Juan y a Santiago y subió a lo alto del monte para orar. Y, mientras oraba, el aspecto de su rostro cambió y sus vestidos brillaban de resplandor.\nDe repente, dos hombres conversaban con él: eran Moisés y Elías, que, apareciendo con gloria, hablaban de su éxodo, que él iba a consumar en Jerusalén.\nPedro y sus compañeros se caían de sueño, pero se espabilaron y vieron su gloria y a los dos hombres que estaban con él.\nMientras estos se alejaban de él, dijo Pedro a Jesús:\n«Maestro, ¡qué bueno es que estemos aquí! Haremos tres tiendas: una para ti, otra para Moisés y otra para Elías».\nNo sabía lo que decía.\nTodavía estaba diciendo esto, cuando llegó una nube que los cubrió con su sombra. Se llenaron de temor al entrar en la nube.\nY una voz desde la nube decía:\n«Este es mi Hijo, el Elegido, escuchadlo».\nDespués de oírse la voz, se encontró Jesús solo. Ellos guardaron silencio y, por aquellos días, no contaron a nadie nada de lo que habían visto."
         },
         "aclamacion": {
-          "tipo": "aleluya",
-          "cita": "F 729, 1",
-          "texto": "Éste es mi Hijo, el amado, mi predilecto. Escuchadlo."
-        },
-        "day_name": "LA TRANSFIGURACIÓN DEL SEÑOR",
-        "segunda": {
-          "titulo": "Esta voz del cielo la oímos nosotros",
-          "cita": "2 Pe 1, 16-19",
-          "texto": "Queridos hermanos:\nCuando os dimos a conocer el poder y la última venida de nuestro Señor Jesucristo, no nos fundábamos en fábulas fantásticas, sino que habíamos sido testigos oculares de su grandeza.\nÉl recibió de Dios Padre honra y gloria, cuando la Sublime Gloria le trajo aquella voz: «Éste es mi Hijo amado, mi predilecto.» Esta voz, traída del cielo, la oímos nosotros, estando con él en la montaña sagrada.\nEsto nos confirma la palabra de los profetas, y hacéis muy bien en prestarle atención, como a una lámpara que brilla en un lugar oscuro, hasta que despunte el día, y el lucero nazca en vuestros corazones."
+          "tipo": "Aleluya",
+          "cita": "Mt 17, 5c",
+          "texto": "Este es mi Hijo, el amado, en quien me complazco. Escuchadlo."
         }
       },
       "adviento_4": {
