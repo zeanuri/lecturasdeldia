@@ -4,9 +4,9 @@
     "dialect": "bizkaiera",
     "cita_convention": "batua",
     "coverage_status": "Estaldura partziala; iturriak mugatuta",
-    "coverage_pct_calendar_texto": 61,
-    "calendar_slots_populated": 1841,
-    "calendar_slots_total": 2994,
+    "coverage_pct_calendar_texto": 80,
+    "calendar_slots_populated": 2395,
+    "calendar_slots_total": 2997,
     "coverage_source": "euskera/bizkaiera (1909 accepted Basque readings)",
     "no_translation_policy": true,
     "last_built": "2026-06-02",
@@ -2352,16 +2352,18 @@
         },
         "salmo": {
           "titulo": "",
-          "cita": "F 727, 3",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "cita": "Sal 96, 1-2. 5-6. 9 (R.: 1a. 9b)",
+          "texto": "Laino eta hodei baltzak ditu inguruan, \njustizia eta zuzenbidea tronuaren oinarri. R/.\n\nMendiak argizaria lez urtzen dira Jaunaren aurrean, \nlur osoaren Jabearen aurrean.\nZeruek haren salbamen-ekintza iragarten dabe,\nherri guztiek haren ospea ikusten. R/.\n\nIzan ere, Jauna, \nGoi-goiko zara Zu lur guztiaren gainetik, \njainko guztien gainetik gorengo. R/.\n",
+          "antifona": "Errege da Jauna! Alaitu bedi lurra, poztu bediz uharte ugariak!",
+          "unmatched": false,
+          "_source": "Sal96,1-2.5-6.9(R+1ay9a)_eu.txt"
         },
         "evangelio": {
-          "titulo": "",
-          "cita": "F 730, 1",
-          "texto": "",
-          "unmatched": true
+          "titulo": "Aurpegia eguzkia baizen disdiratsu bihurtu jakon.",
+          "cita": "Mt 17, 1-9",
+          "texto": "\tAldi haretan, hartu zituan Jesusek Beragaz Pedro, Santiago eta honen anaia Joan eta mendi garai batera eroan zituan aparte. Eta antzaldatu egin zan hareen aurrean: aurpegia eguzkia baizen disdiratsu bihurtu jakon eta jantziak argia baizen zuri. Haretan, Moises eta Elias agertu jakezan, Jesusegaz berbetan.\n\tOrduan, Pedrok esan eutsan Jesusi: «Jauna, bai ederto gagozala hemen! Gura badozu, hiru txabola egingo ditut: bata Zuretzat, bestea Moisesentzat eta bestea Eliasentzat».\n\tBerbetan ziharduala, hodei argi batek estaldu ebazan, eta ahots batek esan eban hodeitik: «Hauxe da nire Seme maitea, berau dot atsegin. Entzuiozue». Hori entzutean, ahuspez lurrera jausi ziran ikasleak, bildurraren bildurrez.\n\tHurreratu jaken Jesus, ikutu eta esan eutsen: «Jagi zaiteze; ez izan bildurrik». Begiak jasorik, Jesus bakarrik ikusi eben, beste inor ez.\n\tMenditik behera jaisterakoan, Jesusek agindu eutsen: «Ez esan inori ikusi dozuen hau, harik eta Gizonaren Semea hilen artetik biztu arte».\n",
+          "unmatched": false,
+          "_source": "mt17,1-9_eu.txt"
         },
         "aclamacion": {
           "titulo": "",
@@ -2369,6 +2371,13 @@
           "texto": "",
           "tipo": "",
           "unmatched": true
+        },
+        "segunda": {
+          "titulo": "Guk geuk entzun genduan zerutik etorritako ahots hori.",
+          "cita": "2 P 1, 16-19",
+          "texto": "\tSenide maiteok: Jesu Kristo gure Jauna ahalmenezko etorriko dan egunari buruz berba egin geuntsuenean, ez ginan oinarritu irudipenezko ipuinetan, geure esperientzian baino, geure begiz ikusi genduan-eta haren handitasuna.\n\tJesusek bere Aita  Jainkoagandik hartu zituan ohorea eta aintza, honan esan eutsan-eta Jainkoaren aintza bikainetik etorritako berbeak: Hau da nire Semea, nire maitea; honegan dot neure atsegina. Guk geuk entzun genduan zerutik etorritako berba hori, Beragaz mendi santuan gengozala.\n\tBadogu profeten berbea ere, hitz guztiz sendoa, eta zuek ederto egiten dozue hitz horri adi-adi egonez: toki ilunean argi egiten dauan kriseilua lez da zuentzat, eguna zabaldu eta goizeko izarra zuen bihotzetan jagi arte.\n",
+          "unmatched": false,
+          "_source": "2p1,16-19_eu.txt"
         }
       },
       "cuaresma_5": {
@@ -13039,10 +13048,11 @@
       "11_jueves": {
         "day_name": "",
         "primera": {
-          "titulo": "",
+          "titulo": "Elias suzko zurrunbiloan eroana izan zanean, haren espirituaz bete zan Eliseo.",
           "cita": "Si 48, 1-14",
-          "texto": "",
-          "unmatched": true
+          "texto": "Elias sortu zan, sua lako profetea:\nharen berbak zuziak lez erreten eban.\nGosetea ekarri eban israeldarren gain,\neta asko murriztu eban herria bere jainkozaletasun sutsuaz.\nJaunaren aginduz euria egitea galazo eban,\neta hiru bider zerutik sua jatsiazo ere bai.\nZein ospetsu izan zinan, Elias, zeure mirariakaitik!\nNor harrotuko da zu adinakoa dalakoan?\nZuk ekarri zenduan hildako bat bizitzara,\nGoi-goikoaren berbaz Hildakoen Egoitzatik atarata;\nzuk erregeen hondamendia ekarri\neta handikiak agintetik bota zenduzan;\nzuri Jaunak agiraka egin eutsun Sinai mendian,\neta zigortzeko bere erabagiak azaldu; \nzuk erregeak igurtzi zenduzan,\nsinesbakoen aurka mendekatzeko,\neta profetak igurtzi zenduzan zure ondorengoak izateko.\nSuzko zurrunbiloan eroan zinduezan\nsuzko zaldiek eroien gurdian.\nIdatzirik dago ezarritako sasoian etortekoa zarala\nJaunaren sumina, lehertu baino lehen, baretzera:\ngurasoak eta seme-alabak alkarregaz baketuazoteko\neta Jakoben leinuak indarbarritzeko.\nZorionekoak ikusi zinduezanak\neta maitasunean lokarturik dagozanak;\ngu ere biziko gara, bai.\nElias zurrunbiloan desagertu zanean,\nharen espirituaz bete zan Eliseo.\nBere bizitzan zehar ez eben buruzagiek ikaratu,\ninork ere ez menpean hartu.\nEzer ez ezinezko harentzat,\nheriotzako loaldian ere profetagintzan jardun eban.\nBizi zala, mirariak egin ebazan;\nhil ondoren ere, harrigarriak izan ziran haren egintzak.\n",
+          "unmatched": false,
+          "_source": "si48,1-15_eu.txt"
         },
         "salmo": {
           "titulo": "",
@@ -13101,9 +13111,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 59, 3. 4-5. 12-14 (R.: 7b)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "Zapuztu egin gaituzu, oi Jainko, eta hautsi; \nhasarre bazaitugu ere, bihurtu zakiguz! \nAstindu dozu lurraldea eta zartatu; \nkonpondu haren pitzadurak, \nhondatzeko zorian dago-eta. R/.\n\nGorriak ikusiazo deutsazuz zeure herriari, \nzorabiozko ardoa deuskuzu edanazo. \nBaina nork gidatuko nau uri sendora, \nnork eroango Edomera? R/.\n\nEz al gaituzu Zeuk, oi Jainko, zapuztu? \nEz al deutsazu uko egin gure gudarosteagaz urteteari? \nEmoiguzu laguntza arerioen aurka, \nustela da-eta giza laguntza. \nJainkoagaz lortuko dogu garaipena,  \nBerak deuskuz arerioak zapalduko. R/.\n",
+          "antifona": "Lagundu eiguzu zure eskoiaz, Jauna, eta entzun eiguzu.",
+          "unmatched": false,
+          "_source": "Sal59,3.4-5.12-13(R+7b)_eu.txt"
         }
       },
       "12_martes": {
@@ -13496,9 +13507,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Is 38, 10. 11. 12abcd. 16bcd (R.: cf. 17b)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "Hau pentsau neban:\nBizitzako sasoirik onenean joan behar;\nHildakoen egoitzara naroe, \ngainerako bizi-urteak kentzen deustez. R/.\n\nHau pentsau neban: \nEz dot gehiago Jauna ikusiko \nbizidunen lurrean, \neta ez gizakirik \nmundu honetako bizilagunen artean. R/.\n\nBizia kentzen deuste \neta urrun eroaten, \nartzainaren oihal-etxola lez.\nEhotzen amaitu ondoren, \nehuleak mozten dauan \nehunaren antzeko da nire bizia. R/.\n\nJaunak gordetzen dituenak biziko dira, \neta ni ere eurekin biziko naz;\nosatu egin nozu, bizia barritu deustazu! R/.\n",
+          "antifona": "Jauna, Zeuk gorde dozu hero-zulotik nire bizia.",
+          "unmatched": false,
+          "_source": "Is38,10.11.12abcd.16(R+17b)_eu.txt"
         }
       },
       "15_sabado": {
@@ -13675,9 +13687,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 58, 2-3. 4. 10-11. 17. 18 (R.: 17d)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "Ene Jainko, libratu nagizu arerioakandik, \ngorde ni erasotzaileakandik.\nLibratu nagizu gaizkileakandik, \nsalbatu hiltzaileakandik. R/.\n\nBegira, zelatan dagoz nire kontra, \nazpijokoan dabilkidaz ahaltsuak.\nEz dot hobenik, ez pekaturik egin, Jauna; \nerrubakoa nazan arren, bizkor prestatzen dira erasora. R/.\n\nZuri begira nago, ene indar, \nZeu zaitut-eta gordeleku, ene Jainko.\nJainko leiala ondora jat etorriko, \nHarek nau arerioen lepotik poztuazoko. R/.\n\nNik, ostera, zure indarra dot kantatuko, \ngoizean zure maitasuna poz-oihuz ospatuko,\nZeu izan zaitut-eta babesleku, \nlarrialdian ihesleku. R/.\n\nSoinua joko deutsut, ene indar Horri, \nZeu zaitut-eta, Jainko, neure babesleku, \nZeu neure Jainko leiala. R/.\n",
+          "antifona": "Nire nahigabe egunean Jauna dot ihesleku",
+          "unmatched": false,
+          "_source": "Sal58,2-3.4-5a.10-11.17.18(R+17d)_eu.txt"
         }
       },
       "17_jueves": {
