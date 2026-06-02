@@ -5,8 +5,8 @@
     "cita_convention": "batua",
     "coverage_status": "Estaldura partziala; iturriak mugatuta",
     "coverage_pct_calendar_texto": 80,
-    "calendar_slots_populated": 2395,
-    "calendar_slots_total": 2997,
+    "calendar_slots_populated": 2400,
+    "calendar_slots_total": 2998,
     "coverage_source": "euskera/bizkaiera (1909 accepted Basque readings)",
     "no_translation_policy": true,
     "last_built": "2026-06-02",
@@ -5222,16 +5222,18 @@
         },
         "salmo": {
           "titulo": "",
-          "cita": "F 727, 3",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "cita": "Sal 96, 1-2. 5-6. 9 (R.: 1a. 9b)",
+          "texto": "Laino eta hodei baltzak ditu inguruan, \njustizia eta zuzenbidea tronuaren oinarri. R/.\n\nMendiak argizaria lez urtzen dira Jaunaren aurrean, \nlur osoaren Jabearen aurrean.\nZeruek haren salbamen-ekintza iragarten dabe,\nherri guztiek haren ospea ikusten. R/.\n\nIzan ere, Jauna, \nGoi-goiko zara Zu lur guztiaren gainetik, \njainko guztien gainetik gorengo. R/.\n",
+          "antifona": "Errege da Jauna! Alaitu bedi lurra, poztu bediz uharte ugariak!",
+          "unmatched": false,
+          "_source": "Sal96,1-2.5-6.9(R+1ay9a)_eu.txt"
         },
         "evangelio": {
-          "titulo": "",
-          "cita": "F 730, 1",
-          "texto": "",
-          "unmatched": true
+          "titulo": "Hauxe da nire Seme maitea.",
+          "cita": "Mk 9, 2-10",
+          "texto": "\tAldi haretan, hartu zituan Jesusek Beragaz Pedro, Santiago eta Joan, eta mendi garai batera eroan zituan eurak bakarrik. Eta antzaldatu egin zan hareen aurrean. Jantziak disdiratsu bihurtu jakozan, zuri-zuri, munduan inork jarri daikezan baino zuriago. Eta Elias eta Moises agertu jakezan, Jesusegaz berbetan.\n\tPedrok esan eutsan Jesusi: «Maisu, bai ederto gagozala hemen! Egin dagiguzan hiru txabola: bata Zuretzat, bestea Moisesentzat eta bestea Eliasentzat». Ez ekian zer esaten eban; izan ere, zehatz bildurrak harturik egozan.\n\tOrduan, hodei batek estaldu egin ebazan, eta ahots batek urten eban hodeitik: «Hauxe da nire Seme maitea. Entzuiozue». Eta haretan, ingurura begiratu eta Jesus bakarrik ikusi eben eurakaz, beste inor ez.\n\tMenditik behera jaisterakoan, ikusi ebenaren barri inori ez emoteko agindu eutsen Jesusek, harik eta Gizonaren Semea hilen artetik biztu arte. Agindu hori bete eben, baina alkarri itauntzen eutsoen zer izan ete leitekean «hilen artetik bizte» hori.\n",
+          "unmatched": false,
+          "_source": "mc9,2-10_eu.txt"
         },
         "aclamacion": {
           "titulo": "",
@@ -5239,6 +5241,13 @@
           "texto": "",
           "tipo": "",
           "unmatched": true
+        },
+        "segunda": {
+          "titulo": "Guk geuk entzun genduan zerutik etorritako ahots hori.",
+          "cita": "2 P 1, 16-19",
+          "texto": "\tSenide maiteok: Jesu Kristo gure Jauna ahalmenezko etorriko dan egunari buruz berba egin geuntsuenean, ez ginan oinarritu irudipenezko ipuinetan, geure esperientzian baino, geure begiz ikusi genduan-eta haren handitasuna.\n\tJesusek bere Aita  Jainkoagandik hartu zituan ohorea eta aintza, honan esan eutsan-eta Jainkoaren aintza bikainetik etorritako berbeak: Hau da nire Semea, nire maitea; honegan dot neure atsegina. Guk geuk entzun genduan zerutik etorritako berba hori, Beragaz mendi santuan gengozala.\n\tBadogu profeten berbea ere, hitz guztiz sendoa, eta zuek ederto egiten dozue hitz horri adi-adi egonez: toki ilunean argi egiten dauan kriseilua lez da zuentzat, eguna zabaldu eta goizeko izarra zuen bihotzetan jagi arte.\n",
+          "unmatched": false,
+          "_source": "2p1,16-19_eu.txt"
         }
       },
       "presentacion": {
@@ -8116,16 +8125,18 @@
         },
         "salmo": {
           "titulo": "",
-          "cita": "F 727, 3",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "cita": "Sal 96, 1-2. 5-6. 9 (R.: 1a. 9b)",
+          "texto": "Laino eta hodei baltzak ditu inguruan, \njustizia eta zuzenbidea tronuaren oinarri. R/.\n\nMendiak argizaria lez urtzen dira Jaunaren aurrean, \nlur osoaren Jabearen aurrean.\nZeruek haren salbamen-ekintza iragarten dabe,\nherri guztiek haren ospea ikusten. R/.\n\nIzan ere, Jauna, \nGoi-goiko zara Zu lur guztiaren gainetik, \njainko guztien gainetik gorengo. R/.\n",
+          "antifona": "Errege da Jauna! Alaitu bedi lurra, poztu bediz uharte ugariak!",
+          "unmatched": false,
+          "_source": "Sal96,1-2.5-6.9(R+1ay9a)_eu.txt"
         },
         "evangelio": {
-          "titulo": "",
-          "cita": "F 730, 1",
-          "texto": "",
-          "unmatched": true
+          "titulo": "Otoitzean ziharduela, aurpegiko itxura aldatu egin jakon.",
+          "cita": "Lk 9, 28b-36",
+          "texto": "\tAldi haretan, hartu zituan Jesusek Beragaz Pedro, Santiago eta Joan, eta mendira igon eban otoitz egitera. Otoitzean ziharduala, aurpegiko itxura aldatu egin jakon, eta jantzia zuri disdiratsu bihurtu. Haretan, gizon bik Jesusegaz berbetan ziharduen, Moisesek eta Eliasek, aintzatan agertuak, Jerusalemen jazotekoa zan Jesusen heriotzaz berba egiten eben. Pedro eta lagunak logureak jota egozan; baina esnatu ziran eta Jesusen aintza eta Haregaz egozan gizon biak ikusi ebezan.\nHoneek alde egitean, Pedrok esan eutsan Jesusi: «Maisu, bai ederto gagozala hemen! Egin dagiguzan hiru txabola: bata Zuretzat, bestea Moisesentzat eta bestea Eliasentzat». Ez ekian zer esaten eban ere.\n\tHau esaten ziharduala, hodei batek estaldu zituan, eta hodeian sartzean bildurrak hartu zituan. Ahots batek urten eban hodeitik, esanez: «Hauxe da nire Semea, nire Aukeratua. Entzuiozue». Ahotsa isiltzean, Jesus bakarrik agiri zan.\n\tIkasleek isilik gorde eben, eta egun hareetan ez eutsoen inori esan ikusitakorik ezer.\n",
+          "unmatched": false,
+          "_source": "lc9,28b-36_eu.txt"
         },
         "aclamacion": {
           "titulo": "",
@@ -22871,7 +22882,7 @@
       },
       "evangelio": {
         "titulo": "",
-        "cita": "F 718, 3",
+        "cita": "Lk 12, 32-34",
         "texto": "",
         "unmatched": true
       }
