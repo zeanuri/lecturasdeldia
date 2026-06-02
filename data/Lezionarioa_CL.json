@@ -5,7 +5,7 @@
     "cita_convention": "batua",
     "coverage_status": "Estaldura partziala; iturriak mugatuta",
     "coverage_pct_calendar_texto": 80,
-    "calendar_slots_populated": 2400,
+    "calendar_slots_populated": 2401,
     "calendar_slots_total": 2998,
     "coverage_source": "euskera/bizkaiera (1909 accepted Basque readings)",
     "no_translation_policy": true,
@@ -22881,10 +22881,11 @@
         "unmatched": true
       },
       "evangelio": {
-        "titulo": "",
+        "titulo": "Gogoko izan dau zuen Aitak erreinua zuei emotea.",
         "cita": "Lk 12, 32-34",
-        "texto": "",
-        "unmatched": true
+        "texto": "\tAldi haretan, Jesusek esan eutsen ikasleei: «Ez bildurrik izan, ene artaldetxu hori ze, gogoko izan dau zuen Aitak erreinua zeuei emotea.\n\tSaldu zeuen ondasunak eta emon limosna. Pilotu egizuez zeruan hondatuko ez diran ondasunak, hutsik egingo ez deutsuen altxorra; izan be, hara ez da lapurrik hurreratzen, ezta han sitsak jaten be. Ze, zuen altxorra non, zuon bihotza han».\n",
+        "unmatched": false,
+        "_source": "lc12,32-34_eu.txt"
       }
     },
     "06-24": {
