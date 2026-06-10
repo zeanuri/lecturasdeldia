@@ -1,0 +1,533 @@
+{
+  "meta": {
+    "title": "Lekzionarioa Hildakoen Aldeko Mezetarako",
+    "title_es": "Leccionario para las Misas de Difuntos",
+    "source": "IRAKURGAIAK 4 BIZK.pdf, pp.433-492 (HILDAKOEN ALDEKO MEZAK)",
+    "scaffold_from": "Leccionario_Difuntos.json",
+    "description": "Hildakoen aldeko Mezetako irakurgaiak, salmoak eta ebanjelioak (CEE, Bizkaiera).",
+    "notes": "moniciones_entrada eta oraciones_fieles arrayak hutsik daude eta hala behar dute izan: CEE Lekzionarioko bizkaierazko sei liburukietan ez dago halako sekziorik (2026-05-09 egiaztatua, 3.108 orrialdetan zehar 9 sekzio-marka aldaeren bilaketa). Espainolezko atalak Mezaliburutik / Hileta-liburutik datoz, ez Lekzionariotik.",
+    "coverage": "63/63 lecturas (100%) — Difuntos liturgically complete"
+  },
+  "moniciones_entrada": [],
+  "lecturas": [
+    {
+      "numero": 1,
+      "primera": {
+        "cita": "1 Kor 15, 51-57",
+        "titulo": "Behin betiko garaitua geratu da heriotza.",
+        "texto": "SENIDEOK: Misterio bat adierazoten deutsuet: ez gara danok hilko, baina\nizatez aldatuak izango gara danok unetxu baten, begien itxi-edegi baten,\nazkeneko turuta-hotsagaz batera. Izan be, joko dau turutak, eta hildakoak\nustelezin biztuko dira, eta gu izatez aldatuak izango. Gure izate ustelkor\nhonek bizi ustelezinez jantzi behar dau, eta gure izate hilkorrak\nhilezkortasunez.\n\nGure izate ustelkorra bizi ustelezinez jantziko danean, eta izate hilkorra\nhilezkortasunez, orduan beteko da Liburu Santuak dinoana: «Behin betiko\ngaraitua izan da heriotza. Non dok, heriotza, heure garaipena? Non heure\neztena?» Heriotza dakarren eztena pekatua da, eta pekatuak legetik hartzen\ndau bere indarra. Eskerrak Jainkoari, garaipena emon deuskulako Jesu\nKristo gure Jaunaren bitartez!\n\nJaunak esana.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p455_b02"
+      },
+      "salmo": {
+        "cita": "Sal 114, 5-6; 115, 10-11. 15-16ac",
+        "antifona": "Ibiliko naz Jaunaren aurrean,",
+        "texto": "bizidunen lurraldean.\nEdo: Aleluia.\n\nV. Errukiorra eta zintzoa da Jauna,\nerrukitsua gure Jainkoa.\nJaunak zaintzen ditu apalak;\nlur jota nengoan, eta salbatu nau.  R/.\n\nV. Sendo nengoan fedean,\n«Ni bai zoritxarreko» esatean be. \nHau esan neban neure larrialdian:\n«Gizaki guztiak guzurti dira».  R/.\n\nV. Mingarri jako Jaunari\nbere fededunen heriotza.\nBai, zure zerbitzari naz, Jauna,\naskatu dozuz nire kateak.  R/.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p447_b01"
+      },
+      "evangelio": {
+        "cita": "Lk 23, 44-46. 50. 52-53; 24, 1-6a",
+        "titulo": "Aita, zeure eskuetan izten dot neure espiritua!",
+        "texto": "E\nGUERDI aldea zan, eta ilundu egin eban lurbira osoan hirurak \narte. Eguzkia ezkutatu egin zan eta santutegiko oihala erdi-erditik \nurratu zan. Jesusek deadar handiz esan eban: «Aita, zeure eskuetan \nizten dot neure espiritua!» Eta hori esanda, azken arnasa emon eban.\n\t Orduan, Zaharren kontseiluko kide bat etorri zan, Jose eritxona, gizon \non eta zintzoa. Pilatogana aurkeztu eta Jesusen gorpua eskatu eutson. \nJesus kurutzetik jatsirik, izara baten batu eban eta hatxean zulatutako eta \noraindik beste inor lurperatu bako hilobian ezarri.\n\t Astearen lehenengo-egunean, goizean goiz, hilobira joan ziran \nemakumeak, prestaturik zituen usain gozoko ukenduak eroanez. Hilobi-\nsarrerako harria iraulita aurkitu eben. Sartu ziran, baina ez eben Jesus \nJaunaren gorpua aurkitu. ",
+        "unmatched": false,
+        "cita_es_scaffold": "Lk 23, 44-49; 24, 1-6",
+        "_source": "bizkaiera_difuntos_extract.md#v4_p467_b02",
+        "_match_kind": "bizkaiera_lectionary_authoritative"
+      }
+    },
+    {
+      "numero": 2,
+      "primera": {
+        "cita": "Eg 10, 34-43",
+        "titulo": "Egun hareetan, honan berba egin eban Pedrok: «Orain jaubetzen naz benetan Jainkoak ez dauala bereizkeriarik egiten, ezpada ze, onartu egiten dauala begirune deutsona eta beraren nahia egiten dauana, edozein herritakoa dala be.",
+        "texto": "Harek bere hitza bialdu eutsen israeldarrei, guztien Jauna dan Jesu Kristoren bidez bakearen Barri Ona iragarriz. Badakizue zer jazo zan, Galileatik hasi eta Judea osoan, Joanek iragarri eban bateoaren ondoren: Nazareteko Jesusena, hain zuzen be: Jainkoak Espiritu Santuaren indarraz igurtzi eban, eta harek on egiten eta deabruak hartutako guztiak osatzen igaro eban bizitza, Jainkoa beragaz eban-eta.\n\nEta geu gara harek judeguen lurraldean eta Jerusalemen egindako guztien testigu. Jesus hau egur batetik dindilizka hil eben; baina Jainkoak biztu egin eban hirugarren egunean eta agertzeko ahalmena emon eutson; ez, ostera, herri guztiari, Jainkoak aurrez testigutzat aukeratutakoei baino: geuri, hau da, ha hilen artetik biztu ondoren haregaz jan eta edan dogunoi.\n\nJesusek berak agindu euskun herriari predikatzeko eta autortzeko, bera dala Jainkoak bizien eta hilen epaile ipini dauana. Profeta guztiek autormen hau egiten dabe haretaz: harengan sinistu dagien guztiek pekatuen parkamena hartuko dabela, beraren izenean».\n\nJaunak esana.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p440_b01"
+      },
+      "salmo": {
+        "cita": "Sal 129, 1-2. 3-4. 5-6. 7. 8",
+        "antifona": "Barru-barrutik dei egiten deutsut, Jauna.",
+        "texto": "Edo: Jaunagan dago errukia,\nharengan askatasun ugaria.\n\nV. Barru-barrutik dei egiten deutsut, Jauna;\nentzun, Jauna, nire berbea!\nBegoz zuhur zure belarriak\nnire erregu-oihura.  R/.\n\nJaunaren, gure Jainkoaren, etxeagaitik,\nzoriona eskatzen dot zuretzat.  R/.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p448_b02",
+        "_match_kind": "psalm_chapter_fallback"
+      },
+      "evangelio": {
+        "cita": "Jn 11, 17-27",
+        "titulo": "Neu naz biztuera eta bizia.",
+        "texto": "A\nLDI haretan, Jesus heldu zanean, Lazarok baeroiazan jadanik lau \negun hilobian. Betania hur dago Jerusalemdik, hiru kilometro \ningurura. Eta judegu asko etorri zan Marta eta Mariagana, \nnebeagaitik doluminak emotera.\n\t Martak, Jesus etorrela entzun ebaneko, bidera urten eutson; Maria, \nbarriz, etxean gelditu zan. Martak esan eutson Jesusi: «Jauna, hemen izan \nbazina, gure nebea ez zan hilko. Halan be, badakit eskatuko deutsazun \nguztia emongo deutsula Jainkoak».\n\t Jesusek erantzun eutson: «Biztuko da zure nebea». Eta Martak: «Badakit \nbiztuko dana azken egunean, hildakoak biztueran».\n\t Jesusek esan eutson orduan: «Neu naz biztuera eta bizia; Nigan sinisten \ndauana, hilda be, biziko da, eta bizi dana, Nigan sinisten badau, ez da betiko \nhilko. Sinisten dozu hori?» Martak erantzun eutson: «Bai, Jauna, sinisten \ndot Zu Mesias zarala, Jainkoaren Semea, mundura etortzekoa zana».\nJaunak esana.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p472_b01"
+      }
+    },
+    {
+      "numero": 3,
+      "primera": {
+        "cita": "Job 19, 1. 23-27",
+        "titulo": "Jobek esan eban:",
+        "texto": "«Ai nire hitzak idatzita geldituko balira,\nliburuan ezarrita!\nEdota burdinazko eztenaz eta berunaz\nbetiko grabatuta hatxean!\nNik badakit nire eskubidearen babeslea bizi dana\neta, azkenean, hautsaren gainetik jagiko dala.\nNire narruazal hau hondatu ondoren,\ngorputzik barik, Jainkoa ikusiko dot.\nNik neuk ikusiko dot, eta ez bestek».",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p435_b02"
+      },
+      "salmo": {
+        "cita": "Sal 41, 2. 3. 5bcd; 42, 3. 4. 5",
+        "antifona": "Jainko biziaren egarri naz.",
+        "texto": "V. Basahuntza gogo biziz uretara bezala,\nhalantxe nire gogoa, ene Jainko, Zugana.  R/.\n\nV. Jainkoaren egarri naz, Jainko biziaren egarri:\nnoiz helduko ete naz Jainkoaren aurpegia ikustera?  R/.\n\nV. Gogoan dot, zelan joaten nintzan tenplura, Jainkoaren etxera,\npoz-oihuz eta goraka, jai-giroan, jentetzagaz batera.  R/.\n\n R/. Bialdu zeure argia eta egia, gidatu nagiela,\neta eroan zure mendi santura, zure bizilekura.  R/.\n\nV. Eta helduko naz Jainkoaren altarara,\nneure poz betea dodan Jainkoagana.\nZitaraz goretsiko zaitut, Jainkoa, ene Jainkoa.  R/.\n\nV. Zergaitik zagoz, ene barrua, lur jorik?\nZergaitik ezin egonik?\nItxaron Jainkoagan.\nGoretsiko dot, barriz ere,\nneure Salbatzailea eta Jainkoa.  R/.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p445_b01",
+        "_match_kind": "psalm_chapter_fallback"
+      },
+      "evangelio": {
+        "cita": "Jn 5,24-29",
+        "titulo": "Jesu Kristoren Ebanjelioa San Joanen liburutik",
+        "texto": "LDI haretan, esan eutsen Jesusek judeguei: Bene-benetan \ndinotsuet: Nire berbea entzun eta bialdu nauanagan sinisten \ndauanak, betiko bizitza dauka; ez da kondenatua izango, ze, \nheriotzatik bizitzara igaroa da daborduko.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p470_b02"
+      }
+    },
+    {
+      "numero": 4,
+      "primera": {
+        "cita": "Erm 8, 14-23",
+        "titulo": "Senideok: Jainkoaren Espirituak gidatzen dituanak, horreetxek dira Jainkoaren seme-alaba. Zuek ez dozue hartu esklabo egiten zaituen espiritua, barriro be bildurrez bizitzera eroango zaituena; zuek seme-alaba egiten zaituen Espiritua hartu dozue, eta Espirituaren bidez «Abba!», hau da, «Aita!», dei egiten dozue.",
+        "texto": "Espiritu honek berak gure espirituagaz bat egiten dau Jainkoaren seme-alaba garala autortzeko; eta, seme-alaba bagara, baita oinordeko be, Jainkoaren oinordeko eta Kristoren oinordekide; izan be, nekeetan Kristoren kideko bagara, aintzan be haren kideko izango gara-eta.\n\nNire eretxian, oraingo neke-lanak ezer gitxi dira gero gugan azalduko dan aintzaren aldean. Izadia bera be gogo biziz dago, zain-zain, Jainkoak noiz agertuko bere seme-alaba izatea zer dan. Izadiak bere benetako helburua galdu izan arren –ez bere gogoz, horretara behartu ebanagaitik baino–, badau itxaropena, esklabotzatik eta hondamenetik askatua izan eta Jainkoaren seme-alaben aintzazko askatasunean parte izateko.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p452_b02"
+      },
+      "salmo": {
+        "cita": "Sal 24, 4bc-5ab. 6 y 7bc. 17 y 20",
+        "antifona": "Jauna, Zugana jasotzen dot gogoa.",
+        "texto": "Edo:  Ez daitezala lotsatu, Jauna, Zugan itxaroten dabenak.\n\nIzan gogoan, Jauna, zeure errukia eta maitasuna,\nbetidanikoak dira-eta.\nGogoratu nitaz zeure maitasunean,\nzeure ontasunari dagokionez, Jauna.  R/.\n\nNasaitu nire bihotz larritua,\natara nagizu estutasun honeetatik.\nIkusi nire atsekabea eta nekea,\neta parkatu nire pekatu guztiak.  R/.\n\nGorde nagizu bizirik eta libratu,\nez nadila lotsatu, Zugan babesteagaitik.\nPrestutasunak eta zuzentasunak zainduko nabe,\nZugan dot-eta itxaroten.  R/.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p444_b01",
+        "_match_kind": "psalm_chapter_fallback"
+      },
+      "evangelio": {
+        "cita": "Jn 6,37-40",
+        "titulo": "<title_line>",
+        "texto": "A\nLDI haretan, esan eutson Jesusek jenteari: Aitak Niri emoten\ndeustan guztia Neugana etorriko da, eta Nigana etortzen danik ez\ndot kanpora botako, ze, ez naz zerutik jatsi neure nahia egitera,\nbialdu nauanaren nahia baino.\n\t Eta hauxe da bialdu nauanaren nahia: berak emon deustan guztitik, ez\ndagidala ezer be galdu, ezpada ze, biztu dagidala azken egunean. Hauxe da\nnire Aitaren nahia: Semea ikusi eta harengan sinisten dauanak izan dagiala\nbetiko bizitza; eta Neuk biztuko dot azken egunean».\nJaunak esana.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p471_b01"
+      }
+    },
+    {
+      "numero": 5,
+      "primera": {
+        "cita": "2 Tim 2, 8-13",
+        "titulo": "Haregaz hiltzen bagara, haregaz biziko gara.",
+        "texto": "NAIA maite: Izan gogoan Jesu Kristo, Daviden jatorritik sortua, hilen \nartetik biztua. Hau da nik irakasten dodan Barri Ona eta honengaitik \nnago neketan, gaizkile lez katez lotuta; baina Jainkoaren hitza ez dago",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p457_b03"
+      },
+      "salmo": {
+        "cita": "Sal 22, 1-3. 4. 5. 6",
+        "antifona": "Jauna dot artzain, ez naz ezeren beharrean.",
+        "texto": "Ibar Edo: Ibaltz ilunean banabil be,   \nez naz gatxaren bildur,  \nZu nigaz zagoz-eta.\n\nV. Jauna dot artzain, ez naz ezeren beharrean; \nlarre gurietan etzunarazoten nau,\nur-bazter nasaira eroaten \neta indarrak deustaz barritzen;\nbide segurutik naroa, \nbere izenari ohore eginez.  R.\n\nV. Ibar baltz ilunean banabil be,  \nez naz gatxaren bildur, \nZu nigaz zagoz-eta; \nzure artzain-makilak nasaitzen nau.  R.\n\nV. Mahaia atontzen deustazu \narerioen begi-bistan;\norioz igurzten deustazu burua, \ngainezka dot edontzia.  R.\n\nV. Zoriona eta maitasuna ditut lagun, \nbizitzako egun guztietan,\neta Jaunaren etxean biziko naz \namaibako egunetan.  R.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p443_b01"
+      },
+      "evangelio": {
+        "cita": "Jn 14,1-6",
+        "titulo": "Jesu Kristoren Ebanjelioa San Joanen liburutik",
+        "texto": "LDI haretan, esan eutsen Jesusek bere ikasleei: «Ez izan \nkezkarik; sinistu Jainkoagan eta sinistu Neugan be. Nire \nAitarenean bizileku asko dago; holan izan ez balitz, esango \nneuskizuen. Orain zuentzat lekua prestatzera noa. Joan eta lekua prestatu \nostean, barriro etorri eta Neurekin eroango zaituet, Ni nagoan lekuan zuek \nbe egon zaitezen. Zuek badakizue Ni noan lekurako bidea».\n\t Tomasek esan eutson: «Jauna, ez dakigu nora zoazen, eta zelan jakin \nbidea?» Jesusek erantzun: «Neu naz bidea, egia eta bizia. Ezin da inor \nAitagana joan, nire bidez izan ezik».",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p475_b02"
+      }
+    },
+    {
+      "numero": 6,
+      "primera": {
+        "cita": "1 Tes 4, 13-18",
+        "titulo": "Jainkoak beragaz hartuko gaitu.",
+        "texto": "SENIDEOK: Ez dogu nahi hildakoen zoriaz zuek ezjakinean egoterik, atsekabetu ez zaitezen, itxaropenik ez dabenen antzera. Jesus hil eta biztu zala egiaz sinisten badogu, Jesusegaz bat eginik hil diranak be Jainkoak beragaz hartuko ditu.\n\nHau dinotsuegu Jaunaren hitzean oinarrituta: guk, Jauna etortzean bizirik izango garanok, ez deutsegu hil diranei aurrea hartuko. Izan be, goiaingeruaren oihuz eta Jainkoaren turuta-hotsez seinalea emonik, Jauna bera jatsiko da-eta zerutik, eta lehenengo, Kristogaz bat eginik hildakoak biztuko dira; gero gu, ondino bizirik izango garanok, hareekin batera eroango gaitue hodeietan, airean, Jaunagaz alkartzera. Eta holan, beti Jaunagaz egongo gara. Adoretu egizue, beraz, alkar berba honeekin.\n\nJaunak esana.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p457_b02"
+      },
+      "salmo": {
+        "cita": "Sal 41, 2. 3. 5bcd; 42, 3. 4. 5",
+        "antifona": "Jainko biziaren egarri naz.",
+        "texto": "V. Basahuntza gogo biziz uretara bezala,\nhalantxe nire gogoa, ene Jainko, Zugana.  R/.\n\nV. Jainkoaren egarri naz, Jainko biziaren egarri:\nnoiz helduko ete naz Jainkoaren aurpegia ikustera?  R/.\n\nV. Gogoan dot, zelan joaten nintzan tenplura, Jainkoaren etxera,\npoz-oihuz eta goraka, jai-giroan, jentetzagaz batera.  R/.\n\n R/. Bialdu zeure argia eta egia, gidatu nagiela,\neta eroan zure mendi santura, zure bizilekura.  R/.\n\nV. Eta helduko naz Jainkoaren altarara,\nneure poz betea dodan Jainkoagana.\nZitaraz goretsiko zaitut, Jainkoa, ene Jainkoa.  R/.\n\nV. Zergaitik zagoz, ene barrua, lur jorik?\nZergaitik ezin egonik?\nItxaron Jainkoagan.\nGoretsiko dot, barriz ere,\nneure Salbatzailea eta Jainkoa.  R/.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p445_b01",
+        "_match_kind": "psalm_chapter_fallback"
+      },
+      "evangelio": {
+        "cita": "Mt 11,25-30",
+        "titulo": "Zatoze Neugana... eta Neuk arinduko zaituet.",
+        "texto": "BEHIN baten, Jesusek esan eban: «Bedeinkatua Zu, Aita, zeru- -lurren Jauna, gauza honeek jakintsuei eta burutsuei gorde eta jente txikiari agertu deutsazuzalako. Bai, Aita, halan izan dozu gogoko. Nire Aitak dana emon deust, eta ez dau inork Semea ezagutzen, Aitak baino; ezta Aita be, Semeak baino, eta Semeak agertu gura deutsonak baino. Zatoze Neugana nekatu eta lanpetu guztiok, eta Neuk arinduko zaituet. Hartu egizue nire buztarria eta ikasi Neugandik, ze gozoa eta bihotz- apala naz, eta aurkituko dozue zeuen arimentzako atsedena. Izan be, Nire buztarria leuna da, eta nire zama arina». Jaunak esana.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p462_b01"
+      }
+    },
+    {
+      "numero": 7,
+      "primera": {
+        "cita": "Erm 6, 3-9",
+        "titulo": "Bizi barria bizi dagigun.",
+        "texto": "SENIDEOK: Bateoaz Kristo Jesusegaz bat egin dogunok, haren\nheriotzagaz egin dogu bat. Bateoaren bitartez haregaz heriotzan\nhobiratuak izan gara, Aitaren aintzaz Kristo hilen artetik biztu zan lez, guk\nbe bizi barria bizi dagigun.\n\nIzan be, harena lako heriotzan hari lotuak izan bagara, halantxe izango\ngara harena lako biztueran be. Badakigu lehengo gure izaera Kristogaz\nkurutzeratua izan dala, pekatuzko gure izaera hori ezereztuta gelditu\nzedin, aurrerantzean pekatuaren esklabo izan ez geintezan. Izan be, norbait\nhiltzen danean, pekatutik aske gelditzen da.\n\nBeraz, Kristogaz hil bagara, sinisten dogu, bizi be haregaz biziko garala.\nBadakigu Kristo, hilen artetik biztu zan ezkero, ez dana barriro hilko:\nheriotzak ez dau gehiago aginterik harengan.\n\nJaunak esana.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p451_b01"
+      },
+      "salmo": {
+        "cita": "Sal 26, 1. 4. 7 y 8b y 9a. 13-14",
+        "antifona": "Jauna dot argi eta salbamen.",
+        "texto": "Edo:\t Jaunagan hilak bai dohatsu;\n\nharen aurrean zoriontsu!\n\nV. Jauna dot argi eta salbazino,\nnork ni bildurtu? \nJauna biziaren babes,\nnork ni izutu?  R/.\n\nV. Gauza bat eskatzen deutsat Jaunari, \nhorren bila nabil ni:\nbizi nadila Jaunaren etxean \nneure bizitzako egun guztietan,\nJaunaren edertasuna miretsiz \neta haren tenplua zainduz.  R/.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p444_b02",
+        "_match_kind": "psalm_chapter_fallback"
+      },
+      "evangelio": {
+        "cita": "Mt 25,31-46",
+        "titulo": "Jesu Kristoren Ebanjelioa San Mateoren liburutik",
+        "texto": "LDI haretan, Jesusek esan eban: «Gizonaren Semea –eta aingeru \nguztiak beragaz– aintzaz beterik etortzean, bere errege-aulki \nospetsuan jesarriko da, eta herri guztiak haren aurrean batuko \ndabez. Harek batzuk besteakandik banandu egingo ditu, artzainak ardiak \nahuntzengandik banatzen dituan lez: ardiak bere eskumaldean ipiniko ditu, \neta ahuntzak ezkerraldean.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p463_b02"
+      }
+    },
+    {
+      "numero": 8,
+      "primera": {
+        "cita": "1 Jn 3, 14-16",
+        "titulo": "Heriotzatik bizira aldatu gara senideak maite doguzalako.",
+        "texto": "Seme-alaba maiteok: Guk badakigu heriotzatik bizira aldatu garana, \neta hori, senideak maite doguzalako. Maite ez dauanak heriotzan \njarraitzen dau. Bere senidea gorroto dauana giza hiltzaile da, eta badakizue \ngiza hiltzaileak ez dauana beregan betiko bizia. \n\nHonetan ezagutu dogu zer dan maitasuna: Kristok bere bizia gure alde \nemotean. Guk be geure bizia emon behar dogu senideen alde.\nJaunak esana.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p458_b02"
+      },
+      "salmo": {
+        "cita": "Sal 24, 4bc-5ab. 6 y 7bc. 20-21",
+        "antifona": "Jauna, Zugana jasotzen dot gogoa.",
+        "texto": "Edo:  Ez daitezala lotsatu, Jauna, Zugan itxaroten dabenak.\n\nIzan gogoan, Jauna, zeure errukia eta maitasuna,\nbetidanikoak dira-eta.\nGogoratu nitaz zeure maitasunean,\nzeure ontasunari dagokionez, Jauna.  R/.\n\nNasaitu nire bihotz larritua,\natara nagizu estutasun honeetatik.\nIkusi nire atsekabea eta nekea,\neta parkatu nire pekatu guztiak.  R/.\n\nGorde nagizu bizirik eta libratu,\nez nadila lotsatu, Zugan babesteagaitik.\nPrestutasunak eta zuzentasunak zainduko nabe,\nZugan dot-eta itxaroten.  R/.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p444_b01",
+        "_match_kind": "psalm_chapter_fallback"
+      },
+      "evangelio": {
+        "cita": "Mt 5, 1-12a",
+        "titulo": "Poztu zaiteze eta alaitu, handia izango da-eta zuen saria zeruetan.",
+        "texto": "haregaz sufritzen badogu,\nberagaz izango gara errege. ( R/.)\n\nJesu Kristo da hilen arteko lehenengo biztua;\nberari aintza eta agintea gizaldi eta gizaldietan. ( R/.)\n\nZorionekoak aurrerantzean Jaunagaz bat eginik hiltzen diranak;\natseden hartuko dabe euren nekeetatik,\nlagun dabez-eta euren egintza onak. ( R/.)",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p461_b02"
+      }
+    },
+    {
+      "numero": 9,
+      "primera": {
+        "cita": "Flp 3, 20-21",
+        "titulo": "Kristok antzaldatuko dau gure gorputz ezerez hau eta bere gorputz aintzatsuaren irudiko egingo.",
+        "texto": "SENIDEOK: gu, zeruko uritar gara eta handik itxaroten dogu Salbatzailea, Jesu Kristo Jauna. Harek antzaldatuko dau gure gorputz ezerez hau, bere gorputz aintzatsuaren irudiko eginez, gauza guztiak bere menpe jartzeko dauan ahalmenari esker.\n\nJaunak esana.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p457_b01"
+      },
+      "salmo": {
+        "cita": "Sal 24, 4bc-5ab. 6 y 7bc. 20-21",
+        "antifona": "Jauna, Zugana jasotzen dot gogoa.",
+        "texto": "Edo:  Ez daitezala lotsatu, Jauna, Zugan itxaroten dabenak.\n\nIzan gogoan, Jauna, zeure errukia eta maitasuna,\nbetidanikoak dira-eta.\nGogoratu nitaz zeure maitasunean,\nzeure ontasunari dagokionez, Jauna.  R/.\n\nNasaitu nire bihotz larritua,\natara nagizu estutasun honeetatik.\nIkusi nire atsekabea eta nekea,\neta parkatu nire pekatu guztiak.  R/.\n\nGorde nagizu bizirik eta libratu,\nez nadila lotsatu, Zugan babesteagaitik.\nPrestutasunak eta zuzentasunak zainduko nabe,\nZugan dot-eta itxaroten.  R/.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p444_b01",
+        "_match_kind": "psalm_chapter_fallback"
+      },
+      "evangelio": {
+        "cita": "Jn 12,23-28",
+        "titulo": "Heldu da Gizonaren Semearen aintza azalduko dan ordua.",
+        "texto": "LDI haretan, Jesusek esan eutsen ikasleei: «Heldu da Gizonaren \nSemearen aintza azalduko dan ordua. Bene-benetan dinotsuet: \nGalgaraua, lurrean jausi eta hiltzen ez bada, bera bakarrik \ngelditzen da; baina, hiltzen bada, frutu asko emoten dau. Bere bizia maite \ndauanak galdu egingo dau; baina mundu honetan bere bizia gauza gitxitzat \nhartzen dauanak betiko bizitzarako gordeko dau. Nire zerbitzari izan gura \ndauanak, jarraitu beist eta, Ni nagoan lekuan, han izango da nire zerbitzaria \nbe. Nire zerbitzari dana ohoratu egingo dau Aitak.\n\t Larri dot orain neure barrua, baina zer esan? Ordu honetatik ataratzeko \neskatuko ete deutsat Aitari? Baina honexetarako etorria naz, hatan be, ordu \nhonetarako! Aita, agertu egizu zeure izenaren aintza!»\n\t Orduan, ahots bat entzun zan zerutik: «Agertu dot, eta barriz be agertuko \ndot».\nJaunak esana.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p474_b01"
+      }
+    },
+    {
+      "numero": 10,
+      "primera": {
+        "cita": "Job 19, 1. 23-27",
+        "titulo": "Jobek esan eban:",
+        "texto": "«Ai nire hitzak idatzita geldituko balira,\nliburuan ezarrita!\nEdota burdinazko eztenaz eta berunaz\nbetiko grabatuta hatxean!\nNik badakit nire eskubidearen babeslea bizi dana\neta, azkenean, hautsaren gainetik jagiko dala.\nNire narruazal hau hondatu ondoren,\ngorputzik barik, Jainkoa ikusiko dot.\nNik neuk ikusiko dot, eta ez bestek».",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p435_b02"
+      },
+      "salmo": {
+        "cita": "Sal 41, 2. 3. 5bcd; 42, 3. 4. 5",
+        "antifona": "Jainko biziaren egarri naz.",
+        "texto": "V. Basahuntza gogo biziz uretara bezala,\nhalantxe nire gogoa, ene Jainko, Zugana.  R/.\n\nV. Jainkoaren egarri naz, Jainko biziaren egarri:\nnoiz helduko ete naz Jainkoaren aurpegia ikustera?  R/.\n\nV. Gogoan dot, zelan joaten nintzan tenplura, Jainkoaren etxera,\npoz-oihuz eta goraka, jai-giroan, jentetzagaz batera.  R/.\n\n R/. Bialdu zeure argia eta egia, gidatu nagiela,\neta eroan zure mendi santura, zure bizilekura.  R/.\n\nV. Eta helduko naz Jainkoaren altarara,\nneure poz betea dodan Jainkoagana.\nZitaraz goretsiko zaitut, Jainkoa, ene Jainkoa.  R/.\n\nV. Zergaitik zagoz, ene barrua, lur jorik?\nZergaitik ezin egonik?\nItxaron Jainkoagan.\nGoretsiko dot, barriz ere,\nneure Salbatzailea eta Jainkoa.  R/.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p445_b01",
+        "_match_kind": "psalm_chapter_fallback"
+      },
+      "evangelio": {
+        "cita": "Lk 24, 13-16. 28-35",
+        "titulo": "Ez eban, ba, Mesiasek hori guztia sufridu behar, bere aintzan sartzeko?",
+        "texto": "Egun haretan bertan, astearen lehenengo egunean, Jesusen ikasle bi Emaus izeneko herritxura joiazan, Jerusalemdik hamaika kilometrora. Jerusalemen gertatutako guztiez berbetan ziharduen alkarregaz. Eta, berbaz eta eztabaidan ziharduela, Jesus berbera inguratu jaken eta eurekaz joian; hareen begiak, ostera, itsurik egozan eta ez eben ezagutu.\n\nJoiazan herritxura hurreratu ziranean, Jesusek aurrera jarraitzeko keinua egin eban. Baina hareek mesedez eta faborez eskatu eutsoen: «Gelditu zaitez geugaz, ze, berandu da eta iluna gainean dogu». Eta herrian sartu zan hareekin gelditzeko.\n\nHareekin mahaian egoala, Jesusek, ogia harturik, bedeinkapen-otoitza esan, zatitu eta emon eutsen. Orduan, begiak zabaldu jakezan eta ezagutu eben; baina Jesus desagertu egin jaken.\n\nHareek alkarri esan eutsoen: «Ez ete genduan bihotza sutan, bidean berba egiten euskunean eta Liburu Santuak azaltzen euskuzanean?» Eta behingoan jagi eta Jerusalemera bihurtu ziran. Han Hamaikak eta honeen lagunak baturik aurkitu zituen, hauxe inoela: «Biztu da benetan Jauna eta Simoni agertu jako».\n\nIkasle biek bidean gertatua kontatu eutsien eta zelan ezagutu eben ogia zatitzean.\n\nJaunak esana.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p470_b01"
+      }
+    },
+    {
+      "numero": 11,
+      "primera": {
+        "cita": "Erm 14, 7-9. 10c-12",
+        "titulo": "<title_line>",
+        "texto": "SENIDEOK: Gutariko inor ez da beretzat bizi, ezta beretzat hiltzen be. \nBizi bagara, Jaunarentzat gara bizi, eta hiltzen bagara, Jaunarentzat \ngara hiltzen. Beraz, nahiz bizi nahiz hil, Jaunarenak gara.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p453_b02"
+      },
+      "salmo": {
+        "cita": "Sal 129, 1-2. 3-4. 5-6. 7. 8",
+        "antifona": "Barru-barrutik dei egiten deutsut, Jauna.",
+        "texto": "Edo: Jaunagan dago errukia,\nharengan askatasun ugaria.\n\nV. Barru-barrutik dei egiten deutsut, Jauna;\nentzun, Jauna, nire berbea!\nBegoz zuhur zure belarriak\nnire erregu-oihura.  R/.\n\nJaunaren, gure Jainkoaren, etxeagaitik,\nzoriona eskatzen dot zuretzat.  R/.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p448_b02",
+        "_match_kind": "psalm_chapter_fallback"
+      },
+      "evangelio": {
+        "cita": "Jn 11,32-45",
+        "titulo": "Lazaro, erdu kanpora!",
+        "texto": "Aldi haretan, Lazaroren arreba Mariak, Jesus egoan lekura\nheltzean, ikusi ebanerako, oinetara ahuspez jausi eta esan eutson:\n«Jauna, hemen izan bazina, gure nebea ez zan hilko».\n\t Maria eta Mariagaz etorritako judeguak negarrez ikusirik, barruak dar-dar\negin eutson Jesusi eta, guztiz bihozminduta, itaundu eban: «Non ipini dozue?»\nErantzun eutsoen: «Jauna, zatoz eta ikusi». Jesusek negarrari emon eutson.\n\t Han egozan judeguek esan eben: «Begira zelako maitasuna eutson!»\nBaina hareetariko batzuek esan eben: «Itsuari begiak zabaldu eutsozan\nhonek, ez ete eikean hau hiltzea galazo?»\n\t Jesus, ostera be bihozminduta, hilobira hurreratu zan. Hatx-zuloa zan,\nharri-losaz estaldua. Jesusek esan eban: «Kendu harri-losa!»\n\t Hildakoaren arreba Martak esan eutson: «Jauna, hatsa botako dau, lau\negun badaroaz-eta». Jesusek erantzun eutson: «Ez deutsut esan, ba, sinisten\nbadozu Jainkoaren aintza ikusiko dozula?»",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p473_b02"
+      }
+    },
+    {
+      "numero": 12,
+      "primera": {
+        "cita": "Auh 3, 17-26",
+        "titulo": "Ona da Jaunaren salbazinoa isilean itxarotea.",
+        "texto": "U\nRRUN joan jat bakea, ahaztu naz zorionaz.\nNeure artean dinot: «Akabo nire etorkizuna,\nJaunak emoten eustan itxaropena».\nNire atsekabea eta zorigatxa gogoratzea\nsamina da eta pozoia niretzat.\nEzin dot burutik kendu,\neta jausia dot bihotza.\nBaina zeozer dakart gogora, itxaropena bizkortzen deustana:\nJaunaren onginahia ez dala amaitu,\nharen errukia ez dala agortu;\ngoizero barritzen da.\nBai handia, Jauna, zure leialtasuna!\nNeure artean dinot: «Jauna da nire ondarea,\nharengan dot itxaropena».\nOna da Jauna harengan uste on dabenentzat,\nharen bila dabiltzanentzat.\nOna da Jaunaren salbazinoa isilean itxarotea.\nJaunak esana.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p439_b01"
+      },
+      "salmo": {
+        "cita": "Sal 102, 8 y 10. 13-14. 15-16. 17-18",
+        "antifona": "Bihozbera eta errukiorra da Jauna.",
+        "texto": "Edo: Beti-betiko zoriona\ngure hileri emon, Jauna.\n\nV. Bihozbera eta errukiorra da Jauna,\nhasarregatxa eta onginahiz betea.\nEz gaitu erabiltzen gure pekatuek merezi bezala,\nez deusku ordaintzen geure erruen arabera.  R/.\n\nZuri lotuta nago osorik,\neta zure eskumak deust eusten.  R/.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p446_b02"
+      },
+      "evangelio": {
+        "cita": "Lk 12,35-40",
+        "titulo": "Jesu Kristoren Ebanjelioa San Lukasen liburutik",
+        "texto": "LDI haretan, esan eutsen Jesusek bere ikasleei: Zagoze prest, jantziak lotuta eta kriseiluak biztuta; izan zaiteze nagusia ezteguetatik noiz bihurtuko zain dagozan morroiak bezalakoak, heldu eta atea jo baizen laster edegitzeko prest dagozan morroien modukoak.\n\t Zorionekoak morroi horreek, nagusiak, heltzean, itxaroten aurkitzen baditu! Egia dinotsuet: erropak aldaturik, mahaian jesarriazoko ditu eta zerbitzen hasiko jake. Eta gauerdian nahiz goizaldean badator eta holan aurkitzen baditu, zorionekoak hareek!\n\t Hartu gogoan hau: etxeko nagusiak, lapurra zein ordutan etorriko dan jakingo baleu, ez leuke etxea zulatzen itziko. Egon prest zeuok be ze, gitxien uste dozuen orduan etorriko da Gizonaren Semea».",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p466_b02"
+      }
+    },
+    {
+      "numero": 13,
+      "primera": {
+        "cita": "Jkd 3, 1-6. 9",
+        "titulo": "Zintzoen bizitza Jainkoaren eskuetan dago, ez ditu ezelako oinazek harrapatuko.",
+        "texto": "Zentzunbakoen begietan hilda egozan behin betiko,\nhareek hemendik urtetea zoritxartzat jo eben\neta gugandik urruntzea guztizko hondamenditzat;\nbaina zintzoak bakean dagoz.\nGizakien eretxiz, zigorra jasan eben,\nbaina hareek hilezkor izateko itxaropenez beterik egozan.\nApur bat zigortuak izan ondoren,\nsari handia jasoko dabe;\nJainkoak probatu egin ebazan\neta beretzat duin aurkitu.\nUrrea arragoan lez garbitu ebazan\neta erre-opari lez onartu.\nUste ona Jainkoagan dabenek ulertuko dabe egia,\nharen maitasunari leial jakozenek iraungo dabe beragaz;\nonginahia eta errukia dau-eta fededunentzat\neta ardura bere aukeratuentzat.\nJaunak esana.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p437_b01"
+      },
+      "salmo": {
+        "cita": "Sal 114, 5-6; 115, 10-11. 15-16ac",
+        "antifona": "Ibiliko naz Jaunaren aurrean,",
+        "texto": "bizidunen lurraldean.\nEdo: Aleluia.\n\nV. Errukiorra eta zintzoa da Jauna,\nerrukitsua gure Jainkoa.\nJaunak zaintzen ditu apalak;\nlur jota nengoan, eta salbatu nau.  R/.\n\nV. Sendo nengoan fedean,\n«Ni bai zoritxarreko» esatean be. \nHau esan neban neure larrialdian:\n«Gizaki guztiak guzurti dira».  R/.\n\nV. Mingarri jako Jaunari\nbere fededunen heriotza.\nBai, zure zerbitzari naz, Jauna,\naskatu dozuz nire kateak.  R/.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p447_b01"
+      },
+      "evangelio": {
+        "cita": "Mt 25,1-13",
+        "titulo": "Badator senargaia; urten egiozue bidera!",
+        "texto": "LDI haretan, Jesusek parabola hau esan eutsen ikasleei: \n«Zeruetako erreinuagaz, euren kriseiluak eskuetan hartu eta \nsenargaiari bidera urten eutsoen hamar neskatilakaz lez gertatzen \nda. Neskatiletariko bost zentzunbakoak ziran eta bost zentzundunak. \nKriseiluak hartzean, zentzunbakoek ez eben oriorik hartu; zentzundunek, \nostera, kriseiluekin batera orioa be hartu eben ontzietan. Senargaiak luzatu \negiten ebanez, loguratu egin ziran danak eta loak hartu zituan.\n\tGauerdian oihu bat entzun zan: “Badator senargaia; urten eiozue \nbidera!” Jagi ziran neskatila guztiak, eta euren kruseluak prestatu ebezan. \t\nOrduan, zentzunbakoek esan eutsien zentzundunei: “Emoiguzue orio apur \nbat, kriseiluak amatatzera joakuz-eta”. Zentzundunek erantzun eutsien: \n“Ea ez dogun nahikoa geuretzat eta zuentzat; hobe dozue, badaezpada, \ndendara joan eta erosi”.\n\tBaina, erostera joanak zirala, senargaia heldu zan, eta prest ziranak \nezteguetara sartu ziran harekin. Eta atea itxi eben.\n\tHeldu ziran, azkenik, beste neskatilak be eta dei egin eben: “Jauna, \nJauna, edegi!” Baina harek erantzun eutsen: “Benetan dinotsuet, ez dakit \nnor zarien”.\n\tEgon, beraz, gertu, ze ez dakizue, ez eguna, ez ordua».",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p463_b01"
+      }
+    },
+    {
+      "numero": 14,
+      "primera": {
+        "cita": "Ap 20, 11 — 21, 1",
+        "titulo": "Epaitu ebezan hildakoak, nor bere egintzen arabera.",
+        "texto": "IK, Joanek, tronu handi zuri bat ikusi neban, baita bertan jesarrita \negoana be; beronen aurretik ihes egin eben lurrak eta zeruak, eta \nlorratzik itzi barik desagertu.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p441_b03"
+      },
+      "salmo": {
+        "cita": "Sal 142, 1-2. 5-6. 7ab y 8ab. 10",
+        "antifona": "Entzun, Jauna, nire otoitza.",
+        "texto": "V. Entzun, Jauna, nire otoitza,\nmakurtu belarria nire erregura,\nerantzun niri, zuzena zara eta leiala.\nEz hasi auzitan zeure zerbitzari honegaz,\nez da-eta bizidunik zure aurrean errubako danik.  R/.\n\nV. Aspaldiko sasoiez gogoratzen naz,\nzure egintza guztiak darabildaz buruan,\nzure eskuek eginak ditut hausnartzen.\nZugana ditut eskuak luzatzen,\nzure egarri naz, lur lehorra lez.  R/.\n\nV. Erantzun laster, Jauna,\narnasarik barik nago-eta.\nEmoidazu goizean zeure maitasunaren barri,\nZugan dot-eta konfiantza.  R/.\n\nV. Erakutsi eidazu zure nahia egiten,\nZu zaitut-eta neure Jainkoa. \nZeure espiritu onberaz\ngidatu nagizu toki zelaitik.  R/.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p449_b01"
+      },
+      "evangelio": {
+        "cita": "Mt 25,31-46",
+        "titulo": "Jesu Kristoren Ebanjelioa San Mateoren liburutik",
+        "texto": "LDI haretan, Jesusek esan eban: «Gizonaren Semea –eta aingeru \nguztiak beragaz– aintzaz beterik etortzean, bere errege-aulki \nospetsuan jesarriko da, eta herri guztiak haren aurrean batuko \ndabez. Harek batzuk besteakandik banandu egingo ditu, artzainak ardiak \nahuntzengandik banatzen dituan lez: ardiak bere eskumaldean ipiniko ditu, \neta ahuntzak ezkerraldean.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p463_b02"
+      }
+    },
+    {
+      "numero": 15,
+      "primera": {
+        "cita": "2 Mak 12, 43-46",
+        "titulo": "Jator eta prestu jokatu eban, biztuera eban-eta gogoan.",
+        "texto": "Egun hareetan, Judasek, Israelgo buruzagiak, gudarien artean zidarrezko bi mila txanpon batuta, Jerusalemera bialdu ebazan, pekatuen parkamenerako oparia eskeini egien. Jator eta prestu jokatu eban, biztuera eban-eta gogoan. Izan be, jausitako gudarien biztuera itxaron izan ez baleu, alperrekoa eta zentzunbakoa izango zan hildakoen alde otoitz egitea. Baina zintzo hiltzen diranek sari bikaina izango dabela uste eban-eta, asmo santua eta ederra izan zan ha. Horregaitik eskeini eban hilen aldeko parkamen--oparia, euren pekatuetatik libre geratu eitezan.\nJaunak esana.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p435_b01"
+      },
+      "salmo": {
+        "cita": "Sal 114, 5-6; 115, 10-11. 15-16ac",
+        "antifona": "Ibiliko naz Jaunaren aurrean,",
+        "texto": "bizidunen lurraldean.\nEdo: Aleluia.\n\nV. Errukiorra eta zintzoa da Jauna,\nerrukitsua gure Jainkoa.\nJaunak zaintzen ditu apalak;\nlur jota nengoan, eta salbatu nau.  R/.\n\nV. Sendo nengoan fedean,\n«Ni bai zoritxarreko» esatean be. \nHau esan neban neure larrialdian:\n«Gizaki guztiak guzurti dira».  R/.\n\nV. Mingarri jako Jaunari\nbere fededunen heriotza.\nBai, zure zerbitzari naz, Jauna,\naskatu dozuz nire kateak.  R/.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p447_b01"
+      },
+      "evangelio": {
+        "cita": "Mt 11,25-30",
+        "titulo": "Zatoze Neugana... eta Neuk arinduko zaituet.",
+        "texto": "BEHIN baten, Jesusek esan eban: «Bedeinkatua Zu, Aita, zeru- -lurren Jauna, gauza honeek jakintsuei eta burutsuei gorde eta jente txikiari agertu deutsazuzalako. Bai, Aita, halan izan dozu gogoko. Nire Aitak dana emon deust, eta ez dau inork Semea ezagutzen, Aitak baino; ezta Aita be, Semeak baino, eta Semeak agertu gura deutsonak baino. Zatoze Neugana nekatu eta lanpetu guztiok, eta Neuk arinduko zaituet. Hartu egizue nire buztarria eta ikasi Neugandik, ze gozoa eta bihotz- apala naz, eta aurkituko dozue zeuen arimentzako atsedena. Izan be, Nire buztarria leuna da, eta nire zama arina». Jaunak esana.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p462_b01"
+      }
+    },
+    {
+      "numero": 16,
+      "primera": {
+        "cita": "Ap 21, 1-5a. 6b-7",
+        "titulo": "Ez da gehiago heriotzarik izango.",
+        "texto": "N IK, Joanek, zeru barria eta lur barria ikusi nebazan, desagertuak ziran-\neta lehenengo zerua eta lehenengo lurra, eta itsasorik be ez zan.\nUri santua ikusi neban, Jerusalem barria, zerutik Jainkoagandik jaisten, \nandragaia bere senarrarentzat lez apaindua. Eta ahots handia entzun neban \ntronutik esaten: «Hona Jainkoaren bizilekua gizakien artean; hareekin \nbiziko da. Hareek izango ditu bere herri, eta Jainkoa bera izango dabe \nhareek beragaz.\nBegietako malkoak lehortuko deutsez, eta ez da gehiago heriotzarik \nizango, ez dolurik, ez negarrik, ez nekerik, lehengo mundua desagertu da-\neta».\nEta tronuan jesarrita egoanak esan eban: «Hara, gauza guztiak barri \negiten ditut. Neu naz Alfa eta Omega, hasiera eta amaiera. Egarri danari \nNeuk emongo deutsat doan biziaren iturritik. Hori izango dau garaileak \nondare, eta Jainko izango nau harek Ni, eta Nik bera seme».\nJaunak esana.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p442_b01"
+      },
+      "salmo": {
+        "cita": "Sal 121, 1-2. 4-5. 6-7. 8-9",
+        "antifona": "Zure etxera goaz, Jauna,",
+        "texto": "hauxe da poza daukaguna!\nEdo: Goazen pozik Jaunaren etxera.\n\nV/. Ha poza nirea, esan eustenean:\n«Goazen Jaunaren etxera!»\nHona orain nire oinak\nzure ateetan, Jerusalem.  R/.\n\nV/. Hara igoten dabe leinuek, Jaunaren leinuek,\nIsraelen lege danez, Jaunaren izena gorestera.\nHan dagoz ezarrita auzi-mahaiak,\nDaviden jauregiko mahaiak.  R/.\n\nV/. Eskatu bakea Jerusalementzat,\nbizi beitez nasai maite zaituenak.\nIzan bedi bakea zure harresien barruan,\nnasaitasuna zure jauregietan.  R/.\n\nV/. Neure senide eta lagunen izenean be,\nhau dinot: «Bakea zugaz!»\nJaunaren, gure Jainkoaren, etxeagaitik,\nzoriona eskatzen dot zuretzat.  R/.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p448_b01"
+      },
+      "evangelio": {
+        "cita": "Jn 14,1-6",
+        "titulo": "Jesu Kristoren Ebanjelioa San Joanen liburutik",
+        "texto": "LDI haretan, esan eutsen Jesusek bere ikasleei: «Ez izan \nkezkarik; sinistu Jainkoagan eta sinistu Neugan be. Nire \nAitarenean bizileku asko dago; holan izan ez balitz, esango \nneuskizuen. Orain zuentzat lekua prestatzera noa. Joan eta lekua prestatu \nostean, barriro etorri eta Neurekin eroango zaituet, Ni nagoan lekuan zuek \nbe egon zaitezen. Zuek badakizue Ni noan lekurako bidea».\n\t Tomasek esan eutson: «Jauna, ez dakigu nora zoazen, eta zelan jakin \nbidea?» Jesusek erantzun: «Neu naz bidea, egia eta bizia. Ezin da inor \nAitagana joan, nire bidez izan ezik».",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p475_b02"
+      }
+    },
+    {
+      "numero": 17,
+      "primera": {
+        "cita": "1 Jn 3, 1-2",
+        "titulo": "Dan lakoa ikusiko dogu Jainkoa.",
+        "texto": "Seme-alaba maiteok: Begira zenbaterainoko maitasuna agertu deuskun Aitak, Jainkoaren seme-alaba izena daroagu-eta, baita izana be. Hona zergaitik munduak ez gaituan ezagutzen: Aita be ezagutu ez ebalako. Ene maiteok, orain Jainkoaren seme-alaba gara; gero izango garana oraindino ez da agertu. Badakigu, Kristo agertuko danean, haren antzeko izango garana, dan lakoa ikusiko dogu-eta.\n\nJaunak esana.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p458_b01"
+      },
+      "salmo": {
+        "cita": "Sal 41, 2. 3. 5bcd; 42, 3. 4. 5",
+        "antifona": "Jainko biziaren egarri naz.",
+        "texto": "V. Basahuntza gogo biziz uretara bezala,\nhalantxe nire gogoa, ene Jainko, Zugana.  R/.\n\nV. Jainkoaren egarri naz, Jainko biziaren egarri:\nnoiz helduko ete naz Jainkoaren aurpegia ikustera?  R/.\n\nV. Gogoan dot, zelan joaten nintzan tenplura, Jainkoaren etxera,\npoz-oihuz eta goraka, jai-giroan, jentetzagaz batera.  R/.\n\n R/. Bialdu zeure argia eta egia, gidatu nagiela,\neta eroan zure mendi santura, zure bizilekura.  R/.\n\nV. Eta helduko naz Jainkoaren altarara,\nneure poz betea dodan Jainkoagana.\nZitaraz goretsiko zaitut, Jainkoa, ene Jainkoa.  R/.\n\nV. Zergaitik zagoz, ene barrua, lur jorik?\nZergaitik ezin egonik?\nItxaron Jainkoagan.\nGoretsiko dot, barriz ere,\nneure Salbatzailea eta Jainkoa.  R/.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p445_b01",
+        "_match_kind": "psalm_chapter_fallback"
+      },
+      "evangelio": {
+        "cita": "Mt 11,25-30",
+        "titulo": "Zatoze Neugana... eta Neuk arinduko zaituet.",
+        "texto": "BEHIN baten, Jesusek esan eban: «Bedeinkatua Zu, Aita, zeru- -lurren Jauna, gauza honeek jakintsuei eta burutsuei gorde eta jente txikiari agertu deutsazuzalako. Bai, Aita, halan izan dozu gogoko. Nire Aitak dana emon deust, eta ez dau inork Semea ezagutzen, Aitak baino; ezta Aita be, Semeak baino, eta Semeak agertu gura deutsonak baino. Zatoze Neugana nekatu eta lanpetu guztiok, eta Neuk arinduko zaituet. Hartu egizue nire buztarria eta ikasi Neugandik, ze gozoa eta bihotz- apala naz, eta aurkituko dozue zeuen arimentzako atsedena. Izan be, Nire buztarria leuna da, eta nire zama arina». Jaunak esana.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p462_b01"
+      }
+    },
+    {
+      "numero": 18,
+      "primera": {
+        "cita": "Flp 3, 20-21",
+        "titulo": "Kristok antzaldatuko dau gure gorputz ezerez hau eta bere gorputz aintzatsuaren irudiko egingo.",
+        "texto": "SENIDEOK: gu, zeruko uritar gara eta handik itxaroten dogu Salbatzailea, Jesu Kristo Jauna. Harek antzaldatuko dau gure gorputz ezerez hau, bere gorputz aintzatsuaren irudiko eginez, gauza guztiak bere menpe jartzeko dauan ahalmenari esker.\n\nJaunak esana.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p457_b01"
+      },
+      "salmo": {
+        "cita": "Sal 121, 1-2. 4-5. 6-7. 8-9",
+        "antifona": "Zure etxera goaz, Jauna,",
+        "texto": "hauxe da poza daukaguna!\nEdo: Goazen pozik Jaunaren etxera.\n\nV/. Ha poza nirea, esan eustenean:\n«Goazen Jaunaren etxera!»\nHona orain nire oinak\nzure ateetan, Jerusalem.  R/.\n\nV/. Hara igoten dabe leinuek, Jaunaren leinuek,\nIsraelen lege danez, Jaunaren izena gorestera.\nHan dagoz ezarrita auzi-mahaiak,\nDaviden jauregiko mahaiak.  R/.\n\nV/. Eskatu bakea Jerusalementzat,\nbizi beitez nasai maite zaituenak.\nIzan bedi bakea zure harresien barruan,\nnasaitasuna zure jauregietan.  R/.\n\nV/. Neure senide eta lagunen izenean be,\nhau dinot: «Bakea zugaz!»\nJaunaren, gure Jainkoaren, etxeagaitik,\nzoriona eskatzen dot zuretzat.  R/.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p448_b01"
+      },
+      "evangelio": {
+        "cita": "Jn 14,1-6",
+        "titulo": "Jesu Kristoren Ebanjelioa San Joanen liburutik",
+        "texto": "LDI haretan, esan eutsen Jesusek bere ikasleei: «Ez izan \nkezkarik; sinistu Jainkoagan eta sinistu Neugan be. Nire \nAitarenean bizileku asko dago; holan izan ez balitz, esango \nneuskizuen. Orain zuentzat lekua prestatzera noa. Joan eta lekua prestatu \nostean, barriro etorri eta Neurekin eroango zaituet, Ni nagoan lekuan zuek \nbe egon zaitezen. Zuek badakizue Ni noan lekurako bidea».\n\t Tomasek esan eutson: «Jauna, ez dakigu nora zoazen, eta zelan jakin \nbidea?» Jesusek erantzun: «Neu naz bidea, egia eta bizia. Ezin da inor \nAitagana joan, nire bidez izan ezik».",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p475_b02"
+      }
+    },
+    {
+      "numero": 19,
+      "primera": {
+        "cita": "Auh 3, 17-26",
+        "titulo": "Ona da Jaunaren salbazinoa isilean itxarotea.",
+        "texto": "U\nRRUN joan jat bakea, ahaztu naz zorionaz.\nNeure artean dinot: «Akabo nire etorkizuna,\nJaunak emoten eustan itxaropena».\nNire atsekabea eta zorigatxa gogoratzea\nsamina da eta pozoia niretzat.\nEzin dot burutik kendu,\neta jausia dot bihotza.\nBaina zeozer dakart gogora, itxaropena bizkortzen deustana:\nJaunaren onginahia ez dala amaitu,\nharen errukia ez dala agortu;\ngoizero barritzen da.\nBai handia, Jauna, zure leialtasuna!\nNeure artean dinot: «Jauna da nire ondarea,\nharengan dot itxaropena».\nOna da Jauna harengan uste on dabenentzat,\nharen bila dabiltzanentzat.\nOna da Jaunaren salbazinoa isilean itxarotea.\nJaunak esana.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p439_b01"
+      },
+      "salmo": {
+        "cita": "Sal 129, 1-2. 3-4. 5-6. 7. 8",
+        "antifona": "Barru-barrutik dei egiten deutsut, Jauna.",
+        "texto": "Edo: Jaunagan dago errukia,\nharengan askatasun ugaria.\n\nV. Barru-barrutik dei egiten deutsut, Jauna;\nentzun, Jauna, nire berbea!\nBegoz zuhur zure belarriak\nnire erregu-oihura.  R/.\n\nJaunaren, gure Jainkoaren, etxeagaitik,\nzoriona eskatzen dot zuretzat.  R/.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p448_b02",
+        "_match_kind": "psalm_chapter_fallback"
+      },
+      "evangelio": {
+        "cita": "Jn 19, 17-18. 25-30",
+        "titulo": "Jesu Kristoren Ebanjelioa San Joanen liburutik",
+        "texto": "Aldi haretan, Jesusek, kurutzea sorbaldan eroiala, «Buruhazur» –hebreeraz «Golgota»– eritxon lekurantz urten eban. Han josi eben kurutzean, eta beragaz batera beste bi, alde banatan, eta erdian Jesus.\n\nJesusen kurutzearen ondoan egozan haren ama, amaren ahizta, Maria Kleofasen emaztea eta Maria Magdalena. Jesusek, bere ama eta, beronen ondoan, maite eban ikaslea ikusirik, esan eutson amari: «Emakume, horra hor zure semea!» Gero, ikasleari esan eutson: «Horra hor zure ama!» Eta harrezkero ikasleak bere etxean hartu eban.\n\nOndoren, Jesusek, dana betea zala jakinik, Liburu Santuak esana guztiz bete zedin, esan eban: «Egarri naz!» Bazan han ozpinez betetako pitxar bat. Orduan, belakia ozpinetan busti eta, kainaberari ertzean erantsiz, ahora hurreratu eutsoen. Ozpina hartu ebanean, Jesusek esan eban: «Bete da dana!»\n\nEta, burua makurtuz, azken arnasa emon eban.\n\nJaunak esana.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p476_b02"
+      }
+    },
+    {
+      "numero": 20,
+      "primera": {
+        "cita": "Jkd 4, 7-15",
+        "titulo": "Zintzoak, gazterik hilda be, izango dau atsedenik.",
+        "texto": "Zahartzaro ohoragarria ez datza biziaren luzean,\nez da neurtzen urteen kopuruaz be.\nGizakiarentzat zuhurtasuna da benetako ule zuria,\neta bizitza akasbakoa da adin handia.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p437_b02"
+      },
+      "salmo": {
+        "cita": "Sal 114, 5-6; 115, 10-11. 15-16ac",
+        "antifona": "Ibiliko naz Jaunaren aurrean,",
+        "texto": "bizidunen lurraldean.\nEdo: Aleluia.\n\nV. Errukiorra eta zintzoa da Jauna,\nerrukitsua gure Jainkoa.\nJaunak zaintzen ditu apalak;\nlur jota nengoan, eta salbatu nau.  R/.\n\nV. Sendo nengoan fedean,\n«Ni bai zoritxarreko» esatean be. \nHau esan neban neure larrialdian:\n«Gizaki guztiak guzurti dira».  R/.\n\nV. Mingarri jako Jaunari\nbere fededunen heriotza.\nBai, zure zerbitzari naz, Jauna,\naskatu dozuz nire kateak.  R/.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p447_b01"
+      },
+      "evangelio": {
+        "cita": "Lk 7, 11-17",
+        "titulo": "Gazte, zuri dinotsut: jagi!",
+        "texto": "Aldi haretan, Nain izeneko herrira joan zan Jesus, bere ikasleak \neta jente asko lagun zituala. Herriko sarrerara hurreratu zanean, \nhildako bat, ama alargun baten seme bakarra, eroien lur emotera. \nHerriko jente asko joian amagaz.\n\nHau ikustean, errukitu egin jakon Jauna eta esan eutson: «Ez egin \nnegarrik!» Hurreraturik, hilkutxa ikutu eban, eta eroienak gelditu egin \nziran. Orduan, esan eban: «Gazte, zeuri dinotsut: jagi!» Jagi zan hildakoa \neta berbetan hasi, eta Jesusek amari emon eutson.\n\nBildurrak hartu zituan danak eta Jainkoa goresten eben, esanez: «Profeta \nhandia sortu da gure artean». Eta beste hau be bainoen: «Bere herria \nsalbatzera etorri da Jainkoa». Judean eta inguruko lurralde guztian zabaldu \nzan gertaera honen barria.\n\nJaunak esana.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p466_b01"
+      }
+    },
+    {
+      "numero": 21,
+      "primera": {
+        "cita": "1 Kor 15, 20-24a. 25-28",
+        "titulo": "Kristogaz daben alkartasunagaitik guztiak bihurtuko dira bizira.",
+        "texto": "SENIDEOK: Biztu da Kristo hilen artetik, heriotzatik biztuko diranetan\nlehen-frutu. Izan be, heriotza gizon baten bidez etorri zan lez, gizon baten\nbidez etorri da hildakoen biztuera be. Eta Adamegaz daben alkartasunagaitik\ngizaki guztiak hiltzen diran lez, Kristogaz daben alkartasunagaitik guztiak\nbihurtuko dira bizira. Baina bakotxa bere sasoian: lehenengo Kristo,\nlehen-frutua danez; gero, Kristorenak, hau barriro etortzean. Gero, azkena\nizango da, Kristok Jainko Aitari erreinua emongo deutsonean. Kristok errege\nizan behar dau-eta, Jainkoak arerio guztiak haren oinazpian ipini arte.\nAzkena ezereztuko dan arerioa heriotza izango da.\n\nIzan be, «gauza guztiak haren menpean jarri ditu Jainkoak». Baina Liburu\nSantuak dana haren menpeko dala esatean, jakina, ez dau hor sartzen Jainkoa\nbera, gauza guztiak menpean jarri deutsozana. Jainkoak gauza guztiak\nmenpean jarriko deutsozanean, Semea bera menpean jarriko jako gauza guztiak\nmenpean jarri jakozanari, eta Jainkoa danetan dana izango da.\n\nJaunak esana.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p454_b01"
+      },
+      "salmo": {
+        "cita": "Sal 26, 1. 4. 7 y 8b y 9a. 13-14",
+        "antifona": "Jauna dot argi eta salbamen.",
+        "texto": "Edo:\t Jaunagan hilak bai dohatsu;\n\nharen aurrean zoriontsu!\n\nV. Jauna dot argi eta salbazino,\nnork ni bildurtu? \nJauna biziaren babes,\nnork ni izutu?  R/.\n\nV. Gauza bat eskatzen deutsat Jaunari, \nhorren bila nabil ni:\nbizi nadila Jaunaren etxean \nneure bizitzako egun guztietan,\nJaunaren edertasuna miretsiz \neta haren tenplua zainduz.  R/.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p444_b02",
+        "_match_kind": "psalm_chapter_fallback"
+      },
+      "evangelio": {
+        "cita": "Mk 15, 33-39; 16, 1-6",
+        "titulo": "Jesusek, deadar handia eginez, azken arnasa emon eban.",
+        "texto": "EGUERDIAN, ilundu egin eban lurbira osoan hirurak arte. \nHiruretan, Jesusek oihu handiz esan eban: «Eloi, Eloi, lema \nsabaktani», hau da, «Ene Jainko, ene Jainko, zergaitik itzi nozu?» \nHau entzutean, han egozan batzuek esan eben: «Eliasi deika jabilk».\n\t Orduan batek, lasterka joan, belakia ozpinetan busti eta, kainabera bati ertzean \nipiniz, edatera emon eutson, esanez: «Egon, ea datorkion Elias, kurutzetik \njaistera». Baina Jesusek, deadar handia eginez, azken arnasa emon eban.",
+        "unmatched": false,
+        "_source": "bizkaiera_difuntos_extract.md#v4_p464_b01"
+      }
+    }
+  ],
+  "oraciones_fieles": []
+}
