@@ -10,6 +10,15 @@
   <meta property="og:description" content="{{ i18n.og_description_default }}">
   <meta property="og:type" content="website">
   {% endblock %}
+  <meta property="og:site_name" content="{{ i18n.site_title }}">
+  <meta property="og:image" content="https://lecturasdeldia.org/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  {% block jsonld %}{% endblock %}
+  {% if lang == 'es' %}
+  <link rel="alternate" type="application/rss+xml" title="{{ i18n.site_title }}" href="https://lecturasdeldia.org/feed.xml">
+  {% endif %}
   {% block canonical %}
   {% if canonical_self %}<link rel="canonical" href="https://lecturasdeldia.org{{ canonical_self }}">{% endif %}
   {% endblock %}
@@ -48,6 +57,13 @@
         <img src="/assets/logo-bilbao.png?v={{ cache_bust }}" alt="{{ i18n.diocese_alt }}" width="167" height="48">
       </a>
     </p>
+    {% if lang == 'es' %}
+    <p class="footer-nav">
+      <a href="/buscar/">{{ i18n.search_btn }}</a> &middot;
+      <a href="/libros/">{{ i18n.libros_footer_link }}</a> &middot;
+      <a href="/acerca/">{{ i18n.acerca_link }}</a>
+    </p>
+    {% endif %}
     <p><a href="https://github.com/zeanuri/lecturasdeldia" target="_blank" rel="noopener">GitHub</a></p>
   </footer>
 

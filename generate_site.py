@@ -9,11 +9,13 @@ the same GitHub Pages deployment.
 Usage: python generate_site.py [YYYY-MM-DD]
 """
 
+import email.utils
 import json
 import shutil
 import sys
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
+from xml.sax.saxutils import escape as xml_escape
 
 from jinja2 import Environment, FileSystemLoader
 
@@ -433,6 +435,96 @@ def generate_index(outdir, today, templates, lang):
 
     Path(outdir).mkdir(parents=True, exist_ok=True)
     (Path(outdir) / "index.html").write_text(html, encoding="utf-8")
+
+
+def generate_home(today, outdir, templates, lectionaries):
+    """Render today's readings as the ES homepage.
+
+    Unlike the EU root (which keeps the redirect), the ES root is a real,
+    self-canonical page: the domain's main URL accumulates authority and can
+    rank for evergreen queries, while dated pages remain the archive.
+    """
+    lang = "es"
+    i18n = get_i18n(lang)
+    day_data = get_day_data(today, lang, lectionaries)
+    prev_d = today - timedelta(days=1)
+    next_d = today + timedelta(days=1)
+
+    template = templates.get_template("dia.html")
+    html = template.render(
+        day=day_data,
+        prev_url=f"{prev_d.year}/{prev_d.month:02d}/{prev_d.day:02d}",
+        next_url=f"{next_d.year}/{next_d.month:02d}/{next_d.day:02d}",
+        prev_label=format_prev_next(prev_d, i18n),
+        next_label=format_prev_next(next_d, i18n),
+        i18n=i18n,
+        lang=lang,
+        is_home=True,
+        **page_urls("/", lang),
+    )
+
+    Path(outdir).mkdir(parents=True, exist_ok=True)
+    (Path(outdir) / "index.html").write_text(html, encoding="utf-8")
+
+
+def generate_acerca(outdir, templates):
+    """Render the ES-only /acerca/ page (site description, sources, authorship)."""
+    i18n = get_i18n("es")
+    template = templates.get_template("acerca.html")
+    html = template.render(
+        day=None,
+        i18n=i18n,
+        lang="es",
+        canonical_es=None,
+        canonical_eu=None,
+        canonical_self="/acerca/",
+        toggle_url_es="/",
+        toggle_url_eu="/eu/",
+    )
+    target = Path(outdir) / "acerca"
+    target.mkdir(parents=True, exist_ok=True)
+    (target / "index.html").write_text(html, encoding="utf-8")
+
+
+def generate_feed(all_days, today, outdir, num_items=14):
+    """Emit /feed.xml — RSS 2.0 with the most recent days (ES only)."""
+    base = "https://lecturasdeldia.org"
+    recent = [d for d in all_days if d["date_iso"] <= today.isoformat()]
+    recent.sort(key=lambda d: d["date_iso"], reverse=True)
+
+    items = []
+    for day_data in recent[:num_items]:
+        iso = day_data["date_iso"]
+        d = date.fromisoformat(iso)
+        url = f"{base}/{iso[:4]}/{iso[5:7]}/{iso[8:10]}/"
+        title = f"{day_data['fecha_larga']} — {day_data['name']}"
+        citas = ", ".join(r.get("cita", "") for r in day_data.get("readings", []) if r.get("cita"))
+        pub = email.utils.format_datetime(
+            datetime(d.year, d.month, d.day, 4, 0, tzinfo=timezone.utc)
+        )
+        items.append(
+            "  <item>\n"
+            f"    <title>{xml_escape(title)}</title>\n"
+            f"    <link>{url}</link>\n"
+            f"    <guid>{url}</guid>\n"
+            f"    <pubDate>{pub}</pubDate>\n"
+            f"    <description>{xml_escape(citas)}</description>\n"
+            "  </item>"
+        )
+
+    feed = (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<rss version="2.0">\n'
+        "<channel>\n"
+        "  <title>Lecturas del Día</title>\n"
+        f"  <link>{base}/</link>\n"
+        "  <description>Evangelio de hoy y lecturas de la Misa del día — leccionario oficial CEE</description>\n"
+        "  <language>es</language>\n"
+        + "\n".join(items) + "\n"
+        "</channel>\n"
+        "</rss>\n"
+    )
+    (Path(outdir) / "feed.xml").write_text(feed, encoding="utf-8")
 
 
 def generate_search_index(all_days, outdir, lang):
@@ -867,7 +959,7 @@ def generate_book_aliases_json(by_book: dict[str, list[dict]], outdir, lang: str
     out_path.write_text(json.dumps(aliases, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
-def generate_sitemap(all_days_es, outdir):
+def generate_sitemap(all_days_es, outdir, by_book=None):
     """Combined sitemap with hreflang clusters per URL.
 
     The same <url> entry carries <xhtml:link rel="alternate"> siblings for
@@ -880,8 +972,9 @@ def generate_sitemap(all_days_es, outdir):
         'xmlns:xhtml="http://www.w3.org/1999/xhtml">'
     )
 
-    def cluster(es_path: str):
-        eu_path = STATIC_ROUTE_MAP.get(es_path) or ("/eu" + es_path)
+    def cluster(es_path: str, eu_path: str = None):
+        if eu_path is None:
+            eu_path = STATIC_ROUTE_MAP.get(es_path) or ("/eu" + es_path)
         return [
             "  <url>",
             f"    <loc>{base}{es_path}</loc>",
@@ -899,6 +992,24 @@ def generate_sitemap(all_days_es, outdir):
 
     lines.extend(cluster("/"))
     lines.extend(cluster("/buscar/"))
+
+    # ES-only static pages (no hreflang cluster).
+    lines.extend([
+        "  <url>",
+        f"    <loc>{base}/acerca/</loc>",
+        "  </url>",
+    ])
+
+    # Browse-by-book pages (slugs differ per language).
+    if by_book:
+        lines.extend(cluster("/libros/", "/eu/liburuak/"))
+        for book in CANONICAL_BOOKS_ES:
+            if not by_book.get(book):
+                continue
+            es_slug = slug_for(book, "es")
+            eu_slug = slug_for(book, "eu")
+            if es_slug:
+                lines.extend(cluster(f"/libros/{es_slug}/", f"/eu/liburuak/{eu_slug}/"))
 
     for day_data in all_days_es:
         d = day_data["date_iso"]
@@ -990,7 +1101,13 @@ def build_site(today=None, days_back=30, days_forward=365, outdir=None):
             days.append(day_data)
         all_days_per_lang[lang] = days
 
-        generate_index(lang_outdir, today, templates, lang)
+        if lang == "es":
+            # ES root is a real page (today's readings), not a redirect.
+            generate_home(today, lang_outdir, templates, lectionaries)
+            generate_acerca(lang_outdir, templates)
+            generate_feed(days, today, lang_outdir)
+        else:
+            generate_index(lang_outdir, today, templates, lang)
         generate_search_index(days, lang_outdir, lang)
         generate_calendar_data(days, lang_outdir, lang)
         generate_search_page(lang_outdir, templates, lang, search_slug)
@@ -1002,7 +1119,7 @@ def build_site(today=None, days_back=30, days_forward=365, outdir=None):
         generate_book_aliases_json(by_book, lang_outdir, lang)
 
     # Site-wide files (live at the apex regardless of language).
-    generate_sitemap(all_days_per_lang["es"], outdir)
+    generate_sitemap(all_days_per_lang["es"], outdir, by_book=by_book)
     generate_404(outdir, templates)
     copy_assets(outdir)
     generate_robots(outdir)

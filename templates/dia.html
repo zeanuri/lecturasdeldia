@@ -1,18 +1,52 @@
 {% extends "base.html" %}
 
-{% block title %}{{ i18n.dia_title_prefix }} {{ day.fecha_larga }} — {{ day.name }}{% endblock %}
+{% block title %}{% if is_home %}{{ i18n.home_title_prefix }} — {{ day.fecha_larga }}{% else %}{{ i18n.dia_title_prefix }} {{ day.fecha_larga }} — {{ day.name }}{% endif %}{% endblock %}
 
-{% block description %}{{ day.readings | map(attribute='cita') | select('defined') | join(', ') }}{% endblock %}
+{% block description %}{% if is_home %}{{ i18n.home_meta_description }}. {{ day.name }}: {{ day.readings | map(attribute='cita') | select('defined') | join(', ') }}{% else %}{{ day.readings | map(attribute='cita') | select('defined') | join(', ') }}{% endif %}{% endblock %}
 
 {% block og %}
-<meta property="og:title" content="{{ i18n.dia_title_prefix }} {{ day.fecha_larga }}">
+<meta property="og:title" content="{% if is_home %}{{ i18n.home_title_prefix }} — {{ day.fecha_larga }}{% else %}{{ i18n.dia_title_prefix }} {{ day.fecha_larga }}{% endif %}">
 <meta property="og:description" content="{{ day.name }} — {{ day.readings | map(attribute='cita') | select('defined') | join(', ') }}">
-<meta property="og:type" content="article">
+<meta property="og:type" content="{% if is_home %}website{% else %}article{% endif %}">
 <meta property="og:url" content="https://lecturasdeldia.org{{ canonical_self }}">
 {% endblock %}
 
 {% block canonical %}
 <link rel="canonical" href="https://lecturasdeldia.org{{ canonical_self }}">
+{% endblock %}
+
+{% block jsonld %}
+{% if is_home %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Lecturas del Día",
+  "alternateName": "lecturasdeldia.org",
+  "url": "https://lecturasdeldia.org/",
+  "description": {{ i18n.home_meta_description | tojson }},
+  "inLanguage": "es",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://lecturasdeldia.org/buscar/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+{% endif %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ (i18n.dia_title_prefix ~ " " ~ day.fecha_larga ~ " — " ~ day.name) | tojson }},
+  "datePublished": {{ day.date_iso | tojson }},
+  "dateModified": {{ day.date_iso | tojson }},
+  "inLanguage": {{ lang | tojson }},
+  "mainEntityOfPage": "https://lecturasdeldia.org{{ canonical_self }}",
+  "author": {"@type": "Organization", "name": "Lecturas del Día", "url": "https://lecturasdeldia.org/"},
+  "publisher": {"@type": "Organization", "name": "Lecturas del Día", "url": "https://lecturasdeldia.org/"}
+}
+</script>
 {% endblock %}
 
 {% block content %}
@@ -116,6 +150,20 @@
       </div>
     </div>
     {% endfor %}
+  </section>
+  {% endif %}
+
+  {% if is_home %}
+  <section class="home-intro">
+    <h2>Lecturas de la Misa de hoy</h2>
+    <p>Cada día encontrarás aquí el evangelio de hoy y todas las lecturas de la Misa
+    —primera lectura, salmo responsorial y segunda lectura cuando corresponde—
+    con los textos oficiales del leccionario de la Conferencia Episcopal Española.</p>
+    <p>Puedes consultar las lecturas de cualquier fecha del calendario litúrgico,
+    <a href="/buscar/">buscar por cita bíblica, santo o celebración</a>,
+    explorar las <a href="/libros/">citas del leccionario libro por libro</a>
+    o leer las lecturas <a href="/eu/">en euskera</a>.
+    Más información en <a href="/acerca/">Acerca de</a>.</p>
   </section>
   {% endif %}
 </article>

@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %}Acerca de — {{ i18n.site_title }}{% endblock %}
+
+{% block description %}Qué es lecturasdeldia.org: evangelio y lecturas de la Misa de cada día con los textos oficiales del leccionario de la Conferencia Episcopal Española.{% endblock %}
+
+{% block og %}
+<meta property="og:title" content="Acerca de — {{ i18n.site_title }}">
+<meta property="og:description" content="Evangelio y lecturas de la Misa de cada día — textos oficiales del leccionario CEE">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lecturasdeldia.org/acerca/">
+{% endblock %}
+
+{% block content %}
+<article class="static-page">
+  <h1>Acerca de Lecturas del Día</h1>
+
+  <p><strong>lecturasdeldia.org</strong> ofrece cada día el evangelio y todas las
+  lecturas de la Misa —primera lectura, salmo responsorial, segunda lectura cuando
+  corresponde y aclamación— según el calendario litúrgico de España.</p>
+
+  <h2>Los textos</h2>
+  <p>Los textos reproducen el <strong>leccionario oficial de la Conferencia
+  Episcopal Española</strong>, sin resúmenes ni paráfrasis: son las mismas lecturas
+  que se proclaman en la Misa. Se indican la celebración del día, el tiempo
+  litúrgico, el color, el ciclo dominical y ferial, y el santoral con sus
+  lecturas propias cuando las tiene.</p>
+
+  <h2>Qué puedes hacer</h2>
+  <ul>
+    <li>Consultar las lecturas de <strong>cualquier fecha</strong> del año litúrgico, pasada o futura.</li>
+    <li><a href="/buscar/">Buscar</a> por cita bíblica, día litúrgico, santo, fecha o tema.</li>
+    <li>Explorar las citas del leccionario <a href="/libros/">libro por libro</a> de la Biblia.</li>
+    <li>Leer las lecturas <a href="/eu/">en euskera</a> (bizkaiera).</li>
+    <li>Descargar las lecturas de cada día en un archivo de texto.</li>
+    <li>Seguir el sitio por <a href="/feed.xml">RSS</a>.</li>
+  </ul>
+
+  <h2>Quién está detrás</h2>
+  <p>Lecturas del Día es un servicio vinculado a la
+  <a href="https://bizkeliza.org" target="_blank" rel="noopener">Diócesis de Bilbao</a>.
+  El sitio es de código abierto y puede consultarse en
+  <a href="https://github.com/zeanuri/lecturasdeldia" target="_blank" rel="noopener">GitHub</a>.</p>
+</article>
+{% endblock %}

@@ -17,7 +17,14 @@ import generate_site  # noqa: E402
 # ── i18n key parity ────────────────────────────────────────────────────────
 
 # Keys that intentionally only exist in one variant.
-ES_ONLY_KEYS = set()
+# home_*/acerca/libros_footer: SEO homepage + footer nav are ES-only by design
+# (the EU homepage keeps the redirect behaviour).
+ES_ONLY_KEYS = {
+    "home_title_prefix",
+    "home_meta_description",
+    "acerca_link",
+    "libros_footer_link",
+}
 EU_ONLY_KEYS = {"empty_reading_msg", "read_in_spanish"}
 
 
