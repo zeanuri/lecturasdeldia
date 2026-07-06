@@ -345,7 +345,7 @@ ROMANS = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X",
            "XXI", "XXII", "XXIII", "XXIV", "XXV", "XXVI", "XXVII", "XXVIII",
            "XXIX", "XXX", "XXXI", "XXXII", "XXXIII", "XXXIV"]
 
-DAY_NAMES = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"]
+DAY_NAMES = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"]
 MONTH_NAMES = ["enero", "febrero", "marzo", "abril", "mayo", "junio",
                "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"]
 
@@ -711,7 +711,7 @@ def calculate(d: date) -> dict:
                 result["color"] = "Rojo"
                 result["rank"] = "Solemnidad"
             elif wd == 6:  # Saturday
-                result["name"] = "Sabado Santo - Vigilia Pascual"
+                result["name"] = "Sábado Santo - Vigilia Pascual"
                 result["color"] = "Blanco"
                 result["rank"] = "Solemnidad"
             else:
@@ -723,7 +723,7 @@ def calculate(d: date) -> dict:
             result["color"] = "Morado"
             result["weekday_cycle"] = ""
             if d == ash_wed:
-                result["name"] = "Miercoles de Ceniza"
+                result["name"] = "Miércoles de Ceniza"
                 result["rank"] = "Feria"
             elif d < ash_wed + timedelta(days=4):
                 result["name"] = f"{day_name} despues de Ceniza"
@@ -978,10 +978,11 @@ def _load_leccionario():
     return _leccionario_cache
 
 
-# Spanish day name → leccionario key fragment
+# Spanish day name (accented, as in DAY_NAMES) → leccionario key fragment (ASCII).
+# Keys mirror day_name so lookups keep matching; values are the JSON key fragments.
 _DAY_MAP = {
-    "Lunes": "lunes", "Martes": "martes", "Miercoles": "miercoles",
-    "Jueves": "jueves", "Viernes": "viernes", "Sabado": "sabado",
+    "Lunes": "lunes", "Martes": "martes", "Miércoles": "miercoles",
+    "Jueves": "jueves", "Viernes": "viernes", "Sábado": "sabado",
 }
 
 
