@@ -37,6 +37,8 @@ I18N_ES = {
     "dia_title_prefix": "Lecturas del",
     "home_title_prefix": "Evangelio de hoy y lecturas de la Misa",
     "home_meta_description": "Evangelio de hoy y lecturas de la Misa del día, con los textos oficiales del leccionario de la Conferencia Episcopal Española",
+    "domingo_title_prefix": "Evangelio del domingo y lecturas de la Misa dominical",
+    "domingo_meta_description": "Evangelio del domingo y lecturas de la Misa dominical, con los textos oficiales del leccionario de la Conferencia Episcopal Española",
     "acerca_link": "Acerca de",
     "libros_footer_link": "Libros del leccionario",
     "search_page_title_prefix": "Buscar",
@@ -51,6 +53,7 @@ I18N_ES = {
     "expand_all_collapse": "Contraer todas",
     "download_txt": "Descargar lecturas (.txt)",
     "search_btn": "Buscar",
+    "gospel_book_lead": "Todas las lecturas de este libro en el leccionario:",
     "aclamacion_label_prefix": "Aclamación",
 
     # buscar.html
@@ -172,6 +175,7 @@ I18N_EU = {
     "expand_all_collapse": "Guztiak tolestu",
     "download_txt": "Irakurgaiak deskargatu (.txt)",
     "search_btn": "Bilatu",
+    "gospel_book_lead": "Liburu honen irakurgai guztiak lezionarioan:",
     "aclamacion_label_prefix": "Aldarria",  # REVIEW (Aldarrikapena? Aklamazioa?)
 
     # buscar.html / bilatu.html

@@ -22,6 +22,8 @@ import generate_site  # noqa: E402
 ES_ONLY_KEYS = {
     "home_title_prefix",
     "home_meta_description",
+    "domingo_title_prefix",
+    "domingo_meta_description",
     "acerca_link",
     "libros_footer_link",
 }

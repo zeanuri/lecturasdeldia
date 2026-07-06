@@ -29,6 +29,7 @@ from book_codex import (
     SLUGS,
     SLUGS_EU,
     clean_cita,
+    parse_book,
     slug_for,
     walk_citas,
 )
@@ -321,6 +322,21 @@ def get_day_data(d: date, lang: str, lectionaries: dict) -> dict:
                     "empty": False,
                 })
 
+    # Internal link to the gospel's book page in /libros/ — moves authority to
+    # the long-tail. Derive the book from the language-neutral ES cita (EU citas
+    # are localized, and parse_book only knows ES book variants).
+    es_source = readings_raw if lang == "es" else es_readings_raw
+    gospel = (es_source or {}).get("evangelio") if isinstance(es_source, dict) else None
+    gospel_cita = gospel.get("cita", "") if isinstance(gospel, dict) else ""
+    gospel_book = None
+    book_code = parse_book(gospel_cita)
+    if book_code:
+        book_slug = slug_for(book_code, lang)
+        if book_slug:
+            folder = "eu/liburuak" if lang == "eu" else "libros"
+            book_name = (DISPLAY_NAMES_EU if lang == "eu" else DISPLAY_NAMES_ES).get(book_code, book_code)
+            gospel_book = {"url": f"/{folder}/{book_slug}/", "name": book_name}
+
     fecha_corta = f"{d.day}/{d.month}/{d.year}"
 
     name_es = result.get("name", "")
@@ -369,6 +385,7 @@ def get_day_data(d: date, lang: str, lectionaries: dict) -> dict:
         "readings": readings,
         "aclamacion": aclamacion,
         "saint_readings": saint_readings,
+        "gospel_book": gospel_book,
     }
 
 
@@ -465,6 +482,60 @@ def generate_home(today, outdir, templates, lectionaries):
 
     Path(outdir).mkdir(parents=True, exist_ok=True)
     (Path(outdir) / "index.html").write_text(html, encoding="utf-8")
+
+
+def _next_sunday(today):
+    """Return the date of the Sunday to feature on /domingo/.
+
+    /domingo/ is an evergreen landing for the *upcoming* Sunday's Mass
+    readings — people prepare the Sunday liturgy during the week, so between
+    Monday and Saturday the page should already show next Sunday. This helper
+    owns the one judgment call: which Sunday to feature given today's date
+    (in particular, what to do when today *is* Sunday).
+
+    Convention: date.weekday() → Monday=0 .. Saturday=5 .. Sunday=6.
+    Must return a datetime.date within the generated range (±365 days).
+
+    Rule (user decision): on Sunday, feature *this* Sunday, not next week —
+    so the modulo-7 offset (0 on Sunday) is exactly what we want.
+    """
+    return today + timedelta(days=(6 - today.weekday()) % 7)
+
+
+def generate_domingo(today, outdir, templates, lectionaries):
+    """Render the upcoming Sunday's readings as an evergreen ES landing page.
+
+    Mirrors generate_home but is self-canonical to /domingo/ and targets
+    dominical queries ('evangelio del domingo', 'lecturas del domingo').
+    ES-only, like the home page and /acerca/ (EU keeps its redirect root).
+    """
+    lang = "es"
+    i18n = get_i18n(lang)
+    sunday = _next_sunday(today)
+    day_data = get_day_data(sunday, lang, lectionaries)
+    prev_d = sunday - timedelta(days=1)
+    next_d = sunday + timedelta(days=1)
+
+    template = templates.get_template("dia.html")
+    html = template.render(
+        day=day_data,
+        prev_url=f"{prev_d.year}/{prev_d.month:02d}/{prev_d.day:02d}",
+        next_url=f"{next_d.year}/{next_d.month:02d}/{next_d.day:02d}",
+        prev_label=format_prev_next(prev_d, i18n),
+        next_label=format_prev_next(next_d, i18n),
+        i18n=i18n,
+        lang=lang,
+        is_sunday=True,
+        canonical_es=None,
+        canonical_eu=None,
+        canonical_self="/domingo/",
+        toggle_url_es="/domingo/",
+        toggle_url_eu="/eu/",
+    )
+
+    target = Path(outdir) / "domingo"
+    target.mkdir(parents=True, exist_ok=True)
+    (target / "index.html").write_text(html, encoding="utf-8")
 
 
 def generate_acerca(outdir, templates):
@@ -996,6 +1067,9 @@ def generate_sitemap(all_days_es, outdir, by_book=None):
     # ES-only static pages (no hreflang cluster).
     lines.extend([
         "  <url>",
+        f"    <loc>{base}/domingo/</loc>",
+        "  </url>",
+        "  <url>",
         f"    <loc>{base}/acerca/</loc>",
         "  </url>",
     ])
@@ -1104,6 +1178,7 @@ def build_site(today=None, days_back=30, days_forward=365, outdir=None):
         if lang == "es":
             # ES root is a real page (today's readings), not a redirect.
             generate_home(today, lang_outdir, templates, lectionaries)
+            generate_domingo(today, lang_outdir, templates, lectionaries)
             generate_acerca(lang_outdir, templates)
             generate_feed(days, today, lang_outdir)
         else:

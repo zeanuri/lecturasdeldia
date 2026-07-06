@@ -1,13 +1,13 @@
 {% extends "base.html" %}
 
-{% block title %}{% if is_home %}{{ i18n.home_title_prefix }} — {{ day.fecha_larga }}{% else %}{{ i18n.dia_title_prefix }} {{ day.fecha_larga }} — {{ day.name }}{% endif %}{% endblock %}
+{% block title %}{% if is_home %}{{ i18n.home_title_prefix }} — {{ day.fecha_larga }}{% elif is_sunday %}{{ i18n.domingo_title_prefix }} — {{ day.fecha_larga }}{% else %}{{ i18n.dia_title_prefix }} {{ day.fecha_larga }} — {{ day.name }}{% endif %}{% endblock %}
 
-{% block description %}{% if is_home %}{{ i18n.home_meta_description }}. {{ day.name }}: {{ day.readings | map(attribute='cita') | select('defined') | join(', ') }}{% else %}{{ day.readings | map(attribute='cita') | select('defined') | join(', ') }}{% endif %}{% endblock %}
+{% block description %}{% if is_home %}{{ i18n.home_meta_description }}. {{ day.name }}: {{ day.readings | map(attribute='cita') | select('defined') | join(', ') }}{% elif is_sunday %}{{ i18n.domingo_meta_description }}. {{ day.name }}: {{ day.readings | map(attribute='cita') | select('defined') | join(', ') }}{% else %}{{ day.readings | map(attribute='cita') | select('defined') | join(', ') }}{% endif %}{% endblock %}
 
 {% block og %}
-<meta property="og:title" content="{% if is_home %}{{ i18n.home_title_prefix }} — {{ day.fecha_larga }}{% else %}{{ i18n.dia_title_prefix }} {{ day.fecha_larga }}{% endif %}">
+<meta property="og:title" content="{% if is_home %}{{ i18n.home_title_prefix }} — {{ day.fecha_larga }}{% elif is_sunday %}{{ i18n.domingo_title_prefix }} — {{ day.fecha_larga }}{% else %}{{ i18n.dia_title_prefix }} {{ day.fecha_larga }}{% endif %}">
 <meta property="og:description" content="{{ day.name }} — {{ day.readings | map(attribute='cita') | select('defined') | join(', ') }}">
-<meta property="og:type" content="{% if is_home %}website{% else %}article{% endif %}">
+<meta property="og:type" content="{% if is_home or is_sunday %}website{% else %}article{% endif %}">
 <meta property="og:url" content="https://lecturasdeldia.org{{ canonical_self }}">
 {% endblock %}
 
@@ -126,6 +126,11 @@
     {% endfor %}
   </section>
 
+  {% if day.gospel_book %}
+  <p class="gospel-book-link">{{ i18n.gospel_book_lead }}
+    <a href="{{ day.gospel_book.url }}">{{ day.gospel_book.name }}</a> &rarr;</p>
+  {% endif %}
+
   {% if day.saint_readings %}
   <section class="readings" id="saint-readings" hidden>
     {% for r in day.saint_readings %}
@@ -163,6 +168,19 @@
     <a href="/buscar/">buscar por cita bíblica, santo o celebración</a>,
     explorar las <a href="/libros/">citas del leccionario libro por libro</a>
     o leer las lecturas <a href="/eu/">en euskera</a>.
+    Más información en <a href="/acerca/">Acerca de</a>.</p>
+  </section>
+  {% elif is_sunday %}
+  <section class="home-intro">
+    <h2>Evangelio y lecturas del próximo domingo</h2>
+    <p>Aquí tienes el evangelio del domingo y todas las lecturas de la Misa dominical
+    —primera lectura, salmo responsorial, segunda lectura y evangelio— con los textos
+    oficiales del leccionario de la Conferencia Episcopal Española, para preparar la
+    liturgia del domingo durante la semana.</p>
+    <p>Consulta también las <a href="/">lecturas de hoy</a>,
+    <a href="/buscar/">busca por cita bíblica, santo o celebración</a>,
+    explora las <a href="/libros/">citas del leccionario libro por libro</a>
+    o lee las lecturas <a href="/eu/">en euskera</a>.
     Más información en <a href="/acerca/">Acerca de</a>.</p>
   </section>
   {% endif %}

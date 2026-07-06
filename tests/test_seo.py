@@ -67,12 +67,44 @@ class TestDayPages:
         html = _read(built_site, "2026", "04", "09", "index.html")
         assert '<link rel="canonical" href="https://lecturasdeldia.org/2026/04/09/">' in html
 
+    def test_day_page_links_gospel_book(self, built_site):
+        html = _read(built_site, "2026", "04", "09", "index.html")
+        assert 'class="gospel-book-link"' in html
+        assert 'href="/libros/' in html
+
+    def test_eu_day_page_links_gospel_book_in_basque(self, built_site):
+        html = _read(built_site, "eu", "2026", "04", "09", "index.html")
+        assert 'href="/eu/liburuak/' in html
+
 
 class TestAcerca:
     def test_acerca_exists_with_canonical(self, built_site):
         html = _read(built_site, "acerca", "index.html")
         assert '<link rel="canonical" href="https://lecturasdeldia.org/acerca/">' in html
         assert "Conferencia Episcopal" in html
+
+
+class TestDomingo:
+    # Fixture builds with today=2026-04-09 (Thursday); the upcoming Sunday is
+    # 2026-04-12 (Domingo de Ramos) for any reasonable _next_sunday rule.
+    def test_domingo_is_real_page_featuring_a_sunday(self, built_site):
+        html = _read(built_site, "domingo", "index.html")
+        assert "http-equiv=\"refresh\"" not in html
+        assert 'data-date="2026-04-12"' in html
+
+    def test_domingo_is_self_canonical(self, built_site):
+        html = _read(built_site, "domingo", "index.html")
+        assert '<link rel="canonical" href="https://lecturasdeldia.org/domingo/">' in html
+
+    def test_domingo_title_targets_sunday_queries(self, built_site):
+        html = _read(built_site, "domingo", "index.html")
+        assert "Evangelio del domingo y lecturas de la Misa dominical" in html
+
+    def test_domingo_is_article_not_website(self, built_site):
+        # A section, not the site root: emits Article but not the WebSite/SearchAction.
+        html = _read(built_site, "domingo", "index.html")
+        assert '"@type": "Article"' in html
+        assert '"@type": "WebSite"' not in html
 
 
 class TestFeed:
@@ -87,6 +119,7 @@ class TestFeed:
 class TestSitemap:
     def test_sitemap_includes_acerca_and_libros(self, built_site):
         xml = _read(built_site, "sitemap.xml")
+        assert "<loc>https://lecturasdeldia.org/domingo/</loc>" in xml
         assert "<loc>https://lecturasdeldia.org/acerca/</loc>" in xml
         assert "<loc>https://lecturasdeldia.org/libros/</loc>" in xml
         # at least one per-book page with its EU counterpart slug
