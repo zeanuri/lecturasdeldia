@@ -1104,3 +1104,57 @@ footer .footer-brand:hover {
 .static-page a {
   color: var(--color-brand);
 }
+
+/* ── Liturgical calendar page (/calendario/) ─────────────────────────── */
+.cal-seasons {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.3rem 0 1.2rem;
+}
+.cal-seasons th,
+.cal-seasons td {
+  text-align: left;
+  padding: 0.45rem 0.6rem;
+  border-bottom: 1px solid var(--color-border, #e5e5e5);
+  vertical-align: baseline;
+}
+.cal-seasons th[scope="row"] {
+  font-weight: 600;
+  white-space: nowrap;
+}
+.cal-seasons td {
+  color: var(--color-text-light);
+  white-space: nowrap;
+}
+
+.cal-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.3rem 0 1rem;
+}
+.cal-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--color-border, #eee);
+}
+.cal-list .dot {
+  flex: 0 0 auto;
+  align-self: center;
+}
+.cal-list .dot-green  { background: var(--color-green); }
+.cal-list .dot-purple { background: var(--color-purple); }
+.cal-list .dot-red    { background: var(--color-red); }
+.cal-list .dot-pink   { background: var(--color-pink); }
+.cal-list .dot-white  { background: #fff; border: 1px solid var(--color-text-muted); }
+.cal-list .cal-date {
+  flex: 0 0 4.2rem;
+  color: var(--color-text-muted);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.9rem;
+}
+.cal-list .cal-rank {
+  color: var(--color-text-muted);
+  font-size: 0.82rem;
+}

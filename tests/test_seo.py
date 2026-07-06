@@ -107,6 +107,31 @@ class TestDomingo:
         assert '"@type": "WebSite"' not in html
 
 
+class TestCalendario:
+    # Fixture today=2026-04-09 → liturgical year 2025-2026, Ciclo A.
+    def test_calendario_exists_self_canonical(self, built_site):
+        html = _read(built_site, "calendario", "index.html")
+        assert '<link rel="canonical" href="https://lecturasdeldia.org/calendario/">' in html
+
+    def test_calendario_title_and_cycle(self, built_site):
+        html = _read(built_site, "calendario", "index.html")
+        assert "Calendario litúrgico 2025-2026" in html
+        assert "Ciclo A" in html
+
+    def test_calendario_lists_seasons_and_links_days(self, built_site):
+        html = _read(built_site, "calendario", "index.html")
+        for season in ("Adviento", "Navidad", "Cuaresma", "Triduo Pascual y Pascua"):
+            assert season in html
+        # hub: at least one linked day page + the next-year section
+        import re
+        assert re.search(r'href="/20\d\d/\d\d/\d\d/"', html)
+        assert "2026-2027" in html  # próximo año
+
+    def test_calendario_in_sitemap(self, built_site):
+        xml = _read(built_site, "sitemap.xml")
+        assert "<loc>https://lecturasdeldia.org/calendario/</loc>" in xml
+
+
 class TestFeed:
     def test_feed_exists_with_recent_items_only(self, built_site):
         xml = _read(built_site, "feed.xml")

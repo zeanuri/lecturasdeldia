@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+
+{% block title %}Calendario litúrgico {{ current.label }} — Ciclo {{ current.sunday_cycle }}{% endblock %}
+
+{% block description %}Calendario litúrgico {{ current.label }} (Ciclo {{ current.sunday_cycle }}): fechas de Adviento, Navidad, Cuaresma, Pascua y Tiempo Ordinario, con los domingos y solemnidades y sus lecturas de la Misa.{% endblock %}
+
+{% block og %}
+<meta property="og:title" content="Calendario litúrgico {{ current.label }} — Ciclo {{ current.sunday_cycle }}">
+<meta property="og:description" content="Tiempos del año litúrgico, ciclo dominical y ferial, domingos y solemnidades con sus lecturas.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lecturasdeldia.org{{ canonical_self }}">
+{% endblock %}
+
+{% block canonical %}
+<link rel="canonical" href="https://lecturasdeldia.org{{ canonical_self }}">
+{% endblock %}
+
+{% block content %}
+<article>
+  <div class="day-card">
+    <div class="card">
+      <h1>Calendario litúrgico {{ current.label }}</h1>
+      <div class="pills">
+        <span><span class="dot dot-green"></span>Ciclo {{ current.sunday_cycle }} (dominical)</span>
+        <span><span class="dot"></span>Año {{ current.ferial_cycle }} (ferial)</span>
+      </div>
+      <p class="date">El año litúrgico va del primer domingo de Adviento a la solemnidad de
+      Jesucristo, Rey del Universo. Aquí tienes sus tiempos, el ciclo de lecturas y los
+      próximos domingos y solemnidades, cada uno con sus lecturas de la Misa.</p>
+    </div>
+  </div>
+
+  <section class="readings">
+    <h2>Tiempos del año litúrgico {{ current.label }}</h2>
+    <table class="cal-seasons">
+      <tbody>
+        {% for s in current.seasons %}
+        <tr>
+          <th scope="row">{{ s.name }}</th>
+          <td>{{ s.start }} – {{ s.end }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <h2>Próximo año litúrgico {{ upcoming.label }} — Ciclo {{ upcoming.sunday_cycle }}, Año {{ upcoming.ferial_cycle }} (ferial)</h2>
+    <table class="cal-seasons">
+      <tbody>
+        {% for s in upcoming.seasons %}
+        <tr>
+          <th scope="row">{{ s.name }}</th>
+          <td>{{ s.start }} – {{ s.end }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+
+  <section class="readings">
+    <h2>Próximos domingos y solemnidades</h2>
+    <ul class="cal-list">
+      {% for e in entries_current %}
+      <li>
+        <span class="dot dot-{{ e.color_css }}"></span>
+        <span class="cal-date">{{ e.date }}</span>
+        <a href="{{ e.url }}">{{ e.name }}</a>
+        {% if e.rank == 'Solemnidad' %}<em class="cal-rank">Solemnidad</em>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+
+    {% if entries_upcoming %}
+    <h3>Año litúrgico {{ upcoming.label }} · Ciclo {{ upcoming.sunday_cycle }}</h3>
+    <ul class="cal-list">
+      {% for e in entries_upcoming %}
+      <li>
+        <span class="dot dot-{{ e.color_css }}"></span>
+        <span class="cal-date">{{ e.date }}</span>
+        <a href="{{ e.url }}">{{ e.name }}</a>
+        {% if e.rank == 'Solemnidad' %}<em class="cal-rank">Solemnidad</em>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </section>
+
+  <section class="home-intro">
+    <p>Consulta las <a href="/">lecturas de hoy</a>, el
+    <a href="/domingo/">evangelio del próximo domingo</a>,
+    <a href="/buscar/">busca por cita bíblica, santo o celebración</a>
+    o explora las <a href="/libros/">citas del leccionario libro por libro</a>.
+    Más información en <a href="/acerca/">Acerca de</a>.</p>
+  </section>
+</article>
+{% endblock %}

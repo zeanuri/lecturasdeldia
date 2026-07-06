@@ -538,6 +538,119 @@ def generate_domingo(today, outdir, templates, lectionaries):
     (target / "index.html").write_text(html, encoding="utf-8")
 
 
+# ── Liturgical calendar page (ES-only) ──────────────────────────────────────────
+
+_MONTH_ABBR_ES = ["ene", "feb", "mar", "abr", "may", "jun",
+                  "jul", "ago", "sep", "oct", "nov", "dic"]
+
+
+def _fmt_cal(d: date, with_year: bool = True) -> str:
+    s = f"{d.day} {_MONTH_ABBR_ES[d.month - 1]}"
+    return f"{s} {d.year}" if with_year else s
+
+
+def _liturgical_year_of(d: date) -> int:
+    """Advent year of the liturgical year containing d (LY starts at Advent)."""
+    return d.year if d >= liturgia.advent_start(d.year) else d.year - 1
+
+
+def _season_blocks(advent_year: int) -> list[dict]:
+    """Six season spans of the liturgical year that opens at Advent `advent_year`.
+    Boundaries are computed, never hard-coded — liturgy is exact."""
+    ay = advent_year
+    adv = liturgia.advent_start(ay)
+    nav = date(ay, 12, 25)
+    bap = liturgia.baptism_of_lord(ay + 1)          # closes Christmas
+    e = liturgia.easter(ay + 1)
+    ash = e - timedelta(days=46)                     # Ash Wednesday
+    triduo = e - timedelta(days=3)                   # Holy Thursday
+    pent = e + timedelta(days=49)                    # Pentecost closes Easter
+    adv_next = liturgia.advent_start(ay + 1)
+    spans = [
+        ("Adviento", adv, nav - timedelta(days=1)),
+        ("Navidad", nav, bap),
+        ("Tiempo Ordinario (I)", bap + timedelta(days=1), ash - timedelta(days=1)),
+        ("Cuaresma", ash, triduo - timedelta(days=1)),
+        ("Triduo Pascual y Pascua", triduo, pent),
+        ("Tiempo Ordinario (II)", pent + timedelta(days=1), adv_next - timedelta(days=1)),
+    ]
+    return [{"name": n, "start": _fmt_cal(a), "end": _fmt_cal(b)} for n, a, b in spans]
+
+
+def _ferial_cycle(advent_year: int) -> str:
+    """Año I/II — read from the first weekday that carries a ferial cycle
+    (Sundays blank it), scanning forward from the end of Christmas."""
+    d = liturgia.baptism_of_lord(advent_year + 1) + timedelta(days=1)
+    for _ in range(20):
+        wc = liturgia.calculate(d).get("weekday_cycle", "")
+        if wc:
+            return wc.replace("Año ", "").replace("Ano ", "")
+        d += timedelta(days=1)
+    return ""
+
+
+def _year_block(advent_year: int) -> dict:
+    sun = liturgia.calculate(liturgia.advent_start(advent_year)).get("sunday_cycle", "").replace("Ciclo ", "")
+    return {
+        "label": f"{advent_year}-{advent_year + 1}",
+        "sunday_cycle": sun,
+        "ferial_cycle": _ferial_cycle(advent_year),
+        "seasons": _season_blocks(advent_year),
+    }
+
+
+def generate_calendario(today, outdir, templates, lectionaries):
+    """Render the ES-only /calendario/ liturgical-year overview.
+
+    Hybrid: season summary (computed dates + cycle) for the current and next
+    liturgical years, plus a linked list of upcoming Sundays and solemnities.
+    The list only spans generated day pages (today..+365) so every link resolves;
+    the Advent boundary splits it into current-year and next-year sections.
+    Targets seasonal queries ('cuándo empieza el Adviento', 'ciclo A/B/C',
+    'calendario litúrgico') and acts as an internal-linking hub.
+    """
+    lang = "es"
+    i18n = get_i18n(lang)
+    cur = _liturgical_year_of(today)
+    current = _year_block(cur)
+    upcoming = _year_block(cur + 1)
+
+    boundary = liturgia.advent_start(cur + 1)
+    entries_current, entries_upcoming = [], []
+    for i in range(366):
+        d = today + timedelta(days=i)
+        r = liturgia.calculate(d)
+        if r.get("day_name") != "Domingo" and r.get("rank") != "Solemnidad":
+            continue
+        entry = {
+            "date": _fmt_cal(d, with_year=False),
+            "url": f"/{d.year:04d}/{d.month:02d}/{d.day:02d}/",
+            "name": r.get("name", ""),
+            "rank": r.get("rank", ""),
+            "color_css": COLOR_CSS.get(r.get("color", ""), "white"),
+        }
+        (entries_upcoming if d >= boundary else entries_current).append(entry)
+
+    template = templates.get_template("calendario.html")
+    html = template.render(
+        day=None,
+        i18n=i18n,
+        lang=lang,
+        current=current,
+        upcoming=upcoming,
+        entries_current=entries_current,
+        entries_upcoming=entries_upcoming,
+        canonical_es=None,
+        canonical_eu=None,
+        canonical_self="/calendario/",
+        toggle_url_es="/calendario/",
+        toggle_url_eu="/eu/",
+    )
+    target = Path(outdir) / "calendario"
+    target.mkdir(parents=True, exist_ok=True)
+    (target / "index.html").write_text(html, encoding="utf-8")
+
+
 def generate_acerca(outdir, templates):
     """Render the ES-only /acerca/ page (site description, sources, authorship)."""
     i18n = get_i18n("es")
@@ -1070,6 +1183,9 @@ def generate_sitemap(all_days_es, outdir, by_book=None):
         f"    <loc>{base}/domingo/</loc>",
         "  </url>",
         "  <url>",
+        f"    <loc>{base}/calendario/</loc>",
+        "  </url>",
+        "  <url>",
         f"    <loc>{base}/acerca/</loc>",
         "  </url>",
     ])
@@ -1179,6 +1295,7 @@ def build_site(today=None, days_back=30, days_forward=365, outdir=None):
             # ES root is a real page (today's readings), not a redirect.
             generate_home(today, lang_outdir, templates, lectionaries)
             generate_domingo(today, lang_outdir, templates, lectionaries)
+            generate_calendario(today, lang_outdir, templates, lectionaries)
             generate_acerca(lang_outdir, templates)
             generate_feed(days, today, lang_outdir)
         else:
