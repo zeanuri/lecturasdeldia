@@ -19,7 +19,7 @@ Además de los leccionarios del calendario (`Leccionario_CL.json`, `Lezionarioa_
 
 ## Tecnología
 
-- Python 3.12 + Jinja2 para la generación del sitio (`generate_site.py`)
+- Python 3.14 + Jinja2 para la generación del sitio (`generate_site.py`)
 - HTML/CSS/JS vanilla para el frontend
 - GitHub Pages para el hosting
 - GitHub Actions para la generación nocturna (2:00 UTC) y en cada push
