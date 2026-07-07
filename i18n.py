@@ -39,6 +39,11 @@ I18N_ES = {
     "home_meta_description": "Evangelio de hoy y lecturas de la Misa del día, con los textos oficiales del leccionario de la Conferencia Episcopal Española",
     "domingo_title_prefix": "Evangelio del domingo y lecturas de la Misa dominical",
     "domingo_meta_description": "Evangelio del domingo y lecturas de la Misa dominical, con los textos oficiales del leccionario de la Conferencia Episcopal Española",
+    # Meta-descripción base para páginas de día de diario (feria). Se antepone a
+    # "{nombre litúrgico}: {citas}" en dia.html. Lidera con "Lecturas y evangelio"
+    # para captar ambos términos de búsqueda; "del día" (no "de hoy") porque son
+    # páginas de fecha concreta. Cierra con la autoridad CEE, como home/domingo.
+    "dia_meta_description": "Lecturas y evangelio de la Misa del día, con los textos oficiales del leccionario de la Conferencia Episcopal Española",
     "acerca_link": "Acerca de",
     "libros_footer_link": "Libros del leccionario",
     "search_page_title_prefix": "Buscar",

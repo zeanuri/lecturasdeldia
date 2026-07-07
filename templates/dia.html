@@ -2,7 +2,7 @@
 
 {% block title %}{% if is_home %}{{ i18n.home_title_prefix }} — {{ day.fecha_larga }}{% elif is_sunday %}{{ i18n.domingo_title_prefix }} — {{ day.fecha_larga }}{% else %}{{ i18n.dia_title_prefix }} {{ day.fecha_larga }} — {{ day.name }}{% endif %}{% endblock %}
 
-{% block description %}{% if is_home %}{{ i18n.home_meta_description }}. {{ day.name }}: {{ day.readings | map(attribute='cita') | select('defined') | join(', ') }}{% elif is_sunday %}{{ i18n.domingo_meta_description }}. {{ day.name }}: {{ day.readings | map(attribute='cita') | select('defined') | join(', ') }}{% else %}{{ day.readings | map(attribute='cita') | select('defined') | join(', ') }}{% endif %}{% endblock %}
+{% block description %}{% if is_home %}{{ i18n.home_meta_description }}. {{ day.name }}: {{ day.readings | map(attribute='cita') | select('defined') | join(', ') }}{% elif is_sunday %}{{ i18n.domingo_meta_description }}. {{ day.name }}: {{ day.readings | map(attribute='cita') | select('defined') | join(', ') }}{% else %}{% if i18n.dia_meta_description %}{{ i18n.dia_meta_description }}. {% endif %}{{ day.name }}: {{ day.readings | map(attribute='cita') | select('defined') | join(', ') }}{% endif %}{% endblock %}
 
 {% block og %}
 <meta property="og:title" content="{% if is_home %}{{ i18n.home_title_prefix }} — {{ day.fecha_larga }}{% elif is_sunday %}{{ i18n.domingo_title_prefix }} — {{ day.fecha_larga }}{% else %}{{ i18n.dia_title_prefix }} {{ day.fecha_larga }}{% endif %}">
