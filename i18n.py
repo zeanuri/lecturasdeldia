@@ -167,7 +167,7 @@ I18N_EU = {
     # Meta / OG
     "meta_description_default": "Eguneroko Mezako irakurgaiak -- Espainiako Gotzainen Batzarra",  # REVIEW
     "og_description_default": "Eguneroko Mezako irakurgaiak -- CEE",
-    "dia_meta_description": "Eguneroko Mezako irakurgaiak eta ebanjelioa, Espainiako Gotzainen Batzarraren lekzionarioko testu ofizialekin",  # REVIEW
+    "dia_meta_description": "Eguneroko Mezako irakurgaiak eta ebanjelioa",
     "dia_title_prefix": "Irakurgaiak,",
     "search_page_title_prefix": "Bilatu",
     "search_meta_description": "Bilatu irakurgaiak data, bibliako aipamen, santu edo gaiaren arabera",  # REVIEW
