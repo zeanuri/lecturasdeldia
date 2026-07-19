@@ -6,6 +6,7 @@ import shutil
 import tempfile
 from datetime import date, timedelta
 from pathlib import Path
+from unittest import mock
 
 import pytest
 
@@ -171,13 +172,12 @@ class TestFullBuild:
             assert os.path.exists(os.path.join(outdir, "eu", "calendario", "data.json"))
             assert os.path.exists(os.path.join(outdir, "eu", "bilatu", "index.html"))
 
-            # Sitemap has hreflang clusters
+            # Sitemap is ES-only: no EU URLs, no hreflang clusters
             with open(os.path.join(outdir, "sitemap.xml"), encoding="utf-8") as f:
                 sitemap = f.read()
             assert "2026/04/09" in sitemap
-            assert 'hreflang="es"' in sitemap
-            assert 'hreflang="eu"' in sitemap
-            assert "/eu/2026/04/09/" in sitemap
+            assert "hreflang" not in sitemap
+            assert "/eu/" not in sitemap
 
             # ES search index covers the 3-day window with apex URLs
             with open(os.path.join(outdir, "search-index.json"), encoding="utf-8") as f:
@@ -190,3 +190,14 @@ class TestFullBuild:
                 eu_idx = json.load(f)
             assert len(eu_idx) == 3
             assert all(e["url"].startswith("/eu/") for e in eu_idx)
+
+    def test_default_build_is_cumulative_archive_from_epoch(self):
+        """Without days_back, day pages start at SITE_EPOCH, not today-N."""
+        with tempfile.TemporaryDirectory() as outdir, \
+                mock.patch.object(generate_site, "SITE_EPOCH", date(2026, 4, 7)):
+            generate_site.build_site(
+                today=date(2026, 4, 9), days_forward=0, outdir=outdir,
+            )
+            for d in (date(2026, 4, 7), date(2026, 4, 8), date(2026, 4, 9)):
+                path = os.path.join(outdir, str(d.year), f"{d.month:02d}", f"{d.day:02d}", "index.html")
+                assert os.path.exists(path), f"Missing archived page for {d}"

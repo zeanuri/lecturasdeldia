@@ -59,6 +59,16 @@ STATIC_ROUTE_MAP = {
     "/buscar/": "/eu/bilatu/",
 }
 
+# Earliest day page ever published (first deploy 2026-04-09 with days_back=30).
+# Day pages are generated from here forward and never deleted, so URLs Google
+# already indexed keep resolving instead of decaying into 404s.
+SITE_EPOCH = date(2026, 3, 10)
+
+# Dated pages listed in the sitemap: a short window around today. Pages outside
+# it still exist and stay linked — they just don't ask Google for crawl budget.
+SITEMAP_DAYS_BACK = 7
+SITEMAP_DAYS_FORWARD = 30
+
 
 # ── Loading ────────────────────────────────────────────────────────────────────
 
@@ -1143,67 +1153,43 @@ def generate_book_aliases_json(by_book: dict[str, list[dict]], outdir, lang: str
     out_path.write_text(json.dumps(aliases, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
-def generate_sitemap(all_days_es, outdir, by_book=None):
-    """Combined sitemap with hreflang clusters per URL.
+def generate_sitemap(all_days_es, outdir, by_book=None, today=None):
+    """ES-only sitemap: evergreen pages + a short window of dated pages.
 
-    The same <url> entry carries <xhtml:link rel="alternate"> siblings for
-    each language plus an x-default that points to the ES variant.
+    EU URLs and hreflang clusters are deliberately absent — the SEO scope is
+    Spanish-only (decision 2026-07-05) and per-page hreflang already lives in
+    base.html. With a young domain, a small sitemap concentrates crawl budget
+    on the pages that can actually rank.
     """
     base = "https://lecturasdeldia.org"
     lines = ['<?xml version="1.0" encoding="UTF-8"?>']
-    lines.append(
-        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
-        'xmlns:xhtml="http://www.w3.org/1999/xhtml">'
-    )
+    lines.append('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">')
 
-    def cluster(es_path: str, eu_path: str = None):
-        if eu_path is None:
-            eu_path = STATIC_ROUTE_MAP.get(es_path) or ("/eu" + es_path)
-        return [
-            "  <url>",
-            f"    <loc>{base}{es_path}</loc>",
-            f'    <xhtml:link rel="alternate" hreflang="es" href="{base}{es_path}"/>',
-            f'    <xhtml:link rel="alternate" hreflang="eu" href="{base}{eu_path}"/>',
-            f'    <xhtml:link rel="alternate" hreflang="x-default" href="{base}{es_path}"/>',
-            "  </url>",
-            "  <url>",
-            f"    <loc>{base}{eu_path}</loc>",
-            f'    <xhtml:link rel="alternate" hreflang="es" href="{base}{es_path}"/>',
-            f'    <xhtml:link rel="alternate" hreflang="eu" href="{base}{eu_path}"/>',
-            f'    <xhtml:link rel="alternate" hreflang="x-default" href="{base}{es_path}"/>',
-            "  </url>",
-        ]
+    def url(path: str):
+        return ["  <url>", f"    <loc>{base}{path}</loc>", "  </url>"]
 
-    lines.extend(cluster("/"))
-    lines.extend(cluster("/buscar/"))
+    for path in ("/", "/buscar/", "/domingo/", "/calendario/", "/acerca/"):
+        lines.extend(url(path))
 
-    # ES-only static pages (no hreflang cluster).
-    lines.extend([
-        "  <url>",
-        f"    <loc>{base}/domingo/</loc>",
-        "  </url>",
-        "  <url>",
-        f"    <loc>{base}/calendario/</loc>",
-        "  </url>",
-        "  <url>",
-        f"    <loc>{base}/acerca/</loc>",
-        "  </url>",
-    ])
-
-    # Browse-by-book pages (slugs differ per language).
+    # Browse-by-book pages.
     if by_book:
-        lines.extend(cluster("/libros/", "/eu/liburuak/"))
+        lines.extend(url("/libros/"))
         for book in CANONICAL_BOOKS_ES:
             if not by_book.get(book):
                 continue
             es_slug = slug_for(book, "es")
-            eu_slug = slug_for(book, "eu")
             if es_slug:
-                lines.extend(cluster(f"/libros/{es_slug}/", f"/eu/liburuak/{eu_slug}/"))
+                lines.extend(url(f"/libros/{es_slug}/"))
 
+    if today is not None:
+        lo = (today - timedelta(days=SITEMAP_DAYS_BACK)).isoformat()
+        hi = (today + timedelta(days=SITEMAP_DAYS_FORWARD)).isoformat()
+    else:
+        lo, hi = "0000-00-00", "9999-99-99"
     for day_data in all_days_es:
         d = day_data["date_iso"]
-        lines.extend(cluster(f"/{d[:4]}/{d[5:7]}/{d[8:10]}/"))
+        if lo <= d <= hi:
+            lines.extend(url(f"/{d[:4]}/{d[5:7]}/{d[8:10]}/"))
 
     lines.append("</urlset>")
 
@@ -1239,7 +1225,7 @@ Sitemap: https://lecturasdeldia.org/sitemap.xml
 
 # ── Orchestrator ───────────────────────────────────────────────────────────────
 
-def build_site(today=None, days_back=30, days_forward=365, outdir=None):
+def build_site(today=None, days_back=None, days_forward=365, outdir=None):
     if today is None:
         today = date.today()
     if outdir is None:
@@ -1253,7 +1239,12 @@ def build_site(today=None, days_back=30, days_forward=365, outdir=None):
     lectionaries = load_leccionarios()
     templates = load_templates()
 
-    start = today - timedelta(days=days_back)
+    # days_back=None (production) → cumulative archive from SITE_EPOCH: old day
+    # pages are regenerated every build instead of dropping off into 404s.
+    if days_back is None:
+        start = SITE_EPOCH
+    else:
+        start = today - timedelta(days=days_back)
     end = today + timedelta(days=days_forward)
     total = (end - start).days + 1
 
@@ -1311,7 +1302,7 @@ def build_site(today=None, days_back=30, days_forward=365, outdir=None):
         generate_book_aliases_json(by_book, lang_outdir, lang)
 
     # Site-wide files (live at the apex regardless of language).
-    generate_sitemap(all_days_per_lang["es"], outdir, by_book=by_book)
+    generate_sitemap(all_days_per_lang["es"], outdir, by_book=by_book, today=today)
     generate_404(outdir, templates)
     copy_assets(outdir)
     generate_robots(outdir)

@@ -147,5 +147,21 @@ class TestSitemap:
         assert "<loc>https://lecturasdeldia.org/domingo/</loc>" in xml
         assert "<loc>https://lecturasdeldia.org/acerca/</loc>" in xml
         assert "<loc>https://lecturasdeldia.org/libros/</loc>" in xml
-        # at least one per-book page with its EU counterpart slug
         assert "https://lecturasdeldia.org/libros/mateo/" in xml
+
+    def test_sitemap_is_es_only(self, built_site):
+        xml = _read(built_site, "sitemap.xml")
+        assert "/eu/" not in xml
+        assert "hreflang" not in xml
+
+    def test_sitemap_dated_window(self):
+        """Dated pages outside today-7..today+30 are not listed."""
+        days = [{"date_iso": d} for d in
+                ("2026-03-01", "2026-04-08", "2026-05-01", "2026-05-20")]
+        with tempfile.TemporaryDirectory() as tmp:
+            generate_site.generate_sitemap(days, tmp, today=date(2026, 4, 9))
+            xml = _read(tmp, "sitemap.xml")
+        assert "2026/04/08" in xml   # within 7 days back
+        assert "2026/05/01" in xml   # within 30 days forward
+        assert "2026/03/01" not in xml   # too far back
+        assert "2026/05/20" not in xml   # too far forward
