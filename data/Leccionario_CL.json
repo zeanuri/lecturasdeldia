@@ -1843,6 +1843,34 @@
           "texto": "En aquel tiempo, dijo Jesús a sus discípulos:\n«Si tu hermano peca contra ti, repréndelo estando los dos a solas. Si te hace caso, has salvado a tu hermano. Si no te hace caso, llama a otro o a otros dos, para que todo el asunto quede confirmado por boca de dos o tres testigos. Si no les hace caso, díselo a la comunidad, y si no hace caso ni siquiera a la comunidad, considéralo como un pagano o un publicano.\nEn verdad os digo que todo lo que atéis en la tierra quedará atado en los cielos, y todo lo que desatéis en la tierra quedará desatado en los cielos.\nOs digo, además, que si dos de vosotros se ponen de acuerdo en la tierra para pedir algo, se lo dará mi Padre que está en los cielos. Porque donde dos o tres están reunidos en mi nombre, allí estoy yo en medio de ellos»."
         }
       },
+      "to_24": {
+        "day_name": "DOMINGO XXIV DEL TIEMPO ORDINARIO",
+        "primera": {
+          "titulo": "Perdona la ofensa a tu prójimo y, cuando reces, tus pecados te serán perdonados",
+          "cita": "Eclo 27, 30 — 28, 7",
+          "texto": "Rencor e ira también son detestables,\nel pecador los posee.\nEl vengativo sufrirá la venganza del Señor,\nque llevará cuenta exacta de sus pecados.\nPerdona la ofensa a tu prójimo\ny, cuando reces, tus pecados te serán perdonados.\nSi un ser humano alimenta la ira contra otro,\n¿cómo puede esperar la curación del Señor?\nSi no se compadece de su semejante,\n¿cómo pide perdón por sus propios pecados?\nSi él, simple mortal, guarda rencor,\n¿quién perdonará sus pecados?\nPiensa en tu final y deja de odiar,\nacuérdate de la corrupción y de la muerte\ny sé fiel a los mandamientos.\nAcuérdate de los mandamientos\ny no guardes rencor a tu prójimo;\nacuérdate de la alianza del Altísimo\ny pasa por alto la ofensa."
+        },
+        "salmo": {
+          "cita": "Sal 102, 1bc-2. 3-4. 9-10. 11-12 (R.: 8)",
+          "antifona": "El Señor es compasivo y misericordioso, lento a la ira y rico en clemencia.",
+          "texto": "V/. Bendice, alma mía, al Señor, y todo mi ser a su santo nombre. Bendice, alma mía, al Señor, y no olvides sus beneficios.\n\nR/. El Señor es compasivo y misericordioso, lento a la ira y rico en clemencia.\n\nV/. Él perdona todas tus culpas y cura todas tus enfermedades; él rescata tu vida de la fosa, y te colma de gracia y de ternura.\n\nR/. El Señor es compasivo y misericordioso, lento a la ira y rico en clemencia.\n\nV/. No está siempre acusando ni guarda rencor perpetuo; no nos trata como merecen nuestros pecados ni nos paga según nuestras culpas.\n\nR/. El Señor es compasivo y misericordioso, lento a la ira y rico en clemencia.\n\nV/. Como se levanta el cielo sobre la tierra, se levanta su bondad sobre los que lo temen; como dista el oriente del ocaso, así aleja de nosotros nuestros delitos.\n\nR/. El Señor es compasivo y misericordioso, lento a la ira y rico en clemencia."
+        },
+        "segunda": {
+          "titulo": "Ya vivamos, ya muramos, somos del Señor",
+          "cita": "Rom 14, 7-9",
+          "texto": "Hermanos:\nNinguno de nosotros vive para sí mismo y ninguno muere para sí mismo.\nSi vivimos, vivimos para el Señor; si morimos, morimos para el Señor; así que, ya vivamos ya muramos, somos del Señor.\nPues para esto murió y resucitó Cristo: para ser Señor de muertos y vivos."
+        },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Jn 13, 34",
+          "texto": "Os doy un mandamiento nuevo —dice el Señor—: que os améis unos a otros, como yo os he amado."
+        },
+        "evangelio": {
+          "titulo": "No te digo que perdones hasta siete veces, sino hasta setenta veces siete",
+          "cita": "Mt 18, 21-35",
+          "texto": "En aquel tiempo, acercándose Pedro a Jesús le preguntó:\n«Señor, si mi hermano me ofende, ¿cuántas veces tengo que perdonarlo? ¿Hasta siete veces?».\nJesús le contesta:\n«No te digo hasta siete veces, sino hasta setenta veces siete.\nPor esto, se parece el reino de los cielos a un rey que quiso ajustar las cuentas con sus criados. Al empezar a ajustarlas, le presentaron uno que debía diez mil talentos. Como no tenía con qué pagar, el señor mandó que lo vendieran a él con su mujer y sus hijos y todas sus posesiones, y que pagara así.\nEl criado, arrojándose a sus pies, le suplicaba diciendo:\n“Ten paciencia conmigo y te lo pagaré todo”.\nSe compadeció el señor de aquel criado y lo dejó marchar, perdonándole la deuda. Pero al salir, el criado aquel encontró a uno de sus compañeros que le debía cien denarios y, agarrándolo, lo estrangulaba diciendo:\n“Págame lo que me debes”.\nEl compañero, arrojándose a sus pies, le rogaba diciendo:\n“Ten paciencia conmigo y te lo pagaré”.\nPero él se negó y fue y lo metió en la cárcel hasta que pagara lo que debía.\nSus compañeros, al ver lo ocurrido, quedaron consternados y fueron a contarle a su señor todo lo sucedido. Entonces el señor lo llamó y le dijo:\n“¡Siervo malvado! Toda aquella deuda te la perdoné porque me lo rogaste. ¿No debías tú también tener compasión de tu compañero, como yo tuve compasión de ti?”.\nY el señor, indignado, lo entregó a los verdugos hasta que pagara toda la deuda.\nLo mismo hará con vosotros mi Padre celestial, si cada cual no perdona de corazón a su hermano»."
+        }
+      },
       "presentacion": {
         "day_name": "LA PRESENTACIÓN DEL SEÑOR",
         "primera": {
@@ -1897,6 +1925,34 @@
           "titulo": "¡Que llega el esposo, salid a su encuentro!",
           "cita": "Mt 25, 1-13",
           "texto": "En aquel tiempo, dijo Jesús a sus discípulos esta parábola:\n«Se parecerá el reino de los cielos a diez vírgenes que tomaron sus lámparas y salieron al encuentro del esposo.\nCinco de ellas eran necias y cinco eran prudentes.\nLas necias, al tomar las lámparas, no se proveyeron de aceite; en cambio, las prudentes se llevaron alcuzas de aceite con las lámparas.\nEl esposo tardaba, les entró sueño a todas y se durmieron.\nA medianoche se oyó una voz:\n“¡Que llega el esposo, salid a su encuentro!”.\nEntonces se despertaron todas aquellas vírgenes y se pusieron a preparar sus lámparas.\nY las necias dijeron a las prudentes:\n“Dadnos de vuestro aceite, que se nos apagan las lámparas”.\nPero las prudentes contestaron:\n“Por si acaso no hay bastante para vosotras y nosotras, mejor es que vayáis a la tienda y os lo compréis”.\nMientras iban a comprarlo, llegó el esposo, y las que estaban preparadas entraron con él al banquete de bodas, y se cerró la puerta.\nMás tarde llegaron también las otras vírgenes, diciendo:\n“Señor, señor, ábrenos”.\nPero él respondió:\n“En verdad os digo que no os conozco”.\nPor tanto, velad, porque no sabéis el día ni la hora»."
+        }
+      },
+      "to_33": {
+        "day_name": "DOMINGO XXXIII DEL TIEMPO ORDINARIO",
+        "primera": {
+          "titulo": "Trabaja con la destreza de sus manos",
+          "cita": "Prov 31, 10-13. 19-20. 30-31",
+          "texto": "Una mujer fuerte, ¿quién la hallará?\nSupera en valor a las perlas.\nSu marido se fía de ella,\npues no le faltan riquezas.\nLe trae ganancias, no pérdidas,\ntodos los días de su vida.\nBusca la lana y el lino\ny los trabaja con la destreza de sus manos.\nAplica sus manos al huso,\ncon sus dedos sostiene la rueca.\nAbre sus manos al necesitado\ny tiende sus brazos al pobre.\nEngañosa es la gracia, fugaz la hermosura;\nla que teme al Señor merece alabanza.\nCantadle por el éxito de su trabajo,\nque sus obras la alaben en público."
+        },
+        "salmo": {
+          "cita": "Sal 127, 1bc-2. 3. 4-5 (R.: cf. 1b)",
+          "antifona": "Dichosos los que temen al Señor.",
+          "texto": "V/. Dichoso el que teme al Señor y sigue sus caminos. Comerás del fruto de tu trabajo, serás dichoso, te irá bien.\n\nR/. Dichosos los que temen al Señor.\n\nV/. Tu mujer, como parra fecunda, en medio de tu casa; tus hijos, como renuevos de olivo, alrededor de tu mesa.\n\nR/. Dichosos los que temen al Señor.\n\nV/. Esta es la bendición del hombre que teme al Señor. Que el Señor te bendiga desde Sion, que veas la prosperidad de Jerusalén todos los días de tu vida.\n\nR/. Dichosos los que temen al Señor."
+        },
+        "segunda": {
+          "titulo": "Que el Día del Señor no os sorprenda como un ladrón",
+          "cita": "1 Tes 5, 1-6",
+          "texto": "En lo referente al tiempo y a las circunstancias, hermanos, no necesitáis que os escriba, pues vosotros sabéis perfectamente que el Día del Señor llegará como un ladrón en la noche.\nCuando estén diciendo: «paz y seguridad», entonces, de improviso, les sobrevendrá la ruina, como los dolores de parto a la que está encinta, y no podrán escapar.\nPero vosotros, hermanos, no vivís en tinieblas, de forma que ese día os sorprenda como un ladrón; porque todos sois hijos de la luz e hijos del día; no somos de la noche ni de las tinieblas.\nAsí, pues, no nos entreguemos al sueño como los demás, sino estemos en vela y vivamos sobriamente."
+        },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Jn 15, 4a. 5b",
+          "texto": "Permaneced en mí, y yo en vosotros —dice el Señor—; el que permanece en mí da fruto abundante."
+        },
+        "evangelio": {
+          "titulo": "Como has sido fiel en lo poco, entra en el gozo de tu señor",
+          "cita": "Mt 25, 14-15. 19-21",
+          "texto": "En aquel tiempo, dijo Jesús a sus discípulos esta parábola:\n«Un hombre, al irse de viaje, llamó a sus siervos y los dejó al cargo de sus bienes: a uno le dejó cinco talentos, a otro dos, a otro uno, a cada cual según su capacidad; luego se marchó.\nAl cabo de mucho tiempo viene el señor de aquellos siervos y se pone a ajustar las cuentas con ellos.\nSe acercó el que había recibido cinco talentos y le presentó otros cinco, diciendo:\n“Señor, cinco talentos me dejaste; mira, he ganado otros cinco”.\nSu señor le dijo:\n“Bien, siervo bueno y fiel; como has sido fiel en lo poco, te daré un cargo importante; entra en el gozo de tu señor”»."
         }
       },
       "vigilia_pascual_lectura_1": {
@@ -3519,6 +3575,34 @@
           "texto": "Jesús proclamaba el Evangelio del reino, curando las dolencias del pueblo."
         }
       },
+      "to_25": {
+        "day_name": "VIGESIMO QUINTO DOMINGO",
+        "primera": {
+          "titulo": "Lo condenaremos a muerte ignominiosa",
+          "cita": "Sab 2, 12. 17-20",
+          "texto": "Se decían los impíos:\n«Acechemos al justo, que nos resulta fastidioso:\nse opone a nuestro modo de actuar,\nnos reprocha las faltas contra la ley\ny nos reprende contra la educación recibida.\nVeamos si es verdad lo que dice,\ncomprobando cómo es su muerte.\nSi el justo es hijo de Dios, él lo auxiliará\ny lo librará de las manos de sus enemigos.\nLo someteremos a ultrajes y torturas,\npara conocer su temple y comprobar su resistencia.\nLo condenaremos a muerte ignominiosa,\npues, según dice, Dios lo salvará»."
+        },
+        "salmo": {
+          "cita": "Sal 53, 3-4. 5. 6 y 8 (R.: 6b)",
+          "antifona": "El Señor sostiene mi vida.",
+          "texto": "V/. Oh, Dios, sálvame por tu nombre, sal por mí con tu poder. Oh, Dios, escucha mi súplica, atiende a mis palabras.\n\nR/. El Señor sostiene mi vida.\n\nV/. Porque unos insolentes se alzan contra mí, y hombres violentos me persiguen a muerte, sin tener presente a Dios.\n\nR/. El Señor sostiene mi vida.\n\nV/. Dios es mi auxilio, el Señor sostiene mi vida. Te ofreceré un sacrificio voluntario, dando gracias a tu nombre, que es bueno.\n\nR/. El Señor sostiene mi vida."
+        },
+        "segunda": {
+          "titulo": "El fruto de la justicia se siembra en la paz para quienes trabajan por la paz",
+          "cita": "Sant 3, 16 — 4, 3",
+          "texto": "Queridos hermanos:\nDonde hay envidia y rivalidad, hay turbulencia y todo tipo de malas acciones.\nEn cambio, la sabiduría que viene de lo alto es, en primer lugar, intachable, y además es apacible, comprensiva, conciliadora, llena de misericordia y buenos frutos, imparcial y sincera.\nEl fruto de la justicia se siembra en la paz para quienes trabajan por la paz.\n¿De dónde proceden los conflictos y las luchas que se dan entre vosotros? ¿No es precisamente de esos deseos de placer que pugnan dentro de vosotros? Ambicionáis y no tenéis, asesináis y envidiáis y no podéis conseguir nada, lucháis y os hacéis la guerra, y no obtenéis porque no pedís.\nPedís y no recibís, porque pedís mal, con la intención de satisfacer vuestras pasiones."
+        },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "Cf. 2 Tes 2, 14",
+          "texto": "Dios nos llamó por medio del Evangelio para que sea nuestra la gloria de nuestro Señor Jesucristo."
+        },
+        "evangelio": {
+          "titulo": "El Hijo del hombre va a ser entregado. Quien quiera ser el primero, que sea el servidor de todos",
+          "cita": "Mc 9, 30-37",
+          "texto": "En aquel tiempo, Jesús y sus discípulos atravesaron Galilea; no quería que nadie se enterase, porque iba instruyendo a sus discípulos.\nLes decía:\n«El Hijo del hombre va a ser entregado en manos de los hombres y lo matarán; y después de muerto, a los tres días resucitará».\nPero no entendían lo que decía, y les daba miedo preguntarle.\nLlegaron a Cafarnaún, y una vez en casa, les preguntó:\n«¿De qué discutíais por el camino?».\nEllos callaban, pues por el camino habían discutido quién era el más importante.\nJesús se sentó, llamó a los Doce y les dijo:\n«Quien quiera ser el primero, que sea el último de todos y el servidor de todos».\nY tomando un niño, lo puso en medio de ellos, lo abrazó y les dijo:\n«El que acoge a un niño como este en mi nombre, me acoge a mí; y el que me acoge a mí, no me acoge a mí, sino al que me ha enviado»."
+        }
+      },
       "to_26": {
         "day_name": "DOMINGO XXVI DEL TIEMPO ORDINARIO",
         "primera": {
@@ -3545,6 +3629,34 @@
           "tipo": "aleluya",
           "cita": "Cf. Jn 17, 17b. a",
           "texto": "Tu palabra, Señor, es verdad; conságranos en la verdad."
+        }
+      },
+      "to_27": {
+        "day_name": "VIGESIMO SEPTIMO DOMINGO",
+        "primera": {
+          "titulo": "Y serán los dos una sola carne",
+          "cita": "Gen 2, 18-24",
+          "texto": "El Señor Dios se dijo:\n«No es bueno que el hombre esté solo; voy a hacerle a alguien como él, que le ayude».\nEntonces el Señor Dios modeló de la tierra todas las bestias del campo y todos los pájaros del cielo, y se los presentó a Adán, para ver qué nombre les ponía. Y cada ser vivo llevaría el nombre que Adán le pusiera.\nAsí Adán puso nombre a todos los ganados, a los pájaros del cielo y a las bestias del campo; pero no encontró ninguno como él, que le ayudase.\nEntonces el Señor Dios hizo caer un letargo sobre Adán, que se durmió; le sacó una costilla, y le cerró el sitio con carne.\nY el Señor Dios formó, de la costilla que había sacado de Adán, una mujer, y se la presentó a Adán.\nAdán dijo:\n«¡Esta sí que es hueso de mis huesos y carne de mi carne! Su nombre será “mujer”, porque ha salido del varón».\nPor eso abandonará el varón a su padre y a su madre, se unirá a su mujer y serán los dos una sola carne."
+        },
+        "salmo": {
+          "cita": "Sal 127, 1bc-2. 3. 4-5. 6 (R.: cf. 5)",
+          "antifona": "Que el Señor nos bendiga todos los días de nuestra vida.",
+          "texto": "V/. Dichoso el que teme al Señor y sigue sus caminos. Comerás del fruto de tu trabajo, serás dichoso, te irá bien.\n\nR/. Que el Señor nos bendiga todos los días de nuestra vida.\n\nV/. Tu mujer, como parra fecunda, en medio de tu casa; tus hijos, como renuevos de olivo, alrededor de tu mesa.\n\nR/. Que el Señor nos bendiga todos los días de nuestra vida.\n\nV/. Esta es la bendición del hombre que teme al Señor. Que el Señor te bendiga desde Sion, que veas la prosperidad de Jerusalén todos los días de tu vida.\n\nR/. Que el Señor nos bendiga todos los días de nuestra vida.\n\nV/. Que veas a los hijos de tus hijos. ¡Paz a Israel!\n\nR/. Que el Señor nos bendiga todos los días de nuestra vida."
+        },
+        "segunda": {
+          "titulo": "El santificador y los santificados proceden todos del mismo",
+          "cita": "Heb 2, 9-11",
+          "texto": "Hermanos:\nAl que Dios había hecho un poco inferior a los ángeles, a Jesús, lo vemos ahora coronado de gloria y honor por su pasión y muerte. Pues, por la gracia de Dios, gustó la muerte por todos.\nConvenía que aquel, para quien y por quien existe todo, llevara muchos hijos a la gloria perfeccionando mediante el sufrimiento al jefe que iba a guiarlos a la salvación.\nEl santificador y los santificados proceden todos del mismo. Por eso no se avergüenza de llamarlos hermanos."
+        },
+        "aclamacion": {
+          "tipo": "aleluya",
+          "cita": "1 Jn 4, 12",
+          "texto": "Si nos amamos unos a otros, Dios permanece en nosotros y su amor ha llegado en nosotros a su plenitud."
+        },
+        "evangelio": {
+          "titulo": "Lo que Dios ha unido, que no lo separe el hombre",
+          "cita": "Mc 10, 2-12",
+          "texto": "En aquel tiempo, acercándose unos fariseos, preguntaban a Jesús para ponerlo a prueba:\n«¿Le es lícito al hombre repudiar a su mujer?».\nÉl les replicó:\n«¿Qué os ha mandado Moisés?».\nContestaron:\n«Moisés permitió escribir el acta de divorcio y repudiarla».\nJesús les dijo:\n«Por la dureza de vuestro corazón dejó escrito Moisés este precepto. Pero al principio de la creación Dios los creó hombre y mujer. Por eso dejará el hombre a su padre y a su madre, se unirá a su mujer y serán los dos una sola carne.\nDe modo que ya no son dos, sino una sola carne. Pues lo que Dios ha unido, que no lo separe el hombre».\nEn casa, los discípulos volvieron a preguntarle sobre lo mismo.\nÉl les dijo:\n«Si uno repudia a su mujer y se casa con otra, comete adulterio contra la primera. Y si ella repudia a su marido y se casa con otro, comete adulterio»."
         }
       },
       "to_28": {
