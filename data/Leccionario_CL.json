@@ -2875,8 +2875,8 @@
           "texto": "Gloria al Padre, y al Hijo, y al Espíritu Santo, al Dios que es, que era y que viene."
         }
       },
-      "solemnidad_del_sant_simo_cuepo_y_sangre_de_cristo": {
-        "day_name": "SOLEMNIDAD DEL SANTÍSIMO CUEPO Y SANGRE DE CRISTO",
+      "corpus": {
+        "day_name": "SOLEMNIDAD DEL SANTÍSIMO CUERPO Y SANGRE DE CRISTO",
         "primera": {
           "titulo": "Esta es la sangre de la alianza que el Señor ha concertado con vosotros",
           "cita": "Ex 24, 3-8",
@@ -3827,7 +3827,7 @@
           "texto": "Estad siempre despiertos, pidiendo fuerza para manteneros en pie ante el Hijo del hombre."
         }
       },
-      "to_34": {
+      "cristo_rey": {
         "day_name": "DOMINGO XXXIV DEL TIEMPO ORDINARIO",
         "primera": {
           "titulo": "Su poder es un poder eterno",
