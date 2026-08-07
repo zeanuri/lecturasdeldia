@@ -969,8 +969,13 @@ def _load_leccionario():
     global _leccionario_cache
     if _leccionario_cache is not None:
         return _leccionario_cache
+    # data/ cuelga de este mismo directorio, no del padre. Con el ".." de mas,
+    # esta funcion devolvia None SIEMPRE y lookup_readings daba vacio para todos
+    # los dias: generate_site no lo notaba porque inyecta el cache a mano, pero
+    # cualquier auditoria hecha llamando a lookup_readings sin cache concluia
+    # que el sitio entero estaba sin lecturas (paso el 07-08-2026, dos veces).
     data_path = os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                             "..", "data", "Leccionario_CL.json")
+                             "data", "Leccionario_CL.json")
     if not os.path.exists(data_path):
         return None
     with open(data_path, "r", encoding="utf-8") as f:
