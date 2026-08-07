@@ -35,7 +35,10 @@ DIAS_ADELANTE = 365
 
 
 def _ventana():
-    hoy = date.today()
+    # El MISMO reloj que produccion: generate_site fecha el sitio en
+    # Europe/Madrid, y `date.today()` en el runner (UTC) daba un dia distinto
+    # durante la franja entre ambas medianoches.
+    hoy = generate_site.hoy_local()
     inicio = min(generate_site.SITE_EPOCH, hoy)
     fin = max(hoy + timedelta(days=DIAS_ADELANTE),
               inicio + timedelta(days=3 * 366))
@@ -159,9 +162,10 @@ def test_paridad_estructural_euskera(leccionario, lezionarioa):
 
     El euskera es cobertura parcial declarada (`meta.coverage_pct_calendar_texto`)
     y la politica prohibe traducir, asi que NO se exige texto. Lo que si se
-    exige es la clave: `_build_readings_eu` cae al castellano cuando una
-    lectura falta, pero si falta el nodo entero la pagina vasca se queda sin
-    esa celebracion sin avisar. Asi llegaron a produccion los mismos huecos
+    exige es la clave: cuando una lectura falta, `_build_readings_eu` emite el
+    slot marcado `empty` con la cita (que es neutra) y el enlace a la pagina
+    castellana — NUNCA copia el texto castellano. Pero si falta el nodo entero,
+    la pagina vasca se queda sin esa celebracion sin avisar. Asi llegaron a produccion los mismos huecos
     dominicales que se reparon en castellano el 07-08-2026, intactos en el
     fichero vasco durante meses.
     """
@@ -202,7 +206,7 @@ SIN_EUSKERA_JUSTIFICADO = {
 }
 
 
-def test_ninguna_pagina_vasca_se_queda_sin_lecturas(lezionarioa):
+def test_ninguna_pagina_vasca_se_queda_sin_lecturas(leccionario, lezionarioa):
     """Cero lecturas en euskera no es cobertura parcial: es una pagina vacia.
 
     La guarda NO exige texto en cada lectura — el euskera es cobertura parcial
@@ -210,18 +214,23 @@ def test_ninguna_pagina_vasca_se_queda_sin_lecturas(lezionarioa):
     traducir, asi que un hueco suelto es legitimo y cae al enlace castellano.
     Lo que no es legitimo es que un dia entero salga sin nada: eso el lector lo
     vive como una pagina rota, no como una traduccion pendiente.
+
+    Se comprueba la salida de `get_day_data`, que es lo que consume la
+    plantilla, y no `lookup_readings` directamente: la version anterior hacia
+    `continue` ante un resultado vacio, asi que una entrada estructural que
+    existiera pero fuese `{}` producia la pagina vacia sin que este test la
+    llegara a clasificar. La guarda saltaba por encima justo del caso que
+    buscaba.
     """
+    lectionaries = {"es": leccionario, "eu": lezionarioa}
     vacios, nuevos = [], []
     for d in _dias(*_ventana()):
-        resultado = liturgia.calculate(d)
-        lecturas = liturgia.lookup_readings(resultado, cache=lezionarioa)
+        datos = generate_site.get_day_data(d, "eu", lectionaries)
+        lecturas = datos.get("readings") or []
         if not lecturas:
             continue
-        presentes = [s for s in ("primera", "salmo", "segunda", "evangelio")
-                     if isinstance(lecturas.get(s), dict)]
-        con_texto = [s for s in presentes
-                     if not liturgia.is_empty_reading(lecturas.get(s))]
-        if presentes and not con_texto:
+        if all(r.get("empty") for r in lecturas):
+            resultado = liturgia.calculate(d)
             clave = liturgia._build_dominical_key(resultado) or ""
             vacios.append(f"{d} {resultado.get('name', '')} [{clave}]")
             if clave not in SIN_EUSKERA_JUSTIFICADO:
