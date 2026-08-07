@@ -41,11 +41,19 @@ HUECOS_CONOCIDOS = set()
 def leccionario():
     """El JSON inyectado a mano, como hace generate_site.
 
-    No vale con llamar a lookup_readings sin cache: su fallback
-    (_load_leccionario) apunta a un directorio que no existe y devuelve None
-    para TODOS los dias, lo que convierte cualquier asercion en falso negativo.
+    Se inyecta a proposito en vez de dejar que lookup_readings use su fallback
+    (_load_leccionario): asi el test comprueba el mismo camino que el
+    generador. El fallback ya prueba los dos layouts del fichero, pero si
+    volviera a fallar lo haria devolviendo None para TODOS los dias, y eso
+    convierte cualquier asercion de este modulo en un falso negativo.
     """
     with open(ROOT / "data" / "Leccionario_CL.json", encoding="utf-8") as f:
+        return json.load(f)
+
+
+@pytest.fixture(scope="module")
+def lezionarioa():
+    with open(ROOT / "data" / "Lezionarioa_CL.json", encoding="utf-8") as f:
         return json.load(f)
 
 
@@ -104,6 +112,60 @@ def test_todos_los_domingos_del_to_en_los_tres_ciclos(leccionario):
                 faltan.append(f"{ciclo}/to_{n}")
 
     assert not faltan, f"Domingos del Tiempo Ordinario ausentes: {faltan}"
+
+
+def test_rejilla_ferial_completa(leccionario):
+    """34 semanas x 6 dias x 2 ciclos feriales, y la tabla de evangelios.
+
+    El barrido por fechas no basta para lo ferial, igual que no bastaba para
+    lo dominical: una feria tapada por una fiesta en los tres anos del barrido
+    no se visita nunca, y el hueco espera al ano en que la fiesta cae en otro
+    dia. La rejilla se comprueba entera, al margen del calendario.
+    """
+    ferial = leccionario["ferial_to"]
+    dias = ("lunes", "martes", "miercoles", "jueves", "viernes", "sabado")
+    esperadas = {f"{s}_{d}" for s in range(1, 35) for d in dias}
+
+    faltan = []
+    for ciclo in ("I", "II"):
+        faltan += [f"{ciclo}/{k}" for k in sorted(esperadas - set(ferial[ciclo]))]
+    assert not faltan, f"Claves feriales ausentes: {faltan}"
+
+    # El evangelio ferial no depende del ano: vive en su propia tabla y tiene
+    # que cubrir la misma rejilla, o el dia sale con primera y salmo y sin
+    # evangelio — otro fallo mudo.
+    faltan_ev = sorted(esperadas - set(ferial["evangelio"]))
+    assert not faltan_ev, f"Evangelios feriales ausentes: {faltan_ev}"
+
+
+def test_paridad_estructural_euskera(leccionario, lezionarioa):
+    """Toda clave del castellano existe en euskera.
+
+    El euskera es cobertura parcial declarada (`meta.coverage_pct_calendar_texto`)
+    y la politica prohibe traducir, asi que NO se exige texto. Lo que si se
+    exige es la clave: `_build_readings_eu` cae al castellano cuando una
+    lectura falta, pero si falta el nodo entero la pagina vasca se queda sin
+    esa celebracion sin avisar. Asi llegaron a produccion los mismos huecos
+    dominicales que se reparon en castellano el 07-08-2026, intactos en el
+    fichero vasco durante meses.
+    """
+    faltan = []
+    for ciclo in ("A", "B", "C"):
+        faltan += [f"dominical/{ciclo}/{k}"
+                   for k in sorted(set(leccionario["dominical"][ciclo])
+                                   - set(lezionarioa["dominical"][ciclo]))]
+    for ciclo in ("I", "II"):
+        faltan += [f"ferial_to/{ciclo}/{k}"
+                   for k in sorted(set(leccionario["ferial_to"][ciclo])
+                                   - set(lezionarioa["ferial_to"][ciclo]))]
+    for bloque in ("ferial_fuerte", "santos"):
+        faltan += [f"{bloque}/{k}"
+                   for k in sorted(set(leccionario[bloque])
+                                   - set(lezionarioa[bloque]))]
+
+    assert not faltan, (
+        "Claves presentes en castellano y ausentes en euskera "
+        f"({len(faltan)}): {faltan[:20]}")
 
 
 def test_solemnidades_en_los_tres_ciclos(leccionario):

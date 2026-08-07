@@ -4,15 +4,17 @@
     "dialect": "bizkaiera",
     "cita_convention": "batua",
     "coverage_status": "Estaldura partziala; iturriak mugatuta",
-    "coverage_pct_calendar_texto": 80,
-    "calendar_slots_populated": 2401,
-    "calendar_slots_total": 2998,
+    "coverage_pct_calendar_texto": 81,
+    "calendar_slots_populated": 2435,
+    "calendar_slots_total": 2999,
     "coverage_source": "euskera/bizkaiera (1909 accepted Basque readings)",
     "no_translation_policy": true,
-    "last_built": "2026-06-02",
+    "last_built": "2026-08-07",
     "source": "",
     "translation": "",
-    "volumes": []
+    "volumes": [],
+    "calendar_slots_populated_cita": 3449,
+    "calendar_slots_total_cita": 3462
   },
   "dominical": {
     "A": {
@@ -2801,6 +2803,84 @@
           "tipo": "",
           "unmatched": true
         }
+      },
+      "to_24": {
+        "day_name": "",
+        "primera": {
+          "titulo": "",
+          "cita": "Si 27, 30 — 28, 7",
+          "texto": "",
+          "unmatched": true
+        },
+        "salmo": {
+          "titulo": "",
+          "cita": "Sal 102, 1bc-2. 3-4. 9-10. 11-12 (R.: 8)",
+          "texto": "V/.\nBedeinkatu begi nire arimak Jauna, \nnire barru osoak haren izen santua.\nBedeinkatu begi nire arimak Jauna, \nez bedi ahaztu haren mesedeaz. R/.\nV/.\nErru guztiak deutsuz parkatzen, \ngatx guztiak osatzen;\nzure bizia hilobitik askatzen dau, \nmaitasunez eta errukiz koroatzen zaitu. R/.\nV/.\nEz dau eten barik auzitan jarduten, \nez dau hasarrea betiko gordetzen.\nEz gaitu erabiltzen gure pekatuek merezi lez, \nez deusku ordaintzen geure erruen arabera. R/.\nV/.\nZelan zerua lurraren gainean garai, \nhalan haren maitasuna begirune deutsoenentzat handi;\nzelan sortaldea sartaldetik urrun, \nhalan ditu harek gure hobenak gugandik urruntzen. R/.",
+          "unmatched": false,
+          "antifona": "Bihozbera eta errukiorra da Jauna, hasarregatxa eta onginahiz betea.",
+          "_source": "bizkaiera_pdf_extract.md#v3_p195_b01"
+        },
+        "segunda": {
+          "titulo": "Nahiz bizi nahiz hil, Jaunarenak gara.",
+          "cita": "Erm 14, 7-9",
+          "texto": "S ENIDEOK: Gutariko inor ez da beretzat bizi, ezta beretzat hiltzen be. \nBizi bagara, Jaunarentzat gara bizi, eta hiltzen bagara, Jaunarentzat \ngara hiltzen. Beraz, nahiz bizi nahiz hil, Jaunarenak gara.\n\t Honetarako hil eta biztu zan Kristo: hildakoen eta bizien Jauna izateko.\nJaunak esana.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p195_b02"
+        },
+        "aclamacion": {
+          "titulo": "Jn 13, 34",
+          "cita": "Jn 13, 34",
+          "texto": "Honetarako hil eta biztu zan Kristo: hildakoen eta bizien Jauna izateko.\nJaunak esana.\nAleluia\n\nR/.\nAleluia.\nV/.\nAgindu barria emoten deutsuet, dino Jaunak:\nmaitatu dagizuela alkar,\nNik maite izan zaituedan lez. R/.",
+          "unmatched": false,
+          "tipo": "",
+          "_source": "bizkaiera_pdf_extract.md#v3_p195_b03"
+        },
+        "evangelio": {
+          "titulo": "Zazpi bider bakarrik ez, baita zazpitan zazpi mila bider parkatu behar dozu.",
+          "cita": "Mt 18, 21-35",
+          "texto": "A LDI haretan, hurreratu jakon Pedro Jesusi eta itaundu eutson: \n«Jauna, nire senideak bidebakokeriaren bat egiten badeust, \nzenbat bider parkatu behar deutsat? Zazpi bider?»\n\t Jesusek erantzun eutson: «Zazpi bider ez, ezpada ze zazpitan zazpi \nmila bider. Hatan be, bere morroiakaz kontuak garbitu gura izan zituan \nerregeagaz bezala gertatzen da zeruetako erreinuagaz. Kontuak garbitzen \nhastean, dirutza itzela zor eutson bat ekarri eutsoen.  Eta nondik ordaindurik \nez eukanez, bera eta emaztea, seme-alabak eta zituan guztiak saltzeko \nagindu eban nagusiak, zorra ordaintzeko.\n\t Morroiak, orduan, nagusiaren oinetan ahuspezturik, arren eta arren \nesaten eutson: “Emoidazu astia eta dana ordainduko deutsut”. Nagusiak, \nerrukiturik, dana parkatu eta libre itzi eban morroia.\n\t Baina morroi harek berak, urten orduko, diru apur bat zor eutson bere \nmorroilagunagaz topo egin eban, eta, samatik heldu eta ito beharrean, esan \neutson: “Ordaindu eidak zor deustana”.  Lagunak, oinetan ahuspezturik, \narren eta arren esaten eutson: “Emoidak astia eta dana ordainduko deuat”. \nBaina besteak ezetz, eta joan eta kartzelan sartu eban, zorra ordaindu arte.\n\t Beste morroiak, gertatua ikusirik, mindu-mindu egin  ziran, eta \nnagusiagana joan eta gertatuaren barri emon eutsoen. \n\t Orduan, nagusiak morroiari deitu eta esan eutson: “Morroi gaizto \nhori! Horrenbesteko zorra parkatu deuat nik, eskatu deustalako;  ez ete \nzan bidezkoa heu be heure morroi-lagunaz errukitzea, neu hitaz errukitu \nnintzoan lez?”  Eta nagusiak, hasarre bizian, borreroen esku itzi eban, zor \nguztia ordaindu arte.\n\t Zeuoi be gauza berbera egingo deutsue zeruko nire Aitak, senideok \nalkarri bihotzez parkatzen ez badeutsazue».\nJaunak esana.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p196_b01"
+        }
+      },
+      "to_33": {
+        "day_name": "",
+        "primera": {
+          "titulo": "Gogotsu egiten dabe lan haren eskuek.",
+          "cita": "Es 31, 10-13. 19-20. 30-31",
+          "texto": "NORK aurkituko etxekoandre arduratsua?\nHarribitxiak baino askoz baliotsuagoa da.\nKonfiantza osoa dau senarrak harengan,\neta ez da sekula beharrizanean aurkituko.\nZoriona ekartzen deutso, ez zoritxarra,\nbizitzako egun guztietan.\nArtilea eta lihoa eskuratzen ditu,\ngogotsu egiten dabe lan haren eskuek.\nEskuaz goruari heltzen deutso\neta atzamarrez ardatzari eragiten.\nDohakabeari eskua zabaltzen deutso\neta behartsuari laguntza emoten.\nGuzurrezkoa da lilura, alperrekoa edertasuna;\ngoragarria, ostera, Jaunari begirune deutson emakumea.\nEmon egiozuez eskerrak bere eskuen lanagaitik,\ngoratu herri osoaren aurrean berak eginagaitik.\nJaunak esana.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p451_b01"
+        },
+        "salmo": {
+          "titulo": "",
+          "cita": "Sal 127, 1bc-2. 3. 4-5 (R.: cf. 1b)",
+          "texto": "eta haren bideetan dabilena!\nZeure lanaren frututik dozu jango, \nzoriontsu izango zara eta ondo zara biziko.",
+          "unmatched": false,
+          "antifona": "Zorionekoa Jaunari begirunea deutsana",
+          "_source": "bizkaiera_pdf_extract.md#v2_p158_b02:overlap"
+        },
+        "segunda": {
+          "titulo": "",
+          "cita": "1 Tes 5, 1-6",
+          "texto": "",
+          "unmatched": true
+        },
+        "aclamacion": {
+          "titulo": "Jn 15, 4a. 5b",
+          "cita": "Jn 15, 4a. 5b",
+          "texto": "R/.\nAleluia.\nV/.\nZagoze Nigan, Ni zuengan lez, dino Jaunak;\nnorbait Nigan badago,\nhorrek frutu asko emongo dau. R/.",
+          "unmatched": false,
+          "tipo": "",
+          "_source": "bizkaiera_pdf_extract.md#v2_p364_b02"
+        },
+        "evangelio": {
+          "titulo": "Gauza txikian leial izan zaralako, sartu zeure nagusiaren jaia ospatzera.",
+          "cita": "Mt 25, 14-15. 19-21",
+          "texto": "LDI haretan, Jesusek parabola hau esan eutsen ikasleei: «Gizon \nbatek, urrutira joaterakoan, bere morroiei dei egin eta bere \nondasunak itzi eutsezan. Bati bost talentu emon eutsozan, beste \nbati bi, beste bati bakarra; bakotxari bere trebetasunaren arabera. Eta gero \njoan egin zan.\n\nHandik luzarora, etorri zan morroi hareen nagusia, eta kontuak garbitzen \nhasi jaken. Hurreratu zan bost talentu hartu zituana, eta beste bost eroan \neutsozan, esanez: “Jauna, bost talentu itzi zeunstazan; begira, beste bost \nirabazi dodaz”. Nagusiak esan eutson: “Ederto, morroi zintzo eta jatorra! \nGauza txikian zintzoa izan zaralako, askoren buruzagi egingo zaitut; sartu \nzeure nagusiaren jaia ospatzera”.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p454_b01"
+        }
       }
     },
     "B": {
@@ -2876,6 +2956,13 @@
           "tipo": "",
           "unmatched": false,
           "_source": "bizkaiera_pdf_extract.md#v1_p075_b02"
+        },
+        "segunda": {
+          "titulo": "Zeru barriak eta lur barria itxaroten doguz.",
+          "cita": "2 P 3, 8-14",
+          "texto": "E NE maiteok: Ez jatzue hau ahaztu behar: Jaunarentzat egun bat \nmila urte lez dala, eta mila urte egun bat lez. Jauna ez da berankorra \nagintzaria betetzen, batzuek halan uste badabe be; pazientzia dau zuekin, \nostera, eta ez dau inor galtzea nahi, guztiok bihotz-barritzea baino. Jaunaren \neguna, ostera, lapurra lez ustebarik etorriko da. Orduan, burrundara handiz \ndesagertuko dira zeruak, lurraren osagaiak kiskalduta desegingo dira, eta \nlurra eta bertako gauza guztiak agirian geldituko.\n\t Gauza honeek guztiak honan ezereztu beharrezkoak diran ezkero, \nbegiratu zein santu eta jainkozale izan behar dauan zuen bizitzak!\n\t Bizi zaiteze, beraz, Jainkoa etorriko dan egunaren zain eta egin lan, \nlehenbailehen heldu dadin. Egun haretan, sutan desegingo dira zeruak, eta \nlurraren osagaiak kiskalduta desegingo. Guk, ostera, Jaunak agindu euskun \nlez, zuzentasunaren bizileku diran zeru barriak eta lur barria itxaroten doguz.\n\t Beraz, maite-maiteok, honeek itxaroten dozuezala, ahalegindu zaiteze \nJainkoagaz bakean bizitzen, garbi eta erru barik haren aurrean.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v1_p078_b02"
         }
       },
       "adviento_3": {
@@ -2907,6 +2994,12 @@
           "cita": "Cf. Is 61, 1 (Lk 4, 18ac)",
           "texto": "",
           "tipo": "",
+          "unmatched": true
+        },
+        "segunda": {
+          "titulo": "",
+          "cita": "1 Tes 5, 16-24",
+          "texto": "",
           "unmatched": true
         }
       },
@@ -5509,6 +5602,85 @@
           "tipo": "",
           "unmatched": true
         }
+      },
+      "to_25": {
+        "day_name": "",
+        "primera": {
+          "titulo": "Hau inoen gaiztoek:",
+          "cita": "Jkd 2, 12. 17-20",
+          "texto": "Jarri deioguzan sareak zintzoari;\nikusi daigun esaten dauana egia dan ala ez,\naztertu daigun zelako amaiera dauan ikusteko.\nBenetan Jainkoaren seme bada,\netorriko jako ha zintzoari laguntzera\neta libratuko dau arerioen eskuetatik.\nIrainak eta oinazeak jasanarazoko deutsaguz,\nharen nasaitasuna ezagutu eta eroapena probatzeko.\nHeriotza lotsagarrira kondenatuko dogu,\nbere esanetan, Jainkoak alde urtengo deutso-eta.\nJaunak esana.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p226_b01"
+        },
+        "salmo": {
+          "titulo": "",
+          "cita": "Sal 53, 3-4. 5. 6 y 8 (R.: 6b)",
+          "texto": "V/.\t\nEne Jainko, salbatu nagizu zeure izenagaitik, \ndefendatu nire auzia zeure ahalmenaz.\nEntzun, ene Jainko, nire otoitza, \nmakurtu belarria nire ahoko hitzetara. R/.\n\nV/.\t\nNire aurka jagi dira harroak \neta ni hil nahian dabiltz gogorzaleak, \nJainkoaren ardurarik barik. R/.\n\nV/.\t\nBaina nik Jainkoa dot laguntzaile, \nJauna neure biziaren babesle. \nSakrifizioak eskeiniko deutsudaz bihotz-bihotzez, \nzure izena goratuko, Jauna, ona zaralako. R/.",
+          "unmatched": false,
+          "antifona": "Jauna da nire biziaren babesle.",
+          "_source": "bizkaiera_pdf_extract.md#v3_p227_b01"
+        },
+        "segunda": {
+          "titulo": "Bakegileek bakean ereiten dabe eta frututzat zuzentasuna batzen.",
+          "cita": "Sant 3, 16 — 4, 3",
+          "texto": "SENIDE maiteok: Bekaizkeria eta norgehiagokeria diran tokian, han dira nahastea eta era guztietako gaiztakeriak. Goitik datorren jakituria, barriz, garbia da lehenengo; gainera, baketsua, bihozbera, amore-emoilea, errukitsua eta frutu onak dakarzana, alderdikeriarik eta itxurazalekeriarik bakoa. Bakegileek bakean ereiten dabe eta frututzat zuzentasuna batzen.\n\nNondik sortzen dira zeuen artean dozuezan hasarreak eta burrukak? Ez ete zuen barruan burrukan dabiltzan grina txarretatik? Zeozer gogo biziz gura eta eskuratu ezin dozuenean, hilketak egiten dozuez; zeozer nahi eta lortu ezin dozuenean, hasarrea sortu eta burruka egiten dozue. Ez badaukazue, eskatzen ez dozuelako da; eskatu eta hartzen ez badozue, txarto eskatzen dozuelako da, zeuen grina txarrak asetzeko eskatzen dozuelako.\n\nJaunak esana.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p227_b02"
+        },
+        "aclamacion": {
+          "titulo": "2 Tes 2,14",
+          "cita": "Cf. 2 Tes 2, 14",
+          "texto": "R/. Aleluia.\n\nV/. Honetarako dei egiten deusku Jainkoak Barri Onaren bidez,\nJesu Kristo gure Jaunaren aintza eskuratzeko. R/.",
+          "unmatched": false,
+          "tipo": "",
+          "_source": "bizkaiera_pdf_extract.md#v2_p051_b02"
+        },
+        "evangelio": {
+          "titulo": "Gizonaren Semea gizakien esku itziko dabe. Lehenengo izan nahi dauana izan bedi danetan azkena.",
+          "cita": "Mk 9, 30-37",
+          "texto": "ALDI haretan, Jesus eta ikasleak Galilean zehar ebiltzan. Jesusek ez eban hori inork jakiterik gura, ze, ikasleei irakastera emona egoan. Holan inotsen: «Gizonaren Semea gizakien esku itziko dabe; hil egingo dabe, baina hil eta hiru egunera biztu egingo da». Hareek, ostera, ez eben ulertzen zer esan gura eutsen; itauntzeak, barriz, bildurra emoten eutsen. \n\t Heldu ziran Kafarnaumera eta, etxean egozala, Jesusek itaundu eutsen: «Zer eztabaida izan dozue bidean?» Baina hareek berbarik ez; ze, euren artean handiena nor ete zan eztabaidatu eben bidean.\n\t Jesarri zan Jesus eta, Hamabiei dei eginik, esan eutsen: «Lehenengo izan nahi dauana izan bedi danetan azkena eta danen zerbitzaria».\n\t Gero, umetxu bat hartu, hareen erdian jarri eta, besarkatuz, esan eutsen: «Holako ume bat nire izenean onartzen dauanak Neu onartzen nau, eta Ni onartzen nauanak, ez nau Neu onartzen, ezpada ze, bialdu nauana bera baino».\nJaunak esana.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p212_b01"
+        }
+      },
+      "to_27": {
+        "day_name": "",
+        "primera": {
+          "titulo": "Eta biak haragi bat izango dira.",
+          "cita": "Has 2, 18-24",
+          "texto": "J AINKO Jaunak esan eban: «Ez da on gizona bakarrik egotea; emon \ndeiodan berari dagokion laguntza».\n\nJainko Jaunak landako abere eta zeruko hegazti guztiak moldatu ebazan \nlurretik eta gizonari eroan eutsozan, zein izen emoten eutsen ikusteko; \nhonan, bada, bizidun guztiek gizonak ezarritako izena daroe. Beraz, \ngizonak izena ezarri eutsen abere guztiei, zeruko hegazti guztiei eta piztia \nguztiei; baina ez eban aurkitu berari egokion laguntzarik.\n\nOrduan, Jainko Jaunak lozorroan murgilduarazo eban gizona. Loak \nhartu ebanean, saihets-hazur bat kendu eutson eta hutsunea haragiz bete. \nGizonari kendutako saihets-hazurraz emakumea moldatu eban Jainko \nJaunak, eta gizonari eroan eutson. Honek esan eban:\n«Hau bai dala nire hazurretik datorren hazur,\nnire haragitik datorren haragi.\nEmakume izango da deitua,\ngizakumeagandik izan da-eta hartua».\n\nHorregaitik, gizasemeak bere aita-amak itziko ditu eta emazteagaz \nalkartuko da, eta biak haragi bat izango dira.\nJaunak esana.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p286_b01"
+        },
+        "salmo": {
+          "titulo": "",
+          "cita": "Sal 127, 1bc-2. 3. 4-5. 6 (R.: cf. 5)",
+          "texto": "",
+          "unmatched": true,
+          "antifona": ""
+        },
+        "segunda": {
+          "titulo": "Santutzailea eta santu eginak, guztiak jatorri batetik datoz.",
+          "cita": "Heb 2, 9-11",
+          "texto": "SENIDEOK: Aingeruen pareko egina izan dan Jesus ha aintzaz eta ohorez koroatua ikusten dogu, jasan eban heriotzagaitik; izan be, Jainkoaren onginahiaz, guztien onerako jasan eban-eta heriotza.\n\nJainkoak, gauza guztien sorburu eta helburu danak, seme-alaba asko aintzara eroan gura eban. Egoki zan, beraz, hareek salbazinora gidatuko ebazan burua, Jesus, oinazeen bidez bete-beteko egitea. Izan be, bai santu egiten dauan Jesusek, bai honek santu egiten dituanek, jatorri bera dabe danek. Horregaitik, Jainkoaren Semeari ez deutso lotsarik emoten honeei anai-arreba deitzeak.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p287_b01"
+        },
+        "aclamacion": {
+          "titulo": "1 Jn 4, 12",
+          "cita": "1 Jn 4, 12",
+          "texto": "R/. Aleluia.\nV/. Alkar maite badogu,\nJainkoa gugan dago, \neta haren maitasuna bere betera heldu da gugan. R/.",
+          "unmatched": false,
+          "tipo": "",
+          "_source": "bizkaiera_pdf_extract.md#v3_p186_b02"
+        },
+        "evangelio": {
+          "titulo": "Jainkoak bat egin dauana ez begi gizakiak banatu.",
+          "cita": "Mk 10, 2-12",
+          "texto": "LDI haretan, hurreratu jakozan fariseu batzuk Jesusi eta, ha \nzertan harrapatuko, itaundu eutsoen: «Bidezko ete jako gizonari \nandrea iztea?» Harek erantzun eutsen: «Zer agindu eutsuen \nhorren gainean Moisesek?» Eta hareek: «Moisesek dibortzio-agiria idatzi \neta emaztea izteko baimena emon euskun».\n\t Jesusek esan eutsen: «Zeuen burugogorkeriagaitik emon eutsuen \nMoisesek lege hori. Baina, munduaren hasieratik, Jainkoak gizonezko eta \nandrazko egin zituan; horregaitik, gizasemeak bere aita-amak itziko ditu eta \nemaztearekin alkartuko da, eta biak bat izango dira. Beraz, aurrerantzean ez \ndira bi, bat baino. Holan, bada, Jainkoak bat egin dauana ez begi gizakiak \nbanatu».\n\t Gero, etxean, arazo berberari buruz itaundu eutsoen ikasleek. Jesusek \nesan eutsen: «Bere emaztea itzi eta beste bategaz ezkontzen danak \nadulterioa egiten dau lehenengoaren kontra; eta bere senarra itzi eta beste \nbategaz ezkontzen dan emazteak, adulterioa egiten dau era berean».\nJaunak esana.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p289_b01"
+        }
       }
     },
     "C": {
@@ -6313,6 +6485,12 @@
           "tipo": "",
           "unmatched": false,
           "_source": "bizkaiera_pdf_extract.md#v2_p369_b02"
+        },
+        "segunda": {
+          "titulo": "",
+          "cita": "Ap 21, 10-14. 22-23",
+          "texto": "",
+          "unmatched": true
         }
       },
       "ascension": {
@@ -6610,6 +6788,13 @@
           "texto": "A LDI haretan, ezteguak izan ziran Galileako Kanan, eta bertan \nzan Jesusen ama. Jesus eta beronen ikasleak be ezteguetara \nkonbidatu zituen. Ardaoa amaitu egin zan, eta amak esan eutson \nJesusi: «Ez daukie ardaorik». Jesusek erantzun eutson: «Itzi nagizu bakean, \nemakume. Nire ordua ez da oraindino etorri». Jesusen amak esan eutsen \nmorroiei: «Egizue esango deutsuena».\n\nHarrizko sei ontzi egozan han, judeguek euren garbikuntzetarako erabiltzen \nebezanak, bakotxa ehun bat litrokoa. Jesusek esan eutsen morroiei: «Bete \nontziak urez». Eta hareek bete-bete egin zituen. Jesusek barriro: «Atara \norain, eta eroan mahaizainari». Eta hareek eroan egin eutsoen.\n\nDastatu eban mahaizainak ura ardao bihurtua, nongoa zan jakin barik \n(morroiek, bai, baekien, ze, eurek atara eben ura); orduan, ezkonbarriari \ndeitu eta esan eutson: «Ardao ona hasieran ataratzen dabe guztiek eta, jentea \nedanda dagoanean, txarragoa. Zuk, barriz, orain arte gorde dozu ardao ona».\n\nGalileako Kanan egin eban Jesusek bere lehen-ezaugarri hau; holan, \nbere aintza azaldu eban, eta sinistu egin eben harengan ikasleek.\n\nJaunak esana.",
           "unmatched": false,
           "_source": "bizkaiera_pdf_extract.md#v2_p052_b01"
+        },
+        "segunda": {
+          "titulo": "SENIDEOK:",
+          "cita": "1 Kor 12, 4-11",
+          "texto": "Era askotakoak dira dohaiak, baina bat bakarra Espiritua; era askotakoak zerbitzuak, baina bat bakarra Jauna; era askotakoak eginbideak, baina bat bakarra Jainkoa, guztiengan guztia egiten dauana. Bakotxari danen onerako emoten deutsaz Jainkoak Espirituaren dohaiak.\n\nHonan, bati jakituriaz hitz egitea emoten deutsa Jainkoak Espirituaren bidez; beste bati, Espiritu beraren arabera, ezagueraz hitz egitea; bati, Espiritu beraren egitez, sinismen-dohaia emoten deutsa; beste bati, Espiritu beraren egitez, osatuketak egiteko dohaia; bati, mirariak egiteko ahalmena; beste bati, Jainkoaren izenean hitz egitea; bati espiritu faltsua eta benetakoa bereiztea; beste bati, hizketa arrotzez berba egitea, eta beste bati, hizketa horren esanahia adierazotea.\n\nHori guztia, ostera, Espiritu batek berak egiten dau, bere dohaiak nahi dauan lez bakotxari banatuz.\n\nJaunak esana.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p051_b01"
         }
       },
       "to_3": {
@@ -11923,6 +12108,114 @@
           "antifona": "Errege da Jauna, jantzi da handikiro.",
           "unmatched": false,
           "_source": "Sal92,1ab.1c-2.5(R+1a)_eu.txt"
+        }
+      },
+      "13_miercoles": {
+        "day_name": "",
+        "primera": {
+          "titulo": "Neskamearen semeak ez dau oinordeko izan behar nire seme Isaakegaz",
+          "cita": "Has 21, 5. 8-20",
+          "texto": "ABRAHAMEK ehun urte ebazan bere seme Isaak jaio jakonean. Hazi zan umea eta kendu eutsoen bularra, eta Abrahamek jatordu bikaina antolatu eban Isaaki bularra kendu eutsoen egunean.\n\nOhartu zan Sara, Agar egiptoarrak Abrahami emon eutson semea bere seme Isaakegaz ebilela jolasten, eta esan eutson Abrahami: «Bota egizuz etxetik neskamea eta haren semea, neskamearen semeak ez dau-eta oinordeko izan behar nire seme Isaakegaz». Biziro atsekabetu zan Abraham, Ismael be bere seme eban-eta.\n\nBaina Jainkoak esan eutson: «Ez zaitez atsekabetu mutikoagaitik eta zeure neskameagaitik. Egiozu jaramon Sarak esaten deutsun guztiari, Isaaken bidez izango dozuz-eta ondorengoak. Baina neskamearen semeagandik be herri handia sortuazoko dot, hori be zure seme dalako».\n\nAbrahamek, goizean goiz jagi, ogia eta zaragi bat ur hartu eta Agarri ezarri eutsozan lepoan. Halan, mutikoagaz batera, bialdu egin eban. Abiatu zan, bada, Agar, eta Beer-Xeba basamortuan noraezean ibili zan. Zaragiko ura amaitu zanean, sastraka baten azpian itzi eban mutikoa; bera, barriz, urrundurik, aurrez aurre jesarri zan, ehunen bat metrora edo. Hau inoan bere kautan: «Ez dot mutikoa hiltzen ikusi nahi». Han jesarrita egoala, mutikoa negarrez hasi zan oihuka.\n\nEntzun eban Jainkoak mutikoaren oihua, and Jainkoaren aingeruak dei egin eutson zerutik Agarri, esanez: «Zer dozu, Agar? Ez bildurrik izan, entzun dau-eta Jainkoak hor dozun mutikoaren oihua. Ea, hartu egizu mutikoa eta ez itzi eskutik; herri handi bihurtuko dot».\n\nOrduan, Jainkoak begiak zabaldu eutsozan Agarri, eta ur-putzu bat ikusi eban; joan zan, zaragia urez bete eta edaten emon eutson mutikoari. Jainkoa lagun izan eban mutikoak; hazi zan, basamortuan bizi eta gezilari trebe bihurtu zan.\n\nJaunak esana.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p396_b01"
+        },
+        "salmo": {
+          "titulo": "",
+          "cita": "Sal 33, 7-8. 10-11. 12-13 (R.: 7ab)",
+          "texto": "V/.\nDohakabeak dei egin eban, eta Jaunak entzun, \neta estualdi guztietatik eban salbatu. \nKanpaturik dago Jaunaren aingerua \nhari begirune deutsoenen inguruan, \neta libratzen ditu. R/.\nV/.\nIzan Jaunari begirune zuek, hari sagaratuok, \nez jake-eta ezer falta begirune deutsoenei.\nAberatsek ezagutzen dabe beharrizana eta gosea; \nJaunagana jotzen dabenei ez jake onik falta. R/.\nV/.\nZatoze, seme-alabok, eta entzun;\nJaunari begirune izaten irakatsiko deutsuet.\nNork ez dau bizia maite? \nNork ez dau luzaro bizi nahi, zoriontsu izateko? R/.",
+          "unmatched": false,
+          "antifona": "Dohakabeak oihu egin eban, eta Jaunak entzun.",
+          "_source": "bizkaiera_pdf_extract.md#v2_p397_b01"
+        }
+      },
+      "14_jueves": {
+        "day_name": "",
+        "primera": {
+          "titulo": "Zuen bizia salbatzeko bialdu ninduan Jainkoak Egiptora.",
+          "cita": "Has 44, 18-21. 23b-29; 45, 1-5",
+          "texto": "E GUN hareetan, Judak Joserengana hurreratu eta esan eutson: «Jauna, \nitziozu zeure zerbitzari honi berba bi esaten; faraoia lez zara zu eta ez \nzakidaz hasarratu. Jauna, aitarik edota beste anaiarik ba ete genduan itaundu \nzeunskun zuk zeure zerbitzarioi. Baietz erantzun geuntsun, bagenduala \noraindino aita zaharra, baita zahartzaroan jaio jakon seme gaztea be. Gure \naitak oso maitea ebala, ha zalako emazte harengandik gelditzen jakon \nbakarra, bestea hila ebanez. Anaia ha hona ekartzeko esan zeunskun zeure \nzerbitzarioi, ikusi egin nahi zenduala-eta. Gainera, esan zeunskun, gure \nanaia txikia gugaz ez baetorren, ez azaltzeko barriro zure aurrera.\n\t Zure zerbitzari eta gure aitagana bihurtu ginanean, zuk, jaun horrek, \nesandakoa adierazo geuntsan. Eta gure aitak jateko apur bat erostera barriro \nbihurtzeko agindu euskun eta guk erantzun geuntsun ez geintekezala etorri, \ngure anaia txikia geugaz ez bagenkarren, ha barik ezin ginala zure aurrera \nagertu. Orduan, zure zerbitzari gure aitak honan berba egin euskun: “Zuek \nbadakizue nire emazte Rakelek seme bi emon eustazana; batak alde egin \neustan eta ez dot gehiago ikusi: piztiaren batek iruntsi ebalakoan nago. \nBeste hau be nire ondotik eroan eta ezbeharren bat jazoko balitxako, ni, \nagure hau, atsekabez hilko nintzateke”».\n\t Josek, bere sentipenei gehiago eutsi ezinik, inguruan ebazan guztiei \nagindu eutsen: «Urten danok hemendik!» Halan, ez zan Josegaz inor \ngelditu, anaiei bere burua ezagutzera emon eutsenean. Orduan, negarrari \nemon eutson errime. Entzun eutsoen egiptoarrek, eta faraoiaren jauregian \nbe izan eben horren barri.\n\t Josek esan eutsen anaiei: «Jose naz ni. Bizi ete da oraindino aita?» \nBaina hareek, ikararen ikaraz, ez eben erantzuten asmatzen. Orduan, \nJosek: «Tira, hurreratu nigana». Hurreratu jakozan eta esan eutsen: «Bai, \nJose nozue, zeuen anaia, Egiptora ekartzeko saldu zenduena. Baina ez \nizan orain atsekaberik, ez damurik, hona saldu ninduzuelako. Zuen bizia \nsalbatzeko bialdu ninduan Jainkoak zuen aurretik».\nJaunak esana.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p432_b01"
+        },
+        "salmo": {
+          "titulo": "",
+          "cita": "Sal 104, 16-17. 18-19. 20-21 (R.: 5a)",
+          "texto": "R/. Ekarri gogora Jaunak egindako mirariak. Edota: Aleluia.\n\nV/.\nGosea bialdu eban lurraldera,\njanari-hornidura guztiak kendu eutsezan;\nbialdua eban, ostera, aurretik gizon bat,\nJose, esklabotzat saldua.\nR/.\n\nV/.\nKatez lotu eutsoezan oinak,\nburdinazko samakoa gehitu,\nharek iragarria bete zan arte,\nholan probatu eban Jaunaren hitzak\nharen errubakotasuna.\nR/.\n\nV/.\nOrduan, ha askatzeko agindu eban erregeak,\nlibre izteko, herrien nagusiak;\neta bere jauregiko buru egin eban,\nbere ondasun guztien administratzaile.\nR/.",
+          "unmatched": false,
+          "antifona": "",
+          "_source": "bizkaiera_pdf_extract.md#v2_p433_b01"
+        }
+      },
+      "16_viernes": {
+        "day_name": "",
+        "primera": {
+          "titulo": "Legea Moisesen bidez emon zan.",
+          "cita": "Ir 20, 1-17",
+          "texto": "E GUN hareetan, Jaunak berba honeek esan ebazan: «Neu naz Jauna \nzure Jainkoa, Egiptoko lurraldetik, esklabotzatik, atara zinduzana. Ez \nizan Ni beste jainkorik.\n\t Ez egin idolorik, ez irudirik, goiko zeruan, beheko lurrean edo lurpeko \nuretan diranetatik. Ez ahuspeztu horreen aurrean, ez emon gurtzarik be. Ni, \nJauna zure Jainkoa, Jainko jeloskorra naz-eta: gorroto deusten gurasoen \ngaiztakeria ondorengoengan zigortzen dot, hirugarren eta laugarren \ngizaldiraino; baina milagarren gizaldiraino agertzen deutset errukia Ni \nmaite nabenei eta nire aginduak gordetzen dabezanei.\n\t Ez erabili alperrik Jaunaren, zeure Jainkoaren, izena, Jaunak ez dau-eta \nzigorrik barik itziko haren izena alperrik erabiltzen dauanik.\n\t Izan gogoan zapatu eguna, Jaunari sagaratzeko. Sei egunez egingo \ndozu lan eta zeure eginkizun guztiak burutuko. Baina zazpigarren eguna \natseden-eguna dozu, Jaunari, zeure Jainkoari, eskeinia. Egun horretan ez \ndozu bat be lanik egingo, ez zeuk, ez zure semeak, ez zure alabeak, ez \nzure morroiak, ez zure neskameak, ez zure abereek, ezta zure herrian bizi \ndan etorkinak be. Izan be Jaunak sei egunean egin ebazan-eta zeru-lurrak, \nitsasoa eta horreetan dagoan guztia, eta zazpigarrenean atseden hartu eban. \nHorregaitik, bedeinkatu egin eban Jaunak zapatua eta egun sakratutzat \nezarri.\n\t Aintzat hartu aita-amak luzaro bizi zaitezan Jaunak zeure Jainkoak \nemongo deutsun lurraldean. Ez hil inor. Ez egin adulteriorik. Ez ostu. Ez \negin guzurrezko testigantzarik lagun hurkoaren kontra.\n\t Ez desiratu lagun hurkoaren etxerik, ez haren emazterik, ez morroirik, \nez neskamerik, ez idirik, ez astorik, ezta beste ezertxu be».\nJaunak esana.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p501_b01"
+        },
+        "salmo": {
+          "titulo": "",
+          "cita": "Sal 18, 8. 9. 10. 11 (R.: Jn 6, 68c)",
+          "texto": "V/.\nJaunaren legea bikain, barrua arnasbarritzen dau; \nJaunaren mandamentua fidagarri, heldubakoa zuhur egiten dau. R/.\nV/.\nJaunaren arauak zuzen, bihotzaren pozgarri;  \nJaunaren agindua distiratsu, begien argigarri. R/.\nV/.\nJaunaganako begirunea garbi, iraunkor betiko, \nJaunaren erabagiak egiazko, dan-danak bidezko.R/.\nV/.\nUrrea, urre araztua baino desiragarriago,  \neztia, ezti barria baino gozoago. R/.",
+          "unmatched": false,
+          "antifona": "Zeuk daukazuz, Jauna, betiko bizia daben hitzak.",
+          "_source": "bizkaiera_pdf_extract.md#v2_p502_b01:overlap"
+        }
+      },
+      "22_jueves": {
+        "day_name": "",
+        "primera": {
+          "titulo": "Berak atara gaitu ilunpearen menpetik eta bere Seme maitearen erreinura aldatu.",
+          "cita": "Kol 1, 9-14",
+          "texto": "SENIDEOK: Zuen jokabidearen barri izan genduanetik, eten barik dihardugu zuen alde otoitzean. Jainkoari eskatzen deutsagu, jakituria osos eta Espirituak emoten dauan ulermenaz jantzirik, Jainkoaren nahia bete-betean ezagutu dagizuela. Holan, Jaunak nahi dauan eran biziko zarie, atsegin dauan guztia eginez, era guztietako egintza onak frututzat emonez eta Jainkoa gero eta hobeto ezagutuz.\n\n     Haren ahalmen aintzatsuak indartzen zaitue, dana jasateko iraupena eta pazientzia izan dagizuen eta, pozez beterik, eskerrak emon deiozuezan Aitari, argiaren erreinuan bere herri santuarentzat prestaturik dituan ondasunetan parte izateko gai egin zaituenari. Berak atara gaitu ilunpearen menpetik eta bere Seme maitearen erreinura aldatu; honengan dogu askapena, honengan pekatuen parkamena.\n\nJaunak esana.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p159_b01"
+        },
+        "salmo": {
+          "titulo": "",
+          "cita": "Sal 97, 2-3ab. 3cd-4. 5-6 (R.: 2a)",
+          "texto": "V/.\nBere garaipena ezagutuazo dau Jaunak, \nbere salbazino-egintza agertu nazinoen aurrean.\nEz da ahaztu bere maitasunaz, \nIsrael herriari deutson leialtasunaz. R/.\n\nV/.\nMunduko bazter guztiek ikusi dabe \ngure Jainkoaren garaipena.\nEgin irrintzi Jaunari, lur osoa, \negin poz-oihu eta kantu, jo soinua. R/.\n\nV/.\nOspatu Jauna zitaraz, \nzitaraz eta kantu-hotsez,\nturutaz eta adar-hotsez; \negin irrintzi errege dan Jaunari. R/.",
+          "unmatched": false,
+          "antifona": "Bere garaipena ezagutuazo dau Jaunak.",
+          "_source": "bizkaiera_pdf_extract.md#v3_p159_b02"
+        }
+      },
+      "34_sabado": {
+        "day_name": "",
+        "primera": {
+          "titulo": "KARA larrian nengoan ni, Daniel, neure barruan, ikusten nebazan guztiakaitik. Han egozanetako batengana hurreratu eta ikusi neban guztiaren benetako esanahia azaltzeko eskatu neutsan. Guztiaren argitasuna emon eustan berak.",
+          "cita": "Dn 7, 15-27",
+          "texto": "Lau piztitzar horreek, sortuko diran lau erreinu dira. Baina horreen ondoren Goi-goikoaren herri santuari emongo jako erregetza, eta harena izango da betieran.\n\nGero, laugarren piztitzar ha zer zan jakin nahi neban, hain zan-eta besteak ez lakoa: guztiz izugarria, burdinazko haginak eta brontzezko atzaparrak ebazana; dana irunsten eta txikitzen eban, eta jan barik izten ebana hankapean apurtzen. Jakin nahi neban, era berean, zer esan nahi eben haren buruko hamar adarrek, baita honeen artean urten eta hareetatik urten eutsoen hiru adar txikiak be; begiak eta harrokeriaz berba egiten eban ahoa ebazan izan be adar harek eta besteak baino handiago agiri zan agiri be.\n\nBegira nengoala, adar ha Jainkoaren herri santuaren kontra burrukan ebilen eta ia menperaturik eukan. Baina etorri zan gizon zaharra eta Goi-goikoaren herri santuaren alde urten eban, heldu zan-eta herri santua erreinuaren jaube egiteko sasoia.\n\nOndoren, esan eustan: «Laugarren piztia lurrean izango dan laugarren erreinua da, besteak ez lakoa. Mundu osoa iruntsiko dau, hanka azpian hartuko eta txikituko. Hamar adarrak erreinu honetan izango diran hamar errege dira. Ondoren, beste bat sortuko da, aurrekoak ez lakoa, hareetako hiru errege menperatuko dituana. Goi-goikoaren kontra biraoka jardungo dau eta herri santua zapalduko dau; jaiak eta legea aldatu nahi izango ditu. Hiru urte eta erdiz egongo da herri santua haren menpean. Baina etorriko jako auzi-sasoia, kenduko deutsoe agintea, eta guztiz hondatuta eta ezereztuta itziko dabe.\n\nOrduan, Goi-goikoaren herri santuari emongo jako zerupean dagoan erreinu guztietako erregetza, agintea eta handitasuna. Beti iraungo dau herri horren erregetzak, eta munduko aginte guztiek obedidiko deutsoe eta zerbiduko».\n\nJaunak esana.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p509_b01"
+        },
+        "salmo": {
+          "titulo": "",
+          "cita": "Dn 3, 82a. 83a. 84a. 85a. 86a. 87a (R.: 59b)",
+          "texto": "R. Goratu eta ospatu gizaldietan!\n\nV/. Gizakiok, bedeinkatu egizue Jauna:\nR/. Goratu eta ospatu gizaldietan! \nV/. Israeldarrok, bedeinkatu egizue Jauna: R/.\nV/. Jaunaren abadeok, bedeinkatu egizue Jauna: R/.\nV/. Jaunaren zerbitzariok, bedeinkatu egizue Jauna: R/.\nV/. Bihotz-zintzook, bedeinkatu egizue Jauna: R/.\nV/. Santu eta bihotz-apalok, bedeinkatu egizue Jauna: R/.",
+          "unmatched": false,
+          "antifona": "",
+          "_source": "bizkaiera_pdf_extract.md#v3_p510_b01:overlap"
+        }
+      },
+      "19_lunes": {
+        "day_name": "",
+        "primera": {
+          "titulo": "Ezarri ituna zeuen bihotzean. Maitatu egizue etorkina, zuek be etorkin izan zinien-eta.",
+          "cita": "Dt 10, 12-22",
+          "texto": "OISESEK honan berba egin eutson herriari: «Orain, Israel, zer eskatzen deutsu Jaunak, zeure Jainkoak? Hauxe besterik ez: begirune izan deiozula Jaunari, zeure Jainkoari; jarraitu daizuzala haren bideak, maitatu eta zerbidu daizula Jauna, zeure Jainkoa, bihotz-bihotzez eta gogo osoz, eta bete daizuzala gaur nik emoten deutsudazan Jaunaren aginduak eta legeak, zoriontsu izan zaitezan.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v3_p063_b02"
+        },
+        "salmo": {
+          "titulo": "",
+          "cita": "Sal 147, 12-13. 14-15. 19-20 (R.: 12a)",
+          "texto": "V. Jerusalem, ospatu egizu Jauna, \nSion, goratu zeure Jainkoa,\nzure ateen sarrailak indartu ditualako \neta seme-alabak zugan bedeinkatu. R/.\nV. Zure mugetan bakea ezarri dau, \ngaririk onenaz ase zaitu. \nBialtzen dau lurrera bere mezua, \neta haren hitza bizkor eta arin doa. R/.\nV. Bere hitza iragarri deutsa Jakoben herriari,\nbere erabagiak eta aginduak Israeli.\nBeste herriei ez deutse holakorik egin, \nbere erabagirik ez deutse jakinazo. R/.",
+          "unmatched": false,
+          "antifona": "Jerusalem, ospatu egizu Jauna!",
+          "_source": "bizkaiera_pdf_extract.md#v2_p242_b01"
         }
       }
     },
@@ -17600,6 +17893,36 @@
           "texto": "Aldi haretan, Jesus menditik jatsi eta ikasleakana heldu zanean, jentetza handia ikusi eban hareen inguruan, eta lege-maisu batzuk hareekin eztabaidan. Jentea harriturik gelditu zan Jesus ikustean eta lasterka joan jakozan agurtzera. Jesusek itaundu eutsen: Zer zenduen horreekin eztabaidan?\n \nJentarteko batek erantzun eutsan: Maisu, hemen ekarri deutsut neure semea: berbarik egiten izten ez deutsan espiritua dauko. Non edo han espiritua jabetzen jakonean, lurrera botaten dau, eta mutikoa, adurra dariola eta hortz-karraska, gogor-gogor gelditzen da. Zure ikasleei eskatu deutset espiritua botateko, baina ezin izan dabe.\nJesusek esan eutsen: Hau gizaldi sinesgogorra! Noiz arte egon behar ete dot zuekin? Noiz arte jasan behar ete zaituet? Ekarri mutila. Ekarri eutsoen, eta espirituak, Jesus ikusteagaz batera, gogor astindu eban mutikoa, eta lurrean iraulka eta adurra eriola itzi.\nJesusek itaundu eutsan aitari: Noiztik dago holan? Harek erantzun: Ume-umetatik. Askotan bota izan dau sutara eta uretara ere, hilazoteko. Ezer egin ahal badozu, erruki zaitez gutaz eta lagundu egiguzu. Jesusek esan eutsan: Ahal dodan dinozu? Dana ahal dau sinesten dauanak. Orduan, mutikoaren aitak deadarka: Sinestu nahi dot! Lagundu sinesbako honi!\nJesusek, jentea batzen joiala ikusirik, gogor eraso eutsan espiritu gaiztoari: Espiritu gor eta mutua, Neuk agintzen deutsut: urten egizu honegandik eta ez sartu barriro. Espirituak, garrasika eta aparteko astindua emonez, urten egin eban. Mutikoa hilda lez gelditu zan; askok hilda egoala inoen; baina Jesusek eskutik hartu eta jagiazo egin eban, eta mutikoa zutunik jarri zan.\nJesus etxeratu zanean, ikasleek itaundu eutsoen bakarrean: Eta guk, zergaitik ezin izan dogu espiritua bota? Jesusek erantzun eutsen: Honako espirituak botateko bide bakarra otoitza da.\n",
           "unmatched": false,
           "_source": "mc9,14-29_eu.txt"
+        }
+      },
+      "5_sabado": {
+        "day_name": "",
+        "evangelio": {
+          "titulo": "Asetzeraino jan eben guztiek.",
+          "cita": "Mk 8, 1-10",
+          "texto": "EGUN hareetan, barriro jentetza oso ugaria izanik eta zer janik ez, Jesusek ikasleei dei egin eta esan eutsen: «Erruki dot jente hau; badaroez hiru egun Neugaz eta ez dabe ezer be jateko. Etxera baraurik bialtzen baditut, bidean lur jota geldituko dira, urrutitik etorriak be badira-eta».\n\nIkasleek esan eutsoen: «Baina nondik atara bakartade honetan honeek asetzeko beste ogi?» Berak itaundu eutsen: «Zenbat ogi daukazuez?» Eta hareek erantzun: «Zazpi».\n\nOrduan, jenteari lurrean jesartzeko agindu eutson. Gero, zazpi ogiak hartu eta, Jainkoari esker oneko otoitza egin ondoren, zatitu eta bere ikasleei emon eutsezan, banatu egiezan. Hareek jenteari banatu eutsoezan.\n\nBazituen arraintxu banaka batzuk be; Jesusek bedeinkatu zituan eta hareek be banatzeko agindu eutsen.\n\nAsetzeraino jan eben guztiek, eta zazpi otzara bete ebezan hondakinakaz. Lau mila inguru ziran. Ostean, Jesusek agur egin eutsen, eta bere ikasleakaz txalupara igon eta Dalmanuta aldera joan zan.\n\nJaunak esana.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p168_b01"
+        }
+      },
+      "7_viernes": {
+        "day_name": "",
+        "evangelio": {
+          "titulo": "Jainkoak bat egin dauana ez begi gizakiak banatu.",
+          "cita": "Mk 10, 1-12",
+          "texto": "Aldi haretan, Jesus Judeako mugetan sartu eta Jordan ibaiaz \nbestaldera igaro zan. Barriro jentetza handia batu jakon eta bera, \nohi ebanez, irakasten hasi jaken.\n\n Hurreratu jakozan fariseu batzuk eta, Jesus zertan harrapatuko, itaundu \neutsoen: «Bidezko ete jako gizonari emaztea iztea?» Harek erantzun eutsen: \n«Zer agindu eutsuen horren gainean Moisesek?» Eta hareek: «Moisesek \ndibortzio-agiria idatzi eta emaztea izteko baimena emon euskun».\n\n Jesukek esan eutsen: «Zeuen burugogorkeriagaitik emon eutsuen \nMoisesek lege hori. Baina, munduaren hasieratik, Jainkoak gizonezko eta \nandrazko egin zituan; horregaitik, gizasemeak bere aita-amak itziko ditu eta \nemaztearekin alkartuko da, eta biak bat izango dira. Beraz, aurrerantzean ez \ndira bi, bat baino. Holan, bada, Jainkoak bat egin dauana ez begi gizakiak \nbanatu».\n\n Gero, etxean, arazo berberari buruz itaundu eutsoen ikasleek. Jesusek \nesan eutsen: «Bere emaztea itzi eta beste bategaz ezkontzen danak \nadulterioa egiten dau lehenengoaren kontra; eta bere senarra itzi eta beste \nbategaz ezkontzen dan emazteak, adulterioa egiten dau era berean».\n\nJaunak esana.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p222_b01"
+        }
+      },
+      "12_miercoles": {
+        "day_name": "",
+        "evangelio": {
+          "titulo": "Euren egintzetatik igarriko deutsezue.",
+          "cita": "Mt 7, 15-20",
+          "texto": "Aldi haretan, Jesusek esan eutsen ikasleei: «Kontuz sasiprofetekin! \nArdi-narruz jantzita datorkizuez, baina barrutik otso harrapariak \ndira. Euren egintzetatik igarriko deutsezue. Elorritik batzen ete \nda mahatsik, edota karduetatik ikorik? Zuhaitz onak frutu ona emoten dau, \neta zuhaitz txarrak frutu txarra. Zuhaitz onak ezin dau frutu txarrik emon, \nezta zuhaitz txarrak be frutu onik.\t\n\t Frutu onik emoten ez dauan zuhaitza ebagi eta surtara botatzen da. \nBeraz, euren frutuetatik igarriko deutsezue sasiprofetei».\nJaunak esana.",
+          "unmatched": false,
+          "_source": "bizkaiera_pdf_extract.md#v2_p365_b01"
         }
       }
     }
