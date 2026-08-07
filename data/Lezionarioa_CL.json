@@ -2669,9 +2669,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 103, 1-2a. 5-6. 10 y 12. 13-14. 24 y 35c (R.: cf. 30)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "Ene arima, goratu egizu Jauna!\nGuztiz handi zaitut, Jauna, ene Jainkoa!\nHandi eta eder zagoz jantzia,\nestalki dozu argia. R/.\n\nEzarri dozu lurra bere orpoetan,\nez da lokatuko mendeen mendeetan.\nItsasoz batu dozu soineko gisan,\nurak mendi gainean kokatu ziran. R/.\n\nIbaiak sortu dituzu iturrietatik,\neta txirristaka doaz mendi artetik.\nZeruko hegaztiak bizi dira ur ondoetan,\nemoten dabez euren txioak orri artean. R/.\n\nMendiak zeure egoitzatik ureztatzen dozuz,\nlurra zeure eskuko emoiez asetzen dozu.\nSortzen dozu bedarra abereentzat,\nlandarea gizakiarentzat. R/.\n\nBai ugari dirala, Jauna, Zuk eginak,\nzuhurtasunez eginak zeharo,\nlurra zure sorkariz betea dago!\nEne arima, gorztu egizu Jauna! R/.\n",
+          "antifona": "Bialdu egizu, Jauna, zeure arnasea, eta barrituazo lur-azala.",
+          "unmatched": false,
+          "_source": "Sal103,1-2a.5-6.10y12.13-14.24y35c(R+cf.30)_eu.txt"
         }
       },
       "vigilia_pascual_lectura_2": {
@@ -2710,10 +2711,11 @@
       "vigilia_pascual_lectura_4": {
         "day_name": "",
         "primera": {
-          "titulo": "",
+          "titulo": "Betiko onginahiaz maite zaitu Jaunak, zure Salbatzaileak.",
           "cita": "Is 54, 5-14",
-          "texto": "",
-          "unmatched": true
+          "texto": "Zure egileak bere emaztetzat hartuko zaitu:\nharen izena Jaun ahalguztiduna;\nIsraelgo Jainko santua da zure askatzailea,\nlur osoaren Jainko deritzo.\nEmakume baztertu eta atsekabetuari lez\ndei egiten deutsu Jaunak barriro,\ngaztetako emazte zapuztuari lez\n--dino zure Jainkoak--.\nApur baten baztertu zindudazan;\nbaina maitasun handiz neuganatuko zaitut barriro.\nHasarrealdi batean \nunetxo baten gorde egin neutsun aurpegia;\nbaina betiko maitasunaz errukitu najatzu\n--dino Jaunak, zure askatzaileak--.\nNoeren egunetan lez izango da Niretzat:\nzin egin neban orduan\nuholdeak ez ebala aurrerantzean lurrik estalduko,\neta holantxe egiten dot zin orain\nez najatzula barriro hasarretuko,\nez deutsudala aurrerantzean mehatxurik egingo.\nMendiak euren lekutik aldendu\neta muinoek koloka eginik ere,\nnire maitasuna ez da zugandik aldenduko,\nnire bake-itunak ez dau kolokarik egingo\n--honan dino maite zaituan Jaunak--.\nZorigaiztokoa zu, Jerusalem, ekaitzak astindua,\ninork kontsolatu bakoa!\nMalakitazko oinarri gainean eregiko zaitut,\nzafirozko zimendu gainean ezarriko;\ndorreak errubiz eta ateak esmeraldaz egingo deutsudaz,\nharribitxiz harresi guztiak.\nZure seme-alabak Jaunaren ikasle izango dira\neta bake osoan biziko.\nJustizian oinarrituko zara sendo.\nZapalkuntzatik urrun egongo zara\neta ez dozu ezeren bildurrik izango,\nikarea ez jatzu inoiz hurreratuko.\n",
+          "unmatched": false,
+          "_source": "is54,5-14_eu.txt"
         },
         "salmo": {
           "titulo": "",
@@ -2727,10 +2729,11 @@
       "vigilia_pascual_lectura_5": {
         "day_name": "",
         "primera": {
-          "titulo": "",
+          "titulo": "Zatoze Nigana, eta bizkortuko zaree; betiko alkargoa egingo dot zuekin.",
           "cita": "Is 55, 1-11",
-          "texto": "",
-          "unmatched": true
+          "texto": "Honan berba egiten dau Jaunak:\n«Egarri zareen guztiok, zatoze uretara,\netorri, dirurik ez dozuenok ere;\nerosi garia eta jan ordaindu barik,\nardoa eta esnea hutsean.\nZergaitik eralgi dirua\ngoserik itziko zaitueen janaritan,\neta lansaria\naseko ez zaitueen gauzatan?\nEntzun Niri arretaz, eta ondo jango dozue,\njanari gozo mamitsuz elikatuko zaree.\nEtorri Nigana eta egon adi,\nentzuidazue eta biziko zaree.\nBetiko ituna egingo dot zuekin,\nDavidi eginiko maitasunezko agintzariari leial eutsiz.\nHerrientzako testigu jarri neban David,\nnazinoen buruzagi eta agintari.\nEzagutzen ez zenduan herriari egingo deutsazu dei,\neta ezagutzen ez zinduzan herria\nlasterka etorriko da zugana,\nJaunagaitik, zure Jainkoagaitik,\nospez jantzi zaituan Israelgo Santuagaitik.\nBilatu egizue Jauna, aurkitu daiteken bitartean;\ndei egiozue, hurrean dagoan bitartean.\nItzi begi gaiztoak bere bidea,\ngaizkileak bere asmo txarrak;\nbihurtu bedi Jaunagana, errukiz hartuko dau-eta,\ngure Jainkoagana,\nguztiz parkabera da-eta.\nNire asmoak ez dira zuenak lakoak,\nezta zuen jokabidea ere nirea lakoa dino Jaunak.\nZelan zerua lurraren gainetik garai,\nholan nire jokabidea zuen jokabidearen gainetik,\nnire asmoak zuen asmoen gainetik.\nEuria eta edurra zerutik jasten dira\neta ez dira barriro hara bihurtzen,\nlurra ase, ernaldu eta ernamuindu barik,\nereiteko hazia eta jateko ogia emon dagizan;\nhalan izango da nire ahotik urtendako berbea ere:\nez da Nigana hutsik bihurtuko,\nNik nahi dodana egingo dau\neta beteko nik ezarritako helburua».\n",
+          "unmatched": false,
+          "_source": "is55,1-11_eu.txt"
         },
         "salmo": {
           "titulo": "Atarako dozue ura pozik salbamenaren iturrietatik.",
@@ -2744,10 +2747,11 @@
       "vigilia_pascual_lectura_6": {
         "day_name": "",
         "primera": {
-          "titulo": "",
+          "titulo": "Zabiltz Jaunaren argiaren disdiran.",
           "cita": "Ba 3, 9-15. 32 — 4, 4",
-          "texto": "",
-          "unmatched": true
+          "texto": "Entzun, Israel, bizira daroen aginduak,\nentzun, zuhurtasuna ikasteko.\nZer dala- eta, Israel,\nzer dala-eta zagoz arerioen lurraldean,\nlurralde arrotzean zahartzen?\nZer dala-eta hilekin kutsaturik,\nHerio-leizean dagozanen parekotzat emona?\nItzi egin dozu jakituriaren iturria!\nJainkoaren bideari jarraitu bazeuntso,\nbakean biziko zinatekean betiko.\nIkasi non dagoan zuhurtasuna,\nnon indarra eta zentzun ona,\neta jakingo dozu era berean\nnon dagoan bizitza luzea eta benetako bizia,\nnon, gidatuko zaituen argia eta bakea.\nNork aurkitu dau jakituriaren bizilekua?\nNor heldu da haren altxorretaraino?\nDana dakian Jainkoak ezagutzen dau jakituria,\nbere adimenaz aztertzen dau.\nHarek eratu dau lurra betiko\neta lauoineko abereez bete;\nargiari joateko agindu, eta joan egiten da,\ndeitu, eta harek esana egiten ikaraz.\nIzarrek ere disdira egiten dabe\neuren zaintza-postuetan, pozez beterik;\ndeitzen deutse, eta «Hemen gaituzu» erantzuten deutsoe,\neta pozik disdiratzen euren Egilearentzat.\nBera da gure Jainkoa,\nez da beste inor ha lakorik.\nBerak  aurkitu ditu jakintzaren bide guztiak,\neta bere zerbitzari Jakobi erakutsi deutsaz,\nhain maite dauan Israel herriari.\nGero, munduan agertu zan jakituria\neta gizakien artean bizi izan zan.\nJainkoaren aginduen liburua da jakituria,\nbetiko irauten dauan legea;\nha gordeten dabenak bizira doaz,\nbazterrera izten dabenak heriotzara.\nOnartu barriro jakituria, Jakoben herri,\nzabiltz haren argiaren disdiran.\nEz itzi besteri zure aintzarik,\nezta jente arrotzari ere zure duintasunik.\nZorionekoak gu, Israel,\nJainkoari zer jakon atsegin dakigunok.\n",
+          "unmatched": false,
+          "_source": "ba3,9-15.32-4,4_eu.txt"
         },
         "salmo": {
           "titulo": "",
@@ -2861,10 +2865,11 @@
           "_source": "bizkaiera_pdf_extract.md#v2_p158_b02:overlap"
         },
         "segunda": {
-          "titulo": "",
+          "titulo": "Ez zagiezala Jaunaren egunak lapurrak lez harrapatu.",
           "cita": "1 Tes 5, 1-6",
-          "texto": "",
-          "unmatched": true
+          "texto": "\tSenideok: Hori noiz eta zelan izango dan ez dozue nik idatzi beharrik; zeuek dakizue nahiko ondo Jaunaren eguna uste barik etorriko dala, lapurra gauez lez.\n\tJentea «hau bakea eta segurtasuna» esaten ibiliko danean, orduan etorriko jake hondamendia gainera, uste barik, umedun dagoanari erdiminak lez, eta ez dau ihes egiterik izango. Zuek, ostera, senideok, ez zaree ilunpetan bizi, eta egun horrek ez dau zuek lapurrak lez zertan harrapatu. Zuek guztiok egiaren eta egunaren aldeko zaree; ez gara gauaren eta ilunaren menpeko. Beraz, ez dagigun lo egin gainerakoek lez; egon gaitezan, ostera, zuhur eta izan gaitezan neurritsu.\n",
+          "unmatched": false,
+          "_source": "1ts5,1-6_eu.txt"
         },
         "aclamacion": {
           "titulo": "Jn 15, 4a. 5b",
@@ -2997,10 +3002,11 @@
           "unmatched": true
         },
         "segunda": {
-          "titulo": "",
+          "titulo": "Zuen izate osoak -espiritu, arima eta gorputz-, errubako iraun dagiala Jaunaren etorrera arte.",
           "cita": "1 Tes 5, 16-24",
-          "texto": "",
-          "unmatched": true
+          "texto": "Senideok: Zagoze beti pozik. Egin otoitz aspertu barik; emon eskerrak beti, horixe gura dau-eta zuentzat Jainkoak Kristo Jesusegan. Ez amatau Espiritua, ez gitxietsi profeta-dohairik. Aztertu guztia eta hartu on dana. Zaindu zeuen buruak edozelango gaiztakeriatik.\nBakea emoten dauan Jainkoak berak egin zagiezala oso-osorik santu, eta zuen izate osoak -espiritu, arima eta gorputz-- errubako iraun dagiala, Jesu Kristo gure Jaunaren etorrera arte. Leiala da dei egin deutsuena, eta beteko dau emondako berbea.\n",
+          "unmatched": false,
+          "_source": "1ts5,16-24_eu.txt"
         }
       },
       "adviento_4": {
@@ -5469,9 +5475,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 103, 1-2a. 5-6. 10 y 12. 13-14. 24 y 35c (R.: cf. 30)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "Ene arima, goratu egizu Jauna!\nGuztiz handi zaitut, Jauna, ene Jainkoa!\nHandi eta eder zagoz jantzia,\nestalki dozu argia. R/.\n\nEzarri dozu lurra bere orpoetan,\nez da lokatuko mendeen mendeetan.\nItsasoz batu dozu soineko gisan,\nurak mendi gainean kokatu ziran. R/.\n\nIbaiak sortu dituzu iturrietatik,\neta txirristaka doaz mendi artetik.\nZeruko hegaztiak bizi dira ur ondoetan,\nemoten dabez euren txioak orri artean. R/.\n\nMendiak zeure egoitzatik ureztatzen dozuz,\nlurra zeure eskuko emoiez asetzen dozu.\nSortzen dozu bedarra abereentzat,\nlandarea gizakiarentzat. R/.\n\nBai ugari dirala, Jauna, Zuk eginak,\nzuhurtasunez eginak zeharo,\nlurra zure sorkariz betea dago!\nEne arima, gorztu egizu Jauna! R/.\n",
+          "antifona": "Bialdu egizu, Jauna, zeure arnasea, eta barrituazo lur-azala.",
+          "unmatched": false,
+          "_source": "Sal103,1-2a.5-6.10y12.13-14.24y35c(R+cf.30)_eu.txt"
         }
       },
       "vigilia_pascual_lectura_2": {
@@ -5510,10 +5517,11 @@
       "vigilia_pascual_lectura_4": {
         "day_name": "",
         "primera": {
-          "titulo": "",
+          "titulo": "Betiko onginahiaz maite zaitu Jaunak, zure Salbatzaileak.",
           "cita": "Is 54, 5-14",
-          "texto": "",
-          "unmatched": true
+          "texto": "Zure egileak bere emaztetzat hartuko zaitu:\nharen izena Jaun ahalguztiduna;\nIsraelgo Jainko santua da zure askatzailea,\nlur osoaren Jainko deritzo.\nEmakume baztertu eta atsekabetuari lez\ndei egiten deutsu Jaunak barriro,\ngaztetako emazte zapuztuari lez\n--dino zure Jainkoak--.\nApur baten baztertu zindudazan;\nbaina maitasun handiz neuganatuko zaitut barriro.\nHasarrealdi batean \nunetxo baten gorde egin neutsun aurpegia;\nbaina betiko maitasunaz errukitu najatzu\n--dino Jaunak, zure askatzaileak--.\nNoeren egunetan lez izango da Niretzat:\nzin egin neban orduan\nuholdeak ez ebala aurrerantzean lurrik estalduko,\neta holantxe egiten dot zin orain\nez najatzula barriro hasarretuko,\nez deutsudala aurrerantzean mehatxurik egingo.\nMendiak euren lekutik aldendu\neta muinoek koloka eginik ere,\nnire maitasuna ez da zugandik aldenduko,\nnire bake-itunak ez dau kolokarik egingo\n--honan dino maite zaituan Jaunak--.\nZorigaiztokoa zu, Jerusalem, ekaitzak astindua,\ninork kontsolatu bakoa!\nMalakitazko oinarri gainean eregiko zaitut,\nzafirozko zimendu gainean ezarriko;\ndorreak errubiz eta ateak esmeraldaz egingo deutsudaz,\nharribitxiz harresi guztiak.\nZure seme-alabak Jaunaren ikasle izango dira\neta bake osoan biziko.\nJustizian oinarrituko zara sendo.\nZapalkuntzatik urrun egongo zara\neta ez dozu ezeren bildurrik izango,\nikarea ez jatzu inoiz hurreratuko.\n",
+          "unmatched": false,
+          "_source": "is54,5-14_eu.txt"
         },
         "salmo": {
           "titulo": "",
@@ -5527,10 +5535,11 @@
       "vigilia_pascual_lectura_5": {
         "day_name": "",
         "primera": {
-          "titulo": "",
+          "titulo": "Zatoze Nigana, eta bizkortuko zaree; betiko alkargoa egingo dot zuekin.",
           "cita": "Is 55, 1-11",
-          "texto": "",
-          "unmatched": true
+          "texto": "Honan berba egiten dau Jaunak:\n«Egarri zareen guztiok, zatoze uretara,\netorri, dirurik ez dozuenok ere;\nerosi garia eta jan ordaindu barik,\nardoa eta esnea hutsean.\nZergaitik eralgi dirua\ngoserik itziko zaitueen janaritan,\neta lansaria\naseko ez zaitueen gauzatan?\nEntzun Niri arretaz, eta ondo jango dozue,\njanari gozo mamitsuz elikatuko zaree.\nEtorri Nigana eta egon adi,\nentzuidazue eta biziko zaree.\nBetiko ituna egingo dot zuekin,\nDavidi eginiko maitasunezko agintzariari leial eutsiz.\nHerrientzako testigu jarri neban David,\nnazinoen buruzagi eta agintari.\nEzagutzen ez zenduan herriari egingo deutsazu dei,\neta ezagutzen ez zinduzan herria\nlasterka etorriko da zugana,\nJaunagaitik, zure Jainkoagaitik,\nospez jantzi zaituan Israelgo Santuagaitik.\nBilatu egizue Jauna, aurkitu daiteken bitartean;\ndei egiozue, hurrean dagoan bitartean.\nItzi begi gaiztoak bere bidea,\ngaizkileak bere asmo txarrak;\nbihurtu bedi Jaunagana, errukiz hartuko dau-eta,\ngure Jainkoagana,\nguztiz parkabera da-eta.\nNire asmoak ez dira zuenak lakoak,\nezta zuen jokabidea ere nirea lakoa dino Jaunak.\nZelan zerua lurraren gainetik garai,\nholan nire jokabidea zuen jokabidearen gainetik,\nnire asmoak zuen asmoen gainetik.\nEuria eta edurra zerutik jasten dira\neta ez dira barriro hara bihurtzen,\nlurra ase, ernaldu eta ernamuindu barik,\nereiteko hazia eta jateko ogia emon dagizan;\nhalan izango da nire ahotik urtendako berbea ere:\nez da Nigana hutsik bihurtuko,\nNik nahi dodana egingo dau\neta beteko nik ezarritako helburua».\n",
+          "unmatched": false,
+          "_source": "is55,1-11_eu.txt"
         },
         "salmo": {
           "titulo": "Atarako dozue ura pozik salbamenaren iturrietatik.",
@@ -5544,10 +5553,11 @@
       "vigilia_pascual_lectura_6": {
         "day_name": "",
         "primera": {
-          "titulo": "",
+          "titulo": "Zabiltz Jaunaren argiaren disdiran.",
           "cita": "Ba 3, 9-15. 32 — 4, 4",
-          "texto": "",
-          "unmatched": true
+          "texto": "Entzun, Israel, bizira daroen aginduak,\nentzun, zuhurtasuna ikasteko.\nZer dala- eta, Israel,\nzer dala-eta zagoz arerioen lurraldean,\nlurralde arrotzean zahartzen?\nZer dala-eta hilekin kutsaturik,\nHerio-leizean dagozanen parekotzat emona?\nItzi egin dozu jakituriaren iturria!\nJainkoaren bideari jarraitu bazeuntso,\nbakean biziko zinatekean betiko.\nIkasi non dagoan zuhurtasuna,\nnon indarra eta zentzun ona,\neta jakingo dozu era berean\nnon dagoan bizitza luzea eta benetako bizia,\nnon, gidatuko zaituen argia eta bakea.\nNork aurkitu dau jakituriaren bizilekua?\nNor heldu da haren altxorretaraino?\nDana dakian Jainkoak ezagutzen dau jakituria,\nbere adimenaz aztertzen dau.\nHarek eratu dau lurra betiko\neta lauoineko abereez bete;\nargiari joateko agindu, eta joan egiten da,\ndeitu, eta harek esana egiten ikaraz.\nIzarrek ere disdira egiten dabe\neuren zaintza-postuetan, pozez beterik;\ndeitzen deutse, eta «Hemen gaituzu» erantzuten deutsoe,\neta pozik disdiratzen euren Egilearentzat.\nBera da gure Jainkoa,\nez da beste inor ha lakorik.\nBerak  aurkitu ditu jakintzaren bide guztiak,\neta bere zerbitzari Jakobi erakutsi deutsaz,\nhain maite dauan Israel herriari.\nGero, munduan agertu zan jakituria\neta gizakien artean bizi izan zan.\nJainkoaren aginduen liburua da jakituria,\nbetiko irauten dauan legea;\nha gordeten dabenak bizira doaz,\nbazterrera izten dabenak heriotzara.\nOnartu barriro jakituria, Jakoben herri,\nzabiltz haren argiaren disdiran.\nEz itzi besteri zure aintzarik,\nezta jente arrotzari ere zure duintasunik.\nZorionekoak gu, Israel,\nJainkoari zer jakon atsegin dakigunok.\n",
+          "unmatched": false,
+          "_source": "ba3,9-15.32-4,4_eu.txt"
         },
         "salmo": {
           "titulo": "",
@@ -5655,9 +5665,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 127, 1bc-2. 3. 4-5. 6 (R.: cf. 5)",
-          "texto": "",
-          "unmatched": true,
-          "antifona": ""
+          "texto": "Zorionekoa Jaunari begirune deutsana \neta haren bideetan dabilena!\nZeure lanaren frututik jango dozu, \nzoriontsu izango zara eta ondo joango jatzu. R/.\n\nEmaztea mahatsondo emonkorraren antzeko \nzure etxe barruan; \nseme-alabak orio-kimuen antzeko \nzure mahai inguruan. R/.\n\nHara zelan izango dan bedeinkatua \nJaunari begirune deutson gizona! \nBedeinkatu zaizala Jaunak Siondik, \ngozatu zaitezala Jerusalemen zorionaz \nzeure bizitzako egun guztietan. R/.\n\nIkusi dagizuzala zeure umeen umeak! \nBakea Israeli! R/.\n",
+          "unmatched": false,
+          "antifona": "Jaunak bedeinkatu gaizala, gure bizitzako egun guztietan.",
+          "_source": "Sal127,1-2.3.4-5.6_eu.txt"
         },
         "segunda": {
           "titulo": "Santutzailea eta santu eginak, guztiak jatorri batetik datoz.",
@@ -6487,10 +6498,11 @@
           "_source": "bizkaiera_pdf_extract.md#v2_p369_b02"
         },
         "segunda": {
-          "titulo": "",
+          "titulo": "Uri santua erakutsi eustan, zerutik jasten.",
           "cita": "Ap 21, 10-14. 22-23",
-          "texto": "",
-          "unmatched": true
+          "texto": "\tNi, Joan, hartu ninduan aingeruak eta mendi handi eta goi batera eroan ninduan espirituz; Jerusalem uri santua erakutsi eustan, zerutik Jainkoagandik jasten, Jainkoaren aintzaz diztiratsu. Haren distira harribitxi eder baten antzekoa zan, jaspe harria baizen gardena.\n\tHarresi sendo eta garaia eban, hamabi atekoa, eta ate gainetan hamabi aingeru eta hamabi izen idatziak, israeldarren hamabi leinuen izenak. Hiru ate sortaldera egozan, hiru iparraldera, hiru hegoaldera eta hiru sartaldera. Uriko harresiak hamabi oinarri zituan, eta honeetan idatziak Bildotsaren hamabi apostoluen izenak.\n\tEz neban ezelako tenplurik ikusi, izan ere Jauna, Jainko ahalguztiduna, eta Bildotsa dira-eta hango tenplu. Uriak ez dau argituko dauan eguzki nahiz ilargirik behar, Jainkoaren aintzak dau-eta argitzen, eta Bildotsa dau argiontzi.\n",
+          "unmatched": false,
+          "_source": "ap21,10-14.22-23_eu.txt"
         }
       },
       "ascension": {
@@ -8428,9 +8440,10 @@
         "salmo": {
           "titulo": "",
           "cita": "Sal 103, 1-2a. 5-6. 10 y 12. 13-14. 24 y 35c (R.: cf. 30)",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
+          "texto": "Ene arima, goratu egizu Jauna!\nGuztiz handi zaitut, Jauna, ene Jainkoa!\nHandi eta eder zagoz jantzia,\nestalki dozu argia. R/.\n\nEzarri dozu lurra bere orpoetan,\nez da lokatuko mendeen mendeetan.\nItsasoz batu dozu soineko gisan,\nurak mendi gainean kokatu ziran. R/.\n\nIbaiak sortu dituzu iturrietatik,\neta txirristaka doaz mendi artetik.\nZeruko hegaztiak bizi dira ur ondoetan,\nemoten dabez euren txioak orri artean. R/.\n\nMendiak zeure egoitzatik ureztatzen dozuz,\nlurra zeure eskuko emoiez asetzen dozu.\nSortzen dozu bedarra abereentzat,\nlandarea gizakiarentzat. R/.\n\nBai ugari dirala, Jauna, Zuk eginak,\nzuhurtasunez eginak zeharo,\nlurra zure sorkariz betea dago!\nEne arima, gorztu egizu Jauna! R/.\n",
+          "antifona": "Bialdu egizu, Jauna, zeure arnasea, eta barrituazo lur-azala.",
+          "unmatched": false,
+          "_source": "Sal103,1-2a.5-6.10y12.13-14.24y35c(R+cf.30)_eu.txt"
         }
       },
       "vigilia_pascual_lectura_2": {
@@ -8469,10 +8482,11 @@
       "vigilia_pascual_lectura_4": {
         "day_name": "",
         "primera": {
-          "titulo": "",
+          "titulo": "Betiko onginahiaz maite zaitu Jaunak, zure Salbatzaileak.",
           "cita": "Is 54, 5-14",
-          "texto": "",
-          "unmatched": true
+          "texto": "Zure egileak bere emaztetzat hartuko zaitu:\nharen izena Jaun ahalguztiduna;\nIsraelgo Jainko santua da zure askatzailea,\nlur osoaren Jainko deritzo.\nEmakume baztertu eta atsekabetuari lez\ndei egiten deutsu Jaunak barriro,\ngaztetako emazte zapuztuari lez\n--dino zure Jainkoak--.\nApur baten baztertu zindudazan;\nbaina maitasun handiz neuganatuko zaitut barriro.\nHasarrealdi batean \nunetxo baten gorde egin neutsun aurpegia;\nbaina betiko maitasunaz errukitu najatzu\n--dino Jaunak, zure askatzaileak--.\nNoeren egunetan lez izango da Niretzat:\nzin egin neban orduan\nuholdeak ez ebala aurrerantzean lurrik estalduko,\neta holantxe egiten dot zin orain\nez najatzula barriro hasarretuko,\nez deutsudala aurrerantzean mehatxurik egingo.\nMendiak euren lekutik aldendu\neta muinoek koloka eginik ere,\nnire maitasuna ez da zugandik aldenduko,\nnire bake-itunak ez dau kolokarik egingo\n--honan dino maite zaituan Jaunak--.\nZorigaiztokoa zu, Jerusalem, ekaitzak astindua,\ninork kontsolatu bakoa!\nMalakitazko oinarri gainean eregiko zaitut,\nzafirozko zimendu gainean ezarriko;\ndorreak errubiz eta ateak esmeraldaz egingo deutsudaz,\nharribitxiz harresi guztiak.\nZure seme-alabak Jaunaren ikasle izango dira\neta bake osoan biziko.\nJustizian oinarrituko zara sendo.\nZapalkuntzatik urrun egongo zara\neta ez dozu ezeren bildurrik izango,\nikarea ez jatzu inoiz hurreratuko.\n",
+          "unmatched": false,
+          "_source": "is54,5-14_eu.txt"
         },
         "salmo": {
           "titulo": "",
@@ -8486,10 +8500,11 @@
       "vigilia_pascual_lectura_5": {
         "day_name": "",
         "primera": {
-          "titulo": "",
+          "titulo": "Zatoze Nigana, eta bizkortuko zaree; betiko alkargoa egingo dot zuekin.",
           "cita": "Is 55, 1-11",
-          "texto": "",
-          "unmatched": true
+          "texto": "Honan berba egiten dau Jaunak:\n«Egarri zareen guztiok, zatoze uretara,\netorri, dirurik ez dozuenok ere;\nerosi garia eta jan ordaindu barik,\nardoa eta esnea hutsean.\nZergaitik eralgi dirua\ngoserik itziko zaitueen janaritan,\neta lansaria\naseko ez zaitueen gauzatan?\nEntzun Niri arretaz, eta ondo jango dozue,\njanari gozo mamitsuz elikatuko zaree.\nEtorri Nigana eta egon adi,\nentzuidazue eta biziko zaree.\nBetiko ituna egingo dot zuekin,\nDavidi eginiko maitasunezko agintzariari leial eutsiz.\nHerrientzako testigu jarri neban David,\nnazinoen buruzagi eta agintari.\nEzagutzen ez zenduan herriari egingo deutsazu dei,\neta ezagutzen ez zinduzan herria\nlasterka etorriko da zugana,\nJaunagaitik, zure Jainkoagaitik,\nospez jantzi zaituan Israelgo Santuagaitik.\nBilatu egizue Jauna, aurkitu daiteken bitartean;\ndei egiozue, hurrean dagoan bitartean.\nItzi begi gaiztoak bere bidea,\ngaizkileak bere asmo txarrak;\nbihurtu bedi Jaunagana, errukiz hartuko dau-eta,\ngure Jainkoagana,\nguztiz parkabera da-eta.\nNire asmoak ez dira zuenak lakoak,\nezta zuen jokabidea ere nirea lakoa dino Jaunak.\nZelan zerua lurraren gainetik garai,\nholan nire jokabidea zuen jokabidearen gainetik,\nnire asmoak zuen asmoen gainetik.\nEuria eta edurra zerutik jasten dira\neta ez dira barriro hara bihurtzen,\nlurra ase, ernaldu eta ernamuindu barik,\nereiteko hazia eta jateko ogia emon dagizan;\nhalan izango da nire ahotik urtendako berbea ere:\nez da Nigana hutsik bihurtuko,\nNik nahi dodana egingo dau\neta beteko nik ezarritako helburua».\n",
+          "unmatched": false,
+          "_source": "is55,1-11_eu.txt"
         },
         "salmo": {
           "titulo": "Atarako dozue ura pozik salbamenaren iturrietatik.",
@@ -8503,10 +8518,11 @@
       "vigilia_pascual_lectura_6": {
         "day_name": "",
         "primera": {
-          "titulo": "",
+          "titulo": "Zabiltz Jaunaren argiaren disdiran.",
           "cita": "Ba 3, 9-15. 32 — 4, 4",
-          "texto": "",
-          "unmatched": true
+          "texto": "Entzun, Israel, bizira daroen aginduak,\nentzun, zuhurtasuna ikasteko.\nZer dala- eta, Israel,\nzer dala-eta zagoz arerioen lurraldean,\nlurralde arrotzean zahartzen?\nZer dala-eta hilekin kutsaturik,\nHerio-leizean dagozanen parekotzat emona?\nItzi egin dozu jakituriaren iturria!\nJainkoaren bideari jarraitu bazeuntso,\nbakean biziko zinatekean betiko.\nIkasi non dagoan zuhurtasuna,\nnon indarra eta zentzun ona,\neta jakingo dozu era berean\nnon dagoan bizitza luzea eta benetako bizia,\nnon, gidatuko zaituen argia eta bakea.\nNork aurkitu dau jakituriaren bizilekua?\nNor heldu da haren altxorretaraino?\nDana dakian Jainkoak ezagutzen dau jakituria,\nbere adimenaz aztertzen dau.\nHarek eratu dau lurra betiko\neta lauoineko abereez bete;\nargiari joateko agindu, eta joan egiten da,\ndeitu, eta harek esana egiten ikaraz.\nIzarrek ere disdira egiten dabe\neuren zaintza-postuetan, pozez beterik;\ndeitzen deutse, eta «Hemen gaituzu» erantzuten deutsoe,\neta pozik disdiratzen euren Egilearentzat.\nBera da gure Jainkoa,\nez da beste inor ha lakorik.\nBerak  aurkitu ditu jakintzaren bide guztiak,\neta bere zerbitzari Jakobi erakutsi deutsaz,\nhain maite dauan Israel herriari.\nGero, munduan agertu zan jakituria\neta gizakien artean bizi izan zan.\nJainkoaren aginduen liburua da jakituria,\nbetiko irauten dauan legea;\nha gordeten dabenak bizira doaz,\nbazterrera izten dabenak heriotzara.\nOnartu barriro jakituria, Jakoben herri,\nzabiltz haren argiaren disdiran.\nEz itzi besteri zure aintzarik,\nezta jente arrotzari ere zure duintasunik.\nZorionekoak gu, Israel,\nJainkoari zer jakon atsegin dakigunok.\n",
+          "unmatched": false,
+          "_source": "ba3,9-15.32-4,4_eu.txt"
         },
         "salmo": {
           "titulo": "",

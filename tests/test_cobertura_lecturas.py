@@ -21,9 +21,25 @@ import pytest
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
+import generate_site  # noqa: E402  (SITE_EPOCH: la ventana no se clava a mano)
 import liturgia  # noqa: E402
 
 SLOTS_OBLIGATORIAS = ("primera", "salmo", "evangelio")
+
+# Ventana barrida. Se deriva del generador en vez de fijar anos a mano: un rango
+# clavado (estaba en 2026-2028) deja de cubrir el horizonte publicado en cuanto
+# pasa el tiempo, y lo hace en silencio. Se toma el maximo entre lo que el sitio
+# publica y tres anos liturgicos, que es lo que hace falta para visitar los tres
+# ciclos dominicales y los dos feriales.
+DIAS_ADELANTE = 365
+
+
+def _ventana():
+    hoy = date.today()
+    inicio = min(generate_site.SITE_EPOCH, hoy)
+    fin = max(hoy + timedelta(days=DIAS_ADELANTE),
+              inicio + timedelta(days=3 * 366))
+    return inicio, fin
 
 # La Vigilia Pascual no tiene "primera": sus 7 lecturas del AT viven en
 # `vigilia_lecturas` (ver test_vigilia_pascual.py). No es un hueco.
@@ -67,7 +83,7 @@ def _dias(inicio, fin):
 def test_tres_anos_liturgicos_sin_dias_mudos(leccionario):
     """Tres anos seguidos cubren los ciclos A, B y C y ambos ciclos feriales."""
     huecos, nuevos = [], []
-    for d in _dias(date(2026, 1, 1), date(2028, 12, 31)):
+    for d in _dias(*_ventana()):
         resultado = liturgia.calculate(d)
         lecturas = liturgia.lookup_readings(resultado, cache=leccionario)
         nombre = resultado.get("name", "")
@@ -154,7 +170,10 @@ def test_paridad_estructural_euskera(leccionario, lezionarioa):
         faltan += [f"dominical/{ciclo}/{k}"
                    for k in sorted(set(leccionario["dominical"][ciclo])
                                    - set(lezionarioa["dominical"][ciclo]))]
-    for ciclo in ("I", "II"):
+    # `evangelio` incluido a proposito: es una tabla hermana de I/II dentro de
+    # ferial_to y se me escapo en la primera version de esta guarda — Codex
+    # encontro 3 claves ausentes ahi que se repararon sin quedar vigiladas.
+    for ciclo in ("I", "II", "evangelio"):
         faltan += [f"ferial_to/{ciclo}/{k}"
                    for k in sorted(set(leccionario["ferial_to"][ciclo])
                                    - set(lezionarioa["ferial_to"][ciclo]))]
@@ -166,6 +185,51 @@ def test_paridad_estructural_euskera(leccionario, lezionarioa):
     assert not faltan, (
         "Claves presentes en castellano y ausentes en euskera "
         f"({len(faltan)}): {faltan[:20]}")
+
+
+# Dias cuya pagina vasca sale sin UNA SOLA lectura, con su motivo. La cobertura
+# parcial es politica declarada, pero "cero lecturas" no es cobertura parcial:
+# es una pagina sin contenido. Cada excepcion se justifica o se repara.
+SIN_EUSKERA_JUSTIFICADO = {
+    "sagrada_familia": (
+        "El corpus bizkaiera no trae ninguna de sus lecturas en los ciclos B y C. "
+        "Los ficheros que aparentan traerlas (Sal83..._eu.txt, 1jn3,1-2.21-24_eu.txt) "
+        "contienen texto CASTELLANO mal etiquetado y is_real_basque_reading los "
+        "rechaza con razon. Traducir esta prohibido, asi que se queda."),
+    "vigilia_pascual": (
+        "Sus 7 lecturas del AT viven en `vigilia_lecturas`, no en los slots "
+        "normales (ver test_vigilia_pascual.py). No es un hueco real."),
+}
+
+
+def test_ninguna_pagina_vasca_se_queda_sin_lecturas(lezionarioa):
+    """Cero lecturas en euskera no es cobertura parcial: es una pagina vacia.
+
+    La guarda NO exige texto en cada lectura — el euskera es cobertura parcial
+    declarada (`meta.coverage_pct_calendar_texto`) y la politica prohibe
+    traducir, asi que un hueco suelto es legitimo y cae al enlace castellano.
+    Lo que no es legitimo es que un dia entero salga sin nada: eso el lector lo
+    vive como una pagina rota, no como una traduccion pendiente.
+    """
+    vacios, nuevos = [], []
+    for d in _dias(*_ventana()):
+        resultado = liturgia.calculate(d)
+        lecturas = liturgia.lookup_readings(resultado, cache=lezionarioa)
+        if not lecturas:
+            continue
+        presentes = [s for s in ("primera", "salmo", "segunda", "evangelio")
+                     if isinstance(lecturas.get(s), dict)]
+        con_texto = [s for s in presentes
+                     if not liturgia.is_empty_reading(lecturas.get(s))]
+        if presentes and not con_texto:
+            clave = liturgia._build_dominical_key(resultado) or ""
+            vacios.append(f"{d} {resultado.get('name', '')} [{clave}]")
+            if clave not in SIN_EUSKERA_JUSTIFICADO:
+                nuevos.append(vacios[-1])
+
+    assert not nuevos, (
+        "Dias cuya pagina vasca sale sin una sola lectura y sin motivo "
+        "declarado:\n  " + "\n  ".join(nuevos))
 
 
 def test_solemnidades_en_los_tres_ciclos(leccionario):

@@ -53,8 +53,11 @@
 <article data-date="{{ day.date_iso }}">
   <div class="day-card">
     <div class="card">
-      <a href="/{{ prev_url }}/" class="nav-arrow prev" title="{{ prev_label }}" aria-label="{{ i18n.prev_aria }}">&larr;</a>
-      <a href="/{{ next_url }}/" class="nav-arrow next" title="{{ next_label }}" aria-label="{{ i18n.next_aria }}">&rarr;</a>
+      {# En los extremos del archivo la pagina destino no existe: se omite la
+         flecha en vez de enlazar a un 404 (eran 4 enlaces rotos, uno por cada
+         extremo y idioma). #}
+      {% if prev_url %}<a href="/{{ prev_url }}/" class="nav-arrow prev" title="{{ prev_label }}" aria-label="{{ i18n.prev_aria }}">&larr;</a>{% endif %}
+      {% if next_url %}<a href="/{{ next_url }}/" class="nav-arrow next" title="{{ next_label }}" aria-label="{{ i18n.next_aria }}">&rarr;</a>{% endif %}
       <div class="date-line">{{ day.day_name }} &middot; {{ day.fecha_corta }}</div>
       <h1>{{ day.name }}</h1>
       <div class="pills">

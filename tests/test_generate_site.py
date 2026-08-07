@@ -1,6 +1,7 @@
 """Tests for generate_site.py."""
 
 import json
+import re
 import os
 import shutil
 import tempfile
@@ -201,3 +202,75 @@ class TestFullBuild:
             for d in (date(2026, 4, 7), date(2026, 4, 8), date(2026, 4, 9)):
                 path = os.path.join(outdir, str(d.year), f"{d.month:02d}", f"{d.day:02d}", "index.html")
                 assert os.path.exists(path), f"Missing archived page for {d}"
+
+
+@pytest.fixture(scope="module")
+def sitio_completo():
+    """Un unico build de ventana de produccion, compartido por los tests de enlaces.
+
+    AVISO DE COSTE EN WINDOWS: este test tarda ~40 s en local y <2 s en el CI.
+    No es el build (1 s) ni el crawl: es la PRIMERA lectura de los ~950 ficheros
+    recien escritos, que el antivirus analiza al vuelo. Medido el 07-08-2026 —
+    primera pasada 37,8 s, segunda sobre los mismos ficheros 0,1 s. No depende
+    de la ruta (probado en %TEMP% y en el repo). El runner Linux de CI, que es
+    donde esto es puerta de despliegue, no lo sufre.
+
+    Para saltarlo en local: pytest tests/ --deselect tests/test_generate_site.py::TestEnlacesInternos
+
+    El directorio esta en .gitignore y se borra al terminar.
+    """
+    outdir = Path(generate_site.ROOT) / ".pytest-site"
+    shutil.rmtree(outdir, ignore_errors=True)
+    generate_site.build_site(
+        today=date(2026, 4, 9), days_back=30, days_forward=365, outdir=str(outdir),
+    )
+    yield outdir
+    shutil.rmtree(outdir, ignore_errors=True)
+
+
+class TestEnlacesInternos:
+    """Ningun href interno puede apuntar a una pagina que el build no genera.
+
+    Motivo (2026-08-07): las flechas anterior/siguiente se emitian siempre, asi
+    que el primer y el ultimo dia de cada idioma enlazaban fuera del intervalo
+    generado — cuatro 404 en un sitio que por lo demas no tiene ninguno. Se
+    comprueba sobre el artefacto entero porque el fallo solo existe en los
+    extremos, que es justo lo que un test de "un dia cualquiera" nunca visita.
+
+    La ventana es de produccion: con una corta, el calendario y la pagina del
+    domingo enlazan legitimamente fuera de lo generado y el test se llena de
+    falsos positivos.
+    """
+
+    _ESTATICOS = (".xml", ".txt", ".css", ".js", ".json", ".svg", ".png",
+                  ".ico", ".webmanifest")
+
+    def _destino_rel(self, url):
+        if url.endswith(self._ESTATICOS):
+            return url.lstrip("/")
+        if url == "/":
+            return "index.html"
+        return f"{url.strip('/')}/index.html"
+
+    def test_sin_enlaces_rotos(self, sitio_completo):
+        site = sitio_completo
+        existen = {p.relative_to(site).as_posix() for p in site.rglob("*") if p.is_file()}
+        rotos = set()
+        for f in site.rglob("*.html"):
+            html = f.read_text(encoding="utf-8")
+            for m in re.finditer(r'href="(/[^"#?]*)"', html):
+                if self._destino_rel(m.group(1)) not in existen:
+                    rotos.add(f"{m.group(1)}  (desde {f.relative_to(site)})")
+        assert not rotos, "Enlaces internos rotos:\n  " + "\n  ".join(sorted(rotos))
+
+    def test_los_extremos_no_llevan_flecha(self, sitio_completo):
+        site = sitio_completo
+        primero = site / "2026" / "03" / "10" / "index.html"
+        ultimo = site / "2027" / "04" / "09" / "index.html"
+        assert 'class="nav-arrow prev"' not in primero.read_text(encoding="utf-8")
+        assert 'class="nav-arrow next"' not in ultimo.read_text(encoding="utf-8")
+        # El del medio si las lleva las dos: la guarda no puede pasar
+        # simplemente porque nadie emita flechas.
+        medio = (site / "2026" / "04" / "09" / "index.html").read_text(encoding="utf-8")
+        assert 'class="nav-arrow prev"' in medio
+        assert 'class="nav-arrow next"' in medio

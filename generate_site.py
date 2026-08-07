@@ -15,6 +15,7 @@ import shutil
 import sys
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 from xml.sax.saxutils import escape as xml_escape
 
 from jinja2 import Environment, FileSystemLoader
@@ -59,6 +60,17 @@ STATIC_ROUTE_MAP = {
     "/buscar/": "/eu/bilatu/",
 }
 
+# El sitio es de la Conferencia Episcopal Espanola: "hoy" es hoy en Madrid. Los
+# runners de GitHub van en UTC, asi que `date.today()` daba el dia ANTERIOR en
+# cualquier build lanzado entre la medianoche de Madrid y la de UTC — y la
+# portada es HTML estatico, de modo que el error se queda publicado.
+TZ_SITIO = ZoneInfo("Europe/Madrid")
+
+
+def hoy_local() -> date:
+    return datetime.now(TZ_SITIO).date()
+
+
 # Earliest day page ever published (first deploy 2026-04-09 with days_back=30).
 # Day pages are generated from here forward and never deleted, so URLs Google
 # already indexed keep resolving instead of decaying into 404s.
@@ -100,7 +112,7 @@ def load_templates(templates_dir=None):
         loader=FileSystemLoader(str(templates_dir)),
         autoescape=True,
     )
-    env.globals["cache_bust"] = int(date.today().strftime("%Y%m%d"))
+    env.globals["cache_bust"] = int(hoy_local().strftime("%Y%m%d"))
     return env
 
 
@@ -407,8 +419,14 @@ def format_prev_next(d: date, i18n: dict) -> str:
 
 # ── Page generators ────────────────────────────────────────────────────────────
 
-def generate_day(d, prev_d, next_d, outdir, templates, lang, lectionaries) -> dict:
-    """Render a day page into the language-specific outdir."""
+def generate_day(d, prev_d, next_d, outdir, templates, lang, lectionaries,
+                 rango=None) -> dict:
+    """Render a day page into the language-specific outdir.
+
+    `rango` es (primer_dia, ultimo_dia) del build. Fuera de el la pagina no
+    existe, asi que la flecha correspondiente se omite: sin esto, el primer y
+    el ultimo dia de cada idioma enlazaban a un 404.
+    """
     i18n = get_i18n(lang)
     day_data = get_day_data(d, lang, lectionaries)
 
@@ -416,10 +434,15 @@ def generate_day(d, prev_d, next_d, outdir, templates, lang, lectionaries) -> di
     urls = page_urls(es_path, lang)
 
     prefix = "eu/" if lang == "eu" else ""
-    prev_url = f"{prefix}{prev_d.year}/{prev_d.month:02d}/{prev_d.day:02d}"
-    next_url = f"{prefix}{next_d.year}/{next_d.month:02d}/{next_d.day:02d}"
-    prev_label = format_prev_next(prev_d, i18n)
-    next_label = format_prev_next(next_d, i18n)
+    primero, ultimo = rango if rango else (None, None)
+    hay_prev = primero is None or prev_d >= primero
+    hay_next = ultimo is None or next_d <= ultimo
+    prev_url = (f"{prefix}{prev_d.year}/{prev_d.month:02d}/{prev_d.day:02d}"
+                if hay_prev else "")
+    next_url = (f"{prefix}{next_d.year}/{next_d.month:02d}/{next_d.day:02d}"
+                if hay_next else "")
+    prev_label = format_prev_next(prev_d, i18n) if hay_prev else ""
+    next_label = format_prev_next(next_d, i18n) if hay_next else ""
 
     template = templates.get_template("dia.html")
     html = template.render(
@@ -1227,7 +1250,7 @@ Sitemap: https://lecturasdeldia.org/sitemap.xml
 
 def build_site(today=None, days_back=None, days_forward=365, outdir=None):
     if today is None:
-        today = date.today()
+        today = hoy_local()
     if outdir is None:
         outdir = DEFAULT_OUTDIR
     outdir = Path(outdir)
@@ -1278,6 +1301,7 @@ def build_site(today=None, days_back=None, days_forward=365, outdir=None):
             next_d = d + timedelta(days=1)
             day_data = generate_day(
                 d, prev_d, next_d, lang_outdir, templates, lang, lectionaries,
+                rango=(start, end),
             )
             days.append(day_data)
         all_days_per_lang[lang] = days
@@ -1318,5 +1342,5 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         target = date.fromisoformat(sys.argv[1])
     else:
-        target = date.today()
+        target = hoy_local()
     build_site(today=target)
