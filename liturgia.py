@@ -965,22 +965,27 @@ def build_result(d: date, day_name: str, name: str, rank: str, season: str,
 _leccionario_cache = None
 
 def _load_leccionario():
-    """Load Leccionario_CL.json (cached)."""
+    """Load Leccionario_CL.json (cached).
+
+    Este fichero vive en DOS layouts distintos y el sync lo copia tal cual:
+      - skill:          scripts/liturgia.py  +  ../data/
+      - lecturasdeldia: liturgia.py          +  ./data/
+    Por eso se prueban ambos. Con una sola ruta, en el layout equivocado esta
+    funcion devolvia None SIEMPRE y lookup_readings daba vacio para todos los
+    dias, en silencio (07-08-2026: dos auditorias concluyeron que el sitio
+    entero estaba sin lecturas).
+    """
     global _leccionario_cache
     if _leccionario_cache is not None:
         return _leccionario_cache
-    # data/ cuelga de este mismo directorio, no del padre. Con el ".." de mas,
-    # esta funcion devolvia None SIEMPRE y lookup_readings daba vacio para todos
-    # los dias: generate_site no lo notaba porque inyecta el cache a mano, pero
-    # cualquier auditoria hecha llamando a lookup_readings sin cache concluia
-    # que el sitio entero estaba sin lecturas (paso el 07-08-2026, dos veces).
-    data_path = os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                             "data", "Leccionario_CL.json")
-    if not os.path.exists(data_path):
-        return None
-    with open(data_path, "r", encoding="utf-8") as f:
-        _leccionario_cache = json.load(f)
-    return _leccionario_cache
+    aqui = os.path.dirname(os.path.abspath(__file__))
+    for base in (os.path.join(aqui, "..", "data"), os.path.join(aqui, "data")):
+        data_path = os.path.join(base, "Leccionario_CL.json")
+        if os.path.exists(data_path):
+            with open(data_path, "r", encoding="utf-8") as f:
+                _leccionario_cache = json.load(f)
+            return _leccionario_cache
+    return None
 
 
 # Spanish day name (accented, as in DAY_NAMES) → leccionario key fragment (ASCII).
