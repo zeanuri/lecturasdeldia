@@ -1550,7 +1550,24 @@ def format_html(r: dict, readings: dict | None = None) -> str:
 if __name__ == "__main__":
     import glob
     # Limpiar archivos de lecturas anteriores
-    lecturas_dir = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", "..", "ztemp", "html"))
+    # El destino se BUSCA hacia arriba, no se cuenta en niveles: este fichero
+    # vive en dos layouts de distinta profundidad (.claude/skills/.../scripts/ y
+    # tools/lecturasdeldia/) y una constante de "..", "..", ... acierta en uno y
+    # se sale del arbol en el otro, donde makedirs la crearia sin fallar.
+    _d = os.path.dirname(os.path.abspath(__file__))
+    lecturas_dir = None
+    while True:
+        if os.path.isdir(os.path.join(_d, "ztemp")):
+            lecturas_dir = os.path.join(_d, "ztemp", "html")
+            break
+        _p = os.path.dirname(_d)
+        if _p == _d:
+            break
+        _d = _p
+    if lecturas_dir is None:
+        lecturas_dir = os.path.join(
+            os.path.dirname(os.path.abspath(__file__)), "ztemp", "html")
+    lecturas_dir = os.path.normpath(lecturas_dir)
     os.makedirs(lecturas_dir, exist_ok=True)
     for f in glob.glob(os.path.join(lecturas_dir, "*_lecturas.*")):
         os.remove(f)
