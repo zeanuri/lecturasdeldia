@@ -1548,30 +1548,6 @@ def format_html(r: dict, readings: dict | None = None) -> str:
 
 
 if __name__ == "__main__":
-    import glob
-    # Limpiar archivos de lecturas anteriores
-    # El destino se BUSCA hacia arriba, no se cuenta en niveles: este fichero
-    # vive en dos layouts de distinta profundidad (.claude/skills/.../scripts/ y
-    # tools/lecturasdeldia/) y una constante de "..", "..", ... acierta en uno y
-    # se sale del arbol en el otro, donde makedirs la crearia sin fallar.
-    _d = os.path.dirname(os.path.abspath(__file__))
-    lecturas_dir = None
-    while True:
-        if os.path.isdir(os.path.join(_d, "ztemp")):
-            lecturas_dir = os.path.join(_d, "ztemp", "html")
-            break
-        _p = os.path.dirname(_d)
-        if _p == _d:
-            break
-        _d = _p
-    if lecturas_dir is None:
-        lecturas_dir = os.path.join(
-            os.path.dirname(os.path.abspath(__file__)), "ztemp", "html")
-    lecturas_dir = os.path.normpath(lecturas_dir)
-    os.makedirs(lecturas_dir, exist_ok=True)
-    for f in glob.glob(os.path.join(lecturas_dir, "*_lecturas.*")):
-        os.remove(f)
-
     use_html = "--html" in sys.argv
     use_readings = "--readings" in sys.argv
     args = [a for a in sys.argv[1:] if a not in ("--html", "--readings")]
@@ -1598,6 +1574,33 @@ if __name__ == "__main__":
             print("\n  [Lecturas no encontradas en leccionario offline]")
 
     if use_html:
+        import glob
+        # Solo aquí se toca disco: una consulta sin --html no crea ni borra
+        # nada (antes la limpieza corría siempre — una pregunta mutaba estado).
+        # El destino se BUSCA hacia arriba, no se cuenta en niveles: este
+        # fichero vive en dos layouts de distinta profundidad
+        # (.claude/skills/.../scripts/ y tools/lecturasdeldia/) y una constante
+        # de "..", "..", ... acierta en uno y se sale del arbol en el otro,
+        # donde makedirs la crearia sin fallar.
+        _d = os.path.dirname(os.path.abspath(__file__))
+        lecturas_dir = None
+        while True:
+            if os.path.isdir(os.path.join(_d, "ztemp")):
+                lecturas_dir = os.path.join(_d, "ztemp", "html")
+                break
+            _p = os.path.dirname(_d)
+            if _p == _d:
+                break
+            _d = _p
+        if lecturas_dir is None:
+            lecturas_dir = os.path.join(
+                os.path.dirname(os.path.abspath(__file__)), "ztemp", "html")
+        lecturas_dir = os.path.normpath(lecturas_dir)
+        os.makedirs(lecturas_dir, exist_ok=True)
+        # Limpiar archivos de lecturas anteriores
+        for f in glob.glob(os.path.join(lecturas_dir, "*_lecturas.*")):
+            os.remove(f)
+
         html = format_html(result, readings)
         fname = f"{target.year % 100:02d}{target.month:02d}{target.day:02d}_lecturas.html"
         fpath = os.path.join(lecturas_dir, fname)

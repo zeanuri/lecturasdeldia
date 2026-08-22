@@ -4,9 +4,9 @@
     "dialect": "bizkaiera",
     "cita_convention": "batua",
     "coverage_status": "Estaldura partziala; iturriak mugatuta",
-    "coverage_pct_calendar_texto": 82,
-    "calendar_slots_populated": 2451,
-    "calendar_slots_total": 2999,
+    "coverage_pct_calendar_texto": 81,
+    "calendar_slots_populated": 2457,
+    "calendar_slots_total": 3043,
     "coverage_source": "euskera/bizkaiera (1909 accepted Basque readings)",
     "no_translation_policy": true,
     "last_built": "2026-08-07",
@@ -1031,11 +1031,18 @@
         },
         "salmo": {
           "titulo": "",
-          "cita": "Sal 103, 1-2a. 24 y 35c. 27-28. 29bc-30",
-          "texto": "edo\tAleluia.\n\nEne arima, goratu egizu Jauna!\nGuztiz handi zaitut, Jauna, ene Jainkoa!\nHandi eta eder zagoz jantzita,\nestalki dozu argia. R/.\n\nBai ugari dirala, Jauna, Zuk eginak,\nzuhurtasunez eginak zeharo,\nlurra zure sorkariz betea dago!\nEne arima, goratu egizu Jauna! R/.\n\nHorreek guztiak begira dozuz,\nsasoi onez jana emon deiezun.\nZuk emonik hartzen dabe,\nZuk eskua zabalduz onez aserik dagoz. R/.\n\nAurpegia gordeten badozu, ikara dira,\narnasea kentzen badeutsezu, hilten,\neuren hautsetara dira bihurtzen.\nZeure arnasea bialtzen badozu,\nizatea emoten deutsezu;\nlur-azala barriazoten dozu. R/.\n",
-          "antifona": "Bialdu egizu, Jauna, zeure arnasea, eta barrituazo lur-azala.",
+          "cita": "Sal 32, 10-11. 12-13. 14-15 (R.: 12b)",
+          "texto": "Atzerrien asmoak Jaunak ditu huts izten,\nherrien erabagiak huts bihurtzen.\nJaunaren asmoek badiraue betierean,\nHaren barruko erabagiek gizaldi guztietan. R/.\n\nBai dohatsu Jauna Jainko dauan jentea,\nJaunak bere oinorde hautatu dauan herria.\nBegira dago Jauna zerutik,\nikusten dauz gizaki guztiak. R/.\n\nBere egoitzatik begiratzen deutse\nlurrean bizi diran guztiei.\nHareen bihotzak bere eskuaz egin ditu,\nhareen egintza danak ezagutzen ditu. R/.\n",
+          "antifona": "Bai dohatsu Jaunak bere oinorde hautatu dauan herria!",
           "unmatched": false,
-          "_source": "Sal103,1-2a.24y35c.27-28.29bc-30(R+cf.30)_eu.txt"
+          "_source": "Sal32,10-11.12-13.14-15(R+12b)_eu.txt"
+        },
+        "segunda": {
+          "titulo": "Espirituak berak erregutzen dau gure alde, esan ezin ahalako intziriz.",
+          "cita": "Erm 8, 22-27",
+          "texto": "\tSenideok: Badakigu izadi osoa erdiminetan intzirika dagoala orain arte. Eta ha ez ezik, gu geu ere bai: Espiritua lehen dohai lez hartu dogunok intzirika gagoz geure barruan, Jainkoak noiz askatuko eta bere seme-alaba noiz egingo gaituan zain.\n\tSalbatuak gagoz, bai, baina itxaropenean bakarrik. Eta itxaron doguna ikusiko bagendu, hori ez litzateke itxaropena izango. Izan ere, zelan itxaron ikusten doguna? Baina ikusten ez doguna itxaroten badogu, iraupenez behar dogu itxaron.\n\tEra berean, Espiritua jatorku geure ahulerian lagun, guk ez dakigu-eta behar dan lez otoitz egiten; baina Espirituak berak erregutzen dau gure alde, esan ezin ahalako intziriz. Eta bihotzak aztertzen dituan Jainkoak ezagutzen dau zein dan Espirituaren gogoa, Espirituak Jainkoaren asmoen erara erregutzen dau-eta fededunen alde.\n",
+          "unmatched": false,
+          "_source": "rm8,22-27_eu.txt"
         },
         "evangelio": {
           "titulo": "Ur biziko ibaiak jarioko dira.",
@@ -5692,6 +5699,42 @@
           "unmatched": false,
           "_source": "bizkaiera_pdf_extract.md#v3_p289_b01"
         }
+      },
+      "pentecostes_vigilia": {
+        "day_name": "",
+        "primera": {
+          "titulo": "Jatsi naiten eta nahastau dagidan horreen hizkuntza.",
+          "cita": "Has 11, 1-9",
+          "texto": "Aldi haretan mundu guztiak hizkuntza eta berbaera berberak ebazan. Sortaldetik etorririk, gizonek ibar bat aurkitu eben Sinear lurraldean eta bertan kokatu ziran. Orduan, honan esan eutsoen alkarri: Ea, adreiluak egin eta erre dagiguzan sutan. Eta, holan, harriaren ordez adreilua erabili eben, eta kare-orearen ordez bikea.\n \nGero, esan eben: Ea, eregi dagiguzan uri bat eta zerurainoko torre bat. Ospetsu egingo gara eta ez gara munduan zehar sakabanatuko.\nJatsi zan Jauna gizonak eregiten ziharduen uria eta dorrea ikustera, eta esan eban: Horra, guztiak herri bat bera dira, hizkuntza bat berekoak. Hau euren lehenengo lana badabe, aurrerantzean ez jake ezinezko izango egin gura izango dabenik ezer. Jatsi eta nahastau deiegun, bada, hizkuntza, alkar ulertu ez dagien.\nHolan, Jaunak handik bota eta mundu zabalean sakabanatu ebazan; uria eregiteari itzi egin behar izan eutsoen. Horregaitik, Babel (hau da, \"Nahasketa\") ezarri eutsoen izena, han nahastau eban-eta Jaunak mundu guztiaren hizkuntza, eta handik sakabanatu ebazan mundu zabalera.\n",
+          "unmatched": false,
+          "_source": "gn11,1-9_eu.txt"
+        },
+        "salmo": {
+          "titulo": "",
+          "cita": "Sal 32, 10-11. 12-13. 14-15 (R.: 12b)",
+          "texto": "Atzerrien asmoak Jaunak ditu huts izten,\nherrien erabagiak huts bihurtzen.\nJaunaren asmoek badiraue betierean,\nHaren barruko erabagiek gizaldi guztietan. R/.\n\nBai dohatsu Jauna Jainko dauan jentea,\nJaunak bere oinorde hautatu dauan herria.\nBegira dago Jauna zerutik,\nikusten dauz gizaki guztiak. R/.\n\nBere egoitzatik begiratzen deutse\nlurrean bizi diran guztiei.\nHareen bihotzak bere eskuaz egin ditu,\nhareen egintza danak ezagutzen ditu. R/.\n",
+          "antifona": "Bai dohatsu Jaunak bere oinorde hautatu dauan herria!",
+          "unmatched": false,
+          "_source": "Sal32,10-11.12-13.14-15(R+12b)_eu.txt"
+        },
+        "segunda": {
+          "titulo": "Espirituak berak erregutzen dau gure alde, esan ezin ahalako intziriz.",
+          "cita": "Erm 8, 22-27",
+          "texto": "\tSenideok: Badakigu izadi osoa erdiminetan intzirika dagoala orain arte. Eta ha ez ezik, gu geu ere bai: Espiritua lehen dohai lez hartu dogunok intzirika gagoz geure barruan, Jainkoak noiz askatuko eta bere seme-alaba noiz egingo gaituan zain.\n\tSalbatuak gagoz, bai, baina itxaropenean bakarrik. Eta itxaron doguna ikusiko bagendu, hori ez litzateke itxaropena izango. Izan ere, zelan itxaron ikusten doguna? Baina ikusten ez doguna itxaroten badogu, iraupenez behar dogu itxaron.\n\tEra berean, Espiritua jatorku geure ahulerian lagun, guk ez dakigu-eta behar dan lez otoitz egiten; baina Espirituak berak erregutzen dau gure alde, esan ezin ahalako intziriz. Eta bihotzak aztertzen dituan Jainkoak ezagutzen dau zein dan Espirituaren gogoa, Espirituak Jainkoaren asmoen erara erregutzen dau-eta fededunen alde.\n",
+          "unmatched": false,
+          "_source": "rm8,22-27_eu.txt"
+        },
+        "evangelio": {
+          "titulo": "Ur biziko ibaiak jarioko dira.",
+          "cita": "Jn 7, 37-39",
+          "texto": "\tJaietako azken egunean, egunik handienean, Jesusek zutunik jarri eta oihu egin eban, esanez: «Egarri dana betor Nigana, eta edan begi Nigan sinesten dauanak. Liburu Santuak dinoan lez, ur biziko ibaiak jarioko jakoz barru-barrutik».\n\tBeragan sinestuko ebenek hartuko eben Espirituagaitik esan eban hori; izan ere, ez zan artean Espiriturik, Jesusen aintza ez zan-eta oraindino azaldu.\n",
+          "unmatched": false,
+          "_source": "jn7,37-39_eu.txt"
+        },
+        "aclamacion": {
+          "tipo": "",
+          "texto": ""
+        }
       }
     },
     "C": {
@@ -6592,17 +6635,18 @@
         },
         "salmo": {
           "titulo": "",
-          "cita": "Sal 103, 1-2a. 24. 27-28. 29bc-30 (R.: cf. 30)",
-          "texto": "edo\tAleluia.\n\nEne arima, goratu egizu Jauna!\nGuztiz handi zaitut, Jauna, ene Jainkoa!\nHandi eta eder zagoz jantzita,\nestalki dozu argia. R/.\n\nBai ugari dirala, Jauna, Zuk eginak,\nzuhurtasunez eginak zeharo,\nlurra zure sorkariz betea dago!\nEne arima, goratu egizu Jauna! R/.\n\nHorreek guztiak begira dozuz,\nsasoi onez jana emon deiezun.\nZuk emonik hartzen dabe,\nZuk eskua zabalduz onez aserik dagoz. R/.\n\nAurpegia gordeten badozu, ikara dira,\narnasea kentzen badeutsezu, hilten,\neuren hautsetara dira bihurtzen.\nZeure arnasea bialtzen badozu,\nizatea emoten deutsezu;\nlur-azala barriazoten dozu. R/.\n",
-          "antifona": "Bialdu egizu, Jauna, zeure arnasea, eta barrituazo lur-azala.",
+          "cita": "Sal 32, 10-11. 12-13. 14-15 (R.: 12b)",
+          "texto": "Atzerrien asmoak Jaunak ditu huts izten,\nherrien erabagiak huts bihurtzen.\nJaunaren asmoek badiraue betierean,\nHaren barruko erabagiek gizaldi guztietan. R/.\n\nBai dohatsu Jauna Jainko dauan jentea,\nJaunak bere oinorde hautatu dauan herria.\nBegira dago Jauna zerutik,\nikusten dauz gizaki guztiak. R/.\n\nBere egoitzatik begiratzen deutse\nlurrean bizi diran guztiei.\nHareen bihotzak bere eskuaz egin ditu,\nhareen egintza danak ezagutzen ditu. R/.\n",
+          "antifona": "Bai dohatsu Jaunak bere oinorde hautatu dauan herria!",
           "unmatched": false,
-          "_source": "Sal103,1-2a.24.27-28.29bc-30(R+cf.30)_eu.txt"
+          "_source": "Sal32,10-11.12-13.14-15(R+12b)_eu.txt"
         },
         "segunda": {
-          "titulo": "",
-          "cita": "Ir 19, 3-8. 16-20b",
-          "texto": "",
-          "unmatched": true
+          "titulo": "Espirituak berak erregutzen dau gure alde, esan ezin ahalako intziriz.",
+          "cita": "Erm 8, 22-27",
+          "texto": "\tSenideok: Badakigu izadi osoa erdiminetan intzirika dagoala orain arte. Eta ha ez ezik, gu geu ere bai: Espiritua lehen dohai lez hartu dogunok intzirika gagoz geure barruan, Jainkoak noiz askatuko eta bere seme-alaba noiz egingo gaituan zain.\n\tSalbatuak gagoz, bai, baina itxaropenean bakarrik. Eta itxaron doguna ikusiko bagendu, hori ez litzateke itxaropena izango. Izan ere, zelan itxaron ikusten doguna? Baina ikusten ez doguna itxaroten badogu, iraupenez behar dogu itxaron.\n\tEra berean, Espiritua jatorku geure ahulerian lagun, guk ez dakigu-eta behar dan lez otoitz egiten; baina Espirituak berak erregutzen dau gure alde, esan ezin ahalako intziriz. Eta bihotzak aztertzen dituan Jainkoak ezagutzen dau zein dan Espirituaren gogoa, Espirituak Jainkoaren asmoen erara erregutzen dau-eta fededunen alde.\n",
+          "unmatched": false,
+          "_source": "rm8,22-27_eu.txt"
         },
         "evangelio": {
           "titulo": "Ur biziko ibaiak jarioko dira.",
