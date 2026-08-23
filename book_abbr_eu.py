@@ -114,38 +114,21 @@ _KEYS_LONGEST_FIRST = sorted(
 
 
 def localize_cita(cita: str, lang: str = "eu") -> str:
-    """Return the cita with the leading book abbreviation translated.
+    """Localize a cita to Basque. Alias of `localize_cita_full`.
 
-    Falls through unchanged when:
-    - lang != "eu"
-    - the leading token is not in the mapping
-    - the cita is empty / None
+    It used to translate ONLY the leading book token, so the site rendered
+    "Cf. Lc 1, 28. 42" and "(R.: Lc 23, 46)" half in Spanish while
+    `localize_cita_full` — same module, same file — got them right. Two
+    localizers with different reach in one module is a bug generator, so this
+    is now a thin alias and there is a single behaviour to reason about.
 
     Examples:
         localize_cita("Hch 11, 19-26", "eu")  -> "Eg 11, 19-26"
         localize_cita("Mt 5, 1-12", "eu")     -> "Mt 5, 1-12"  (same)
         localize_cita("1 Cor 12, 4-11", "eu") -> "1 Kor 12, 4-11"
-        localize_cita("Sal 23 (R.: 1)", "eu") -> "Sal 23 (R.: 1)"
+        localize_cita("Cf. Lc 1, 28. 42", "eu") -> "Ik. Lk 1, 28. 42"
     """
-    if not cita or lang != "eu":
-        return cita or ""
-
-    s = cita.lstrip()
-    leading_ws = cita[: len(cita) - len(s)]
-
-    for es_key in _KEYS_LONGEST_FIRST:
-        if s.startswith(es_key):
-            tail_idx = len(es_key)
-            # Token must be followed by whitespace then a digit, OR the boundary
-            # must be unambiguous (digit immediately after a 1-letter prefix).
-            if tail_idx >= len(s):
-                continue
-            ch = s[tail_idx]
-            if ch.isspace() or ch.isdigit() or ch in ",.":
-                eu_abbr = ES_TO_EU_BOOK_ABBR[es_key]
-                return leading_ws + eu_abbr + s[tail_idx:]
-
-    return cita
+    return localize_cita_full(cita, lang)
 
 
 # ── Full-string localizer ─────────────────────────────────────────────────────
@@ -186,6 +169,12 @@ def localize_cita_full(cita: str, lang: str = "eu") -> str:
     # " y " (with surrounding spaces) → " eta ". Word-boundary protects names
     # that legitimately contain "y" inside (none do in our citas, but be safe).
     out = _re.sub(r'(?<=\s)y(?=\s)', 'eta', out)
+    # "cf." → "ik.", keeping the case. The two real Basque lectionary sources
+    # write "ik."/"Ik." 427 times and "cf." zero; nothing was translating it,
+    # so the EU pages printed the Spanish marker. Same fix landed in ZClaude's
+    # tools/pipeline/leccionario/lib/cita_eu.py on 2026-08-23.
+    out = _re.sub(r'\bcf\.', lambda m: 'Ik.' if m.group(0)[0].isupper() else 'ik.',
+                  out, flags=_re.IGNORECASE)
     return out
 
 
