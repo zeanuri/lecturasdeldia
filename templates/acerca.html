@@ -11,6 +11,42 @@
 <meta property="og:url" content="https://lecturasdeldia.org/acerca/">
 {% endblock %}
 
+{% block jsonld %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Cuál es el evangelio de hoy?",
+      "acceptedAnswer": {"@type": "Answer", "text": "En la portada de lecturasdeldia.org está siempre el evangelio de hoy junto con todas las lecturas de la Misa del día —primera lectura, salmo responsorial y segunda lectura cuando corresponde—, según el calendario litúrgico de España."}
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué lecturas tiene la Misa del próximo domingo?",
+      "acceptedAnswer": {"@type": "Answer", "text": "La página lecturasdeldia.org/domingo/ muestra durante toda la semana el evangelio y las lecturas completas de la Misa del domingo siguiente, para preparar la liturgia dominical con antelación."}
+    },
+    {
+      "@type": "Question",
+      "name": "¿De dónde salen los textos de las lecturas?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Los textos reproducen el leccionario oficial de la Conferencia Episcopal Española, íntegros y sin paráfrasis: son las mismas lecturas que se proclaman en la Misa. El sitio es un servicio vinculado a la Diócesis de Bilbao."}
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo consultar las lecturas de otra fecha?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Sí. Cada fecha tiene una URL propia y estable (lecturasdeldia.org/AAAA/MM/DD/) y se puede navegar por el calendario litúrgico o buscar por cita bíblica, santo o celebración."}
+    },
+    {
+      "@type": "Question",
+      "name": "¿Están las lecturas disponibles en euskera?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Sí. En lecturasdeldia.org/eu/ están las lecturas de cada día en euskera (bizkaiera)."}
+    }
+  ]
+}
+</script>
+{% endblock %}
+
 {% block content %}
 <article class="static-page">
   <h1>Acerca de Lecturas del Día</h1>
@@ -41,5 +77,30 @@
   <a href="https://bizkeliza.org" target="_blank" rel="noopener">Diócesis de Bilbao</a>.
   El sitio es de código abierto y puede consultarse en
   <a href="https://github.com/zeanuri/lecturasdeldia" target="_blank" rel="noopener">GitHub</a>.</p>
+
+  <h2>Preguntas frecuentes</h2>
+
+  <h3>¿Cuál es el evangelio de hoy?</h3>
+  <p>En la <a href="/">portada</a> está siempre el evangelio de hoy junto con
+  todas las lecturas de la Misa del día —primera lectura, salmo responsorial y
+  segunda lectura cuando corresponde—, según el calendario litúrgico de España.</p>
+
+  <h3>¿Qué lecturas tiene la Misa del próximo domingo?</h3>
+  <p>La página <a href="/domingo/">del domingo</a> muestra durante toda la
+  semana el evangelio y las lecturas completas de la Misa del domingo
+  siguiente, para preparar la liturgia dominical con antelación.</p>
+
+  <h3>¿De dónde salen los textos de las lecturas?</h3>
+  <p>Del leccionario oficial de la Conferencia Episcopal Española, íntegros y
+  sin paráfrasis: son las mismas lecturas que se proclaman en la Misa.</p>
+
+  <h3>¿Puedo consultar las lecturas de otra fecha?</h3>
+  <p>Sí. Cada fecha tiene una URL propia y estable
+  (<code>lecturasdeldia.org/AAAA/MM/DD/</code>) y se puede navegar por el
+  <a href="/calendario/">calendario litúrgico</a> o
+  <a href="/buscar/">buscar</a> por cita bíblica, santo o celebración.</p>
+
+  <h3>¿Están las lecturas disponibles en euskera?</h3>
+  <p>Sí: <a href="/eu/">lecturas de cada día en euskera</a> (bizkaiera).</p>
 </article>
 {% endblock %}

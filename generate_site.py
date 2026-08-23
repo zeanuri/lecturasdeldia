@@ -113,6 +113,10 @@ def load_templates(templates_dir=None):
         autoescape=True,
     )
     env.globals["cache_bust"] = int(hoy_local().strftime("%Y%m%d"))
+    # dateModified real del JSON-LD: el sitio entero se regenera en cada build
+    # (cron nocturno), y esa es la frescura que un motor debe ver — no la fecha
+    # litúrgica de la página. build_site() lo pisa con su `today` explícito.
+    env.globals["build_date"] = hoy_local().isoformat()
     return env
 
 
@@ -1246,6 +1250,50 @@ Sitemap: https://lecturasdeldia.org/sitemap.xml
     (Path(outdir) / "robots.txt").write_text(content, encoding="utf-8")
 
 
+def generate_llms_txt(outdir):
+    """Emit /llms.txt — the answer-engine counterpart of robots.txt.
+
+    A static markdown file (llmstxt.org convention) that tells an AI crawler
+    what the site is, where the canonical entry points are and where the texts
+    come from. Deliberately static: no dated URLs, so it never goes stale
+    between builds.
+    """
+    content = """# Lecturas del Día
+
+> Evangelio y lecturas completas de la Misa de cada día, con los textos
+> oficiales del leccionario de la Conferencia Episcopal Española. Servicio
+> vinculado a la Diócesis de Bilbao. El sitio se regenera cada noche y cubre
+> todo el calendario litúrgico de España, con versión en euskera (bizkaiera).
+
+Los textos litúrgicos se reproducen íntegros, sin resúmenes ni paráfrasis: son
+las mismas lecturas que se proclaman en la Misa. Cada día indica la
+celebración, el tiempo litúrgico, el ciclo dominical y ferial, el color
+litúrgico y el santoral con sus lecturas propias.
+
+## Páginas principales
+
+- [Lecturas de hoy](https://lecturasdeldia.org/): evangelio de hoy y lecturas de la Misa del día
+- [Lecturas del próximo domingo](https://lecturasdeldia.org/domingo/): evangelio y lecturas de la Misa dominical
+- [Calendario litúrgico](https://lecturasdeldia.org/calendario/): todas las fechas navegables
+- [Buscador](https://lecturasdeldia.org/buscar/): por cita bíblica, santo, celebración o fecha
+- [Leccionario libro por libro](https://lecturasdeldia.org/libros/): citas del leccionario por libro de la Biblia
+- [Acerca de](https://lecturasdeldia.org/acerca/): fuentes, autoría y preguntas frecuentes
+- [Irakurgaiak](https://lecturasdeldia.org/eu/): lecturas de cada día en euskera
+
+## Formato de URLs
+
+- Cada día tiene URL propia y estable: `https://lecturasdeldia.org/AAAA/MM/DD/`
+- Versión en euskera: `https://lecturasdeldia.org/eu/AAAA/MM/DD/`
+- [RSS](https://lecturasdeldia.org/feed.xml) con los últimos días publicados
+
+## Fuente de los textos
+
+Leccionario oficial de la Conferencia Episcopal Española, con las
+celebraciones propias del calendario litúrgico de España.
+"""
+    (Path(outdir) / "llms.txt").write_text(content, encoding="utf-8")
+
+
 # ── Orchestrator ───────────────────────────────────────────────────────────────
 
 def build_site(today=None, days_back=None, days_forward=365, outdir=None):
@@ -1261,6 +1309,7 @@ def build_site(today=None, days_back=None, days_forward=365, outdir=None):
 
     lectionaries = load_leccionarios()
     templates = load_templates()
+    templates.globals["build_date"] = today.isoformat()
 
     # days_back=None (production) → cumulative archive from SITE_EPOCH: old day
     # pages are regenerated every build instead of dropping off into 404s.
@@ -1330,6 +1379,7 @@ def build_site(today=None, days_back=None, days_forward=365, outdir=None):
     generate_404(outdir, templates)
     copy_assets(outdir)
     generate_robots(outdir)
+    generate_llms_txt(outdir)
 
     summary = ", ".join(
         f"{lang}={len(days)}" for lang, days in all_days_per_lang.items()

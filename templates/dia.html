@@ -34,17 +34,44 @@
 }
 </script>
 {% endif %}
+{# headline replica la lógica del block title: si divergen, los validadores lo
+   marcan como inconsistencia entre el structured data y la página. #}
+{% if is_home %}{% set headline = i18n.home_title_prefix ~ " — " ~ day.fecha_larga %}
+{% elif is_sunday %}{% set headline = i18n.domingo_title_prefix ~ " — " ~ day.fecha_larga %}
+{% else %}{% set headline = i18n.dia_title_prefix ~ " " ~ day.fecha_larga ~ " — " ~ day.name %}
+{% endif %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": {{ (i18n.dia_title_prefix ~ " " ~ day.fecha_larga ~ " — " ~ day.name) | tojson }},
+  "headline": {{ headline | tojson }},
   "datePublished": {{ day.date_iso | tojson }},
-  "dateModified": {{ day.date_iso | tojson }},
+  "dateModified": {{ build_date | default(day.date_iso) | tojson }},
+  "articleSection": {{ day.season | tojson }},
+  "isAccessibleForFree": true,
   "inLanguage": {{ lang | tojson }},
   "mainEntityOfPage": "https://lecturasdeldia.org{{ canonical_self }}",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": ["h1", "#text-evangelio"]
+  },
   "author": {"@type": "Organization", "name": "Lecturas del Día", "url": "https://lecturasdeldia.org/"},
-  "publisher": {"@type": "Organization", "name": "Lecturas del Día", "url": "https://lecturasdeldia.org/"}
+  "publisher": {
+    "@type": "Organization",
+    "name": "Diócesis de Bilbao",
+    "url": "https://bizkeliza.org",
+    "sameAs": ["https://es.wikipedia.org/wiki/Di%C3%B3cesis_de_Bilbao"]
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": {{ i18n.site_title | tojson }}, "item": "https://lecturasdeldia.org{% if lang == 'eu' %}/eu/{% else %}/{% endif %}"},
+    {"@type": "ListItem", "position": 2, "name": {{ day.fecha_larga | tojson }}, "item": "https://lecturasdeldia.org{{ canonical_self }}"}
+  ]
 }
 </script>
 {% endblock %}

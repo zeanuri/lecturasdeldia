@@ -165,3 +165,36 @@ class TestSitemap:
         assert "2026/05/01" in xml   # within 30 days forward
         assert "2026/03/01" not in xml   # too far back
         assert "2026/05/20" not in xml   # too far forward
+
+
+class TestAeoLayer:
+    """Answer-engine layer: llms.txt, enriched JSON-LD, FAQ (audit 2026-08-23)."""
+
+    def test_llms_txt_exists_with_entry_points(self, built_site):
+        txt = _read(built_site, "llms.txt")
+        assert txt.startswith("# Lecturas del Día")
+        assert "https://lecturasdeldia.org/domingo/" in txt
+        assert "leccionario oficial" in txt.lower()
+
+    def test_day_page_jsonld_publisher_and_freshness(self, built_site):
+        # A page whose liturgical date differs from the build day (2026-04-09):
+        # dateModified must carry the build date or the nightly regeneration
+        # stays invisible to crawlers; datePublished keeps the liturgical date.
+        html = _read(built_site, "2026", "04", "06", "index.html")
+        assert '"name": "Diócesis de Bilbao"' in html
+        assert '"datePublished": "2026-04-06"' in html
+        assert '"dateModified": "2026-04-09"' in html
+        assert '"@type": "SpeakableSpecification"' in html
+        assert '"@type": "BreadcrumbList"' in html
+
+    def test_home_jsonld_headline_matches_title(self, built_site):
+        # The Article headline must mirror the page <title>, which on the home
+        # is the evergreen query title, not the generic dated one.
+        html = _read(built_site, "index.html")
+        assert '"headline": "Evangelio de hoy y lecturas de la Misa' in html
+
+    def test_acerca_has_faq(self, built_site):
+        html = _read(built_site, "acerca", "index.html")
+        assert '"@type": "FAQPage"' in html
+        assert "¿Cuál es el evangelio de hoy?" in html
+        assert "Preguntas frecuentes" in html
