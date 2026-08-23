@@ -109,9 +109,6 @@ I18N_ES = {
     "fecha_larga_format": "{day_name}, {day} de {month} de {year}",
     "prev_next_format": "{day} {month_abbr}",
 
-    # index_redirect.html
-    "redirect_msg": "Redirigiendo a las",
-    "redirect_link": "lecturas de hoy",
 
     # Footer
     "diocese_aria": "Diócesis de Bilbao — bizkeliza.org",
@@ -169,6 +166,16 @@ I18N_EU = {
     "og_description_default": "Eguneroko Mezako irakurgaiak -- CEE",
     "dia_meta_description": "Eguneroko Mezako irakurgaiak eta ebanjelioa",
     "dia_title_prefix": "Irakurgaiak,",
+    # Verificadas en batua.eus (2026-08-23) en las dos direcciones: la
+    # retrotraduccion devuelve el castellano original casi literal y el contraste
+    # de forma coincide. Quedan dos elecciones lexicas DELIBERADAS contra las que
+    # la maquina propone 'irakurketak' y 'Mezaren': se mantienen 'irakurgaiak'
+    # (el leccionario vasco oficial se titula IRAKURGAIAK, y es el termino de
+    # site_title y de las etiquetas de lectura) y 'Mezako' (ya en
+    # meta_description_default y dia_meta_description). Sigue el # REVIEW: falta
+    # el hablante nativo, que es otra cosa que la maquina.
+    "home_title_prefix": "Gaurko ebanjelioa eta Mezako irakurgaiak",  # REVIEW
+    "home_meta_description": "Gaurko ebanjelioa eta Mezako irakurgaiak, Espainiako Gotzainen Batzarreko lezionarioko testu ofizialekin",  # REVIEW
     "search_page_title_prefix": "Bilatu",
     "search_meta_description": "Bilatu irakurgaiak data, bibliako aipamen, santu edo gaiaren arabera",  # REVIEW
     "not_found_title": "Egun hori ez dago eskuragarri",
@@ -234,9 +241,6 @@ I18N_EU = {
     "fecha_larga_format": "{day_name}, {year}ko {month}ren {day}a",
     "prev_next_format": "{month_abbr} {day}",
 
-    # index_redirect.html
-    "redirect_msg": "Gaurko irakurgaietara birbidaltzen",
-    "redirect_link": "gaurko irakurgaiak",
 
     # Footer
     "diocese_aria": "Bilboko Elizbarrutia -- bizkeliza.org",

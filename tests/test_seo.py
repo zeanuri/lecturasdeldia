@@ -50,9 +50,46 @@ class TestHomepage:
         assert '"@type": "SearchAction"' in html
         assert "home-intro" in html
 
-    def test_eu_root_keeps_redirect(self, built_site):
+    def test_root_website_jsonld_is_per_language(self, built_site):
+        """The WebSite block used to be hardcoded Spanish — harmless while it
+        only ever rendered on /, wrong as soon as /eu/ became a real page."""
         html = _read(built_site, "eu", "index.html")
-        assert "http-equiv=\"refresh\"" in html
+        assert '"inLanguage": "eu"' in html
+        assert '"url": "https://lecturasdeldia.org/eu/"' in html
+        assert '"name": "Egunaren Irakurgaiak"' in html
+        assert "https://lecturasdeldia.org/eu/bilatu/?q=" in html
+        assert "https://lecturasdeldia.org/buscar/?q=" not in html
+
+    def test_roots_emit_no_self_referencing_breadcrumb(self, built_site):
+        """On a root, canonical_self IS the site root, so both breadcrumb
+        positions carried the same URL — a trail from a page to itself."""
+        for parts in (("index.html",), ("eu", "index.html")):
+            assert '"@type": "BreadcrumbList"' not in _read(built_site, *parts)
+
+    def test_eu_root_is_real_page_not_redirect(self, built_site):
+        html = _read(built_site, "eu", "index.html")
+        assert "http-equiv=\"refresh\"" not in html
+        assert 'data-date="2026-04-09"' in html
+
+    def test_eu_root_is_self_canonical(self, built_site):
+        html = _read(built_site, "eu", "index.html")
+        assert '<link rel="canonical" href="https://lecturasdeldia.org/eu/">' in html
+
+    def test_eu_root_title_is_in_basque(self, built_site):
+        html = _read(built_site, "eu", "index.html")
+        assert "Gaurko ebanjelioa eta Mezako irakurgaiak" in html
+
+    def test_both_roots_declare_each_other_as_alternates(self, built_site):
+        """Search engines discard a one-sided hreflang pair whole, so this only
+        works if BOTH roots carry the declaration. Until 2026-08-23 /eu/ was a
+        redirect stub emitting no <link> tags: / claimed a Basque alternate
+        that never answered, so the homepage had no usable one at all."""
+        for parts in (("index.html",), ("eu", "index.html")):
+            html = _read(built_site, *parts)
+            assert ('<link rel="alternate" hreflang="es" '
+                    'href="https://lecturasdeldia.org/">') in html
+            assert ('<link rel="alternate" hreflang="eu" '
+                    'href="https://lecturasdeldia.org/eu/">') in html
 
 
 class TestDayPages:

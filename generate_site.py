@@ -467,38 +467,19 @@ def generate_day(d, prev_d, next_d, outdir, templates, lang, lectionaries,
     return day_data
 
 
-def generate_index(outdir, today, templates, lang):
-    """Render the homepage redirect for a given language."""
-    i18n = get_i18n(lang)
-    y = today.year
-    m = f"{today.month:02d}"
-    d = f"{today.day:02d}"
+def generate_home(today, outdir, templates, lectionaries, lang="es"):
+    """Render today's readings as a language root (/ for ES, /eu/ for EU).
 
-    lang_path = LANG_ROOT[lang]  # '/' or '/eu/'
-    today_url = f"{lang_path}{y}/{m}/{d}/"
-    urls = page_urls("/", lang)
+    Both roots are real, self-canonical pages: the domain's main URLs
+    accumulate authority and can rank for evergreen queries, while dated pages
+    remain the archive.
 
-    template = templates.get_template("index_redirect.html")
-    html = template.render(
-        i18n=i18n,
-        lang=lang,
-        today_url=today_url,
-        lang_path=lang_path,
-        **urls,
-    )
-
-    Path(outdir).mkdir(parents=True, exist_ok=True)
-    (Path(outdir) / "index.html").write_text(html, encoding="utf-8")
-
-
-def generate_home(today, outdir, templates, lectionaries):
-    """Render today's readings as the ES homepage.
-
-    Unlike the EU root (which keeps the redirect), the ES root is a real,
-    self-canonical page: the domain's main URL accumulates authority and can
-    rank for evergreen queries, while dated pages remain the archive.
+    The EU root was a redirect stub (index_redirect.html) until 2026-08-23. It
+    emitted no <link> tags, so it could not return the hreflang declaration
+    that / made about it — and search engines discard a non-reciprocal hreflang
+    pair whole, which left the homepage with no Basque alternate at all. Making
+    it a real page is what closes the pair.
     """
-    lang = "es"
     i18n = get_i18n(lang)
     day_data = get_day_data(today, lang, lectionaries)
     prev_d = today - timedelta(days=1)
@@ -1355,15 +1336,14 @@ def build_site(today=None, days_back=None, days_forward=365, outdir=None):
             days.append(day_data)
         all_days_per_lang[lang] = days
 
+        # Both roots are real pages (today's readings), not redirects — that is
+        # what makes the / <-> /eu/ hreflang pair reciprocal.
+        generate_home(today, lang_outdir, templates, lectionaries, lang)
         if lang == "es":
-            # ES root is a real page (today's readings), not a redirect.
-            generate_home(today, lang_outdir, templates, lectionaries)
             generate_domingo(today, lang_outdir, templates, lectionaries)
             generate_calendario(today, lang_outdir, templates, lectionaries)
             generate_acerca(lang_outdir, templates)
             generate_feed(days, today, lang_outdir)
-        else:
-            generate_index(lang_outdir, today, templates, lang)
         generate_search_index(days, lang_outdir, lang)
         generate_calendar_data(days, lang_outdir, lang)
         generate_search_page(lang_outdir, templates, lang, search_slug)

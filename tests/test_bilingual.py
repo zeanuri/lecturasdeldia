@@ -20,8 +20,9 @@ import generate_site  # noqa: E402
 # home_*/acerca/libros_footer: SEO homepage + footer nav are ES-only by design
 # (the EU homepage keeps the redirect behaviour).
 ES_ONLY_KEYS = {
-    "home_title_prefix",
-    "home_meta_description",
+    # home_* used to live here: the EU root was a redirect stub and never
+    # rendered a homepage. Since /eu/ became a real self-canonical page, both
+    # languages need them — so parity is enforced again.
     "domingo_title_prefix",
     "domingo_meta_description",
     "acerca_link",

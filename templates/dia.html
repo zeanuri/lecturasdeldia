@@ -16,19 +16,22 @@
 {% endblock %}
 
 {% block jsonld %}
+{# Rendered on both language roots, so every field here is per-language: the
+   EU root would otherwise declare itself as the Spanish site and point its
+   SearchAction at the Spanish search page. #}
 {% if is_home %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "Lecturas del Día",
+  "name": {{ i18n.site_title | tojson }},
   "alternateName": "lecturasdeldia.org",
-  "url": "https://lecturasdeldia.org/",
+  "url": "https://lecturasdeldia.org{% if lang == 'eu' %}/eu/{% else %}/{% endif %}",
   "description": {{ i18n.home_meta_description | tojson }},
-  "inLanguage": "es",
+  "inLanguage": {{ lang | tojson }},
   "potentialAction": {
     "@type": "SearchAction",
-    "target": "https://lecturasdeldia.org/buscar/?q={search_term_string}",
+    "target": "https://lecturasdeldia.org{% if lang == 'eu' %}/eu/bilatu/{% else %}/buscar/{% endif %}?q={search_term_string}",
     "query-input": "required name=search_term_string"
   }
 }
@@ -64,6 +67,9 @@
   }
 }
 </script>
+{# Not on a root: there canonical_self IS the site root, so both positions
+   would carry the same URL — a trail from a page to itself. #}
+{% if not is_home %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -74,6 +80,7 @@
   ]
 }
 </script>
+{% endif %}
 {% endblock %}
 
 {% block content %}
