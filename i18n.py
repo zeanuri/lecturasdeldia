@@ -37,6 +37,24 @@ I18N_ES = {
     "dia_title_prefix": "Lecturas del",
     "home_title_prefix": "Evangelio de hoy y lecturas de la Misa",
     "home_meta_description": "Evangelio de hoy y lecturas de la Misa del día, con los textos oficiales del leccionario de la Conferencia Episcopal Española",
+
+    # Los tres siguientes llevan marcado inline y se pintan con |safe. Es
+    # deliberado: en castellano el enlace envuelve "citas del leccionario libro
+    # por libro", y en euskera el verbo `arakatu` queda FUERA del enlace. Las
+    # fronteras del <a> no coinciden entre los dos idiomas, asi que trocear la
+    # frase en fragmentos interpolables obligaria al euskera a copiar el orden
+    # castellano. Son constantes de autor, no entrada de usuario.
+    "home_intro_h2": "Lecturas de la Misa de hoy",
+    "home_intro_p1": "Cada día encontrarás aquí el evangelio de hoy y todas las "
+                     "lecturas de la Misa —primera lectura, salmo responsorial y "
+                     "segunda lectura cuando corresponde— con los textos oficiales "
+                     "del leccionario de la Conferencia Episcopal Española.",
+    "home_intro_p2": 'Puedes consultar las lecturas de cualquier fecha del '
+                     'calendario litúrgico, <a href="/buscar/">buscar por cita '
+                     'bíblica, santo o celebración</a>, explorar las '
+                     '<a href="/libros/">citas del leccionario libro por libro</a> '
+                     'o leer las lecturas <a href="/eu/">en euskera</a>. '
+                     'Más información en <a href="/acerca/">Acerca de</a>.',
     "domingo_title_prefix": "Evangelio del domingo y lecturas de la Misa dominical",
     "domingo_meta_description": "Evangelio del domingo y lecturas de la Misa dominical, con los textos oficiales del leccionario de la Conferencia Episcopal Española",
     # Meta-descripción base para páginas de día de diario (feria). Se antepone a
@@ -176,6 +194,23 @@ I18N_EU = {
     # el hablante nativo, que es otra cosa que la maquina.
     "home_title_prefix": "Gaurko ebanjelioa eta Mezako irakurgaiak",  # REVIEW
     "home_meta_description": "Gaurko ebanjelioa eta Mezako irakurgaiak, Espainiako Gotzainen Batzarreko lezionarioko testu ofizialekin",  # REVIEW
+    # Traducidos con /euskeratu (Itzulpena, batua) y verificados en batua.eus el
+    # 2026-08-24. Estaban cableados en castellano dentro de templates/dia.html,
+    # asi que la portada /eu/ servia dos parrafos en castellano. Los destinos de
+    # los enlaces siguen siendo las paginas castellanas (/buscar/, /libros/,
+    # /acerca/): no existe version vasca de esas secciones. El unico que se
+    # invierte es el de idioma — en /eu/ apunta a "/" y dice "gaztelaniaz".
+    "home_intro_h2": "Gaurko Mezako irakurgaiak",
+    "home_intro_p1": "Egunero aurkituko dituzu hemen gaurko ebanjelioa eta "
+                     "Mezako irakurgai guztiak —lehen irakurgaia, erantzun-salmoa "
+                     "eta, dagokionean, bigarren irakurgaia—, Espainiako Gotzainen "
+                     "Batzarreko lezionarioko testu ofizialekin.",
+    "home_intro_p2": 'Liturgia-egutegiko edozein egunetako irakurgaiak kontsulta '
+                     'ditzakezu, <a href="/buscar/">aipu biblikoaren, santuaren '
+                     'edo ospakizunaren arabera bilatu</a>, '
+                     '<a href="/libros/">lezionarioko aipuak liburuz liburu</a> '
+                     'arakatu edo irakurgaiak <a href="/">gaztelaniaz irakurri</a>. '
+                     'Informazio gehiago <a href="/acerca/">Honi buruz</a> atalean.',
     "search_page_title_prefix": "Bilatu",
     "search_meta_description": "Bilatu irakurgaiak data, bibliako aipamen, santu edo gaiaren arabera",  # REVIEW
     "not_found_title": "Egun hori ez dago eskuragarri",
@@ -255,12 +290,12 @@ I18N_EU = {
     "toggle_label_eu": "Irakurgaiak",
 
     # /libros/ — liburuak biltegia
-    "libros_page_title": "Lekzionarioko liburuak",
-    "libros_meta_description": "Lekzionarioko liburu biblikoen aurkibidea — liburu bakoitzaren aipuak liturgia-urtean zehar",
-    "libros_h1": "Lekzionarioko liburuak",
-    "libros_intro": "Ikusi liburu bakoitzeko aipuak lekzionarioan agertzen diren bezala, liturgia-testuinguruaren arabera taldekatuta (igandeak, asteguneko mezak, jaiak, santuak).",
+    "libros_page_title": "Lezionarioko liburuak",
+    "libros_meta_description": "Lezionarioko liburu biblikoen aurkibidea — liburu bakoitzaren aipuak liturgia-urtean zehar",
+    "libros_h1": "Lezionarioko liburuak",
+    "libros_intro": "Ikusi liburu bakoitzeko aipuak lezionarioan agertzen diren bezala, liturgia-testuinguruaren arabera taldekatuta (igandeak, asteguneko mezak, jaiak, santuak).",
     "libros_book_meta_prefix": "Liburuaren aipuak:",
-    "libros_citas_label": "aipu lekzionarioan",
+    "libros_citas_label": "aipu lezionarioan",
     "search_back_to_search": "Bilaketara itzuli",
 
     # Strings consumed by app.js
@@ -269,7 +304,7 @@ I18N_EU = {
     "search_results_count_one": "Emaitza 1",
     "search_results_count_many": "{n} emaitza",
     "search_truncated": "{total}-tik {shown} agertzen — bilaketa zehaztu",
-    "search_redirect_book_known": "“{q}” = {book}. Ez dago {book} liburuko irakurgairik tarte honetan, baina lekzionarioko aipu guztiak ikus ditzakezu:",
+    "search_redirect_book_known": "“{q}” = {book}. Ez dago {book} liburuko irakurgairik tarte honetan, baina lezionarioko aipu guztiak ikus ditzakezu:",
     "search_redirect_book_link": "{book}-ren aipu guztiak ikusi",
     "alt_readings_back": "Eguneko irakurgaiak",
     "download_filename_suffix": "_irakurgaiak",

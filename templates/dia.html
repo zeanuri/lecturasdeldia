@@ -197,15 +197,9 @@
 
   {% if is_home %}
   <section class="home-intro">
-    <h2>Lecturas de la Misa de hoy</h2>
-    <p>Cada día encontrarás aquí el evangelio de hoy y todas las lecturas de la Misa
-    —primera lectura, salmo responsorial y segunda lectura cuando corresponde—
-    con los textos oficiales del leccionario de la Conferencia Episcopal Española.</p>
-    <p>Puedes consultar las lecturas de cualquier fecha del calendario litúrgico,
-    <a href="/buscar/">buscar por cita bíblica, santo o celebración</a>,
-    explorar las <a href="/libros/">citas del leccionario libro por libro</a>
-    o leer las lecturas <a href="/eu/">en euskera</a>.
-    Más información en <a href="/acerca/">Acerca de</a>.</p>
+    <h2>{{ i18n.home_intro_h2 }}</h2>
+    <p>{{ i18n.home_intro_p1 }}</p>
+    <p>{{ i18n.home_intro_p2 | safe }}</p>
   </section>
   {% elif is_sunday %}
   <section class="home-intro">

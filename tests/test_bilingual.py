@@ -427,3 +427,40 @@ def test_ranuras_eu_coinciden_con_es_todo_el_ano(leccionarios):
         f"{len(divergentes)} dias con ranuras distintas entre ES y EU. "
         f"Primeros: {divergentes[:5]}"
     )
+
+
+# ── La portada no puede servir castellano en /eu/ ──────────────────────────
+#
+# Los dos parrafos de la portada vivian cableados en castellano dentro de
+# templates/dia.html, que sirve a los dos idiomas: /eu/ mostraba "Cada dia
+# encontraras aqui el evangelio de hoy...". Ahora salen de i18n y la paridad
+# de claves los exige en los dos diccionarios; estas guardas evitan que
+# alguien rellene el hueco vasco copiando el castellano.
+
+INTRO_KEYS = ("home_intro_h2", "home_intro_p1", "home_intro_p2")
+
+
+@pytest.mark.parametrize("key", INTRO_KEYS)
+def test_intro_portada_no_es_castellano_en_eu(key):
+    assert I18N_EU[key] and I18N_EU[key] != I18N_ES[key], (
+        f"{key}: el valor EU esta vacio o es el castellano copiado"
+    )
+
+
+def test_intro_portada_no_esta_cableada_en_la_plantilla():
+    tpl = (ROOT / "templates" / "dia.html").read_text(encoding="utf-8")
+    assert "Cada día encontrarás" not in tpl, (
+        "la intro de portada volvio a la plantilla: templates/dia.html sirve a "
+        "los dos idiomas, asi que el texto tiene que salir de i18n"
+    )
+
+
+def test_termino_lezionario_sin_k():
+    """El leccionario vasco canonico escribe `Lezionarioa` (201 veces frente a
+    17 de `Lekzionario`, y esas 17 solo en el volumen de Difuntos, que es cita
+    del impreso). En el chrome del sitio la forma con k es un error: se corrigio
+    en 8 cadenas el 2026-08-24, despues de haberlo reintroducido dos veces."""
+    src = (ROOT / "i18n.py").read_text(encoding="utf-8")
+    assert "lekzionario" not in src.lower(), (
+        "i18n.py vuelve a usar `Lekzionario`; la forma correcta es `Lezionario`"
+    )
