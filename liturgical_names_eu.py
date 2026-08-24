@@ -17,6 +17,17 @@ This translator is INTENTIONALLY conservative: anything it does not match
 falls through to the original Spanish. That guarantees we never invent names.
 The few entries that admit alternative renderings are marked REVIEW; for
 those the user should validate against an authoritative missal.
+
+SINGLE-DIALECT RULE FOR CHROME — batua, always.
+The site carries two Basque layers and they do NOT share a dialect. The
+readings are bizkaiera (Bizkeliza source, quoted verbatim, never translated).
+Everything the site says in its own voice — day and season names, page titles,
+meta descriptions, buttons, search UI — is batua. A reading and its chrome may
+differ; the chrome may not differ from itself. Do not "preserve" a bizkaiera
+UI string for consistency with the reading beside it: that is the mix this
+rule exists to prevent (`Bazko-aldiko` shipped live and had to be corrected to
+`Pazko-aldiko` on 2026-04-28). Same rule governs `i18n.py:I18N_EU` and
+`i18n.py:DAY_ES_TO_EU`.
 """
 
 from __future__ import annotations

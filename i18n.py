@@ -200,17 +200,17 @@ I18N_EU = {
     # los enlaces siguen siendo las paginas castellanas (/buscar/, /libros/,
     # /acerca/): no existe version vasca de esas secciones. El unico que se
     # invierte es el de idioma — en /eu/ apunta a "/" y dice "gaztelaniaz".
-    "home_intro_h2": "Gaurko Mezako irakurgaiak",
+    "home_intro_h2": "Gaurko Mezako irakurgaiak",  # REVIEW
     "home_intro_p1": "Egunero aurkituko dituzu hemen gaurko ebanjelioa eta "
                      "Mezako irakurgai guztiak —lehen irakurgaia, erantzun-salmoa "
                      "eta, dagokionean, bigarren irakurgaia—, Espainiako Gotzainen "
-                     "Batzarreko lezionarioko testu ofizialekin.",
+                     "Batzarreko lezionarioko testu ofizialekin.",  # REVIEW
     "home_intro_p2": 'Liturgia-egutegiko edozein egunetako irakurgaiak kontsulta '
                      'ditzakezu, <a href="/buscar/">aipu biblikoaren, santuaren '
                      'edo ospakizunaren arabera bilatu</a>, '
                      '<a href="/libros/">lezionarioko aipuak liburuz liburu</a> '
                      'arakatu edo irakurgaiak <a href="/">gaztelaniaz irakurri</a>. '
-                     'Informazio gehiago <a href="/acerca/">Honi buruz</a> atalean.',
+                     'Informazio gehiago <a href="/acerca/">Honi buruz</a> atalean.',  # REVIEW
     "search_page_title_prefix": "Bilatu",
     "search_meta_description": "Bilatu irakurgaiak data, bibliako aipamen, santu edo gaiaren arabera",  # REVIEW
     "not_found_title": "Egun hori ez dago eskuragarri",
