@@ -17,7 +17,11 @@ import pytest
 
 DATA_DIR = Path(__file__).resolve().parents[1] / "data"
 
-# Verse-reference cues, language-neutral. Drawn from the CEE Misal Romano.
+# Verse-reference cues from the CEE Misal Romano. Six of the seven really are
+# language-neutral (bare verse numbers, or book abbreviations Basque spells the
+# same). L1 is not: it carries the "cf." marker, and the Basque lectionary
+# writes "ik." — the two EU sources use it 427 times and "cf." zero, so the
+# data was localized on 2026-08-23 and this expectation has to follow.
 EXPECTED_CUES = {
     1: "(R.: cf. 30)",
     2: "(R.: 1)",
@@ -27,6 +31,15 @@ EXPECTED_CUES = {
     6: "(R.: Jn 6, 68c)",
     7: "(R.: Sal 41, 2)",
 }
+
+# Per-language deviations. A lectura absent here keeps the cue above verbatim.
+CUE_OVERRIDES = {
+    "Lezionarioa_CL.json": {1: "(R.: ik. 30)"},
+}
+
+
+def cue_for(filename, lectura):
+    return CUE_OVERRIDES.get(filename, {}).get(lectura, EXPECTED_CUES[lectura])
 
 
 @pytest.mark.parametrize("filename", ["Leccionario_CL.json", "Lezionarioa_CL.json"])
@@ -66,7 +79,7 @@ def test_vigilia_salmo_responsorial_cue_present(filename, cycle, lectura):
         .get("salmo", {})
         .get("cita", "")
     )
-    expected_cue = EXPECTED_CUES[lectura]
+    expected_cue = cue_for(filename, lectura)
     assert expected_cue in cita, (
         f"{filename} cycle {cycle} L{lectura} salmo missing cue {expected_cue!r}. "
         f"Got cita={cita!r}. Vigilia data regression — see test_vigilia_pascual.py."
