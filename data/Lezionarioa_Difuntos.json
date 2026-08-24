@@ -6,8 +6,7 @@
     "source": "IRAKURGAIAK 4 BIZK.pdf, pp.433-492 (HILDAKOEN ALDEKO MEZAK)",
     "scaffold_from": "Leccionario_Difuntos.json",
     "description": "Hildakoen aldeko Mezetako irakurgaiak, salmoak eta ebanjelioak (CEE, Bizkaiera).",
-    "notes": "moniciones_entrada eta oraciones_fieles arrayak hutsik daude eta hala behar dute izan: CEE Lekzionarioko bizkaierazko sei liburukietan ez dago halako sekziorik (2026-05-09 egiaztatua, 3.108 orrialdetan zehar 9 sekzio-marka aldaeren bilaketa). Espainolezko atalak Mezaliburutik / Hileta-liburutik datoz, ez Lekzionariotik.",
-    "coverage": "63/63 lecturas (100%) — Difuntos liturgically complete"
+    "notes": "moniciones_entrada eta oraciones_fieles arrayak hutsik daude eta hala behar dute izan: CEE Lekzionarioko bizkaierazko sei liburukietan ez dago halako sekziorik (2026-05-09 egiaztatua, 3.108 orrialdetan zehar 9 sekzio-marka aldaeren bilaketa). Espainolezko atalak Mezaliburutik / Hileta-liburutik datoz, ez Lekzionariotik."
   },
   "moniciones_entrada": [],
   "lecturas": [
