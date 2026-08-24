@@ -879,6 +879,37 @@ def _collect_book_citas(lectionaries: dict[str, dict]) -> dict[str, list[dict]]:
     return by_book
 
 
+def _books_for_lang(by_book: dict[str, list[dict]], lang: str) -> dict[str, list[dict]]:
+    """Vista de by_book para UN idioma: sin formas del otro y sin filas repetidas.
+
+    _collect_book_citas mezcla en una sola bolsa los leccionarios castellanos y
+    los vascos, y esa bolsa se renderizaba entera en las dos lenguas. Producia
+    dos defectos visibles: la pagina castellana ensenaba citas en forma vasca
+    ("Sal 88, 4-5. 27 eta 29") venidas de lezionarioa_cl, y la vasca repetia cada
+    cita dos veces, porque la version castellana se localiza al renderizar y acaba
+    siendo identica a la vasca.
+
+    ES: solo fuentes leccionario_*.
+    EU: todas, deduplicadas por la cita YA localizada, prefiriendo la fuente vasca
+        cuando existe (asi no se pierde la cobertura de los extras, que solo
+        estan en castellano).
+    """
+    out: dict[str, list[dict]] = {}
+    for book, entries in by_book.items():
+        seen: dict[tuple, tuple[dict, bool]] = {}
+        for e in entries:
+            nativa = e["source"].startswith("lezionarioa_" if lang == "eu" else "leccionario_")
+            if lang != "eu" and not nativa:
+                continue
+            cita = localize_cita_full(e["cita"], lang) if lang == "eu" else e["cita"]
+            key = (cita, e["section"], e["slug"], e["slot"])
+            if key not in seen or (nativa and not seen[key][1]):
+                seen[key] = (e, nativa)
+        if seen:
+            out[book] = [v[0] for v in seen.values()]
+    return out
+
+
 def _format_label(entry: dict, lang: str) -> str:
     """Human-readable label for one cita's liturgical context.
 
@@ -1358,13 +1389,15 @@ def build_site(today=None, days_back=None, days_forward=365, outdir=None):
         generate_search_page(lang_outdir, templates, lang, search_slug)
 
         # /libros/ landing + per-book pages + alias JSON for the search UX
-        generate_libros_index(by_book, lang_outdir, templates, lang)
-        for book, entries in by_book.items():
+        books_lang = _books_for_lang(by_book, lang)
+        generate_libros_index(books_lang, lang_outdir, templates, lang)
+        for book, entries in books_lang.items():
             generate_libro_page(book, entries, lang_outdir, templates, lang)
-        generate_book_aliases_json(by_book, lang_outdir, lang)
+        generate_book_aliases_json(books_lang, lang_outdir, lang)
 
     # Site-wide files (live at the apex regardless of language).
-    generate_sitemap(all_days_per_lang["es"], outdir, by_book=by_book, today=today)
+    generate_sitemap(all_days_per_lang["es"], outdir,
+                     by_book=_books_for_lang(by_book, "es"), today=today)
     generate_404(outdir, templates)
     copy_assets(outdir)
     generate_robots(outdir)
