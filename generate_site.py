@@ -192,9 +192,18 @@ def _build_readings_es(readings_raw, i18n):
 
 
 def _build_readings_eu(readings_raw, es_readings_raw, result, i18n, d):
-    """For Basque, always emit the expected reading slots; mark empties so the
-    template renders the 'no official Basque translation' notice with a link
-    to the ES page.
+    """For Basque, emit the SAME slots the Spanish page emits; mark empties so
+    the template renders the 'no official Basque translation' notice with a
+    link to the ES page.
+
+    Which slots exist is read from the lectionary, never predicted from the
+    rank of the day. It used to be `is_sunday or rank in ("Solemnidad",
+    "Fiesta")`, and that guess is wrong in both directions: there are Feasts
+    WITH a second reading (Transfiguration, Holy Family, Presentation) and
+    Solemnities WITHOUT one (the six days of the Easter Octave), and Ash
+    Wednesday has one while being neither. In 2026 that meant 25 days opening
+    an empty "Bigarren Irakurgaia" promising a pending translation of a
+    reading that does not exist, plus Ash Wednesday hiding a real one.
 
     Biblical citations (cita) are language-neutral — when missing in the EU
     lectionary we fall back to the ES one. We DO NOT fall back on `titulo`,
@@ -205,10 +214,6 @@ def _build_readings_eu(readings_raw, es_readings_raw, result, i18n, d):
     sequence as the ES rendering, with each slot independently marked empty.
     """
     reading_labels = i18n["READING_LABELS"]
-    rank = result.get("rank", "")
-    is_sunday = result.get("day_name") == "Domingo"
-    has_segunda = is_sunday or rank in ("Solemnidad", "Fiesta")
-
     raw = readings_raw or {}
     es_raw = es_readings_raw or {}
     es_url = f"/{d.year:04d}/{d.month:02d}/{d.day:02d}/"
@@ -271,11 +276,15 @@ def _build_readings_eu(readings_raw, es_readings_raw, result, i18n, d):
                          raw, es_raw))
         return out
 
-    # Ordinary day: primera/salmo/(segunda)/evangelio
-    expected = ["primera", "salmo"]
-    if has_segunda:
-        expected.append("segunda")
-    expected.append("evangelio")
+    # Ordinary day: exactly the slots the ES page emits, same order and same
+    # presence test as `_build_readings_es` (a truthy dict). The EU lectionary
+    # joins the union so a slot it has and ES lacks is not dropped either.
+    def _present(source, key):
+        value = source.get(key) if isinstance(source, dict) else None
+        return isinstance(value, dict) and bool(value)
+
+    expected = [k for k in ("primera", "salmo", "segunda", "evangelio")
+                if _present(es_raw, k) or _present(raw, k)]
 
     for key in expected:
         out.append(_emit(key, reading_labels.get(key, key), raw, es_raw))

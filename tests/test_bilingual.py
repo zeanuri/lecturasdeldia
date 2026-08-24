@@ -336,3 +336,94 @@ def test_eu_day_nav_arrows_stay_in_eu(tmp_path, lectionaries):
     assert 'href="/eu/2026/04/28/"' in html, "next arrow on EU page must point to /eu/"
     assert 'href="/2026/04/26/"' not in html, "prev arrow leaks to ES URL"
     assert 'href="/2026/04/28/"' not in html, "next arrow leaks to ES URL"
+
+
+# ── Las ranuras del euskera salen del dato, no del rango ───────────────────
+#
+# El renderizador vasco predecia la lista de lecturas desde el rango del dia
+# (`is_sunday or rank in ("Solemnidad", "Fiesta")`) mientras el castellano
+# recorria el leccionario y saltaba lo ausente. En las Fiestas de apostol —
+# San Bartolome, 24-ago-2026 — y en la Octava de Pascua la pagina EU abria un
+# bloque "Bigarren Irakurgaia" con el aviso "Itzulpen ofizialik ez dago
+# oraindik bizkaieraz" para una segunda lectura que NO EXISTE en ningun
+# leccionario: prometia una traduccion pendiente de algo inexistente.
+#
+# El rango no puede decidirlo: hay Fiestas CON segunda (Transfiguracion,
+# Sagrada Familia, Presentacion, Dedicacion de Letran, Bautismo del Senor) y
+# Solemnidades SIN ella (los seis dias de la Octava de Pascua). Quien lo sabe
+# es el leccionario. 25 dias de 2026 salian con la segunda fantasma.
+
+import json  # noqa: E402
+
+DATA = ROOT / "data"
+
+
+@pytest.fixture(scope="module")
+def leccionarios():
+    with open(DATA / "Leccionario_CL.json", encoding="utf-8") as f:
+        es = json.load(f)
+    with open(DATA / "Lezionarioa_CL.json", encoding="utf-8") as f:
+        eu = json.load(f)
+    return es, eu
+
+
+def _slots(d, leccionarios):
+    """Claves de ranura que cada idioma emite para un dia."""
+    es_cache, eu_cache = leccionarios
+    result = liturgia.calculate(d)
+    es_raw = liturgia.lookup_readings(result, cache=es_cache)
+    eu_raw = liturgia.lookup_readings(result, cache=eu_cache)
+    es_slots = [r["key"] for r in
+                generate_site._build_readings_es(es_raw, get_i18n("es"))]
+    eu_slots = [r["key"] for r in
+                generate_site._build_readings_eu(eu_raw, es_raw, result,
+                                                 get_i18n("eu"), d)]
+    return es_slots, eu_slots
+
+
+@pytest.mark.parametrize("dia,celebracion", [
+    (date(2026, 8, 24), "San Bartolome, apostol (Fiesta)"),
+    (date(2026, 4, 6), "Lunes de la Octava de Pascua (Solemnidad)"),
+    (date(2026, 9, 14), "Exaltacion de la Santa Cruz (Fiesta)"),
+])
+def test_eu_no_inventa_segunda_inexistente(dia, celebracion, leccionarios):
+    es_slots, eu_slots = _slots(dia, leccionarios)
+    assert "segunda" not in es_slots, f"premisa rota: {celebracion} SI tiene segunda en ES"
+    assert "segunda" not in eu_slots, (
+        f"{dia} {celebracion}: la pagina EU abre un bloque de segunda lectura "
+        f"que no existe en ningun leccionario. Ranuras EU={eu_slots}"
+    )
+
+
+@pytest.mark.parametrize("dia,celebracion", [
+    (date(2026, 8, 6), "Transfiguracion (Fiesta CON segunda)"),
+    (date(2026, 12, 27), "Sagrada Familia (Fiesta CON segunda)"),
+    (date(2026, 2, 2), "Presentacion del Senor (Fiesta CON segunda)"),
+])
+def test_eu_conserva_la_segunda_cuando_existe(dia, celebracion, leccionarios):
+    es_slots, eu_slots = _slots(dia, leccionarios)
+    assert "segunda" in es_slots, f"premisa rota: {celebracion} NO tiene segunda en ES"
+    assert "segunda" in eu_slots, (
+        f"{dia} {celebracion}: la segunda lectura existe y la pagina EU la omite. "
+        f"Ranuras EU={eu_slots}"
+    )
+
+
+def test_ranuras_eu_coinciden_con_es_todo_el_ano(leccionarios):
+    """La logica castellana es la correcta: el euskera emite las mismas ranuras.
+
+    El aviso de traduccion pendiente solo tiene sentido sobre una lectura que
+    de verdad existe; su ausencia se marca con `empty`, no inventando la ranura.
+    """
+    from datetime import timedelta
+    divergentes = []
+    d = date(2026, 1, 1)
+    while d <= date(2026, 12, 31):
+        es_slots, eu_slots = _slots(d, leccionarios)
+        if es_slots != eu_slots:
+            divergentes.append((d.isoformat(), es_slots, eu_slots))
+        d += timedelta(days=1)
+    assert not divergentes, (
+        f"{len(divergentes)} dias con ranuras distintas entre ES y EU. "
+        f"Primeros: {divergentes[:5]}"
+    )
