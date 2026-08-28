@@ -2,9 +2,9 @@ name: Build and Deploy Site
 
 on:
   schedule:
-    - cron: '37 2 * * *'   # 04:37 Madrid (03:37 en invierno)
-    - cron: '40 3 * * *'   # 05:40 Madrid (04:40 en invierno)
-    - cron: '21 4 * * *'   # 06:21 Madrid (05:21 en invierno)
+    - cron: '37 1 * * *'   # 03:37 Madrid (02:37 en invierno)
+    - cron: '40 2 * * *'   # 04:40 Madrid (03:40 en invierno)
+    - cron: '21 3 * * *'   # 05:21 Madrid (04:21 en invierno)
   push:
     branches: [master]
     paths:
