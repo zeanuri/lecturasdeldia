@@ -1,7 +1,20 @@
 name: Build and Deploy Site
 
 on:
+  # Horas NOMINALES. GitHub dispara los `schedule` de este repo con ~5 h de
+  # retraso sistematico (medido 2026-08-29..09-11: el cron de las 01:37 UTC
+  # corria a las 06:12-06:40 UTC, y los otros dos con el mismo desfase), asi
+  # que la web no estaba lista hasta las 08:15-08:45 Madrid. Las ventanas
+  # empiezan justo tras la medianoche de Madrid para que, con ese retraso,
+  # la primera aterrice hacia las 05:00 Madrid; las tres ultimas son la red
+  # de seguridad de siempre. `generate_site.py` calcula `today` en
+  # Europe/Madrid, y el job `check` salta el build cuando el dia ya esta
+  # publicado, asi que una ventana que cae ANTES de medianoche en Madrid
+  # (22:03 UTC en invierno = 23:03 CET) no rompe nada: comprueba y se va.
   schedule:
+    - cron: '3 22 * * *'   # 00:03 Madrid en verano (23:03 del dia anterior en invierno: solo comprueba)
+    - cron: '11 23 * * *'  # 01:11 Madrid (00:11 en invierno)
+    - cron: '19 0 * * *'   # 02:19 Madrid (01:19 en invierno)
     - cron: '37 1 * * *'   # 03:37 Madrid (02:37 en invierno)
     - cron: '40 2 * * *'   # 04:40 Madrid (03:40 en invierno)
     - cron: '21 3 * * *'   # 05:21 Madrid (04:21 en invierno)
