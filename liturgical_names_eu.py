@@ -33,6 +33,7 @@ rule exists to prevent (`Bazko-aldiko` shipped live and had to be corrected to
 from __future__ import annotations
 
 import re
+import unicodedata
 
 # ── Liturgical season ─────────────────────────────────────────────────────────
 # `result["season"]` from liturgia.calculate() takes one of these values.
@@ -492,6 +493,12 @@ _INNER_SAINT_PREFIX_RE = re.compile(
 )
 
 
+def _fold(token: str) -> str:
+    """Quita tildes y virgulilla (NFD y fuera las marcas combinantes)."""
+    return "".join(c for c in unicodedata.normalize("NFD", token)
+                   if not unicodedata.combining(c))
+
+
 def _translate_saint_name_only(name_es: str) -> str:
     """Translate the proper-name tokens (without changing structure).
 
@@ -502,7 +509,11 @@ def _translate_saint_name_only(name_es: str) -> str:
     # Remove inner saint prefixes (the leading one was already stripped by the caller)
     cleaned = _INNER_SAINT_PREFIX_RE.sub("", name_es)
     tokens = cleaned.split()
-    out_tokens = [SAINT_NAME_SUBSTITUTIONS.get(t, t) for t in tokens]
+    # El motor escribe los nombres en castellano correcto (Agustín, Pío,
+    # Niño Jesús); el batua no lleva tilde. La tabla se consulta por la forma
+    # plegada y, si no traduce, sale la forma plegada: "Agustín" -> "Agustin".
+    out_tokens = [SAINT_NAME_SUBSTITUTIONS.get(t, SAINT_NAME_SUBSTITUTIONS.get(_fold(t), _fold(t)))
+                  for t in tokens]
     out = " ".join(out_tokens)
     out = re.sub(r"\s+y\s+", " eta ", out)
     out = re.sub(r"\s+e\s+", " eta ", out)

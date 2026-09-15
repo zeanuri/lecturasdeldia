@@ -57,17 +57,17 @@ from datetime import date, timedelta
 # These replace TO/Christmas Sundays when they coincide (Art. 10).
 # Other feasts (BVM, Saints) do NOT replace Sundays.
 FIESTAS_DEL_SENOR = {
-    "La Presentacion del Senor",
-    "La Transfiguracion del Senor",
-    "La Exaltacion de la Santa Cruz",
-    "El Bautismo del Senor",
-    "La Sagrada Familia de Jesus, Maria y Jose",
+    "La Presentación del Señor",
+    "La Transfiguración del Señor",
+    "La Exaltación de la Santa Cruz",
+    "El Bautismo del Señor",
+    "La Sagrada Familia de Jesús, María y José",
 }
 
 # ── I.2 level celebrations (Art. 59) ────────────────────────────────────
 _LEVEL_I2_NAMES = {
-    "Natividad del Senor", "Epifania del Senor",
-    "La Ascension del Senor", "Domingo de Pentecostes",
+    "Natividad del Señor", "Epifanía del Señor",
+    "La Ascensión del Señor", "Domingo de Pentecostés",
 }
 _STRONG_SUNDAY_SEASONS = {"Adviento", "Cuaresma", "Tiempo de Pascua", "Semana Santa"}
 
@@ -90,7 +90,7 @@ def get_precedence_level(name: str, rank: str, season: str,
     # I.2 — Major solemnities, strong-season Sundays, special days
     if name in _LEVEL_I2_NAMES:
         return 2
-    if "Resurreccion" in name:
+    if "Resurrección" in name or "Resurreccion" in name:
         return 2
     if is_sunday and season in _STRONG_SUNDAY_SEASONS:
         return 2
@@ -144,22 +144,22 @@ def get_precedence_level(name: str, rank: str, season: str,
 
 # ── Fiestas fijas (Calendario General + Espana) ──────────────────────────
 FIXED_FEASTS = {
-    (1, 1):   ("Santa Maria, Madre de Dios", "Solemnidad", "Blanco"),
-    (1, 6):   ("Epifania del Senor", "Solemnidad", "Blanco"),
-    (2, 2):   ("La Presentacion del Senor", "Fiesta", "Blanco"),
-    (3, 19):  ("San Jose, Esposo de la Virgen Maria", "Solemnidad", "Blanco"),
-    (3, 25):  ("La Anunciacion del Senor", "Solemnidad", "Blanco"),
+    (1, 1):   ("Santa María, Madre de Dios", "Solemnidad", "Blanco"),
+    (1, 6):   ("Epifanía del Señor", "Solemnidad", "Blanco"),
+    (2, 2):   ("La Presentación del Señor", "Fiesta", "Blanco"),
+    (3, 19):  ("San José, Esposo de la Virgen María", "Solemnidad", "Blanco"),
+    (3, 25):  ("La Anunciación del Señor", "Solemnidad", "Blanco"),
     (6, 24):  ("Natividad de San Juan Bautista", "Solemnidad", "Blanco"),
-    (6, 29):  ("Santos Pedro y Pablo, Apostoles", "Solemnidad", "Rojo"),
-    (7, 25):  ("Santiago Apostol, Patron de Espana", "Solemnidad", "Rojo"),
-    (8, 6):   ("La Transfiguracion del Senor", "Fiesta", "Blanco"),
-    (8, 15):  ("La Asuncion de la Virgen Maria", "Solemnidad", "Blanco"),
-    (9, 14):  ("La Exaltacion de la Santa Cruz", "Fiesta", "Rojo"),
-    (10, 12): ("Nuestra Senora del Pilar", "Fiesta", "Blanco"),
+    (6, 29):  ("Santos Pedro y Pablo, Apóstoles", "Solemnidad", "Rojo"),
+    (7, 25):  ("Santiago Apóstol, Patrón de España", "Solemnidad", "Rojo"),
+    (8, 6):   ("La Transfiguración del Señor", "Fiesta", "Blanco"),
+    (8, 15):  ("La Asunción de la Virgen María", "Solemnidad", "Blanco"),
+    (9, 14):  ("La Exaltación de la Santa Cruz", "Fiesta", "Rojo"),
+    (10, 12): ("Nuestra Señora del Pilar", "Fiesta", "Blanco"),
     (11, 1):  ("Todos los Santos", "Solemnidad", "Blanco"),
-    (11, 2):  ("Conmemoracion de los Fieles Difuntos", "Solemnidad", "Morado"),
-    (12, 8):  ("La Inmaculada Concepcion", "Solemnidad", "Blanco"),
-    (12, 25): ("Natividad del Senor", "Solemnidad", "Blanco"),
+    (11, 2):  ("Conmemoración de los Fieles Difuntos", "Solemnidad", "Morado"),
+    (12, 8):  ("La Inmaculada Concepción", "Solemnidad", "Blanco"),
+    (12, 25): ("Natividad del Señor", "Solemnidad", "Blanco"),
 }
 
 # ── Memorias obligatorias y fiestas del calendario general + Espana ────────
@@ -170,27 +170,27 @@ OBLIGATORY_MEMORIALS = {
     (1, 2):   ("Santos Basilio Magno y Gregorio Nacianceno", "Blanco"),
     (1, 7):   ("San Raimundo de Penyafort", "Blanco"),  # Espana
     (1, 17):  ("San Antonio Abad", "Blanco"),
-    (1, 20):  ("San Fabian y San Sebastian, martires", "Rojo"),
-    (1, 21):  ("Santa Ines, virgen y martir", "Rojo"),
-    (1, 22):  ("San Vicente, diacono y martir", "Rojo"),
+    (1, 20):  ("San Fabián y San Sebastián, mártires", "Rojo"),
+    (1, 21):  ("Santa Inés, virgen y mártir", "Rojo"),
+    (1, 22):  ("San Vicente, diácono y mártir", "Rojo"),
     (1, 24):  ("San Francisco de Sales", "Blanco"),
-    (1, 25):  ("La Conversion de San Pablo", "Fiesta", "Blanco"),
+    (1, 25):  ("La Conversión de San Pablo", "Fiesta", "Blanco"),
     (1, 26):  ("Santos Timoteo y Tito", "Blanco"),
-    (1, 28):  ("Santo Tomas de Aquino", "Blanco"),
+    (1, 28):  ("Santo Tomás de Aquino", "Blanco"),
     (1, 31):  ("San Juan Bosco", "Blanco"),
     # ── FEBRERO ──
     (2, 3):   ("San Blas / Santa Ansgar", "Blanco"),
-    (2, 5):   ("Santa Agueda, virgen y martir", "Rojo"),
-    (2, 6):   ("San Pablo Miki y companeros, martires", "Rojo"),
-    (2, 8):   ("San Jeronimo Emiliani / Santa Josefina Bakhita", "Blanco"),
-    (2, 10):  ("Santa Escolastica", "Blanco"),
+    (2, 5):   ("Santa Águeda, virgen y mártir", "Rojo"),
+    (2, 6):   ("San Pablo Miki y compañeros, mártires", "Rojo"),
+    (2, 8):   ("San Jerónimo Emiliani / Santa Josefina Bakhita", "Blanco"),
+    (2, 10):  ("Santa Escolástica", "Blanco"),
     (2, 14):  ("Santos Cirilo y Metodio", "Blanco"),
     (2, 17):  ("Los Siete Santos Fundadores de los Servitas", "Blanco"),
-    (2, 22):  ("La Catedra de San Pedro", "Fiesta", "Blanco"),
-    (2, 23):  ("San Policarpo, obispo y martir", "Rojo"),
+    (2, 22):  ("La Cátedra de San Pedro", "Fiesta", "Blanco"),
+    (2, 23):  ("San Policarpo, obispo y mártir", "Rojo"),
     # ── MARZO ──
     (3, 4):   ("San Casimiro", "Blanco"),
-    (3, 7):   ("Santas Perpetua y Felicidad, martires", "Rojo"),
+    (3, 7):   ("Santas Perpetua y Felicidad, mártires", "Rojo"),
     (3, 8):   ("San Juan de Dios", "Blanco"),
     (3, 9):   ("Santa Francisca Romana", "Blanco"),
     (3, 17):  ("San Patricio", "Blanco"),
@@ -200,143 +200,143 @@ OBLIGATORY_MEMORIALS = {
     (4, 4):   ("San Isidoro de Sevilla", "Blanco"),  # Espana
     (4, 5):   ("San Vicente Ferrer", "Blanco"),
     (4, 7):   ("San Juan Bautista de La Salle", "Blanco"),
-    (4, 11):  ("San Estanislao, obispo y martir", "Rojo"),
-    (4, 13):  ("San Martin I, papa y martir", "Rojo"),
-    (4, 23):  ("San Jorge, martir / San Adalberto", "Rojo"),
+    (4, 11):  ("San Estanislao, obispo y mártir", "Rojo"),
+    (4, 13):  ("San Martín I, papa y mártir", "Rojo"),
+    (4, 23):  ("San Jorge, mártir / San Adalberto", "Rojo"),
     (4, 25):  ("San Marcos, evangelista", "Fiesta", "Rojo"),
-    (4, 28):  ("San Pedro Chanel, martir", "Rojo"),
+    (4, 28):  ("San Pedro Chanel, mártir", "Rojo"),
     (4, 29):  ("Santa Catalina de Siena, virgen y doctora, patrona de Europa", "Fiesta", "Blanco"),
-    (4, 30):  ("San Pio V, papa", "Blanco"),
+    (4, 30):  ("San Pío V, papa", "Blanco"),
     # ── MAYO ──
-    (5, 1):   ("San Jose Obrero", "Blanco"),
+    (5, 1):   ("San José Obrero", "Blanco"),
     (5, 2):   ("San Atanasio, obispo y doctor", "Blanco"),
-    (5, 3):   ("Santos Felipe y Santiago, Apostoles", "Fiesta", "Rojo"),
-    (5, 10):  ("San Juan de Avila", "Blanco"),  # Espana
-    (5, 12):  ("Santos Nereo y Aquileo, martires", "Rojo"),
-    (5, 13):  ("Nuestra Senora de Fatima", "Blanco"),
-    (5, 14):  ("San Matias, Apostol", "Fiesta", "Rojo"),
-    (5, 18):  ("San Juan I, papa y martir", "Rojo"),
+    (5, 3):   ("Santos Felipe y Santiago, Apóstoles", "Fiesta", "Rojo"),
+    (5, 10):  ("San Juan de Ávila", "Blanco"),  # Espana
+    (5, 12):  ("Santos Nereo y Aquileo, mártires", "Rojo"),
+    (5, 13):  ("Nuestra Señora de Fátima", "Blanco"),
+    (5, 14):  ("San Matías, Apóstol", "Fiesta", "Rojo"),
+    (5, 18):  ("San Juan I, papa y mártir", "Rojo"),
     (5, 20):  ("San Bernardino de Siena", "Blanco"),
     (5, 22):  ("Santa Rita de Casia", "Blanco"),
     (5, 25):  ("San Beda el Venerable / San Gregorio VII / Santa M. Magdalena de Pazzi", "Blanco"),
     (5, 26):  ("San Felipe Neri", "Blanco"),
-    (5, 27):  ("San Agustin de Canterbury", "Blanco"),
-    (5, 31):  ("La Visitacion de la Virgen Maria", "Fiesta", "Blanco"),
+    (5, 27):  ("San Agustín de Canterbury", "Blanco"),
+    (5, 31):  ("La Visitación de la Virgen María", "Fiesta", "Blanco"),
     # ── JUNIO ──
-    (6, 1):   ("San Justino, martir", "Rojo"),
-    (6, 2):   ("Santos Marcelino y Pedro, martires", "Rojo"),
-    (6, 3):   ("San Carlos Lwanga y companeros, martires", "Rojo"),
-    (6, 5):   ("San Bonifacio, obispo y martir", "Rojo"),
-    (6, 9):   ("San Efren, diacono y doctor", "Blanco"),
-    (6, 11):  ("San Bernabe, Apostol", "Fiesta", "Rojo"),
+    (6, 1):   ("San Justino, mártir", "Rojo"),
+    (6, 2):   ("Santos Marcelino y Pedro, mártires", "Rojo"),
+    (6, 3):   ("San Carlos Lwanga y compañeros, mártires", "Rojo"),
+    (6, 5):   ("San Bonifacio, obispo y mártir", "Rojo"),
+    (6, 9):   ("San Efrén, diácono y doctor", "Blanco"),
+    (6, 11):  ("San Bernabé, Apóstol", "Fiesta", "Rojo"),
     (6, 13):  ("San Antonio de Padua", "Blanco"),
     (6, 21):  ("San Luis Gonzaga", "Blanco"),
-    (6, 22):  ("San Paulino de Nola / Santos Juan Fisher y Tomas Moro", "Blanco"),
-    (6, 27):  ("San Cirilo de Alejandria", "Blanco"),
-    (6, 28):  ("San Ireneo, obispo y martir", "Rojo"),
+    (6, 22):  ("San Paulino de Nola / Santos Juan Fisher y Tomás Moro", "Blanco"),
+    (6, 27):  ("San Cirilo de Alejandría", "Blanco"),
+    (6, 28):  ("San Ireneo, obispo y mártir", "Rojo"),
     # ── JULIO ──
-    (7, 3):   ("Santo Tomas, Apostol", "Fiesta", "Rojo"),
+    (7, 3):   ("Santo Tomás, Apóstol", "Fiesta", "Rojo"),
     (7, 4):   ("Santa Isabel de Portugal", "Blanco"),
-    (7, 5):   ("San Antonio Maria Zaccaria", "Blanco"),
-    (7, 6):   ("Santa Maria Goretti, virgen y martir", "Rojo"),
+    (7, 5):   ("San Antonio María Zaccaria", "Blanco"),
+    (7, 6):   ("Santa María Goretti, virgen y mártir", "Rojo"),
     (7, 11):  ("San Benito, abad", "Blanco"),
     (7, 13):  ("San Enrique", "Blanco"),
     (7, 14):  ("San Camilo de Lelis", "Blanco"),
     (7, 15):  ("San Buenaventura, obispo y doctor", "Blanco"),
-    (7, 16):  ("Nuestra Senora del Carmen", "Blanco"),  # Importante en Espana
-    (7, 22):  ("Santa Maria Magdalena", "Fiesta", "Blanco"),
-    (7, 23):  ("Santa Brigida, religiosa, patrona de Europa", "Fiesta", "Blanco"),
+    (7, 16):  ("Nuestra Señora del Carmen", "Blanco"),  # Importante en Espana
+    (7, 22):  ("Santa María Magdalena", "Fiesta", "Blanco"),
+    (7, 23):  ("Santa Brígida, religiosa, patrona de Europa", "Fiesta", "Blanco"),
     # (7, 25) Santiago Apostol: ver FIXED_FEASTS (Solemnidad en Espana)
-    (7, 26):  ("Santos Joaquin y Ana", "Blanco"),
-    (7, 29):  ("Santa Marta, Maria y Lazaro", "Blanco"),
-    (7, 30):  ("San Pedro Crisologo", "Blanco"),
+    (7, 26):  ("Santos Joaquín y Ana", "Blanco"),
+    (7, 29):  ("Santa Marta, María y Lázaro", "Blanco"),
+    (7, 30):  ("San Pedro Crisólogo", "Blanco"),
     (7, 31):  ("San Ignacio de Loyola", "Blanco"),
     # ── AGOSTO ──
-    (8, 1):   ("San Alfonso Maria de Ligorio", "Blanco"),
-    (8, 2):   ("San Eusebio de Vercelli / San Pedro Julian Eymard", "Blanco"),
-    (8, 4):   ("San Juan Maria Vianney", "Blanco"),
-    (8, 5):   ("Dedicacion de la Basilica de Santa Maria la Mayor", "Blanco"),
-    (8, 7):   ("San Cayetano / Santos Sixto II y companeros", "Blanco"),
-    (8, 8):   ("Santo Domingo de Guzman", "Blanco"),
+    (8, 1):   ("San Alfonso María de Ligorio", "Blanco"),
+    (8, 2):   ("San Eusebio de Vercelli / San Pedro Julián Eymard", "Blanco"),
+    (8, 4):   ("San Juan María Vianney", "Blanco"),
+    (8, 5):   ("Dedicación de la Basílica de Santa María la Mayor", "Blanco"),
+    (8, 7):   ("San Cayetano / Santos Sixto II y compañeros", "Blanco"),
+    (8, 8):   ("Santo Domingo de Guzmán", "Blanco"),
     (8, 9):   ("Santa Teresa Benedicta de la Cruz (Edith Stein)", "Rojo"),
-    (8, 10):  ("San Lorenzo, diacono y martir", "Fiesta", "Rojo"),
+    (8, 10):  ("San Lorenzo, diácono y mártir", "Fiesta", "Rojo"),
     (8, 11):  ("Santa Clara", "Blanco"),
     (8, 12):  ("Santa Juana Francisca de Chantal", "Blanco"),
-    (8, 13):  ("Santos Ponciano e Hipolito, martires", "Rojo"),
-    (8, 14):  ("San Maximiliano Kolbe, martir", "Rojo"),
-    (8, 16):  ("San Esteban de Hungria", "Blanco"),
+    (8, 13):  ("Santos Ponciano e Hipólito, mártires", "Rojo"),
+    (8, 14):  ("San Maximiliano Kolbe, mártir", "Rojo"),
+    (8, 16):  ("San Esteban de Hungría", "Blanco"),
     (8, 19):  ("San Juan Eudes", "Blanco"),
     (8, 20):  ("San Bernardo, abad y doctor", "Blanco"),
-    (8, 21):  ("San Pio X, Papa", "Blanco"),
-    (8, 22):  ("Santa Maria Virgen, Reina", "Blanco"),
+    (8, 21):  ("San Pío X, Papa", "Blanco"),
+    (8, 22):  ("Santa María Virgen, Reina", "Blanco"),
     (8, 23):  ("Santa Rosa de Lima", "Blanco"),
-    (8, 24):  ("San Bartolome, Apostol", "Fiesta", "Rojo"),
-    (8, 25):  ("San Luis / San Jose de Calasanz", "Blanco"),
-    (8, 27):  ("Santa Monica", "Blanco"),
-    (8, 28):  ("San Agustin, obispo y doctor", "Blanco"),
+    (8, 24):  ("San Bartolomé, Apóstol", "Fiesta", "Rojo"),
+    (8, 25):  ("San Luis / San José de Calasanz", "Blanco"),
+    (8, 27):  ("Santa Mónica", "Blanco"),
+    (8, 28):  ("San Agustín, obispo y doctor", "Blanco"),
     (8, 29):  ("Martirio de San Juan Bautista", "Rojo"),
     # ── SEPTIEMBRE ──
     (9, 3):   ("San Gregorio Magno, papa y doctor", "Blanco"),
-    (9, 8):   ("Natividad de la Virgen Maria", "Fiesta", "Blanco"),
+    (9, 8):   ("Natividad de la Virgen María", "Fiesta", "Blanco"),
     (9, 9):   ("San Pedro Claver", "Blanco"),
-    (9, 12):  ("El Dulce Nombre de Maria", "Blanco"),
-    (9, 13):  ("San Juan Crisostomo, obispo y doctor", "Blanco"),
-    (9, 15):  ("Nuestra Senora de los Dolores", "Blanco"),
-    (9, 16):  ("Santos Cornelio y Cipriano, martires", "Rojo"),
+    (9, 12):  ("El Dulce Nombre de María", "Blanco"),
+    (9, 13):  ("San Juan Crisóstomo, obispo y doctor", "Blanco"),
+    (9, 15):  ("Nuestra Señora de los Dolores", "Blanco"),
+    (9, 16):  ("Santos Cornelio y Cipriano, mártires", "Rojo"),
     (9, 17):  ("San Roberto Belarmino", "Blanco"),
-    (9, 19):  ("San Jenaro, obispo y martir", "Rojo"),
-    (9, 20):  ("Santos Andres Kim, Pablo Chong y companeros, martires", "Rojo"),
-    (9, 21):  ("San Mateo, Apostol y evangelista", "Fiesta", "Rojo"),
-    (9, 23):  ("San Pio de Pietrelcina", "Blanco"),
-    (9, 26):  ("Santos Cosme y Damian, martires", "Rojo"),
-    (9, 27):  ("San Vicente de Paul", "Blanco"),
-    (9, 29):  ("Santos Arcangeles Miguel, Gabriel y Rafael", "Fiesta", "Blanco"),
-    (9, 30):  ("San Jeronimo, presbitero y doctor", "Blanco"),
+    (9, 19):  ("San Jenaro, obispo y mártir", "Rojo"),
+    (9, 20):  ("Santos Andrés Kim, Pablo Chong y compañeros, mártires", "Rojo"),
+    (9, 21):  ("San Mateo, Apóstol y evangelista", "Fiesta", "Rojo"),
+    (9, 23):  ("San Pío de Pietrelcina", "Blanco"),
+    (9, 26):  ("Santos Cosme y Damián, mártires", "Rojo"),
+    (9, 27):  ("San Vicente de Paúl", "Blanco"),
+    (9, 29):  ("Santos Arcángeles Miguel, Gabriel y Rafael", "Fiesta", "Blanco"),
+    (9, 30):  ("San Jerónimo, presbítero y doctor", "Blanco"),
     # ── OCTUBRE ──
-    (10, 1):  ("Santa Teresa del Nino Jesus", "Blanco"),
-    (10, 2):  ("Santos Angeles Custodios", "Blanco"),
-    (10, 4):  ("San Francisco de Asis", "Blanco"),
+    (10, 1):  ("Santa Teresa del Niño Jesús", "Blanco"),
+    (10, 2):  ("Santos Ángeles Custodios", "Blanco"),
+    (10, 4):  ("San Francisco de Asís", "Blanco"),
     (10, 6):  ("San Bruno", "Blanco"),
-    (10, 7):  ("Nuestra Senora del Rosario", "Blanco"),
-    (10, 9):  ("Santos Dionisio y companeros / San Juan Leonardi", "Rojo"),
-    (10, 14): ("San Calixto I, papa y martir", "Rojo"),
-    (10, 15): ("Santa Teresa de Jesus", "Blanco"),  # Espana
-    (10, 16): ("Santa Margarita Maria de Alacoque / Santa Eduvigis", "Blanco"),
-    (10, 17): ("San Ignacio de Antioquia, obispo y martir", "Rojo"),
+    (10, 7):  ("Nuestra Señora del Rosario", "Blanco"),
+    (10, 9):  ("Santos Dionisio y compañeros / San Juan Leonardi", "Rojo"),
+    (10, 14): ("San Calixto I, papa y mártir", "Rojo"),
+    (10, 15): ("Santa Teresa de Jesús", "Blanco"),  # Espana
+    (10, 16): ("Santa Margarita María de Alacoque / Santa Eduvigis", "Blanco"),
+    (10, 17): ("San Ignacio de Antioquía, obispo y mártir", "Rojo"),
     (10, 18): ("San Lucas, evangelista", "Fiesta", "Rojo"),
-    (10, 19): ("Santos Juan de Brebeuf, Isaac Jogues y companeros / San Pablo de la Cruz", "Rojo"),
+    (10, 19): ("Santos Juan de Brébeuf, Isaac Jogues y compañeros / San Pablo de la Cruz", "Rojo"),
     (10, 22): ("San Juan Pablo II, papa", "Blanco"),
     (10, 23): ("San Juan de Capistrano", "Blanco"),
-    (10, 24): ("San Antonio Maria Claret", "Blanco"),  # Espana
-    (10, 28): ("Santos Simon y Judas, Apostoles", "Fiesta", "Rojo"),
+    (10, 24): ("San Antonio María Claret", "Blanco"),  # Espana
+    (10, 28): ("Santos Simón y Judas, Apóstoles", "Fiesta", "Rojo"),
     # ── NOVIEMBRE ──
-    (11, 3):  ("San Martin de Porres", "Blanco"),
+    (11, 3):  ("San Martín de Porres", "Blanco"),
     (11, 4):  ("San Carlos Borromeo", "Blanco"),
-    (11, 9):  ("Dedicacion de la Basilica de Letran", "Fiesta", "Blanco"),
-    (11, 10): ("San Leon Magno, papa y doctor", "Blanco"),
-    (11, 11): ("San Martin de Tours, obispo", "Blanco"),
-    (11, 12): ("San Josafat, obispo y martir", "Rojo"),
+    (11, 9):  ("Dedicación de la Basílica de Letrán", "Fiesta", "Blanco"),
+    (11, 10): ("San León Magno, papa y doctor", "Blanco"),
+    (11, 11): ("San Martín de Tours, obispo", "Blanco"),
+    (11, 12): ("San Josafat, obispo y mártir", "Rojo"),
     (11, 15): ("San Alberto Magno, obispo y doctor", "Blanco"),
     (11, 16): ("Santa Margarita de Escocia / Santa Gertrudis", "Blanco"),
-    (11, 17): ("Santa Isabel de Hungria", "Blanco"),
-    (11, 21): ("Presentacion de la Virgen Maria", "Blanco"),
-    (11, 22): ("Santa Cecilia, virgen y martir", "Rojo"),
+    (11, 17): ("Santa Isabel de Hungría", "Blanco"),
+    (11, 21): ("Presentación de la Virgen María", "Blanco"),
+    (11, 22): ("Santa Cecilia, virgen y mártir", "Rojo"),
     (11, 23): ("San Clemente I / San Columbano", "Blanco"),
-    (11, 24): ("Santos Andres Dung-Lac y companeros, martires", "Rojo"),
-    (11, 30): ("San Andres, Apostol", "Fiesta", "Rojo"),
+    (11, 24): ("Santos Andrés Dung-Lac y compañeros, mártires", "Rojo"),
+    (11, 30): ("San Andrés, Apóstol", "Fiesta", "Rojo"),
     # ── DICIEMBRE ──
     (12, 3):  ("San Francisco Javier", "Blanco"),
     (12, 4):  ("San Juan Damasceno", "Blanco"),
-    (12, 6):  ("San Nicolas, obispo", "Blanco"),
+    (12, 6):  ("San Nicolás, obispo", "Blanco"),
     (12, 7):  ("San Ambrosio, obispo y doctor", "Blanco"),
-    (12, 11): ("San Damaso I, papa", "Blanco"),
-    (12, 12): ("Nuestra Senora de Guadalupe", "Blanco"),
-    (12, 13): ("Santa Lucia, virgen y martir", "Rojo"),
+    (12, 11): ("San Dámaso I, papa", "Blanco"),
+    (12, 12): ("Nuestra Señora de Guadalupe", "Blanco"),
+    (12, 13): ("Santa Lucía, virgen y mártir", "Rojo"),
     (12, 14): ("San Juan de la Cruz", "Blanco"),
-    (12, 26): ("San Esteban, protomartir", "Fiesta", "Rojo"),
-    (12, 27): ("San Juan, Apostol y evangelista", "Fiesta", "Blanco"),
-    (12, 28): ("Santos Inocentes, martires", "Fiesta", "Rojo"),
-    (12, 29): ("Santo Tomas Becket, obispo y martir", "Rojo"),
+    (12, 26): ("San Esteban, protomártir", "Fiesta", "Rojo"),
+    (12, 27): ("San Juan, Apóstol y evangelista", "Fiesta", "Blanco"),
+    (12, 28): ("Santos Inocentes, mártires", "Fiesta", "Rojo"),
+    (12, 29): ("Santo Tomás Becket, obispo y mártir", "Rojo"),
     (12, 31): ("San Silvestre I, papa", "Blanco"),
 }
 
@@ -438,31 +438,31 @@ def movable_feasts(year: int) -> dict:
 
     # Santisima Trinidad: domingo despues de Pentecostes
     trinity = pent + timedelta(days=7)
-    feasts[trinity] = ("Santisima Trinidad", "Solemnidad", "Blanco")
+    feasts[trinity] = ("Santísima Trinidad", "Solemnidad", "Blanco")
 
     # Corpus Christi: en Espana se celebra el domingo despues de Trinidad
     corpus = trinity + timedelta(days=7)
-    feasts[corpus] = ("Santisimo Cuerpo y Sangre de Cristo (Corpus Christi)", "Solemnidad", "Blanco")
+    feasts[corpus] = ("Santísimo Cuerpo y Sangre de Cristo (Corpus Christi)", "Solemnidad", "Blanco")
 
     # Sagrado Corazon de Jesus: viernes de la 3a semana despues de Pentecostes
     sacred_heart = pent + timedelta(days=19)
-    feasts[sacred_heart] = ("Sagrado Corazon de Jesus", "Solemnidad", "Blanco")
+    feasts[sacred_heart] = ("Sagrado Corazón de Jesús", "Solemnidad", "Blanco")
 
     # Inmaculado Corazon de Maria: sabado despues del Sagrado Corazon
-    feasts[sacred_heart + timedelta(days=1)] = ("Inmaculado Corazon de la Virgen Maria", "Memoria Obligatoria", "Blanco")
+    feasts[sacred_heart + timedelta(days=1)] = ("Inmaculado Corazón de la Virgen María", "Memoria Obligatoria", "Blanco")
 
     # BVM Madre de la Iglesia: lunes despues de Pentecostes (desde 2018)
     bvm_madre = pent + timedelta(days=1)
-    feasts[bvm_madre] = ("Bienaventurada Virgen Maria, Madre de la Iglesia", "Memoria Obligatoria", "Blanco")
+    feasts[bvm_madre] = ("Bienaventurada Virgen María, Madre de la Iglesia", "Memoria Obligatoria", "Blanco")
 
     # Cristo Rey: ultimo domingo del TO (34a semana) = domingo antes de Adviento
     adv = advent_start(year)
     christ_king = adv - timedelta(days=7)
-    feasts[christ_king] = ("Nuestro Senor Jesucristo, Rey del Universo", "Solemnidad", "Blanco")
+    feasts[christ_king] = ("Nuestro Señor Jesucristo, Rey del Universo", "Solemnidad", "Blanco")
 
     # Ascension: en Espana se celebra el domingo (7o de Pascua) = Pascua + 42
     ascension = e + timedelta(days=42)
-    feasts[ascension] = ("La Ascension del Senor", "Solemnidad", "Blanco")
+    feasts[ascension] = ("La Ascensión del Señor", "Solemnidad", "Blanco")
 
     return feasts
 
@@ -556,7 +556,7 @@ def compute_transfers(year: int) -> dict:
             continue
 
         # I.2 solemnities (Navidad, Epifania) are never impeded
-        if name in _LEVEL_I2_NAMES or name == "Natividad del Senor":
+        if name in _LEVEL_I2_NAMES or name == "Natividad del Señor":
             continue
 
         # Spain-specific: Inmaculada on Advent Sunday is NOT transferred
@@ -574,7 +574,7 @@ def compute_transfers(year: int) -> dict:
         if palm <= d <= octave_end:
             transfer_to = mon_after_octave
             # San Jose in Holy Week -> Saturday before Palm Sunday (Spain, Art.18)
-            if "Jose" in name and palm <= d < e:
+            if ("José" in name or "Jose" in name) and palm <= d < e:
                 transfer_to = palm - timedelta(days=1)
         elif d.isoweekday() == 7:
             transfer_to = d + timedelta(days=1)
@@ -699,15 +699,15 @@ def calculate(d: date) -> dict:
             result["season"] = "Semana Santa"
             result["weekday_cycle"] = ""
             if is_sunday:
-                result["name"] = "Domingo de Ramos en la Pasion del Senor"
+                result["name"] = "Domingo de Ramos en la Pasión del Señor"
                 result["color"] = "Rojo"
                 result["rank"] = "Solemnidad"
             elif wd == 4:  # Thursday
-                result["name"] = "Jueves Santo - La Cena del Senor"
+                result["name"] = "Jueves Santo - La Cena del Señor"
                 result["color"] = "Blanco"
                 result["rank"] = "Solemnidad"
             elif wd == 5:  # Friday
-                result["name"] = "Viernes Santo - La Pasion del Senor"
+                result["name"] = "Viernes Santo - La Pasión del Señor"
                 result["color"] = "Rojo"
                 result["rank"] = "Solemnidad"
             elif wd == 6:  # Saturday
@@ -726,7 +726,7 @@ def calculate(d: date) -> dict:
                 result["name"] = "Miércoles de Ceniza"
                 result["rank"] = "Feria"
             elif d < ash_wed + timedelta(days=4):
-                result["name"] = f"{day_name} despues de Ceniza"
+                result["name"] = f"{day_name} después de Ceniza"
                 result["rank"] = "Feria"
             else:
                 # Ceniza siempre es miercoles → I Domingo de Cuaresma = ceniza + 4
@@ -755,10 +755,10 @@ def calculate(d: date) -> dict:
         week_num = week_of(e, d)
         if is_sunday:
             if week_num == 1:
-                result["name"] = "Domingo de Resurreccion"
+                result["name"] = "Domingo de Resurrección"
                 result["rank"] = "Solemnidad"
             elif week_num == 8:
-                result["name"] = "Domingo de Pentecostes"
+                result["name"] = "Domingo de Pentecostés"
                 result["color"] = "Rojo"
                 result["rank"] = "Solemnidad"
             else:
@@ -817,7 +817,7 @@ def calculate(d: date) -> dict:
         result["color"] = "Blanco"
         result["weekday_cycle"] = ""
         if m == 12 and day == 25:
-            result["name"] = "Natividad del Senor"
+            result["name"] = "Natividad del Señor"
             result["rank"] = "Solemnidad"
         elif m == 12 and 26 <= day <= 31:
             # Octava de Navidad
@@ -832,18 +832,18 @@ def calculate(d: date) -> dict:
                     result["memorial_rank"] = mem_rank
                     result["memorial_color"] = mem_color
             else:
-                result["name"] = f"Dia {day - 24} de la Octava de Navidad"
+                result["name"] = f"Día {day - 24} de la Octava de Navidad"
                 result["rank"] = "Feria"
             # Sagrada Familia: domingo en la Octava de Navidad
             if is_sunday:
-                result["name"] = "La Sagrada Familia de Jesus, Maria y Jose"
+                result["name"] = "La Sagrada Familia de Jesús, María y José"
                 result["rank"] = "Fiesta"
             # Si Navidad cae en domingo, no hay otro domingo en la octava → Sagrada Familia = 30 dic
             elif xmas.isoweekday() == 7 and day == 30:
-                result["name"] = "La Sagrada Familia de Jesus, Maria y Jose"
+                result["name"] = "La Sagrada Familia de Jesús, María y José"
                 result["rank"] = "Fiesta"
         elif m == 1 and day == 1:
-            result["name"] = "Santa Maria, Madre de Dios"
+            result["name"] = "Santa María, Madre de Dios"
             result["rank"] = "Solemnidad"
         elif m == 1 and day < 6:
             if is_sunday:
@@ -853,10 +853,10 @@ def calculate(d: date) -> dict:
                 result["name"] = f"Feria del Tiempo de Navidad ({day} enero)"
                 result["rank"] = "Feria"
         elif m == 1 and day == 6:
-            result["name"] = "Epifania del Senor"
+            result["name"] = "Epifanía del Señor"
             result["rank"] = "Solemnidad"
         elif d == baptism:
-            result["name"] = "El Bautismo del Senor"
+            result["name"] = "El Bautismo del Señor"
             result["rank"] = "Fiesta"
         else:
             result["name"] = f"Feria del Tiempo de Navidad ({day} enero)"
@@ -1046,7 +1046,7 @@ def _build_dominical_key(result: dict) -> str | None:
     if "Fieles Difuntos" in name: return "fieles_difuntos"
     if "Inmaculada" in name: return "inmaculada"
     if "Pedro y Pablo" in name: return "pedro_y_pablo"
-    if "Santiago" in name and "Patron" in name: return "santiago"
+    if "Santiago" in name and ("Patrón" in name or "Patron" in name): return "santiago"
     if "Pilar" in name: return "pilar"
     if "Inmaculado Corazon" in name or "Inmaculado Corazón" in name: return "inmaculado_corazon"
 
@@ -1143,7 +1143,7 @@ def _build_ferial_fuerte_key(result: dict) -> str | None:
 # Proper gospel overrides for movable Memoria Obligatoria feasts
 # (no fixed santos entry — date changes each year)
 MOVABLE_MEMORIAL_GOSPEL = {
-    "Bienaventurada Virgen Maria, Madre de la Iglesia": {
+    "Bienaventurada Virgen María, Madre de la Iglesia": {
         "titulo": "Ahí tienes a tu hijo. Ahí tienes a tu madre",
         "cita": "Juan 19, 25-27",
         "texto": (
@@ -1157,7 +1157,7 @@ MOVABLE_MEMORIAL_GOSPEL = {
             "Y desde aquella hora, el discípulo la recibió en su casa."
         ),
     },
-    "Inmaculado Corazon de la Virgen Maria": {
+    "Inmaculado Corazón de la Virgen María": {
         "titulo": "Tu padre y yo te buscábamos angustiados",
         "cita": "Lucas 2, 41-51",
         "texto": (
