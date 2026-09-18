@@ -20,7 +20,8 @@ sys.path.insert(0, str(ROOT))
 
 import generate_site as g  # noqa: E402
 from context_labels import (  # noqa: E402
-    CALENDAR_KEY_LABELS, CATEGORY_LABELS, calendar_key_label, ritual_title,
+    _EXCEPCIONES, CALENDAR_KEY_LABELS, CATEGORY_LABELS, calendar_key_label,
+    ritual_title,
 )
 
 _NUMERADA = re.compile(r"^(to|adviento|cuaresma|pascua)_\d+$|^(adviento|cuaresma|pascua)_\d+_[a-z]+$")
@@ -113,5 +114,16 @@ def test_euskera_usa_las_cadenas_ya_validadas():
 
 
 def test_ritual_title_baja_a_frase():
-    assert ritual_title("En La Administración Del Viático").startswith("En la administración del ")
+    assert ritual_title("En La Administración Del Viático") == "En la administración del Viático"
     assert ritual_title("Por Los Esposos") == "Por los esposos"
+    assert ritual_title("De San Pedro Y San Pablo, Apóstoles") == "De san Pedro y san Pablo, apóstoles"
+
+
+def test_toda_excepcion_de_titulo_existe_en_el_json(entries):
+    """Una excepcion cuyo titulo ya no esta en el canonico deja de aplicar en
+    silencio: aqui tumba el test."""
+    titulos = {e["titulo"] for e in entries["es"] if e.get("titulo")}
+    huerfanas = [t for t in _EXCEPCIONES if t not in titulos]
+    assert not huerfanas, huerfanas
+    for t, frase in _EXCEPCIONES.items():
+        assert ritual_title(t) == frase

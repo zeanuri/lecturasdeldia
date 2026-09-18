@@ -134,9 +134,22 @@ CATEGORY_LABELS: dict[str, dict[str, str]] = {
     "evangelio":          {"es": "evangelio",          "eu": "ebanjelioa"},
 }
 
-# Palabras que conservan mayuscula al pasar un titulo de ritual a frase.
-# TODO(human): completar este conjunto (ver la peticion en la conversacion).
-_MAYUSCULAS: set[str] = set()
+# Palabras que conservan mayuscula al pasar un titulo de ritual a frase
+# (conjunto fijado por el usuario el 2026-09-18).
+_MAYUSCULAS: set[str] = {
+    "Señor", "Jesucristo", "Jesús", "Dios", "Espíritu", "Santo", "María",
+    "Virgen", "Madre", "Iglesia", "Trinidad", "Eucaristía", "Cruz", "Vigilia",
+    "Pascual", "Sagrado", "Corazón", "Santísima", "Santísimo", "Sangre", "Nombre",
+    "Viático", "José", "Pedro", "Pablo",
+}
+
+# Titulos donde una palabra de _MAYUSCULAS va en minuscula por su sentido
+# (iglesia = edificio). Clave = titulo tal como viene del JSON. «De Un Santo
+# Apóstol» (santo = adjetivo) no esta: esa votiva solo tiene `ref`, sin
+# lecturas propias, y nunca llega a /libros/.
+_EXCEPCIONES: dict[str, str] = {
+    "En La Dedicación De Una Iglesia": "En la dedicación de una iglesia",
+}
 
 
 def ritual_title(titulo: str) -> str:
@@ -147,6 +160,8 @@ def ritual_title(titulo: str) -> str:
     de _MAYUSCULAS. Sale en castellano en las dos lenguas: no hay traduccion
     validada de estas formulas y el sitio no inventa.
     """
+    if titulo in _EXCEPCIONES:
+        return _EXCEPCIONES[titulo]
     palabras = titulo.split()
     out = []
     for i, p in enumerate(palabras):
