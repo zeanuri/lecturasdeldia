@@ -116,6 +116,10 @@
     <button id="expand-all">&#128214; {{ i18n.expand_all_collapse }}</button>
     <button id="download-txt">&#128229; {{ i18n.download_txt }}</button>
     <a href="{% if lang == 'eu' %}/eu/bilatu/{% else %}/buscar/{% endif %}" class="action-link" title="{{ i18n.search_btn }}">&#128269; {{ i18n.search_btn }}</a>
+    {% if lang == 'es' %}
+    <a href="/domingo/" class="action-link" title="Evangelio y lecturas del próximo domingo">&#9962; Domingo</a>
+    <a href="/calendario/" class="action-link" title="Calendario litúrgico del año">&#128197; Calendario</a>
+    {% endif %}
   </div>
 
   <section class="readings">

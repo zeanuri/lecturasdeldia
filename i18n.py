@@ -50,7 +50,9 @@ I18N_ES = {
                      "segunda lectura cuando corresponde— con los textos oficiales "
                      "del leccionario de la Conferencia Episcopal Española.",
     "home_intro_p2": 'Puedes consultar las lecturas de cualquier fecha del '
-                     'calendario litúrgico, <a href="/buscar/">buscar por cita '
+                     '<a href="/calendario/">calendario litúrgico</a> o las '
+                     '<a href="/domingo/">del próximo domingo</a>, '
+                     '<a href="/buscar/">buscar por cita '
                      'bíblica, santo o celebración</a>, explorar las '
                      '<a href="/libros/">citas del leccionario libro por libro</a> '
                      'o leer las lecturas <a href="/eu/">en euskera</a>. '
