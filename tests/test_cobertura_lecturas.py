@@ -50,7 +50,7 @@ CLAVES_SIN_PRIMERA = {"vigilia_pascual"}
 
 # Huecos tolerados. Vacio desde el 07-08-2026: los que habia (6 ferias del ciclo
 # ferial I, cristo_rey y corpus del ciclo B, y 4 santos con el salmo remitido al
-# Comun) se repararon con leccionarios/CEE/fill_missing_ferial.py y
+# Comun) se repararon con projects/leccionarios/CEE/fill_missing_ferial.py y
 # fill_santos_salmo_comun.py. Si algo vuelve a aparecer aqui, se repara, no se
 # anade a esta lista.
 HUECOS_CONOCIDOS = set()

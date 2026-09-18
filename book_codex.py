@@ -406,14 +406,32 @@ def _classify_path(path: tuple[str, ...]) -> dict:
             "slug": path[1] if len(path) > 1 else "",
             "slot": path[-1],
         }
-    if top in ("rituales", "diversas_necesidades", "votivas", "lecturas",
-               "moniciones_entrada", "oraciones_fieles"):
+    if top in ("rituales", "diversas_necesidades", "votivas"):
+        # path = (top, formula, categoria, "[i]"): la formula es el contexto,
+        # la categoria (antiguo_testamento, salmo...) la ranura, y el indice
+        # de la lista, el numero de la lectura dentro de la categoria.
         return {
             "section": top,
-            "slug": "/".join(path[1:-1]),
+            "slug": path[1] if len(path) > 1 else "",
+            "slot": path[2] if len(path) > 2 else "",
+            "n": _list_index(path[-1]),
+        }
+    if top in ("lecturas", "moniciones_entrada", "oraciones_fieles"):
+        # Difuntos: path = (top, "[i]", ranura). El formulario es el indice + 1
+        # (la lista va numerada 1..N en ese orden).
+        n = _list_index(path[1]) if len(path) > 1 else None
+        return {
+            "section": top,
+            "slug": str(n + 1) if n is not None else "",
             "slot": path[-1],
         }
     return {"section": top, "slug": "/".join(path[1:-1]), "slot": path[-1]}
+
+
+def _list_index(seg: str) -> int | None:
+    """'[3]' -> 3; cualquier otra cosa -> None."""
+    m = re.fullmatch(r"\[(\d+)\]", seg)
+    return int(m.group(1)) if m else None
 
 
 def walk_citas(data, path: tuple = ()) -> Iterator[tuple[str, str, dict]]:

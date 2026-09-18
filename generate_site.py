@@ -34,6 +34,9 @@ from book_codex import (
     slug_for,
     walk_citas,
 )
+from context_labels import (
+    CATEGORY_LABELS, calendar_key_label, formulario_label, ritual_title,
+)
 from liturgical_names_eu import (
     localize_name as localize_liturgical_name,
     localize_memorial,
@@ -872,11 +875,23 @@ def _collect_book_citas(lectionaries: dict[str, dict]) -> dict[str, list[dict]]:
                 "cycle": ctx.get("cycle"),
                 "slug": ctx.get("slug", ""),
                 "slot": ctx.get("slot", ""),
+                "n": ctx.get("n"),
+                # Rituales y necesidades: el titulo de la formula vive en el
+                # JSON junto a sus lecturas; walk_citas lo salta como hoja.
+                "titulo": _formula_titulo(lec_data, ctx),
                 "source": lec_label,
             }
             by_book.setdefault(book, []).append(entry)
 
     return by_book
+
+
+def _formula_titulo(lec_data: dict, ctx: dict) -> str:
+    section, slug = ctx.get("section", ""), ctx.get("slug", "")
+    if section not in ("rituales", "diversas_necesidades", "votivas"):
+        return ""
+    formula = (lec_data.get(section) or {}).get(slug) or {}
+    return formula.get("titulo", "") if isinstance(formula, dict) else ""
 
 
 def _books_for_lang(by_book: dict[str, list[dict]], lang: str) -> dict[str, list[dict]]:
@@ -954,6 +969,16 @@ def _format_label(entry: dict, lang: str) -> str:
         },
     }[lang]
 
+    if section in ("rituales", "diversas_necesidades", "votivas"):
+        return ritual_title(entry.get("titulo") or slug.replace("_", " ").capitalize())
+    if section in ("lecturas", "moniciones_entrada", "oraciones_fieles") and slug.isdigit():
+        return formulario_label(int(slug), lang)
+
+    if section in ("dominical", "ferial_fuerte"):
+        fijo = calendar_key_label(slug, lang)
+        if fijo:
+            return fijo if section == "ferial_fuerte" else f"{fijo} ({L['cycle']} {cycle})"
+
     if section == "dominical":
         if slug.startswith("to_"):
             try:
@@ -1003,7 +1028,13 @@ def _format_label(entry: dict, lang: str) -> str:
     return slug.replace("_", " ").replace("/", " · ")
 
 
-def _slot_label(slot: str, lang: str) -> str:
+def _slot_label(slot: str, lang: str, n: int | None = None) -> str:
+    """Ranura de la cita. En rituales y necesidades la ranura es la categoria
+    del leccionario (Antiguo Testamento, salmo...) y `n` el numero de lectura
+    dentro de ella."""
+    if slot in CATEGORY_LABELS:
+        base = CATEGORY_LABELS[slot][lang]
+        return f"{base} {n + 1}" if n is not None else base
     labels = {
         "es": {
             "primera": "1ª lectura", "primera_alt": "1ª lectura (alt.)",
@@ -1041,12 +1072,14 @@ def generate_libro_page(book: str, entries: list[dict], outdir, templates, lang:
         grouped.setdefault(e["group"], []).append({
             "cita": cita_localized,
             "label": _format_label(e, lang),
-            "slot": _slot_label(e["slot"], lang),
+            "slot": _slot_label(e["slot"], lang, e.get("n")),
+            # Formularios de difuntos: 1..21 por numero, no "1, 10, 11, 2".
+            "orden": int(e["slug"]) if e["slug"].isdigit() else 0,
         })
 
     # Sort each group by label (rough chronological/canonical order within group)
     for g in grouped:
-        grouped[g].sort(key=lambda x: (x["label"], x["cita"]))
+        grouped[g].sort(key=lambda x: (x["orden"], x["label"], x["cita"]))
 
     # Order groups by liturgical priority
     ordered_groups = sorted(
