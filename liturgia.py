@@ -910,6 +910,7 @@ def calculate(d: date) -> dict:
         mem_name, mem_rank, mem_color = parse_memorial(OBLIGATORY_MEMORIALS[key])
         if mem_rank == "Fiesta":
             is_privileged = (
+                "Ceniza" in result.get("name", "") or          # Miércoles de Ceniza (Art. 59 I.2) vence a la Cátedra de San Pedro (22-II-2023)
                 result.get("season") == "Semana Santa" or
                 result.get("rank") in ("Solemnidad", "Feria privilegiada") or
                 (result.get("season") == "Tiempo de Pascua" and week_of(e, d) == 1)
@@ -1028,7 +1029,7 @@ def _build_dominical_key(result: dict) -> str | None:
     if "Cristo Rey" in name or "Rey del Universo" in name: return "cristo_rey"
 
     # Christmas cycle
-    if "Natividad" in name and "San Juan" not in name: return "natividad_dia"
+    if "Natividad" in name and "San Juan" not in name and "Virgen" not in name and "María" not in name: return "natividad_dia"
     if "Epifanía" in name or "Epifania" in name: return "epifania"
     if "Bautismo" in name: return "bautismo"
     if "Sagrada Familia" in name: return "sagrada_familia"
