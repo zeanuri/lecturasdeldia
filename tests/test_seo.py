@@ -135,7 +135,8 @@ class TestDomingo:
 
     def test_domingo_title_targets_sunday_queries(self, built_site):
         html = _read(built_site, "domingo", "index.html")
-        assert "Evangelio del domingo y lecturas de la Misa dominical" in html
+        # Titulo = consulta literal (GSC 2026-09-21: "lecturas del proximo domingo").
+        assert "<title>Evangelio y lecturas del próximo domingo — " in html
 
     def test_domingo_is_article_not_website(self, built_site):
         # A section, not the site root: emits Article but not the WebSite/SearchAction.

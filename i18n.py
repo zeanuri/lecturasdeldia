@@ -34,7 +34,11 @@ I18N_ES = {
     # Meta / OG
     "meta_description_default": "Lecturas de la Misa del día — Conferencia Episcopal Española",
     "og_description_default": "Lecturas de la Misa del día — CEE",
-    "dia_title_prefix": "Lecturas del",
+    # GSC 2026-09-21 (28 d): la consulta con mas impresiones de una pagina de dia
+    # fue "evangelio 8 de septiembre 2026" (1.637 impr., posicion 8,4, CTR 0,5 %) y
+    # el titulo no contenia "evangelio". Lidera con las dos palabras que la gente
+    # teclea; coincide ademas con el anchor de bizkeliza ("evangelio y lecturas").
+    "dia_title_prefix": "Evangelio y lecturas del",
     "home_title_prefix": "Evangelio de hoy y lecturas de la Misa",
     "home_meta_description": "Evangelio de hoy y lecturas de la Misa del día, con los textos oficiales del leccionario de la Conferencia Episcopal Española",
 
@@ -57,8 +61,11 @@ I18N_ES = {
                      '<a href="/libros/">citas del leccionario libro por libro</a> '
                      'o leer las lecturas <a href="/eu/">en euskera</a>. '
                      'Más información en <a href="/acerca/">Acerca de</a>.',
-    "domingo_title_prefix": "Evangelio del domingo y lecturas de la Misa dominical",
-    "domingo_meta_description": "Evangelio del domingo y lecturas de la Misa dominical, con los textos oficiales del leccionario de la Conferencia Episcopal Española",
+    # GSC 2026-09-21: "lecturas del proximo domingo" (1.183 impr.) y "evangelio del
+    # proximo domingo" (445) rankean a 8,9 con CTR 2-2,6 %; la frase literal no
+    # estaba en el titulo. /domingo/ es siempre el proximo domingo (_next_sunday).
+    "domingo_title_prefix": "Evangelio y lecturas del próximo domingo",
+    "domingo_meta_description": "Evangelio y lecturas de la Misa del próximo domingo, con los textos oficiales del leccionario de la Conferencia Episcopal Española",
     # Meta-descripción base para páginas de día de diario (feria). Se antepone a
     # "{nombre litúrgico}: {citas}" en dia.html. Lidera con "Lecturas y evangelio"
     # para captar ambos términos de búsqueda; "del día" (no "de hoy") porque son
