@@ -250,8 +250,11 @@ def test_solemnidades_en_los_tres_ciclos(leccionario):
 
 def test_los_dos_domingos_que_fallaban(leccionario):
     """Guarda concreta del fallo original, con sus fechas reales."""
+    # XXXIII TO A: el canonico guarda la forma LARGA como lectura del dia
+    # (convencion 2026-09-21, fix_forma_larga.py); la breve 14-15. 19-21
+    # vive anidada en evangelio.forma_breve.
     for iso, esperado in (("2026-09-13", "Mt 18, 21-35"),
-                          ("2026-11-15", "Mt 25, 14-15. 19-21")):
+                          ("2026-11-15", "Mt 25, 14-30")):
         resultado = liturgia.calculate(date.fromisoformat(iso))
         lecturas = liturgia.lookup_readings(resultado, cache=leccionario)
         assert lecturas, f"{iso}: sin lecturas"

@@ -373,6 +373,18 @@ _CITA_SLOTS = ("primera", "primera_alt", "segunda", "segunda_alt",
                "aclamacion", "epistola")
 
 
+def _slot_of(path: tuple[str, ...]) -> str:
+    """Ranura de la cita = ultimo tramo del path, salvo la forma breve.
+
+    Desde 2026-09-21 el canonico guarda la forma LARGA como lectura y la breve
+    anidada en el mismo nodo (`evangelio.forma_breve = {cita, texto}`); la
+    ranura de esa cita es `<lectura>_breve`, no la clave cruda `forma_breve`.
+    """
+    if path[-1] == "forma_breve" and len(path) >= 2:
+        return f"{path[-2]}_breve"
+    return path[-1]
+
+
 def _classify_path(path: tuple[str, ...]) -> dict:
     """Map a JSON path to liturgical context fields. Returns {}-shaped dict."""
     if not path:
@@ -384,7 +396,7 @@ def _classify_path(path: tuple[str, ...]) -> dict:
             "section": "dominical",
             "cycle": path[1],          # A / B / C
             "slug": path[2] if len(path) > 2 else "",
-            "slot": path[-1],
+            "slot": _slot_of(path),
         }
     if top == "ferial_to" and len(path) >= 2:
         cycle = path[1]                # I / II / evangelio
@@ -392,19 +404,19 @@ def _classify_path(path: tuple[str, ...]) -> dict:
             "section": "ferial_to",
             "cycle": cycle if cycle in ("I", "II") else None,
             "slug": path[2] if len(path) > 2 else "",
-            "slot": path[-1],
+            "slot": _slot_of(path),
         }
     if top == "ferial_fuerte":
         return {
             "section": "ferial_fuerte",
             "slug": path[1] if len(path) > 1 else "",
-            "slot": path[-1],
+            "slot": _slot_of(path),
         }
     if top == "santos":
         return {
             "section": "santos",
             "slug": path[1] if len(path) > 1 else "",
-            "slot": path[-1],
+            "slot": _slot_of(path),
         }
     if top in ("rituales", "diversas_necesidades", "votivas"):
         # path = (top, formula, categoria, "[i]"): la formula es el contexto,
@@ -423,9 +435,9 @@ def _classify_path(path: tuple[str, ...]) -> dict:
         return {
             "section": top,
             "slug": str(n + 1) if n is not None else "",
-            "slot": path[-1],
+            "slot": _slot_of(path),
         }
-    return {"section": top, "slug": "/".join(path[1:-1]), "slot": path[-1]}
+    return {"section": top, "slug": "/".join(path[1:-1]), "slot": _slot_of(path)}
 
 
 def _list_index(seg: str) -> int | None:

@@ -384,7 +384,10 @@ def _slots(d, leccionarios):
 @pytest.mark.parametrize("dia,celebracion", [
     (date(2026, 8, 24), "San Bartolome, apostol (Fiesta)"),
     (date(2026, 4, 6), "Lunes de la Octava de Pascua (Solemnidad)"),
-    (date(2026, 9, 14), "Exaltacion de la Santa Cruz (Fiesta)"),
+    # Exaltacion de la Santa Cruz salio de esta lista el 2026-09-21: SI tiene
+    # segunda (Flp 2, 6-11, «En domingo»); la premisa vieja era un defecto
+    # del canonico (las dos opciones plegadas en primera). Esta abajo.
+    (date(2026, 9, 21), "San Mateo, apostol y evangelista (Fiesta)"),
 ])
 def test_eu_no_inventa_segunda_inexistente(dia, celebracion, leccionarios):
     es_slots, eu_slots = _slots(dia, leccionarios)
@@ -399,6 +402,7 @@ def test_eu_no_inventa_segunda_inexistente(dia, celebracion, leccionarios):
     (date(2026, 8, 6), "Transfiguracion (Fiesta CON segunda)"),
     (date(2026, 12, 27), "Sagrada Familia (Fiesta CON segunda)"),
     (date(2026, 2, 2), "Presentacion del Senor (Fiesta CON segunda)"),
+    (date(2026, 9, 14), "Exaltacion de la Santa Cruz (Fiesta CON segunda)"),
 ])
 def test_eu_conserva_la_segunda_cuando_existe(dia, celebracion, leccionarios):
     es_slots, eu_slots = _slots(dia, leccionarios)

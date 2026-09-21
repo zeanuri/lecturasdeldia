@@ -1042,6 +1042,10 @@ def _slot_label(slot: str, lang: str, n: int | None = None) -> str:
             "salmo": "salmo", "salmo_alt": "salmo (alt.)",
             "evangelio": "evangelio", "evangelio_alt": "evangelio (alt.)",
             "aclamacion": "aclamación",
+            # forma breve anidada en la lectura (canonico desde 2026-09-21)
+            "primera_breve": "1ª lectura (forma breve)",
+            "segunda_breve": "2ª lectura (forma breve)",
+            "evangelio_breve": "evangelio (forma breve)",
         },
         "eu": {
             "primera": "1. irakurgaia", "primera_alt": "1. irakurgaia (b.)",
@@ -1049,6 +1053,9 @@ def _slot_label(slot: str, lang: str, n: int | None = None) -> str:
             "salmo": "salmoa", "salmo_alt": "salmoa (b.)",
             "evangelio": "ebanjelioa", "evangelio_alt": "ebanjelioa (b.)",
             "aclamacion": "aldarria",
+            "primera_breve": "1. irakurgaia (laburra)",
+            "segunda_breve": "2. irakurgaia (laburra)",
+            "evangelio_breve": "ebanjelioa (laburra)",
         },
     }
     return labels.get(lang, labels["es"]).get(slot, slot)
