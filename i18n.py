@@ -39,7 +39,12 @@ I18N_ES = {
     # el titulo no contenia "evangelio". Lidera con las dos palabras que la gente
     # teclea; coincide ademas con el anchor de bizkeliza ("evangelio y lecturas").
     "dia_title_prefix": "Evangelio y lecturas del",
-    "home_title_prefix": "Evangelio de hoy y lecturas de la Misa",
+    # GSC 2026-09-21, portada (28 d): 10,4K impr., CTR 1 %, posicion 14,5. Consulta
+    # n.º 1 de la portada "lecturas de hoy" (762 impr.), ausente del titulo anterior
+    # ("Evangelio de hoy y lecturas de la Misa", 70 caracteres: la fecha se cortaba
+    # en movil, 74 % del trafico). Este tiene 58 con la fecha y repite el anchor de
+    # bizkeliza. "evangelio de hoy" y "Misa" siguen literales en la description.
+    "home_title_prefix": "Evangelio y lecturas de hoy",
     "home_meta_description": "Evangelio de hoy y lecturas de la Misa del día, con los textos oficiales del leccionario de la Conferencia Episcopal Española",
 
     # Los tres siguientes llevan marcado inline y se pintan con |safe. Es

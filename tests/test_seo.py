@@ -42,7 +42,10 @@ class TestHomepage:
 
     def test_root_title_targets_search_queries(self, built_site):
         html = _read(built_site, "index.html")
-        assert "Evangelio de hoy y lecturas de la Misa" in html
+        # Titulo <= 60 caracteres con la fecha (GSC 2026-09-21): "lecturas de hoy"
+        # literal; "evangelio de hoy" y "Misa" quedan en la meta description.
+        assert "<title>Evangelio y lecturas de hoy — " in html
+        assert 'content="Evangelio de hoy y lecturas de la Misa del día' in html
 
     def test_root_has_website_jsonld_and_intro(self, built_site):
         html = _read(built_site, "index.html")
@@ -229,7 +232,7 @@ class TestAeoLayer:
         # The Article headline must mirror the page <title>, which on the home
         # is the evergreen query title, not the generic dated one.
         html = _read(built_site, "index.html")
-        assert '"headline": "Evangelio de hoy y lecturas de la Misa' in html
+        assert '"headline": "Evangelio y lecturas de hoy' in html
 
     def test_acerca_has_faq(self, built_site):
         html = _read(built_site, "acerca", "index.html")
