@@ -31,21 +31,17 @@ from liturgical_names_eu import _MES_ES_TO_EU
 CALENDAR_KEY_LABELS: dict[str, dict[str, str]] = {
     # Navidad
     "natividad_vigilia":    {"es": "Natividad del Señor — Misa vespertina de la vigilia",
-                             "eu": "Jaunaren Jaiotza — Bezperako Meza"},            # REVIEW
+                             "eu": "Jaunaren Jaiotza — Bezperako Meza"},
     "natividad_medianoche": {"es": "Natividad del Señor — Misa de medianoche",
-                             "eu": "Jaunaren Jaiotza — Gauerdiko Meza"},            # REVIEW
+                             "eu": "Jaunaren Jaiotza — Gauerdiko Meza"},
     "natividad_aurora":     {"es": "Natividad del Señor — Misa de la aurora",
-                             "eu": "Jaunaren Jaiotza — Egunsentiko Meza"},          # REVIEW
+                             "eu": "Jaunaren Jaiotza — Egunsentiko Meza"},
     "natividad_dia":        {"es": "Natividad del Señor — Misa del día",
-                             "eu": "Jaunaren Jaiotza — Eguneko Meza"},              # REVIEW
+                             "eu": "Jaunaren Jaiotza — Eguneko Meza"},
     "sagrada_familia":      {"es": "La Sagrada Familia de Jesús, María y José",
                              "eu": "Famili Santua: Jesus, Maria eta Jose"},
     "maria_madre_dios":     {"es": "Santa María, Madre de Dios",
                              "eu": "Jainkoaren Ama"},
-    # Duplicado de maria_madre_dios en el ciclo C (artefacto del parser, mismas
-    # tres citas). Se etiqueta igual hasta que se retire del JSON.
-    "solemnidad_de_santa_mar_a": {"es": "Santa María, Madre de Dios",
-                                  "eu": "Jainkoaren Ama"},
     "navidad_post_2":       {"es": "II Domingo de Navidad",
                              "eu": "Eguberri Ondorengo II Igandea"},
     "epifania":             {"es": "Epifanía del Señor",
@@ -60,7 +56,7 @@ CALENDAR_KEY_LABELS: dict[str, dict[str, str]] = {
     "ramos":                {"es": "Domingo de Ramos en la Pasión del Señor",
                              "eu": "Jaunaren Nekaldiko Erramu Igandea"},
     "misa_crismal":         {"es": "Misa crismal",
-                             "eu": "Krisma Meza"},                                  # REVIEW
+                             "eu": "Krisma Meza"},
     "jueves_santo":         {"es": "Jueves Santo — Misa vespertina de la Cena del Señor",
                              "eu": "Ostegun Santua: Jaunaren Afaria"},
     "viernes_santo":        {"es": "Viernes Santo — La Pasión del Señor",
@@ -73,7 +69,7 @@ CALENDAR_KEY_LABELS: dict[str, dict[str, str]] = {
     "ascension":            {"es": "La Ascensión del Señor",
                              "eu": "Igokunde Igandea"},
     "pentecostes_vigilia":  {"es": "Pentecostés — Misa vespertina de la vigilia",
-                             "eu": "Pentekoste — Bezperako Meza"},                  # REVIEW
+                             "eu": "Pentekoste — Bezperako Meza"},
     "pentecostes":          {"es": "Domingo de Pentecostés",
                              "eu": "Pentekoste Igandea"},
     "maria_madre_iglesia":  {"es": "Bienaventurada Virgen María, Madre de la Iglesia",
@@ -116,7 +112,7 @@ def calendar_key_label(slug: str, lang: str) -> str | None:
         if lang == "eu":
             tiempo = "Abendualdia" if adviento else "Eguberrialdia"
             mes_eu = _MES_ES_TO_EU[mes_es]
-            return f"{tiempo} — {mes_eu[:-1]}aren {dia}a"                            # REVIEW
+            return f"{tiempo} — {mes_eu[:-1]}aren {dia}a"
         tiempo = "Adviento" if adviento else "Navidad"
         return f"{tiempo} — {dia} de {mes_es}"
     return None

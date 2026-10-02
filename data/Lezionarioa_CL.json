@@ -2001,36 +2001,6 @@
           "_source": "mt16,13-20_eu.txt"
         }
       },
-      "domingo": {
-        "day_name": "",
-        "primera": {
-          "titulo": "",
-          "cita": "Si 27, 33. 28, 9",
-          "texto": "",
-          "unmatched": true
-        },
-        "salmo": {
-          "titulo": "",
-          "cita": "Sal 102, 1-2. 3-4. 9-10. 11-2",
-          "texto": "",
-          "antifona": "",
-          "unmatched": true
-        },
-        "segunda": {
-          "titulo": "Maitatzea da Lege osoa betetea.",
-          "cita": "Erm 13, 8-10",
-          "texto": "\tSenideok: Ez izan zorrik inogaz, alkar maite izatekoa izan ezik, izan ere lagun hurkoa maite dauanak bete dau-eta legea. Izan ere, harako «ez adulteriorik egin, ez hil inor, ez ostu, ez inorenik gura izan eta beste edozein agindu, esaera honetan batzen dira: «Maitatu egizu lagun hurkoa zeure burua lez».\n\tLagun hurkoa maite dauanak ez deutso txarrik egiten. Maite dauanak, beraz, guztiz beteten dau legea.\n",
-          "unmatched": false,
-          "_source": "rm13,8-10_eu.txt"
-        },
-        "evangelio": {
-          "titulo": "Alkarri parkatzen ez badeutsazue, Aitak ere ez deutsue parkatuko.",
-          "cita": "Mt 18, 21-35",
-          "texto": "\tAldi haretan, hurreratu jakon Pedro Jesusi eta itaundu eutsan: «Jauna, nire senideak bidebakokeriaren bat egiten badeust, zenbat aldiz parkatu behar deutsat? Zazpi aldiz?»\nJesusek erantzun eutsan: «Zazpi aldiz ez, zazpitan zazpi mila aldiz baino.\n\tHain zuzen, bere morroiekin kontuak garbitu gura izan zituan erregeagaz lez jazoten da zeruetako erreinuagaz. Kontuak garbitzen hastean, dirutza izugarria zor eutsan bat ekarri eutsoen. Eta nondik ordaindurik ez eukan-eta, bera eta emaztea, seme-alabak eta zituan guztiak saltzeko agindu eban nagusiak, zorra ordaintzeko. Morroiak, orduan, nagusiaren oinetan ahuspezturik, arren eta arren esaten eutsan: \"Emoidazu astia eta dana ordainduko deutsut\". Nagusiak, errukiturik, dana parkatu eta libre itzi eban morroia.\n\tBaina morroiak, urten orduko, diru apur bat zor eutsan bere morroi-laguna topau eban, eta, lepotik heldu eta ito beharrean, esan eutsan: \"Ordaindu egidak zor deustana\". Lagunak, oinetan ahuspezturik, arren eta arren esaten eutsan: \"Emoidak astia eta dana ordainduko deuat\". Baina besteak ezetz, eta joan eta kartzelan sartu eban, zorra ordaindu arte.\n\tBeste morroiak, jazotakoa ikusirik, biziro atsekabetu ziran, eta nagusiagana joan eta jazotakoaren barri emon eutsoen. Orduan, nagusiak morroiari deitu eta esan eutsan: \"Morroi gaizto hori! Horrenbesteko zorra parkatu deuat nik, eskatu deustalako; ez al zoan bidezkoa hi ere heure morroi-lagunaz errukitzea, ni hitaz errukitu nintzoan lez?\" Eta nagusiak, hasarre bizitan, borreroen esku itzi eban, zor guztia ordaindu arte. Zuei ere gauza bera egingo deutsue zeruko nire Aitak, senideok alkarri bihotzez parkatzen ez badeutsazue».\n",
-          "unmatched": false,
-          "_source": "mt18,21-35_eu.txt"
-        }
-      },
       "to_25": {
         "day_name": "",
         "primera": {
@@ -5963,45 +5933,6 @@
         "aclamacion": {
           "titulo": "",
           "cita": "Ik. Eg 16, 14b",
-          "texto": "",
-          "tipo": "",
-          "unmatched": true
-        }
-      },
-      "solemnidad_de_santa_mar_a": {
-        "day_name": "",
-        "primera": {
-          "titulo": "Honan aitatuko dabe nire izena israeldarren gainean, eta Nik bedeinkatuko ditut.",
-          "cita": "Zen 6, 22-27",
-          "texto": "\tHonan berba egin eutsan Jaunak Moisesi: «Esaiezu Aaroni eta haren semeei: \nHonan bedeinkatuko dozuez israeldarrak:\n\"Bedeinkatu zagizala Jaunak eta zaindu.\nAgertu deizula Jaunak aurpegi argia,\neta errukitu daitela zutaz.\nErakutsi deizula Jaunak aurpegi gozoa,\neta emon bakea\".\n\tHonan dei egingo deutsoe nire izenari israeldarren alde, eta Nik bedeinkatu egingo ditut».\n",
-          "unmatched": false,
-          "_source": "nm6,22-27_eu.txt"
-        },
-        "salmo": {
-          "titulo": "",
-          "cita": "Sal 66, 2-3. 5. 6 eta 8 (R.: 2a)",
-          "texto": "Erruki bekigu Jainkoa, bedeinkatu gagizala,\nagertu deiogula aurpegi alaia;\nezagutu dagien lurrean zure bidea,\nherri guztietan Zugandiko salbamena. R/.\n\nPoztu beitez kantari atzerriak,\nzuzenbidez daroazu-eta izadia;\nzintzo dozuz-eta gidatzen herriak,\neta zaintzen lurrean atzerriak. R/.\n\nEne Jainko, ospatu zagiezala herriek,\nospatu zagiezala herri guztiek.\nJainkoak bedeinkatu gagizala,\nlur-bazter guztiek bildur deutsoela. R/.\n",
-          "antifona": "Erruki bekigu Jainkoa, bedeinkatu gagizala.",
-          "unmatched": false,
-          "_source": "Sal66,2-3.5.6y8(R+2a)_eu.txt"
-        },
-        "segunda": {
-          "titulo": "Bere Semea bialdu eban Jainkoak, emakumeagandik jaioa.",
-          "cita": "Gal 4, 4-7",
-          "texto": "\tSenideok: Sasoia bete zanean, bere Semea bialdu eban Jainkoak, emakumeagandik jaioa, legepeko egina, legepean ziranak erostera, guk seme-alabatzakoa hartu gengian. Eta seme-alaba zareenaren seinaletzat bere Semearen Espiritua bialdu dau Jainkoak zuen bihotzetara, «Abba! Aita!» deika diharduana. Beraz, aurrerantzean ez zara morroi, seme baino, eta seme bazara, baita oinordeko ere, Jainkoari esker.\n",
-          "unmatched": false,
-          "_source": "ga4,4-7_eu.txt"
-        },
-        "evangelio": {
-          "titulo": "Han aurkitu ebezan Maria, Jose eta umea. Zortziurrena bete zanean, «Jesus» ezarri eutsoen izena.",
-          "cita": "Lk 2, 16-21",
-          "texto": "\tAldi haretan, artzainak lasterka joan ziran, eta han aurkitu ebezan Maria eta Jose eta umea askan etzunda. Ikusi ebenean, jakinazo eben ume haretaz esan jakena.\n\tEntzun eben guztiak harrituta gelditu ziran artzainek esaten ebenagaz. Mariak, barriz, gogoan jasoten zituan gauza guzti honeek, bere bihotzean hausnartuz.\n\tEta artzainak Jainkoari aintzaka eta goraka bihurtu ziran, entzun eta ikusi ebenagaitik; dana aingeruak esanda lez jazo jaken\n\tJaio eta zortzi egunera umea erdaindu ebenean, «Jesus» ezarri eutsoen izena, sabelean sortu aurretik aingeruak esan eban lez.\n",
-          "unmatched": false,
-          "_source": "lc2,16-21_eu.txt"
-        },
-        "aclamacion": {
-          "titulo": "",
-          "cita": "Heb 1, 1-2",
           "texto": "",
           "tipo": "",
           "unmatched": true

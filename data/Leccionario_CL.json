@@ -1485,29 +1485,6 @@
           "cita": "Mt 16, 13-20"
         }
       },
-      "domingo": {
-        "day_name": "DOMINGO",
-        "primera": {
-          "titulo": "La Palabra del Señor se volvió oprobio para mí",
-          "cita": "Eclo 27, 33. 28, 9",
-          "texto": "Perdona la ofensa a tu prójimo y se te perdonarán los pecados cuando lo pidas\nEl furor y la cólera son odiosos: el pecador los posee.\nDel vengativo se vengará el Señor\ny llevará estrecha cuenta de sus culpas.\nPerdona la ofensa a tu prójimo, y se te perdonarán los pecados cuando lo pidas.\n¿Cómo puede un hombre guardar rencor a otro y pedir la salud al Señor?\nNo tiene compasión de su semejante,\n¿y pide perdón de sus pecados?\nSi él, que es carne, conserva la ira,\n¿quién expiará por sus pecados?\nPiensa en tu fin y cesa en tu enojo, en la muerte y corrupción y guarda los mandamientos. Recuerda los mandamientos y no te enojes con tu prójimo, la alianza del Señor, y perdona el error."
-        },
-        "salmo": {
-          "cita": "Sal 102, 1-2. 3-4. 9-10. 11-2",
-          "texto": "V/. Bendice, alma mía al Señor, y todo mi ser a su santo nombre. Bendice, alma mía, al Señor, y no olvides sus beneficios. R/.\n\nV/. El perdona todas tus culpas y cura todas tus enfermedades; él rescata tu vida de la fosa y te colma de gracia y de ternura. R/.\n\nV/. No está siempre acusando, ni guarda rencor perpetuo. No nos trata como merecen nuestros pecados, ni nos paga según nuestras culpas. R/.\n\nV/. Como se levanta el cielo sobre la tierra, se levanta su bondad sobre sus fieles; como dista el oriente del ocaso, así aleja de nosotros nuestros delitos. R/.",
-          "antifona": "El Señor es compasivo y misericordioso, lento a la ira y rico en clemencia."
-        },
-        "segunda": {
-          "titulo": "En la vida y en la muerte somos del Señor",
-          "cita": "Rom 13, 8-10",
-          "texto": "Hermanos:\nNinguno de nosotros vive para sí mismo y ninguno muere para sí mismo.\nSi vivimos, vivimos para el Señor; si morimos, morimos para el Señor. En la vida y en la muerte somos del Señor.\nPara esto murió y resucitó Cristo, para ser Señor de vivos y muertos."
-        },
-        "evangelio": {
-          "titulo": "El que quiera venirse conmigo que se niegue a sí mismo",
-          "cita": "Mt 18, 21-35",
-          "texto": "No te digo que le perdones hasta siete veces, sino hasta setenta veces siete\nEn aquel tiempo, acercándose Pedro a Jesús le preguntó:\n—\tSi mi hermano me ofende, ¿cuántas veces le tengo que perdonar? ¿Hasta siete veces?\nJesús le contesta:\n—\tNo te digo hasta siete veces sino hasta setenta veces siete.\nY les propuso esta parábola:\nSe parece el Reino de los Cielos a un rey que quiso ajustar las cuentas con sus empleados. Al empezar a ajustarlas, le presentaron uno que debía diez mil talentos. Como no tenía con qué pagar, el señor mandó que lo vendieran a él con su mujer y sus hijos y todas sus posesiones, y que pagara así.\nEl empleado, arrojándose a sus pies, le suplicaba diciendo:\n—\tTen paciencia conmigo y te lo pagaré todo.\nEl señor tuvo lástima de aquel empleado y lo dejó marchar, perdonándole la deuda. Pero al salir, el empleado aquel encontró a uno de sus compañeros que le debía cien denarios, y agarrándolo lo estrangulaba diciendo:\n—Págame lo que me debes.\nEl compañero, arrojándose a sus pies, le rogaba diciendo:\n—\tTen paciencia conmigo y te lo pagaré.\nPero él se negó y fue y lo metió en la cárcel hasta que pagara lo que debía.\nSus compañeros, al ver lo ocurrido, quedaron consternados y fueron a contarle a su señor todo lo sucedido. Entonces el señor lo llamó y le dijo:\n—\t¡Siervo malvado! Toda aquella deuda te la perdoné porque me lo pediste. ¿No debías tú también tener compasión de tu compañero, como yo tuve compasión de ti?\nY el señor, indignado, lo entregó a los verdugos hasta que pagara toda la deuda.\nLo mismo hará con vosotros mi Padre del cielo si cada cual no perdona de corazón a su hermano."
-        }
-      },
       "to_25": {
         "day_name": "VIGESIMO QUINTO DOMINGO",
         "primera": {
@@ -4444,34 +4421,6 @@
           "tipo": "aleluya",
           "texto": "Que la paz de Cristo actúe de árbitro en vuestro corazón; la palabra de Cristo habite entre vosotros en toda su riqueza.",
           "cita": "Cf. Hch 16, 14b"
-        }
-      },
-      "solemnidad_de_santa_mar_a": {
-        "day_name": "SOLEMNIDAD DE SANTA MARÍA,",
-        "primera": {
-          "titulo": "Invocarán mi nombre sobre los hijos de Israel y yo los bendeciré",
-          "texto": "El Señor habló a Moisés:\n«Di a Aarón y a sus hijos, esta es la fórmula con la que bendeciréis a los hijos de Israel:\n“El Señor te bendiga y te proteja,\nilumine su rostro sobre ti\ny te conceda su favor.\nEl Señor te muestre su rostro\ny te conceda la paz”.\nAsí invocarán mi nombre sobre los hijos de Israel y yo los bendeciré».",
-          "cita": "Num 6, 22-27"
-        },
-        "salmo": {
-          "cita": "Sal 66, 2-3. 5. 6 y 8 (R.: 2a)",
-          "antifona": "El Señor tenga piedad y nos bendiga.",
-          "texto": "V/. El Señor tenga piedad y nos bendiga, ilumine su rostro sobre nosotros; conozca la tierra tus caminos, todos los pueblos tu salvación. R/.\n\nV/. Que canten de alegría las naciones, porque riges el mundo con justicia, riges los pueblos con rectitud y gobiernas las naciones de la tierra. R/.\n\nV/. Oh Dios, que te alaben los pueblos, que todos los pueblos te alaben. Que Dios nos bendiga; que le teman hasta los confines del orbe. R/."
-        },
-        "segunda": {
-          "titulo": "Envió Dios a su Hijo, nacido de mujer",
-          "cita": "Gal 4, 4-7",
-          "texto": "Hermanos:\nCuando llegó la plenitud del tiempo, envió Dios a su Hijo, nacido de mujer, nacido bajo la ley, para rescatar a los que estaban bajo la ley, para que recibiéramos la adopción filial.\nComo sois hijos, Dios envió a nuestros corazones el Espíritu de su Hijo, que clama: «¡“Abba”, Padre!». Así que ya no eres esclavo, sino hijo; y si eres hijo, eres también heredero por voluntad de Dios."
-        },
-        "evangelio": {
-          "titulo": "Encontraron a María y a José y al niño. Y a los ocho días, le pusieron por nombre Jesús",
-          "cita": "Lc 2, 16-21",
-          "texto": "En aquel tiempo, los pastores fueron corriendo hacia Belén y encontraron a María y a José, y al niño acostado en el pesebre. Al verlo, contaron lo que se les había dicho de aquel niño.\nTodos los que lo oían se admiraban de lo que les habían dicho los pastores. María, por su parte, conservaba todas estas cosas, meditándolas en su corazón.\nY se volvieron los pastores dando gloria y alabanza a Dios por todo lo que habían oído y visto, conforme a lo que se les había dicho.\nCuando se cumplieron los ocho días para circuncidar al niño, le pusieron por nombre Jesús, como lo había llamado el ángel antes de su concepción."
-        },
-        "aclamacion": {
-          "tipo": "aleluya",
-          "cita": "Heb 1, 1-2",
-          "texto": "En distintas ocasiones habló Dios antiguamente a nuestros padres por los profetas. Ahora, en esta etapa final, nos ha hablado por el Hijo."
         }
       },
       "navidad_post_2": {

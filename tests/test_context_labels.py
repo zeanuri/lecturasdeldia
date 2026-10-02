@@ -59,8 +59,7 @@ def test_toda_clave_de_calendario_no_numerada_tiene_fila():
                 continue
             if calendar_key_label(k, "es") is None:
                 faltan.add(k)
-    # `domingo` es un artefacto del parser (ciclo A) pendiente de retirar del JSON.
-    assert faltan <= {"domingo"}, f"claves sin etiqueta: {sorted(faltan)}"
+    assert not faltan, f"claves sin etiqueta: {sorted(faltan)}"
 
 
 def test_tabla_tiene_las_dos_columnas():
@@ -74,8 +73,6 @@ def test_tabla_tiene_las_dos_columnas():
 def test_ninguna_etiqueta_es_clave_cruda(entries, lang):
     malas = []
     for e in entries[lang]:
-        if e["section"] == "dominical" and e["slug"] == "domingo":
-            continue  # artefacto del parser, ver arriba
         if e["section"] == "santos":
             continue  # etiqueta = fecha («3 de febrero», «otsailaren 3a»), ya legible
         label = g._format_label(e, lang)
