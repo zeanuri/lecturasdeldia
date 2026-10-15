@@ -1193,6 +1193,16 @@ MOVABLE_MEMORIAL_GOSPEL = {
     },
 }
 
+# Aclamación propia que acompaña a esos evangelios (CEE, Leccionario IV).
+MOVABLE_MEMORIAL_ACLAMACION = {
+    "Inmaculado Corazón de la Virgen María": {
+        "tipo": "aleluya",
+        "cita": "Cf. Lc 2, 19",
+        "texto": "Bienaventurada Virgen María, que conservaba la palabra de Dios, "
+                 "meditándola en su corazón.",
+    },
+}
+
 
 def is_empty_reading(r) -> bool:
     """True when a reading dict has no usable text (empty or unmatched)."""
@@ -1305,7 +1315,10 @@ def lookup_readings(result: dict, cache=None) -> dict | None:
                         if k in primera_salmo:
                             merged[k] = primera_salmo[k]
                 if evangelio_data:
-                    for k in ('evangelio',):
+                    # La aclamación va con el evangelio ferial (igual en año
+                    # par e impar); si un memorial cambia el evangelio, abajo
+                    # se cambia o se quita con él.
+                    for k in ('aclamacion', 'evangelio'):
                         if k in evangelio_data:
                             merged[k] = evangelio_data[k]
                 if any(k in merged for k in ('primera', 'evangelio')):
@@ -1320,11 +1333,22 @@ def lookup_readings(result: dict, cache=None) -> dict | None:
                             santo_ev = santo.get("evangelio")
                             if isinstance(santo_ev, dict) and santo_ev.get("cita"):
                                 merged["evangelio"] = santo_ev
+                                # La aclamación ferial no casa con otro evangelio.
+                                santo_acl = santo.get("aclamacion")
+                                if isinstance(santo_acl, dict) and santo_acl.get("texto"):
+                                    merged["aclamacion"] = santo_acl
+                                else:
+                                    merged.pop("aclamacion", None)
                     # Movable memorial gospel override (no santos entry — date varies)
                     if memorial and readings_source == "propias":
                         mov_ev = MOVABLE_MEMORIAL_GOSPEL.get(memorial)
                         if mov_ev:
                             merged["evangelio"] = mov_ev
+                            mov_acl = MOVABLE_MEMORIAL_ACLAMACION.get(memorial)
+                            if mov_acl:
+                                merged["aclamacion"] = mov_acl
+                            else:
+                                merged.pop("aclamacion", None)
                     return merged
                 return None
 
