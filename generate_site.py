@@ -403,6 +403,11 @@ def get_day_data(d: date, lang: str, lectionaries: dict) -> dict:
         memorial_rank_out = memorial_rank_es
         memorial_out = memorial_es
 
+    # Título SEO: en una feria con memoria obligatoria la gente busca el santo
+    # («lecturas Virgen del Rosario»), no «miércoles de la XXVII semana».
+    title_name = memorial_out if (memorial_out and rank_es == "Feria"
+                                  and memorial_rank_es == "Memoria Obligatoria") else name_out
+
     return {
         "date": result.get("date", d.isoformat()),
         "date_iso": d.isoformat(),
@@ -410,6 +415,7 @@ def get_day_data(d: date, lang: str, lectionaries: dict) -> dict:
         "fecha_corta": fecha_corta,
         "fecha_larga": fecha_larga,
         "name": name_out,
+        "title_name": title_name,
         "rank": rank_out,
         "season": season_out,
         "color": color,

@@ -159,6 +159,12 @@ class TestCalendario:
         assert "Calendario litúrgico 2025-2026" in html
         assert "Ciclo A" in html
 
+    def test_calendario_title_uses_civil_years(self, built_site):
+        # Las consultas son «calendario litúrgico 2026», no «2025-2026».
+        html = _read(built_site, "calendario", "index.html")
+        assert "<title>Calendario litúrgico 2026 y 2027 — Ciclos A y B</title>" in html
+        assert '<meta property="og:title" content="Calendario litúrgico 2026 y 2027 — Ciclos A y B">' in html
+
     def test_calendario_lists_seasons_and_links_days(self, built_site):
         html = _read(built_site, "calendario", "index.html")
         for season in ("Adviento", "Navidad", "Cuaresma", "Triduo Pascual y Pascua"):
@@ -239,3 +245,27 @@ class TestAeoLayer:
         assert '"@type": "FAQPage"' in html
         assert "¿Cuál es el evangelio de hoy?" in html
         assert "Preguntas frecuentes" in html
+
+
+class TestTituloConMemoriaObligatoria:
+    """El título de una feria con memoria obligatoria nombra la memoria."""
+
+    @pytest.fixture(scope="class")
+    def octubre(self):
+        tmp = tempfile.TemporaryDirectory()
+        generate_site.build_site(
+            today=date(2026, 10, 6), days_back=0, days_forward=1, outdir=tmp.name,
+        )
+        yield tmp.name
+        tmp.cleanup()
+
+    def test_rosario_en_el_titulo(self, octubre):
+        html = _read(octubre, "2026", "10", "07", "index.html")
+        assert "<title>Evangelio y lecturas del Miércoles, 7 de octubre de 2026 — Nuestra Señora del Rosario</title>" in html
+        import json, re
+        headline = json.loads(re.search(r'"headline": ("[^"\n]*")', html).group(1))
+        assert headline == "Evangelio y lecturas del Miércoles, 7 de octubre de 2026 — Nuestra Señora del Rosario"
+
+    def test_memoria_libre_no_cambia_el_titulo(self, octubre):
+        html = _read(octubre, "2026", "10", "06", "index.html")
+        assert "— Martes de la XXVII Semana del Tiempo Ordinario</title>" in html

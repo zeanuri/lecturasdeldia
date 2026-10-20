@@ -1,11 +1,14 @@
 {% extends "base.html" %}
 
-{% block title %}Calendario litúrgico {{ current.label }} — Ciclo {{ current.sunday_cycle }}{% endblock %}
+{# Título por años civiles: la gente busca «calendario litúrgico 2026», no «2025-2026».
+   Los dos años son los que cierran el año litúrgico en curso y el próximo. #}
+{% set cal_title = "Calendario litúrgico " ~ current.label.split('-')[1] ~ " y " ~ upcoming.label.split('-')[1] ~ " — Ciclos " ~ current.sunday_cycle ~ " y " ~ upcoming.sunday_cycle %}
+{% block title %}{{ cal_title }}{% endblock %}
 
-{% block description %}Calendario litúrgico {{ current.label }} (Ciclo {{ current.sunday_cycle }}): fechas de Adviento, Navidad, Cuaresma, Pascua y Tiempo Ordinario, con los domingos y solemnidades y sus lecturas de la Misa.{% endblock %}
+{% block description %}Calendario litúrgico {{ current.label.split('-')[1] }} y {{ upcoming.label.split('-')[1] }} (Ciclos {{ current.sunday_cycle }} y {{ upcoming.sunday_cycle }}): fechas de Adviento, Navidad, Cuaresma, Pascua y Tiempo Ordinario, con los domingos y solemnidades y sus lecturas de la Misa.{% endblock %}
 
 {% block og %}
-<meta property="og:title" content="Calendario litúrgico {{ current.label }} — Ciclo {{ current.sunday_cycle }}">
+<meta property="og:title" content="{{ cal_title }}">
 <meta property="og:description" content="Tiempos del año litúrgico, ciclo dominical y ferial, domingos y solemnidades con sus lecturas.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://lecturasdeldia.org{{ canonical_self }}">
