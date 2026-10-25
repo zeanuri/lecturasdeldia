@@ -1058,7 +1058,7 @@ def _slot_label(slot: str, lang: str, n: int | None = None) -> str:
             "segunda": "2. irakurgaia", "segunda_alt": "2. irakurgaia (b.)",
             "salmo": "salmoa", "salmo_alt": "salmoa (b.)",
             "evangelio": "ebanjelioa", "evangelio_alt": "ebanjelioa (b.)",
-            "aclamacion": "aldarria",
+            "aclamacion": "ebanjelio aurreko gorapena",  # término del libro (MMXXI, OLM 89)
             "primera_breve": "1. irakurgaia (laburra)",
             "segunda_breve": "2. irakurgaia (laburra)",
             "evangelio_breve": "ebanjelioa (laburra)",

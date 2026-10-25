@@ -127,7 +127,7 @@
     {% if r.key == 'evangelio' and day.aclamacion %}
     <div class="reading aclamacion-section">
       <button class="reading-header" aria-expanded="false" aria-controls="text-aclamacion">
-        <span class="reading-label">{{ i18n.aclamacion_label_prefix }} — {{ day.aclamacion.tipo | capitalize }}</span>
+        <span class="reading-label">{% if i18n.aclamacion_label_prefix %}{{ i18n.aclamacion_label_prefix }} — {% endif %}{{ day.aclamacion.tipo | capitalize }}</span>
         {% if day.aclamacion.cita %}<span class="reading-cita">{{ day.aclamacion.cita }}</span>{% endif %}
         <span class="chevron">&#9660;</span>
       </button>

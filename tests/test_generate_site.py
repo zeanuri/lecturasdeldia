@@ -275,3 +275,17 @@ class TestEnlacesInternos:
         medio = (site / "2026" / "04" / "09" / "index.html").read_text(encoding="utf-8")
         assert 'class="nav-arrow prev"' in medio
         assert 'class="nav-arrow next"' in medio
+
+
+class TestRotuloAclamacion:
+    """El rótulo vasco es el del libro (MMXXI): «Aleluia» o «Ebanjelio aurreko
+    txatala», sin el «Aldarria —» inventado que llevaba hasta el 2026-10-25."""
+
+    def test_rotulo_vasco_sin_prefijo_y_castellano_con_el(self):
+        with tempfile.TemporaryDirectory() as outdir:
+            generate_site.build_site(today=date(2027, 2, 14), days_back=0, days_forward=0, outdir=outdir)
+            def rotulo(*partes):
+                html = Path(outdir, *partes, "2027", "02", "14", "index.html").read_text(encoding="utf-8")
+                return re.search(r'aclamacion-section">\s*<button[^>]*>\s*<span class="reading-label">([^<]*)<', html).group(1)
+            assert rotulo("eu") == "Ebanjelio aurreko txatala"
+            assert rotulo().startswith("Aclamación — ")

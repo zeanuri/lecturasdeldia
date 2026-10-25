@@ -238,7 +238,9 @@ I18N_EU = {
     "download_txt": "Irakurgaiak deskargatu (.txt)",
     "search_btn": "Bilatu",
     "gospel_book_lead": "Liburu honen irakurgai guztiak lezionarioan:",
-    "aclamacion_label_prefix": "Aldarria",  # REVIEW (Aldarrikapena? Aklamazioa?)
+    # Sin prefijo: el libro (MMXXI) rotula cada una solo «Aleluia» o «Ebanjelio
+    # aurreko txatala», y eso ya lo pone el tipo.
+    "aclamacion_label_prefix": "",
 
     # buscar.html / bilatu.html
     "search_h1": "Irakurgaiak bilatu",
