@@ -17279,7 +17279,8 @@
         "titulo": "La mies es abundante y los obreros pocos",
         "cita": "Lc 10, 1-9",
         "texto": "En aquel tiempo, designó el Señor otros setenta y dos y los mandó por delante, de\ndos en dos, a todos los pueblos y lugares adonde pensaba ir él. Y les decía:\n-«La mies es abundante y los obreros pocos; rogad, pues, al dueño de la mies que\nmande obreros a su mies.\n¡Poneos en camino! Mirad que os mando como corderos en medio de lobos. No\nllevéis talega, ni alforja, ni sandalias; y no os detengáis a saludar a nadie por el\ncamino.\nCuando entréis en una casa, decid primero: “Paz a esta casa” Y si allí hay gente de\npaz, descansará sobre ellos vuestra paz; si no, volverá a vosotros.\nQuedaos en la misma casa, comed y bebed lo que tengan, porque el obrero merece\nsu salario.\nNo andéis cambiando de casa. Si entráis en un pueblo y os reciben bien, comed lo\nque os pongan, curad a los enfermos que haya, y decid: “Está cerca de vosotros el\nreino de Dios.”»"
-      }
+      },
+      "primera_obligatoria": true
     },
     "01-27": {
       "date": "27\tde enero",
@@ -18434,7 +18435,8 @@
         "tipo": "aleluya",
         "cita": "Mt 28, 19a. 20b",
         "texto": "Id y haced discípulos a todos los pueblos —dice el Señor—; yo estoy con vosotros todos los días, hasta el final de los tiempos."
-      }
+      },
+      "primera_obligatoria": true
     },
     "06-13": {
       "date": "13 de junio",
@@ -20928,7 +20930,6 @@
     },
     "08-09": {
       "saint_name": "Santa Teresa Benedicta de la Cruz (Edith Stein), virgen y mártir, patrona de Europa",
-      "comun_ref": "Común de mártires o Común de vírgenes",
       "evangelio_propio": true,
       "aclamacion": {
         "tipo": "aleluya",
@@ -20944,6 +20945,11 @@
         "titulo": "Me desposaré contigo para siempre",
         "cita": "Os 2, 16b. 17de. 21-22",
         "texto": "Esto dice el Señor:\n«Yo la llevo al desierto, le hablo al corazón.\nAllí responderá como en los días de su juventud,\ncomo el día de su salida de Egipto.\nMe desposaré contigo para siempre,\nme desposaré contigo\nen justicia y en derecho,\nen misericordia y en ternura,\nme desposaré contigo en fidelidad\ny conocerás al Señor»."
+      },
+      "salmo": {
+        "cita": "Sal 44, 11-12. 14-15. 16-17 (R.: 11a; cf. Mt 25, 6b)",
+        "antifona": "Escucha, hija, mira: inclina el oído.",
+        "texto": "V/. Escucha, hija, mira: inclina el oído, olvida tu pueblo y la casa paterna; prendado está el rey de tu belleza: póstrate ante él, que él es tu señor. R/.\n\nV/. Ya entra la princesa, bellísima, vestida de perlas y brocado; la llevan ante el rey, con séquito de vírgenes, la siguen sus compañeras. R/.\n\nV/. Las traen entre alegría y algazara, van entrando en el palacio real. «A cambio de tus padres tendrás hijos, que nombrarás príncipes por toda la tierra». R/."
       }
     }
   }

@@ -5,8 +5,8 @@
     "cita_convention": "batua",
     "coverage_status": "Estaldura partziala; iturriak mugatuta",
     "coverage_pct_calendar_texto": 100,
-    "calendar_slots_populated": 3247,
-    "calendar_slots_total": 3251,
+    "calendar_slots_populated": 3248,
+    "calendar_slots_total": 3252,
     "coverage_source": "MEZAKO IRAKURGAIAK MMXXI (IRAKURGAIAK 1-6 BIZK.pdf, eu_desde_pdf.py) + euskera/bizkaiera",
     "no_translation_policy": true,
     "last_built": "2026-10-25",
@@ -23498,7 +23498,8 @@
         "texto": "\tAldi haretan, Jaunak beste hirurogeta hamabi ikasle izendatu eta bere aurretik bialdu zituan binaka, bera joatekoa zan herri eta leku guztietara.\n\tEta esan eutsen: «Uzta ugaria da, baina beharginak gitxi. Egin, beraz, otoitz uzta-jaubeari bialdu dagizala langileak bere uztara. Zoaze! Bildotsak otso artera lez bialtzen zaituet. Ez eroan boltsarik, ez zakutorik, ez oinetakorik, eta ez gelditu bidean inori agur egiten.\n\tEdozein etxetan sartzen zariela, esaizue lehenengo: “Bakea etxe honetakoei!” Eta han bakezalerik bada, haren gainean jarriko da zuen bakea; osterantzean, barriz, zuen bakerik barik geldituko dira. Gelditu zaiteze etxe berean; eta jan eta edan daukienetik, ze, beharginari zor jako bere saria.\n\tEz ibili etxez etxe. Herriren baten sartu eta ondo hartzen bazaituee, jan ipintzen deutsueenetik, osatu bertako gaixoak eta esaiezue: “Hurrean dozue Jainkoaren erreinua”.",
         "unmatched": false,
         "_source": "IRAKURGAIAK 4 BIZK.pdf#p351"
-      }
+      },
+      "primera_obligatoria": true
     },
     "01-27": {
       "date": "",
@@ -24932,7 +24933,8 @@
         "texto": "Zoaze eta egin herri guztiak nire ikasle, dino Jaunak, eta Ni zeuekin izango nozue egunero munduaren azkenera arte.",
         "unmatched": false,
         "_source": "IRAKURGAIAK 4 BIZK.pdf#p109"
-      }
+      },
+      "primera_obligatoria": true
     },
     "06-13": {
       "date": "",
@@ -28079,45 +28081,6 @@
     },
     "08-09": {
       "saint_name": "",
-      "comun_ref": [
-        "C",
-        "o",
-        "m",
-        "ú",
-        "n",
-        " ",
-        "d",
-        "e",
-        " ",
-        "m",
-        "á",
-        "r",
-        "t",
-        "i",
-        "r",
-        "e",
-        "s",
-        " ",
-        "o",
-        " ",
-        "C",
-        "o",
-        "m",
-        "ú",
-        "n",
-        " ",
-        "d",
-        "e",
-        " ",
-        "v",
-        "í",
-        "r",
-        "g",
-        "e",
-        "n",
-        "e",
-        "s"
-      ],
       "evangelio_propio": true,
       "aclamacion": {
         "tipo": "aleluia",
@@ -28139,6 +28102,14 @@
         "texto": "Honan berba egiten dau Jaunak:\n«Basamortura eroango dot Nik neure herria\neta bihotzera berba egingo deutsat.\nHan bere gaztaroan lez erantzungo deust,\nEgiptotik igon ebanean lez.\nNeure emazte egingo zaitut betiko;\nneure emazte egingo justiziaz eta zuzenbidez,\nmaitasunez eta errukiz.\nLeialtasunez egingo zaitut neure emazte,\neta zuk ezagutuko dozu Jauna».",
         "unmatched": false,
         "_source": "IRAKURGAIAK 4 BIZK.pdf#p152"
+      },
+      "salmo": {
+        "titulo": "",
+        "cita": "Sal 44, 11-12. 14-15. 16-17 (R.: 11a; ik. Mt 25, 6b)",
+        "texto": "V/. Entzun, alaba, eta ikusi, makurtu egizu belarria,\nahaztu zeure herriaz eta aitaren etxeaz.\nZoraturik dago erregea zure edertasunaz;\nbera dozu jaun, egiozu ahuspez agur. R/.\n\nV/. Guztiz ospetsu dator printzesa,\nurrez apaindutako soinekoa jantzita.\nErregeagana daroe;\nneskatila adiskideek jarraitzen deutsoe. R/.\n\nV/. Pozik eta alai daroez,\neta erregearen jauregira sartzen dira.\n«Gurasoen ordez semeak izango dozuz\neta lurralde osoko buruzagi egingo». R/.",
+        "unmatched": false,
+        "_source": "IRAKURGAIAK 4 BIZK.pdf#p152",
+        "antifona": "Entzun, alaba, eta ikusi, makurtu egizu belarria. Edo: Badator senargaia; urten egiozue bidera!"
       }
     }
   }

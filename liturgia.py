@@ -231,7 +231,7 @@ OBLIGATORY_MEMORIALS = {
     (6, 3):   ("San Carlos Lwanga y compañeros, mártires", "Rojo"),
     (6, 5):   ("San Bonifacio, obispo y mártir", "Rojo"),
     (6, 9):   ("San Efrén, diácono y doctor", "Memoria Libre", "Blanco"),
-    (6, 11):  ("San Bernabé, Apóstol", "Fiesta", "Rojo"),
+    (6, 11):  ("San Bernabé, Apóstol", "Rojo"),  # Memoria: primera obligatoria (CEE IV 580)
     (6, 13):  ("San Antonio de Padua", "Blanco"),
     (6, 21):  ("San Luis Gonzaga", "Blanco"),
     (6, 22):  ("San Paulino de Nola / Santos Juan Fisher y Tomás Moro", "Memoria Libre", "Blanco"),
@@ -261,7 +261,7 @@ OBLIGATORY_MEMORIALS = {
     (8, 5):   ("Dedicación de la Basílica de Santa María la Mayor", "Memoria Libre", "Blanco"),
     (8, 7):   ("San Cayetano / Santos Sixto II y compañeros", "Memoria Libre", "Blanco"),
     (8, 8):   ("Santo Domingo de Guzmán", "Blanco"),
-    (8, 9):   ("Santa Teresa Benedicta de la Cruz (Edith Stein)", "Rojo"),
+    (8, 9):   ("Santa Teresa Benedicta de la Cruz (Edith Stein), patrona de Europa", "Fiesta", "Rojo"),
     (8, 10):  ("San Lorenzo, diácono y mártir", "Fiesta", "Rojo"),
     (8, 11):  ("Santa Clara", "Blanco"),
     (8, 12):  ("Santa Juana Francisca de Chantal", "Memoria Libre", "Blanco"),
@@ -1368,7 +1368,14 @@ def lookup_readings(result: dict, cache=None) -> dict | None:
                     if memorial and readings_source == "feriales":
                         santos_key = f"{d.month:02d}-{d.day:02d}"
                         santo = lec.get("santos", {}).get(santos_key, {})
-                        if not santo.get("comun_ref") or santo.get("evangelio_propio"):
+                        if santo.get("primera_obligatoria"):
+                            # «En esta memoria la primera lectura es obligatoria.
+                            # El Evangelio, ordinariamente, de la feria» (Timoteo
+                            # y Tito, Bernabé): primera y su salmo del santo.
+                            for k in ('primera', 'salmo'):
+                                if isinstance(santo.get(k), dict) and santo[k].get("texto"):
+                                    merged[k] = santo[k]
+                        elif not santo.get("comun_ref") or santo.get("evangelio_propio"):
                             santo_ev = santo.get("evangelio")
                             if isinstance(santo_ev, dict) and santo_ev.get("cita"):
                                 merged["evangelio"] = santo_ev
