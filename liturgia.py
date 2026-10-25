@@ -1204,6 +1204,45 @@ MOVABLE_MEMORIAL_ACLAMACION = {
 }
 
 
+# El mismo evangelio en euskera: el del libro vigente (MEZAKO IRAKURGAIAK MMXXI,
+# IV, extraído por tools/pipeline/leccionario/bizkaiera_pdf_lecturas.py). Hasta
+# el 2026-10-24 la página vasca recibía el castellano de arriba. Eleizaren Ama
+# lleva en el libro vasco Jn 19, 25-34, no 25-27: es el del día en euskera.
+MOVABLE_MEMORIAL_GOSPEL_EU = {
+    "Bienaventurada Virgen María, Madre de la Iglesia": {  # IRAKURGAIAK 4 BIZK.pdf#p103
+        "titulo": 'Horra hor zure semea! Horra hor zure ama!',
+        "cita": "Jn 19, 25-34",
+        "texto": (
+            '\tAldi haretan, Jesusen kurutzearen ondoan egozan haren ama, bere amaren ahizta, Maria Kleofasena eta Maria Magdalena. Jesusek, bere ama eta, beronen ondoan, maite eban ikaslea ikusirik, esan eutson amari: «Emakume, horra hor zure semea!» Gero, ikasleari esan eutson: «Horra hor zure ama!»\n'
+            '\tEta harrezkero ikasleak bere etxean hartu eban.\n'
+            '\tOndoren, Jesusek, dana betea zala jakinik, Liburu Santuak esana guztiz bete zedin, esan eban: «Egarri naz!»\n'
+            '\tBazan han ozpinez betetako pitxar bat. Orduan, belakia ozpinetan busti eta, kainaberari ertzean erantsiz, ahora hurreratu eutsoen. Ozpina hartu ebanean, Jesusek esan eban: «Bete da dana!» Eta, burua makurtuz, azken arnasa emon eban.\n'
+            '\tPazko-jairako prestaketa-eguna zan, eta judeguek ez eben gura zapatuan gorpuak kurutzean gelditzerik, ze, zapatu ha oso jaiegun handia zan. Horregaitik, kurutzeratuei berna-hazurrak apurtu eta handik kentzeko eskatu eutsoen Pilatori.\n'
+            '\tJoan ziran, bada, gudariak eta berna-hazurrak hausi eutsiezan Jesusegaz kurutzean jositako biei; baina, Jesusengana heldu ziranean, ordurako hilda egoala ikusirik, ez eutsoen berna-hazurrik hausi, ezpada ze, gudari batek lantzaz saihetsa zulatu eutson, eta bat-batean odolak eta urak urten eben.'
+        ),
+    },
+    "Inmaculado Corazón de la Virgen María": {  # IRAKURGAIAK 4 BIZK.pdf#p104
+        "titulo": 'Bere bihotzean gordetzen ebazan gauza honeek guztiak.',
+        "cita": "Lk 2, 41-51",
+        "texto": (
+            '\tJesusen gurasoak Jerusalemera joaten ziran urtero erromes Pazko-jaietan. Jesusek hamabi urte bete zituanean, Jerusalemera igon eben jaietara, ohitura zan lez. Jaiegunak amaiturik gurasoak etxerantz abiatu ziranean, Jesus umea Jerusalemen gelditu zan, eurak jakin barik. Erromeskideen artean etorrelakoan, egun bateko bidea egin ostean, haren bila hasi ziran taldeko senideen eta ezagunen artean. Eta aurkitzen ez ebenez, Jerusalemera bihurtu ziran haren bila.\n'
+            '\tHiru egunen buruan, tenpluan aurkitu eben, irakasleen artean jesarrita, hareei entzuten eta itaunka. Entzuten eutsoen guztiak harrituta egozan erantzunetan erakusten eban argitasunagaitik. Gurasoak, ikusi ebenean, zur eta lur gelditu ziran, eta amak esan eutson: «Seme, baina zergaitik egin deuskuzu hori? Begira zelako atsekabez ibili garan aita eta biok zure bila!» Harek erantzun eutsen: «Zergaitik ibili zarie nire bila? Ez ete zenkien Nik neure Aitaren etxean egon behar dodana?» Hareek, ostera, ez eben ulertu zer esan gura eutsen.\n'
+            '\tJesus Nazaretera jatsi zan eurakaz, eta euren menpean bizi zan. Haren amak bere bihotzean gordetzen zituan gauza honeek guztiok.'
+        ),
+    },
+}
+
+# Su aclamación en euskera: la que el IV imprime pegada a ese evangelio.
+MOVABLE_MEMORIAL_ACLAMACION_EU = {
+    "Inmaculado Corazón de la Virgen María": {  # IRAKURGAIAK 4 BIZK.pdf#p104
+        "tipo": "aleluia",
+        "cita": "Lk 2, 19",
+        "texto": "Zorionekoa Maria Birjina, gogoan jasotzen ebazan-eta gauza honeek "
+                 "guztiak, bihotzean hausnartuz.",
+    },
+}
+
+
 def is_empty_reading(r) -> bool:
     """True when a reading dict has no usable text (empty or unmatched)."""
     if not isinstance(r, dict):
@@ -1341,10 +1380,14 @@ def lookup_readings(result: dict, cache=None) -> dict | None:
                                     merged.pop("aclamacion", None)
                     # Movable memorial gospel override (no santos entry — date varies)
                     if memorial and readings_source == "propias":
-                        mov_ev = MOVABLE_MEMORIAL_GOSPEL.get(memorial)
+                        # El idioma lo dice el leccionario: el vasco no recibe
+                        # el texto castellano (ni su aclamación, sin fuente vasca).
+                        eu = (lec.get("meta") or {}).get("lang") == "eu"
+                        mov_ev = (MOVABLE_MEMORIAL_GOSPEL_EU if eu else MOVABLE_MEMORIAL_GOSPEL).get(memorial)
                         if mov_ev:
                             merged["evangelio"] = mov_ev
-                            mov_acl = MOVABLE_MEMORIAL_ACLAMACION.get(memorial)
+                            mov_acl = (MOVABLE_MEMORIAL_ACLAMACION_EU if eu
+                                       else MOVABLE_MEMORIAL_ACLAMACION).get(memorial)
                             if mov_acl:
                                 merged["aclamacion"] = mov_acl
                             else:

@@ -66,7 +66,7 @@
         },
         "aclamacion": {
           "tipo": "aleluya",
-          "texto": "Preparad el camino del Señor, allanad sus senderos. Todos verán la salvación de Dios.",
+          "texto": "Preparad el camino del Señor, allanad sus senderos. Toda carne verá la salvación de Dios.",
           "cita": "Lc 3, 4cd. 6"
         }
       },
@@ -94,7 +94,7 @@
         },
         "aclamacion": {
           "tipo": "aleluya",
-          "texto": "El Espíritu del Señor está sobre mí; me ha enviado para anunciar el Evangelio a los pobres.",
+          "texto": "El Espíritu del Señor está sobre mí: me ha enviado a evangelizar a los pobres.",
           "cita": "Cf. Is 61, 1 (Lc 4, 18ac)"
         }
       },
@@ -122,7 +122,7 @@
         },
         "aclamacion": {
           "tipo": "aleluya",
-          "texto": "Mirad: la Virgen concebirá y dará a luz un hijo y le pondrá por nombre Emmanuel, Dios-con-nosotros.",
+          "texto": "Mirad: la virgen concebirá y dará a luz un hijo y le pondrán por nombre Enmanuel, “Dios-con-nosotros”.",
           "cita": "Mt 1, 23"
         }
       },
@@ -154,7 +154,7 @@
         },
         "aclamacion": {
           "tipo": "aleluya",
-          "texto": "Mañana quedará borrada la maldad de la tierra, y será nuestro rey el Salvador del mundo."
+          "texto": "Mañana quedará borrada la maldad de la tierra, y reinará sobre nosotros el Salvador del mundo."
         }
       },
       "natividad_medianoche": {
@@ -181,7 +181,7 @@
         },
         "aclamacion": {
           "tipo": "aleluya",
-          "texto": "Os traigo la buena noticia: nos ha nacido un Salvador: el Mesías, el Señor.",
+          "texto": "Os anuncio una buena noticia: hoy nos ha nacido un Salvador, el Mesías, el Señor.",
           "cita": "Cf. Lc 2, 10-11"
         }
       },
@@ -209,7 +209,7 @@
         },
         "aclamacion": {
           "tipo": "aleluya",
-          "texto": "Gloria a Dios en el cielo, y en la tierra paz a los hombres que ama el Señor.",
+          "texto": "Gloria a Dios en el cielo, y en la tierra paz a los hombres de buena voluntad.",
           "cita": "Lc 2, 14"
         }
       },
@@ -268,7 +268,7 @@
         },
         "aclamacion": {
           "tipo": "aleluya",
-          "texto": "Que la paz de Cristo actúe de árbitro en vuestro corazón; que la Palabra de Cristo habite entre vosotros en toda su riqueza.",
+          "texto": "La paz de Cristo reine en vuestro corazón; la Palabra de Cristo habite entre vosotros en toda su riqueza.",
           "cita": "Col 3, 15a. 16"
         }
       },
@@ -296,7 +296,7 @@
         },
         "aclamacion": {
           "tipo": "aleluya",
-          "texto": "En distintas ocasiones habló Dios antiguamente a nuestros padres por los Profetas; ahora, en esta etapa final, nos ha hablado por el Hijo.",
+          "texto": "En muchas ocasiones habló Dios antiguamente a los padres por los profetas. En esta etapa final, nos ha hablado por el Hijo.",
           "cita": "Heb 1, 1-2"
         }
       },
@@ -328,7 +328,7 @@
         },
         "aclamacion": {
           "tipo": "aleluya",
-          "texto": "Gloria a ti, Cristo, proclamado a los gentiles. Gloria a ti, Cristo, creído en el mundo.",
+          "texto": "Gloria a ti, Cristo, proclamado en las naciones; gloria a ti, Cristo, creído en el mundo.",
           "cita": "Cf. 1 Tim 3, 16"
         }
       },
@@ -384,7 +384,7 @@
         },
         "aclamacion": {
           "tipo": "aleluya",
-          "texto": "Los cielos se abrieron y se oyó la voz del Padre: Este es mi Hijo, el amado; escuchadle.",
+          "texto": "Se abrieron los cielos y se oyó la voz del Padre: «Este es mi Hijo, el amado; escuchadlo».",
           "cita": "Cf. Mc 9, 7"
         }
       },
@@ -631,7 +631,7 @@
         "aclamacion": {
           "tipo": "aleluya",
           "cita": "Jn 20, 29",
-          "texto": "Porque me has visto, Tomás, has creído —dice el Señor—. Dichosos los que crean sin haber visto."
+          "texto": "Porque me has visto, Tomás, has creído —dice el Señor—; bienaventurados los que crean sin haber visto."
         }
       },
       "pascua_3": {
@@ -659,7 +659,7 @@
         "aclamacion": {
           "tipo": "aleluya",
           "cita": "Cf. Lc 24, 32",
-          "texto": "Señor Jesús, explícanos las Escrituras. Enciende nuestro corazón mientras nos hablas."
+          "texto": "Señor Jesús, explícanos las Escrituras; haz que arda nuestro corazón mientras nos hablas."
         }
       },
       "pascua_4": {
@@ -687,7 +687,7 @@
         "aclamacion": {
           "tipo": "aleluya",
           "cita": "Jn 10, 14",
-          "texto": "Yo soy el buen Pastor —dice el Señor—, conozco a mis ovejas y las mías me conocen."
+          "texto": "Yo soy el Buen Pastor —dice el Señor—, que conozco a mis ovejas, y las mías me conocen."
         }
       },
       "pascua_5": {
@@ -743,7 +743,7 @@
         "aclamacion": {
           "tipo": "aleluya",
           "cita": "Cf. Jn 14, 23",
-          "texto": "Si alguno me ama guardará mi palabra —dice el Señor—, y mi Padre lo amará y vendremos a él."
+          "texto": "El que me ama guardará mi palabra —dice el Señor—, y mi Padre lo amará, y vendremos a él."
         }
       },
       "ascension": {
@@ -771,7 +771,7 @@
         "aclamacion": {
           "tipo": "aleluya",
           "cita": "Mt 28, 19a. 20b",
-          "texto": "Id y haced discípulos de todos los pueblos —dice el Señor—. Y sabed que yo estoy con vosotros todos los días hasta el fin del mundo."
+          "texto": "Id y haced discípulos a todos los pueblos —dice el Señor—; yo estoy con vosotros todos los días, hasta el final de los tiempos."
         }
       },
       "pentecostes_vigilia": {
@@ -852,7 +852,7 @@
         },
         "aclamacion": {
           "tipo": "aleluya",
-          "texto": "Gloria al Padre, al Hijo y al Espíritu Santo. Al Dios que es, que era y que vendrá.",
+          "texto": "Gloria al Padre, y al Hijo, y al Espíritu Santo; al Dios que es, al que era y al que ha de venir.",
           "cita": "Cf. Ap 1, 8"
         }
       },
@@ -880,7 +880,7 @@
         },
         "aclamacion": {
           "tipo": "aleluya",
-          "texto": "Yo soy el pan vivo que ha bajado del cielo —; dice el Señor—; quien coma de este pan vivirá para siempre.",
+          "texto": "Yo soy el pan vivo que ha bajado del cielo —dice el Señor—; el que coma de este pan vivirá para siempre.",
           "cita": "Jn 6, 51"
         }
       },
@@ -908,7 +908,7 @@
         },
         "aclamacion": {
           "tipo": "aleluya",
-          "texto": "Cargad con mi yugo—dice el Señor— y aprended de mí, que soy manso y humilde de corazón.",
+          "texto": "Tomad mi yugo sobre vosotros —dice el Señor—, y aprended de mí, que soy manso y humilde de corazón.",
           "cita": "Mt 11, 29ab"
         }
       },
@@ -1720,7 +1720,7 @@
         },
         "aclamacion": {
           "tipo": "aleluya",
-          "texto": "Bendito el que viene en nombre del Señor: Bendito el reino que viene de nuestro padre David.",
+          "texto": "¡Bendito el que viene en nombre del Señor! ¡Bendito el reino que llega, el de nuestro padre David!",
           "cita": "Mc 11, 9. 10"
         }
       },
@@ -1782,7 +1782,7 @@
         },
         "aclamacion": {
           "tipo": "versiculo",
-          "texto": "Yo soy la resurrección y la vida, dice el Señor; el que crece en mí no morirá para siempre.",
+          "texto": "Yo soy la resurrección y la vida —dice el Señor—; el que cree en mí no morirá para siempre.",
           "cita": "Jn 11, 25a. 26"
         }
       },
@@ -1811,7 +1811,7 @@
         "aclamacion": {
           "tipo": "versiculo",
           "cita": "Flp 2, 8-9",
-          "texto": "Cristo, por nosotros, se sometió incluso a la muerte, y una muerte de cruz. Por eso Dios lo levantó sobre todo y le concedió el «Nombre-sobre-todo-nombre»."
+          "texto": "Cristo se ha hecho por nosotros obediente hasta la muerte, y una muerte de cruz. Por eso Dios lo exaltó sobre todo y le concedió el Nombre-sobre-todo-nombre. Para la lectura de la historia de la Pasión del Señor no se llevan cirios ni incienso, ni se hace al principio la salutación habitual, ni se signa el libro. Esta lectura la proclama el diácono o, en su defecto, el mismo celebrante. Pero puede también ser proclamada por lectores laicos, reservando, si es posible, al sacerdote la parte correspondiente a Cristo. Si los lectores de la Pasión son diáconos, antes del canto de la Pasión piden la bendición al celebrante, como en otras ocasiones antes del Evangelio; pero si los lectores no son diáconos se omite esta bendición."
         }
       },
       "viernes_santo": {
@@ -1838,7 +1838,7 @@
         },
         "aclamacion": {
           "tipo": "versiculo",
-          "texto": "Cristo, por nosotros, se sometió incluso a la muerte, y una muerte de cruz. Por eso Dios lo levantó sobre todo, y le concedió el «Nombre-sobre-todo-nombre».",
+          "texto": "Cristo se ha hecho por nosotros obediente hasta la muerte, y una muerte de cruz. Por eso Dios lo exaltó sobre todo y le concedió el Nombre-sobre-todo-nombre. Para la lectura de la historia de la Pasión del Señor no se llevan cirios ni incienso, ni se hace al principio la salutación habitual, ni se signa el libro. Esta lectura la proclama el diácono o, en su defecto, el mismo celebrante. Pero puede también ser proclamada por lectores laicos, reservando, si es posible, al sacerdote la parte correspondiente a Cristo. Si los lectores de la Pasión son diáconos, antes del canto de la Pasión piden la bendición al celebrante, como en otras ocasiones antes del Evangelio; pero si los lectores no son diáconos se omite esta bendición.",
           "cita": "Flp 2, 8-9"
         }
       },
@@ -2198,7 +2198,7 @@
         },
         "aclamacion": {
           "tipo": "aleluya",
-          "texto": "Preparad el camino del Señor, allanad sus senderos; y todos verán la salvación del Señor.",
+          "texto": "Preparad el camino del Señor, allanad sus senderos. Toda carne verá la salvación de Dios.",
           "cita": "Lc 3, 4cd. 6"
         }
       },
@@ -2226,7 +2226,7 @@
         },
         "aclamacion": {
           "tipo": "aleluya",
-          "texto": "El Espíritu del Señor está sobre mí, me ha enviado para dar la Buena Noticia a los pobres.",
+          "texto": "El Espíritu del Señor está sobre mí: me ha enviado a evangelizar a los pobres.",
           "cita": "Cf. Is 61, 1 (Lc 4, 18ac)"
         }
       },
@@ -2255,7 +2255,7 @@
         "aclamacion": {
           "tipo": "aleluya",
           "cita": "Lc 1, 38",
-          "texto": "Aquí está la esclava del Señor, hágase en mí según tu palabra."
+          "texto": "He aquí la esclava del Señor; hágase en mí según tu palabra."
         }
       },
       "natividad_vigilia": {
@@ -2286,7 +2286,7 @@
         },
         "aclamacion": {
           "tipo": "aleluya",
-          "texto": "Mañana quedará borrada la maldad de la tierra, y será nuestro rey el Salvador del mundo."
+          "texto": "Mañana quedará borrada la maldad de la tierra, y reinará sobre nosotros el Salvador del mundo."
         }
       },
       "natividad_medianoche": {
@@ -2313,7 +2313,7 @@
         },
         "aclamacion": {
           "tipo": "aleluya",
-          "texto": "Os traigo la buena noticia: nos ha nacido un Salvador; el Mesías, el Señor.",
+          "texto": "Os anuncio una buena noticia: hoy nos ha nacido un Salvador, el Mesías, el Señor.",
           "cita": "Cf. Lc 2, 10-11"
         }
       },
@@ -2341,7 +2341,7 @@
         },
         "aclamacion": {
           "tipo": "aleluya",
-          "texto": "Gloria a Dios en el cielo, y en la tierra paz a los hombres que el Señor ama.",
+          "texto": "Gloria a Dios en el cielo, y en la tierra paz a los hombres de buena voluntad.",
           "cita": "Lc 2, 14"
         }
       },
@@ -2404,7 +2404,7 @@
         },
         "aclamacion": {
           "tipo": "aleluya",
-          "texto": "Que la paz de Cristo actúe de árbitro en vuestro corazón; que la Palabra de Cristo habite entre vosotros en toda su riqueza.",
+          "texto": "En muchas ocasiones habló Dios antiguamente a los padres por los profetas. En esta etapa final, nos ha hablado por el Hijo.",
           "cita": "Heb 1, 1-2"
         }
       },
@@ -2432,7 +2432,7 @@
         },
         "aclamacion": {
           "tipo": "aleluya",
-          "texto": "En distintas ocasiones habló Dios antiguamente a nuestros padres por los Profetas; ahora, en esta etapa final, nos ha hablado por el Hijo.",
+          "texto": "En muchas ocasiones habló Dios antiguamente a los padres por los profetas. En esta etapa final, nos ha hablado por el Hijo.",
           "cita": "Heb 1, 1-2"
         }
       },
@@ -2465,7 +2465,7 @@
         "aclamacion": {
           "tipo": "aleluya",
           "cita": "Cf. 1 Tim 3, 16",
-          "texto": "Gloria a ti, Cristo, proclamado a los gentiles. Gloria a ti, Cristo, creído en el mundo."
+          "texto": "Gloria a ti, Cristo, proclamado en las naciones; gloria a ti, Cristo, creído en el mundo."
         }
       },
       "epifania": {
@@ -2521,7 +2521,7 @@
         "aclamacion": {
           "tipo": "aleluya",
           "cita": "Cf. Jn 1, 29",
-          "texto": "Los cielos se abrieron y se oyó la voz del Padre: Este es mi Hijo, el amado; escuchadle."
+          "texto": "Vio Juan a Jesús que venía hacia él, y exclamó: «Este es el Cordero de Dios, que quita el pecado del mundo»."
         }
       },
       "cuaresma_3": {
@@ -2637,7 +2637,7 @@
         "aclamacion": {
           "tipo": "versiculo",
           "cita": "Flp 2, 8-9",
-          "texto": "Cristo por nosotros se sometió incluso a la muerte, y una muerte de cruz. Por eso Dios lo levantó sobre todo, y le concedió el «Nombre-sobre-todo-nombre»."
+          "texto": "Cristo se ha hecho por nosotros obediente hasta la muerte, y una muerte de cruz. Por eso Dios lo exaltó sobre todo y le concedió el Nombre-sobre-todo-nombre. Para la lectura de la historia de la Pasión del Señor no se llevan cirios ni incienso, ni se hace al principio la salutación habitual, ni se signa el libro. Esta lectura la proclama el diácono o, en su defecto, el mismo celebrante. Pero puede también ser proclamada por lectores laicos, reservando, si es posible, al sacerdote la parte correspondiente a Cristo. Si los lectores de la Pasión son diáconos, antes del canto de la Pasión piden la bendición al celebrante, como en otras ocasiones antes del Evangelio; pero si los lectores no son diáconos se omite esta bendición."
         }
       },
       "jueves_santo": {
@@ -2759,7 +2759,7 @@
         "aclamacion": {
           "tipo": "aleluya",
           "cita": "Jn 20, 29",
-          "texto": "Porque me has visto, Tomás, has creído —dice el Señor—. Dichosos los que crean sin haber visto."
+          "texto": "Porque me has visto, Tomás, has creído —dice el Señor—; bienaventurados los que crean sin haber visto."
         }
       },
       "pascua_3": {
@@ -2815,7 +2815,7 @@
         "aclamacion": {
           "tipo": "aleluya",
           "cita": "Jn 10, 14",
-          "texto": "Yo soy el buen Pastor —dice el Señor—, conozco a mis ovejas, y las mías me conocen."
+          "texto": "Yo soy el Buen Pastor —dice el Señor—, que conozco a mis ovejas, y las mías me conocen."
         }
       },
       "pascua_5": {
@@ -2899,7 +2899,7 @@
         "aclamacion": {
           "tipo": "aleluya",
           "cita": "Mt 28, 19a. 20b",
-          "texto": "Id y haced discípulos de todos los pueblos —dice el Señor—; yo estoy con vosotros todos los días, hasta el fin del mundo."
+          "texto": "Id y haced discípulos a todos los pueblos —dice el Señor—; yo estoy con vosotros todos los días,  hasta el final de los tiempos."
         }
       },
       "pascua_7": {
@@ -3009,7 +3009,7 @@
         "aclamacion": {
           "tipo": "aleluya",
           "cita": "Cf. Ap 1, 8",
-          "texto": "Gloria al Padre, y al Hijo, y al Espíritu Santo, al Dios que es, que era y que viene."
+          "texto": "Gloria al Padre, y al Hijo, y al Espíritu Santo; al Dios que es, al que era y al que ha de venir."
         }
       },
       "corpus": {
@@ -3065,7 +3065,7 @@
         "aclamacion": {
           "tipo": "aleluya",
           "cita": "1 Jn 4, 10b",
-          "texto": "Cargad con mi yugo y aprended de mí —dice el Señor—, que soy manso y humilde de corazón."
+          "texto": "Dios nos amó y nos envió a su Hijo como víctima de propiciación por nuestros pecados."
         }
       },
       "to_2": {
@@ -3093,7 +3093,7 @@
         "aclamacion": {
           "tipo": "aleluya",
           "cita": "Cf. Jn 1, 41. 17b",
-          "texto": "Hemos encontrado al Mesías, que es Cristo; la gracia y la verdad vinieron por medio de él."
+          "texto": "Hemos encontrado al Mesías, que es Cristo; la gracia y la verdad nos han llegado por medio de él."
         }
       },
       "to_3": {
@@ -3233,7 +3233,7 @@
         "aclamacion": {
           "tipo": "aleluya",
           "cita": "Lc 4, 18",
-          "texto": "Id y haced discípulos de todos los pueblos —dice el Señor—; yo estoy con vosotros todos los días, hasta el fin del mundo."
+          "texto": "El Señor me ha enviado a evangelizar a los pobres, a proclamar a los cautivos la libertad."
         }
       },
       "to_8": {
@@ -3261,7 +3261,7 @@
         "aclamacion": {
           "tipo": "aleluya",
           "cita": "Sant 1, 18",
-          "texto": "El Padre, por propia iniciativa, con la palabra de la verdad, nos engendró, para que seamos como la primicia de sus criaturas."
+          "texto": "Por propia iniciativa el Padre nos engendró con la palabra de la verdad, para que seamos como una primicia de sus criaturas."
         }
       },
       "to_9": {
@@ -3293,7 +3293,7 @@
         "aclamacion": {
           "tipo": "aleluya",
           "cita": "Cf. Jn 17, 17b. a",
-          "texto": "El Padre, por propia iniciativa, con la palabra de la verdad, nos engendró, para que seamos como la primicia de sus criaturas."
+          "texto": "Tu palabra, Señor, es verdad; santifícanos en la verdad."
         }
       },
       "to_10": {
@@ -3348,8 +3348,8 @@
         },
         "aclamacion": {
           "tipo": "aleluya",
-          "cita": "Mc 4, 26-34",
-          "texto": "La semilla es la palabra de Dios, el sembrador es Cristo; quien lo encuentra vive para siempre."
+          "cita": "",
+          "texto": "La semilla es la palabra de Dios, y el sembrador es Cristo; todo el que lo encuentra vive para siempre."
         }
       },
       "to_12": {
@@ -3437,7 +3437,7 @@
         "aclamacion": {
           "tipo": "aleluya",
           "cita": "Cf. Lc 4, 18ac",
-          "texto": "El Espíritu del Señor está sobre mí; me ha enviado para anunciar el Evangelio a los pobres."
+          "texto": "El Espíritu del Señor está sobre mí; me ha enviado a evangelizar a los pobres."
         }
       },
       "to_15": {
@@ -3469,7 +3469,7 @@
         "aclamacion": {
           "tipo": "aleluya",
           "cita": "Cf. Ef 1, 17-18",
-          "texto": "El Espíritu del Señor está sobre mí; me ha enviado para anunciar el Evangelio a los pobres."
+          "texto": "El Padre de nuestro Señor Jesucristo ilumine los ojos de nuestro corazón, para que comprendamos cuál es la esperanza a la que nos llama."
         }
       },
       "to_16": {
@@ -3553,7 +3553,7 @@
         "aclamacion": {
           "tipo": "aleluya",
           "cita": "Mt 4, 4b",
-          "texto": "No sólo de pan vive el hombre, sino de toda palabra que sale de la boca de Dios."
+          "texto": "No solo de pan vive el hombre, sino de toda palabra que sale de la boca de Dios."
         }
       },
       "to_19": {
@@ -3609,7 +3609,7 @@
         "aclamacion": {
           "tipo": "aleluya",
           "cita": "Jn 6, 56",
-          "texto": "El que come mi carne y bebe mi sangre habita en mí y yo en él —dice el Señor—."
+          "texto": "El que come mi carne y bebe mi sangre —dice el Señor— habita en mí y yo en él."
         }
       },
       "to_21": {
@@ -3693,7 +3693,7 @@
         "aclamacion": {
           "tipo": "aleluya",
           "cita": "Cf. Mt 4, 23",
-          "texto": "El Padre, por propia iniciativa, con la palabra de la verdad, nos engendró, para que seamos como la primicia de sus criaturas."
+          "texto": "Jesús proclamaba el evangelio del reino, y curaba toda dolencia del pueblo."
         }
       },
       "to_24": {
@@ -3721,7 +3721,7 @@
         "aclamacion": {
           "tipo": "aleluya",
           "cita": "Gal 6, 14",
-          "texto": "Jesús proclamaba el Evangelio del reino, curando las dolencias del pueblo."
+          "texto": "Dios me libre de gloriarme si no es en la cruz del Señor, por la cual el mundo está crucificado para mí, y yo para el mundo."
         }
       },
       "to_25": {
@@ -3777,7 +3777,7 @@
         "aclamacion": {
           "tipo": "aleluya",
           "cita": "Cf. Jn 17, 17b. a",
-          "texto": "Tu palabra, Señor, es verdad; conságranos en la verdad."
+          "texto": "Tu palabra, Señor, es verdad; santifícanos en la verdad."
         }
       },
       "to_27": {
@@ -3841,7 +3841,7 @@
         "aclamacion": {
           "tipo": "aleluya",
           "cita": "Mt 5, 3",
-          "texto": "Dichosos los pobres en el espíritu, porque de ellos es el reino de los cielos."
+          "texto": "Bienaventurados los pobres en el espíritu, porque de ellos es el reino de los cielos."
         }
       },
       "to_29": {
@@ -3873,7 +3873,7 @@
         "aclamacion": {
           "tipo": "aleluya",
           "cita": "Mc 10, 45",
-          "texto": "El Hijo del hombre ha venido para servir y dar su vida en rescate por todos."
+          "texto": "El Hijo del hombre ha venido a servir y dar su vida en rescate por muchos."
         }
       },
       "to_30": {
@@ -3901,7 +3901,7 @@
         "aclamacion": {
           "tipo": "aleluya",
           "cita": "Cf. 2 Tim 1, 10",
-          "texto": "Nuestro Salvador Jesucristo destruyó la muerte y sacó a la luz la vida, por medio del Evangelio."
+          "texto": "Nuestro Salvador, Cristo Jesús, destruyó la muerte, e hizo brillar la vida por medio del Evangelio."
         }
       },
       "to_31": {
@@ -3989,7 +3989,7 @@
         "aclamacion": {
           "tipo": "aleluya",
           "cita": "Lc 21, 36abd",
-          "texto": "Estad siempre despiertos, pidiendo fuerza para manteneros en pie ante el Hijo del hombre."
+          "texto": "Estad despiertos en todo tiempo, pidiendo manteneros en pie ante el Hijo del hombre."
         }
       },
       "cristo_rey": {
@@ -4107,7 +4107,7 @@
         "aclamacion": {
           "tipo": "versiculo",
           "cita": "Mt 4, 4b",
-          "texto": "No sólo de pan vive el hombre, sino de toda palabra que sale de la boca de Dios."
+          "texto": "No solo de pan vive el hombre, sino de toda palabra que sale de la boca de Dios."
         }
       },
       "cuaresma_2": {
@@ -4134,7 +4134,8 @@
         },
         "aclamacion": {
           "tipo": "versiculo",
-          "texto": "En el esplendor de la nube se oyó la voz del Padre: Este es mi Hijo, el amado, escuchadlo."
+          "texto": "En el esplendor de la nube se oyó la voz del Padre: «Este es mi Hijo, el Elegido, escuchadlo».",
+          "cita": "Cf. Lc 9, 35"
         }
       },
       "vigilia_pascual_lectura_1": {
@@ -4314,7 +4315,7 @@
         "aclamacion": {
           "tipo": "aleluya",
           "cita": "Lc 3, 4cd. 6",
-          "texto": "Preparad el camino del Señor, allanad sus senderos. Todos verán la salvación de Dios."
+          "texto": "Preparad el camino del Señor, allanad sus senderos. Toda carne verá la salvación de Dios."
         }
       },
       "natividad_medianoche": {
@@ -4341,7 +4342,7 @@
         },
         "aclamacion": {
           "tipo": "aleluya",
-          "texto": "Os traigo una buena noticia, una gran alegría: nos ha nacido un Salvador: el Mesías, el Señor.",
+          "texto": "Os anuncio una buena noticia: hoy nos ha nacido un Salvador, el Mesías, el Señor.",
           "cita": "Cf. Lc 2, 10-11"
         }
       },
@@ -4369,7 +4370,7 @@
         },
         "aclamacion": {
           "tipo": "aleluya",
-          "texto": "Gloria a Dios en el cielo, y en la tierra paz a los hombres que ama el Señor.",
+          "texto": "Gloria a Dios en el cielo, y en la tierra paz a los hombres de buena voluntad.",
           "cita": "Lc 2, 14"
         }
       },
@@ -4428,7 +4429,7 @@
         },
         "aclamacion": {
           "tipo": "aleluya",
-          "texto": "Que la paz de Cristo actúe de árbitro en vuestro corazón; la palabra de Cristo habite entre vosotros en toda su riqueza.",
+          "texto": "Abre, Señor, nuestro corazón, para que aceptemos las palabras de tu Hijo.",
           "cita": "Cf. Hch 16, 14b"
         }
       },
@@ -4461,7 +4462,7 @@
         "aclamacion": {
           "tipo": "aleluya",
           "cita": "Cf. 1 Tim 3, 16",
-          "texto": "Gloria a ti, Cristo, proclamado a los gentiles. Gloria a ti, Cristo, creído en el mundo."
+          "texto": "Gloria a ti, Cristo, proclamado en las naciones; gloria a ti, Cristo, creído en el mundo."
         }
       },
       "bautismo": {
@@ -4489,7 +4490,7 @@
         "aclamacion": {
           "tipo": "aleluya",
           "cita": "Cf. Lc 3, 16",
-          "texto": "Se abrió el cielo, y se oyó la voz del Padre: «Éste es mi Hijo amado; escuchadlo.»"
+          "texto": "Viene el que es más fuerte que yo —dijo Juan—; él os bautizará con Espíritu Santo y fuego."
         }
       },
       "cuaresma_2": {
@@ -4520,8 +4521,8 @@
         },
         "aclamacion": {
           "tipo": "versiculo",
-          "texto": "En el esplendor de la nube se oyó la voz del Padre: «Éste es mi Hijo, el amado; escuchadlo.»",
-          "cita": "cf. Lc 9, 35"
+          "texto": "En el esplendor de la nube se oyó la voz del Padre: «Este es mi Hijo amado, escuchadlo».",
+          "cita": "Cf. Lc 9, 35"
         }
       },
       "cuaresma_4": {
@@ -4576,7 +4577,7 @@
         },
         "aclamacion": {
           "tipo": "versiculo",
-          "texto": "Ahora —oráculo del Señor— convertíos a mí de todo corazón, porque soy compasivo y misericordioso.",
+          "texto": "Ahora –dice el Señor–, convertíos a mí de todo corazón, porque soy compasivo y misericordioso.",
           "cita": "Jl 2, 12-13"
         }
       },
@@ -4600,7 +4601,7 @@
         "aclamacion": {
           "tipo": "versiculo",
           "cita": "Flp 2, 8-9",
-          "texto": "Cristo, por nosotros, se sometió incluso a la muerte, y una muerte de cruz. Por eso Dios lo levantó sobre todo y le concedió el «Nombre-sobre-todo-nombre»."
+          "texto": "Cristo se ha hecho por nosotros obediente hasta la muerte, y una muerte de cruz. Por eso Dios lo exaltó sobre todo y le concedió el Nombre-sobre-todo-nombre. Para la lectura de la historia de la Pasión del Señor no se llevan cirios ni incienso, ni se hace al principio la salutación habitual, ni se signa el libro. Esta lectura la proclama el diácono o, en su defecto, el mismo celebrante. Pero puede también ser proclamada por lectores laicos, reservando, si es posible, al sacerdote la parte correspondiente a Cristo. Si los lectores de la Pasión son diáconos, antes del canto de la Pasión piden la bendición al celebrante, como en otras ocasiones antes del Evangelio; pero si los lectores no son diáconos se omite esta bendición."
         },
         "segunda": {
           "titulo": "Se humilló a sí mismo; por eso Dios lo exaltó sobre todo",
@@ -4660,7 +4661,7 @@
         },
         "aclamacion": {
           "tipo": "versiculo",
-          "texto": "Cristo, por nosotros, se sometió incluso a la muerte, y una muerte de cruz. Por eso Dios lo levantó sobre todo y le concedió el «Nombre-sobre-todo-nombre».",
+          "texto": "Cristo se ha hecho por nosotros obediente hasta la muerte, y una muerte de cruz. Por eso Dios lo exaltó sobre todo y le concedió el Nombre-sobre-todo-nombre. Para la lectura de la historia de la Pasión del Señor no se llevan cirios ni incienso, ni se hace al principio la salutación habitual, ni se signa el libro. Esta lectura la proclama el diácono o, en su defecto, el mismo celebrante. Pero puede también ser proclamada por lectores laicos, reservando, si es posible, al sacerdote la parte correspondiente a Cristo. Si los lectores de la Pasión son diáconos, antes del canto de la Pasión piden la bendición al celebrante, como en otras ocasiones antes del Evangelio; pero si los lectores no son diáconos se omite esta bendición.",
           "cita": "Flp 2, 8-9"
         }
       },
@@ -4727,7 +4728,7 @@
         "aclamacion": {
           "tipo": "aleluya",
           "cita": "Jn 20, 29",
-          "texto": "Porque me has visto, Tomás, has creído —dice el Señor—. Dichosos los que crean sin haber visto."
+          "texto": "Porque me has visto, Tomás, has creído —dice el Señor—; bienaventurados los que crean sin haber visto."
         }
       },
       "pascua_3": {
@@ -4758,7 +4759,7 @@
         },
         "aclamacion": {
           "tipo": "aleluya",
-          "texto": "Ha resucitado Cristo, que creó todas las cosas y se compadeció del género humano."
+          "texto": "Ha resucitado Cristo, que creó todas las cosas, y se ha compadecido del género humano."
         }
       },
       "pascua_4": {
@@ -4786,7 +4787,7 @@
         "aclamacion": {
           "tipo": "aleluya",
           "cita": "Jn 10, 14",
-          "texto": "Yo soy el buen Pastor —dice el Señor—, conozco mis ovejas, y las mías me conocen."
+          "texto": "Yo soy el Buen Pastor —dice el Señor—, que conozco a mis ovejas, y las mías me conocen."
         }
       },
       "pascua_5": {
@@ -4870,7 +4871,7 @@
         "aclamacion": {
           "tipo": "aleluya",
           "cita": "Mt 28, 19a. 20b",
-          "texto": "Id y haced discípulos de todos los pueblos —dice el Señor—; yo estoy con vosotros todos los días, hasta el fin del mundo."
+          "texto": "Id y haced discípulos a todos los pueblos —dice el Señor—; yo estoy con vosotros todos los días, hasta el final de los tiempos."
         }
       },
       "pascua_7": {
@@ -4980,7 +4981,7 @@
         "aclamacion": {
           "tipo": "aleluya",
           "cita": "Cf. Ap 1, 8",
-          "texto": "Gloria al Padre, y al Hijo, y al Espíritu Santo, al Dios que es, que era y que viene."
+          "texto": "Gloria al Padre, y al Hijo, y al Espíritu Santo; al Dios que es, al que era y al que ha de venir."
         }
       },
       "corpus": {
@@ -5036,7 +5037,7 @@
         "aclamacion": {
           "tipo": "aleluya",
           "cita": "Jn 10, 14",
-          "texto": "Cargad con mi yugo y aprended de mí —dice el Señor—, que soy manso y humilde de corazón."
+          "texto": "Yo soy el Buen Pastor —dice el Señor—, que conozco a mis ovejas, y las mías me conocen."
         }
       },
       "to_2": {
@@ -5971,7 +5972,7 @@
         },
         "aclamacion": {
           "tipo": "aleluya",
-          "texto": "En distintas ocasiones habló Dios antiguamente a nuestros padres por los profetas. Ahora, en esta etapa final, nos ha hablado por el Hijo.",
+          "texto": "En muchas ocasiones habló Dios antiguamente a los padres por los profetas. En esta etapa final, nos ha hablado por el Hijo.",
           "cita": "Heb 1, 1-2"
         }
       },
@@ -6031,7 +6032,7 @@
         },
         "aclamacion": {
           "tipo": "aleluya",
-          "texto": "Mañana quedará borrada la maldad de la tierra, y será nuestro rey el Salvador del mundo."
+          "texto": "Mañana quedará borrada la maldad de la tierra, y reinará sobre nosotros el Salvador del mundo."
         }
       },
       "presentacion": {
@@ -6119,7 +6120,7 @@
         "aclamacion": {
           "tipo": "versiculo",
           "cita": "Mt 4, 4b",
-          "texto": "No sólo de pan vive el hombre, sino de toda palabra que sale de la boca de Dios."
+          "texto": "No solo de pan vive el hombre, sino de toda palabra que sale de la boca de Dios."
         }
       },
       "cuaresma_3": {
@@ -6233,7 +6234,7 @@
         },
         "aclamacion": {
           "tipo": "aleluya",
-          "texto": "Aquí está la esclava del Señor; hágase en mi según tu palabra.",
+          "texto": "He aquí la esclava del Señor; hágase en mí según tu palabra.",
           "cita": "Lc 1, 38"
         }
       },
@@ -6262,7 +6263,7 @@
         "aclamacion": {
           "tipo": "aleluya",
           "cita": "Cf. Is 61, 1 (Lc 4, 18ac)",
-          "texto": "El Espíritu del Señor está sobre mí; me ha enviado para anunciar el Evangelio a los pobres."
+          "texto": "El Espíritu del Señor está sobre mí: me ha enviado a evangelizar a los pobres."
         }
       },
       "vigilia_pascual_lectura_1": {
@@ -14422,7 +14423,7 @@
       },
       "aclamacion": {
         "tipo": "aleluya",
-        "texto": "Mirad que llega el Señor para salvar a su pueblo; dichosos los que están preparados para salir a su encuentro."
+        "texto": "Mirad que llega el Señor, para salvar a su pueblo; bienaventurados los que están preparados para salir a su encuentro."
       }
     },
     "adviento_1_jueves": {
@@ -14445,7 +14446,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Is 55, 6",
-        "texto": "Buscad al Señor mientras se le encuentra, invocadlo mientras esté cerca."
+        "texto": "Buscad al Señor mientras se deja encontrar, invocadlo mientras está cerca."
       }
     },
     "adviento_1_viernes": {
@@ -14534,7 +14535,7 @@
       },
       "aclamacion": {
         "tipo": "aleluya",
-        "texto": "El día del Señor está cerca; él viene a salvarnos."
+        "texto": "Está cerca el día del Señor; mirad, él viene a salvarnos."
       }
     },
     "adviento_2_miercoles": {
@@ -14556,7 +14557,7 @@
       },
       "aclamacion": {
         "tipo": "aleluya",
-        "texto": "Mirad que llega el Señor para salvar a su pueblo; dichosos los que están preparados para salir a su encuentro."
+        "texto": "Mirad que llega el Señor, para salvar a su pueblo; bienaventurados los que están preparados para salir a su encuentro."
       }
     },
     "adviento_2_jueves": {
@@ -14579,7 +14580,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Cf. Is 45, 8",
-        "texto": "Cielos, destilad el rocío; nubes, derramad al Justo. Ábrase la tierra y brote la salvación."
+        "texto": "Cielos, destilad desde lo alto al Justo, las nubes lo derramen, se abra la tierra y brote el Salvador."
       }
     },
     "adviento_2_viernes": {
@@ -14624,7 +14625,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Lc 3, 4cd. 6",
-        "texto": "Preparad el camino del Señor, allanad sus senderos. Todos verán la salvación de Dios."
+        "texto": "Preparad el camino del Señor, allanad sus senderos. Toda carne verá la salvación de Dios."
       }
     },
     "adviento_3_lunes": {
@@ -14715,7 +14716,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Lc 3, 4cd. 6",
-        "texto": "Preparad el camino del Señor, allanad sus senderos. Todos verán la salvación de Dios."
+        "texto": "Preparad el camino del Señor, allanad sus senderos. Toda carne verá la salvación de Dios."
       }
     },
     "adviento_3_viernes": {
@@ -14737,7 +14738,7 @@
       },
       "aclamacion": {
         "tipo": "aleluya",
-        "texto": "Ven, Señor, visítanos con tu paz, y nos alegraremos en tu presencia de todo corazón."
+        "texto": "Ven, Señor, visítanos con tu paz, para que nos alegremos en tu presencia de todo corazón."
       }
     },
     "navidad_16_dic": {
@@ -14762,7 +14763,7 @@
       },
       "aclamacion": {
         "tipo": "aleluya",
-        "texto": "Sabiduría del Altísimo, que lo ordenas todo con firmeza y suavidad, ven y muéstranos el camino de la prudencia."
+        "texto": "Sabiduría del Altísimo, que lo dispones todo con firmeza y suavidad, ven para mostrarnos el camino de la prudencia."
       }
     },
     "navidad_18_dic": {
@@ -14784,7 +14785,7 @@
       },
       "aclamacion": {
         "tipo": "aleluya",
-        "texto": "Pastor de la casa de Israel, que en el Sinaí diste a Moisés tu ley, ven a librarnos con el poder de tu brazo."
+        "texto": "Pastor de la casa de Israel, que en el Sinaí diste a Moisés tu ley, ven a rescatarnos con el poder de tu brazo."
       }
     },
     "navidad_19_dic": {
@@ -14806,7 +14807,7 @@
       },
       "aclamacion": {
         "tipo": "aleluya",
-        "texto": "Renuevo del tronco de Jesé, que te alzas como un signo para los pueblos, ven a librarnos, no tardes más."
+        "texto": "Raíz de Jesé, que te alzas como un signo para los pueblos, ven a librarnos, no tardes más."
       }
     },
     "navidad_20_dic": {
@@ -14850,7 +14851,7 @@
       },
       "aclamacion": {
         "tipo": "aleluya",
-        "texto": "Emmanuel, rey y legislador nuestro, ven a salvarnos, Señor, Dios nuestro."
+        "texto": "Enmanuel, rey y legislador nuestro, ven a salvarnos, Señor, Dios nuestro."
       }
     },
     "navidad_22_dic": {
@@ -14926,7 +14927,7 @@
           "texto": "El pueblo que caminaba en tinieblas vio una luz grande; habitaban tierras de sombras, y una luz les brilló.\nAcreciste la alegría, aumentaste el gozo: se gozan en tu presencia, como gozan al segar, como se alegran al repartirse el botín.\nPorque la vara del opresor,\nel yugo de su carga,\nel bastón de su hombro,\nlos quebrantaste como el día de Madián.\nPorque la bota que pisa con estrépito y la túnica empapada de sangre serán combustible, pasto del fuego. Porque un niño nos ha nacido, un hijo se nos ha dado: lleva al hombro el principado, y es su nombre:\nMaravilla de Consejero,\nDios guerrero,\nPadre perpetuo,\nPríncipe de la paz.\nPara dilatar el principado con una paz sin límites, sobre el trono de David y sobre su reino.\nPara sostenerlo y consolidarlo con la justicia y el derecho, desde ahora y por siempre.\nEl celo del Señor lo realizará."
         },
         "salmo": {
-          "cita": "Sal 95, 1-2a. 2b-3, 11-12. 13",
+          "cita": "Sal 95, 1-2a. 2b-3. 11-12. 13",
           "texto": "V/. Cantad al Señor un cántico nuevo, cantad al Señor, toda la tierra; cantad al Señor, bendecid su nombre. R/.\n\nV/. Proclamad día tras día su victoria. Contad a los pueblos su gloria, sus maravillas a todas las naciones. R/.\n\nV/. Alégrese el cielo, goce la tierra, retumbe el mar y cuanto lo llena; vitoreen los campos y cuanto hay en ellos, aclamen los árboles del bosque. R/.\n\nV/. Delante del Señor, que ya llega, ya llega a regir la tierra: regirá el orbe con justicia y los pueblos con fidelidad. R/.",
           "antifona": "Hoy nos ha nacido un Salvador: el Mesías, el Señor."
         },
@@ -14942,8 +14943,8 @@
         },
         "aclamacion": {
           "tipo": "aleluya",
-          "texto": "Os traigo la buena noticia: nos ha nacido un Salvador: el Mesías, el Señor.",
-          "cita": "Lc  2,  10-14"
+          "texto": "Os anuncio una buena noticia: hoy nos ha nacido un Salvador, el Mesías, el Señor.",
+          "cita": "Cf. Lc 2, 10-11"
         }
       }
     },
@@ -15012,7 +15013,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Jn 1, 14a. 12a",
-        "texto": "La Palabra se hizo carne y acampó entre nosotros. A cuantos la recibieron, les da poder para ser hijos de Dios."
+        "texto": "El Verbo se hizo carne y habitó entre nosotros; a cuantos lo recibieron, les dio poder de ser hijos de Dios."
       }
     },
     "ceniza": {
@@ -15086,7 +15087,7 @@
       "aclamacion": {
         "tipo": "versiculo",
         "cita": "Am 5, 14",
-        "texto": "Buscad el bien y no el mal, y viviréis, y así estará con vosotros el Señor."
+        "texto": "Buscad el bien, no el mal, y viviréis; y el Señor estará con vosotros."
       }
     },
     "cuaresma_0_sabado": {
@@ -15109,7 +15110,7 @@
       "aclamacion": {
         "tipo": "versiculo",
         "cita": "Ez 33, 11",
-        "texto": "No quiero la muerte del malvado —dice el Señor—, sino que cambie de conducta y viva."
+        "texto": "No me complazco en la muerte del malvado —dice el Señor—, sino en que se convierta y viva."
       }
     },
     "cuaresma_1_lunes": {
@@ -15132,7 +15133,7 @@
       "aclamacion": {
         "tipo": "versiculo",
         "cita": "2 Cor 6, 2b",
-        "texto": "Ahora es tiempo favorable, ahora es día de salvación."
+        "texto": "Ahora es el tiempo favorable, ahora es el día de la salvación."
       }
     },
     "cuaresma_1_martes": {
@@ -15155,7 +15156,7 @@
       "aclamacion": {
         "tipo": "versiculo",
         "cita": "Mt 4, 4b",
-        "texto": "No sólo de pan vive el hombre, sino de toda palabra que sale de la boca de Dios."
+        "texto": "No solo de pan vive el hombre, sino de toda palabra que sale de la boca de Dios."
       }
     },
     "cuaresma_1_miercoles": {
@@ -15178,7 +15179,7 @@
       "aclamacion": {
         "tipo": "versiculo",
         "cita": "Jl 2, 12-13",
-        "texto": "Ahora —oráculo del Señor— convertíos a mi de todo corazón, porque soy compasivo y misericordioso."
+        "texto": "Ahora —dice el Señor—, convertíos a mí de todo corazón, porque soy compasivo y misericordioso."
       }
     },
     "cuaresma_1_jueves": {
@@ -15201,7 +15202,7 @@
       "aclamacion": {
         "tipo": "versiculo",
         "cita": "Sal 50, 12a. 14a",
-        "texto": "Oh Dios, crea en mi un corazón puro, devuélveme la alegría de tu salvación."
+        "texto": "Oh, Dios, crea en mí un corazón puro; y devuélveme la alegría de tu salvación."
       }
     },
     "cuaresma_1_viernes": {
@@ -15224,7 +15225,7 @@
       "aclamacion": {
         "tipo": "versiculo",
         "cita": "Ez 18, 31",
-        "texto": "Quitaos de encima vuestros delitos —dice el Señor—, y estrenad un corazón nuevo y un espíritu nuevo."
+        "texto": "Apartad de vosotros todos vuestros delitos —dice el Señor—, renovad vuestro corazón y vuestro espíritu."
       }
     },
     "cuaresma_1_sabado": {
@@ -15247,7 +15248,7 @@
       "aclamacion": {
         "tipo": "versiculo",
         "cita": "2 Cor 6, 2b",
-        "texto": "Ahora es tiempo favorable, ahora es día de salvación."
+        "texto": "Ahora es el tiempo favorable, ahora es el día de la salvación."
       }
     },
     "cuaresma_2_lunes": {
@@ -15293,7 +15294,7 @@
       "aclamacion": {
         "tipo": "versiculo",
         "cita": "Ez 18, 31",
-        "texto": "Quitaos de encima vuestros delitos —dice el Señor—, y estrenad un corazón nuevo y un espíritu nuevo."
+        "texto": "Apartad de vosotros todos vuestros delitos —dice el Señor—, renovad vuestro corazón y vuestro espíritu."
       }
     },
     "cuaresma_2_miercoles": {
@@ -15338,8 +15339,8 @@
       },
       "aclamacion": {
         "tipo": "versiculo",
-        "cita": "Mt 4, 17",
-        "texto": "Convertíos —dice el Señor—, porque está cerca el reino de los cielos."
+        "cita": "Cf. Lc 8, 15",
+        "texto": "Bienaventurados los que escuchan la palabra de Dios con un corazón noble y generoso, la guardan y dan fruto con perseverancia."
       }
     },
     "cuaresma_2_viernes": {
@@ -15362,7 +15363,7 @@
       "aclamacion": {
         "tipo": "versiculo",
         "cita": "Jn 3, 16",
-        "texto": "Tanto amó Dios al mundo que entregó a su Hijo único; todos los que creen en él tienen vida eterna."
+        "texto": "Tanto amó Dios al mundo, que entregó a su Unigénito; todo el que cree en él tiene vida eterna."
       }
     },
     "cuaresma_2_sabado": {
@@ -15431,7 +15432,7 @@
       "aclamacion": {
         "tipo": "versiculo",
         "cita": "Jl 2, 12-13",
-        "texto": "Ahora —oráculo del Señor— convertíos a mi de todo corazón, porque soy compasivo y misericordioso."
+        "texto": "Ahora —dice el Señor—, convertíos a mí de todo corazón, porque soy compasivo y misericordioso."
       }
     },
     "cuaresma_3_miercoles": {
@@ -15477,7 +15478,7 @@
       "aclamacion": {
         "tipo": "versiculo",
         "cita": "Jl 2, 12-13",
-        "texto": "Ahora —oráculo del Señor— convertíos a mí de todo corazón, porque soy compasivo y misericordioso."
+        "texto": "Ahora —dice el Señor—, convertíos a mí de todo corazón, porque soy compasivo y misericordioso."
       }
     },
     "cuaresma_3_viernes": {
@@ -15546,7 +15547,7 @@
       "aclamacion": {
         "tipo": "versiculo",
         "cita": "Am 5, 14",
-        "texto": "Buscad el bien y no el mal, y viviréis, y así estará con vosotros el Señor."
+        "texto": "Buscad el bien, no el mal, y viviréis; y el Señor estará con vosotros."
       }
     },
     "cuaresma_4_martes": {
@@ -15569,7 +15570,7 @@
       "aclamacion": {
         "tipo": "versiculo",
         "cita": "Sal 50, 12a. 14a",
-        "texto": "Oh Dios, crea en mi un corazón puro, devuélveme la alegría de tu salvación."
+        "texto": "Oh, Dios, crea en mí un corazón puro; y devuélveme la alegría de tu salvación."
       }
     },
     "cuaresma_4_miercoles": {
@@ -15615,7 +15616,7 @@
       "aclamacion": {
         "tipo": "versiculo",
         "cita": "Jn 3, 16",
-        "texto": "Tanto amó Dios al mundo que entregó a su Hijo único; todos los que creen en él tienen vida eterna."
+        "texto": "Tanto amó Dios al mundo, que entregó a su Unigénito; todo el que cree en él tiene vida eterna."
       }
     },
     "cuaresma_4_viernes": {
@@ -15638,7 +15639,7 @@
       "aclamacion": {
         "tipo": "versiculo",
         "cita": "Mt 4, 4b",
-        "texto": "No sólo de pan vive el hombre, sino de toda palabra que sale de la boca de Dios."
+        "texto": "No solo de pan vive el hombre, sino de toda palabra que sale de la boca de Dios."
       }
     },
     "cuaresma_4_sabado": {
@@ -15660,8 +15661,8 @@
       },
       "aclamacion": {
         "tipo": "versiculo",
-        "cita": "Jn 3, 16",
-        "texto": "Tanto amó Dios al mundo que entregó a su Hijo único; todos los que creen en él tienen vida eterna."
+        "cita": "Cf. Lc 8, 15",
+        "texto": "Bienaventurados los que escuchan la palabra de Dios con un corazón noble y generoso, la guardan y dan fruto con perseverancia."
       }
     },
     "cuaresma_5_lunes": {
@@ -15688,7 +15689,7 @@
       "aclamacion": {
         "tipo": "versiculo",
         "cita": "Ez 33, 11",
-        "texto": "No quiero la muerte del malvado —dice el Señor—, sino que cambie de conducta y viva."
+        "texto": "No me complazco en la muerte del malvado —dice el Señor—, sino en que se convierta y viva."
       }
     },
     "cuaresma_5_martes": {
@@ -15710,7 +15711,7 @@
       },
       "aclamacion": {
         "tipo": "versiculo",
-        "texto": "La semilla es la palabra de Dios, el sembrador es Cristo; quien lo encuentra vive para siempre."
+        "texto": "La semilla es la palabra de Dios, y el sembrador es Cristo; todo el que lo encuentra vive para siempre."
       }
     },
     "cuaresma_5_miercoles": {
@@ -15732,8 +15733,8 @@
       },
       "aclamacion": {
         "tipo": "versiculo",
-        "cita": "cf. Lc 8, 15",
-        "texto": "Dichosos los que con un corazón noble y generoso guardan la palabra de Dios y dan fruto perseverando."
+        "cita": "Cf. Lc 8, 15",
+        "texto": "Bienaventurados los que escuchan la palabra de Dios con un corazón noble y generoso, la guardan y dan fruto con perseverancia."
       }
     },
     "cuaresma_5_jueves": {
@@ -15802,7 +15803,7 @@
       "aclamacion": {
         "tipo": "versiculo",
         "cita": "Ez 18, 31",
-        "texto": "Quitaos de encima vuestros delitos —dice el Señor—, y estrenad un corazón nuevo y un espíritu nuevo."
+        "texto": "Apartad de vosotros todos vuestros delitos —dice el Señor—, renovad vuestro corazón y vuestro espíritu."
       }
     },
     "cuaresma_6_lunes": {
@@ -15824,7 +15825,7 @@
       },
       "aclamacion": {
         "tipo": "versiculo",
-        "texto": "Salve, Rey nuestro, solamente tú te has compadecido de nuestros errores."
+        "texto": "Salve, Rey nuestro, solo tú te has compadecido de nuestros errores."
       }
     },
     "cuaresma_6_martes": {
@@ -15868,7 +15869,7 @@
       },
       "aclamacion": {
         "tipo": "versiculo",
-        "texto": "Salve, Rey nuestro, solamente tú te has compadecido de nuestros errores."
+        "texto": "Salve, Rey nuestro, solo tú te has compadecido de nuestros errores."
       }
     },
     "pascua_0_lunes": {
@@ -15891,7 +15892,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Sal 117, 24",
-        "texto": "Éste es el día en que actuó el Señor, sea nuestra alegría y nuestro gozo."
+        "texto": "Este es el día que hizo el Señor; sea nuestra alegría y nuestro gozo."
       }
     },
     "pascua_0_martes": {
@@ -15914,7 +15915,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Sal 117, 24",
-        "texto": "Éste es el día en que actuó el Señor, sea nuestra alegría y nuestro gozo."
+        "texto": "Este es el día que hizo el Señor; sea nuestra alegría y nuestro gozo."
       }
     },
     "pascua_0_miercoles": {
@@ -15937,7 +15938,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Sal 117, 24",
-        "texto": "Éste es el día en que actuó el Señor, sea nuestra alegría y nuestro gozo."
+        "texto": "Este es el día que hizo el Señor; sea nuestra alegría y nuestro gozo."
       }
     },
     "pascua_0_jueves": {
@@ -15960,7 +15961,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Sal 117, 24",
-        "texto": "Éste es el día en que actuó el Señor, sea nuestra alegría y nuestro gozo."
+        "texto": "Este es el día que hizo el Señor; sea nuestra alegría y nuestro gozo."
       }
     },
     "pascua_0_viernes": {
@@ -15983,7 +15984,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Sal 117, 24",
-        "texto": "Éste es el día en que actuó el Señor, sea nuestra alegría y nuestro gozo."
+        "texto": "Este es el día que hizo el Señor; sea nuestra alegría y nuestro gozo."
       }
     },
     "pascua_0_sabado": {
@@ -16006,7 +16007,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Sal 117, 24",
-        "texto": "Éste es el día en que actuó el Señor, sea nuestra alegría y nuestro gozo."
+        "texto": "Este es el día que hizo el Señor; sea nuestra alegría y nuestro gozo."
       }
     },
     "pascua_2_lunes": {
@@ -16029,7 +16030,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Col 3, 1",
-        "texto": "Ya que habéis resucitado con Cristo, buscad los bienes de allá arriba, donde está Cristo, sentado a la derecha de Dios."
+        "texto": "Si habéis resucitado con Cristo, buscad los bienes de allá arriba, donde Cristo está sentado a la derecha de Dios."
       }
     },
     "pascua_2_martes": {
@@ -16052,7 +16053,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Jn 3, 14b-15",
-        "texto": "El Hijo del hombre tiene que ser elevado, para que todo el que cree en él tenga vida eterna."
+        "texto": "Tiene que ser elevado el Hijo del hombre, para que todo el que cree en él tenga vida eterna."
       }
     },
     "pascua_2_miercoles": {
@@ -16075,7 +16076,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Cf. Jn 3, 16",
-        "texto": "Tanto amó Dios al mundo que entregó a su Hijo único; todos los que creen en él tienen vida eterna."
+        "texto": "Tanto amó Dios al mundo, que entregó a su Unigénito; todo el que cree en él tiene vida eterna."
       }
     },
     "pascua_2_jueves": {
@@ -16098,7 +16099,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Jn 20, 29",
-        "texto": "Porque me has visto, Tomás, has creído. Dichosos los que crean sin haber visto."
+        "texto": "Porque me has visto, Tomás, has creído —dice el Señor—; bienaventurados los que crean sin haber visto."
       }
     },
     "pascua_2_viernes": {
@@ -16121,7 +16122,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Mt 4, 4b",
-        "texto": "No sólo de pan vive el hombre, sino de toda palabra que sale de la boca de Dios."
+        "texto": "No solo de pan vive el hombre, sino de toda palabra que sale de la boca de Dios."
       }
     },
     "pascua_2_sabado": {
@@ -16143,7 +16144,7 @@
       },
       "aclamacion": {
         "tipo": "aleluya",
-        "texto": "Ha resucitado Cristo, que creó todas las cosas y se compadeció del género humano."
+        "texto": "Ha resucitado Cristo, que creó todas las cosas, y se ha compadecido del género humano."
       }
     },
     "pascua_3_lunes": {
@@ -16166,7 +16167,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Mt 4, 4b",
-        "texto": "No sólo de pan vive el hombre, sino de toda palabra que sale de la boca de Dios."
+        "texto": "No solo de pan vive el hombre, sino de toda palabra que sale de la boca de Dios."
       }
     },
     "pascua_3_martes": {
@@ -16189,7 +16190,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Jn 6, 35ab",
-        "texto": "Yo soy el pan de la vida —dice el Señor—; el que viene a mí no pasará hambre."
+        "texto": "Yo soy el pan de vida —dice el Señor—; el que viene a mí no tendrá hambre."
       }
     },
     "pascua_3_miercoles": {
@@ -16212,7 +16213,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Cf. Jn 6, 40",
-        "texto": "Todo el que cree en el Hijo tiene vida eterna, y yo lo resucitaré en el último día —dice el Señor—."
+        "texto": "Todo el que cree en el Hijo tiene vida eterna —dice el Señor—; y yo lo resucitaré en el último día."
       }
     },
     "pascua_3_jueves": {
@@ -16258,7 +16259,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Jn 6, 56",
-        "texto": "El que come mi carne y bebe mi sangre habita en mí y yo en él —dice el Señor—."
+        "texto": "El que come mi carne y bebe mi sangre —dice el Señor— habita en mí y yo en él."
       }
     },
     "pascua_3_sabado": {
@@ -16373,7 +16374,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Cf. Ap 1, 5",
-        "texto": "Jesucristo, tú eres el testigo fiel, el primogénito de entre los muertos; tú nos amaste y nos has librado de nuestros pecados por tu sangre."
+        "texto": "Jesucristo, eres el testigo fiel, el primogénito de entre los muertos; nos amaste y nos has librado de nuestros pecados con tu sangre."
       }
     },
     "pascua_4_viernes": {
@@ -16419,7 +16420,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Jn 8, 31b-32",
-        "texto": "Si os mantenéis en mi palabra, seréis de verdad discípulos míos y conoceréis la verdad —dice el Señor—."
+        "texto": "Si permanecéis en mi palabra —dice el Señor—, seréis de verdad discípulos míos, y conoceréis la verdad."
       }
     },
     "pascua_5_lunes": {
@@ -16465,7 +16466,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Cf. Lc 24, 46. 26",
-        "texto": "Era necesario que el Mesías padeciera y resucitara de entre los muertos, para entrar en su gloria."
+        "texto": "Era necesario que el Mesías padeciera y resucitara de entre los muertos; y entrara así en su gloria."
       }
     },
     "pascua_5_miercoles": {
@@ -16557,7 +16558,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Col 3, 1",
-        "texto": "Ya que habéis resucitado con Cristo, buscad los bienes de allá arriba, donde está Cristo, sentado a la derecha de Dios."
+        "texto": "Si habéis resucitado con Cristo, buscad los bienes de allá arriba, donde Cristo está sentado a la derecha de Dios."
       }
     },
     "pascua_6_lunes": {
@@ -16580,7 +16581,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Jn 15, 26b. 27a",
-        "texto": "El Espíritu de la verdad dará testimonio de mí —dice el Señor—; y también vosotros daréis testimonio."
+        "texto": "El Espíritu de la verdad dará testimonio de mí —dice el Señor—; y vosotros daréis testimonio."
       }
     },
     "pascua_6_martes": {
@@ -16603,7 +16604,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Cf. Jn 16, 7. 13",
-        "texto": "Os enviaré el Espíritu de la verdad —dice el Señor—; él os enseñará la verdad plena."
+        "texto": "Os enviaré el Espíritu de la verdad —dice el Señor—; él os guiará hasta la verdad plena."
       }
     },
     "pascua_6_miercoles": {
@@ -16626,7 +16627,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Jn 14, 16",
-        "texto": "Le pediré al Padre que os dé otro Defensor, que esté siempre con vosotros."
+        "texto": "Le pediré al Padre que os dé otro Paráclito, que esté siempre con vosotros."
       }
     },
     "pascua_6_jueves": {
@@ -16672,7 +16673,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Cf. Lc 24, 46. 26",
-        "texto": "Era necesario que el Mesías padeciera y resucitara de entre los muertos, para entrar en su gloria."
+        "texto": "Era necesario que el Mesías padeciera y resucitara de entre los muertos; y entrara así en su gloria."
       }
     },
     "pascua_6_sabado": {
@@ -16718,7 +16719,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Col 3, 1",
-        "texto": "Ya que habéis resucitado con Cristo, buscad los bienes de allá arriba, donde está Cristo, sentado a la derecha de Dios."
+        "texto": "Si habéis resucitado con Cristo, buscad los bienes de allá arriba, donde Cristo está sentado a la derecha de Dios."
       }
     },
     "pascua_7_martes": {
@@ -16741,7 +16742,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Jn 14, 16",
-        "texto": "Le pediré al Padre que os dé otro Defensor, que esté siempre con vosotros."
+        "texto": "Le pediré al Padre que os dé otro Paráclito, que esté siempre con vosotros."
       }
     },
     "pascua_7_miercoles": {
@@ -16764,7 +16765,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Cf. Jn 17, 17b. a",
-        "texto": "Tu palabra, Señor, es verdad; conságranos en la verdad."
+        "texto": "Tu palabra, Señor, es verdad; santifícanos en la verdad."
       }
     },
     "pascua_7_jueves": {
@@ -16787,7 +16788,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Jn 17, 21",
-        "texto": "Que todos sean uno, como tú, Padre, en mí, y yo en ti, para que el mundo crea que tú me has enviado —dice el Señor—."
+        "texto": "Que todos sean uno —dice el Señor—, como tú, Padre, en mí, y yo en ti, para que el mundo crea que tú me has enviado."
       }
     },
     "pascua_7_viernes": {
@@ -16833,7 +16834,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Cf. Jn 16, 7. 13",
-        "texto": "Os enviaré el Espíritu de la verdad —dice el Señor—; él os enseñará la verdad plena."
+        "texto": "Os enviaré el Espíritu de la verdad —dice el Señor—; él os guiará hasta la verdad plena."
       }
     },
     "maria_madre_iglesia": {
@@ -16883,7 +16884,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Heb 1, 1-2",
-        "texto": "En distintas ocasiones habló Dios antiguamente a nuestros padres por los profetas. Ahora, en esta etapa final, nos ha hablado por el Hijo."
+        "texto": "En muchas ocasiones habló Dios antiguamente a los padres por los profetas. En esta etapa final, nos ha hablado por el Hijo."
       }
     },
     "navidad_3_ene": {
@@ -16906,7 +16907,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Jn 1, 14a. 12a",
-        "texto": "La Palabra se hizo carne y acampó entre nosotros. A cuantos la recibieron, les da poder para ser hijos de Dios."
+        "texto": "El Verbo se hizo carne y habitó entre nosotros; a cuantos lo recibieron, les dio poder de ser hijos de Dios."
       }
     },
     "navidad_4_ene": {
@@ -16929,7 +16930,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Heb 1, 1-2",
-        "texto": "En distintas ocasiones habló Dios antiguamente a nuestros padres por los profetas. Ahora, en esta etapa final, nos ha hablado por el Hijo."
+        "texto": "En muchas ocasiones habló Dios antiguamente a los padres por los profetas. En esta etapa final, nos ha hablado por el Hijo."
       }
     },
     "navidad_7_ene": {
@@ -16952,7 +16953,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Lc 7, 16",
-        "texto": "Jesús proclamaba el Evangelio del reino, curando las dolencias del pueblo."
+        "texto": "Un gran Profeta ha surgido entre nosotros. Dios ha visitado a su pueblo."
       }
     },
     "navidad_8_ene": {
@@ -16975,7 +16976,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Lc 4, 18",
-        "texto": "El Señor me ha enviado para anunciar el Evangelio a los pobres, para anunciar a los cautivos la libertad."
+        "texto": "El Señor me ha enviado a evangelizar a los pobres, a proclamar a los cautivos la libertad."
       }
     },
     "navidad_9_ene": {
@@ -16998,7 +16999,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Cf. 1 Tim 3, 16",
-        "texto": "Gloria a ti, Cristo, proclamado a las naciones; gloria a ti, Cristo, creído en el mundo."
+        "texto": "Gloria a ti, Cristo, proclamado en las naciones; gloria a ti, Cristo, creído en el mundo."
       }
     },
     "navidad_10_ene": {
@@ -17021,7 +17022,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Lc 4, 18",
-        "texto": "El Señor me ha enviado para anunciar el Evangelio a los pobres, para anunciar a los cautivos la libertad."
+        "texto": "El Señor me ha enviado a evangelizar a los pobres, a proclamar a los cautivos la libertad."
       }
     },
     "navidad_11_ene": {
@@ -17044,7 +17045,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Cf. Mt 4, 23",
-        "texto": "Jesús proclamaba el Evangelio del reino, curando las dolencias del pueblo."
+        "texto": "Jesús proclamaba el evangelio del reino, y curaba toda dolencia del pueblo."
       }
     },
     "navidad_5_ene": {
@@ -17152,7 +17153,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Jn 8, 31b-32",
-        "texto": "Si os mantenéis en mi palabra, seréis de verdad discípulos míos y conoceréis la verdad —dice el Señor—."
+        "texto": "Si permanecéis en mi palabra —dice el Señor—, seréis de verdad discípulos míos, y conoceréis la verdad."
       },
       "primera_alt": {
         "titulo": "Tomad las armas de Dios",
@@ -17406,7 +17407,7 @@
       "aclamacion_alt": {
         "tipo": "aleluya",
         "cita": "Mt 28, 19a. 20b",
-        "texto": "Id y haced discípulos de todos los pueblos —dice el Señor—; yo estoy con vosotros todos los días, hasta el fin del mundo."
+        "texto": "Id y haced discípulos a todos los pueblos —dice el Señor—; yo estoy con vosotros todos los días, hasta el final de los tiempos."
       }
     },
     "02-08": {
@@ -17494,7 +17495,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Lc 4, 18",
-        "texto": "El Señor me ha enviado para anunciar el Evangelio a los pobres, para anunciar a los cautivos la libertad."
+        "texto": "El Señor me ha enviado a evangelizar a los pobres, a proclamar a los cautivos la libertad."
       }
     },
     "02-17": {
@@ -18025,7 +18026,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Mt 5, 10",
-        "texto": "Dichosos los perseguidos por causa de la justicia, porque de ellos es el reino de los cielos."
+        "texto": "Bienaventurados los perseguidos por causa de la justicia, porque de ellos es el reino de los cielos."
       },
       "primera_alt": {
         "titulo": "Lo que ha conseguido la victoria sobre el mundo es nuestra fe",
@@ -18127,7 +18128,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Cf. Jn 15, 16",
-        "texto": "Yo os he elegido del mundo, para que vayáis y deis fruto, y vuestro fruto dure —dice el Señor—."
+        "texto": "Yo os he elegido del mundo —dice el Señor—, para que vayáis y deis fruto, y vuestro fruto permanezca."
       }
     },
     "05-15": {
@@ -18432,7 +18433,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Mt 28, 19a. 20b",
-        "texto": "Id y haced discípulos de todos los pueblos —dice el Señor—; yo estoy con vosotros todos los días, hasta el fin del mundo."
+        "texto": "Id y haced discípulos a todos los pueblos —dice el Señor—; yo estoy con vosotros todos los días, hasta el final de los tiempos."
       }
     },
     "06-13": {
@@ -18538,7 +18539,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Lc 1, 76",
-        "texto": "Tú, niño, serás llamado profeta del Altísimo, irás delante del Señor a preparar sus caminos."
+        "texto": "A ti, niño, te llamarán profeta del Altísimo, porque irás delante del Señor a preparar sus caminos."
       }
     },
     "06-26": {
@@ -18632,7 +18633,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Mt 5, 10",
-        "texto": "Dichosos los perseguidos por causa de la justicia, porque de ellos es el reino de los cielos."
+        "texto": "Bienaventurados los perseguidos por causa de la justicia, porque de ellos es el reino de los cielos."
       },
       "primera_alt": {
         "titulo": "Desbordo de gozo con el Señor",
@@ -18667,7 +18668,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Jn 20, 29",
-        "texto": "Porque me has visto, Tomás, has creído —dice el Señor—. Dichosos los que crean sin haber visto."
+        "texto": "Porque me has visto, Tomás, has creído —dice el Señor—; bienaventurados los que crean sin haber visto."
       }
     },
     "07-04": {
@@ -18754,7 +18755,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Mt 5, 3",
-        "texto": "Dichosos los pobres en el espíritu, porque de ellos es el reino de los cielos."
+        "texto": "Bienaventurados los pobres en el espíritu, porque de ellos es el reino de los cielos."
       }
     },
     "07-13": {
@@ -18936,7 +18937,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Cf. Lc 2, 25c",
-        "texto": "Aguardaban el consuelo de Israel, y el Espíritu Santo moraba en ellos."
+        "texto": "Aguardaban el consuelo de Israel, y el Espíritu Santo estaba en ellos."
       }
     },
     "07-29": {
@@ -18954,7 +18955,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Cf. Jn 8, 12b",
-        "texto": "Yo soy la luz del mundo —dice el Señor—; el que me sigue no camina en tinieblas, sino que tendrá la luz de la vida."
+        "texto": "Yo soy la luz del mundo —dice el Señor—; el que me sigue tendrá la luz de la vida."
       },
       "primera_alt": {
         "titulo": "Si nos amamos unos a otros, Dios permanece en nosotros",
@@ -19058,7 +19059,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Lc 4, 18",
-        "texto": "El Señor me ha enviado para anunciar el Evangelio a los pobres, para anunciar a los cautivos la libertad."
+        "texto": "El Señor me ha enviado a evangelizar a los pobres, a proclamar a los cautivos la libertad."
       },
       "primera_alt": {
         "titulo": "Te he puesto de atalaya en la casa de Israel",
@@ -19494,7 +19495,7 @@
       "aclamacion_alt": {
         "tipo": "aleluya",
         "cita": "Mt 23, 9b. 10b",
-        "texto": "Uno solo es vuestro Padre, el del cielo, y uno solo es vuestro Maestro, Cristo."
+        "texto": "Uno solo es vuestro Padre, el del cielo; y uno solo es vuestro maestro, el Mesías."
       }
     },
     "08-29": {
@@ -19518,7 +19519,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Mt 5, 10",
-        "texto": "Dichosos los perseguidos por causa de la justicia, porque de ellos es el reino de los cielos."
+        "texto": "Bienaventurados los perseguidos por causa de la justicia, porque de ellos es el reino de los cielos."
       }
     },
     "09-03": {
@@ -19842,7 +19843,7 @@
       "aclamacion_alt": {
         "tipo": "aleluya",
         "cita": "Cf. Mt 11, 25",
-        "texto": "Bendito seas, Padre, Señor de cielo y tierra, porque has revelado los misterios del reino a la gente sencilla."
+        "texto": "Bendito seas, Padre, Señor del cielo y de la tierra, porque has revelado los misterios del reino a los pequeños."
       }
     },
     "10-02": {
@@ -19893,7 +19894,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Mt 23, 9b. 10b",
-        "texto": "Uno solo es vuestro Padre, el del cielo, y uno solo es vuestro Maestro, Cristo."
+        "texto": "Uno solo es vuestro Padre, el del cielo; y uno solo es vuestro maestro, el Mesías."
       }
     },
     "10-04": {
@@ -19921,7 +19922,7 @@
       "aclamacion_alt": {
         "tipo": "aleluya",
         "cita": "Cf. Mt 11, 25",
-        "texto": "Bendito seas, Padre, Señor de cielo y tierra, porque has revelado los misterios del reino a la gente sencilla."
+        "texto": "Bendito seas, Padre, Señor del cielo y de la tierra, porque has revelado los misterios del reino a los pequeños."
       }
     },
     "10-05": {
@@ -20103,7 +20104,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Eclo 39, 10",
-        "texto": "Los pueblos contarán su sabiduría, y la asamblea anunciará sus alabanzas."
+        "texto": "Las naciones hablarán de su sabiduría, y la asamblea proclamará su alabanza."
       }
     },
     "10-16": {
@@ -20153,7 +20154,7 @@
       "aclamacion_alt": {
         "tipo": "aleluya",
         "cita": "Sant 1, 12a",
-        "texto": "Dichoso el hombre que soporta la prueba, porque, una vez aquilatado, recibirá la corona de la vida."
+        "texto": "Bienaventurado el hombre que aguanta la prueba, porque, si sale airoso, recibirá la corona de la vida."
       }
     },
     "10-18": {
@@ -20177,7 +20178,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Cf. Jn 15, 16",
-        "texto": "Yo os he elegido del mundo, para que vayáis y deis fruto, y vuestro fruto dure —dice el Señor—."
+        "texto": "Yo os he elegido del mundo —dice el Señor—, para que vayáis y deis fruto, y vuestro fruto permanezca."
       }
     },
     "10-19": {
@@ -20285,7 +20286,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Mt 11, 28",
-        "texto": "Venid a mí todos los que estáis cansados y agobiados, y yo os aliviaré —dice el Señor—."
+        "texto": "Venid a mí todos los que estáis cansados y agobiados —dice el Señor—, y yo os aliviaré."
       }
     },
     "11-02": {
@@ -20604,7 +20605,7 @@
       "aclamacion": {
         "tipo": "aleluya",
         "cita": "Mt 4, 19",
-        "texto": "Venid y seguidme —dice el Señor—, y os haré pescadores de hombres."
+        "texto": "Venid en pos de mí —dice el Señor—, y os haré pescadores de hombres."
       }
     },
     "12-03": {
@@ -20631,7 +20632,7 @@
       "aclamacion_alt": {
         "tipo": "aleluya",
         "cita": "Mt 28, 19a. 20b",
-        "texto": "Id y haced discípulos de todos los pueblos —dice el Señor—; yo estoy con vosotros todos los días, hasta el fin del mundo."
+        "texto": "Id y haced discípulos a todos los pueblos —dice el Señor—; yo estoy con vosotros todos los días, hasta el final de los tiempos."
       }
     },
     "12-04": {
