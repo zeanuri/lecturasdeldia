@@ -192,16 +192,17 @@ class TestFullBuild:
             assert len(eu_idx) == 3
             assert all(e["url"].startswith("/eu/") for e in eu_idx)
 
-    def test_default_build_is_cumulative_archive_from_epoch(self):
-        """Without days_back, day pages start at SITE_EPOCH, not today-N."""
-        with tempfile.TemporaryDirectory() as outdir, \
-                mock.patch.object(generate_site, "SITE_EPOCH", date(2026, 4, 7)):
+    def test_default_build_keeps_only_30_days_back(self):
+        """Without days_back, day pages start at today-30; nothing older is built."""
+        assert generate_site.DAYS_BACK == 30
+        with tempfile.TemporaryDirectory() as outdir:
             generate_site.build_site(
                 today=date(2026, 4, 9), days_forward=0, outdir=outdir,
             )
-            for d in (date(2026, 4, 7), date(2026, 4, 8), date(2026, 4, 9)):
+            for d in (date(2026, 3, 10), date(2026, 4, 9)):
                 path = os.path.join(outdir, str(d.year), f"{d.month:02d}", f"{d.day:02d}", "index.html")
-                assert os.path.exists(path), f"Missing archived page for {d}"
+                assert os.path.exists(path), f"Missing page for {d}"
+            assert not os.path.exists(os.path.join(outdir, "2026", "03", "09", "index.html"))
 
 
 @pytest.fixture(scope="module")

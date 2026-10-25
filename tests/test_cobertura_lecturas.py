@@ -21,7 +21,7 @@ import pytest
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-import generate_site  # noqa: E402  (SITE_EPOCH: la ventana no se clava a mano)
+import generate_site  # noqa: E402  (DAYS_BACK: la ventana no se clava a mano)
 import liturgia  # noqa: E402
 
 SLOTS_OBLIGATORIAS = ("primera", "salmo", "evangelio")
@@ -39,7 +39,7 @@ def _ventana():
     # Europe/Madrid, y `date.today()` en el runner (UTC) daba un dia distinto
     # durante la franja entre ambas medianoches.
     hoy = generate_site.hoy_local()
-    inicio = min(generate_site.SITE_EPOCH, hoy)
+    inicio = hoy - timedelta(days=generate_site.DAYS_BACK)
     fin = max(hoy + timedelta(days=DIAS_ADELANTE),
               inicio + timedelta(days=3 * 366))
     return inicio, fin

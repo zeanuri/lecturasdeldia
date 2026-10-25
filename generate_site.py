@@ -74,10 +74,10 @@ def hoy_local() -> date:
     return datetime.now(TZ_SITIO).date()
 
 
-# Earliest day page ever published (first deploy 2026-04-09 with days_back=30).
-# Day pages are generated from here forward and never deleted, so URLs Google
-# already indexed keep resolving instead of decaying into 404s.
-SITE_EPOCH = date(2026, 3, 10)
+# Day pages kept behind today. The cumulative archive from 2026-03-10 (commit
+# 4763e73) was dropped on 2026-10-24 by decision of the owner: each build
+# regenerates only today-30..today+365; older dates fall to the 404 page.
+DAYS_BACK = 30
 
 # Dated pages listed in the sitemap: a short window around today. Pages outside
 # it still exist and stay linked — they just don't ask Google for crawl budget.
@@ -1363,7 +1363,7 @@ celebraciones propias del calendario litúrgico de España.
 
 # ── Orchestrator ───────────────────────────────────────────────────────────────
 
-def build_site(today=None, days_back=None, days_forward=365, outdir=None):
+def build_site(today=None, days_back=DAYS_BACK, days_forward=365, outdir=None):
     if today is None:
         today = hoy_local()
     if outdir is None:
@@ -1378,12 +1378,7 @@ def build_site(today=None, days_back=None, days_forward=365, outdir=None):
     templates = load_templates()
     templates.globals["build_date"] = today.isoformat()
 
-    # days_back=None (production) → cumulative archive from SITE_EPOCH: old day
-    # pages are regenerated every build instead of dropping off into 404s.
-    if days_back is None:
-        start = SITE_EPOCH
-    else:
-        start = today - timedelta(days=days_back)
+    start = today - timedelta(days=days_back)
     end = today + timedelta(days=days_forward)
     total = (end - start).days + 1
 
