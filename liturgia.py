@@ -671,7 +671,7 @@ def calculate(d: date) -> dict:
     if mov_entry:
         name, rank, color = mov_entry
         season = determine_season(d, e, ash_wed, pent, adv, xmas, baptism)
-        wdc = f"Ano {weekday_cycle}" if "Ordinario" in season else ""
+        wdc = f"Año {weekday_cycle}" if "Ordinario" in season else ""
         r = build_result(d, day_name, name, rank, season,
                          sunday_cycle, wdc, color, lit_year)
         # Movable feasts in OT need ot_week for ferial reading lookup
@@ -871,7 +871,7 @@ def calculate(d: date) -> dict:
     else:
         result["season"] = "Tiempo Ordinario"
         result["color"] = "Verde"
-        result["weekday_cycle"] = f"Ano {weekday_cycle}"
+        result["weekday_cycle"] = f"Año {weekday_cycle}"
 
         # Determine if before Lent or after Pentecost
         if d < ash_wed:
