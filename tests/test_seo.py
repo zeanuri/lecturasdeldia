@@ -155,9 +155,26 @@ class TestCalendario:
         assert '<link rel="canonical" href="https://lecturasdeldia.org/calendario/">' in html
 
     def test_calendario_title_and_cycle(self, built_site):
+        # El h1 es genérico; el año litúrgico va en la línea de debajo.
         html = _read(built_site, "calendario", "index.html")
-        assert "Calendario litúrgico 2025-2026" in html
+        assert "<h1>Calendario litúrgico</h1>" in html
+        assert "Año litúrgico 2025-2026</span>" in html
         assert "Ciclo A" in html
+
+    @pytest.mark.parametrize("hoy, etiqueta, ciclo", [
+        (date(2026, 11, 28), "2025-2026", "Ciclo A (dominical)"),   # sábado antes de Adviento
+        (date(2026, 11, 29), "2026-2027", "Ciclo B (dominical)"),   # I Domingo de Adviento
+    ])
+    def test_calendario_cambia_de_ano_con_el_adviento(self, hoy, etiqueta, ciclo):
+        tmp = tempfile.TemporaryDirectory()
+        try:
+            generate_site.build_site(today=hoy, days_back=0, days_forward=1, outdir=tmp.name)
+            html = _read(tmp.name, "calendario", "index.html")
+            assert "<h1>Calendario litúrgico</h1>" in html
+            assert f"Año litúrgico {etiqueta}</span>" in html
+            assert ciclo in html
+        finally:
+            tmp.cleanup()
 
     def test_calendario_title_uses_civil_years(self, built_site):
         # Las consultas son «calendario litúrgico 2026», no «2025-2026».
