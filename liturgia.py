@@ -1017,7 +1017,6 @@ def _build_dominical_key(result: dict) -> str | None:
     """Map calculate() output to a dominical leccionario key."""
     name = result.get("name", "")
     season = result.get("season", "")
-    rank = result.get("rank", "")
 
     # Triduo Pascual + Easter
     if "Ramos" in name: return "ramos"
@@ -1264,7 +1263,6 @@ def lookup_readings(result: dict, cache=None) -> dict | None:
 
     d = date.fromisoformat(result["date"])
     season = result.get("season", "")
-    name = result.get("name", "")
     rank = result.get("rank", "")
     is_sunday = result.get("day_name") == "Domingo"
     cycle = result.get("sunday_cycle", "").replace("Ciclo ", "")
@@ -1511,7 +1509,6 @@ def format_html(r: dict, readings: dict | None = None) -> str:
     memorial = r.get("memorial", "")
     memorial_rank = r.get("memorial_rank", "")
     memorial_note = r.get("memorial_note", "")
-    readings_source = r.get("readings_source", "")
 
     # Titulo: memorial prevalece si es Fiesta
     display_name = name
