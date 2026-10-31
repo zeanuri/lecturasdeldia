@@ -4,22 +4,32 @@
 
 /* ── CSS Variables ──────────────────────────────────────────────────────── */
 
+/* Poppins, la letra de los titulares de bizkeliza.org, servida desde aquí
+   (sin peticiones a Google). Solo para rótulos y botones; el texto bíblico
+   sigue en serif. */
+@font-face { font-family: "Poppins"; font-style: normal; font-weight: 500; font-display: swap; src: url("fonts/poppins-latin-500.woff2") format("woff2"); }
+@font-face { font-family: "Poppins"; font-style: normal; font-weight: 600; font-display: swap; src: url("fonts/poppins-latin-600.woff2") format("woff2"); }
+@font-face { font-family: "Poppins"; font-style: normal; font-weight: 700; font-display: swap; src: url("fonts/poppins-latin-700.woff2") format("woff2"); }
+
 :root {
   /* Typography */
   --font-body: Georgia, "Times New Roman", serif;
-  --font-ui: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-ui: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 
-  /* Brand */
-  --color-brand: #006b54;
-  --color-brand-light: #00a55a;
+  /* Brand — colores institucionales de bizkeliza.org */
+  --color-brand: #006b54;        /* verde Bizkeliza: texto y botones */
+  --color-brand-light: #00a19a;  /* turquesa Bizkeliza: acentos */
+  --color-brand-deep: #00473a;   /* fondo del encabezado y el pie */
+  --color-brand-tint: #e6f4f1;   /* fondos suaves */
 
-  /* Colors */
-  --color-text: #2c2c2c;
-  --color-text-light: #666;
-  --color-text-muted: #999;
-  --color-bg: #fafaf8;
+  /* Colors (contraste AA: texto secundario ≥ 4.5:1 sobre blanco) */
+  --color-text: #1f2523;
+  --color-text-light: #4f5856;
+  --color-text-muted: #6b7471;
+  --color-bg: #f2f5f4;
   --color-surface: #fff;
-  --color-border: #e8e8e5;
+  --color-border: #dfe6e4;
+  --shadow-card: 0 1px 2px rgba(0, 51, 41, 0.06), 0 4px 16px rgba(0, 51, 41, 0.06);
 
   /* Liturgical colors */
   --color-purple: #7b5ea7;
@@ -27,24 +37,43 @@
   --color-green: #27ae60;
   --color-white-dot: #bbb;
   --color-pink: #e8a0bf;
+  --color-gold: #c9a227;
+  --color-lit: var(--color-green);  /* color del día, fijado por body[data-color] */
 
   /* Layout */
-  --max-width: 720px;
+  --max-width: 760px;
   --spacing: 1.5rem;
 }
+
+/* --card-a/--card-b: degradado de la tarjeta del día en el color del tiempo
+   (tonos oscurecidos para que el texto blanco pase AA). Sin color del día
+   (/calendario/), la tarjeta queda en verde Bizkeliza. */
+body {
+  --card-a: #006b54; --card-b: #00473a;
+  --card-glow: rgba(64, 217, 241, 0.28);
+}
+body[data-color] { --card-glow: rgba(255, 255, 255, 0.18); }
+body[data-color="purple"] { --color-lit: var(--color-purple); --card-a: #6d4aa3; --card-b: #3f2468; }
+body[data-color="red"]    { --color-lit: var(--color-red);    --card-a: #b8352a; --card-b: #7a1810; }
+body[data-color="green"]  { --color-lit: var(--color-green);  --card-a: #1b7d44; --card-b: #0d5a2e; }
+body[data-color="white"]  { --color-lit: var(--color-gold);   --card-a: #8c6e18; --card-b: #5e4709; }
+body[data-color="pink"]   { --color-lit: var(--color-pink);   --card-a: #b0577c; --card-b: #7a3352; }
 
 /* ── Dark mode ──────────────────────────────────────────────────────────── */
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-brand: #3db88c;
-    --color-brand-light: #4cd9a5;
-    --color-text: #e0e0e0;
-    --color-text-light: #aaa;
-    --color-text-muted: #777;
-    --color-bg: #1a1a1a;
-    --color-surface: #252525;
-    --color-border: #3a3a3a;
+    --color-brand: #3fc4a6;
+    --color-brand-light: #40d9f1;
+    --color-brand-deep: #00352b;
+    --color-brand-tint: #16302a;
+    --color-text: #e6ebe9;
+    --color-text-light: #b4bebb;
+    --color-text-muted: #8f9a97;
+    --color-bg: #121816;
+    --color-surface: #1c2422;
+    --color-border: #2d3836;
+    --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.25);
   }
 }
 
@@ -70,7 +99,7 @@ body {
 }
 
 a {
-  color: var(--color-purple);
+  color: var(--color-brand);
   text-decoration: none;
 }
 
@@ -78,46 +107,38 @@ a:hover {
   text-decoration: underline;
 }
 
+:focus-visible {
+  outline: 3px solid var(--color-brand-light);
+  outline-offset: 2px;
+}
+
 /* ── Color band (top of page) ───────────────────────────────────────────── */
 
+/* Franja fina con el color litúrgico del día sobre el encabezado verde. */
 body::before {
   content: "";
   display: block;
-  height: 4px;
-  background: var(--color-purple);
-}
-
-body[data-color="purple"]::before {
-  background: var(--color-purple);
-}
-
-body[data-color="red"]::before {
-  background: var(--color-red);
-}
-
-body[data-color="green"]::before {
-  background: var(--color-green);
+  height: 5px;
+  background: var(--color-lit);
 }
 
 body[data-color="white"]::before {
-  background: linear-gradient(90deg, #b8860b, #daa520, #b8860b);
-}
-
-body[data-color="pink"]::before {
-  background: var(--color-pink);
+  background: linear-gradient(90deg, #b8860b, #e6c35c, #b8860b);
 }
 
 /* ── Masthead ───────────────────────────────────────────────────────────── */
 
+/* El encabezado ocupa todo el ancho en verde Bizkeliza; su contenido se
+   centra con padding en vez de max-width para que el fondo llegue al borde. */
 .masthead {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0.75rem var(--spacing);
+  padding: 0.7rem max(var(--spacing), calc((100% - var(--max-width)) / 2 + var(--spacing)));
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: 1rem;
-  border-bottom: 1px solid var(--color-border);
+  /* Verde fijo (no var(--color-brand), que en modo oscuro se aclara). */
+  background: linear-gradient(120deg, var(--color-brand-deep), #006b54 70%, #007f6a);
+  color: #fff;
 }
 
 .header-home {
@@ -127,9 +148,9 @@ body[data-color="pink"]::before {
   line-height: 0;
   text-decoration: none;
   background: #fff;
-  padding: 4px 6px;
-  border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  padding: 5px 8px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
   justify-self: start;
 }
@@ -142,7 +163,7 @@ body[data-color="pink"]::before {
 
 .header-home:hover {
   transform: scale(1.04);
-  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 .masthead-actions {
@@ -155,19 +176,22 @@ body[data-color="pink"]::before {
   font-family: var(--font-ui);
   font-size: 0.85rem;
   font-weight: 600;
-  padding: 0.4rem 0.8rem;
-  background: transparent;
-  color: var(--color-brand);
-  border: 1px solid var(--color-brand);
-  border-radius: 6px;
+  padding: 0.45rem 0.9rem;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 999px;
   text-decoration: none;
   cursor: pointer;
   line-height: 1;
+  white-space: nowrap;
+  transition: background 0.15s, color 0.15s;
 }
 
 .masthead-btn:hover {
-  background: rgba(0, 107, 84, 0.08);
+  background: #fff;
   color: var(--color-brand);
+  text-decoration: none;
 }
 
 
@@ -218,8 +242,8 @@ body[data-color="pink"]::before {
 }
 
 #search-input:focus {
-  border-color: var(--color-purple);
-  box-shadow: 0 0 0 2px rgba(123, 94, 167, 0.15);
+  border-color: var(--color-brand);
+  box-shadow: 0 0 0 3px rgba(0, 161, 154, 0.2);
 }
 
 #search-results {
@@ -569,117 +593,196 @@ body[data-color="pink"]::before {
 /* ── Day page ───────────────────────────────────────────────────────────── */
 
 article.day-page,
-article[data-date] {
+article[data-date],
+article:not([class]) {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 var(--spacing) var(--spacing);
 }
 
+/* /calendario/: sus secciones (h2 + tabla o lista) como tarjetas. */
+article:not([class]):not([data-date]) > section.readings {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  box-shadow: var(--shadow-card);
+  padding: 1.25rem 1.5rem 0.75rem;
+  margin-bottom: 1rem;
+}
+
+article:not([class]):not([data-date]) > section.readings h2 {
+  font-family: var(--font-ui);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-brand);
+  margin-bottom: 0.5rem;
+}
+
+.day-card .card .date {
+  font-size: 0.98rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 0.9rem;
+  text-wrap: pretty;
+}
+
 /* ── Day card ───────────────────────────────────────────────────────────── */
 
+/* La tarjeta del día es la portada: toma el color del tiempo litúrgico, con
+   letra blanca y una luz en la esquina; el filo inferior, en verde Bizkeliza,
+   la ata al encabezado y al pie. */
 .day-card {
   max-width: var(--max-width);
-  margin: 1.5rem auto 1rem;
+  margin: 1.75rem auto 1.25rem;
   padding: 0 var(--spacing);
 }
 
 .day-card .card {
   position: relative;
-  border: 1px solid var(--color-border);
-  background: var(--color-surface);
-  border-radius: 12px;
-  padding: 1.25rem 3rem;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 100% 0%, var(--card-glow), transparent 45%),
+    linear-gradient(135deg, var(--card-a) 0%, var(--card-b) 100%);
+  color: #fff;
+  border-radius: 18px;
+  border-bottom: 6px solid #006b54;
+  padding: 1.9rem 3.5rem 1.6rem;
   text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
 }
+
+/* Blanco litúrgico: tarjeta marfil con oro. En oro oscuro con letra blanca
+   salía parda y no se leía como «blanco». Texto #5e4709 sobre marfil: 8:1. */
+body[data-color="white"] .day-card .card {
+  background:
+    radial-gradient(circle at 100% 0%, rgba(230, 195, 92, 0.35), transparent 50%),
+    linear-gradient(135deg, #fffdf6 0%, #f3e6c4 100%);
+  color: #5e4709;
+  border: 1px solid #e6d3a0;
+  border-bottom: 6px solid #c9a227;
+}
+body[data-color="white"] .day-card h1 { color: #4a3806; }
+body[data-color="white"] .day-card .date-line,
+body[data-color="white"] .day-card .memorial em { color: #7c5f12; }
+body[data-color="white"] .day-card .pills { color: #5e4709; }
+body[data-color="white"] .day-card .pills > span {
+  background: rgba(255, 255, 255, 0.7);
+  border-color: #e6d3a0;
+}
+body[data-color="white"] .day-card .pills .dot { background: #b8a26a; }
+body[data-color="white"] .day-card .pills .dot-white { background: #fff; box-shadow: 0 0 0 2px #c9a227; }
+body[data-color="white"] .day-card .nav-arrow {
+  color: #7c5f12;
+  border-color: #d9c48a;
+  background: rgba(255, 255, 255, 0.6);
+}
+body[data-color="white"] .day-card .nav-arrow:hover { background: #7c5f12; color: #fff; }
+body[data-color="white"] .day-card .memorial { color: #5e4709; border-top-color: #e6d3a0; }
+body[data-color="white"] .day-card .memorial .star { color: #c9a227; }
+body[data-color="white"] .day-card .alt-readings-link { color: #5e4709; }
 
 .day-card .nav-arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 1.2rem;
-  color: var(--color-brand);
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  color: #fff;
   text-decoration: none;
-  padding: 0.5rem 0.7rem;
-  border-radius: 6px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.1);
   font-weight: 600;
+  transition: background 0.15s, color 0.15s;
 }
 
-.day-card .nav-arrow.prev { left: 0.5rem; }
-.day-card .nav-arrow.next { right: 0.5rem; }
+.day-card .nav-arrow.prev { left: 0.75rem; }
+.day-card .nav-arrow.next { right: 0.75rem; }
 
 .day-card .nav-arrow:hover {
-  background: rgba(0, 107, 84, 0.08);
-  color: var(--color-brand-light);
+  background: #fff;
+  color: var(--color-brand);
+  text-decoration: none;
 }
 
 .day-card .date-line {
   font-family: var(--font-ui);
-  font-size: 0.8rem;
-  letter-spacing: 0.16em;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--color-text-muted);
-  margin-bottom: 0.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0.6rem;
 }
 
 .day-card h1 {
-  margin: 0 0 0.75rem;
-  font-size: 1.5rem;
+  margin: 0 0 1rem;
+  font-size: 1.85rem;
   font-weight: 700;
-  line-height: 1.25;
-  color: var(--color-brand);
+  line-height: 1.2;
+  color: #fff;
+  text-wrap: balance;
 }
 
 .day-card .pills {
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.5rem 0.9rem;
+  gap: 0.45rem;
   font-family: var(--font-ui);
-  font-size: 0.8rem;
-  color: var(--color-text-light);
-  margin-bottom: 0.5rem;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: #fff;
 }
 
-.day-card .pills span {
+.day-card .pills > span {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
+  gap: 0.4rem;
   white-space: nowrap;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.22);
 }
 
 .day-card .pills .dot {
-  width: 7px;
-  height: 7px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
-  background: var(--color-text-muted);
+  margin-top: 0;
+  background: rgba(255, 255, 255, 0.55);
   display: inline-block;
 }
 
-.day-card .pills .dot-purple { background: var(--color-purple); }
-.day-card .pills .dot-red    { background: var(--color-red); }
-.day-card .pills .dot-green  { background: var(--color-green); }
+.day-card .pills .dot-purple { background: #b79be0; }
+.day-card .pills .dot-red    { background: #ff7a6b; }
+.day-card .pills .dot-green  { background: #6fe39a; }
 .day-card .pills .dot-pink   { background: var(--color-pink); }
 .day-card .pills .dot-white  {
   background: #fff;
-  border: 1.5px solid var(--color-brand);
+  box-shadow: 0 0 0 2px #e6c35c;
 }
 
 .day-card .memorial {
   font-family: var(--font-ui);
-  font-size: 0.85rem;
-  color: var(--color-text);
-  padding-top: 0.6rem;
-  border-top: 1px solid var(--color-border);
-  margin-top: 0.6rem;
+  font-size: 0.88rem;
+  color: #fff;
+  padding-top: 0.8rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 1rem;
 }
 
 .day-card .memorial .star {
-  color: #c9a227;
+  color: #f2d06b;
   margin-right: 0.2rem;
 }
 
 .day-card .memorial em {
-  color: var(--color-text-muted);
+  color: rgba(255, 255, 255, 0.75);
   font-style: normal;
 }
 
@@ -692,6 +795,12 @@ article[data-date] {
   color: var(--color-brand);
   text-decoration: underline;
   cursor: pointer;
+}
+
+.day-card .alt-readings-link {
+  color: #fff;
+  font-weight: 600;
+  text-underline-offset: 3px;
 }
 
 /* ── Color badges ───────────────────────────────────────────────────────── */
@@ -722,56 +831,80 @@ article[data-date] {
 
 /* ── Readings ───────────────────────────────────────────────────────────── */
 
+/* Cada lectura es una tarjeta blanca sobre el fondo verdoso; el evangelio,
+   la principal, lleva el filo superior del color litúrgico. */
 .readings {
   list-style: none;
 }
 
 .reading {
-  margin-bottom: 0.5rem;
-  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 1rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  box-shadow: var(--shadow-card);
+  padding: 0 1.5rem;
 }
 
-.reading:last-child {
-  border-bottom: none;
+.reading:has(#text-evangelio) {
+  border-top: 4px solid var(--color-lit);
 }
 
 .reading-header {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   width: 100%;
-  padding: 0.75rem 0;
+  position: relative;
+  padding: 1rem 2.4rem 1rem 0;
   background: none;
   border: none;
   cursor: pointer;
   text-align: left;
   color: var(--color-text);
   font-family: var(--font-body);
-  font-size: 1rem;
-  gap: 0.5rem;
+  font-size: 1.02rem;
+  gap: 0.35rem 0.75rem;
 }
 
-.reading-header:hover {
-  color: var(--color-purple);
+.reading-header:hover .reading-cita {
+  color: var(--color-brand);
 }
 
 .reading-label {
   font-family: var(--font-ui);
-  font-size: 0.85rem;
-  font-weight: 700;
+  font-size: 0.72rem;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
   color: var(--color-brand);
+  background: var(--color-brand-tint);
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
   white-space: nowrap;
 }
 
+/* Base de 9rem: si no cabe junto a la etiqueta, la cita baja de línea en
+   vez de estrujarse en una columna estrecha. */
 .reading-cita {
-  font-weight: 500;
-  flex: 1;
+  font-weight: 600;
+  flex: 1 1 9rem;
+  transition: color 0.15s;
 }
 
 .chevron {
+  position: absolute;
+  right: 0;
+  top: 0.85rem;
   font-size: 0.6rem;
   color: var(--color-text-muted);
+  width: 1.8rem;
+  height: 1.8rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--color-bg);
   transition: transform 0.2s ease;
 }
 
@@ -782,28 +915,32 @@ article[data-date] {
 /* ── Reading text ───────────────────────────────────────────────────────── */
 
 .reading-text {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  padding: 0 0 1rem 0;
+  font-size: 1.12rem;
+  line-height: 1.85;
+  padding: 0 0 1.25rem 0;
 }
 
 .reading-text p {
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.85rem;
 }
 
 .reading-text .titulo {
   font-style: italic;
-  font-size: 0.95rem;
-  color: var(--color-text-light);
-  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: var(--color-brand);
+  padding-bottom: 0.75rem;
+  margin-bottom: 0.9rem;
+  border-bottom: 1px dashed var(--color-border);
 }
 
 .reading-text .antifona {
   font-style: italic;
   font-weight: 600;
-  border-left: 3px solid var(--color-brand);
-  padding-left: 0.75rem;
-  margin-bottom: 1rem;
+  background: var(--color-brand-tint);
+  border-left: 4px solid var(--color-brand-light);
+  border-radius: 0 10px 10px 0;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1.1rem;
 }
 
 
@@ -812,14 +949,16 @@ article[data-date] {
 .gospel-book-link {
   font-family: var(--font-ui);
   font-size: 0.85rem;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.01em;
-  color: var(--color-brand);
-  margin: 0.5rem 0 1.5rem;
+  color: var(--color-text-light);
+  margin: 0.25rem 0 1.5rem;
+  text-align: center;
 }
 
 .gospel-book-link a {
   color: var(--color-brand);
+  font-weight: 600;
   text-decoration: underline;
   text-underline-offset: 2px;
 }
@@ -827,11 +966,8 @@ article[data-date] {
 /* ── Aclamación ────────────────────────────────────────────────────────── */
 
 .aclamacion-section {
-  border-top: 1px solid var(--color-border);
-}
-
-.aclamacion-section .reading {
-  border-bottom: none;
+  background: var(--color-brand-tint);
+  box-shadow: none;
 }
 
 .aclamacion-verso {
@@ -843,66 +979,64 @@ article[data-date] {
 
 .actions {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 0.75rem;
-  margin-bottom: 1rem;
-  padding-bottom: 0.75rem;
-  border-bottom: 1px solid var(--color-border);
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
 }
 
-.actions button {
+.actions button,
+.actions .action-link {
   font-family: var(--font-ui);
-  font-size: 0.85rem;
-  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.42rem 0.75rem;
   border: 1px solid var(--color-border);
-  border-radius: 8px;
+  border-radius: 999px;
   background: var(--color-surface);
-  color: var(--color-text-light);
+  color: var(--color-text);
   cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  box-shadow: 0 1px 2px rgba(0, 51, 41, 0.06);
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
 }
 
 .actions button:hover,
 .actions .action-link:hover {
+  background: var(--color-brand);
   border-color: var(--color-brand);
-  color: var(--color-brand);
-}
-
-.actions .action-link {
-  font-family: var(--font-ui);
-  font-size: 0.85rem;
-  padding: 0.5rem 1rem;
-  border: 1px solid var(--color-border);
-  border-radius: 8px;
-  background: var(--color-surface);
-  color: var(--color-text-light);
+  color: #fff;
   text-decoration: none;
-  display: inline-flex;
-  align-items: center;
 }
 
 /* ── Site footer ────────────────────────────────────────────────────────── */
 
+/* Pie a todo lo ancho en el verde oscuro del encabezado: cierra la página
+   con el mismo color con que se abre. */
 footer {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 2rem var(--spacing) 1rem;
+  margin: 3rem 0 0;
+  padding: 2.25rem var(--spacing) 1.5rem;
   text-align: center;
   font-family: var(--font-ui);
-  font-size: 0.75rem;
-  color: var(--color-text-muted);
-  border-top: 1px solid var(--color-border);
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.75);
+  background: var(--color-brand-deep);
+  border-top: 5px solid var(--color-lit);
 }
 
 footer p {
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.4rem;
 }
 
 footer a {
-  color: var(--color-text-muted);
+  color: #fff;
 }
 
 footer a:hover {
-  color: var(--color-text-light);
+  color: #9ff0e3;
 }
 
 footer .footer-brand {
@@ -911,12 +1045,12 @@ footer .footer-brand {
   justify-content: center;
   background: #fff;
   padding: 6px 10px;
-  border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   line-height: 0;
   text-decoration: none;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 footer .footer-brand img {
@@ -954,63 +1088,67 @@ footer .footer-brand:hover {
 /* On tablets the centered title would crowd the logo + buttons, so
    collapse the masthead to two rows: [logo + buttons] / [title full width]. */
 @media (max-width: 640px) {
+  :root { --spacing: 1rem; }
   .masthead {
     grid-template-columns: auto 1fr;
     gap: 0.5rem 0.75rem;
   }
-  .masthead   .day-card .card { padding: 1rem 2.5rem; }
-  .day-card h1 { font-size: 1.3rem; }
+  .day-card .card { padding: 1.5rem 3rem 1.3rem; }
+  .day-card h1 { font-size: 1.4rem; }
+  .day-card .nav-arrow { width: 2.1rem; height: 2.1rem; }
+  .day-card .nav-arrow.prev { left: 0.5rem; }
+  .day-card .nav-arrow.next { right: 0.5rem; }
+  .reading { padding: 0 1.1rem; }
+  article:not([class]):not([data-date]) > section.readings { padding: 1rem 0.9rem 0.5rem; }
 }
 
 @media (max-width: 480px) {
   .reading-text {
-    font-size: 1rem;
-  }
-
-  .actions {
-    flex-direction: column;
-    align-items: stretch;
+    font-size: 1.05rem;
   }
 
   .actions button,
   .actions .action-link {
-    width: 100%;
-    text-align: center;
+    padding: 0.45rem 0.8rem;
   }
 }
 
 /* ── Language toggle ───────────────────────────────────────────────────── */
 
+/* Sobre el encabezado verde: cápsula translúcida; el idioma activo, en blanco. */
 .lang-toggle {
   display: inline-flex;
-  border: 1px solid var(--color-brand, #5e2750);
+  padding: 3px;
+  gap: 2px;
+  background: rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 999px;
-  overflow: hidden;
+  font-family: var(--font-ui);
   font-size: 0.85rem;
   margin: 0 0.5rem;
   justify-self: center;
 }
 
 .lang-toggle a {
-  padding: 0.25rem 0.85rem;
+  padding: 0.25rem 0.9rem;
+  border-radius: 999px;
   text-decoration: none;
-  color: var(--color-brand, #5e2750);
+  color: rgba(255, 255, 255, 0.88);
   background: transparent;
   font-weight: 500;
   transition: background 0.15s, color 0.15s;
 }
 
-.lang-toggle a + a {
-  border-left: 1px solid var(--color-brand, #5e2750);
-}
-
 .lang-toggle a:hover {
-  background: rgba(94, 39, 80, 0.08);
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  text-decoration: none;
 }
 
 .lang-toggle a.active {
-  background: var(--color-brand, #5e2750);
-  color: #fff;
+  background: #fff;
+  color: var(--color-brand);
+  font-weight: 600;
   cursor: default;
 }
 
@@ -1063,9 +1201,10 @@ footer .footer-brand:hover {
 
 .home-intro {
   max-width: var(--max-width);
-  margin: 1.5rem auto 0;
-  padding: 1rem var(--spacing) 0;
-  border-top: 1px solid var(--color-border);
+  margin: 2rem auto 0;
+  padding: 1.25rem 1.5rem;
+  background: var(--color-brand-tint);
+  border-radius: 14px;
   font-family: var(--font-ui);
   font-size: 0.85rem;
   color: var(--color-text-light);
@@ -1073,7 +1212,8 @@ footer .footer-brand:hover {
 
 .home-intro h2 {
   font-size: 0.95rem;
-  color: var(--color-text);
+  font-weight: 600;
+  color: var(--color-brand);
   margin-bottom: 0.5rem;
 }
 
@@ -1142,6 +1282,11 @@ footer .footer-brand:hover {
 .cal-seasons td {
   color: var(--color-text-light);
   white-space: nowrap;
+}
+/* En el móvil las fechas se parten: con nowrap la tabla se salía 70 px. */
+@media (max-width: 640px) {
+  .cal-seasons th[scope="row"],
+  .cal-seasons td { white-space: normal; padding: 0.45rem 0.35rem; }
 }
 
 .cal-list {
